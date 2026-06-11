@@ -319,7 +319,7 @@
   .card-body { padding: 26px 28px 30px; display: flex; flex-direction: column; gap: 16px; flex: 1; }
   .card h3 { font-family: var(--display); font-weight: 700; font-size: 1.25rem; letter-spacing: -0.01em; line-height: 1.25; }
   .card p { color: var(--text-2); font-size: 0.9rem; line-height: 1.75; flex: 1; }
-  .card .note { font-family: var(--mono); font-size: 0.66rem; color: var(--text-3); letter-spacing: 0.04em; }
+  .note { font-family: var(--mono); font-size: 0.66rem; color: var(--text-3); letter-spacing: 0.04em; display: block; margin-top: 24px; }
 
   /* ───────── EXPERIENCE ───────── */
   .exp-card {
@@ -501,7 +501,7 @@
   <div class="container">
     <div class="sec-head"><span class="sec-num">01</span><span class="sec-path">./projects</span></div>
     <h2 class="sec-title">Things that run.</h2>
-    <p class="sec-intro">Built for real workflows — agents, conversational systems and business tools with actual users on the other side.</p>
+    <p class="sec-intro">Built for real workflows — agents, conversational systems, data processing pipelines and business tools with actual users on the other side.</p>
 
     <!-- FLAGSHIP -->
     <article class="flagship reveal" id="openclaw">
@@ -520,9 +520,7 @@
           <div class="tags">
             <span class="tag">AI Agents</span><span class="tag">WhatsApp</span><span class="tag">Linux Ops</span><span class="tag">Persistent Memory</span><span class="tag">Custom Skills</span>
           </div>
-          <div class="proj-links">
-            <a class="proj-link" href="https://github.com/cookiecodespy/openclaw-ops" target="_blank" rel="noopener">GitHub →</a>
-          </div>
+          <span class="note">// private operations layer — walkthrough available in an interview</span>
         </div>
         <div class="demo" aria-label="Example: WhatsApp message triggers agent execution">
           <span class="demo-label">WhatsApp — 21:47</span>
@@ -563,7 +561,7 @@
         <div class="card-bar">
           <span class="win-dots"><i></i><i></i><i></i></span>
           <span>003 — habit-app</span>
-          <span class="badge badge-oss">Open source</span>
+          <span class="badge badge-pilot">Private build</span>
         </div>
         <div class="card-body">
           <h3>habit-app</h3>
@@ -573,9 +571,7 @@
           <div class="tags">
             <span class="tag">JavaScript</span><span class="tag">PWA</span><span class="tag">Product Design</span>
           </div>
-          <div class="proj-links">
-            <a class="proj-link" href="https://github.com/cookiecodespy/habit-app" target="_blank" rel="noopener">GitHub →</a>
-          </div>
+          <span class="note">// local product build — source can be shared on request</span>
         </div>
       </article>
 
