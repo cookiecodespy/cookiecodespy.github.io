@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
+<script>document.documentElement.classList.remove('no-js');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="AI & automation builder in Santiago, Chile. I build AI agent systems that run real workflows — from WhatsApp-controlled operations to conversational booking.">
@@ -115,7 +116,7 @@
   .mobile-close { position: absolute; top: 22px; right: 26px; font-size: 1.5rem; color: var(--text-2); background: none; border: none; cursor: pointer; font-family: var(--mono); }
 
   /* ───────── HERO ───────── */
-  .hero { min-height: 100vh; display: flex; align-items: center; padding: 140px 0 90px; position: relative; }
+  .hero { min-height: 100vh; display: flex; align-items: center; padding: 140px 0 90px; position: relative; overflow: hidden; }
   .hero-glow {
     position: absolute; width: 720px; height: 720px; border-radius: 50%;
     background: radial-gradient(circle, rgba(0,210,255,0.07) 0%, transparent 65%);
@@ -181,9 +182,7 @@
     display: flex; align-items: baseline; gap: 16px;
     font-family: var(--mono); margin-bottom: 14px;
   }
-  .sec-num { font-size: 0.72rem; color: var(--text-3); letter-spacing: 0.1em; }
-  .sec-path { font-size: 0.72rem; color: var(--cyan); letter-spacing: 0.12em; }
-  .sec-path::before { content: '$ cd '; color: var(--text-3); }
+  .sec-kicker { font-size: 0.7rem; color: var(--cyan); letter-spacing: 0.22em; text-transform: uppercase; }
   .sec-head::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, var(--line), transparent); align-self: center; }
   .sec-title {
     font-family: var(--display); font-weight: 800;
@@ -210,9 +209,6 @@
     padding: 13px 22px; border-bottom: 1px solid rgba(255,180,84,0.18);
     font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.1em;
   }
-  .win-dots { display: flex; gap: 6px; }
-  .win-dots i { width: 9px; height: 9px; border-radius: 50%; background: var(--text-3); opacity: 0.5; }
-  .flagship-bar .win-dots i:first-child { background: var(--amber); opacity: 1; }
   .flagship-bar .path { color: var(--text-3); }
   .flag-tag {
     margin-left: auto; color: var(--amber);
@@ -316,6 +312,7 @@
   .badge-live { color: #38bdf8; border-color: rgba(56,189,248,0.35); background: rgba(56,189,248,0.08); }
   .badge-pilot { color: var(--ok); border-color: rgba(74,222,128,0.3); background: rgba(74,222,128,0.07); }
   .badge-oss { color: var(--cyan); border-color: var(--line-strong); background: var(--cyan-dim); }
+  .badge-priv { color: var(--text-2); border-color: rgba(255,255,255,0.16); background: rgba(255,255,255,0.04); }
   .card-body { padding: 26px 28px 30px; display: flex; flex-direction: column; gap: 16px; flex: 1; }
   .card h3 { font-family: var(--display); font-weight: 700; font-size: 1.25rem; letter-spacing: -0.01em; line-height: 1.25; }
   .card p { color: var(--text-2); font-size: 0.9rem; line-height: 1.75; flex: 1; }
@@ -328,6 +325,7 @@
     transition: border-color 0.2s;
   }
   .exp-card:hover { border-color: var(--line-strong); }
+  .exp-card + .exp-card { margin-top: 22px; }
   .exp-org { font-family: var(--display); font-weight: 800; font-size: 1.3rem; }
   .exp-role { font-family: var(--mono); font-size: 0.72rem; color: var(--cyan); letter-spacing: 0.08em; margin-top: 8px; }
   .exp-period { font-family: var(--mono); font-size: 0.68rem; color: var(--text-3); letter-spacing: 0.08em; margin-top: 6px; }
@@ -355,7 +353,7 @@
   }
 
   /* ───────── SKILLS ───────── */
-  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
   .skill-group { border: 1px solid var(--line); background: var(--surface); padding: 28px; transition: border-color 0.2s; }
   .skill-group:hover { border-color: var(--line-strong); }
   .skill-group.lead { border-color: var(--line-strong); background: linear-gradient(180deg, rgba(0,210,255,0.05), transparent 60%), var(--surface); }
@@ -363,7 +361,6 @@
     font-family: var(--mono); font-size: 0.66rem; color: var(--cyan);
     letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 18px;
   }
-  .skill-label::before { content: '## '; color: var(--text-3); }
   .pills { display: flex; flex-wrap: wrap; gap: 8px; }
   .pill {
     font-family: var(--mono); font-size: 0.74rem; color: var(--text-2);
@@ -385,6 +382,8 @@
   .fact:last-child { border-bottom: none; }
   .fact b { color: var(--text); font-weight: 600; }
   .fact .k { font-family: var(--mono); color: var(--cyan); font-size: 0.78rem; margin-top: 2px; }
+  .fact a { color: var(--cyan); text-decoration: none; border-bottom: 1px solid var(--line-strong); transition: border-color 0.2s; }
+  .fact a:hover { border-bottom-color: var(--cyan); }
 
   /* ───────── CONTACT ───────── */
   .contact-desc { color: var(--text-2); font-size: 1.05rem; line-height: 1.8; max-width: 56ch; margin-bottom: 46px; }
@@ -414,6 +413,10 @@
   .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
   .reveal-1 { transition-delay: 0.1s; } .reveal-2 { transition-delay: 0.2s; }
+
+  /* sin JS, todo visible — el contenido nunca depende del observer */
+  .no-js .reveal { opacity: 1; transform: none; }
+  .no-js .term .ln { opacity: 1; }
 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -499,35 +502,33 @@
 <!-- ───────── PROJECTS ───────── -->
 <section id="projects">
   <div class="container">
-    <div class="sec-head"><span class="sec-num">01</span><span class="sec-path">./projects</span></div>
+    <div class="sec-head"><span class="sec-kicker">Projects</span></div>
     <h2 class="sec-title">Things that run.</h2>
     <p class="sec-intro">Built for real workflows — agents, conversational systems, data processing pipelines and business tools with actual users on the other side.</p>
 
     <!-- FLAGSHIP -->
     <article class="flagship reveal" id="openclaw">
       <div class="flagship-bar">
-        <span class="win-dots"><i></i><i></i><i></i></span>
-        <span class="path">~/ops/openclaw — session #312</span>
-        <span class="flag-tag">★ FLAGSHIP</span>
+        <span class="path">OpenClaw — personal operations layer</span>
+        <span class="flag-tag">Daily driver · since Feb 2026</span>
       </div>
       <div class="flagship-body">
         <div>
           <h3>OpenClaw <em>Personal Ops</em></h3>
-          <p class="flagship-sub">001 — my entire computer, controlled from WhatsApp</p>
+          <p class="flagship-sub">My entire computer, controlled from WhatsApp</p>
           <p class="flagship-desc">
-            An always-on AI operations layer for my machine. I message it like a person — <strong>it executes like a system</strong>: running commands, managing files and deployments, handling university and business workflows. Persistent memory, scheduled heartbeats, incident logging, and <strong>9 custom skills I wrote for it</strong> — agent orchestration, security review, project management. Hardened for daily use since April 2026.
+            An always-on AI operations layer for my machine. I message it like a person — <strong>it executes like a system</strong>: running commands, managing files and deployments, handling university and business workflows. Persistent memory, scheduled heartbeats, incident logging, and <strong>9 custom skills I wrote for it</strong> — agent orchestration, security review, project management. I started building my own assistant in January 2026 (Alfred OS) and moved to OpenClaw as it matured — my hardened daily driver since February 2026.
           </p>
           <div class="tags">
             <span class="tag">AI Agents</span><span class="tag">WhatsApp</span><span class="tag">Linux Ops</span><span class="tag">Persistent Memory</span><span class="tag">Custom Skills</span>
           </div>
-          <span class="note">// private operations layer — walkthrough available in an interview</span>
+          <span class="note">Private operations layer — walkthrough available in an interview.</span>
         </div>
         <div class="demo" aria-label="Example: WhatsApp message triggers agent execution">
           <span class="demo-label">WhatsApp — 21:47</span>
           <div class="bubble"><span class="who">me</span>check the server and back up the database</div>
           <div class="term">
-            <span class="ln"><span class="cmd">$</span> openclaw run <span class="dim">--task "server check + db backup"</span></span>
-            <span class="ln"><span class="ok">✓</span> ssh bluebox-r715 — health OK <span class="dim">(cpu 12% · disk 61%)</span></span>
+            <span class="ln"><span class="ok">✓</span> ssh lab server — health OK <span class="dim">(cpu 12% · disk 61%)</span></span>
             <span class="ln"><span class="ok">✓</span> pg_dump → backups/2026-06-09.sql.gz</span>
             <span class="ln"><span class="ok">✓</span> report sent to WhatsApp <span class="dim">(14s)</span></span>
           </div>
@@ -541,8 +542,7 @@
 
       <article class="card reveal">
         <div class="card-bar">
-          <span class="win-dots"><i></i><i></i><i></i></span>
-          <span>002 — barbershop-ai</span>
+          <span>barbershop-ai</span>
           <span class="badge badge-pilot">Pilot · in production</span>
         </div>
         <div class="card-body">
@@ -559,8 +559,26 @@
 
       <article class="card reveal reveal-1">
         <div class="card-bar">
-          <span class="win-dots"><i></i><i></i><i></i></span>
-          <span>003 — habit-app</span>
+          <span>spanish-news-nlp-pipeline</span>
+          <span class="badge badge-oss">Open source</span>
+        </div>
+        <div class="card-body">
+          <h3>Spanish News NLP Pipeline</h3>
+          <p>
+            End-to-end NLP pipeline over Spanish-language news: RSS collection, accent-aware cleaning and dedup, a weak-supervised 6-class dataset with leakage-safe stratified splits, baseline classifiers and honest macro metrics — <strong>F1 0.43 against a 0.05 majority floor</strong>, fully reproducible from a committed snapshot. Public evidence of how I work with data.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">Weak Supervision</span><span class="tag">Reproducible</span>
+          </div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/cookiecodespy/spanish-news-nlp-pipeline" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-bar">
+          <span>habit-app</span>
           <span class="badge badge-oss">Open source</span>
         </div>
         <div class="card-body">
@@ -577,10 +595,26 @@
         </div>
       </article>
 
+      <article class="card reveal reveal-1">
+        <div class="card-bar">
+          <span>cash-flow</span>
+          <span class="badge badge-priv">Private build</span>
+        </div>
+        <div class="card-body">
+          <h3>Cash Flow</h3>
+          <p>
+            Personal finance dashboard for Chilean bank statements: CSV/XLSX ingestion, normalization and dedup, automatic categorization, and transfer detection so money moved between own accounts never counts as income or expense. Local-first by design — bank data never leaves the machine. Unit-tested money logic.
+          </p>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Data Ingestion</span><span class="tag">Vitest</span>
+          </div>
+          <span class="note">Private build — source available on request.</span>
+        </div>
+      </article>
+
       <article class="card reveal">
         <div class="card-bar">
-          <span class="win-dots"><i></i><i></i><i></i></span>
-          <span>004 — bluebox-web</span>
+          <span>bluebox-web</span>
           <span class="badge badge-live">Live</span>
         </div>
         <div class="card-body">
@@ -600,8 +634,7 @@
 
       <article class="card reveal reveal-1">
         <div class="card-bar">
-          <span class="win-dots"><i></i><i></i><i></i></span>
-          <span>005 — ez-logistics</span>
+          <span>ez-logistics.cl</span>
           <span class="badge badge-live">Live</span>
         </div>
         <div class="card-body">
@@ -625,7 +658,7 @@
 <!-- ───────── ABOUT ───────── -->
 <section id="about">
   <div class="container">
-    <div class="sec-head"><span class="sec-num">02</span><span class="sec-path">./about</span></div>
+    <div class="sec-head"><span class="sec-kicker">About</span></div>
     <h2 class="sec-title">Background</h2>
     <div class="about-grid">
       <div class="about-text reveal">
@@ -643,6 +676,8 @@
         <div class="fact"><span class="k">›</span><span><b>Location:</b> Santiago, Chile</span></div>
         <div class="fact"><span class="k">›</span><span><b>High school:</b> Fremont HS, Sunnyvale, CA — ~7 years in the US</span></div>
         <div class="fact"><span class="k">›</span><span><b>University:</b> Computer Engineering, Universidad San Sebastián</span></div>
+        <div class="fact"><span class="k">›</span><span><b>Certification:</b> Cisco IT Essentials — <a href="https://www.credly.com/badges/a2f54417-2ce5-4580-9d05-7e8fa212b17f/public_url" target="_blank" rel="noopener">verified on Credly ↗</a></span></div>
+        <div class="fact"><span class="k">›</span><span><b>Homelab:</b> Dell PowerEdge R715 + an RTX 4060 Ti workstation — I run open-weight LLMs locally (Ollama) and self-host experiments, prototyping offline before anything touches a paid API.</span></div>
         <div class="fact"><span class="k">›</span><span><b>Self-study:</b> NVIDIA, Stanford, MIT, Harvard open courseware</span></div>
         <div class="fact"><span class="k">›</span><span><b>Languages:</b> Spanish (native) · English (fluent)</span></div>
         <div class="fact"><span class="k">›</span><span><b>Focus:</b> AI agents, automation systems, business tooling</span></div>
@@ -654,7 +689,7 @@
 <!-- ───────── EXPERIENCE ───────── -->
 <section id="experience">
   <div class="container">
-    <div class="sec-head"><span class="sec-num">03</span><span class="sec-path">./experience</span></div>
+    <div class="sec-head"><span class="sec-kicker">Experience</span></div>
     <h2 class="sec-title">Where I've worked</h2>
     <div class="exp-card reveal">
       <div>
@@ -667,7 +702,23 @@
           BlueBox is a small family tech operation where I handle software for connected businesses — mostly logistics and warehouse-adjacent. The work is practical: <strong>corporate websites, internal operational tools, and automation</strong>.
         </p>
         <p>
-          Delivered: the BlueBox and EZ Logistics websites, an <strong>internal WMS control tower</strong> (inventory tracking and operational visibility for a real warehouse), and smaller tools supporting day-to-day operations. I handle requirements, design, build and deployment myself — I move fast and own the decisions.
+          Delivered: the BlueBox and EZ Logistics websites, the <strong>WMS order-intake automation prototype</strong> (full story below), and smaller tools supporting day-to-day operations. I handle requirements, design, build and deployment myself — I move fast and own the decisions.
+        </p>
+      </div>
+    </div>
+
+    <div class="exp-card reveal reveal-1">
+      <div>
+        <div class="exp-org">EZ Logistics</div>
+        <div class="exp-role">Logistics Operator → Automation Prototype</div>
+        <div class="exp-period">pre-university · 1-month return, early 2026</div>
+      </div>
+      <div class="exp-body">
+        <p>
+          I started on the warehouse floor — the kind of job where you see operational waste firsthand. Coming back for a month in early 2026, I found the team re-typing every client order from PDF into the WMS by hand, order by order.
+        </p>
+        <p>
+          So I built a working prototype to close the gap: <strong>PDF parsing into structured data, a canonical Excel layer, and a supervised RPA bot</strong> that loads orders into the WMS with line-by-line validation — activation stays blocked on any mismatch. BlueBox then handed me their full WMS codebase (~470 PHP files) to design the API integration; the project is now continued by BlueBox's senior WMS engineer.
         </p>
       </div>
     </div>
@@ -677,7 +728,7 @@
 <!-- ───────── NOW ───────── -->
 <section id="now">
   <div class="container">
-    <div class="sec-head"><span class="sec-num">04</span><span class="sec-path">./now</span></div>
+    <div class="sec-head"><span class="sec-kicker">Now</span></div>
     <h2 class="sec-title">What I'm working on</h2>
     <div class="now-grid">
       <div class="now-text reveal">
@@ -702,13 +753,19 @@
 <!-- ───────── SKILLS ───────── -->
 <section id="skills">
   <div class="container">
-    <div class="sec-head"><span class="sec-num">05</span><span class="sec-path">./skills</span></div>
+    <div class="sec-head"><span class="sec-kicker">Skills</span></div>
     <h2 class="sec-title">Technical stack</h2>
     <div class="skills-grid">
       <div class="skill-group lead reveal">
         <div class="skill-label">AI &amp; Automation</div>
         <div class="pills">
-          <span class="pill">AI Agents</span><span class="pill">LLM APIs</span><span class="pill">Prompt Engineering</span><span class="pill">Workflow Automation</span><span class="pill">Data Processing</span><span class="pill">Claude Code</span><span class="pill">OpenClaw</span>
+          <span class="pill">AI Agents</span><span class="pill">LLM APIs</span><span class="pill">Prompt Engineering</span><span class="pill">Workflow Automation</span><span class="pill">Claude Code</span><span class="pill">Codex</span><span class="pill">OpenClaw</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-1">
+        <div class="skill-label">ML &amp; Data</div>
+        <div class="pills">
+          <span class="pill">scikit-learn</span><span class="pill">pandas</span><span class="pill">Text Classification</span><span class="pill">Local LLMs — Ollama</span><span class="pill">Gemma 4 12B · Qwen 3 14B · DeepSeek-R1 14B · Llama 3.2 Vision</span><span class="pill">Supabase / Postgres</span><span class="pill">Cloudflare</span>
         </div>
       </div>
       <div class="skill-group reveal reveal-1">
@@ -720,7 +777,7 @@
       <div class="skill-group reveal reveal-2">
         <div class="skill-label">Tools &amp; Systems</div>
         <div class="pills">
-          <span class="pill">Git / GitHub</span><span class="pill">Linux</span><span class="pill">Docker</span><span class="pill">REST APIs</span><span class="pill">Node.js</span><span class="pill">Next.js</span>
+          <span class="pill">Git / GitHub</span><span class="pill">Linux</span><span class="pill">Docker</span><span class="pill">Dell R715 homelab</span><span class="pill">RTX 4060 Ti</span><span class="pill">REST APIs</span><span class="pill">Node.js</span><span class="pill">Next.js</span>
         </div>
       </div>
     </div>
@@ -730,7 +787,7 @@
 <!-- ───────── CONTACT ───────── -->
 <section id="contact">
   <div class="container">
-    <div class="sec-head"><span class="sec-num">06</span><span class="sec-path">./contact</span></div>
+    <div class="sec-head"><span class="sec-kicker">Contact</span></div>
     <h2 class="sec-title">Get in touch</h2>
     <p class="contact-desc reveal">
       If you're working on something in AI, automation or software — and you need someone who can actually build it — I'm open to the conversation.
