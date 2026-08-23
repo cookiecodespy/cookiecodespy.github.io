@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sastrería Ugarte — Propuesta web conceptual</title>
+  <meta name="description" content="Propuesta conceptual no oficial para Sastrería Ugarte: sastrería a medida, novios, camisas y oficio artesanal en Santiago de Chile." />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#11100e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #11100e;
+      --paper: #f2eee7;
+      --paper-2: #e7e0d5;
+      --warm: #b89b72;
+      --warm-2: #d4c2a4;
+      --line: rgba(17,16,14,.16);
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "Manrope", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .topnote {
+      padding: 8px 20px;
+      background: #d9ccb7;
+      border-bottom: 1px solid rgba(17,16,14,.12);
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    header {
+      position: absolute;
+      z-index: 20;
+      top: 33px;
+      left: 0;
+      right: 0;
+      color: #fff;
+    }
+    .nav {
+      width: min(1240px, calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,.28);
+    }
+    .brand { display: inline-flex; flex-direction: column; line-height: 1; }
+    .brand-main { font-family: var(--serif); font-size: 38px; letter-spacing: .16em; font-weight: 600; }
+    .brand-sub { margin-top: 4px; font-size: 8px; letter-spacing: .42em; text-transform: uppercase; opacity: .82; }
+
+    .navlinks { display: flex; align-items: center; gap: 28px; font-size: 12px; letter-spacing: .04em; }
+    .navlinks a { opacity: .88; transition: opacity .2s ease; }
+    .navlinks a:hover { opacity: 1; }
+    .nav-cta {
+      padding: 11px 16px;
+      border: 1px solid rgba(255,255,255,.58);
+      border-radius: 999px;
+    }
+    .menu-btn { display: none; background: none; border: 0; color: #fff; font: inherit; font-size: 20px; cursor: pointer; }
+
+    .hero {
+      min-height: 92vh;
+      color: #fff;
+      display: grid;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(15,14,12,.78) 0%, rgba(15,14,12,.48) 52%, rgba(15,14,12,.30) 100%),
+        linear-gradient(0deg, rgba(15,14,12,.46), transparent 42%),
+        url("https://images.pexels.com/photos/6766292/pexels-photo-6766292.jpeg?auto=compress&cs=tinysrgb&w=2200") center 32%/cover no-repeat;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at 72% 32%, transparent 0 18%, rgba(0,0,0,.10) 70%);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      width: min(1240px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 225px 0 78px;
+    }
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      opacity: .82;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .eyebrow::before { content: ""; width: 42px; height: 1px; background: currentColor; opacity: .7; }
+    h1 {
+      margin: 20px 0 24px;
+      max-width: 910px;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(58px, 7.1vw, 112px);
+      line-height: .88;
+      letter-spacing: -.035em;
+    }
+    .hero-copy { max-width: 590px; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.84); }
+    .hero-actions { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      min-height: 48px;
+      padding: 0 20px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      transition: transform .2s ease, background .2s ease, color .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-light { background: #f3eee6; color: #15130f; }
+    .btn-ghost { border-color: rgba(255,255,255,.46); color: #fff; }
+
+    .trustbar { background: var(--ink); color: #fff; }
+    .trustgrid {
+      width: min(1240px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .trustitem { padding: 24px 26px; border-right: 1px solid rgba(255,255,255,.13); }
+    .trustitem:first-child { padding-left: 0; }
+    .trustitem:last-child { border-right: 0; }
+    .trust-kicker { display: block; font-family: var(--serif); font-size: 29px; line-height: 1; }
+    .trust-text { margin-top: 6px; display: block; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.58); }
+
+    .section { padding: 112px 0; }
+    .wrap { width: min(1240px, calc(100% - 40px)); margin: 0 auto; }
+    .section-head { display: grid; grid-template-columns: 1fr 1.25fr; gap: 72px; align-items: end; margin-bottom: 58px; }
+    .kicker { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; opacity: .58; }
+    h2 { margin: 10px 0 0; font-family: var(--serif); font-size: clamp(46px, 5vw, 78px); font-weight: 500; line-height: .95; letter-spacing: -.02em; }
+    .section-lead { margin: 0; font-size: 14px; line-height: 1.8; max-width: 570px; opacity: .72; }
+
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); }
+    .card { min-height: 320px; padding: 30px 22px 26px; border-right: 1px solid var(--line); display: flex; flex-direction: column; justify-content: space-between; }
+    .card:first-child { padding-left: 0; }
+    .card:last-child { border-right: 0; }
+    .card-num { font-family: var(--serif); font-style: italic; font-size: 18px; opacity: .45; }
+    .card h3 { margin: 0 0 14px; font-family: var(--serif); font-size: 34px; font-weight: 500; line-height: 1; }
+    .card p { margin: 0; font-size: 12px; line-height: 1.75; opacity: .66; }
+    .card-link { margin-top: 18px; font-size: 11px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+
+    .craft { background: var(--paper-2); }
+    .craft-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 74px; align-items: stretch; }
+    .craft-image {
+      min-height: 690px;
+      background:
+        linear-gradient(180deg, transparent, rgba(0,0,0,.10)),
+        url("https://images.pexels.com/photos/6764943/pexels-photo-6764943.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover no-repeat;
+    }
+    .craft-copy { padding: 28px 0; display: flex; flex-direction: column; justify-content: center; }
+    .craft-copy h2 { max-width: 520px; }
+    .craft-copy > p { max-width: 520px; margin: 26px 0 36px; font-size: 14px; line-height: 1.85; opacity: .7; }
+    .steps { border-top: 1px solid var(--line); }
+    .step { display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+    .step span:first-child { font-family: var(--serif); font-style: italic; opacity: .5; }
+    .step strong { font-family: var(--serif); font-size: 23px; font-weight: 500; }
+    .step p { margin: 4px 0 0; font-size: 11px; line-height: 1.6; opacity: .62; }
+
+    .legacy { background: #11100e; color: #fff; overflow: hidden; }
+    .legacy-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; align-items: center; }
+    .year { font-family: var(--serif); font-size: clamp(120px, 17vw, 260px); line-height: .65; letter-spacing: -.06em; color: #c6ad85; }
+    .legacy h2 { max-width: 630px; }
+    .legacy p { max-width: 600px; margin: 26px 0 0; color: rgba(255,255,255,.66); font-size: 14px; line-height: 1.85; }
+
+    .weddings { padding-bottom: 0; }
+    .wedding-panel {
+      min-height: 680px;
+      margin-top: 54px;
+      position: relative;
+      display: flex;
+      align-items: end;
+      color: #fff;
+      background:
+        linear-gradient(90deg, rgba(10,10,9,.66), rgba(10,10,9,.14)),
+        url("https://images.pexels.com/photos/6765526/pexels-photo-6765526.jpeg?auto=compress&cs=tinysrgb&w=2200") center/cover no-repeat;
+    }
+    .wedding-content { padding: 62px; max-width: 670px; }
+    .wedding-content h3 { margin: 8px 0 16px; font-family: var(--serif); font-size: clamp(44px, 5vw, 76px); font-weight: 500; line-height: .94; }
+    .wedding-content p { margin: 0 0 24px; font-size: 13px; line-height: 1.8; color: rgba(255,255,255,.76); }
+
+    .visit { display: grid; grid-template-columns: 1fr 1fr; min-height: 610px; }
+    .visit-photo {
+      background: url("https://images.pexels.com/photos/6765655/pexels-photo-6765655.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover no-repeat;
+    }
+    .visit-copy { background: #cab89b; padding: 78px; display: flex; flex-direction: column; justify-content: center; }
+    .visit-copy h2 { max-width: 550px; }
+    .address { margin: 28px 0 32px; font-family: var(--serif); font-size: 27px; line-height: 1.2; }
+    .visit-copy small { display: block; max-width: 560px; font-size: 11px; line-height: 1.7; opacity: .64; }
+    .visit-actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn-dark { background: var(--ink); color: #fff; }
+    .btn-outline-dark { border-color: rgba(17,16,14,.38); }
+
+    footer { background: #0b0b0a; color: #fff; padding: 50px 0 24px; }
+    .footer-grid { width: min(1240px, calc(100% - 40px)); margin: 0 auto; display: grid; grid-template-columns: 1.3fr .7fr .7fr; gap: 55px; }
+    .footer-brand .brand-main { font-size: 43px; }
+    .footer-copy { margin-top: 17px; max-width: 460px; color: rgba(255,255,255,.52); font-size: 11px; line-height: 1.7; }
+    .footer-title { margin-bottom: 14px; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.4); }
+    .footer-links { display: grid; gap: 10px; font-size: 12px; color: rgba(255,255,255,.78); }
+    .footer-bottom {
+      width: min(1240px, calc(100% - 40px));
+      margin: 38px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 9px;
+      line-height: 1.55;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.36);
+    }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.on { opacity: 1; transform: none; }
+
+    @media (max-width: 900px) {
+      header { top: 50px; }
+      .topnote { font-size: 9px; line-height: 1.4; }
+      .nav { min-height: 76px; }
+      .brand-main { font-size: 30px; }
+      .navlinks { display: none; position: absolute; top: 126px; left: 20px; right: 20px; padding: 22px; background: rgba(17,16,14,.96); flex-direction: column; align-items: stretch; border: 1px solid rgba(255,255,255,.13); }
+      .navlinks.open { display: flex; }
+      .menu-btn { display: block; }
+      .hero { min-height: 86vh; background-position: 56% 32%; }
+      .hero-inner { padding-top: 195px; padding-bottom: 48px; }
+      h1 { font-size: clamp(52px, 15vw, 78px); max-width: 720px; }
+      .trustgrid { grid-template-columns: 1fr; }
+      .trustitem, .trustitem:first-child { padding: 20px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
+      .trustitem:last-child { border-bottom: 0; }
+      .section { padding: 78px 0; }
+      .section-head, .craft-grid, .legacy-grid, .visit, .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .card { border-bottom: 1px solid var(--line); min-height: 260px; }
+      .card:nth-child(2) { border-right: 0; }
+      .card:nth-child(3) { padding-left: 0; }
+      .craft-image { min-height: 520px; }
+      .legacy-grid { gap: 52px; }
+      .year { font-size: clamp(120px, 35vw, 190px); }
+      .wedding-panel { min-height: 590px; background-position: 60% center; }
+      .wedding-content { padding: 38px; }
+      .visit-photo { min-height: 480px; }
+      .visit-copy { padding: 58px 28px; }
+      .footer-grid { gap: 34px; }
+      .footer-bottom { flex-direction: column; }
+    }
+
+    @media (max-width: 560px) {
+      .topnote { padding-inline: 12px; }
+      .nav, .hero-inner, .wrap, .trustgrid, .footer-grid, .footer-bottom { width: min(100% - 28px, 1240px); }
+      .hero { min-height: 810px; background-position: 61% center; }
+      .hero-inner { padding-bottom: 38px; }
+      h1 { font-size: 58px; }
+      .hero-copy { font-size: 13px; }
+      .hero-actions .btn { flex: 1 1 100%; }
+      .cards { grid-template-columns: 1fr; }
+      .card, .card:nth-child(3) { padding: 25px 0; border-right: 0; min-height: 210px; }
+      .section-head { gap: 28px; }
+      .craft-image { min-height: 470px; }
+      .wedding-panel { min-height: 650px; }
+      .wedding-content { padding: 28px 22px; }
+      .visit-photo { min-height: 420px; }
+      .address { font-size: 24px; }
+      .visit-actions .btn { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topnote">Propuesta conceptual no oficial · Demo comercial · No corresponde al sitio oficial de Sastrería Ugarte</div>
+
+  <header>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio" class="brand" aria-label="Sastrería Ugarte — Inicio">
+        <span class="brand-main">UGARTE</span>
+        <span class="brand-sub">Sastrería · 1945</span>
+      </a>
+      <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="navlinks">
+        <a href="#servicios">Sastrería</a>
+        <a href="#oficio">El oficio</a>
+        <a href="#historia">Historia</a>
+        <a href="#novios">Novios</a>
+        <a href="#visitanos" class="nav-cta">Visítanos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner reveal">
+        <div class="eyebrow">Desde 1945 · Santiago de Chile</div>
+        <h1>El traje empieza<br>por la persona.</h1>
+        <p class="hero-copy">Una propuesta digital para una casa de sastrería con oficio, asesoría personal y prendas construidas a medida. Tradición sin quedarse en el pasado.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="https://www.instagram.com/sastreria_ugarte/" target="_blank" rel="noopener">Contactar por Instagram ↗</a>
+          <a class="btn btn-ghost" href="#oficio">Conocer el proceso</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="trustbar">
+      <div class="trustgrid">
+        <div class="trustitem"><span class="trust-kicker">+80 años</span><span class="trust-text">de oficio y trayectoria</span></div>
+        <div class="trustitem"><span class="trust-kicker">A medida</span><span class="trust-text">con asesoría personalizada</span></div>
+        <div class="trustitem"><span class="trust-kicker">Vitacura</span><span class="trust-text">Alonso de Córdova 2806</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="servicios">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Qué hacemos</div>
+            <h2>Vestir bien,<br>sin fórmulas.</h2>
+          </div>
+          <p class="section-lead">Cada prenda parte desde la conversación: ocasión, estilo, proporciones, telas y uso real. El objetivo no es seguir una moda, sino construir una prenda que se sienta propia.</p>
+        </div>
+
+        <div class="cards reveal">
+          <article class="card">
+            <span class="card-num">01</span>
+            <div><h3>Trajes<br>a medida</h3><p>Propuesta de calce, estructura, solapa, botones, forrería y terminaciones de acuerdo con la persona y la ocasión.</p><a class="card-link" href="#visitanos">Consultar disponibilidad</a></div>
+          </article>
+          <article class="card">
+            <span class="card-num">02</span>
+            <div><h3>Novios y<br>ceremonias</h3><p>Asesoría integral para el novio y su entorno, buscando elegancia, coherencia y una prenda que también pueda vivir después del matrimonio.</p><a class="card-link" href="#novios">Ver sección novios</a></div>
+          </article>
+          <article class="card">
+            <span class="card-num">03</span>
+            <div><h3>Camisas<br>a medida</h3><p>Cuello, puño, largo, fit y detalles ajustados a cada cliente, con una lógica de comodidad y uso cotidiano.</p><a class="card-link" href="#visitanos">Agendar visita</a></div>
+          </article>
+          <article class="card">
+            <span class="card-num">04</span>
+            <div><h3>Arreglos y<br>transformaciones</h3><p>Ajustes y composturas para recuperar el calce y prolongar la vida útil de prendas que vale la pena conservar.</p><a class="card-link" href="#visitanos">Traer una prenda</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section craft" id="oficio">
+      <div class="wrap craft-grid">
+        <div class="craft-image reveal" role="img" aria-label="Sastre trabajando sobre un patrón"></div>
+        <div class="craft-copy reveal">
+          <div class="kicker">El oficio</div>
+          <h2>Precisión que se nota sin tener que explicarla.</h2>
+          <p>Una buena prenda se reconoce en cómo cae, cómo acompaña el cuerpo y cómo envejece. El proceso mezcla observación, técnica y decisiones pequeñas que terminan definiendo el resultado completo.</p>
+          <div class="steps">
+            <div class="step"><span>01</span><div><strong>Conversación</strong><p>Entender uso, contexto, estilo personal y expectativas.</p></div></div>
+            <div class="step"><span>02</span><div><strong>Medidas y proporciones</strong><p>Definir el punto de partida técnico y el calce buscado.</p></div></div>
+            <div class="step"><span>03</span><div><strong>Telas y detalles</strong><p>Seleccionar material, estructura y terminaciones.</p></div></div>
+            <div class="step"><span>04</span><div><strong>Pruebas y ajuste final</strong><p>Refinar la prenda hasta que el conjunto se sienta natural.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section legacy" id="historia">
+      <div class="wrap legacy-grid reveal">
+        <div class="year">1945</div>
+        <div>
+          <div class="kicker" style="color:rgba(255,255,255,.5)">Tradición viva</div>
+          <h2>Un oficio familiar que cruza generaciones.</h2>
+          <p>La historia pública de Sastrería Ugarte se remonta a 1945. Esta propuesta visual pone esa trayectoria en el centro: no como nostalgia, sino como prueba de continuidad, conocimiento y confianza acumulada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section weddings" id="novios">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Novios</div>
+            <h2>Un traje para ese día.<br>Y para muchos más.</h2>
+          </div>
+          <p class="section-lead">La sastrería para matrimonios puede ser ceremonial sin convertirse en disfraz. La propuesta: equilibrar presencia, personalidad, código del evento y versatilidad futura.</p>
+        </div>
+      </div>
+      <div class="wedding-panel reveal">
+        <div class="wedding-content">
+          <div class="kicker" style="color:rgba(255,255,255,.72)">Asesoría personalizada</div>
+          <h3>Elegancia sin ruido.</h3>
+          <p>Desde un traje clásico hasta una combinación más contemporánea, el punto de partida es el mismo: que quien lo vista se reconozca en él.</p>
+          <a class="btn btn-light" href="https://www.instagram.com/sastreria_ugarte/" target="_blank" rel="noopener">Conversar por Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visitanos">
+      <div class="visit-photo reveal" role="img" aria-label="Sastre ajustando un traje en un maniquí"></div>
+      <div class="visit-copy reveal">
+        <div class="kicker">Visítanos</div>
+        <h2>La experiencia empieza en persona.</h2>
+        <div class="address">Alonso de Córdova 2806<br>Vitacura, Santiago de Chile</div>
+        <small>La dirección se tomó de la información pública actualmente visible en el perfil de Instagram. Antes de publicar un sitio oficial, conviene validar horarios, teléfonos, servicios y datos de contacto directamente con el negocio.</small>
+        <div class="visit-actions">
+          <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Alonso+de+C%C3%B3rdova+2806+Vitacura+Santiago+Chile" target="_blank" rel="noopener">Abrir en Maps ↗</a>
+          <a class="btn btn-outline-dark" href="https://www.instagram.com/sastreria_ugarte/" target="_blank" rel="noopener">Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-main">UGARTE</span><span class="brand-sub">Sastrería · 1945</span></div>
+        <p class="footer-copy">Esta es una propuesta conceptual no oficial creada como demostración comercial. No ha sido encargada ni aprobada por Sastrería Ugarte.</p>
+      </div>
+      <div>
+        <div class="footer-title">Explorar</div>
+        <div class="footer-links"><a href="#servicios">Servicios</a><a href="#oficio">El oficio</a><a href="#historia">Historia</a><a href="#novios">Novios</a></div>
+      </div>
+      <div>
+        <div class="footer-title">Contacto público</div>
+        <div class="footer-links"><a href="https://www.instagram.com/sastreria_ugarte/" target="_blank" rel="noopener">@sastreria_ugarte ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Alonso+de+C%C3%B3rdova+2806+Vitacura+Santiago+Chile" target="_blank" rel="noopener">Alonso de Córdova 2806 ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Demo conceptual · No indexable · Sin formularios de captura de datos</span>
+      <span>Fotografías de demostración: Tima Miroshnichenko / Pexels · Reemplazar por material oficial antes de producción</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.navlinks');
+    menuBtn?.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.textContent = open ? '×' : '☰';
+    });
+    navLinks?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuBtn?.setAttribute('aria-expanded', 'false');
+      if (menuBtn) menuBtn.textContent = '☰';
+    }));
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('on');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
