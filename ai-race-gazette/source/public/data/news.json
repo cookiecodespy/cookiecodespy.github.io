@@ -1,8 +1,79 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T13:28:23.959511Z",
+  "updatedAt": "2026-10-07T16:14:00.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "anthropic-cyber-verification",
+      "eventKey": "anthropic-cyber-verification",
+      "date": "2026-10-06",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Cyber Verification Program",
+      "title": "Anthropic amplía el acceso para equipos de seguridad",
+      "summary": "El programa reúne tres niveles con requisitos diferentes para profesionales y organizaciones.",
+      "tags": [
+        "Seguridad",
+        "Productos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/news/cyber-verification-program",
+        "publishedAt": "2026-10-06"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "El 6 de octubre Anthropic anunció una ampliación de su Cyber Verification Program. El programa distingue Defense Access, Red Team Access y Specialized Access.",
+        "Cada nivel aplica requisitos y controles diferentes. El acceso para pruebas adversariales exige autorización sobre los sistemas evaluados; las capacidades especializadas se reservan a un conjunto limitado de organizaciones verificadas.",
+        "Para los lectores que siguen el lanzamiento de modelos, este cambio es una noticia propia: amplía las condiciones de uso de herramientas existentes, sin ser por ello un modelo nuevo."
+      ],
+      "keyPoints": [
+        "Tres niveles de acceso.",
+        "Requisitos según tipo de trabajo."
+      ],
+      "analysis": "La disponibilidad de una capacidad depende también de quién puede utilizarla y bajo qué condiciones.",
+      "watch": "Criterios de admisión y evolución del programa.",
+      "announcedAt": "2026-10-06"
+    },
+    {
+      "id": "claude-google-workspace",
+      "date": "2026-10-06",
+      "company": "Anthropic",
+      "title": "Claude entra en Docs, Sheets y Slides desde Google Workspace",
+      "summary": "El complemento lleva la asistencia de Claude al documento abierto y está en beta para planes de pago.",
+      "tags": [
+        "Productos",
+        "Productividad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA.",
+      "source": {
+        "name": "Anthropic · Claude",
+        "url": "https://claude.com/es/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "publishedAt": "2026-10-06"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Anthropic presenta Claude para Google Workspace como un complemento que funciona dentro de Docs, Sheets y Slides. La beta está disponible en planes de pago y se instala desde Google Workspace Marketplace.",
+        "El acceso se realiza desde el menú de extensiones de un archivo. El valor del formato reside en trabajar con el documento abierto: consultar su contenido y colaborar sobre el trabajo sin trasladar cada fragmento a otra ventana.",
+        "Para un equipo, la adopción depende también de los permisos y de las reglas de administración de Workspace. El anuncio describe disponibilidad del producto, pero no garantiza que cualquier cuenta corporativa pueda instalarlo sin intervención de su administrador."
+      ],
+      "keyPoints": [
+        "Integración con Docs, Sheets y Slides.",
+        "Beta para planes de pago.",
+        "Instalación mediante Google Workspace Marketplace."
+      ],
+      "analysis": "La carrera de los asistentes se acerca al lugar donde se hace el trabajo. La integración en documentos puede reducir pasos y mejorar el contexto disponible, aunque su utilidad final depende de la calidad de las sugerencias y del control sobre las modificaciones.",
+      "watch": "Disponibilidad para cada organización y comportamiento del complemento en documentos reales.",
+      "eventKey": "claude-google-workspace",
+      "coveredAt": "2026-10-07",
+      "product": "Claude para Workspace",
+      "announcedAt": "2026-10-06"
+    },
     {
       "id": "mistral-large-4",
       "date": "2026-10-06",
@@ -83,6 +154,41 @@
       "announcedAt": "2026-10-06"
     },
     {
+      "id": "gemini-4-argon",
+      "eventKey": "gemini-4-argon",
+      "date": "2026-09-30",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Gemini 4 Argon",
+      "title": "Gemini 4 Argon se estrena con acceso gradual para defensores",
+      "summary": "Google anuncia su nuevo modelo y comienza con un grupo de usuarios de confianza.",
+      "tags": [
+        "Modelos",
+        "Seguridad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "publishedAt": "2026-09-30"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Google anunció Gemini 4 Argon el 30 de septiembre. La primera fase de acceso se dirige a defensores de ciberseguridad de confianza mediante Fairwind.",
+        "La empresa lo orienta a razonamiento y flujos profesionales largos, incluyendo programación y defensa. El anuncio no equivale a disponibilidad general para cualquier usuario.",
+        "Al evaluar una herramienta de acceso limitado, es útil separar capacidades anunciadas de acceso efectivo. Los equipos necesitan comprobar requisitos, condiciones y fechas de ampliación."
+      ],
+      "keyPoints": [
+        "Anuncio del 30 de septiembre.",
+        "Primera fase mediante Fairwind."
+      ],
+      "analysis": "La carrera de modelos incluye tanto capacidad como distribución. Un producto restringido tiene un impacto distinto de una herramienta abierta a todos.",
+      "watch": "Ampliación del acceso y evaluaciones independientes.",
+      "announcedAt": "2026-09-30"
+    },
+    {
       "id": "decisions-api",
       "date": "2026-09-29",
       "company": "OpenAI",
@@ -133,40 +239,644 @@
       "announcedAt": "2026-09-29"
     },
     {
-      "id": "claude-google-workspace",
-      "date": "2026-10-06",
+      "id": "dots-devday",
+      "eventKey": "dots-devday",
+      "date": "2026-09-29",
+      "coveredAt": "2026-10-07",
+      "company": "OpenAI",
+      "product": "Dots",
+      "title": "Dots propone agentes para tareas continuas",
+      "summary": "OpenAI anuncia agentes que pueden encargarse de trabajo persistente.",
+      "tags": [
+        "Agentes",
+        "Productos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "OpenAI · anuncio oficial",
+        "url": "https://openai.com/index/devday-2026-recap/",
+        "publishedAt": "2026-09-29"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "OpenAI presentó Dots en DevDay el 29 de septiembre. Los describe como agentes que mantienen responsabilidades continuas.",
+        "El anuncio limita su acceso por plan, mercado y configuración del administrador. Antes de delegar una tarea recurrente, corresponde definir qué puede hacer el agente y cómo se revisan sus resultados."
+      ],
+      "keyPoints": [
+        "Agentes con responsabilidades continuas.",
+        "Acceso sujeto a elegibilidad."
+      ],
+      "analysis": "El seguimiento y la revisión son parte de una tarea delegada: automatizar exige criterios claros de éxito.",
+      "watch": "Disponibilidad y control de tareas delegadas.",
+      "announcedAt": "2026-09-29"
+    },
+    {
+      "id": "gpt-6-1-sol-devday",
+      "eventKey": "gpt-6-1-sol-devday",
+      "date": "2026-09-29",
+      "coveredAt": "2026-10-07",
+      "company": "OpenAI",
+      "product": "GPT-6.1 Sol",
+      "title": "GPT-6.1 Sol llega como actualización del modelo de trabajo de OpenAI",
+      "summary": "OpenAI presenta la versión en DevDay para programación, uso de herramientas y trabajo profesional.",
+      "tags": [
+        "Modelos",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "OpenAI · anuncio oficial",
+        "url": "https://openai.com/index/devday-2026-recap/",
+        "publishedAt": "2026-09-29"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "OpenAI presentó GPT-6.1 Sol el 29 de septiembre en DevDay, como actualización de GPT-6 Sol. El resumen oficial indica disponibilidad en la API y planes de pago de ChatGPT.",
+        "La empresa destaca programación y trabajo profesional. Para decidir una migración, conviene comparar tareas reales, calidad, reintentos y costo total."
+      ],
+      "keyPoints": [
+        "Presentado en DevDay.",
+        "Disponible en API y planes de pago."
+      ],
+      "analysis": "Una nueva versión merece una evaluación del flujo de trabajo completo, más allá del titular del lanzamiento.",
+      "watch": "Pruebas comparables con la versión anterior.",
+      "announcedAt": "2026-09-29"
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "eventKey": "claude-sonnet-5-5",
+      "date": "2026-09-28",
+      "coveredAt": "2026-10-07",
       "company": "Anthropic",
-      "title": "Claude entra en Docs, Sheets y Slides desde Google Workspace",
-      "summary": "El complemento lleva la asistencia de Claude al documento abierto y está en beta para planes de pago.",
+      "product": "Claude Sonnet 5.5",
+      "title": "Sonnet 5.5 apuesta por tareas cotidianas y una respuesta más rápida",
+      "summary": "Anthropic presenta el segundo modelo de la familia Claude 5.5.",
+      "tags": [
+        "Modelos",
+        "Productividad"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/claude-sonnet-5-5",
+        "publishedAt": "2026-09-28"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Anthropic anunció Sonnet 5.5 el 28 de septiembre. Lo presenta como complemento de Opus 5.5 para trabajo cotidiano bien definido, corrección de errores y creación de documentos.",
+        "El fabricante afirma que genera respuestas más rápido y necesita menos tokens para determinadas tareas que Sonnet 5. Estas mejoras proceden de sus pruebas; el ahorro real depende del trabajo.",
+        "Comparar modelos requiere mantener instrucciones, herramientas y criterios de calidad iguales. Medir solo velocidad puede ocultar una mayor necesidad de revisión o diferencias en el resultado."
+      ],
+      "keyPoints": [
+        "Segundo modelo de la familia 5.5.",
+        "Foco en tareas bien delimitadas."
+      ],
+      "analysis": "El modelo más útil puede ser el que resuelve una tarea de forma consistente dentro del tiempo y presupuesto disponibles.",
+      "watch": "Evaluaciones de calidad, velocidad y costo por tarea.",
+      "announcedAt": "2026-09-28"
+    },
+    {
+      "id": "gemini-connected-apps",
+      "eventKey": "gemini-connected-apps",
+      "date": "2026-09-23",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Connected Apps",
+      "title": "Gemini incorpora una nueva ola de aplicaciones conectadas",
+      "summary": "Google comienza a desplegar conexiones con herramientas de productividad y creación.",
       "tags": [
         "Productos",
         "Productividad"
       ],
       "image": "assets/google.webp",
       "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA.",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
       "source": {
-        "name": "Anthropic · Claude",
-        "url": "https://claude.com/es/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
-        "publishedAt": "2026-10-06"
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+        "publishedAt": "2026-09-23"
       },
       "verifiedAt": "2026-10-07",
       "body": [
-        "Anthropic presenta Claude para Google Workspace como un complemento que funciona dentro de Docs, Sheets y Slides. La beta está disponible en planes de pago y se instala desde Google Workspace Marketplace.",
-        "El acceso se realiza desde el menú de extensiones de un archivo. El valor del formato reside en trabajar con el documento abierto: consultar su contenido y colaborar sobre el trabajo sin trasladar cada fragmento a otra ventana.",
-        "Para un equipo, la adopción depende también de los permisos y de las reglas de administración de Workspace. El anuncio describe disponibilidad del producto, pero no garantiza que cualquier cuenta corporativa pueda instalarlo sin intervención de su administrador."
+        "Google anunció el 23 de septiembre un nuevo despliegue de Connected Apps para Gemini. El objetivo es realizar tareas entre servicios desde el asistente.",
+        "Entre las herramientas citadas están Airtable, Linear y monday.com para productividad, además de Adobe, Picsart, Squarespace y Webflow para creación. La publicación describe un despliegue que comienza ese día.",
+        "La conexión de una cuenta merece revisar los permisos y el alcance de las acciones. También conviene confirmar qué integraciones están disponibles para cada usuario, en vez de asumir que un anuncio implica acceso inmediato para todos."
       ],
       "keyPoints": [
-        "Integración con Docs, Sheets y Slides.",
-        "Beta para planes de pago.",
-        "Instalación mediante Google Workspace Marketplace."
+        "Despliegue anunciado el 23 de septiembre.",
+        "Conexiones con servicios de terceros."
       ],
-      "analysis": "La carrera de los asistentes se acerca al lugar donde se hace el trabajo. La integración en documentos puede reducir pasos y mejorar el contexto disponible, aunque su utilidad final depende de la calidad de las sugerencias y del control sobre las modificaciones.",
-      "watch": "Disponibilidad para cada organización y comportamiento del complemento en documentos reales.",
-      "eventKey": "claude-google-workspace",
+      "analysis": "Las integraciones pueden convertir una conversación en trabajo útil entre aplicaciones. Su valor depende de resultados fiables y permisos claros.",
+      "watch": "Disponibilidad de cada conexión y control de acciones.",
+      "announcedAt": "2026-09-23"
+    },
+    {
+      "id": "claude-opus-5-5",
+      "eventKey": "claude-opus-5-5",
+      "date": "2026-09-22",
       "coveredAt": "2026-10-07",
-      "product": "Claude para Workspace",
-      "announcedAt": "2026-10-06"
+      "company": "Anthropic",
+      "product": "Claude Opus 5.5",
+      "title": "Opus 5.5 renueva la propuesta de Claude para tareas complejas",
+      "summary": "Anthropic estrena la familia 5.5 y destaca mejoras de rendimiento y costo.",
+      "tags": [
+        "Modelos",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/claude-opus-5-5",
+        "publishedAt": "2026-09-22"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Anthropic anunció Opus 5.5 el 22 de septiembre como primer modelo de su nueva familia 5.5. La empresa lo sitúa como una opción para trabajo complejo.",
+        "El anuncio atribuye al modelo mejoras frente a Opus 5 y un menor costo por tarea. Son resultados del proveedor; no sustituyen pruebas independientes ni una evaluación del caso de uso propio.",
+        "Una migración debe revisar la versión concreta, límites de uso, comportamiento de herramientas y calidad de las respuestas. Es especialmente importante repetir tareas en las que los errores tengan un costo real."
+      ],
+      "keyPoints": [
+        "Primera versión de la familia 5.5.",
+        "Orientado a trabajo complejo."
+      ],
+      "analysis": "El costo de una tarea incluye reintentos y revisión, además de tokens. Una evaluación útil mide el trabajo terminado.",
+      "watch": "Pruebas comparables y documentación de migración.",
+      "announcedAt": "2026-09-22"
+    },
+    {
+      "id": "gemini-windows",
+      "eventKey": "gemini-windows",
+      "date": "2026-09-10",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Gemini para Windows",
+      "title": "Gemini llega al escritorio de Windows",
+      "summary": "La nueva aplicación permite abrir el asistente sobre el trabajo activo con Alt + Espacio.",
+      "tags": [
+        "Productos",
+        "Productividad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+        "publishedAt": "2026-09-10"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "El 10 de septiembre Google anunció su aplicación de Gemini para Windows 10 y 11, con disponibilidad global según su publicación.",
+        "El acceso rápido utiliza Alt + Espacio. La aplicación reúne asistencia sobre el trabajo activo y un espacio para tareas, documentos y creación visual. Algunas funciones dependen de la suscripción y la disponibilidad.",
+        "El interés del formato es reducir el cambio entre ventanas. Para evaluar su utilidad, importa comprobar qué contexto recibe el asistente y qué acciones requieren intervención del usuario."
+      ],
+      "keyPoints": [
+        "Aplicación para Windows 10 y 11.",
+        "Acceso mediante Alt + Espacio."
+      ],
+      "analysis": "Acercar el asistente al escritorio puede reducir pasos, pero el control del contexto y de los permisos sigue siendo esencial.",
+      "watch": "Integración con herramientas habituales y disponibilidad por cuenta.",
+      "announcedAt": "2026-09-10"
+    },
+    {
+      "id": "lyria-3-5-gemini",
+      "eventKey": "lyria-3-5-gemini",
+      "date": "2026-09-04",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Lyria 3.5",
+      "title": "Lyria 3.5 lleva la creación musical a Gemini",
+      "summary": "Google anuncia generación musical con opciones de género, voz y duración.",
+      "tags": [
+        "Productos",
+        "Audio"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
+        "publishedAt": "2026-09-04"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Google anunció el 4 de septiembre la llegada de Lyria 3.5 a Gemini y a la API de Gemini. El modelo está orientado a generar música a partir de instrucciones.",
+        "La aplicación permite elegir o describir géneros, trabajar con estilos vocales o instrumentales y seleccionar pistas cortas o más largas. El anuncio también cita AI Studio, Flow Music y Vids.",
+        "Antes de incorporar una pista a un proyecto público, corresponde revisar las condiciones de uso de la herramienta y escuchar el resultado completo. Generar audio y decidir cómo publicarlo son pasos diferentes."
+      ],
+      "keyPoints": [
+        "Creación musical en Gemini.",
+        "Opciones vocales e instrumentales."
+      ],
+      "analysis": "La música generativa gana utilidad cuando el usuario puede dirigir e iterar el resultado, además de obtener una primera pista.",
+      "watch": "Control creativo, consistencia y condiciones de uso.",
+      "announcedAt": "2026-09-04"
+    },
+    {
+      "id": "amazon-connect-agentic-cx-designer",
+      "eventKey": "amazon-connect-agentic-cx-designer",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "AWS",
+      "product": "Amazon Connect agentic CX designer",
+      "title": "AWS lleva un diseñador agentivo a Amazon Connect",
+      "summary": "La herramienta no-code combina pasos deterministas y agentes para crear y probar experiencias de atención en voz y canales digitales.",
+      "tags": [
+        "Agentes",
+        "Empresa"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "AWS · What's New",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/agentic-cx-designer/",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "AWS anunció disponibilidad general de su diseñador agentivo de experiencias de cliente para Amazon Connect.",
+        "La interfaz permite combinar pasos deterministas con componentes de IA en un lienzo visual. Ese diseño híbrido conserva lógica explícita donde se necesita previsibilidad y usa agentes para partes menos estructuradas."
+      ],
+      "keyPoints": [
+        "Disponibilidad general.",
+        "Diseño visual sin código.",
+        "Combina lógica determinista y agentes."
+      ],
+      "analysis": "Los agentes empresariales probablemente convivirán con reglas tradicionales; integrar ambos enfoques puede reducir riesgo operativo.",
+      "watch": "Cómo se auditan decisiones del agente dentro de flujos reales."
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "eventKey": "gemini-3-8-flash",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Google",
+      "product": "Gemini 3.8 Flash",
+      "title": "Google lanza Gemini 3.8 Flash para agentes y desarrollo",
+      "summary": "La nueva versión Flash llega a la API y a productos de Google con foco en software, razonamiento multietapa y trabajo agentivo.",
+      "tags": [
+        "Modelos",
+        "Agentes",
+        "Desarrollo"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "Google anunció Gemini 3.8 Flash como una nueva versión generalista de su línea Flash, con foco en programación, razonamiento multietapa y tareas agentivas.",
+        "Google publicó precio y resultados internos de rendimiento; esas cifras pertenecen al proveedor. La misma publicación incluye una variante Cyber con condiciones de acceso distintas."
+      ],
+      "keyPoints": [
+        "Nueva versión generalista de la línea Flash.",
+        "Disponible en API y productos de Google según el anuncio.",
+        "La variante Cyber tiene un régimen de acceso separado."
+      ],
+      "analysis": "Flash compite donde capacidad y costo operativo importan al mismo tiempo, especialmente para agentes que realizan muchos pasos.",
+      "watch": "Precio, calidad end-to-end y comparaciones independientes."
+    },
+    {
+      "id": "gemini-3-8-flash-cyber",
+      "eventKey": "gemini-3-8-flash-cyber",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Google",
+      "product": "Gemini 3.8 Flash Cyber",
+      "title": "Gemini 3.8 Flash Cyber queda reservado a defensores verificados",
+      "summary": "Google separa una variante de ciberseguridad con capacidades más permisivas y acceso mediante su programa Fairwind.",
+      "tags": [
+        "Modelos",
+        "Seguridad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "Google presentó Gemini 3.8 Flash Cyber como una variante especializada en ciberseguridad.",
+        "El acceso inicial se limita a defensores de confianza a través de Fairwind, por lo que el lanzamiento no equivale a disponibilidad general en la API."
+      ],
+      "keyPoints": [
+        "Variante especializada en ciberseguridad.",
+        "Acceso inicial restringido.",
+        "Vinculada al programa Fairwind."
+      ],
+      "analysis": "La segmentación de acceso puede convertirse en una característica permanente de modelos frontier con capacidades duales.",
+      "watch": "Criterios de elegibilidad y ampliación del acceso."
+    },
+    {
+      "id": "google-fairwind-program",
+      "eventKey": "google-fairwind-program",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Google",
+      "product": "Fairwind",
+      "title": "Google crea Fairwind para distribuir capacidades cibernéticas avanzadas",
+      "summary": "El programa de acceso limitado está dirigido a gobiernos, clientes y socios de confianza que trabajan en defensa.",
+      "tags": [
+        "Seguridad",
+        "Productos"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "Google anunció Fairwind, un programa diseñado para dar acceso controlado a capacidades avanzadas de IA para defensa cibernética.",
+        "El programa funciona como una capa de distribución y gobernanza para modelos que no se ofrecen de la misma forma al público general; Gemini 3.8 Flash Cyber es una de las capacidades asociadas."
+      ],
+      "keyPoints": [
+        "Programa de acceso limitado.",
+        "Orientado a defensa cibernética.",
+        "Separa capacidades avanzadas del acceso público."
+      ],
+      "analysis": "El control de distribución está pasando a ser parte de la arquitectura de producto para capacidades de doble uso.",
+      "watch": "Nuevos modelos incorporados y transparencia sobre criterios de acceso."
+    },
+    {
+      "id": "hiddenlayer-series-b-agent-security",
+      "eventKey": "hiddenlayer-series-b-agent-security",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "HiddenLayer",
+      "product": "Agent Harness Security",
+      "title": "HiddenLayer recauda US$100 millones y amplía seguridad para agentes",
+      "summary": "La Serie B financia una expansión centrada en protección del runtime y del harness que rodea a los agentes de IA.",
+      "tags": [
+        "Seguridad",
+        "Agentes",
+        "Negocio"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "HiddenLayer · anuncio oficial",
+        "url": "https://www.hiddenlayer.com/news/hiddenlayer-100m-series-b-ai-security",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "HiddenLayer anunció una Serie B de 100 millones de dólares liderada por Delta-v Capital.",
+        "La empresa vincula el capital con la expansión de su plataforma y Agent Harness Security. La ronda es material porque muestra capital considerable entrando en seguridad específica para sistemas agentivos."
+      ],
+      "keyPoints": [
+        "Serie B de US$100 millones.",
+        "Foco en seguridad de agentes y runtime.",
+        "Ronda liderada por Delta-v Capital."
+      ],
+      "analysis": "La seguridad agentiva está pasando de proyecto interno a mercado propio.",
+      "watch": "Uso real de la plataforma y evidencia de reducción de incidentes."
+    },
+    {
+      "id": "muse-spark-1-3",
+      "eventKey": "muse-spark-1-3",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Meta",
+      "product": "Muse Spark 1.3",
+      "title": "Meta actualiza Muse Spark para agentes de código de mayor duración",
+      "summary": "Spark 1.3 apunta a tareas de programación más largas, multitarea y uso más eficiente de herramientas.",
+      "tags": [
+        "Modelos",
+        "Agentes",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Meta AI · anuncio oficial",
+        "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "Meta presentó Muse Spark 1.3, una actualización de su modelo orientado a trabajo agentivo y programación.",
+        "La compañía lo posiciona para tareas de mayor duración y multitarea y reporta mejoras de eficiencia en pruebas internas. La versión aparece en Muse Code y Meta Model API."
+      ],
+      "keyPoints": [
+        "Lanzamiento del 2 de septiembre.",
+        "Foco en programación y tareas largas.",
+        "Disponible en productos y API de Meta según el anuncio."
+      ],
+      "analysis": "Para agentes de código, eficiencia significa completar una tarea con menos pasos fallidos, no sólo generar tokens más rápido.",
+      "watch": "Comparaciones independientes sobre tareas completas y repositorios grandes."
+    },
+    {
+      "id": "qwen3-8-max-0902",
+      "eventKey": "qwen3-8-max-0902",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Alibaba",
+      "product": "Qwen3.8-Max-0902",
+      "title": "Alibaba actualiza Qwen3.8-Max para código y agentes de largo horizonte",
+      "summary": "El snapshot del 2 de septiembre amplía la propuesta de Qwen para programación, contexto largo y colaboración entre herramientas.",
+      "tags": [
+        "Modelos",
+        "Agentes",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Alibaba Cloud Model Studio · modelos publicados",
+        "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "publishedAt": "2026-09-02"
+      },
+      "relatedSources": [
+        {
+          "name": "Alibaba Cloud · aviso de actualización",
+          "url": "https://www.alibabacloud.com/en/notice/model_studio_update_notice_for_qwen38max_models_863"
+        }
+      ],
+      "body": [
+        "Alibaba Cloud incorporó Qwen3.8-Max-0902 a Model Studio el 2 de septiembre.",
+        "La documentación lo orienta a programación, tareas autónomas de mayor duración, uso coordinado de herramientas y contexto largo. La actualización mantiene a Qwen como un actor relevante del ecosistema chino."
+      ],
+      "keyPoints": [
+        "Snapshot fechado el 2 de septiembre.",
+        "Contexto largo y foco en programación agentiva.",
+        "Disponible mediante Alibaba Cloud Model Studio."
+      ],
+      "analysis": "La competencia china aumenta las alternativas para desarrolladores que comparan costo, contexto y herramientas.",
+      "watch": "Benchmarks independientes, disponibilidad internacional y comportamiento en tareas completas."
+    },
+    {
+      "id": "wonderful-series-c-2026",
+      "eventKey": "wonderful-series-c-2026",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Wonderful",
+      "product": "Wonderful AI OS",
+      "title": "Wonderful levanta US$550 millones para expandir sus agentes empresariales",
+      "summary": "La Serie C valora la compañía en US$5.000 millones y financia la expansión de su plataforma de agentes para empresas.",
+      "tags": [
+        "Agentes",
+        "Negocio",
+        "Empresa"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Wonderful · anuncio oficial",
+        "url": "https://www.wonderful.ai/blog-articles/wonderful-raises-550m-series-c",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "Wonderful anunció una Serie C de 550 millones de dólares con una valoración de 5.000 millones.",
+        "La compañía construye una plataforma de agentes empresariales y vincula la ronda con expansión de producto y mercados. El tamaño de la ronda la convierte en una señal material de la capa operativa de agentes."
+      ],
+      "keyPoints": [
+        "Serie C de US$550 millones.",
+        "Valoración anunciada de US$5.000 millones.",
+        "Capital dirigido a agentes empresariales."
+      ],
+      "analysis": "Parte del valor de la carrera puede migrar hacia distribución, integración y operación de agentes dentro de empresas.",
+      "watch": "Crecimiento de clientes, economía por agente y dependencia de proveedores de modelos."
+    },
+    {
+      "id": "air-agent-security-platform",
+      "eventKey": "air-agent-security-platform",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "AIR",
+      "product": "AIR",
+      "title": "AIR sale del modo sigiloso con seguridad para agentes",
+      "summary": "La startup propone inspeccionar el contexto que reciben los agentes antes de que datos externos o herramientas maliciosas influyan en su ejecución.",
+      "tags": [
+        "Seguridad",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "AIR · anuncio oficial",
+        "url": "https://www.air.security/blog-posts/out-of-stealth",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "AIR anunció su salida del modo sigiloso con una plataforma centrada en seguridad de agentes.",
+        "Su enfoque busca filtrar amenazas antes de que información procedente de web, complementos o sistemas internos llegue al contexto operativo del agente. El lanzamiento refleja un mercado emergente alrededor de contexto, herramientas y permisos."
+      ],
+      "keyPoints": [
+        "Startup enfocada en seguridad de agentes.",
+        "Filtrado previo al contexto operativo.",
+        "Cobertura anunciada para entornos empresariales."
+      ],
+      "analysis": "A medida que los agentes obtienen herramientas y credenciales, el perímetro de seguridad se desplaza hacia lo que pueden leer y ejecutar.",
+      "watch": "Pruebas independientes y adopción en agentes con herramientas reales."
+    },
+    {
+      "id": "amazon-quick-natural-language-apps",
+      "eventKey": "amazon-quick-natural-language-apps",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "AWS",
+      "product": "Amazon Quick",
+      "title": "Amazon Quick permite crear aplicaciones desde lenguaje natural",
+      "summary": "AWS lleva a disponibilidad general la creación de aplicaciones conectadas a datos y herramientas empresariales a partir de una descripción.",
+      "tags": [
+        "Agentes",
+        "Empresa",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "AWS · What's New",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-custom-apps-natural-language/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "AWS anunció disponibilidad general para crear aplicaciones personalizadas en Amazon Quick mediante lenguaje natural.",
+        "El producto conecta flujos con servicios y datos empresariales y, según AWS, respeta los permisos de las fuentes conectadas. Es otra forma de empaquetar agentes alrededor de procesos concretos."
+      ],
+      "keyPoints": [
+        "Disponibilidad general desde el 1 de septiembre.",
+        "Creación de apps a partir de descripciones.",
+        "Conectores empresariales y control de permisos."
+      ],
+      "analysis": "La barrera para automatizar procesos baja cuando la interfaz de construcción es lenguaje natural, pero la gobernanza de datos y permisos gana importancia.",
+      "watch": "Calidad de las aplicaciones generadas y controles de revisión y cambios."
+    },
+    {
+      "id": "anthropic-enterprise-frontier-safeguards",
+      "eventKey": "anthropic-enterprise-frontier-safeguards",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Anthropic",
+      "product": "Enterprise Frontier Safeguards",
+      "title": "Anthropic lleva salvaguardas frontier al entorno empresarial",
+      "summary": "Anthropic presenta controles adicionales para organizaciones que quieren usar capacidades avanzadas de Claude.",
+      "tags": [
+        "Seguridad",
+        "Empresa"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "Anthropic presentó Enterprise Frontier Safeguards como una capa de protección para organizaciones que quieren usar capacidades avanzadas de Claude con controles adicionales alrededor de datos y operación.",
+        "La compañía describe detección de riesgos, opciones de retención y un despliegue por fases; el anuncio no implica disponibilidad idéntica para todas las cuentas desde el primer día."
+      ],
+      "keyPoints": [
+        "Anunciado el 1 de septiembre.",
+        "Orientado a clientes empresariales y usos frontier.",
+        "Despliegue planteado por fases."
+      ],
+      "analysis": "La seguridad pasa a formar parte explícita del producto empresarial y puede pesar tanto como la capacidad del modelo en decisiones de adopción.",
+      "watch": "Disponibilidad efectiva, opciones de despliegue y evidencia independiente de los controles."
     },
     {
       "id": "claude-fable-5-1",
@@ -239,317 +949,251 @@
       "announcedAt": "2026-09-01"
     },
     {
-      "id": "lyria-3-5-gemini",
-      "eventKey": "lyria-3-5-gemini",
-      "date": "2026-09-04",
-      "coveredAt": "2026-10-07",
-      "company": "Google",
-      "product": "Lyria 3.5",
-      "title": "Lyria 3.5 lleva la creación musical a Gemini",
-      "summary": "Google anuncia generación musical con opciones de género, voz y duración.",
-      "tags": [
-        "Productos",
-        "Audio"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
-        "publishedAt": "2026-09-04"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "Google anunció el 4 de septiembre la llegada de Lyria 3.5 a Gemini y a la API de Gemini. El modelo está orientado a generar música a partir de instrucciones.",
-        "La aplicación permite elegir o describir géneros, trabajar con estilos vocales o instrumentales y seleccionar pistas cortas o más largas. El anuncio también cita AI Studio, Flow Music y Vids.",
-        "Antes de incorporar una pista a un proyecto público, corresponde revisar las condiciones de uso de la herramienta y escuchar el resultado completo. Generar audio y decidir cómo publicarlo son pasos diferentes."
-      ],
-      "keyPoints": [
-        "Creación musical en Gemini.",
-        "Opciones vocales e instrumentales."
-      ],
-      "analysis": "La música generativa gana utilidad cuando el usuario puede dirigir e iterar el resultado, además de obtener una primera pista.",
-      "watch": "Control creativo, consistencia y condiciones de uso.",
-      "announcedAt": "2026-09-04"
-    },
-    {
-      "id": "gemini-windows",
-      "eventKey": "gemini-windows",
-      "date": "2026-09-10",
-      "coveredAt": "2026-10-07",
-      "company": "Google",
-      "product": "Gemini para Windows",
-      "title": "Gemini llega al escritorio de Windows",
-      "summary": "La nueva aplicación permite abrir el asistente sobre el trabajo activo con Alt + Espacio.",
-      "tags": [
-        "Productos",
-        "Productividad"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-        "publishedAt": "2026-09-10"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "El 10 de septiembre Google anunció su aplicación de Gemini para Windows 10 y 11, con disponibilidad global según su publicación.",
-        "El acceso rápido utiliza Alt + Espacio. La aplicación reúne asistencia sobre el trabajo activo y un espacio para tareas, documentos y creación visual. Algunas funciones dependen de la suscripción y la disponibilidad.",
-        "El interés del formato es reducir el cambio entre ventanas. Para evaluar su utilidad, importa comprobar qué contexto recibe el asistente y qué acciones requieren intervención del usuario."
-      ],
-      "keyPoints": [
-        "Aplicación para Windows 10 y 11.",
-        "Acceso mediante Alt + Espacio."
-      ],
-      "analysis": "Acercar el asistente al escritorio puede reducir pasos, pero el control del contexto y de los permisos sigue siendo esencial.",
-      "watch": "Integración con herramientas habituales y disponibilidad por cuenta.",
-      "announcedAt": "2026-09-10"
-    },
-    {
-      "id": "claude-opus-5-5",
-      "eventKey": "claude-opus-5-5",
-      "date": "2026-09-22",
-      "coveredAt": "2026-10-07",
-      "company": "Anthropic",
-      "product": "Claude Opus 5.5",
-      "title": "Opus 5.5 renueva la propuesta de Claude para tareas complejas",
-      "summary": "Anthropic estrena la familia 5.5 y destaca mejoras de rendimiento y costo.",
-      "tags": [
-        "Modelos",
-        "Desarrollo"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Anthropic · anuncio oficial",
-        "url": "https://www.anthropic.com/claude-opus-5-5",
-        "publishedAt": "2026-09-22"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "Anthropic anunció Opus 5.5 el 22 de septiembre como primer modelo de su nueva familia 5.5. La empresa lo sitúa como una opción para trabajo complejo.",
-        "El anuncio atribuye al modelo mejoras frente a Opus 5 y un menor costo por tarea. Son resultados del proveedor; no sustituyen pruebas independientes ni una evaluación del caso de uso propio.",
-        "Una migración debe revisar la versión concreta, límites de uso, comportamiento de herramientas y calidad de las respuestas. Es especialmente importante repetir tareas en las que los errores tengan un costo real."
-      ],
-      "keyPoints": [
-        "Primera versión de la familia 5.5.",
-        "Orientado a trabajo complejo."
-      ],
-      "analysis": "El costo de una tarea incluye reintentos y revisión, además de tokens. Una evaluación útil mide el trabajo terminado.",
-      "watch": "Pruebas comparables y documentación de migración.",
-      "announcedAt": "2026-09-22"
-    },
-    {
-      "id": "gemini-connected-apps",
-      "eventKey": "gemini-connected-apps",
-      "date": "2026-09-23",
-      "coveredAt": "2026-10-07",
-      "company": "Google",
-      "product": "Connected Apps",
-      "title": "Gemini incorpora una nueva ola de aplicaciones conectadas",
-      "summary": "Google comienza a desplegar conexiones con herramientas de productividad y creación.",
-      "tags": [
-        "Productos",
-        "Productividad"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
-        "publishedAt": "2026-09-23"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "Google anunció el 23 de septiembre un nuevo despliegue de Connected Apps para Gemini. El objetivo es realizar tareas entre servicios desde el asistente.",
-        "Entre las herramientas citadas están Airtable, Linear y monday.com para productividad, además de Adobe, Picsart, Squarespace y Webflow para creación. La publicación describe un despliegue que comienza ese día.",
-        "La conexión de una cuenta merece revisar los permisos y el alcance de las acciones. También conviene confirmar qué integraciones están disponibles para cada usuario, en vez de asumir que un anuncio implica acceso inmediato para todos."
-      ],
-      "keyPoints": [
-        "Despliegue anunciado el 23 de septiembre.",
-        "Conexiones con servicios de terceros."
-      ],
-      "analysis": "Las integraciones pueden convertir una conversación en trabajo útil entre aplicaciones. Su valor depende de resultados fiables y permisos claros.",
-      "watch": "Disponibilidad de cada conexión y control de acciones.",
-      "announcedAt": "2026-09-23"
-    },
-    {
-      "id": "claude-sonnet-5-5",
-      "eventKey": "claude-sonnet-5-5",
-      "date": "2026-09-28",
-      "coveredAt": "2026-10-07",
-      "company": "Anthropic",
-      "product": "Claude Sonnet 5.5",
-      "title": "Sonnet 5.5 apuesta por tareas cotidianas y una respuesta más rápida",
-      "summary": "Anthropic presenta el segundo modelo de la familia Claude 5.5.",
-      "tags": [
-        "Modelos",
-        "Productividad"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Anthropic · anuncio oficial",
-        "url": "https://www.anthropic.com/claude-sonnet-5-5",
-        "publishedAt": "2026-09-28"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "Anthropic anunció Sonnet 5.5 el 28 de septiembre. Lo presenta como complemento de Opus 5.5 para trabajo cotidiano bien definido, corrección de errores y creación de documentos.",
-        "El fabricante afirma que genera respuestas más rápido y necesita menos tokens para determinadas tareas que Sonnet 5. Estas mejoras proceden de sus pruebas; el ahorro real depende del trabajo.",
-        "Comparar modelos requiere mantener instrucciones, herramientas y criterios de calidad iguales. Medir solo velocidad puede ocultar una mayor necesidad de revisión o diferencias en el resultado."
-      ],
-      "keyPoints": [
-        "Segundo modelo de la familia 5.5.",
-        "Foco en tareas bien delimitadas."
-      ],
-      "analysis": "El modelo más útil puede ser el que resuelve una tarea de forma consistente dentro del tiempo y presupuesto disponibles.",
-      "watch": "Evaluaciones de calidad, velocidad y costo por tarea.",
-      "announcedAt": "2026-09-28"
-    },
-    {
-      "id": "gpt-6-1-sol-devday",
-      "eventKey": "gpt-6-1-sol-devday",
-      "date": "2026-09-29",
-      "coveredAt": "2026-10-07",
-      "company": "OpenAI",
-      "product": "GPT-6.1 Sol",
-      "title": "GPT-6.1 Sol llega como actualización del modelo de trabajo de OpenAI",
-      "summary": "OpenAI presenta la versión en DevDay para programación, uso de herramientas y trabajo profesional.",
-      "tags": [
-        "Modelos",
-        "Desarrollo"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "OpenAI · anuncio oficial",
-        "url": "https://openai.com/index/devday-2026-recap/",
-        "publishedAt": "2026-09-29"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "OpenAI presentó GPT-6.1 Sol el 29 de septiembre en DevDay, como actualización de GPT-6 Sol. El resumen oficial indica disponibilidad en la API y planes de pago de ChatGPT.",
-        "La empresa destaca programación y trabajo profesional. Para decidir una migración, conviene comparar tareas reales, calidad, reintentos y costo total."
-      ],
-      "keyPoints": [
-        "Presentado en DevDay.",
-        "Disponible en API y planes de pago."
-      ],
-      "analysis": "Una nueva versión merece una evaluación del flujo de trabajo completo, más allá del titular del lanzamiento.",
-      "watch": "Pruebas comparables con la versión anterior.",
-      "announcedAt": "2026-09-29"
-    },
-    {
-      "id": "dots-devday",
-      "eventKey": "dots-devday",
-      "date": "2026-09-29",
-      "coveredAt": "2026-10-07",
-      "company": "OpenAI",
-      "product": "Dots",
-      "title": "Dots propone agentes para tareas continuas",
-      "summary": "OpenAI anuncia agentes que pueden encargarse de trabajo persistente.",
-      "tags": [
-        "Agentes",
-        "Productos"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "OpenAI · anuncio oficial",
-        "url": "https://openai.com/index/devday-2026-recap/",
-        "publishedAt": "2026-09-29"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "OpenAI presentó Dots en DevDay el 29 de septiembre. Los describe como agentes que mantienen responsabilidades continuas.",
-        "El anuncio limita su acceso por plan, mercado y configuración del administrador. Antes de delegar una tarea recurrente, corresponde definir qué puede hacer el agente y cómo se revisan sus resultados."
-      ],
-      "keyPoints": [
-        "Agentes con responsabilidades continuas.",
-        "Acceso sujeto a elegibilidad."
-      ],
-      "analysis": "El seguimiento y la revisión son parte de una tarea delegada: automatizar exige criterios claros de éxito.",
-      "watch": "Disponibilidad y control de tareas delegadas.",
-      "announcedAt": "2026-09-29"
-    },
-    {
-      "id": "gemini-4-argon",
-      "eventKey": "gemini-4-argon",
-      "date": "2026-09-30",
-      "coveredAt": "2026-10-07",
-      "company": "Google",
-      "product": "Gemini 4 Argon",
-      "title": "Gemini 4 Argon se estrena con acceso gradual para defensores",
-      "summary": "Google anuncia su nuevo modelo y comienza con un grupo de usuarios de confianza.",
-      "tags": [
-        "Modelos",
-        "Seguridad"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-        "publishedAt": "2026-09-30"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "Google anunció Gemini 4 Argon el 30 de septiembre. La primera fase de acceso se dirige a defensores de ciberseguridad de confianza mediante Fairwind.",
-        "La empresa lo orienta a razonamiento y flujos profesionales largos, incluyendo programación y defensa. El anuncio no equivale a disponibilidad general para cualquier usuario.",
-        "Al evaluar una herramienta de acceso limitado, es útil separar capacidades anunciadas de acceso efectivo. Los equipos necesitan comprobar requisitos, condiciones y fechas de ampliación."
-      ],
-      "keyPoints": [
-        "Anuncio del 30 de septiembre.",
-        "Primera fase mediante Fairwind."
-      ],
-      "analysis": "La carrera de modelos incluye tanto capacidad como distribución. Un producto restringido tiene un impacto distinto de una herramienta abierta a todos.",
-      "watch": "Ampliación del acceso y evaluaciones independientes.",
-      "announcedAt": "2026-09-30"
-    },
-    {
-      "id": "anthropic-cyber-verification",
-      "eventKey": "anthropic-cyber-verification",
-      "date": "2026-10-06",
-      "coveredAt": "2026-10-07",
-      "company": "Anthropic",
-      "product": "Cyber Verification Program",
-      "title": "Anthropic amplía el acceso para equipos de seguridad",
-      "summary": "El programa reúne tres niveles con requisitos diferentes para profesionales y organizaciones.",
+      "id": "crowdstrike-falcon-guardian",
+      "eventKey": "crowdstrike-falcon-guardian",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "CrowdStrike",
+      "product": "Falcon Guardian",
+      "title": "Falcon Guardian lleva detección y respuesta al comportamiento de agentes",
+      "summary": "CrowdStrike presenta una capa de observabilidad y control para agentes de IA que actúan sobre sistemas empresariales.",
       "tags": [
         "Seguridad",
-        "Productos"
+        "Agentes"
       ],
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Anthropic · anuncio oficial",
-        "url": "https://www.anthropic.com/news/cyber-verification-program",
-        "publishedAt": "2026-10-06"
-      },
       "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "CrowdStrike · anuncio oficial",
+        "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-unveils-falcon-guardian-ai-agent-security/",
+        "publishedAt": "2026-09-01"
+      },
       "body": [
-        "El 6 de octubre Anthropic anunció una ampliación de su Cyber Verification Program. El programa distingue Defense Access, Red Team Access y Specialized Access.",
-        "Cada nivel aplica requisitos y controles diferentes. El acceso para pruebas adversariales exige autorización sobre los sistemas evaluados; las capacidades especializadas se reservan a un conjunto limitado de organizaciones verificadas.",
-        "Para los lectores que siguen el lanzamiento de modelos, este cambio es una noticia propia: amplía las condiciones de uso de herramientas existentes, sin ser por ello un modelo nuevo."
+        "CrowdStrike anunció Falcon Guardian como una propuesta de detección y respuesta para observar y controlar agentes que interactúan con sistemas empresariales.",
+        "La compañía busca registrar actividad, identificar comportamientos de riesgo y aplicar controles en tiempo de ejecución. Es un problema diferente al de entrenar un modelo especializado."
       ],
       "keyPoints": [
-        "Tres niveles de acceso.",
-        "Requisitos según tipo de trabajo."
+        "Seguridad en tiempo de ejecución para agentes.",
+        "Visibilidad sobre acciones y accesos.",
+        "Producto independiente de SafeMind."
       ],
-      "analysis": "La disponibilidad de una capacidad depende también de quién puede utilizarla y bajo qué condiciones.",
-      "watch": "Criterios de admisión y evolución del programa.",
-      "announcedAt": "2026-10-06"
+      "analysis": "La observabilidad de agentes puede convertirse en una categoría propia a medida que las empresas delegan acciones con consecuencias reales.",
+      "watch": "Cobertura efectiva de herramientas, identidades y sistemas externos."
+    },
+    {
+      "id": "crowdstrike-safemind",
+      "eventKey": "crowdstrike-safemind",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "CrowdStrike",
+      "product": "SafeMind",
+      "title": "CrowdStrike presenta SafeMind, modelos especializados en ciberseguridad",
+      "summary": "La familia combina modelos y harnesses orientados a tareas defensivas y ofensivas bajo controles de acceso.",
+      "tags": [
+        "Seguridad",
+        "Modelos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "CrowdStrike · anuncio oficial",
+        "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-frontier-models-for-cybersecurity-with-nvidia/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "CrowdStrike presentó SafeMind, una familia de modelos y sistemas especializados en ciberseguridad desarrollada con tecnología de NVIDIA.",
+        "El anuncio conecta estos modelos con Falcon y describe distintos controles de acceso. Es una apuesta por sistemas estrechos que incorporan conocimiento, herramientas y reglas de un dominio."
+      ],
+      "keyPoints": [
+        "Modelos especializados en seguridad.",
+        "Integración con el ecosistema Falcon.",
+        "Desarrollo anunciado junto a NVIDIA."
+      ],
+      "analysis": "En seguridad, el conocimiento de dominio y el harness pueden importar tanto como el modelo base.",
+      "watch": "Evaluaciones independientes y resultados en operaciones defensivas reales."
+    },
+    {
+      "id": "gemini-agentic-video",
+      "eventKey": "gemini-agentic-video",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Google",
+      "product": "Agentic video understanding",
+      "title": "Gemini empieza a explorar videos de forma agentiva",
+      "summary": "Google incorpora una estrategia que decide qué segmentos inspeccionar con mayor detalle en vez de procesar cada video de forma uniforme.",
+      "tags": [
+        "Modelos",
+        "Video",
+        "Agentes"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "Google anunció una modalidad de comprensión de video que permite a Gemini decidir qué partes de una grabación necesita inspeccionar con mayor detalle para responder una tarea.",
+        "Google reporta mejoras de costo, tokens y calidad en pruebas internas. Son mediciones del proveedor; la idea técnica central es asignar más cómputo sólo donde el modelo lo necesita."
+      ],
+      "keyPoints": [
+        "Selección dinámica de segmentos relevantes.",
+        "Expuesta mediante configuración de API según el anuncio.",
+        "Las mejoras de eficiencia publicadas son mediciones de Google."
+      ],
+      "analysis": "La asignación dinámica de cómputo puede ser tan importante como un modelo más grande cuando se trabaja con horas de video.",
+      "watch": "Resultados independientes en videos largos y escenas difíciles de localizar."
+    },
+    {
+      "id": "muse-voice-transcribe",
+      "eventKey": "muse-voice-transcribe",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Meta",
+      "product": "Muse Voice Transcribe",
+      "title": "Meta presenta Muse Voice Transcribe para audio en tiempo real",
+      "summary": "El modelo combina transcripción continua, diarización y detección de final de turno para aplicaciones de voz.",
+      "tags": [
+        "Modelos",
+        "Audio"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Meta AI · anuncio oficial",
+        "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "Meta presentó Muse Voice Transcribe, un modelo de percepción de audio en tiempo real orientado a transcripción continua.",
+        "La compañía destaca diarización de múltiples hablantes y detección de fin de turno. Meta informa entrenamiento multilingüe amplio, aunque la calidad final debe comprobarse por idioma, acento y ruido."
+      ],
+      "keyPoints": [
+        "Streaming de audio en tiempo real.",
+        "Incluye diarización y endpointing.",
+        "Meta informa entrenamiento multilingüe."
+      ],
+      "analysis": "La voz se está convirtiendo en una interfaz nativa para agentes y concentrar varias funciones en un modelo simplifica la arquitectura.",
+      "watch": "Latencia real, precisión por idioma y disponibilidad fuera de productos de Meta."
+    },
+    {
+      "id": "openai-path-to-astra-safeguards",
+      "eventKey": "openai-path-to-astra-safeguards",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "OpenAI",
+      "product": "GPT-6 Astra",
+      "title": "OpenAI endurece las salvaguardas antes de GPT-6 Astra",
+      "summary": "OpenAI dice que Astra alcanza su umbral crítico de capacidad cibernética y describe restricciones adicionales antes del lanzamiento.",
+      "tags": [
+        "Seguridad",
+        "Modelos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "OpenAI · Path to Astra",
+        "url": "https://openai.com/index/path-to-astra/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "OpenAI publicó su enfoque de seguridad previo a GPT-6 Astra y afirmó que el modelo alcanza el umbral Critical en ciberseguridad de su marco de preparación. Esa clasificación es una evaluación del propio proveedor.",
+        "La empresa explica que reforzó controles y restringió determinadas capacidades de alto riesgo mientras preparaba el despliegue, por lo que el documento es una noticia distinta del lanzamiento posterior."
+      ],
+      "keyPoints": [
+        "Publicado dos días antes del lanzamiento de Astra.",
+        "OpenAI atribuye al modelo capacidad cibernética de nivel Critical.",
+        "El acceso a capacidades avanzadas incorpora restricciones adicionales."
+      ],
+      "analysis": "La carrera frontier incluye también quién puede acceder a cada capacidad y bajo qué controles.",
+      "watch": "Cómo evolucionan los controles de acceso y qué capacidades llegan a desarrolladores comunes."
+    },
+    {
+      "id": "perplexity-hybrid-compute",
+      "eventKey": "perplexity-hybrid-compute",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Perplexity",
+      "product": "Hybrid Compute",
+      "title": "Perplexity mezcla modelos locales y nube en Mac",
+      "summary": "Hybrid Compute decide qué partes de una tarea pueden ejecutarse en el equipo y cuáles requieren servicios en la nube.",
+      "tags": [
+        "Productos",
+        "Modelos",
+        "Privacidad"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Perplexity · anuncio oficial",
+        "url": "https://www.perplexity.ai/hub/blog/introducing-hybrid-compute-on-mac",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "Perplexity presentó Hybrid Compute para Mac, un modo que combina inferencia local con servicios en la nube.",
+        "La propuesta intenta mantener localmente las partes que pueden ejecutarse en el dispositivo y recurrir a la nube cuando hace falta más capacidad; su utilidad depende de qué datos cruzan ese límite."
+      ],
+      "keyPoints": [
+        "Combina ejecución local y nube.",
+        "Orientado a Mac con Apple silicon.",
+        "Disponible en planes seleccionados según el anuncio."
+      ],
+      "analysis": "Los enfoques híbridos ofrecen un tercer camino entre privacidad local y capacidad frontier, siempre que el enrutamiento sea transparente.",
+      "watch": "Qué información permanece realmente en el dispositivo y el impacto en latencia y costo."
+    },
+    {
+      "id": "waymo-denver-san-diego-tampa",
+      "eventKey": "waymo-denver-san-diego-tampa",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Waymo",
+      "product": "Waymo One",
+      "title": "Waymo abre viajes públicos en Denver, San Diego y Tampa",
+      "summary": "La compañía empieza a recibir pasajeros públicos en tres nuevos mercados y amplía gradualmente el acceso.",
+      "tags": [
+        "Robótica",
+        "Movilidad"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial de un globo terrestre",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Waymo · anuncio oficial",
+        "url": "https://waymo.com/blog/2026/09/ride-in-denver-san-diego-tampa/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "Waymo anunció que comenzó a recibir a sus primeros pasajeros públicos en Denver, San Diego y Tampa.",
+        "El acceso se amplía gradualmente, de modo que el anuncio no significa cobertura instantánea para todos. Es una expansión comercial de conducción autónoma en entornos urbanos reales."
+      ],
+      "keyPoints": [
+        "Primeros pasajeros públicos en tres nuevas ciudades.",
+        "Despliegue gradual.",
+        "Expansión comercial de conducción autónoma."
+      ],
+      "analysis": "La robótica se valida en operación repetida, no sólo en benchmarks; cada nueva ciudad añade condiciones reales al sistema completo.",
+      "watch": "Ritmo de ampliación, área de servicio y métricas públicas de seguridad."
     }
   ],
   "archiveStart": "2026-09-01",
