@@ -39,3 +39,17 @@ Si la investigación falla, no avances el estado de revisión. No limites la can
 Automation & Newsroom y Historical Backfill pueden trabajar al mismo tiempo. Antes de publicar, ambos deben leer la versión más reciente de `main`, reconciliar por `id` y `eventKey` y preservar cualquier artículo nuevo añadido por el otro proceso.
 
 Ver `docs/coordination.md`.
+
+
+## Profundidad y longitud
+
+La tarjeta de portada es un resumen; el artículo completo debe aportar contexto adicional real. No se considera suficiente repetir el resumen en tres párrafos.
+
+Usar como referencia:
+- actualización menor: 350–600 palabras;
+- noticia estándar: 700–1.200 palabras;
+- noticia mayor/informe: 1.200–2.000 palabras cuando la evidencia disponible lo justifique.
+
+Historical Backfill debe también enriquecer artículos existentes que sean demasiado breves dentro del bloque que está auditando. Mantener `id` y `eventKey` al ampliarlos.
+
+Ver `docs/article-depth.md`.
