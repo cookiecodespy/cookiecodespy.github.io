@@ -5,6 +5,8 @@ Crear una **web pública estilo diario antiguo / retro / envejecido**, orientada
 La estética debe verse como un **periódico físico antiguo deteriorado**, con mucha personalidad visual y un acabado más premium y detallado que la maqueta actual.
 
 ## Referencia visual principal
+
+![Referencia visual principal](assets/reference-look.jpg)
 - Archivo incluido en esta carpeta: `reference-look.jpg`
 - Esta imagen es la **referencia principal de look & feel**.
 - La meta es acercarse a ese nivel de detalle visual: papel envejecido, bordes quemados, textura realista y composición editorial más rica.
