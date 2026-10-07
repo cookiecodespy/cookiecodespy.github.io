@@ -23,4 +23,4 @@ No confundir una fecha pendiente con un día sin novedades. Un día solo puede d
 
 Investigar el intervalo desde la última revisión y volver a consultar al menos las últimas 48 horas para descubrir anuncios tardíos. Identificar eventos antes de escribir. Mantener IDs y enlaces, registrar correcciones, validar, regenerar RSS, compilar y publicar. Si la investigación falla, no avanzar el estado de revisión. No limitar la cantidad de noticias para llenar una cuota ni eliminar las antiguas. Mostrar 12 inicialmente y cargar 12 más conserva velocidad con archivos grandes.
 
-La tarea recurrente todavía necesita activación; su prompt está en scheduled-task.md. Este documento define el comportamiento editorial de esa tarea.
+La tarea recurrente está activada como revisión horaria de ChatGPT + GitHub; su especificación operativa está en scheduled-task.md. Este documento define el comportamiento editorial de esa tarea.
