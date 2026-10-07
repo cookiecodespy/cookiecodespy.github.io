@@ -6,7 +6,8 @@ Sitio: https://cookiecodespy.github.io/ai-race-gazette/
 
 ## Producto
 
-- Portada editorial con ilustraciones originales en estilo grabado.
+- Nombre del diario, resumen del proyecto, filtros y noticias, siguiendo la estructura de la maqueta v4.
+- Portadas individuales con ilustraciones originales en estilo grabado o filas de lista; ambas abren el art?culo completo.
 - Bordes reales de papel recortado con transparencia, textura y desgaste.
 - Hemeroteca por fecha, búsqueda sin distinción de acentos, filtros por compañía/tema/mes y vista lista.
 - Enlaces compartibles por artículo y edición; navegación atrás/adelante del navegador.

@@ -1,0 +1,4 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch({headless:true});const page=await browser.newPage({viewport:{width:1916,height:1010},deviceScaleFactor:1});
+await page.goto('file:///C:/Users/tomas/Downloads/ai-race-daily-retro-newspaper-v4.html');await page.screenshot({path:'qa/v4-covers-reference.png'});await page.getByRole('button',{name:'Vista Lista',exact:true}).click();await page.screenshot({path:'qa/v4-list-reference.png'});
+await page.goto('http://127.0.0.1:4173/');await page.getByRole('heading',{name:'Noticias de IA',exact:true}).waitFor();await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:'qa/revised-covers-viewport.png'});await page.getByRole('button',{name:'Vista lista',exact:true}).click();await page.screenshot({path:'qa/revised-list-viewport.png'});await browser.close();
