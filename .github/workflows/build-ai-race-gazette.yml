@@ -10,6 +10,7 @@ on:
       - 'ai-race-gazette/source/package-lock.json'
       - 'ai-race-gazette/source/vite.config.mjs'
       - 'ai-race-gazette/source/scripts/**'
+      - 'ai-race-gazette/source/research/**'
       - 'ai-race-gazette/source/tests/**'
       - '.github/workflows/build-ai-race-gazette.yml'
   workflow_dispatch:
@@ -49,6 +50,7 @@ jobs:
           python3 -m unittest tests/editorial_test.py
           python3 scripts/editorial.py --validate-only
           python3 scripts/quality-audit.py
+          python3 scripts/validate_source_registry.py
 
       - name: Build
         run: npm run build
