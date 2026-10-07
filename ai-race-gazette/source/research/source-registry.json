@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "purpose": "AI Race Gazette research coverage baseline. This is not a closed company list.",
+  "discoveryMode": "open",
+  "primarySourcePreference": true,
+  "importedConceptFrom": "cookiecodespy/spanish-news-nlp-pipeline",
+  "sources": [
+    {
+      "id": "openai-research",
+      "organization": "OpenAI",
+      "sourceType": "research",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "openai.com"
+      ],
+      "entrypoints": [
+        "https://openai.com/research/",
+        "https://openai.com/research/index/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://openai.com/research/",
+        "https://openai.com/index/"
+      ],
+      "topics": [
+        "agents",
+        "reasoning",
+        "evaluations",
+        "safety",
+        "coding-agents",
+        "tool-use"
+      ]
+    },
+    {
+      "id": "anthropic-engineering",
+      "organization": "Anthropic",
+      "sourceType": "engineering",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "anthropic.com",
+        "www.anthropic.com"
+      ],
+      "entrypoints": [
+        "https://www.anthropic.com/engineering"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.anthropic.com/engineering/"
+      ],
+      "topics": [
+        "agents",
+        "orchestration",
+        "context-engineering",
+        "tool-use",
+        "mcp",
+        "evaluations",
+        "coding-agents",
+        "long-running-agents",
+        "security"
+      ]
+    },
+    {
+      "id": "google-deepmind-research",
+      "organization": "Google DeepMind",
+      "sourceType": "research",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "deepmind.google"
+      ],
+      "entrypoints": [
+        "https://deepmind.google/research/",
+        "https://deepmind.google/research/publications/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://deepmind.google/research/"
+      ],
+      "topics": [
+        "agents",
+        "multi-agent",
+        "reasoning",
+        "evaluations",
+        "safety",
+        "memory",
+        "tool-use"
+      ]
+    },
+    {
+      "id": "google-research-publications",
+      "organization": "Google Research",
+      "sourceType": "research",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "research.google"
+      ],
+      "entrypoints": [
+        "https://research.google/pubs/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://research.google/pubs/"
+      ],
+      "topics": [
+        "agents",
+        "multi-agent",
+        "reasoning",
+        "evaluations",
+        "systems",
+        "security",
+        "human-ai-interaction"
+      ]
+    },
+    {
+      "id": "cerebras-blog",
+      "organization": "Cerebras",
+      "sourceType": "engineering",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "cerebras.ai",
+        "www.cerebras.ai"
+      ],
+      "entrypoints": [
+        "https://www.cerebras.ai/blog"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.cerebras.ai/blog/"
+      ],
+      "topics": [
+        "agents",
+        "orchestration",
+        "inference",
+        "verification",
+        "research-loops",
+        "developer-tools"
+      ]
+    }
+  ]
+}
