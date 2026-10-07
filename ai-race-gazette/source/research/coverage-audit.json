@@ -1,0 +1,763 @@
+{
+  "schemaVersion": 1,
+  "periodStart": "2026-09-01",
+  "periodEnd": "2026-10-07",
+  "sourceRegistry": "research/source-registry.json",
+  "categories": [
+    "models",
+    "agents",
+    "voice-audio",
+    "image-video",
+    "chips-accelerators",
+    "datacenters-infrastructure",
+    "robotics-autonomy",
+    "research",
+    "security",
+    "developer-tools",
+    "open-source",
+    "deals-financing"
+  ],
+  "description": "Machine-readable audit ledger for historical coverage. Empty source/category lists mean not yet audited under Research Backbone v1, not that nothing existed.",
+  "days": [
+    {
+      "date": "2026-09-01",
+      "archiveStatus": "complete",
+      "verifiedArticles": 12,
+      "auditMode": "legacy-block-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 12,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": "history-audit-2026-09-01-07.md",
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": true,
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+    },
+    {
+      "date": "2026-09-02",
+      "archiveStatus": "complete",
+      "verifiedArticles": 8,
+      "auditMode": "legacy-block-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 8,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": "history-audit-2026-09-01-07.md",
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": true,
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+    },
+    {
+      "date": "2026-09-03",
+      "archiveStatus": "complete",
+      "verifiedArticles": 6,
+      "auditMode": "legacy-block-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 6,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": "history-audit-2026-09-01-07.md",
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": true,
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+    },
+    {
+      "date": "2026-09-04",
+      "archiveStatus": "complete",
+      "verifiedArticles": 4,
+      "auditMode": "legacy-block-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 4,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": "history-audit-2026-09-01-07.md",
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": true,
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+    },
+    {
+      "date": "2026-09-05",
+      "archiveStatus": "complete",
+      "verifiedArticles": 2,
+      "auditMode": "legacy-block-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 2,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": "history-audit-2026-09-01-07.md",
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": true,
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+    },
+    {
+      "date": "2026-09-06",
+      "archiveStatus": "complete",
+      "verifiedArticles": 2,
+      "auditMode": "legacy-block-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 2,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": "history-audit-2026-09-01-07.md",
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": true,
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+    },
+    {
+      "date": "2026-09-07",
+      "archiveStatus": "complete",
+      "verifiedArticles": 2,
+      "auditMode": "legacy-block-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 2,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": "history-audit-2026-09-01-07.md",
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": true,
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+    },
+    {
+      "date": "2026-09-08",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-09",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-10",
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 1,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-11",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-12",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-13",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-14",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-15",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-16",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-17",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-18",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-19",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-20",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-21",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-22",
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 1,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-23",
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 1,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-24",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-25",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-26",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-27",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-28",
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 1,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-29",
+      "archiveStatus": "partial",
+      "verifiedArticles": 3,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 3,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-09-30",
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 1,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-10-01",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-10-02",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-10-03",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-10-04",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-10-05",
+      "archiveStatus": "pending",
+      "verifiedArticles": 0,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 0,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-10-06",
+      "archiveStatus": "partial",
+      "verifiedArticles": 4,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 4,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-10-07",
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 1,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    }
+  ]
+}
