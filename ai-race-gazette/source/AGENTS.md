@@ -6,7 +6,7 @@
 
 Public Spanish AI/technology newspaper hosted in cookiecodespy/cookiecodespy.github.io/ai-race-gazette. Main reference: public/assets/reference-look.jpg. Match warm parchment, genuinely cut/singed irregular edges, engraved imagery, strong newspaper hierarchy, and complete internal articles with official sources. Do not describe the retro design in public product copy.
 
-User selected hourly editorial updates through ChatGPT + GitHub, not Codex, Work or a paid API. Read docs/gazette-v1-standard.md first, then docs/editorial-policy.md, docs/content-model.md, docs/article-v2-schema.md, docs/article-depth.md, docs/image-policy.md, docs/scheduled-task.md, docs/automation-operations.md, docs/coordination.md and docs/roadmap.md. Routine editorial updates should touch data/RSS/coverage only when there is a material change; no-op hourly checks must create no commit. Do not modify visual code during routine news updates. Publish only Gazette paths; preserve the repository root page. User explicitly authorized Playwright/Chromium verification when the integrated browser is unavailable.
+User selected hourly editorial updates through ChatGPT + GitHub, not Codex, Work or a paid API. Read docs/gazette-v1-standard.md first, then docs/research-backbone.md, docs/editorial-policy.md, docs/content-model.md, docs/article-v2-schema.md, docs/article-depth.md, docs/image-policy.md, docs/scheduled-task.md, docs/automation-operations.md, docs/coordination.md and docs/roadmap.md. Use research/source-registry.json as a baseline coverage checklist, never as a closed company list. Routine editorial updates should touch data/RSS/coverage only when there is a material change; no-op hourly checks must create no commit. Do not modify visual code during routine news updates. Publish only Gazette paths; preserve the repository root page. User explicitly authorized Playwright/Chromium verification when the integrated browser is unavailable.
 
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
@@ -36,3 +36,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 
 2026-10-07 daily coverage rule: public `data/news.json.dailyCoverage` mirrors `docs/history-coverage.json`. Every article date must have a ledger row and verifiedArticles must equal the real count. Keep both synchronized in any publication that changes daily coverage. Empty hourly checks remain no-op.
+
+
+2026-10-07 Research Backbone rule: `docs/research-backbone.md` adapts the strongest provenance/discovery ideas from `cookiecodespy/spanish-news-nlp-pipeline`. `research/source-registry.json` is a baseline of official sources and must not suppress open discovery. The current product does not depend on SQLite, exact-byte ingestion or evidence bundles during hourly runs; those remain future research-service capabilities.
