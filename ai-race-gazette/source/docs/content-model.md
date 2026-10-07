@@ -13,14 +13,29 @@ Ejemplo: OpenAI publica tres funciones y Anthropic dos el 7 de octubre. Se crean
 
 ## Fechas y archivo
 
-date es la fecha del anuncio cuando se ha confirmado. Si se desconoce, se usa la fecha de cobertura con nota explícita. source.publishedAt es la fecha comprobada de la fuente; coveredAt indica cuándo escribimos la cobertura; verifiedAt registra la revisión. Corregir una fecha no cambia el id ni rompe enlaces.
+`date` es la fecha del anuncio cuando se ha confirmado. Si se desconoce, se usa la fecha de cobertura con nota explícita. `source.publishedAt` es la fecha comprobada de la fuente; `coveredAt` indica cuándo escribimos la cobertura; `verifiedAt` registra la revisión. Corregir una fecha no cambia el id ni rompe enlaces.
 
-El archivo solicitado abarca 1 de septiembre–7 de octubre de 2026. docs/history-candidates.json conserva las 37 jornadas de la maqueta como pistas. docs/history-coverage.json registra por fecha pending o partial. Ningún día está marcado completo: publicar uno o varios artículos no demuestra que hayamos revisado todas las fuentes de todas las empresas.
+El archivo solicitado abarca 1 de septiembre–7 de octubre de 2026. `docs/history-candidates.json` conserva las 37 jornadas de la maqueta como pistas. `docs/history-coverage.json` registra el estado de cada fecha. Publicar uno o varios artículos no demuestra que una jornada esté completa.
 
-No confundir una fecha pendiente con un día sin novedades. Un día solo puede declararse revisado sin noticias cuando existe un registro de las fuentes y el período consultado. El archivo público muestra su alcance parcial.
+No confundir una fecha pendiente con un día sin novedades. Un día solo puede declararse revisado sin noticias cuando existe evidencia de las fuentes y el período consultado.
 
-## Actualización diaria
+## Estados históricos
 
-Investigar el intervalo desde la última revisión y volver a consultar al menos las últimas 48 horas para descubrir anuncios tardíos. Identificar eventos antes de escribir. Mantener IDs y enlaces, registrar correcciones, validar, regenerar RSS, compilar y publicar. Si la investigación falla, no avanzar el estado de revisión. No limitar la cantidad de noticias para llenar una cuota ni eliminar las antiguas. Mostrar 12 inicialmente y cargar 12 más conserva velocidad con archivos grandes.
+- `pending`: no revisado suficientemente.
+- `partial`: hay contenido verificado, pero la revisión no es exhaustiva.
+- `complete`: el conjunto relevante de fuentes y actores fue revisado.
+- `reviewed-no-material-news`: la jornada se revisó y no se encontró una novedad material publicable.
 
-La tarea recurrente está activada como revisión horaria de ChatGPT + GitHub; su especificación operativa está en scheduled-task.md. Este documento define el comportamiento editorial de esa tarea.
+## Actualización viva
+
+La tarea horaria está activa. Investiga novedades desde la última revisión y vuelve a consultar al menos las últimas 48 horas para descubrir anuncios tardíos.
+
+Identifica eventos antes de escribir. Mantén IDs y enlaces, registra correcciones y regenera los datos/RSS publicados solo cuando exista un cambio material. El frontend carga `news.json` dinámicamente, así que una actualización editorial rutinaria no necesita recompilar React.
+
+Si la investigación falla, no avances el estado de revisión. No limites la cantidad de noticias para llenar una cuota ni elimines las antiguas. Mostrar 12 inicialmente y cargar 12 más conserva velocidad con archivos grandes.
+
+## Escritura concurrente
+
+Automation & Newsroom y Historical Backfill pueden trabajar al mismo tiempo. Antes de publicar, ambos deben leer la versión más reciente de `main`, reconciliar por `id` y `eventKey` y preservar cualquier artículo nuevo añadido por el otro proceso.
+
+Ver `docs/coordination.md`.
