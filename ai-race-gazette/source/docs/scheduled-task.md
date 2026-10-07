@@ -1,6 +1,6 @@
 # Actualización diaria con ChatGPT + GitHub
 
-Estado: preparada para ejecución programada desde ChatGPT con conexión GitHub. La actualización de noticias no depende del PC local: el sitio publicado carga `data/news.json` en tiempo de lectura, por lo que una tarea conectada a GitHub puede incorporar noticias sin recompilar el frontend.
+Estado: activada el 7 de octubre de 2026 como tarea diaria de ChatGPT con conexión GitHub. La actualización de noticias no depende del PC local: el sitio publicado carga `data/news.json` en tiempo de lectura, por lo que una tarea conectada a GitHub puede incorporar noticias sin recompilar el frontend.
 
 Horario objetivo: todos los días a las 04:30, America/Santiago.
 
