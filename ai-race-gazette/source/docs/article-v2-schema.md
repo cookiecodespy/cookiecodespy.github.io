@@ -9,6 +9,17 @@ Hasta desplegar el frontend V2, todo artículo conserva los campos legacy actual
 Campo recomendado:
 - `articleVersion: 2`
 
+## Núcleo obligatorio de Reporter V2
+
+Cuando `articleVersion: 2` esté presente, la validación exige:
+- al menos 500 palabras de contenido editorial total;
+- `quickTakeaways` con al menos 3 puntos;
+- `executiveSummary`;
+- `finalSummary`;
+- todos los campos legacy requeridos durante la migración.
+
+Los demás campos V2 se usan cuando aportan valor y existe evidencia suficiente. No inventar curiosidades, consejos, comparaciones, precios o datos técnicos para completar una plantilla.
+
 ## Campos nuevos opcionales
 
 ### `quickTakeaways`

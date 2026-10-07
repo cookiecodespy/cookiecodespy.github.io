@@ -16,6 +16,10 @@ Carpeta:
 `ai-race-gazette/`
 
 Leer antes de actuar:
+- `source/docs/gazette-v1-standard.md`
+- `source/docs/article-v2-schema.md`
+- `source/docs/image-policy.md`
+- `source/docs/automation-operations.md`
 - `source/AGENTS.md`
 - `source/docs/editorial-policy.md`
 - `source/docs/content-model.md`
@@ -71,3 +75,10 @@ Cada lote debe terminar con revisión, deduplicación, actualización de `histor
 ## Profundidad editorial
 
 Leer también `source/docs/article-depth.md`. Las páginas internas deben funcionar como artículos/informes completos, no como briefings extendidos. Automation & Newsroom debe publicar piezas suficientemente desarrolladas, y Historical Backfill debe enriquecer artículos existentes demasiado breves al revisar cada bloque histórico.
+
+
+## Reporter V2
+
+Reporter V2 es el estándar de publicación desde el 7 de octubre de 2026. Las noticias nuevas no deben recrear el formato breve legacy. La automatización debe respetar el núcleo obligatorio de `article-v2-schema.md`.
+
+Si una escritura automática es bloqueada por aprobación/seguridad, seguir `automation-operations.md` y devolver un paquete de publicación pendiente en vez de reintentar en bucle.

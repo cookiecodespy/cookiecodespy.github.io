@@ -5,6 +5,10 @@ Fecha de corte: 2026-10-07.
 ## Estado general
 
 ### Terminado
+- Frontend Article V2 implementado: lectura rápida, secciones, detalles técnicos, precio/disponibilidad, cronología, consejos, datos útiles, curiosidades, limitaciones, análisis editorial, resumen final y fuentes; conserva fallback legacy.
+- CI de Gazette con tests Node/Python, validación editorial, build, Sites tests y Browser QA responsive.
+- Ledger `dailyCoverage` expuesto en el JSON público para distinguir días completos, parciales, pendientes o revisados sin novedades.
+- Metadatos SEO/OpenGraph/Twitter genéricos y metadatos dinámicos en navegación cliente.
 - Estándar editorial/producto v1.0, esquema Article V2, política visual y runbook de automatización documentados.
 - Sitio público en GitHub Pages.
 - Home con vista portadas y vista lista.
@@ -29,7 +33,7 @@ Fecha de corte: 2026-10-07.
 - Completar la cobertura real y verificable del 8–30 de septiembre de 2026.
 - Completar el tramo 1–7 de octubre de 2026 y continuar día a día.
 - Segunda pasada de auditoría para detectar omisiones, duplicados y fechas incorrectas.
-- Migrar las 48 piezas existentes a Reporter V2 y desplegar el frontend Article V2.
+- Migrar las piezas legacy existentes a Reporter V2; el frontend Article V2 ya está desplegado.
 - Pulido visual/editorial final antes de declarar la versión 1.0.
 - Revisar metadatos sociales/SEO y presentación al compartir enlaces.
 - Resolver o diseñar un flujo explícito de aprobación para escrituras GitHub rechazadas durante Scheduled Tasks.
