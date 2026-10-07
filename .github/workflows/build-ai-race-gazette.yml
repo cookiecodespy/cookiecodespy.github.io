@@ -51,6 +51,7 @@ jobs:
           python3 scripts/editorial.py --validate-only
           python3 scripts/quality-audit.py
           python3 scripts/validate_source_registry.py
+          python3 scripts/validate_coverage_audit.py
 
       - name: Build
         run: npm run build
