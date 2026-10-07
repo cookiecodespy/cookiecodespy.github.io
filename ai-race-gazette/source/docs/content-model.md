@@ -61,3 +61,10 @@ Ver `docs/article-depth.md`.
 El estándar definitivo está en `docs/gazette-v1-standard.md` y el esquema ampliado en `docs/article-v2-schema.md`.
 
 Durante la migración se conservan los campos legacy para compatibilidad con el frontend actual. Los campos V2 son aditivos. Los artículos futuros deben nacer con Reporter V2 para evitar crear una nueva deuda de piezas breves.
+
+
+## Ledger diario público
+
+El JSON editorial incluye `dailyCoverage`, sincronizado con `docs/history-coverage.json`. El frontend lo usa para distinguir `pending`, `partial`, `complete` y `reviewed-no-material-news`.
+
+`verifiedArticles` debe coincidir con los artículos publicados para la fecha. Toda publicación que cambie una fecha debe reconciliar ambos ledgers.

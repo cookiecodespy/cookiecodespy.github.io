@@ -148,3 +148,12 @@ Ver `docs/automation-operations.md`.
 ## Imágenes en Newsroom
 
 La noticia no debe bloquearse por arte. Selecciona una imagen editorial existente adecuada y, para historias que merezcan arte propio, añade un `imageBrief` y `imageStatus: needs-specific-art`. La generación/carga autónoma de binarios no se considera fiable hasta que el Visual Desk tenga un pipeline probado.
+
+
+## Estado diario durante Newsroom
+
+`data/news.json.dailyCoverage` y `docs/history-coverage.json` deben permanecer sincronizados.
+
+Cuando se publica una noticia en una fecha que aún no tiene fila, crearla como `partial`. Si ya existe, actualizar `verifiedArticles` al conteo real sin degradar un estado `complete` o `reviewed-no-material-news` sin una razón editorial documentada.
+
+Un chequeo horario sin novedades conserva la regla no-op: no crear commits solo para marcar el paso de una hora o un día.

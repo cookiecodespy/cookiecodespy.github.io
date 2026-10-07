@@ -102,3 +102,12 @@ Antes de cada publicación:
 ## Meta
 
 Al terminar septiembre y octubre hasta la fecha actual, la hemeroteca debe permitir reconstruir la evolución de la AI race día por día, incluyendo días auditados sin una noticia material.
+
+
+## Sincronización del calendario
+
+Cada cierre de lote debe mantener idéntica la información diaria entre:
+- `data/news.json.dailyCoverage` y su espejo;
+- `docs/history-coverage.json`.
+
+Antes de publicar, recalcular `verifiedArticles` desde los artículos reales. No mantener conteos manuales que puedan quedar desfasados.

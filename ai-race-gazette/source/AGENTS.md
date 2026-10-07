@@ -33,3 +33,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 2026-10-07 visual rule: follow `docs/image-policy.md`. The hourly Newsroom may select existing editorial art and write an image brief; new binary image generation/upload is a separate Visual Desk capability until a reliable automated pipeline is proven.
 
 2026-10-07 scheduled-write rule: read `docs/automation-operations.md`. A blocked unattended GitHub mutation is an operational approval/security limitation, not proof that repository permissions are missing. Never loop retries or leave partial mirror state.
+
+
+2026-10-07 daily coverage rule: public `data/news.json.dailyCoverage` mirrors `docs/history-coverage.json`. Every article date must have a ledger row and verifiedArticles must equal the real count. Keep both synchronized in any publication that changes daily coverage. Empty hourly checks remain no-op.

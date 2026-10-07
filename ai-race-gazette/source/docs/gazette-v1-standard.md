@@ -167,3 +167,18 @@ v1.0 exige:
 - SEO/OpenGraph revisados;
 - mobile/desktop QA;
 - arte con crédito y sin falsas fotografías.
+
+
+## 12. Estado diario público
+
+`data/news.json` contiene `dailyCoverage`, una copia pública del ledger de `docs/history-coverage.json`.
+
+Reglas:
+- cada fecha del ledger es única;
+- no puede haber huecos entre `coverageStart` y la última fecha registrada;
+- `verifiedArticles` debe coincidir con el número real de artículos de esa fecha;
+- cuando se modifica un estado diario, actualizar `dailyCoverage` y `history-coverage.json` en la misma publicación;
+- un run horario vacío NO crea por sí solo un commit para marcar el día; el cierre `reviewed-no-material-news` se hace durante una auditoría/cierre de cobertura;
+- toda fecha que contenga artículos debe existir en el ledger público.
+
+Esto permite que el frontend distinga un hueco pendiente de un día realmente revisado sin noticias.
