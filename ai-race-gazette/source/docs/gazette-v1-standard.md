@@ -182,3 +182,28 @@ Reglas:
 - toda fecha que contenga artículos debe existir en el ledger público.
 
 Esto permite que el frontend distinga un hueco pendiente de un día realmente revisado sin noticias.
+
+
+## 13. Research Backbone y cobertura auditable
+
+El Gazette usa `research/source-registry.json` como checklist base de fuentes oficiales, no como lista cerrada.
+
+Cada investigación histórica completa debe combinar:
+- fuentes base;
+- discovery abierto;
+- revisión por categorías;
+- pasada inversa por actores/categorías.
+
+`research/coverage-audit.json` registra la evidencia operativa del cierre diario. Ver `docs/coverage-audit.md`.
+
+Las fechas 1–7 Sep cerradas antes de Research Backbone v1 mantienen estado `complete`, pero quedan marcadas para replay del nuevo checklist durante la auditoría inversa final.
+
+## 14. Calendario público
+
+La web debe representar todas las fechas del ledger, incluidas fechas sin artículos:
+- complete;
+- partial;
+- pending;
+- reviewed-no-material-news.
+
+Una edición diaria vacía debe explicar su estado; nunca usar un hueco visual como prueba de que no hubo noticias.
