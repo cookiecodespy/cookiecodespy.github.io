@@ -16,6 +16,7 @@ Fecha de corte: 2026-10-07.
 - Política editorial, modelo de contenido y validación de ids/eventKey.
 - Automatización de ChatGPT + GitHub configurada para revisar novedades cada hora.
 - La automatización rutinaria no debe invocar Codex, Work ni una API de pago.
+- Protocolo de coordinación para evitar sobrescrituras entre Newsroom y Historical Backfill.
 
 ### Funcionando parcialmente
 - Archivo histórico desde 2026-09-01.
@@ -40,6 +41,8 @@ La cobertura no se limita a las grandes compañías. Debe descubrir actores emer
 
 ### B. Reconstrucción histórica
 El histórico no se debe completar automáticamente rellenando huecos. Se hará mediante investigaciones profundas por bloques, con fuentes verificadas.
+
+Ambos carriles siguen `docs/coordination.md` para que una investigación larga no sobrescriba noticias añadidas mientras tanto.
 
 ## Plan de reconstrucción histórica
 
@@ -74,12 +77,20 @@ La v1.0 se considera lista cuando:
 - no hay contenido ficticio heredado de la maqueta;
 - la automatización puede añadir compañías nuevas sin cambios de frontend;
 - la tarea horaria no genera commits vacíos;
+- no existen sobrescrituras entre flujos concurrentes;
 - el diseño se mantiene protegido de cambios editoriales rutinarios.
+
+## Después del backfill
+
+Backlog, no requisito de la v1.0:
+- radar interno de compañías emergentes;
+- mejores imágenes editoriales específicas por compañía;
+- ranking/indicadores de actividad por empresa;
+- digest diario/semanal derivado del mismo archivo;
+- automatización de previews sociales.
 
 ## Próximo paso inmediato
 
-Abrir un chat dedicado dentro del Project de ChatGPT llamado, por ejemplo, **AI Race Gazette — Automation & Newsroom**. Ese chat debe usarse para revisar la automatización, incidencias de publicación y operación editorial.
-
-Mantener otro chat separado para **Historical Backfill** y ejecutar allí las investigaciones profundas por bloques.
+Los chats dedicados **Automation & Newsroom** y **Historical Backfill** ya están activos. Dejar que cada uno trabaje en su carril y usar este roadmap para coordinar cambios.
 
 No mezclar rediseños grandes con actualizaciones automáticas de noticias.
