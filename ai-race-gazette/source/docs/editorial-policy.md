@@ -24,11 +24,25 @@ No presentar rumores como hechos. Un reporte no confirmado solo merece publicaci
 
 ## Archivo histórico pendiente
 
-Reconstruir 1 de septiembre–5 de octubre de 2026 y ampliar 6–7 de octubre con fuentes primarias por día. No se considera completo hasta verificarlo. Preservar días sin novedades como tales, sin inventar titulares. La ampliación del 7 de octubre contiene 15 noticias en 9 fechas. Es cobertura parcial; ninguna jornada se considera exhaustiva. Ver content-model.md e history-coverage.json.
+El archivo parte el 1 de septiembre de 2026 y continúa día a día. Al corte del 7 de octubre hay 48 artículos verificados en 14 fechas; el bloque 1–7 de septiembre reúne 36 artículos y está marcado `complete` con auditoría documentada. El resto del período sigue parcial o pendiente.
+
+Cada fecha debe terminar como `complete` o `reviewed-no-material-news` solo después de una revisión equivalente. Nunca inventar titulares para llenar un día. Ver `content-model.md`, `history-coverage.json` y `gazette-v1-standard.md`.
 
 
 ## Profundidad de los artículos
 
-La portada resume; la página interna desarrolla. Los artículos estándar deben apuntar a 700–1.200 palabras cuando exista información verificable suficiente, y los lanzamientos mayores pueden convertirse en informes de 1.200–2.000 palabras. Actualizaciones menores pueden ser más breves. No alargar con relleno ni especulación.
+La portada resume; la página interna desarrolla. Reporter V2 es el estándar. Una noticia estándar suele quedar en 900–1.600 palabras, una noticia mayor en 1.500–2.500 y un informe excepcional puede superar 2.000–3.500 cuando la evidencia lo justifique. Una actualización menor puede ser de 500–800. Son rangos orientativos, nunca relleno obligatorio. No alargar con relleno ni especulación.
 
 Cada pieza debe ampliar sustancialmente el resumen e incluir, cuando aplique: qué pasó, qué cambia, detalles técnicos, disponibilidad/precio, antecedentes, impacto competitivo, limitaciones, análisis editorial, qué seguir y fuentes. Ver `article-depth.md`.
+
+
+## Consejos, curiosidades y utilidad
+
+Los artículos pueden incluir consejos, datos útiles y curiosidades, pero deben cumplir:
+- consejos como orientación editorial, no promesas;
+- curiosidades verificadas y relevantes;
+- datos útiles concretos y comprobables;
+- ninguna trivia inventada;
+- análisis/opinión separados visual y semánticamente de los hechos.
+
+Ver `docs/gazette-v1-standard.md`.
