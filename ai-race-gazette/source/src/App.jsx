@@ -9,7 +9,78 @@ function Masthead({query,onQuery,home}) {return <header className="masthead arch
 function NewsCover({article,index}) {return <a className="edition-card news-cover" href={`#articulo/${article.id}`}><div className="card-paper" aria-hidden="true"/><div className="card-content"><div className="card-date"><span>Noticia</span><time dateTime={article.date}>{dateLabel(article.date,true)}</time><span>Acceso libre</span></div><div className="card-mast">AI Race Gazette</div><div className="eyebrow">{article.company} · {article.product||'Novedad'}</div><h3>{article.title}</h3><p>{article.summary}</p><div className="cover-detail"><img src={asset(article.image)} alt={article.imageAlt} loading={index<4?'eager':'lazy'} width="600" height="400"/><div className="cover-keys"><h4>Puntos clave</h4>{article.keyPoints.slice(0,2).map(point=><p key={point}>{point}</p>)}</div></div><div className="cover-tags">{article.tags.map(t=><span key={t}>{t}</span>)}</div><div className="card-bottom"><span>Fuente oficial</span><span>Abrir noticia</span></div></div></a>;}
 function Illustration({article,hero=false}) {return <figure className="hero-art"><img src={asset(article?.image||'assets/hero.webp')} alt={article?.imageAlt||'Grabado de un humanoide mecánico junto a un globo terrestre'} loading={hero?'eager':'lazy'} width="900" height="600"/><figcaption>{article?.imageCredit||'Ilustración editorial generada con IA · AI Race Gazette'}</figcaption></figure>;}
 function MiniArticle({article,index}) {return <a className="mini-article" href={`#articulo/${article.id}`}><div className="company-name">{article.company}</div><img src={asset(article.image)} alt="" loading="lazy" width="400" height="220"/><h3>{article.title}</h3><p>{article.summary}</p><span className="read-label">Leer noticia <span>Pág. {index+2}</span></span></a>;}
-function Article({article,articles,onShare}) {return <article className="full-article"><div className="article-nav"><a href="#">Volver a la portada</a><a href={`#edicion/${article.date}`}>Edición del {dateLabel(article.date,true)}</a></div><Rule/><div className="section-meta"><span>{article.company} · {dateLabel(article.date)}</span><span>{article.tags.join(' · ')}</span></div><h1>{article.title}</h1><p className="article-deck">{article.summary}</p><div className="byline"><span>Redacción AI Race Gazette · {Math.max(2,Math.ceil(article.body.join(' ').split(' ').length/180))} min de lectura</span><button onClick={onShare}>Copiar enlace</button></div><Illustration article={article} hero/><div className="story-layout"><div className="story">{article.body.map((p,i)=><p key={i}>{p}</p>)}<section className="analysis"><h2>Por qué importa</h2><p>{article.analysis}</p><small>Análisis editorial</small></section><section><h2>Qué seguir ahora</h2><p>{article.watch}</p></section></div><aside><div className="key-box"><h2>Puntos clave</h2><ol>{article.keyPoints.map(p=><li key={p}>{p}</li>)}</ol></div><div className="source-box"><h2>Sobre esta cobertura</h2><p>{article.announcedAt?`Anuncio original: ${dateLabel(article.announcedAt)}.`:'Fecha original sin confirmar.'}</p><p>Revisada el {dateLabel(article.verifiedAt)}.</p>{article.verificationNote&&<p>{article.verificationNote}</p>}<p>Resumen asistido por IA. Las valoraciones editoriales se presentan como análisis.</p>{article.corrections?.map(c=><p key={c.date+c.note}><b>Corrección · {dateLabel(c.date)}:</b> {c.note}</p>)}</div></aside></div><section className="sources"><h2>Consulta la fuente original</h2><p>Revisa el anuncio y la documentación del autor.</p><a className="button primary" href={article.source.url} target="_blank" rel="noopener noreferrer">{article.source.name} · Abrir fuente</a>{article.relatedSources?.map(s=><a className="related-source" key={s.url} href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a>)}</section>{articles.some(a=>a.date===article.date&&a.id!==article.id)&&<><Rule/><h2 className="related-title">Más noticias del mismo día</h2><div className="headlines">{articles.filter(a=>a.date===article.date&&a.id!==article.id).slice(0,8).map((a,i)=><MiniArticle key={a.id} article={a} index={i}/>)}</div></>}</article>;}
+const articleWordCount = article => {
+ const parts=[article.title,article.summary,...(article.body||[]),article.analysis,article.watch,article.executiveSummary,article.finalSummary,...(article.quickTakeaways||[]),...(article.limitations||[]),...(article.practicalAdvice||[]),...(article.usefulFacts||[]),...(article.curiosities||[])];
+ for(const section of article.sections||[]) parts.push(section.heading,...(section.paragraphs||[]));
+ return parts.filter(Boolean).join(' ').trim().split(/\\s+/).filter(Boolean).length;
+};
+function DetailList({title,items,className=''}) {
+ if(!items?.length)return null;
+ return <section className={`detail-card ${className}`}><h2>{title}</h2><dl>{items.map((item,i)=><div className="detail-row" key={item.label+i}><dt>{item.label}</dt><dd>{item.value}{item.note&&<small>{item.note}</small>}</dd></div>)}</dl></section>;
+}
+function BulletBlock({title,items,className=''}) {
+ if(!items?.length)return null;
+ return <section className={`report-block ${className}`}><h2>{title}</h2><ul>{items.map((item,i)=><li key={item+i}>{item}</li>)}</ul></section>;
+}
+function AvailabilityCard({availability}) {
+ if(!availability)return null;
+ const groups=[['Plataformas',availability.platforms],['Regiones',availability.regions],['Requisitos',availability.requirements],['Notas',availability.notes]].filter(([,items])=>items?.length);
+ return <section className="detail-card availability-card"><h2>Disponibilidad</h2>{availability.status&&<p className="availability-status">{availability.status}</p>}{groups.map(([label,items])=><div className="availability-group" key={label}><h3>{label}</h3><ul>{items.map((item,i)=><li key={item+i}>{item}</li>)}</ul></div>)}</section>;
+}
+function Timeline({items}) {
+ if(!items?.length)return null;
+ return <section className="report-block timeline-block"><h2>Cronología</h2><ol>{items.map((item,i)=><li key={item.date+item.label+i}><time dateTime={item.date}>{dateLabel(item.date,true)}</time><div><strong>{item.label}</strong>{item.description&&<p>{item.description}</p>}</div></li>)}</ol></section>;
+}
+function ComparisonBlock({items}) {
+ if(!items?.length)return null;
+ return <section className="report-block comparison-block"><h2>Contexto competitivo</h2>{items.map((item,i)=><article key={item.subject+i}><h3>{item.subject}</h3><p>{item.comparison}</p><small><b>Base:</b> {item.basis}{item.caveat&&<> · {item.caveat}</>}</small></article>)}</section>;
+}
+function MediaGallery({items}) {
+ if(!items?.length)return null;
+ return <div className="article-media-grid">{items.map((media,i)=><figure key={media.src+i}><img src={asset(media.src)} alt={media.alt} loading="lazy"/><figcaption>{media.caption&&<span>{media.caption} </span>}{media.credit}</figcaption></figure>)}</div>;
+}
+function Article({article,articles,onShare}) {
+ const readingMinutes=Math.max(2,Math.ceil(articleWordCount(article)/200));
+ const isV2=article.articleVersion===2;
+ const secondaryMedia=(article.media||[]).filter(media=>media.src!==article.image);
+ return <article className={isV2?'full-article reporter-v2':'full-article'}>
+  <div className="article-nav"><a href="#">Volver a la portada</a><a href={`#edicion/${article.date}`}>Edición del {dateLabel(article.date,true)}</a></div>
+  <Rule/>
+  <div className="section-meta"><span>{article.company} · {dateLabel(article.date)}</span><span>{article.tags.join(' · ')}</span></div>
+  {isV2&&<div className="reporter-strip"><span>Informe Reporter V2</span><span>{article.product||'Cobertura especial'}</span></div>}
+  <h1>{article.title}</h1>
+  <p className="article-deck">{article.summary}</p>
+  <div className="byline"><span>Redacción AI Race Gazette · {readingMinutes} min de lectura{isV2?' · Informe ampliado':''}</span><button onClick={onShare}>Copiar enlace</button></div>
+  <Illustration article={article} hero/>
+  {article.quickTakeaways?.length>0&&<section className="quick-brief"><div><span className="quick-kicker">Lectura rápida</span><h2>En 30 segundos</h2></div><ul>{article.quickTakeaways.map((point,i)=><li key={point+i}>{point}</li>)}</ul></section>}
+  <div className="story-layout">
+   <div className="story">
+    {article.executiveSummary&&<section className="report-block executive-summary"><span className="report-label">Resumen ejecutivo</span><h2>La noticia, en contexto</h2><p>{article.executiveSummary}</p></section>}
+    {(article.body||[]).map((p,i)=><p key={i}>{p}</p>)}
+    <MediaGallery items={secondaryMedia}/>
+    {article.sections?.map((section,i)=><section className={`report-block report-section ${section.kind||''}`} key={section.heading+i}><h2>{section.heading}</h2>{section.paragraphs.map((p,j)=><p key={j}>{p}</p>)}</section>)}
+    <Timeline items={article.timeline}/>
+    <ComparisonBlock items={article.comparisons}/>
+    <section className="analysis gazette-analysis"><span className="report-label">Opinión separada de los hechos</span><h2>La lectura del Gazette</h2><p>{article.analysis}</p><small>Análisis editorial · AI Race Gazette</small></section>
+    <BulletBlock title="Consejos prácticos" items={article.practicalAdvice} className="advice-block"/>
+    <BulletBlock title="Datos útiles" items={article.usefulFacts} className="useful-block"/>
+    <BulletBlock title="Datos curiosos" items={article.curiosities} className="curiosity-block"/>
+    <BulletBlock title="Limitaciones y preguntas abiertas" items={article.limitations} className="limitations-block"/>
+    {article.finalSummary&&<section className="report-block final-summary"><span className="report-label">Cierre</span><h2>Resumen final</h2><p>{article.finalSummary}</p></section>}
+    <section className="report-block watch-block"><h2>Qué seguir ahora</h2><p>{article.watch}</p></section>
+   </div>
+   <aside className="article-aside">
+    <div className="key-box"><h2>Puntos clave</h2><ol>{article.keyPoints.map(p=><li key={p}>{p}</li>)}</ol></div>
+    <DetailList title="En números y detalles" items={article.technicalDetails}/>
+    <DetailList title="Precio" items={article.pricing} className="pricing-card"/>
+    <AvailabilityCard availability={article.availability}/>
+    <div className="source-box"><h2>Sobre esta cobertura</h2><p>{article.announcedAt?`Anuncio original: ${dateLabel(article.announcedAt)}.`:'Fecha original sin confirmar.'}</p><p>Revisada el {dateLabel(article.verifiedAt)}.</p>{article.verificationNote&&<p>{article.verificationNote}</p>}<p>Hechos, claims del proveedor y análisis editorial se distinguen según la política del Gazette.</p>{article.imageStatus==='needs-specific-art'&&<p><b>Visual:</b> la ilustración actual es temporal; existe un brief para arte específico.</p>}{article.corrections?.map(c=><p key={c.date+c.note}><b>Corrección · {dateLabel(c.date)}:</b> {c.note}</p>)}</div>
+   </aside>
+  </div>
+  <section className="sources"><div className="source-heading"><span className="report-label">Fuentes y trazabilidad</span><h2>Consulta la evidencia original</h2><p>El Gazette prioriza anuncios, documentación, papers y repositorios primarios; las fuentes secundarias se usan para contexto adicional.</p></div><div className="source-links"><a className="button primary" href={article.source.url} target="_blank" rel="noopener noreferrer">{article.source.name} · Fuente principal</a>{article.relatedSources?.map(s=><a className="related-source" key={s.url} href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a>)}</div></section>
+  {articles.some(a=>a.date===article.date&&a.id!==article.id)&&<><Rule/><h2 className="related-title">Más noticias del mismo día</h2><div className="headlines">{articles.filter(a=>a.date===article.date&&a.id!==article.id).slice(0,8).map((a,i)=><MiniArticle key={a.id} article={a} index={i}/>)}</div></>}
+ </article>;
+}
 function Edition({edition}) {return <section><div className="article-nav"><a href="#">Volver a la hemeroteca</a><span>{edition.articles.length} noticias</span></div><Rule/><div className="section-meta"><span>Edición diaria</span><span>{dateLabel(edition.date)}</span></div><h1 className="edition-title">La carrera de la IA,<br/>día a día.</h1><div className="edition-lead"><a href={`#articulo/${edition.articles[0].id}`}><div className="eyebrow">{edition.articles[0].company}</div><h2>{edition.articles[0].title}</h2><p>{edition.articles[0].summary}</p><span className="read-label">Leer la noticia completa</span></a><Illustration article={edition.articles[0]} hero/></div><Rule/><div className="headlines">{edition.articles.slice(1).map((a,i)=><MiniArticle key={a.id} article={a} index={i}/>)}</div></section>;}
 export function App() {
  const [data,setData]=useState(null),[error,setError]=useState(false),[route,setRoute]=useState(getRoute),[query,setQuery]=useState(preferences.query||''),[company,setCompany]=useState(preferences.company||'Todas'),[month,setMonth]=useState(preferences.month||'all'),[topic,setTopic]=useState(preferences.topic||'Todos'),[day,setDay]=useState(preferences.day||''),[view,setView]=useState(preferences.view==='list'?'list':'covers'),[limit,setLimit]=useState(12),[message,setMessage]=useState('');const mainRef=useRef(null);
