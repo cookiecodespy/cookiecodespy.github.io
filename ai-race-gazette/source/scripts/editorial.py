@@ -15,7 +15,8 @@ OFFICIAL = {'mistral.ai','docs.mistral.ai','openai.com','developers.openai.com',
 
 def validate(data):
     assert data['schemaVersion'] == 1, 'Unsupported schema'
-    datetime.fromisoformat(data['updatedAt'].replace('Z','+00:00'))
+    updated = datetime.fromisoformat(data['updatedAt'].replace('Z','+00:00'))
+    assert updated.tzinfo and updated <= datetime.now(timezone.utc), 'Future/naive archive update'
     start = date.fromisoformat(data['coverageStart'])
     ids, events = set(), set()
     for a in data['articles']:
