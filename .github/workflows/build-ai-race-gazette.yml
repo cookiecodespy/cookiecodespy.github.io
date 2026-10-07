@@ -68,6 +68,12 @@ jobs:
           done
           npm run test:browser
 
+      - name: Reconcile latest main
+        working-directory: .
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Publish compiled frontend
         run: |
           cp dist/client/index.html ../index.html
