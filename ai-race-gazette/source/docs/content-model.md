@@ -45,11 +45,19 @@ Ver `docs/coordination.md`.
 
 La tarjeta de portada es un resumen; el artículo completo debe aportar contexto adicional real. No se considera suficiente repetir el resumen en tres párrafos.
 
-Usar como referencia:
-- actualización menor: 350–600 palabras;
-- noticia estándar: 700–1.200 palabras;
-- noticia mayor/informe: 1.200–2.000 palabras cuando la evidencia disponible lo justifique.
+Usar Reporter V2 como referencia:
+- breve material: 500–800 palabras;
+- noticia estándar: 900–1.600;
+- noticia mayor: 1.500–2.500;
+- informe excepcional: 2.000–3.500+ cuando exista evidencia suficiente.
 
 Historical Backfill debe también enriquecer artículos existentes que sean demasiado breves dentro del bloque que está auditando. Mantener `id` y `eventKey` al ampliarlos.
 
 Ver `docs/article-depth.md`.
+
+
+## Article V2
+
+El estándar definitivo está en `docs/gazette-v1-standard.md` y el esquema ampliado en `docs/article-v2-schema.md`.
+
+Durante la migración se conservan los campos legacy para compatibilidad con el frontend actual. Los campos V2 son aditivos. Los artículos futuros deben nacer con Reporter V2 para evitar crear una nueva deuda de piezas breves.
