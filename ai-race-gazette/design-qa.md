@@ -27,3 +27,7 @@ Initial header emblem was a square crop; replaced with an individually generated
 Three logic tests passed. Python data validation and RSS generation passed. Production build passed without unresolved asset warnings. Four packaging tests passed. Chromium browser tests passed, zero page/console errors; qa/browser-results.json records checks. Final assets recaptured after optimization.
 
 Remaining P3: reference has more small print ornaments and company logos. The current version uses clean rules and company name typography. Historical backfill and enabling the recurring task are functional follow-up work, explicitly documented, not claimed as completed by this visual gate.
+
+## Published-site check
+
+GitHub Pages reported `built` for commit 763cd135624fc77feaaaf85a3ff864ced43d5aa3. Chromium opened https://cookiecodespy.github.io/ai-race-gazette/, rendered its two editions, opened an article, checked the image loaded and fetched RSS with HTTP 200. Zero page errors. Changed paths in the publication commit were confined to ai-race-gazette/.
