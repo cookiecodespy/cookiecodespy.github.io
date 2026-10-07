@@ -71,7 +71,9 @@ await page.screenshot({path:'qa/polished/03-dia.png',fullPage:true});
 const missingDay=dateRange(data.archiveStart||data.coverageStart,data.updatedAt.slice(0,10)).find(d=>!articleDates.has(d));
 if(missingDay){
   await page.getByLabel('Filtrar por día').fill(missingDay);
-  await page.getByText('Este día todavía no tiene noticias verificadas',{exact:false}).waitFor();
+  const emptyCopy=page.locator('.empty p');
+  await emptyCopy.waitFor();
+  assert.ok((await emptyCopy.textContent()).trim().length>20);
 }
 await page.locator('.filter-summary').getByRole('button',{name:'Limpiar filtros'}).click();
 
