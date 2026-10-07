@@ -5,6 +5,9 @@ Fecha de corte: 2026-10-07.
 ## Estado general
 
 ### Terminado
+- Calendario mensual auditable en la web, incluyendo días sin artículos y navegación a ediciones vacías/pending.
+- Coverage Audit Ledger machine-readable enlazado a history-coverage y dailyCoverage.
+- Source Registry ampliado a actores core/radar con discovery abierto obligatorio.
 - Research Backbone v1 documentado, con source registry base adaptado desde spanish-news-nlp-pipeline y validación CI.
 - Frontend Article V2 implementado: lectura rápida, secciones, detalles técnicos, precio/disponibilidad, cronología, consejos, datos útiles, curiosidades, limitaciones, análisis editorial, resumen final y fuentes; conserva fallback legacy.
 - CI de Gazette con tests Node/Python, validación editorial, build, Sites tests y Browser QA responsive.
@@ -31,6 +34,7 @@ Fecha de corte: 2026-10-07.
 - Algunas fechas de la maqueta antigua solo son pistas de investigación y no pueden publicarse sin volver a verificarlas.
 
 ### Falta
+- Reauditar 1–7 Sep con el checklist Research Backbone v1 durante la pasada inversa final (sin degradar su cierre legacy).
 - Completar la cobertura real y verificable del 8–30 de septiembre de 2026.
 - Completar el tramo 1–7 de octubre de 2026 y continuar día a día.
 - Segunda pasada de auditoría para detectar omisiones, duplicados y fechas incorrectas.
