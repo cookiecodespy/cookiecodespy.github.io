@@ -6,7 +6,7 @@
 
 Public Spanish AI/technology newspaper hosted in cookiecodespy/cookiecodespy.github.io/ai-race-gazette. Main reference: public/assets/reference-look.jpg. Match warm parchment, genuinely cut/singed irregular edges, engraved imagery, strong newspaper hierarchy, and complete internal articles with official sources. Do not describe the retro design in public product copy.
 
-User selected daily updates through their GPT/Codex session, not a paid API. Read docs/editorial-policy.md and docs/scheduled-task.md. Publish only Gazette paths; preserve the repository root page. User explicitly authorized Playwright/Chromium verification when the integrated browser is unavailable.
+User selected daily updates through their GPT/Codex session, not a paid API. Read docs/editorial-policy.md, docs/content-model.md and docs/scheduled-task.md. Routine editorial updates should touch data/RSS/logs, not visual code. Publish only Gazette paths; preserve the repository root page. User explicitly authorized Playwright/Chromium verification when the integrated browser is unavailable.
 
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
@@ -16,4 +16,6 @@ When implementing from a selected generated mock, treat that image as the source
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
 
-2026-10-07 editorial audit: one independent article per meaningful launch/feature, unlimited company/day articles. A shared source URL is valid across different eventKeys. Group minor updates; preserve article IDs for corrections. Company/topic/month/day filters combine. Read docs/content-model.md. Historical coverage is partial (15 articles, 9 days); original 37 daily entries are research leads, never treat them as verified stories.
+2026-10-07 editorial audit: one independent article per meaningful launch/feature, unlimited company/day articles. A shared source URL is valid across different eventKeys. Group minor updates; preserve article IDs for corrections. Company/topic/month/day filters combine. Historical coverage is partial (15 articles, 9 days); original 37 daily entries are research leads, never treat them as verified stories.
+
+2026-10-07 discovery rule: company filters are data-driven from `article.company`. Do not hard-code a closed company list. When a relevant new actor is verified, publish its first article with a canonical company name and the filter will appear automatically. New source domains must not require a frontend change. Do not create empty company categories.
