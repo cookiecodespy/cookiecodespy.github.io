@@ -5,10 +5,11 @@ Fecha de corte: 2026-10-07.
 ## Estado general
 
 ### Terminado
+- Estándar editorial/producto v1.0, esquema Article V2, política visual y runbook de automatización documentados.
 - Sitio público en GitHub Pages.
 - Home con vista portadas y vista lista.
 - Búsqueda y filtros combinables por compañía, tema, mes y día.
-- Artículos individuales con contexto, puntos clave, análisis y fuente oficial.
+- Artículos individuales existentes con contexto, puntos clave, análisis y fuente oficial; migración a Reporter V2 pendiente.
 - RSS público.
 - Datos editoriales desacoplados del frontend mediante `data/news.json`.
 - Filtros de compañías generados dinámicamente desde `article.company`.
@@ -28,8 +29,10 @@ Fecha de corte: 2026-10-07.
 - Completar la cobertura real y verificable del 8–30 de septiembre de 2026.
 - Completar el tramo 1–7 de octubre de 2026 y continuar día a día.
 - Segunda pasada de auditoría para detectar omisiones, duplicados y fechas incorrectas.
+- Migrar las 48 piezas existentes a Reporter V2 y desplegar el frontend Article V2.
 - Pulido visual/editorial final antes de declarar la versión 1.0.
 - Revisar metadatos sociales/SEO y presentación al compartir enlaces.
+- Resolver o diseñar un flujo explícito de aprobación para escrituras GitHub rechazadas durante Scheduled Tasks.
 
 ## Qué estamos haciendo ahora
 
@@ -92,6 +95,6 @@ Backlog, no requisito de la v1.0:
 
 ## Próximo paso inmediato
 
-El lote histórico 1–7 de septiembre está cerrado. El siguiente paso de **Historical Backfill** es investigar **8–14 de septiembre** con el mismo estándar de doble pasada, fuentes primarias y deduplicación. **Automation & Newsroom** continúa en paralelo con actualidad.
+Antes de ampliar agresivamente el backfill, usar Reporter V2 para no crear más deuda editorial. **Historical Backfill** continúa con 8–14 de septiembre pero debe enriquecer los artículos heredados del bloque que audita. **Automation & Newsroom** continúa en paralelo con actualidad usando Reporter V2 desde el nacimiento.
 
 No mezclar rediseños grandes con actualizaciones automáticas de noticias.
