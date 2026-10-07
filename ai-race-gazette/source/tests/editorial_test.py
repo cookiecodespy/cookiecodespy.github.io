@@ -27,7 +27,7 @@ class EditorialTests(unittest.TestCase):
   self.data['articles'][0]['image']='assets/missing.webp'
   with self.assertRaisesRegex(AssertionError,'Missing/unsafe image'):validate(self.data)
  def test_reporter_v2_optional_fields_validate(self):
-  a=self.data['articles'][0]
+  a=next(a for a in self.data['articles'] if a.get('articleVersion')==2)
   a['articleVersion']=2
   a['quickTakeaways']=['Uno','Dos','Tres']
   a['sections']=[{'heading':'Qué pasó','paragraphs':['Contexto desarrollado.'],'kind':'report'}]
@@ -43,8 +43,7 @@ class EditorialTests(unittest.TestCase):
   a['imageStatus']='library'
   validate(self.data)
  def test_reporter_v2_rejects_invalid_section_kind(self):
-  a=self.data['articles'][0]
-  a['articleVersion']=2
+  a=next(a for a in self.data['articles'] if a.get('articleVersion')==2)
   a['sections']=[{'heading':'Sección','paragraphs':['Texto.'],'kind':'inventado'}]
   with self.assertRaisesRegex(AssertionError,'Invalid section kind'):validate(self.data)
  def test_daily_coverage_count_must_match_articles(self):
