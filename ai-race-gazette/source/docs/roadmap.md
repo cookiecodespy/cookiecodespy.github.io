@@ -5,6 +5,7 @@ Fecha de corte: 2026-10-07.
 ## Estado general
 
 ### Terminado
+- Research Backbone v1 documentado, con source registry base adaptado desde spanish-news-nlp-pipeline y validación CI.
 - Frontend Article V2 implementado: lectura rápida, secciones, detalles técnicos, precio/disponibilidad, cronología, consejos, datos útiles, curiosidades, limitaciones, análisis editorial, resumen final y fuentes; conserva fallback legacy.
 - CI de Gazette con tests Node/Python, validación editorial, build, Sites tests y Browser QA responsive.
 - Ledger `dailyCoverage` expuesto en el JSON público para distinguir días completos, parciales, pendientes o revisados sin novedades.
@@ -89,6 +90,14 @@ La v1.0 se considera lista cuando:
 - el diseño se mantiene protegido de cambios editoriales rutinarios.
 
 ## Después del backfill
+
+Backlog técnico del Research Backbone:
+- ampliar el source registry a las fuentes oficiales prioritarias restantes;
+- decidir si el volumen justifica un ledger persistente de URLs vistas;
+- evaluar portar exact-byte provenance / normalization blocks;
+- evaluar evidence bundles para historias mayores;
+- mantener estas capacidades fuera del run horario hasta demostrar que aportan más valor que complejidad.
+
 
 Backlog, no requisito de la v1.0:
 - radar interno de compañías emergentes;
