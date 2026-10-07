@@ -17,11 +17,15 @@ def validate(data):
     assert data['schemaVersion'] == 1, 'Unsupported schema'
     datetime.fromisoformat(data['updatedAt'].replace('Z','+00:00'))
     start = date.fromisoformat(data['coverageStart'])
-    ids, urls = set(), set()
+    ids, events = set(), set()
     for a in data['articles']:
         assert re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',a['id']), 'Invalid slug'
         assert a['id'] not in ids, 'Duplicate id: '+a['id']
         ids.add(a['id'])
+        event = a.get('eventKey',a['id'])
+        assert isinstance(event,str) and re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',event), 'Invalid event key'
+        assert event not in events, 'Duplicate event; update existing article: '+event
+        events.add(event)
         assert start <= date.fromisoformat(a['date']) <= date.today(), 'Invalid coverage date'
         assert date.fromisoformat(a['verifiedAt']) <= date.today(), 'Future verification'
         for key in ['company','title','summary','imageAlt','imageCredit','analysis','watch']:
@@ -37,10 +41,14 @@ def validate(data):
             assert u.scheme == 'https' and not u.username and not u.password, 'Unsafe source URL'
             assert host in OFFICIAL or any(host.endswith('.'+h) for h in OFFICIAL if h != 'github.com'), 'Review source domain: '+host
             assert source['name'].strip(), 'Missing source attribution'
-        assert a['source']['url'] not in urls, 'Duplicate source; update existing article'
-        urls.add(a['source']['url'])
+        # A single announcement may contain several independent product launches.
+        # Deduplicate by event, never by source URL alone.
         if a['source'].get('publishedAt'):
             assert date.fromisoformat(a['source']['publishedAt']) <= date.today(), 'Future publication'
+        if a.get('coveredAt'):
+            assert date.fromisoformat(a['date']) <= date.fromisoformat(a['coveredAt']) <= date.today(), 'Invalid coverage timestamp'
+        if a.get('announcedAt'):
+            assert date.fromisoformat(a['announcedAt']) <= date.today(), 'Future announcement'
     return data
 
 def feed(data):

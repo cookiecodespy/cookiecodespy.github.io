@@ -1,25 +1,44 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T12:00:00Z",
-  "coverageStart": "2026-10-06",
+  "updatedAt": "2026-10-07T15:00:00Z",
+  "coverageStart": "2026-09-01",
   "articles": [
     {
       "id": "mistral-large-4",
       "date": "2026-10-06",
       "company": "Mistral",
-      "title": "Mistral Large 4 vuelve a mover la carrera de los modelos abiertos",
+      "title": "Mistral presenta Large 4 en vista previa",
       "summary": "La compañía francesa presenta su nuevo modelo en vista previa pública y anuncia una apertura posterior de sus pesos.",
-      "tags": ["Modelos", "Código abierto"],
+      "tags": [
+        "Modelos",
+        "Código abierto"
+      ],
       "image": "assets/mistral.webp",
       "imageAlt": "Grabado editorial de montañas y un laboratorio de computación",
       "imageCredit": "Ilustración editorial generada con IA; no representa instalaciones reales.",
-      "source": {"name": "Mistral AI", "url": "https://mistral.ai/news/mistral-large-4/", "publishedAt": "2026-10-06"},
+      "source": {
+        "name": "Mistral AI",
+        "url": "https://mistral.ai/news/mistral-large-4/",
+        "publishedAt": "2026-10-06"
+      },
       "verifiedAt": "2026-10-07",
       "verificationNote": "Anuncio oficial localizado. La página completa no estuvo accesible durante esta revisión; se omiten cifras y benchmarks no comprobados.",
-      "body": ["Mistral ha anunciado Large 4 y lo ofrece en una fase de vista previa pública. El lanzamiento renueva su propuesta para quienes siguen la evolución de los modelos con pesos abiertos, aunque la apertura anunciada y el acceso actual son etapas diferentes.", "La distinción es práctica: probar un modelo mediante un servicio no equivale a poder descargarlo y ejecutarlo en infraestructura propia. Antes de planificar una implementación, conviene comprobar el estado de disponibilidad y las condiciones de la versión concreta.", "El anuncio pone de nuevo a Mistral en la conversación sobre modelos avanzados y ciberseguridad. Las afirmaciones de rendimiento del fabricante requieren contrastarse con evaluaciones independientes y con pruebas sobre tareas reales. Esta edición no reproduce puntuaciones que no pudo verificar directamente."],
-      "keyPoints": ["Anuncio oficial fechado el 6 de octubre.", "Disponible en vista previa pública.", "La apertura de pesos se anuncia como una etapa posterior."],
+      "body": [
+        "Mistral ha anunciado Large 4 y lo ofrece en una fase de vista previa pública. El lanzamiento renueva su propuesta para quienes siguen la evolución de los modelos con pesos abiertos, aunque la apertura anunciada y el acceso actual son etapas diferentes.",
+        "La distinción es práctica: probar un modelo mediante un servicio no equivale a poder descargarlo y ejecutarlo en infraestructura propia. Antes de planificar una implementación, conviene comprobar el estado de disponibilidad y las condiciones de la versión concreta.",
+        "El anuncio pone de nuevo a Mistral en la conversación sobre modelos avanzados y ciberseguridad. Las afirmaciones de rendimiento del fabricante requieren contrastarse con evaluaciones independientes y con pruebas sobre tareas reales. Esta edición no reproduce puntuaciones que no pudo verificar directamente."
+      ],
+      "keyPoints": [
+        "Anuncio oficial fechado el 6 de octubre.",
+        "Disponible en vista previa pública.",
+        "La apertura de pesos se anuncia como una etapa posterior."
+      ],
       "analysis": "Para la carrera de la IA, el punto a seguir es cuánto de esta capacidad podrá desplegarse fuera de un servicio centralizado. Esa posibilidad influye en el control de datos y en las opciones de las empresas, pero dependerá de la disponibilidad, licencia y requisitos finales.",
-      "watch": "La publicación de los pesos, su licencia y pruebas independientes de la versión disponible."
+      "watch": "La publicación de los pesos, su licencia y pruebas independientes de la versión disponible.",
+      "eventKey": "mistral-large-4",
+      "coveredAt": "2026-10-07",
+      "product": "Mistral Large 4",
+      "announcedAt": "2026-10-06"
     },
     {
       "id": "nano-banana-2-1",
@@ -27,35 +46,91 @@
       "company": "Google",
       "title": "Nano Banana 2.1: una nueva etapa para crear y editar imágenes",
       "summary": "Google documenta su modelo de generación de imágenes y edición conversacional en la API de Gemini.",
-      "tags": ["Modelos", "Imágenes"],
+      "tags": [
+        "Modelos",
+        "Imágenes"
+      ],
       "image": "assets/google.webp",
       "imageAlt": "Grabado editorial de un edificio tecnológico con un globo reflejado",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía de Google.",
-      "source": {"name": "Google AI for Developers", "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1", "publishedAt": "2026-10-06"},
-      "relatedSources": [{"name":"Google DeepMind · ficha del modelo", "url":"https://deepmind.google/models/model-cards/nano-banana-2-1/"}],
+      "source": {
+        "name": "Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
+        "publishedAt": "2026-10-06"
+      },
+      "relatedSources": [
+        {
+          "name": "Google DeepMind · ficha del modelo",
+          "url": "https://deepmind.google/models/model-cards/nano-banana-2-1/"
+        }
+      ],
       "verifiedAt": "2026-10-07",
-      "body": ["La documentación de Gemini incorpora Nano Banana 2.1, un modelo orientado a la generación de imágenes y a la edición mediante instrucciones conversacionales. El identificador de la API permite distinguir esta versión de otros modelos de la misma familia.", "El flujo combina instrucciones de texto y material visual. Su utilidad está en iterar sobre una imagen: pedir cambios, ajustar elementos y trabajar en una conversación, en vez de tratar cada generación como una operación aislada.", "La ficha publicada por DeepMind describe las capacidades y limitaciones del modelo. Para integrar una herramienta de este tipo, la elección debe considerar calidad, consistencia, condiciones de uso y costo de la versión disponible. La documentación de la API no confirma por sí sola que todas las aplicaciones de Google hayan recibido el mismo despliegue."],
-      "keyPoints": ["Generación de imágenes y edición conversacional.", "Modelo documentado en la API de Gemini.", "Disponibilidad por producto debe comprobarse por separado."],
+      "body": [
+        "La documentación de Gemini incorpora Nano Banana 2.1, un modelo orientado a la generación de imágenes y a la edición mediante instrucciones conversacionales. El identificador de la API permite distinguir esta versión de otros modelos de la misma familia.",
+        "El flujo combina instrucciones de texto y material visual. Su utilidad está en iterar sobre una imagen: pedir cambios, ajustar elementos y trabajar en una conversación, en vez de tratar cada generación como una operación aislada.",
+        "La ficha publicada por DeepMind describe las capacidades y limitaciones del modelo. Para integrar una herramienta de este tipo, la elección debe considerar calidad, consistencia, condiciones de uso y costo de la versión disponible. La documentación de la API no confirma por sí sola que todas las aplicaciones de Google hayan recibido el mismo despliegue."
+      ],
+      "keyPoints": [
+        "Generación de imágenes y edición conversacional.",
+        "Modelo documentado en la API de Gemini.",
+        "Disponibilidad por producto debe comprobarse por separado."
+      ],
       "analysis": "La competencia visual se decide también en la facilidad de corregir resultados. Un modelo integrado en un flujo de trabajo puede ser más útil que una mejora aislada de calidad, siempre que conserve el control del usuario y responda de forma consistente a los cambios.",
-      "watch": "Pruebas de edición repetida, condiciones de acceso y anuncios de disponibilidad en cada producto."
+      "watch": "Pruebas de edición repetida, condiciones de acceso y anuncios de disponibilidad en cada producto.",
+      "eventKey": "nano-banana-2-1",
+      "coveredAt": "2026-10-07",
+      "product": "Nano Banana 2.1",
+      "announcedAt": "2026-10-06"
     },
     {
       "id": "decisions-api",
-      "date": "2026-10-07",
+      "date": "2026-09-29",
       "company": "OpenAI",
       "title": "Decisions API lleva las respuestas tipadas al centro de las aplicaciones",
       "summary": "La beta pública usa gpt-6-luna para clasificar, elegir entre opciones y evaluar contenido con respuestas estructuradas.",
-      "tags": ["Desarrollo", "Modelos"],
+      "tags": [
+        "Desarrollo",
+        "Modelos"
+      ],
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico y un globo terrestre",
       "imageCredit": "Ilustración editorial generada con IA.",
-      "source": {"name": "OpenAI · documentación de Decisions", "url": "https://developers.openai.com/api/docs/guides/decisions", "publishedAt": null},
+      "source": {
+        "name": "OpenAI · documentación de Decisions",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "publishedAt": null
+      },
       "verifiedAt": "2026-10-07",
-      "verificationNote": "Fecha de esta cobertura: 7 de octubre. La guía consultada no indica la fecha original de lanzamiento.",
-      "body": ["OpenAI documenta Decisions como una API en beta pública que evalúa texto, imágenes o ambos y devuelve respuestas tipadas. En la versión consultada, gpt-6-luna es el modelo disponible y las solicitudes se envían a un endpoint dedicado.", "La API ofrece tres tipos de pregunta: una condición con su probabilidad, una elección entre alternativas y una puntuación sobre niveles definidos. Esto permite usar el resultado en tareas como clasificación de contenido, enrutamiento de solicitudes o priorización.", "Según OpenAI, estas respuestas son aproximadamente diez veces más rápidas que las de Responses API. Es una afirmación del proveedor; esta edición no la ha medido. Decisions está orientada a esas evaluaciones acotadas, mientras que otras herramientas de la plataforma cubren explicaciones libres y estructuras personalizadas."],
-      "keyPoints": ["Beta pública con gpt-6-luna.", "Entrada de texto e imágenes.", "Tres tipos: condición, elección y puntuación."],
+      "verificationNote": "Presentada en preview limitada el 29 de septiembre; la guía revisada el 7 de octubre describe la beta pública. Son fases distintas del mismo lanzamiento.",
+      "body": [
+        "OpenAI documenta Decisions como una API en beta pública que evalúa texto, imágenes o ambos y devuelve respuestas tipadas. En la versión consultada, gpt-6-luna es el modelo disponible y las solicitudes se envían a un endpoint dedicado.",
+        "La API ofrece tres tipos de pregunta: una condición con su probabilidad, una elección entre alternativas y una puntuación sobre niveles definidos. Esto permite usar el resultado en tareas como clasificación de contenido, enrutamiento de solicitudes o priorización.",
+        "Según OpenAI, estas respuestas son aproximadamente diez veces más rápidas que las de Responses API. Es una afirmación del proveedor; esta edición no la ha medido. Decisions está orientada a esas evaluaciones acotadas, mientras que otras herramientas de la plataforma cubren explicaciones libres y estructuras personalizadas."
+      ],
+      "keyPoints": [
+        "Beta pública con gpt-6-luna.",
+        "Entrada de texto e imágenes.",
+        "Tres tipos: condición, elección y puntuación."
+      ],
       "analysis": "En una aplicación, muchas decisiones son pequeñas y repetidas. Una interfaz especializada puede simplificar su integración, pero las probabilidades requieren calibración y las reglas deben probarse con ejemplos del dominio real.",
-      "watch": "Salida de la beta, mediciones propias de latencia y calidad de clasificación."
+      "watch": "Salida de la beta, mediciones propias de latencia y calidad de clasificación.",
+      "eventKey": "decisions-api",
+      "coveredAt": "2026-10-07",
+      "relatedSources": [
+        {
+          "name": "OpenAI · DevDay 2026",
+          "url": "https://openai.com/index/devday-2026-recap/",
+          "publishedAt": "2026-09-29"
+        }
+      ],
+      "corrections": [
+        {
+          "date": "2026-10-07",
+          "note": "Se incorpora la fecha del anuncio original en DevDay; antes se mostraba la fecha de cobertura del 7 de octubre."
+        }
+      ],
+      "product": "Decisions API",
+      "announcedAt": "2026-09-29"
     },
     {
       "id": "claude-google-workspace",
@@ -63,16 +138,420 @@
       "company": "Anthropic",
       "title": "Claude entra en Docs, Sheets y Slides desde Google Workspace",
       "summary": "El complemento lleva la asistencia de Claude al documento abierto y está en beta para planes de pago.",
-      "tags": ["Productos", "Productividad"],
+      "tags": [
+        "Productos",
+        "Productividad"
+      ],
       "image": "assets/google.webp",
       "imageAlt": "Grabado editorial de arquitectura tecnológica",
       "imageCredit": "Ilustración editorial generada con IA.",
-      "source": {"name": "Anthropic · Claude", "url": "https://claude.com/es/resources/articles/claude-now-works-in-google-docs-sheets-and-slides", "publishedAt": "2026-10-06"},
+      "source": {
+        "name": "Anthropic · Claude",
+        "url": "https://claude.com/es/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "publishedAt": "2026-10-06"
+      },
       "verifiedAt": "2026-10-07",
-      "body": ["Anthropic presenta Claude para Google Workspace como un complemento que funciona dentro de Docs, Sheets y Slides. La beta está disponible en planes de pago y se instala desde Google Workspace Marketplace.", "El acceso se realiza desde el menú de extensiones de un archivo. El valor del formato reside en trabajar con el documento abierto: consultar su contenido y colaborar sobre el trabajo sin trasladar cada fragmento a otra ventana.", "Para un equipo, la adopción depende también de los permisos y de las reglas de administración de Workspace. El anuncio describe disponibilidad del producto, pero no garantiza que cualquier cuenta corporativa pueda instalarlo sin intervención de su administrador."],
-      "keyPoints": ["Integración con Docs, Sheets y Slides.", "Beta para planes de pago.", "Instalación mediante Google Workspace Marketplace."],
+      "body": [
+        "Anthropic presenta Claude para Google Workspace como un complemento que funciona dentro de Docs, Sheets y Slides. La beta está disponible en planes de pago y se instala desde Google Workspace Marketplace.",
+        "El acceso se realiza desde el menú de extensiones de un archivo. El valor del formato reside en trabajar con el documento abierto: consultar su contenido y colaborar sobre el trabajo sin trasladar cada fragmento a otra ventana.",
+        "Para un equipo, la adopción depende también de los permisos y de las reglas de administración de Workspace. El anuncio describe disponibilidad del producto, pero no garantiza que cualquier cuenta corporativa pueda instalarlo sin intervención de su administrador."
+      ],
+      "keyPoints": [
+        "Integración con Docs, Sheets y Slides.",
+        "Beta para planes de pago.",
+        "Instalación mediante Google Workspace Marketplace."
+      ],
       "analysis": "La carrera de los asistentes se acerca al lugar donde se hace el trabajo. La integración en documentos puede reducir pasos y mejorar el contexto disponible, aunque su utilidad final depende de la calidad de las sugerencias y del control sobre las modificaciones.",
-      "watch": "Disponibilidad para cada organización y comportamiento del complemento en documentos reales."
+      "watch": "Disponibilidad para cada organización y comportamiento del complemento en documentos reales.",
+      "eventKey": "claude-google-workspace",
+      "coveredAt": "2026-10-07",
+      "product": "Claude para Workspace",
+      "announcedAt": "2026-10-06"
+    },
+    {
+      "id": "claude-fable-5-1",
+      "eventKey": "claude-fable-5-1",
+      "date": "2026-09-01",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Claude Fable 5.1",
+      "title": "Claude Fable 5.1 abre septiembre con foco en código y trabajo profesional",
+      "summary": "Anthropic presenta su nueva versión de Fable con disponibilidad general.",
+      "tags": [
+        "Modelos",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "publishedAt": "2026-09-01"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "El 1 de septiembre, Anthropic anunció Fable 5.1 y Mythos 5.1. Fable es la variante de disponibilidad general, orientada a programación y trabajo profesional.",
+        "El proveedor afirma haber mejorado capacidad, costo y salvaguardas. Esta cobertura no convierte sus evaluaciones internas en una comparación independiente.",
+        "Para adoptar una versión nueva conviene probar tareas representativas: corregir errores, interpretar documentos y conservar instrucciones durante trabajos largos. Una mejora en un benchmark no garantiza el mismo resultado en cada proyecto."
+      ],
+      "keyPoints": [
+        "Disponibilidad general.",
+        "Trabajo profesional y programación."
+      ],
+      "analysis": "La competencia se mide también en calidad por tarea y facilidad de integración. Conviene comparar con el flujo de trabajo actual antes de migrar.",
+      "watch": "Pruebas propias y condiciones de acceso de la plataforma elegida.",
+      "announcedAt": "2026-09-01"
+    },
+    {
+      "id": "claude-mythos-5-1",
+      "eventKey": "claude-mythos-5-1",
+      "date": "2026-09-01",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Claude Mythos 5.1",
+      "title": "Mythos 5.1 llega mediante programas de acceso de confianza",
+      "summary": "La variante comparte el modelo de Fable 5.1, con salvaguardas diferentes y acceso restringido.",
+      "tags": [
+        "Modelos",
+        "Seguridad"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "publishedAt": "2026-09-01"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Mythos 5.1 fue anunciado junto a Fable 5.1 el 1 de septiembre. Anthropic describe ambos como el mismo modelo con niveles diferentes de salvaguardas.",
+        "Mythos se ofrece mediante programas de acceso de confianza para ciberseguridad y ciencias de la vida; no es un lanzamiento general.",
+        "Separar esta noticia de Fable permite entender la disponibilidad: compartir una familia de modelos no significa compartir permisos, requisitos ni condiciones de uso."
+      ],
+      "keyPoints": [
+        "Acceso restringido.",
+        "Salvaguardas distintas de Fable."
+      ],
+      "analysis": "La disponibilidad es parte del producto. El nombre de un modelo por sí solo no indica si un equipo puede utilizarlo.",
+      "watch": "Requisitos y evolución de los programas de acceso.",
+      "announcedAt": "2026-09-01"
+    },
+    {
+      "id": "lyria-3-5-gemini",
+      "eventKey": "lyria-3-5-gemini",
+      "date": "2026-09-04",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Lyria 3.5",
+      "title": "Lyria 3.5 lleva la creación musical a Gemini",
+      "summary": "Google anuncia generación musical con opciones de género, voz y duración.",
+      "tags": [
+        "Productos",
+        "Audio"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
+        "publishedAt": "2026-09-04"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Google anunció el 4 de septiembre la llegada de Lyria 3.5 a Gemini y a la API de Gemini. El modelo está orientado a generar música a partir de instrucciones.",
+        "La aplicación permite elegir o describir géneros, trabajar con estilos vocales o instrumentales y seleccionar pistas cortas o más largas. El anuncio también cita AI Studio, Flow Music y Vids.",
+        "Antes de incorporar una pista a un proyecto público, corresponde revisar las condiciones de uso de la herramienta y escuchar el resultado completo. Generar audio y decidir cómo publicarlo son pasos diferentes."
+      ],
+      "keyPoints": [
+        "Creación musical en Gemini.",
+        "Opciones vocales e instrumentales."
+      ],
+      "analysis": "La música generativa gana utilidad cuando el usuario puede dirigir e iterar el resultado, además de obtener una primera pista.",
+      "watch": "Control creativo, consistencia y condiciones de uso.",
+      "announcedAt": "2026-09-04"
+    },
+    {
+      "id": "gemini-windows",
+      "eventKey": "gemini-windows",
+      "date": "2026-09-10",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Gemini para Windows",
+      "title": "Gemini llega al escritorio de Windows",
+      "summary": "La nueva aplicación permite abrir el asistente sobre el trabajo activo con Alt + Espacio.",
+      "tags": [
+        "Productos",
+        "Productividad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+        "publishedAt": "2026-09-10"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "El 10 de septiembre Google anunció su aplicación de Gemini para Windows 10 y 11, con disponibilidad global según su publicación.",
+        "El acceso rápido utiliza Alt + Espacio. La aplicación reúne asistencia sobre el trabajo activo y un espacio para tareas, documentos y creación visual. Algunas funciones dependen de la suscripción y la disponibilidad.",
+        "El interés del formato es reducir el cambio entre ventanas. Para evaluar su utilidad, importa comprobar qué contexto recibe el asistente y qué acciones requieren intervención del usuario."
+      ],
+      "keyPoints": [
+        "Aplicación para Windows 10 y 11.",
+        "Acceso mediante Alt + Espacio."
+      ],
+      "analysis": "Acercar el asistente al escritorio puede reducir pasos, pero el control del contexto y de los permisos sigue siendo esencial.",
+      "watch": "Integración con herramientas habituales y disponibilidad por cuenta.",
+      "announcedAt": "2026-09-10"
+    },
+    {
+      "id": "claude-opus-5-5",
+      "eventKey": "claude-opus-5-5",
+      "date": "2026-09-22",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Claude Opus 5.5",
+      "title": "Opus 5.5 renueva la propuesta de Claude para tareas complejas",
+      "summary": "Anthropic estrena la familia 5.5 y destaca mejoras de rendimiento y costo.",
+      "tags": [
+        "Modelos",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/claude-opus-5-5",
+        "publishedAt": "2026-09-22"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Anthropic anunció Opus 5.5 el 22 de septiembre como primer modelo de su nueva familia 5.5. La empresa lo sitúa como una opción para trabajo complejo.",
+        "El anuncio atribuye al modelo mejoras frente a Opus 5 y un menor costo por tarea. Son resultados del proveedor; no sustituyen pruebas independientes ni una evaluación del caso de uso propio.",
+        "Una migración debe revisar la versión concreta, límites de uso, comportamiento de herramientas y calidad de las respuestas. Es especialmente importante repetir tareas en las que los errores tengan un costo real."
+      ],
+      "keyPoints": [
+        "Primera versión de la familia 5.5.",
+        "Orientado a trabajo complejo."
+      ],
+      "analysis": "El costo de una tarea incluye reintentos y revisión, además de tokens. Una evaluación útil mide el trabajo terminado.",
+      "watch": "Pruebas comparables y documentación de migración.",
+      "announcedAt": "2026-09-22"
+    },
+    {
+      "id": "gemini-connected-apps",
+      "eventKey": "gemini-connected-apps",
+      "date": "2026-09-23",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Connected Apps",
+      "title": "Gemini incorpora una nueva ola de aplicaciones conectadas",
+      "summary": "Google comienza a desplegar conexiones con herramientas de productividad y creación.",
+      "tags": [
+        "Productos",
+        "Productividad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+        "publishedAt": "2026-09-23"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Google anunció el 23 de septiembre un nuevo despliegue de Connected Apps para Gemini. El objetivo es realizar tareas entre servicios desde el asistente.",
+        "Entre las herramientas citadas están Airtable, Linear y monday.com para productividad, además de Adobe, Picsart, Squarespace y Webflow para creación. La publicación describe un despliegue que comienza ese día.",
+        "La conexión de una cuenta merece revisar los permisos y el alcance de las acciones. También conviene confirmar qué integraciones están disponibles para cada usuario, en vez de asumir que un anuncio implica acceso inmediato para todos."
+      ],
+      "keyPoints": [
+        "Despliegue anunciado el 23 de septiembre.",
+        "Conexiones con servicios de terceros."
+      ],
+      "analysis": "Las integraciones pueden convertir una conversación en trabajo útil entre aplicaciones. Su valor depende de resultados fiables y permisos claros.",
+      "watch": "Disponibilidad de cada conexión y control de acciones.",
+      "announcedAt": "2026-09-23"
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "eventKey": "claude-sonnet-5-5",
+      "date": "2026-09-28",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Claude Sonnet 5.5",
+      "title": "Sonnet 5.5 apuesta por tareas cotidianas y una respuesta más rápida",
+      "summary": "Anthropic presenta el segundo modelo de la familia Claude 5.5.",
+      "tags": [
+        "Modelos",
+        "Productividad"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/claude-sonnet-5-5",
+        "publishedAt": "2026-09-28"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Anthropic anunció Sonnet 5.5 el 28 de septiembre. Lo presenta como complemento de Opus 5.5 para trabajo cotidiano bien definido, corrección de errores y creación de documentos.",
+        "El fabricante afirma que genera respuestas más rápido y necesita menos tokens para determinadas tareas que Sonnet 5. Estas mejoras proceden de sus pruebas; el ahorro real depende del trabajo.",
+        "Comparar modelos requiere mantener instrucciones, herramientas y criterios de calidad iguales. Medir solo velocidad puede ocultar una mayor necesidad de revisión o diferencias en el resultado."
+      ],
+      "keyPoints": [
+        "Segundo modelo de la familia 5.5.",
+        "Foco en tareas bien delimitadas."
+      ],
+      "analysis": "El modelo más útil puede ser el que resuelve una tarea de forma consistente dentro del tiempo y presupuesto disponibles.",
+      "watch": "Evaluaciones de calidad, velocidad y costo por tarea.",
+      "announcedAt": "2026-09-28"
+    },
+    {
+      "id": "gpt-6-1-sol-devday",
+      "eventKey": "gpt-6-1-sol-devday",
+      "date": "2026-09-29",
+      "coveredAt": "2026-10-07",
+      "company": "OpenAI",
+      "product": "GPT-6.1 Sol",
+      "title": "GPT-6.1 Sol llega como actualización del modelo de trabajo de OpenAI",
+      "summary": "OpenAI presenta la versión en DevDay para programación, uso de herramientas y trabajo profesional.",
+      "tags": [
+        "Modelos",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "OpenAI · anuncio oficial",
+        "url": "https://openai.com/index/devday-2026-recap/",
+        "publishedAt": "2026-09-29"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "OpenAI presentó GPT-6.1 Sol el 29 de septiembre en DevDay, como actualización de GPT-6 Sol. El resumen oficial indica disponibilidad en la API y planes de pago de ChatGPT.",
+        "La empresa destaca programación y trabajo profesional. Para decidir una migración, conviene comparar tareas reales, calidad, reintentos y costo total."
+      ],
+      "keyPoints": [
+        "Presentado en DevDay.",
+        "Disponible en API y planes de pago."
+      ],
+      "analysis": "Una nueva versión merece una evaluación del flujo de trabajo completo, más allá del titular del lanzamiento.",
+      "watch": "Pruebas comparables con la versión anterior.",
+      "announcedAt": "2026-09-29"
+    },
+    {
+      "id": "dots-devday",
+      "eventKey": "dots-devday",
+      "date": "2026-09-29",
+      "coveredAt": "2026-10-07",
+      "company": "OpenAI",
+      "product": "Dots",
+      "title": "Dots propone agentes para tareas continuas",
+      "summary": "OpenAI anuncia agentes que pueden encargarse de trabajo persistente.",
+      "tags": [
+        "Agentes",
+        "Productos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "OpenAI · anuncio oficial",
+        "url": "https://openai.com/index/devday-2026-recap/",
+        "publishedAt": "2026-09-29"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "OpenAI presentó Dots en DevDay el 29 de septiembre. Los describe como agentes que mantienen responsabilidades continuas.",
+        "El anuncio limita su acceso por plan, mercado y configuración del administrador. Antes de delegar una tarea recurrente, corresponde definir qué puede hacer el agente y cómo se revisan sus resultados."
+      ],
+      "keyPoints": [
+        "Agentes con responsabilidades continuas.",
+        "Acceso sujeto a elegibilidad."
+      ],
+      "analysis": "El seguimiento y la revisión son parte de una tarea delegada: automatizar exige criterios claros de éxito.",
+      "watch": "Disponibilidad y control de tareas delegadas.",
+      "announcedAt": "2026-09-29"
+    },
+    {
+      "id": "gemini-4-argon",
+      "eventKey": "gemini-4-argon",
+      "date": "2026-09-30",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Gemini 4 Argon",
+      "title": "Gemini 4 Argon se estrena con acceso gradual para defensores",
+      "summary": "Google anuncia su nuevo modelo y comienza con un grupo de usuarios de confianza.",
+      "tags": [
+        "Modelos",
+        "Seguridad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "publishedAt": "2026-09-30"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Google anunció Gemini 4 Argon el 30 de septiembre. La primera fase de acceso se dirige a defensores de ciberseguridad de confianza mediante Fairwind.",
+        "La empresa lo orienta a razonamiento y flujos profesionales largos, incluyendo programación y defensa. El anuncio no equivale a disponibilidad general para cualquier usuario.",
+        "Al evaluar una herramienta de acceso limitado, es útil separar capacidades anunciadas de acceso efectivo. Los equipos necesitan comprobar requisitos, condiciones y fechas de ampliación."
+      ],
+      "keyPoints": [
+        "Anuncio del 30 de septiembre.",
+        "Primera fase mediante Fairwind."
+      ],
+      "analysis": "La carrera de modelos incluye tanto capacidad como distribución. Un producto restringido tiene un impacto distinto de una herramienta abierta a todos.",
+      "watch": "Ampliación del acceso y evaluaciones independientes.",
+      "announcedAt": "2026-09-30"
+    },
+    {
+      "id": "anthropic-cyber-verification",
+      "eventKey": "anthropic-cyber-verification",
+      "date": "2026-10-06",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Cyber Verification Program",
+      "title": "Anthropic amplía el acceso para equipos de seguridad",
+      "summary": "El programa reúne tres niveles con requisitos diferentes para profesionales y organizaciones.",
+      "tags": [
+        "Seguridad",
+        "Productos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/news/cyber-verification-program",
+        "publishedAt": "2026-10-06"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "El 6 de octubre Anthropic anunció una ampliación de su Cyber Verification Program. El programa distingue Defense Access, Red Team Access y Specialized Access.",
+        "Cada nivel aplica requisitos y controles diferentes. El acceso para pruebas adversariales exige autorización sobre los sistemas evaluados; las capacidades especializadas se reservan a un conjunto limitado de organizaciones verificadas.",
+        "Para los lectores que siguen el lanzamiento de modelos, este cambio es una noticia propia: amplía las condiciones de uso de herramientas existentes, sin ser por ello un modelo nuevo."
+      ],
+      "keyPoints": [
+        "Tres niveles de acceso.",
+        "Requisitos según tipo de trabajo."
+      ],
+      "analysis": "La disponibilidad de una capacidad depende también de quién puede utilizarla y bajo qué condiciones.",
+      "watch": "Criterios de admisión y evolución del programa.",
+      "announcedAt": "2026-10-06"
     }
-  ]
+  ],
+  "archiveStart": "2026-09-01",
+  "archiveStatus": "partial"
 }

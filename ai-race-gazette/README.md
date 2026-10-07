@@ -9,7 +9,7 @@ Sitio: https://cookiecodespy.github.io/ai-race-gazette/
 - Nombre del diario, resumen del proyecto, filtros y noticias, siguiendo la estructura de la maqueta v4.
 - Portadas individuales con ilustraciones originales en estilo grabado o filas de lista; ambas abren el art?culo completo.
 - Bordes reales de papel recortado con transparencia, textura y desgaste.
-- Hemeroteca por fecha, búsqueda sin distinción de acentos, filtros por compañía/tema/mes y vista lista.
+- Hemeroteca por fecha, búsqueda sin distinción de acentos, filtros combinables por compañía/tema/mes/día y vista lista. Se recuerdan los filtros durante la sesión.
 - Enlaces compartibles por artículo y edición; navegación atrás/adelante del navegador.
 - Artículos con resumen, desarrollo, puntos clave, análisis identificado y enlaces oficiales.
 - RSS, diseño adaptable, teclado, estados vacíos/error y modo impresión.
@@ -36,7 +36,7 @@ La actualización con sesión GPT/Codex está preparada en `source/docs/schedule
 
 ## Estado y exactitud
 
-Archivo inicial: cuatro coberturas de 6–7 de octubre de 2026. El histórico de septiembre y los primeros días de octubre sigue pendiente de verificación; no se publica el contenido de la maqueta como si estuviera comprobado. Ver `source/docs/editorial-policy.md` y `design-qa.md` para el alcance y las comprobaciones.
+Archivo ampliado: 15 noticias verificadas en 9 fechas entre el 1 de septiembre y el 6 de octubre de 2026, revisadas el 7 de octubre. Se recuperaron las 37 jornadas de la maqueta como pistas de investigación. El histórico completo sigue pendiente de verificación; no se publica el contenido de la maqueta como si estuviera comprobado. Ver `source/docs/editorial-policy.md` y `design-qa.md` para el alcance y las comprobaciones.
 
 Se conserva el brief original en `DESIGN-BRIEF.md`, la maqueta anterior en `prototype.html` y la referencia de diseño en `assets/reference-look.jpg`.
 

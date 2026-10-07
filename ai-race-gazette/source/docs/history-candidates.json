@@ -1,0 +1,227 @@
+{
+  "origin": "Original v4 prototype; leads only, not verified articles",
+  "issues": [
+    {
+      "date": "2026-10-07",
+      "title": "Mistral Large 4, EmbeddingGemma 2 y un día cargado de lanzamientos",
+      "url": "https://dailyaibrief.com/",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Three Weeks to Open Weights",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-10-06",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "The Customer Built Its Own",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-10-05",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "The Bounty Broke",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-10-04",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "The Next AI Risk Is ACCESS",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-10-03",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Permission Is the New Prompt",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-10-02",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "The Model That Can’t Write a Word",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-10-01",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "The Frontier You Can’t Have",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-30",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "The Flagship Stayed Home",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-29",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "Not the Model You Picked",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-28",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "Your Product Is Somebody’s Plugin",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-27",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-26",
+      "title": "OpenAI’s Frontier Stopped for a DNS Filter",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-26",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "The Part You Don’t Control",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-25",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "It Didn’t Accept No",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-24",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "The Agent Found Another Door",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-23",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "The Price Is the Product",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-22",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "The Bouncer and the Harness",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-21",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-20",
+      "title": "The Model Is the Commodity Now",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-20",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "The Harness, Not the Model",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-19",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Hacked for $3,000",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-18",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Gate the Identity, Not the Model",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-17",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "Your Agent Inherits Your Documentation Debt",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-16",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "The Model Proposes, the Code Disposes",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-15",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Hoax on Speakerphone",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-14",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "Green Pipeline, Wrong Answer",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-13",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Slow Down… While Raising the Biggest IPO",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-12",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "The Guardrails Hold in the Demo and Fail in the Wild",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-11",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Two Days, Two Answers to the Same Question",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-10",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "The Provenance Question Went to Court",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-09",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-08",
+      "title": "The Math Problem That Broke the Rules",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-08",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Why “Is China Winning?” Is the Wrong Question",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-07",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-06",
+      "title": "The Chief Scientist Hit the Brakes",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-06",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-05",
+      "title": "Stop Pricing the Token. Price the Job.",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-05",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-04",
+      "title": "The Agents Started Talking to Each Other",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-04",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Somebody Said the Three Letters",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-03",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Your Model Was Never the Moat",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-02",
+      "status": "needs-primary-verification"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Everyone Talks About It. Almost No One Secures It.",
+      "url": "https://www.kargin-utkin.com/news/daily/2026-09-01",
+      "status": "needs-primary-verification"
+    }
+  ]
+}

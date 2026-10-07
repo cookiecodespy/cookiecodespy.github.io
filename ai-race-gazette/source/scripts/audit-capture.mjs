@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';
+import {mkdir,writeFile} from 'node:fs/promises';
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+await mkdir('qa/audit',{recursive:true});
+const base=process.env.AUDIT_URL||'https://cookiecodespy.github.io/ai-race-gazette/';
+await page.goto(base);await page.getByRole('heading',{name:'Noticias de IA',exact:true}).waitFor();await page.evaluate(()=>document.fonts.ready);
+await page.screenshot({path:'qa/audit/01-portada.png',fullPage:true});
+await page.getByRole('button',{name:'Vista lista',exact:true}).click();await page.screenshot({path:'qa/audit/02-lista.png',fullPage:true});
+await page.getByRole('button',{name:/^septiembre(?: 2026)?$/i}).click();await page.screenshot({path:'qa/audit/03-septiembre.png',fullPage:true});
+await page.getByRole('button',{name:'Todo',exact:true}).click();await page.locator('.news-list-item').first().click();await page.getByRole('heading',{name:'Consulta la fuente original'}).waitFor();await page.screenshot({path:'qa/audit/04-articulo.png',fullPage:true});
+await page.setViewportSize({width:390,height:844});await page.screenshot({path:'qa/audit/05-movil.png',fullPage:true});
+await writeFile('qa/audit/state.json',JSON.stringify({url:base,capturedAt:new Date().toISOString(),steps:5},null,2));await browser.close();
