@@ -6,7 +6,7 @@
 
 Public Spanish AI/technology newspaper hosted in cookiecodespy/cookiecodespy.github.io/ai-race-gazette. Main reference: public/assets/reference-look.jpg. Match warm parchment, genuinely cut/singed irregular edges, engraved imagery, strong newspaper hierarchy, and complete internal articles with official sources. Do not describe the retro design in public product copy.
 
-User selected hourly editorial updates through ChatGPT + GitHub, not Codex, Work or a paid API. Read docs/editorial-policy.md, docs/content-model.md, docs/scheduled-task.md and docs/roadmap.md. Routine editorial updates should touch data/RSS/coverage only when there is a material change; no-op hourly checks must create no commit. Do not modify visual code during routine news updates. Publish only Gazette paths; preserve the repository root page. User explicitly authorized Playwright/Chromium verification when the integrated browser is unavailable.
+User selected hourly editorial updates through ChatGPT + GitHub, not Codex, Work or a paid API. Read docs/editorial-policy.md, docs/content-model.md, docs/scheduled-task.md, docs/coordination.md and docs/roadmap.md. Routine editorial updates should touch data/RSS/coverage only when there is a material change; no-op hourly checks must create no commit. Do not modify visual code during routine news updates. Publish only Gazette paths; preserve the repository root page. User explicitly authorized Playwright/Chromium verification when the integrated browser is unavailable.
 
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
@@ -21,3 +21,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 2026-10-07 discovery rule: company filters are data-driven from `article.company`. Do not hard-code a closed company list. When a relevant new actor is verified, publish its first article with a canonical company name and the filter will appear automatically. New source domains must not require a frontend change. Do not create empty company categories.
 
 2026-10-07 automation rule: the newsroom task runs hourly. If there is no material verified news, correction or status change, it must make no commit and must not change updatedAt. Historical backfill is a separate deep-research workflow; never fill calendar gaps with synthetic stories.
+
+2026-10-07 concurrency rule: Automation & Newsroom and Historical Backfill may write to the same archive. Read `docs/coordination.md`. Before every write, refetch current `main`, merge by id/eventKey and preserve all concurrent changes. Never overwrite `news.json` from a stale snapshot. On a same-event conflict, abort that article and reconcile instead of forcing a commit.
