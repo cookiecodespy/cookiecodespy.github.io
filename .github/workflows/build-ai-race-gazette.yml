@@ -1,0 +1,76 @@
+name: Build AI Race Gazette
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ai-race-gazette/source/src/**'
+      - 'ai-race-gazette/source/index.html'
+      - 'ai-race-gazette/source/package.json'
+      - 'ai-race-gazette/source/package-lock.json'
+      - 'ai-race-gazette/source/vite.config.mjs'
+      - 'ai-race-gazette/source/scripts/**'
+      - 'ai-race-gazette/source/tests/**'
+      - '.github/workflows/build-ai-race-gazette.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-race-gazette-build
+  cancel-in-progress: true
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ai-race-gazette/source
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: ai-race-gazette/source/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Editorial validation
+        run: |
+          python3 -m unittest tests/editorial_test.py
+          python3 scripts/editorial.py --validate-only
+          python3 scripts/quality-audit.py
+
+      - name: Build
+        run: npm run build
+
+      - name: Sites worker tests
+        run: npm run test:sites
+
+      - name: Publish compiled frontend
+        run: |
+          cp dist/client/index.html ../index.html
+          mkdir -p ../assets
+          cp -R dist/client/assets/. ../assets/
+
+      - name: Commit compiled frontend when changed
+        working-directory: .
+        run: |
+          if git diff --quiet -- ai-race-gazette/index.html ai-race-gazette/assets; then
+            echo "No compiled frontend changes."
+            exit 0
+          fi
+          git config user.name "AI Race Gazette Build"
+          git config user.email "actions@users.noreply.github.com"
+          git add ai-race-gazette/index.html ai-race-gazette/assets
+          git commit -m "build: publish AI Race Gazette frontend [skip ci]"
+          git push
