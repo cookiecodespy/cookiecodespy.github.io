@@ -32,7 +32,7 @@ npm run dev -- --host 127.0.0.1 --port 4173
 
 Editar `public/data/news.json`, ejecutar validación y build, publicar mediante `python scripts/publish.py --message "Actualiza AI Race Gazette"`. El script usa la autenticación existente de GitHub CLI, publica un commit atómico limitado a esta carpeta y conserva la página raíz.
 
-La actualización con sesión GPT/Codex está preparada en `source/docs/scheduled-task.md`. La tarea no está activada hasta crearla en Programadas; necesita proyecto autorizado, acceso GitHub y, si usa archivos locales, PC encendido y app abierta.
+La actualización diaria con ChatGPT + GitHub está activada para la madrugada, con ejecución alrededor de las 04:00 hora de Santiago. La tarea usa el repositorio publicado y no depende del PC local para las actualizaciones editoriales rutinarias. El comportamiento canónico está documentado en `source/docs/scheduled-task.md`: descubre también compañías emergentes y los filtros de compañía se generan automáticamente desde los datos.
 
 ## Estado y exactitud
 
