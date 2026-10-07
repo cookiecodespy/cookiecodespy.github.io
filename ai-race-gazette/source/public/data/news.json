@@ -447,6 +447,220 @@
       "announcedAt": "2026-09-10"
     },
     {
+      "id": "google-cathay-contrail-trial",
+      "eventKey": "google-cathay-contrail-trial",
+      "date": "2026-09-07",
+      "announcedAt": "2026-09-07",
+      "company": "Google",
+      "product": "AI-powered contrail avoidance",
+      "title": "Cathay Pacific probará con Google rutas para evitar estelas de condensación",
+      "summary": "La aerolínea se suma a pruebas operativas de una herramienta de IA que busca identificar ajustes de vuelo capaces de reducir contrails.",
+      "tags": [
+        "IA aplicada",
+        "Clima",
+        "Investigación"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Cathay Pacific · anuncio oficial",
+        "url": "https://news.cathaypacific.com/translation-cathay-pacific-and-google-partner-to-research-and-trial-ai-powered-contrail-avoidance",
+        "publishedAt": "2026-09-07"
+      },
+      "body": [
+        "Cathay Pacific anunció una colaboración con Google para investigar y probar una herramienta de IA orientada a evitar estelas de condensación cuando las condiciones de vuelo lo permitan.",
+        "El programa evaluará factibilidad operativa e impacto climático en vuelos reales. Es una prueba de campo, no una declaración de que el sistema ya elimine contrails de forma general."
+      ],
+      "keyPoints": [
+        "Prueba operativa con una aerolínea comercial.",
+        "Uso de IA para identificar condiciones asociadas a contrails.",
+        "El objetivo es evaluar factibilidad e impacto."
+      ],
+      "analysis": "La IA aplicada a operaciones físicas necesita demostrar beneficio sin introducir costos o riesgos mayores.",
+      "watch": "Resultados de los vuelos de prueba y métricas públicas de impacto."
+    },
+    {
+      "id": "minicpm5-2b",
+      "eventKey": "minicpm5-2b",
+      "date": "2026-09-07",
+      "announcedAt": "2026-09-07",
+      "company": "OpenBMB",
+      "product": "MiniCPM5-2B",
+      "title": "OpenBMB publica MiniCPM5-2B para IA compacta y local",
+      "summary": "El modelo de 2.000 millones de parámetros apunta a dispositivos y recursos limitados sin renunciar a contexto largo y uso de herramientas.",
+      "tags": [
+        "Modelos",
+        "Código abierto",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "OpenBMB · repositorio oficial",
+        "url": "https://github.com/OpenBMB/MiniCPM",
+        "publishedAt": "2026-09-07"
+      },
+      "body": [
+        "OpenBMB registró el 7 de septiembre el lanzamiento de MiniCPM5-2B, un modelo denso de dos mil millones de parámetros orientado a escenarios locales y con recursos limitados.",
+        "El proyecto describe contexto largo y capacidades de uso de herramientas y tareas agentivas. Las comparaciones de rendimiento publicadas por OpenBMB son resultados del propio proyecto."
+      ],
+      "keyPoints": [
+        "Modelo compacto de 2B parámetros.",
+        "Contexto largo según la documentación del proyecto.",
+        "Diseñado para despliegue local y uso de herramientas."
+      ],
+      "analysis": "Los modelos pequeños amplían dónde puede ejecutarse IA y reducen dependencia de nube para tareas acotadas.",
+      "watch": "Velocidad y calidad en hardware de consumo, licencias y resultados independientes."
+    },
+    {
+      "id": "openai-an-alien-mind",
+      "eventKey": "openai-an-alien-mind",
+      "date": "2026-09-06",
+      "announcedAt": "2026-09-06",
+      "company": "OpenAI",
+      "product": "Safety research",
+      "title": "El jefe científico de OpenAI pide barras comunes antes de seguir escalando al máximo",
+      "summary": "Jakub Pachocki sostiene que alignment y monitoreo todavía no están resueltos al nivel necesario para mantener indefinidamente el ritmo frontier.",
+      "tags": [
+        "Seguridad",
+        "Investigación",
+        "Política"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "OpenAI · ensayo de Jakub Pachocki",
+        "url": "https://openai.com/index/an-alien-mind/",
+        "publishedAt": "2026-09-06"
+      },
+      "body": [
+        "Jakub Pachocki, chief scientist de OpenAI, publicó un ensayo sobre los límites actuales de alignment y monitoreo. Es una posición argumentada, no un anuncio de que OpenAI haya detenido el entrenamiento.",
+        "Pachocki sostiene que los laboratorios necesitan criterios de seguridad compartidos y coordinación internacional si la supervisión deja de seguir el ritmo de las capacidades."
+      ],
+      "keyPoints": [
+        "Ensayo publicado el 6 de septiembre.",
+        "Pide mejores barras de seguridad y coordinación.",
+        "No anuncia una pausa inmediata de OpenAI."
+      ],
+      "analysis": "Las políticas internas pueden convertirse en un factor competitivo cuando las capacidades avanzan más rápido que las técnicas de control.",
+      "watch": "Cambios concretos en políticas de lanzamiento, evaluaciones y coordinación."
+    },
+    {
+      "id": "openai-automated-research-intern",
+      "eventKey": "openai-automated-research-intern",
+      "date": "2026-09-06",
+      "announcedAt": "2026-09-06",
+      "company": "OpenAI",
+      "product": "Research acceleration",
+      "title": "OpenAI dice haber alcanzado su hito de “research intern” automatizado",
+      "summary": "La compañía afirma que sus agentes ya pueden completar tareas de investigación bien definidas que antes tomarían días a un investigador humano.",
+      "tags": [
+        "Agentes",
+        "Investigación"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "OpenAI · anuncio oficial",
+        "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+        "publishedAt": "2026-09-06"
+      },
+      "body": [
+        "OpenAI publicó una mirada a su uso interno de agentes para acelerar investigación y afirmó que, según sus propias mediciones, alcanzó el hito que denomina automated research intern.",
+        "La empresa define ese nivel como completar bajo dirección humana tareas bien delimitadas que podrían ocupar varios días de trabajo especializado. No es una certificación externa ni significa autonomía total de investigación."
+      ],
+      "keyPoints": [
+        "Hito declarado por OpenAI.",
+        "Tareas bien definidas bajo dirección humana.",
+        "La evidencia publicada es interna al proveedor."
+      ],
+      "analysis": "Medir cuánto trabajo completo puede delegarse es más útil para productividad científica que observar sólo puntuaciones aisladas.",
+      "watch": "Evaluaciones externas y desempeño en proyectos con objetivos menos definidos."
+    },
+    {
+      "id": "dome-agent-operations-platform",
+      "eventKey": "dome-agent-operations-platform",
+      "date": "2026-09-05",
+      "announcedAt": "2026-09-05",
+      "company": "Dome Systems",
+      "product": "Agent Operations Platform",
+      "title": "Dome abre una plataforma de operaciones para agentes",
+      "summary": "La propuesta reúne registro de agentes, gateway MCP y enrutamiento de modelos bajo un control operativo común.",
+      "tags": [
+        "Agentes",
+        "Infraestructura",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Dome Systems · anuncio oficial",
+        "url": "https://www.domesystems.ai/updates/dome-launches-agent-operations-platform",
+        "publishedAt": "2026-09-05"
+      },
+      "body": [
+        "Dome Systems anunció acceso self-service a su Agent Operations Platform.",
+        "El producto reúne un registro de agentes, un gateway para MCP y controles para enrutar modelos y herramientas. Intenta resolver el problema operativo de administrar muchos agentes dentro de una organización."
+      ],
+      "keyPoints": [
+        "Acceso self-service anunciado el 5 de septiembre.",
+        "Registro de agentes y gateway MCP.",
+        "Control de modelos y herramientas desde una capa común."
+      ],
+      "analysis": "La administración de agentes puede terminar pareciéndose a la administración de servicios: inventario, identidad, permisos y observabilidad.",
+      "watch": "Adopción, interoperabilidad y controles de seguridad."
+    },
+    {
+      "id": "tcs-hypervault-hyderabad",
+      "eventKey": "tcs-hypervault-hyderabad",
+      "date": "2026-09-05",
+      "announcedAt": "2026-09-05",
+      "company": "TCS",
+      "product": "HyperVault Hyderabad AI campus",
+      "title": "TCS planea un campus de centros de datos de IA de hasta 1 GW en Hyderabad",
+      "summary": "HyperVault aseguró terreno para un complejo preparado para despliegues de GPU de alta densidad y refrigeración líquida.",
+      "tags": [
+        "Infraestructura",
+        "Negocio"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial de un globo terrestre",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "TCS · anuncio oficial",
+        "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana",
+        "publishedAt": "2026-09-05"
+      },
+      "body": [
+        "TCS anunció que su subsidiaria HyperVault aseguró terreno en Hyderabad para desarrollar un campus de centros de datos de IA con una capacidad planificada de hasta un gigavatio.",
+        "El proyecto está diseñado para GPU de alta densidad y refrigeración líquida y se desarrollará por fases. La capacidad máxima es una meta de infraestructura, no potencia ya instalada."
+      ],
+      "keyPoints": [
+        "Capacidad planificada de hasta 1 GW.",
+        "Desarrollo por fases.",
+        "Infraestructura preparada para GPU de alta densidad."
+      ],
+      "analysis": "La carrera de IA también se libra en electricidad, refrigeración, suelo y capacidad física para alojar aceleradores.",
+      "watch": "Calendario de construcción, clientes y capacidad que realmente entra en operación."
+    },
+    {
       "id": "anthropic-fermat-formalization",
       "eventKey": "anthropic-fermat-formalization",
       "date": "2026-09-04",
