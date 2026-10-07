@@ -17,6 +17,7 @@ Fecha de corte: 2026-10-07.
 - Automatización de ChatGPT + GitHub configurada para revisar novedades cada hora.
 - La automatización rutinaria no debe invocar Codex, Work ni una API de pago.
 - Protocolo de coordinación para evitar sobrescrituras entre Newsroom y Historical Backfill.
+- Reconstrucción histórica 1–7 septiembre auditada, deduplicada y marcada como completa con evidencia en `docs/history-audit-2026-09-01-07.md`.
 
 ### Funcionando parcialmente
 - Archivo histórico desde 2026-09-01.
@@ -24,7 +25,7 @@ Fecha de corte: 2026-10-07.
 - Algunas fechas de la maqueta antigua solo son pistas de investigación y no pueden publicarse sin volver a verificarlas.
 
 ### Falta
-- Completar la cobertura real y verificable de todo septiembre de 2026.
+- Completar la cobertura real y verificable del 8–30 de septiembre de 2026.
 - Completar el tramo 1–7 de octubre de 2026 y continuar día a día.
 - Segunda pasada de auditoría para detectar omisiones, duplicados y fechas incorrectas.
 - Pulido visual/editorial final antes de declarar la versión 1.0.
@@ -91,6 +92,6 @@ Backlog, no requisito de la v1.0:
 
 ## Próximo paso inmediato
 
-Los chats dedicados **Automation & Newsroom** y **Historical Backfill** ya están activos. Dejar que cada uno trabaje en su carril y usar este roadmap para coordinar cambios.
+El lote histórico 1–7 de septiembre está cerrado. El siguiente paso de **Historical Backfill** es investigar **8–14 de septiembre** con el mismo estándar de doble pasada, fuentes primarias y deduplicación. **Automation & Newsroom** continúa en paralelo con actualidad.
 
 No mezclar rediseños grandes con actualizaciones automáticas de noticias.
