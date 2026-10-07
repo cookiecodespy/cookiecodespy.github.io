@@ -66,3 +66,8 @@ Usarlo para investigaciones profundas en cinco lotes:
 5. 1 octubre–hoy
 
 Cada lote debe terminar con revisión, deduplicación, actualización de `history-coverage.json` y publicación.
+
+
+## Profundidad editorial
+
+Leer también `source/docs/article-depth.md`. Las páginas internas deben funcionar como artículos/informes completos, no como briefings extendidos. Automation & Newsroom debe publicar piezas suficientemente desarrolladas, y Historical Backfill debe enriquecer artículos existentes demasiado breves al revisar cada bloque histórico.
