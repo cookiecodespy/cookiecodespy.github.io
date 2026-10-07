@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>AI Race Gazette</title>
+    <link>https://cookiecodespy.github.io/ai-race-gazette/</link>
+    <description>Noticias de IA y tecnología, con contexto y fuentes oficiales.</description>
+    <language>es-cl</language>
+    <item>
+      <title>Decisions API lleva las respuestas tipadas al centro de las aplicaciones</title>
+      <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/decisions-api</link>
+      <description>La beta pública usa gpt-6-luna para clasificar, elegir entre opciones y evaluar contenido con respuestas estructuradas.</description>
+      <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/decisions-api</guid>
+      <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+      <source url="https://developers.openai.com/api/docs/guides/decisions">OpenAI · documentación de Decisions</source>
+    </item>
+    <item>
+      <title>Nano Banana 2.1: una nueva etapa para crear y editar imágenes</title>
+      <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/nano-banana-2-1</link>
+      <description>Google documenta su modelo de generación de imágenes y edición conversacional en la API de Gemini.</description>
+      <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/nano-banana-2-1</guid>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+      <source url="https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1">Google AI for Developers</source>
+    </item>
+    <item>
+      <title>Mistral Large 4 vuelve a mover la carrera de los modelos abiertos</title>
+      <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/mistral-large-4</link>
+      <description>La compañía francesa presenta su nuevo modelo en vista previa pública y anuncia una apertura posterior de sus pesos.</description>
+      <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/mistral-large-4</guid>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+      <source url="https://mistral.ai/news/mistral-large-4/">Mistral AI</source>
+    </item>
+    <item>
+      <title>Claude entra en Docs, Sheets y Slides desde Google Workspace</title>
+      <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-google-workspace</link>
+      <description>El complemento lleva la asistencia de Claude al documento abierto y está en beta para planes de pago.</description>
+      <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-google-workspace</guid>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+      <source url="https://claude.com/es/resources/articles/claude-now-works-in-google-docs-sheets-and-slides">Anthropic · Claude</source>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+import { chromium } from '@playwright/test';
+import { mkdir, writeFile } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+await mkdir('qa',{recursive:true});
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:864,height:1536},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+await page.goto('http://127.0.0.1:4173/');await page.getByRole('heading',{name:'Noticias de IA',exact:true}).waitFor();await page.evaluate(()=>document.fonts.ready);
+await page.screenshot({path:'qa/home-reference-size.png',fullPage:true});
+await page.getByRole('button',{name:'Vista lista'}).click();
+await page.getByRole('searchbox').fill('CREAR imagenes');
+await page.locator('.news-list a').waitFor();assert.equal(await page.locator('.news-list a').count(),1);
+await page.getByRole('searchbox').fill('zzzznonexistent');await page.getByRole('heading',{name:'No hay noticias con estos filtros'}).waitFor();await page.getByRole('button',{name:'Limpiar filtros'}).click();
+await page.getByRole('button',{name:'Google',exact:true}).click();assert.equal(await page.locator('.news-list a').count(),1);await page.locator('.news-list a').first().click();await page.getByRole('heading',{name:'Consulta la fuente original'}).waitFor();assert.match(page.url(),/#articulo\/nano-banana-2-1$/);await page.screenshot({path:'qa/article-desktop.png',fullPage:true});
+await page.reload();await page.getByRole('heading',{name:'Consulta la fuente original'}).waitFor();await page.getByRole('link',{name:'Volver a la portada',exact:true}).click();await page.getByRole('button',{name:'Vista portadas'}).click();await page.getByRole('button',{name:'Todas',exact:true}).click();await page.locator('.edition-card').first().click();await page.getByRole('heading',{name:'La carrera de la IA, día a día.'}).waitFor();await page.goBack();
+await page.setViewportSize({width:390,height:844});await page.getByRole('heading',{name:'Noticias de IA',exact:true}).waitFor();await page.screenshot({path:'qa/home-mobile.png',fullPage:true});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth),false,'Mobile overflow');
+await page.getByRole('link',{name:/OpenAI.*Decisions API/}).first().click();await page.getByRole('heading',{name:'Consulta la fuente original'}).waitFor();await page.screenshot({path:'qa/article-mobile.png',fullPage:true});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth),false,'Article mobile overflow');
+assert.deepEqual(errors,[]);await writeFile('qa/browser-results.json',JSON.stringify({passed:true,errors,checks:['search accents','empty/reset','company filter','article route','reload deep link','edition route','back navigation','390px overflow','console'],date:new Date().toISOString()},null,2));await browser.close();console.log('Browser checks passed');
