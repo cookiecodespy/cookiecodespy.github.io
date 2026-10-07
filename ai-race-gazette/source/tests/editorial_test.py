@@ -24,4 +24,25 @@ class EditorialTests(unittest.TestCase):
  def test_missing_image_is_rejected(self):
   self.data['articles'][0]['image']='assets/missing.webp'
   with self.assertRaisesRegex(AssertionError,'Missing/unsafe image'):validate(self.data)
+ def test_reporter_v2_optional_fields_validate(self):
+  a=self.data['articles'][0]
+  a['articleVersion']=2
+  a['quickTakeaways']=['Uno','Dos','Tres']
+  a['sections']=[{'heading':'Qué pasó','paragraphs':['Contexto desarrollado.'],'kind':'report'}]
+  a['technicalDetails']=[{'label':'Modelo','value':'Ejemplo'}]
+  a['availability']={'status':'GA','platforms':['API'],'regions':[],'requirements':[],'notes':[]}
+  a['pricing']=[{'label':'Entrada','value':'US$1/M'}]
+  a['limitations']=['Claim del proveedor pendiente de evaluación independiente.']
+  a['practicalAdvice']=['Probar con cargas reales antes de migrar.']
+  a['usefulFacts']=['ID estable.']
+  a['curiosities']=['Dato verificado.']
+  a['executiveSummary']='Resumen ejecutivo.'
+  a['finalSummary']='Resumen final.'
+  a['imageStatus']='library'
+  validate(self.data)
+ def test_reporter_v2_rejects_invalid_section_kind(self):
+  a=self.data['articles'][0]
+  a['articleVersion']=2
+  a['sections']=[{'heading':'Sección','paragraphs':['Texto.'],'kind':'inventado'}]
+  with self.assertRaisesRegex(AssertionError,'Invalid section kind'):validate(self.data)
 if __name__=='__main__':unittest.main()
