@@ -42,7 +42,7 @@ def _article_words(a):
     parts=[a.get('title',''),a.get('summary',''),*a.get('body',[]),a.get('analysis',''),a.get('watch',''),a.get('executiveSummary',''),a.get('finalSummary',''),*a.get('quickTakeaways',[]),*a.get('limitations',[]),*a.get('practicalAdvice',[]),*a.get('usefulFacts',[]),*a.get('curiosities',[])]
     for section in a.get('sections',[]):
         parts.extend([section.get('heading',''),*section.get('paragraphs',[])])
-    return len(re.findall(r'\\b\\w+\\b',' '.join(x for x in parts if isinstance(x,str)),flags=re.UNICODE))
+    return len(re.findall(r'\b\w+\b',' '.join(x for x in parts if isinstance(x,str)),flags=re.UNICODE))
 
 def _validate_v2(a):
     if 'articleVersion' not in a:
