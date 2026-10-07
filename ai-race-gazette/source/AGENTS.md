@@ -6,7 +6,7 @@
 
 Public Spanish AI/technology newspaper hosted in cookiecodespy/cookiecodespy.github.io/ai-race-gazette. Main reference: public/assets/reference-look.jpg. Match warm parchment, genuinely cut/singed irregular edges, engraved imagery, strong newspaper hierarchy, and complete internal articles with official sources. Do not describe the retro design in public product copy.
 
-User selected hourly editorial updates through ChatGPT + GitHub, not Codex, Work or a paid API. Read docs/editorial-policy.md, docs/content-model.md, docs/article-depth.md, docs/scheduled-task.md, docs/coordination.md and docs/roadmap.md. Routine editorial updates should touch data/RSS/coverage only when there is a material change; no-op hourly checks must create no commit. Do not modify visual code during routine news updates. Publish only Gazette paths; preserve the repository root page. User explicitly authorized Playwright/Chromium verification when the integrated browser is unavailable.
+User selected hourly editorial updates through ChatGPT + GitHub, not Codex, Work or a paid API. Read docs/gazette-v1-standard.md first, then docs/editorial-policy.md, docs/content-model.md, docs/article-v2-schema.md, docs/article-depth.md, docs/image-policy.md, docs/scheduled-task.md, docs/automation-operations.md, docs/coordination.md and docs/roadmap.md. Routine editorial updates should touch data/RSS/coverage only when there is a material change; no-op hourly checks must create no commit. Do not modify visual code during routine news updates. Publish only Gazette paths; preserve the repository root page. User explicitly authorized Playwright/Chromium verification when the integrated browser is unavailable.
 
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
@@ -16,7 +16,7 @@ When implementing from a selected generated mock, treat that image as the source
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
 
-2026-10-07 editorial audit: one independent article per meaningful launch/feature, unlimited company/day articles. A shared source URL is valid across different eventKeys. Group minor updates; preserve article IDs for corrections. Company/topic/month/day filters combine. Historical coverage is partial (15 articles, 9 days); original 37 daily entries are research leads, never treat them as verified stories.
+2026-10-07 editorial audit: one independent article per meaningful launch/feature, unlimited company/day articles. A shared source URL is valid across different eventKeys. Group minor updates; preserve article IDs for corrections. Company/topic/month/day filters combine. Historical coverage is partial. As of the 2026-10-07 audit there are 48 verified articles across 14 dates; Sep 1–7 contains 36 verified articles and is marked complete. Original prototype entries remain research leads, never automatic facts.
 
 2026-10-07 discovery rule: company filters are data-driven from `article.company`. Do not hard-code a closed company list. When a relevant new actor is verified, publish its first article with a canonical company name and the filter will appear automatically. New source domains must not require a frontend change. Do not create empty company categories.
 
@@ -26,3 +26,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 
 2026-10-07 article-depth rule: cover cards stay concise, but internal article pages should be substantial. Standard stories target roughly 700–1,200 words when sources support it; major launches may be 1,200–2,000 words; minor updates can be 350–600. Never pad with speculation. Historical Backfill should enrich existing short articles while preserving id/eventKey.
+
+
+2026-10-07 Reporter V2 rule: `docs/gazette-v1-standard.md` is the controlling editorial standard. Reporter V2 is the default for new material. During migration, V2 articles keep legacy fields required by the current frontend and may add the optional fields in `docs/article-v2-schema.md`. Do not create another short-form backlog.
+
+2026-10-07 visual rule: follow `docs/image-policy.md`. The hourly Newsroom may select existing editorial art and write an image brief; new binary image generation/upload is a separate Visual Desk capability until a reliable automated pipeline is proven.
+
+2026-10-07 scheduled-write rule: read `docs/automation-operations.md`. A blocked unattended GitHub mutation is an operational approval/security limitation, not proof that repository permissions are missing. Never loop retries or leave partial mirror state.
