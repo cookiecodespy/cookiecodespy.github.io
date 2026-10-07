@@ -86,6 +86,20 @@ Solo publicar cuando exista:
 
 Esto evita 24 commits irrelevantes por día.
 
+## Concurrencia con otros chats
+
+Lee `docs/coordination.md` antes de publicar.
+
+La tarea horaria debe asumir que Historical Backfill u otro chat puede haber cambiado `main` mientras investigaba.
+
+Antes de escribir:
+1. vuelve a leer la versión actual de `data/news.json` desde `main`;
+2. aplica el cambio sobre esa versión;
+3. conserva todos los artículos existentes;
+4. deduplica por `id` y `eventKey`;
+5. si `main` cambió antes del commit, vuelve a leer y reconcilia; nunca fuerces una sobrescritura;
+6. si existe un conflicto real sobre el mismo evento, no publiques esa entrada hasta resolverlo.
+
 ## Imágenes
 
 Una noticia de una compañía nueva no debe bloquearse por falta de una ilustración propia. Reutiliza temporalmente una ilustración editorial genérica compatible, con crédito correcto. Las ilustraciones específicas pueden añadirse después sin cambiar el id del artículo.
