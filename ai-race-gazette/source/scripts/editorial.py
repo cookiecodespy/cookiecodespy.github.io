@@ -3,7 +3,7 @@ import argparse
 import json
 import re
 from pathlib import Path
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timezone, timedelta
 from email.utils import format_datetime
 from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
@@ -38,12 +38,23 @@ def _source(source):
     if source.get('publishedAt'):
         assert date.fromisoformat(source['publishedAt']) <= date.today(), 'Future publication'
 
+def _article_words(a):
+    parts=[a.get('title',''),a.get('summary',''),*a.get('body',[]),a.get('analysis',''),a.get('watch',''),a.get('executiveSummary',''),a.get('finalSummary',''),*a.get('quickTakeaways',[]),*a.get('limitations',[]),*a.get('practicalAdvice',[]),*a.get('usefulFacts',[]),*a.get('curiosities',[])]
+    for section in a.get('sections',[]):
+        parts.extend([section.get('heading',''),*section.get('paragraphs',[])])
+    return len(re.findall(r'\\b\\w+\\b',' '.join(x for x in parts if isinstance(x,str)),flags=re.UNICODE))
+
 def _validate_v2(a):
     if 'articleVersion' not in a:
         return
     assert a['articleVersion'] == 2, 'Unsupported article version'
+    _string_list(a.get('quickTakeaways'),'quickTakeaways')
+    assert len(a['quickTakeaways']) >= 3, 'Reporter V2 needs at least 3 quick takeaways'
+    _nonempty(a.get('executiveSummary'),'executiveSummary')
+    _nonempty(a.get('finalSummary'),'finalSummary')
+    assert _article_words(a) >= 500, 'Reporter V2 article is too short'
 
-    for key in ['quickTakeaways','limitations','practicalAdvice','usefulFacts','curiosities']:
+    for key in ['limitations','practicalAdvice','usefulFacts','curiosities']:
         if key in a:
             _string_list(a[key],key,allow_empty=True)
 
@@ -141,6 +152,31 @@ def validate(data):
         if a.get('announcedAt'):
             assert date.fromisoformat(a['announcedAt']) <= date.today(), 'Future announcement'
         _validate_v2(a)
+    daily = data.get('dailyCoverage')
+    if daily is not None:
+        assert isinstance(daily,list) and daily, 'Missing dailyCoverage'
+        allowed={'pending','partial','complete','reviewed-no-material-news'}
+        article_counts={}
+        for a in data['articles']:
+            article_counts[a['date']]=article_counts.get(a['date'],0)+1
+        seen=set()
+        for row in daily:
+            assert isinstance(row,dict), 'Invalid dailyCoverage row'
+            d=date.fromisoformat(row['date'])
+            assert start <= d <= date.today(), 'Invalid daily coverage date'
+            assert row['date'] not in seen, 'Duplicate daily coverage date'
+            seen.add(row['date'])
+            assert row['status'] in allowed, 'Invalid daily coverage status'
+            assert isinstance(row.get('verifiedArticles'),int) and row['verifiedArticles'] >= 0, 'Invalid daily coverage count'
+            assert row['verifiedArticles'] == article_counts.get(row['date'],0), 'Daily coverage/article count mismatch: '+row['date']
+        for d in article_counts:
+            assert d in seen, 'Article date missing from dailyCoverage: '+d
+        first=min(date.fromisoformat(d) for d in seen); last=max(date.fromisoformat(d) for d in seen)
+        assert first == start, 'dailyCoverage must start at coverageStart'
+        cursor=first
+        while cursor <= last:
+            assert cursor.isoformat() in seen, 'Gap in dailyCoverage: '+cursor.isoformat()
+            cursor += timedelta(days=1)
     return data
 
 def feed(data):

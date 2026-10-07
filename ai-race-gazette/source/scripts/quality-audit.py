@@ -33,7 +33,7 @@ events=[a.get('eventKey',a['id']) for a in articles]
 assert len(ids)==len(set(ids)), 'Duplicate ids'
 assert len(events)==len(set(events)), 'Duplicate eventKeys'
 
-coverage=json.loads(COVERAGE.read_text(encoding='utf-8')) if COVERAGE.exists() else []
+coverage=data.get('dailyCoverage') or (json.loads(COVERAGE.read_text(encoding='utf-8')) if COVERAGE.exists() else [])
 states=Counter(row['status'] for row in coverage)
 companies=Counter(a['company'] for a in articles)
 dates=Counter(a['date'] for a in articles)

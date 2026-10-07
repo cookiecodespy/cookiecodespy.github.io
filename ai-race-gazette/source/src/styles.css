@@ -53,3 +53,7 @@ img{height:auto}.feature-body>div{min-width:0}.hero-art img,.mini-article>img,.c
 .reporter-v2 .source-box{border-top:3px double var(--line);padding-top:14px}
 @media(max-width:900px){.reporter-v2 .story-layout{grid-template-columns:minmax(0,1fr) 240px;gap:25px}.quick-brief{grid-template-columns:150px minmax(0,1fr)}.quick-brief ul{columns:1}.reporter-v2 .sources{grid-template-columns:1fr}}
 @media(max-width:700px){.reporter-strip{font-size:8px;flex-wrap:wrap}.quick-brief{grid-template-columns:1fr;gap:8px;padding:17px 16px}.quick-brief h2{font-size:27px}.quick-brief li{font-size:14px}.reporter-v2 .story-layout{grid-template-columns:1fr;gap:14px}.reporter-v2 .article-aside{position:static}.executive-summary{padding:17px 16px}.executive-summary p,.gazette-analysis p,.final-summary p{font-size:17px}.detail-card{padding:14px}.timeline-block li{grid-template-columns:1fr;gap:4px}.article-media-grid{grid-template-columns:1fr}.reporter-v2 .sources{display:block}.source-links{margin-top:18px}.advice-block,.useful-block,.curiosity-block,.limitations-block{padding:16px}}
+
+/* Daily coverage status */
+.results-meta{flex-wrap:wrap;gap:8px}.coverage-state{margin-left:auto;border:1px solid var(--line);padding:4px 7px;font-weight:800;letter-spacing:.7px}.coverage-state.complete,.coverage-state.reviewed-no-material-news{border-style:double}.coverage-state.partial{border-style:dashed}.coverage-state.pending{opacity:.7}
+@media(max-width:700px){.coverage-state{width:100%;margin-left:0;text-align:center}}

@@ -8,7 +8,9 @@ class EditorialTests(unittest.TestCase):
   self.data=json.loads(NEWS.read_text(encoding='utf-8'))
  def test_separate_events_can_share_a_primary_source(self):
   other=copy.deepcopy(self.data['articles'][0]);other['id']='another-feature';other['eventKey']='another-feature'
-  self.data['articles'].append(other);validate(self.data)
+  self.data['articles'].append(other)
+  row=next(r for r in self.data.get('dailyCoverage',[]) if r['date']==other['date']);row['verifiedArticles']+=1
+  validate(self.data)
  def test_same_event_cannot_be_published_twice(self):
   other=copy.deepcopy(self.data['articles'][0]);other['id']='different-title-same-event'
   self.data['articles'].append(other)
@@ -45,4 +47,12 @@ class EditorialTests(unittest.TestCase):
   a['articleVersion']=2
   a['sections']=[{'heading':'Sección','paragraphs':['Texto.'],'kind':'inventado'}]
   with self.assertRaisesRegex(AssertionError,'Invalid section kind'):validate(self.data)
+ def test_daily_coverage_count_must_match_articles(self):
+  self.assertTrue(self.data.get('dailyCoverage'))
+  self.data['dailyCoverage'][0]['verifiedArticles']+=1
+  with self.assertRaisesRegex(AssertionError,'Daily coverage/article count mismatch'):validate(self.data)
+ def test_daily_coverage_cannot_have_date_gaps(self):
+  self.assertGreater(len(self.data.get('dailyCoverage',[])),3)
+  self.data['dailyCoverage'].pop(2)
+  with self.assertRaisesRegex(AssertionError,'Gap in dailyCoverage|Article date missing'):validate(self.data)
 if __name__=='__main__':unittest.main()
