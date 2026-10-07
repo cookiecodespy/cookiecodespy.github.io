@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 NEWS = ROOT/'public/data/news.json'
 SITE = 'https://cookiecodespy.github.io/ai-race-gazette/'
-OFFICIAL = {'mistral.ai','docs.mistral.ai','openai.com','developers.openai.com','blog.google','deepmind.google','ai.google.dev','anthropic.com','claude.com','microsoft.com','blogs.microsoft.com','nvidianews.nvidia.com','blogs.nvidia.com','ai.meta.com','about.fb.com','huggingface.co','research.google','github.com','x.ai'}
+BLOCKED_HOSTS = {'localhost', '127.0.0.1', '0.0.0.0', '::1'}
 
 def validate(data):
     assert data['schemaVersion'] == 1, 'Unsupported schema'
@@ -38,9 +38,12 @@ def validate(data):
         assert image.resolve().is_relative_to((ROOT/'public/assets').resolve()) and image.is_file(), 'Missing/unsafe image'
         for source in [a['source'], *a.get('relatedSources',[])]:
             u = urlparse(source['url'])
-            host = (u.hostname or '').removeprefix('www.')
-            assert u.scheme == 'https' and not u.username and not u.password, 'Unsafe source URL'
-            assert host in OFFICIAL or any(host.endswith('.'+h) for h in OFFICIAL if h != 'github.com'), 'Review source domain: '+host
+            host = (u.hostname or '').lower().removeprefix('www.')
+            assert u.scheme == 'https' and host and not u.username and not u.password, 'Unsafe source URL'
+            # Authority is an editorial decision, not a hard-coded vendor allowlist:
+            # otherwise a newly relevant company would require a code release before
+            # its first verified article can be published.
+            assert host not in BLOCKED_HOSTS and not host.endswith('.local'), 'Unsafe source URL'
             assert source['name'].strip(), 'Missing source attribution'
         # A single announcement may contain several independent product launches.
         # Deduplicate by event, never by source URL alone.
