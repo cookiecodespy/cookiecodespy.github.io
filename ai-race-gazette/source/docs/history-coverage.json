@@ -1,38 +1,52 @@
 [
   {
     "date": "2026-09-01",
-    "status": "partial",
-    "verifiedArticles": 2
+    "status": "complete",
+    "verifiedArticles": 12,
+    "audit": "history-audit-2026-09-01-07.md",
+    "reviewedAt": "2026-10-07"
   },
   {
     "date": "2026-09-02",
-    "status": "pending",
-    "verifiedArticles": 0
+    "status": "complete",
+    "verifiedArticles": 8,
+    "audit": "history-audit-2026-09-01-07.md",
+    "reviewedAt": "2026-10-07"
   },
   {
     "date": "2026-09-03",
-    "status": "pending",
-    "verifiedArticles": 0
+    "status": "complete",
+    "verifiedArticles": 6,
+    "audit": "history-audit-2026-09-01-07.md",
+    "reviewedAt": "2026-10-07"
   },
   {
     "date": "2026-09-04",
-    "status": "partial",
-    "verifiedArticles": 1
+    "status": "complete",
+    "verifiedArticles": 4,
+    "audit": "history-audit-2026-09-01-07.md",
+    "reviewedAt": "2026-10-07"
   },
   {
     "date": "2026-09-05",
-    "status": "pending",
-    "verifiedArticles": 0
+    "status": "complete",
+    "verifiedArticles": 2,
+    "audit": "history-audit-2026-09-01-07.md",
+    "reviewedAt": "2026-10-07"
   },
   {
     "date": "2026-09-06",
-    "status": "pending",
-    "verifiedArticles": 0
+    "status": "complete",
+    "verifiedArticles": 2,
+    "audit": "history-audit-2026-09-01-07.md",
+    "reviewedAt": "2026-10-07"
   },
   {
     "date": "2026-09-07",
-    "status": "pending",
-    "verifiedArticles": 0
+    "status": "complete",
+    "verifiedArticles": 2,
+    "audit": "history-audit-2026-09-01-07.md",
+    "reviewedAt": "2026-10-07"
   },
   {
     "date": "2026-09-08",
