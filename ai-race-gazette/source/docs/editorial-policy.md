@@ -25,3 +25,10 @@ No presentar rumores como hechos. Un reporte no confirmado solo merece publicaci
 ## Archivo histórico pendiente
 
 Reconstruir 1 de septiembre–5 de octubre de 2026 y ampliar 6–7 de octubre con fuentes primarias por día. No se considera completo hasta verificarlo. Preservar días sin novedades como tales, sin inventar titulares. La ampliación del 7 de octubre contiene 15 noticias en 9 fechas. Es cobertura parcial; ninguna jornada se considera exhaustiva. Ver content-model.md e history-coverage.json.
+
+
+## Profundidad de los artículos
+
+La portada resume; la página interna desarrolla. Los artículos estándar deben apuntar a 700–1.200 palabras cuando exista información verificable suficiente, y los lanzamientos mayores pueden convertirse en informes de 1.200–2.000 palabras. Actualizaciones menores pueden ser más breves. No alargar con relleno ni especulación.
+
+Cada pieza debe ampliar sustancialmente el resumen e incluir, cuando aplique: qué pasó, qué cambia, detalles técnicos, disponibilidad/precio, antecedentes, impacto competitivo, limitaciones, análisis editorial, qué seguir y fuentes. Ver `article-depth.md`.
