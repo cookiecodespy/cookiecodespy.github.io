@@ -30,7 +30,6 @@ class EditorialTests(unittest.TestCase):
   a=next(a for a in self.data['articles'] if a.get('articleVersion')==2)
   a['articleVersion']=2
   a['quickTakeaways']=['Uno','Dos','Tres']
-  a['sections']=[{'heading':'Qué pasó','paragraphs':['Contexto desarrollado.'],'kind':'report'}]
   a['technicalDetails']=[{'label':'Modelo','value':'Ejemplo'}]
   a['availability']={'status':'GA','platforms':['API'],'regions':[],'requirements':[],'notes':[]}
   a['pricing']=[{'label':'Entrada','value':'US$1/M'}]
@@ -44,7 +43,8 @@ class EditorialTests(unittest.TestCase):
   validate(self.data)
  def test_reporter_v2_rejects_invalid_section_kind(self):
   a=next(a for a in self.data['articles'] if a.get('articleVersion')==2)
-  a['sections']=[{'heading':'Sección','paragraphs':['Texto.'],'kind':'inventado'}]
+  self.assertTrue(a.get('sections'))
+  a['sections'][0]['kind']='inventado'
   with self.assertRaisesRegex(AssertionError,'Invalid section kind'):validate(self.data)
  def test_daily_coverage_count_must_match_articles(self):
   self.assertTrue(self.data.get('dailyCoverage'))
