@@ -16,6 +16,8 @@ Leer primero:
 - `content-model.md`
 - `coordination.md`
 - `image-policy.md`
+- `coverage-audit.md`
+- `../research/coverage-audit.json`
 
 ## Orden de lotes
 
@@ -127,3 +129,17 @@ Para cada bloque:
 - no confundas “fuente oficial” con “claim independientemente comprobado”.
 
 El patrón se inspira en `cookiecodespy/spanish-news-nlp-pipeline`; ver `research-backbone.md`.
+
+
+## Ledger auditable por fecha
+
+Al cerrar cada jornada o lote, actualizar también `../research/coverage-audit.json`.
+
+Una fecha nueva bajo el estándar actual debe usar `auditMode: backbone-v1` y registrar:
+- source IDs revisados;
+- categorías revisadas;
+- discovery abierto;
+- pasada inversa;
+- candidatos encontrados/publicados/descartados/no resueltos.
+
+No inventar métricas históricas. Las fechas 1–7 Sep cerradas antes de este sistema permanecen como `legacy-block-audit` y se revisarán de nuevo durante la auditoría inversa final.
