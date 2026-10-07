@@ -1,5 +1,9 @@
 # Actualización horaria con ChatGPT + GitHub
 
+## Estándar maestro
+
+Leer primero `docs/gazette-v1-standard.md`, `docs/article-v2-schema.md`, `docs/image-policy.md` y `docs/automation-operations.md`. Si esta guía entra en conflicto con el estándar maestro, prevalece el estándar maestro.
+
 Estado: activada el 7 de octubre de 2026 como tarea horaria de ChatGPT con conexión GitHub. La actualización de noticias no depende del PC local: el sitio publicado carga `data/news.json` en tiempo de lectura, por lo que una tarea conectada a GitHub puede incorporar noticias sin recompilar el frontend.
 
 Cadencia: una revisión cada hora.
@@ -124,6 +128,23 @@ Las modificaciones grandes de código se harán manualmente y de forma deliberad
 
 ## Profundidad de la noticia publicada
 
-La tarea horaria no debe convertir una noticia material en un briefing de tres párrafos. Para una noticia estándar, producir una pieza desarrollada de aproximadamente 700–1.200 palabras cuando las fuentes lo permitan; para anuncios mayores puede llegar a 1.200–2.000 palabras. Actualizaciones menores pueden ser de 350–600 palabras.
+La tarea horaria no debe convertir una noticia material en un briefing de tres párrafos. Reporter V2 es el formato por defecto: breve material 500–800 palabras; noticia estándar 900–1.600; noticia mayor 1.500–2.500; informe excepcional 2.000–3.500+ cuando la evidencia lo justifique. Son rangos orientativos, no cuotas.
 
 Priorizar evidencia sobre longitud. Si el anuncio acaba de salir y no existe suficiente documentación, explicar lo que falta y enriquecer el mismo artículo más adelante, conservando id/eventKey. Ver `docs/article-depth.md`.
+
+
+## Bloqueo de escritura
+
+La conexión GitHub puede tener permisos correctos y aun así una ejecución programada puede encontrar un control de aprobación/seguridad al modificar datos externos.
+
+Si una escritura es rechazada:
+- aborta antes de dejar JSON/RSS/mirrors desincronizados;
+- no reintentes en bucle ni desactives la tarea automáticamente;
+- entrega un paquete de publicación pendiente con evento, eventKey, fuentes, datos técnicos, pricing/availability, imageBrief y archivos que pretendías modificar;
+- vuelve a deduplicar contra main en el siguiente run.
+
+Ver `docs/automation-operations.md`.
+
+## Imágenes en Newsroom
+
+La noticia no debe bloquearse por arte. Selecciona una imagen editorial existente adecuada y, para historias que merezcan arte propio, añade un `imageBrief` y `imageStatus: needs-specific-art`. La generación/carga autónoma de binarios no se considera fiable hasta que el Visual Desk tenga un pipeline probado.
