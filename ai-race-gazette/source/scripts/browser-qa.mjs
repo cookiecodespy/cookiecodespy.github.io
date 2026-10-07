@@ -23,8 +23,10 @@ await page.getByRole('heading',{name:'Noticias de IA',exact:true}).waitFor();
 await page.evaluate(()=>document.fonts.ready);
 assert.equal(await page.locator('.news-cover').count(),Math.min(12,data.articles.length));
 
-const positions=await page.evaluate(()=>['.archive-masthead','.project-intro','.archive-controls','.archive-results'].map(s=>document.querySelector(s).getBoundingClientRect().top));
+const positions=await page.evaluate(()=>['.archive-masthead','.project-intro','.archive-controls','.coverage-calendar','.archive-results'].map(s=>document.querySelector(s).getBoundingClientRect().top));
 assert.deepEqual(positions,[...positions].sort((a,b)=>a-b));
+assert.ok(await page.locator('.coverage-calendar').count(),'Expected coverage calendar');
+assert.equal(await page.locator('.calendar-day').count(),new Date(Date.UTC(Number(data.updatedAt.slice(0,4)),Number(data.updatedAt.slice(5,7)),0)).getUTCDate());
 await page.screenshot({path:'qa/polished/01-portada.png',fullPage:true});
 
 while(await page.getByRole('button',{name:'Mostrar más noticias'}).count()){
@@ -77,6 +79,15 @@ if(missingDay){
 }
 await page.locator('.filter-summary').getByRole('button',{name:'Limpiar filtros'}).click();
 
+if(missingDay){
+  await page.goto(url+`#edicion/${missingDay}`);
+  await page.getByRole('heading',{name:'La carrera de la IA, día a día.'}).waitFor();
+  await page.locator('.empty-edition-panel').waitFor();
+  assert.match((await page.locator('.empty-edition-panel').textContent()),/Pendiente|Parcial|Revisado|Cobertura/i);
+  await page.goto(url);
+  await page.getByRole('heading',{name:'Noticias de IA',exact:true}).waitFor();
+}
+
 await page.goto(url+`#articulo/${v2.id}`);
 await page.getByRole('heading',{name:'En 30 segundos'}).waitFor();
 await page.getByRole('heading',{name:'La lectura del Gazette'}).waitFor();
@@ -128,7 +139,7 @@ await writeFile('qa/browser-results.json',JSON.stringify({
   articles:data.articles.length,
   reporterV2:v2.id,
   errors,
-  checks:['layout order','pagination','search','dynamic filters','filter reload','pending day','Reporter V2 blocks','share/reload','320/390/768/1280 reflow','skip keyboard','60 simultaneous launches'],
+  checks:['layout order','coverage calendar','empty daily edition route','pagination','search','dynamic filters','filter reload','pending day','Reporter V2 blocks','share/reload','320/390/768/1280 reflow','skip keyboard','60 simultaneous launches'],
   capturedAt:new Date().toISOString()
 },null,2));
 await browser.close();
