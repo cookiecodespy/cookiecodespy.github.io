@@ -16,6 +16,11 @@ class EditorialTests(unittest.TestCase):
  def test_unsafe_link_is_rejected(self):
   self.data['articles'][0]['source']['url']='javascript:alert(1)'
   with self.assertRaisesRegex(AssertionError,'Unsafe source'):validate(self.data)
+ def test_new_company_official_domain_does_not_require_code_change(self):
+  self.data['articles'][0]['company']='Emerging AI Lab'
+  self.data['articles'][0]['source']['name']='Emerging AI Lab'
+  self.data['articles'][0]['source']['url']='https://example-ai-lab.com/news/new-model'
+  validate(self.data)
  def test_missing_image_is_rejected(self):
   self.data['articles'][0]['image']='assets/missing.webp'
   with self.assertRaisesRegex(AssertionError,'Missing/unsafe image'):validate(self.data)
