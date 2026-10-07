@@ -56,10 +56,23 @@ jobs:
       - name: Sites worker tests
         run: npm run test:sites
 
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Browser QA
+        run: |
+          npm run preview -- --host 127.0.0.1 --port 4173 >/tmp/gazette-preview.log 2>&1 &
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:4173/ >/dev/null; then break; fi
+            sleep 1
+          done
+          npm run test:browser
+
       - name: Publish compiled frontend
         run: |
           cp dist/client/index.html ../index.html
           mkdir -p ../assets
+          rm -f ../assets/index-*.js ../assets/index-*.css
           cp -R dist/client/assets/. ../assets/
 
       - name: Commit compiled frontend when changed
@@ -71,6 +84,6 @@ jobs:
           fi
           git config user.name "AI Race Gazette Build"
           git config user.email "actions@users.noreply.github.com"
-          git add ai-race-gazette/index.html ai-race-gazette/assets
+          git add -A ai-race-gazette/index.html ai-race-gazette/assets
           git commit -m "build: publish AI Race Gazette frontend [skip ci]"
           git push
