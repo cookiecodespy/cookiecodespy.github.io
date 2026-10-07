@@ -120,3 +120,10 @@ El frontend carga los datos dinámicamente. Añadir artículos o compañías no 
 La operación rutinaria debe ejecutarse con ChatGPT + GitHub. No invocar Codex, Work ni una API de pago como parte de este ciclo.
 
 Las modificaciones grandes de código se harán manualmente y de forma deliberada en un chat de desarrollo separado.
+
+
+## Profundidad de la noticia publicada
+
+La tarea horaria no debe convertir una noticia material en un briefing de tres párrafos. Para una noticia estándar, producir una pieza desarrollada de aproximadamente 700–1.200 palabras cuando las fuentes lo permitan; para anuncios mayores puede llegar a 1.200–2.000 palabras. Actualizaciones menores pueden ser de 350–600 palabras.
+
+Priorizar evidencia sobre longitud. Si el anuncio acaba de salir y no existe suficiente documentación, explicar lo que falta y enriquecer el mismo artículo más adelante, conservando id/eventKey. Ver `docs/article-depth.md`.
