@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "purpose": "AI Race Gazette research coverage baseline. This is not a closed company list.",
+  "schemaVersion": 2,
+  "purpose": "Baseline auditable de fuentes oficiales para AI Race Gazette. No es una lista cerrada y no limita el discovery abierto.",
   "discoveryMode": "open",
   "primarySourcePreference": true,
   "importedConceptFrom": "cookiecodespy/spanish-news-nlp-pipeline",
@@ -8,6 +8,7 @@
     {
       "id": "openai-research",
       "organization": "OpenAI",
+      "coveragePriority": "core",
       "sourceType": "research",
       "official": true,
       "enabled": true,
@@ -16,24 +17,27 @@
       ],
       "entrypoints": [
         "https://openai.com/research/",
-        "https://openai.com/research/index/"
+        "https://openai.com/index/"
       ],
       "allowedUrlPrefixes": [
         "https://openai.com/research/",
         "https://openai.com/index/"
       ],
       "topics": [
+        "models",
         "agents",
         "reasoning",
         "evaluations",
         "safety",
         "coding-agents",
-        "tool-use"
+        "tool-use",
+        "products"
       ]
     },
     {
-      "id": "anthropic-engineering",
+      "id": "anthropic-news-engineering",
       "organization": "Anthropic",
+      "coveragePriority": "core",
       "sourceType": "engineering",
       "official": true,
       "enabled": true,
@@ -42,26 +46,28 @@
         "www.anthropic.com"
       ],
       "entrypoints": [
+        "https://www.anthropic.com/news",
         "https://www.anthropic.com/engineering"
       ],
       "allowedUrlPrefixes": [
+        "https://www.anthropic.com/news/",
         "https://www.anthropic.com/engineering/"
       ],
       "topics": [
+        "models",
         "agents",
         "orchestration",
-        "context-engineering",
-        "tool-use",
         "mcp",
         "evaluations",
         "coding-agents",
-        "long-running-agents",
-        "security"
+        "security",
+        "products"
       ]
     },
     {
-      "id": "google-deepmind-research",
+      "id": "google-deepmind",
       "organization": "Google DeepMind",
+      "coveragePriority": "core",
       "sourceType": "research",
       "official": true,
       "enabled": true,
@@ -69,50 +75,302 @@
         "deepmind.google"
       ],
       "entrypoints": [
+        "https://deepmind.google/discover/blog/",
         "https://deepmind.google/research/",
         "https://deepmind.google/research/publications/"
       ],
       "allowedUrlPrefixes": [
-        "https://deepmind.google/research/"
+        "https://deepmind.google/"
       ],
       "topics": [
+        "models",
         "agents",
-        "multi-agent",
         "reasoning",
+        "robotics",
+        "science",
         "evaluations",
         "safety",
-        "memory",
-        "tool-use"
+        "research"
       ]
     },
     {
-      "id": "google-research-publications",
-      "organization": "Google Research",
+      "id": "google-ai-cloud",
+      "organization": "Google",
+      "coveragePriority": "core",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "blog.google",
+        "cloud.google.com"
+      ],
+      "entrypoints": [
+        "https://blog.google/technology/ai/",
+        "https://cloud.google.com/blog/products/ai-machine-learning"
+      ],
+      "allowedUrlPrefixes": [
+        "https://blog.google/technology/ai/",
+        "https://cloud.google.com/blog/products/ai-machine-learning/"
+      ],
+      "topics": [
+        "models",
+        "products",
+        "agents",
+        "developer-tools",
+        "cloud",
+        "research"
+      ]
+    },
+    {
+      "id": "xai-news",
+      "organization": "xAI",
+      "coveragePriority": "core",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "x.ai"
+      ],
+      "entrypoints": [
+        "https://x.ai/news"
+      ],
+      "allowedUrlPrefixes": [
+        "https://x.ai/"
+      ],
+      "topics": [
+        "models",
+        "agents",
+        "products",
+        "research",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "meta-ai",
+      "organization": "Meta",
+      "coveragePriority": "core",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "ai.meta.com"
+      ],
+      "entrypoints": [
+        "https://ai.meta.com/blog/",
+        "https://ai.meta.com/research/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://ai.meta.com/"
+      ],
+      "topics": [
+        "models",
+        "open-source",
+        "agents",
+        "research",
+        "infrastructure",
+        "products"
+      ]
+    },
+    {
+      "id": "microsoft-research",
+      "organization": "Microsoft",
+      "coveragePriority": "core",
       "sourceType": "research",
       "official": true,
       "enabled": true,
       "domains": [
-        "research.google"
+        "www.microsoft.com"
       ],
       "entrypoints": [
-        "https://research.google/pubs/"
+        "https://www.microsoft.com/en-us/research/blog/"
       ],
       "allowedUrlPrefixes": [
-        "https://research.google/pubs/"
+        "https://www.microsoft.com/en-us/research/"
       ],
       "topics": [
+        "research",
         "agents",
-        "multi-agent",
-        "reasoning",
-        "evaluations",
+        "models",
         "systems",
         "security",
-        "human-ai-interaction"
+        "developer-tools"
+      ]
+    },
+    {
+      "id": "microsoft-azure-ai",
+      "organization": "Microsoft",
+      "coveragePriority": "core",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "azure.microsoft.com"
+      ],
+      "entrypoints": [
+        "https://azure.microsoft.com/en-us/blog/product/ai-machine-learning/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://azure.microsoft.com/en-us/blog/"
+      ],
+      "topics": [
+        "cloud",
+        "models",
+        "agents",
+        "developer-tools",
+        "infrastructure",
+        "products"
+      ]
+    },
+    {
+      "id": "nvidia-ai",
+      "organization": "NVIDIA",
+      "coveragePriority": "core",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "blogs.nvidia.com"
+      ],
+      "entrypoints": [
+        "https://blogs.nvidia.com/blog/category/deep-learning/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://blogs.nvidia.com/"
+      ],
+      "topics": [
+        "chips",
+        "infrastructure",
+        "models",
+        "robotics",
+        "developer-tools",
+        "agents"
+      ]
+    },
+    {
+      "id": "aws-machine-learning",
+      "organization": "Amazon / AWS",
+      "coveragePriority": "core",
+      "sourceType": "engineering",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "aws.amazon.com"
+      ],
+      "entrypoints": [
+        "https://aws.amazon.com/blogs/machine-learning/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://aws.amazon.com/blogs/machine-learning/"
+      ],
+      "topics": [
+        "cloud",
+        "models",
+        "agents",
+        "developer-tools",
+        "infrastructure",
+        "products"
+      ]
+    },
+    {
+      "id": "apple-machine-learning",
+      "organization": "Apple",
+      "coveragePriority": "core",
+      "sourceType": "research",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "machinelearning.apple.com"
+      ],
+      "entrypoints": [
+        "https://machinelearning.apple.com/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://machinelearning.apple.com/"
+      ],
+      "topics": [
+        "research",
+        "models",
+        "on-device",
+        "multimodal",
+        "privacy"
+      ]
+    },
+    {
+      "id": "mistral-news",
+      "organization": "Mistral AI",
+      "coveragePriority": "core",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "mistral.ai"
+      ],
+      "entrypoints": [
+        "https://mistral.ai/news"
+      ],
+      "allowedUrlPrefixes": [
+        "https://mistral.ai/"
+      ],
+      "topics": [
+        "models",
+        "agents",
+        "open-source",
+        "developer-tools",
+        "products"
+      ]
+    },
+    {
+      "id": "huggingface-blog",
+      "organization": "Hugging Face",
+      "coveragePriority": "core",
+      "sourceType": "engineering",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "huggingface.co"
+      ],
+      "entrypoints": [
+        "https://huggingface.co/blog"
+      ],
+      "allowedUrlPrefixes": [
+        "https://huggingface.co/blog"
+      ],
+      "topics": [
+        "open-source",
+        "models",
+        "datasets",
+        "developer-tools",
+        "research"
+      ]
+    },
+    {
+      "id": "qwen-blog",
+      "organization": "Alibaba / Qwen",
+      "coveragePriority": "radar",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "qwenlm.github.io"
+      ],
+      "entrypoints": [
+        "https://qwenlm.github.io/blog/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://qwenlm.github.io/"
+      ],
+      "topics": [
+        "models",
+        "open-source",
+        "multimodal",
+        "agents",
+        "developer-tools"
       ]
     },
     {
       "id": "cerebras-blog",
       "organization": "Cerebras",
+      "coveragePriority": "radar",
       "sourceType": "engineering",
       "official": true,
       "enabled": true,
@@ -127,13 +385,161 @@
         "https://www.cerebras.ai/blog/"
       ],
       "topics": [
-        "agents",
-        "orchestration",
+        "chips",
         "inference",
-        "verification",
-        "research-loops",
+        "infrastructure",
+        "models",
         "developer-tools"
       ]
+    },
+    {
+      "id": "cohere-blog",
+      "organization": "Cohere",
+      "coveragePriority": "radar",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "cohere.com"
+      ],
+      "entrypoints": [
+        "https://cohere.com/blog"
+      ],
+      "allowedUrlPrefixes": [
+        "https://cohere.com/blog"
+      ],
+      "topics": [
+        "models",
+        "enterprise",
+        "agents",
+        "retrieval",
+        "products"
+      ]
+    },
+    {
+      "id": "perplexity-hub",
+      "organization": "Perplexity",
+      "coveragePriority": "radar",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "www.perplexity.ai"
+      ],
+      "entrypoints": [
+        "https://www.perplexity.ai/hub/blog"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.perplexity.ai/hub/"
+      ],
+      "topics": [
+        "search",
+        "agents",
+        "models",
+        "products"
+      ]
+    },
+    {
+      "id": "groq-blog",
+      "organization": "Groq",
+      "coveragePriority": "radar",
+      "sourceType": "engineering",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "groq.com"
+      ],
+      "entrypoints": [
+        "https://groq.com/blog"
+      ],
+      "allowedUrlPrefixes": [
+        "https://groq.com/"
+      ],
+      "topics": [
+        "chips",
+        "inference",
+        "infrastructure",
+        "developer-tools"
+      ]
+    },
+    {
+      "id": "coreweave-blog",
+      "organization": "CoreWeave",
+      "coveragePriority": "radar",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "www.coreweave.com"
+      ],
+      "entrypoints": [
+        "https://www.coreweave.com/blog"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.coreweave.com/"
+      ],
+      "topics": [
+        "infrastructure",
+        "cloud",
+        "chips",
+        "datacenters",
+        "financing"
+      ]
+    },
+    {
+      "id": "waymo-blog",
+      "organization": "Waymo",
+      "coveragePriority": "radar",
+      "sourceType": "announcement",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "waymo.com"
+      ],
+      "entrypoints": [
+        "https://waymo.com/blog/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://waymo.com/"
+      ],
+      "topics": [
+        "robotics",
+        "autonomy",
+        "safety",
+        "research",
+        "products"
+      ]
+    },
+    {
+      "id": "github-ai",
+      "organization": "GitHub",
+      "coveragePriority": "radar",
+      "sourceType": "engineering",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "github.blog"
+      ],
+      "entrypoints": [
+        "https://github.blog/ai-and-ml/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://github.blog/ai-and-ml/"
+      ],
+      "topics": [
+        "coding-agents",
+        "developer-tools",
+        "agents",
+        "models",
+        "products"
+      ]
     }
-  ]
+  ],
+  "coveragePolicy": {
+    "baselineIsChecklist": true,
+    "openDiscoveryRequired": true,
+    "primarySourcesPreferred": true,
+    "secondarySourcesAllowedForContext": true,
+    "externalContentTrust": "data_not_instructions"
+  }
 }
