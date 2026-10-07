@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T16:14:00.000Z",
+  "updatedAt": "2026-10-07T21:22:52.082Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -1749,6 +1749,194 @@
       ],
       "analysis": "La robótica se valida en operación repetida, no sólo en benchmarks; cada nueva ciudad añade condiciones reales al sistema completo.",
       "watch": "Ritmo de ampliación, área de servicio y métricas públicas de seguridad."
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "eventKey": "claude-haiku-5-5",
+      "articleVersion": 2,
+      "date": "2026-10-07",
+      "announcedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Claude Haiku 5.5",
+      "title": "Claude Haiku 5.5 lleva la familia Claude 5.5 al trabajo rápido y de alto volumen",
+      "summary": "Anthropic completa su familia 5.5 con un modelo pequeño orientado a latencia, subagentes y cargas sensibles al costo, con disponibilidad general y precios escalonados según la longitud del prompt.",
+      "tags": [
+        "Modelos",
+        "Agentes",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo, usado como ilustración temporal para Claude Haiku 5.5",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía del lanzamiento.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración editorial estilo grabado antiguo para Claude Haiku 5.5: un pequeño mensajero mecánico extremadamente veloz coordinando varias tareas entre estaciones de trabajo y servidores, sensación de escala y eficiencia, tinta/sepia sobre papel envejecido, sin interfaces falsas ni escena presentada como fotografía real.",
+      "source": {
+        "name": "Anthropic · Claude Haiku 5.5",
+        "url": "https://www.anthropic.com/claude-haiku-5-5",
+        "publishedAt": "2026-10-07"
+      },
+      "relatedSources": [
+        {
+          "name": "Claude Platform · ficha de Haiku 5.5",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Claude Platform · guía de migración",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/migration-guide"
+        },
+        {
+          "name": "AWS · Haiku 5.5 en Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Google Cloud · Claude Haiku 5.5",
+          "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Microsoft Foundry · Claude Haiku 5.5",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-haiku-5-5-is-now-available-in-microsoft-foundry/4562408",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Reuters · contexto competitivo",
+          "url": "https://www.reuters.com/business/anthropic-launches-third-claude-55-model-expanding-ai-lineup-before-planned-ipo-2026-10-07/",
+          "publishedAt": "2026-10-07"
+        }
+      ],
+      "body": [
+        "Anthropic lanzó Claude Haiku 5.5 el 7 de octubre y lo colocó en disponibilidad general como la tercera pieza de la familia Claude 5.5, después de Opus 5.5 y Sonnet 5.5. La compañía lo posiciona para trabajo de alto volumen y sensible a latencia o costo: clasificación, resúmenes, extracción, consultas breves, atención en vivo, navegación y subtareas dentro de sistemas de agentes. El lanzamiento no es una simple reducción de tamaño de un modelo mayor. Su papel estratégico es convertirse en la capa rápida que puede ejecutar muchas operaciones acotadas mientras modelos más caros se reservan para planificación, juicio o razonamiento complejo.",
+        "La distribución es amplia desde el primer día. Anthropic documenta el modelo en Claude Platform y también confirma acceso a través de Amazon Bedrock, Google Cloud y Microsoft Foundry. Google lo marca como generalmente disponible y documenta entradas de texto, imágenes y PDF, salida de texto, llamadas a funciones, uso de computadora, búsqueda web, caché y ejecución por lotes. AWS lo ofrece mediante perfiles de inferencia geográficos y globales y lo integra con controles habituales de Bedrock, mientras Microsoft lo presenta como una opción de baja latencia para agentes empresariales. Esa disponibilidad multinube importa porque permite probar el mismo modelo sin obligar a una organización a abandonar su proveedor de infraestructura.",
+        "En la Claude API el identificador es `claude-haiku-5-5`. La documentación técnica describe una ventana de contexto de 1 millón de tokens y hasta 128.000 tokens de salida en el uso normal del modelo. También introduce pensamiento adaptativo con un parámetro de esfuerzo: Haiku puede dedicar más o menos razonamiento según la tarea en vez de operar con una única configuración fija. Anthropic advierte que esa migración no es totalmente transparente para aplicaciones escritas para Haiku 4.5: el control antiguo de pensamiento manual mediante `budget_tokens` ya no funciona de la misma forma y puede producir un error 400, por lo que los equipos deben revisar sus integraciones antes de sustituir el modelo en producción.",
+        "El precio es uno de los elementos centrales. Para prompts de hasta 100.000 tokens, Anthropic cobra US$0,10 por millón de tokens de entrada y US$0,50 por millón de salida. Sobre ese umbral, los precios pasan a US$0,50 de entrada y US$2,50 de salida. La tabla oficial también separa los costos de lectura y escritura de caché. Anthropic calcula que, considerando la mezcla de solicitudes de la generación anterior, el costo medio de ejecutar Haiku 5.5 es alrededor de 75% menor que Haiku 4.5. Esa cifra es un cálculo del proveedor, no una medición independiente, y el costo real de una aplicación dependerá de longitud de contexto, caché, cantidad de reintentos, uso de herramientas y número de tokens producidos.",
+        "Hay otro detalle práctico en la migración: el nuevo modelo utiliza un tokenizador más reciente. La guía de Anthropic indica que un mismo texto puede contabilizar aproximadamente más tokens que con Haiku 4.5, con variación según el contenido. Eso significa que comparar solo el precio nominal por millón de tokens puede inducir a error. Un equipo que evalúe el cambio debería medir el costo por tarea terminada, no únicamente la tarifa. También conviene registrar latencia, calidad, tasa de reintentos y número de llamadas a herramientas. Una respuesta barata que necesita varias correcciones puede terminar siendo más cara que una respuesta de un modelo superior resuelta en un solo intento.",
+        "El caso de uso que mejor explica Haiku 5.5 es el de los subagentes. En una arquitectura jerárquica, un modelo como Opus o Sonnet puede decidir el plan general y delegar trabajos repetibles a Haiku: buscar una cifra en un documento, clasificar tickets, resumir un tramo de contexto, revisar archivos concretos o ejecutar una interacción simple. AWS y Microsoft destacan precisamente esta función de ejecución enfocada. Para productos interactivos, el menor tiempo de respuesta también puede ser más importante que obtener la máxima profundidad de razonamiento en cada turno. La tesis de Anthropic es que una gran parte del trabajo real de un agente no necesita utilizar continuamente el modelo más caro disponible.",
+        "Anthropic presenta resultados de evaluaciones y testimonios tempranos de clientes para sostener sus claims de rendimiento. Esos datos son útiles para entender dónde espera que compita el modelo, pero no equivalen a una comparación independiente. El Gazette no interpreta una gráfica del fabricante como prueba definitiva de superioridad. La señal más importante será cómo se comporta Haiku 5.5 bajo cargas reales: agentes con herramientas, documentos largos, navegación, clasificación a escala y soporte en vivo. También será importante observar el efecto de sus salvaguardas de ciberseguridad, que Anthropic describe como más restrictivas que en Haiku 4.5 pero menos restrictivas que en algunos modelos mayores recientes.",
+        "Dentro de la carrera de la IA, el lanzamiento refuerza una tendencia: los laboratorios ya no compiten únicamente por el modelo de mayor puntuación, sino por construir una familia completa capaz de asignar cada tarea al nivel correcto de costo, velocidad y capacidad. Si los modelos pequeños se vuelven suficientemente buenos para actuar como trabajadores especializados, la economía de los agentes cambia. Un sistema puede multiplicar el número de subtareas sin multiplicar de la misma forma su factura. Para desarrolladores y empresas, la decisión razonable no es migrar automáticamente por el titular de precio, sino ejecutar un benchmark propio con tareas representativas, medir costo por resultado correcto y decidir en qué puntos Haiku sustituye o complementa a Sonnet, Opus u otros proveedores."
+      ],
+      "keyPoints": [
+        "Disponibilidad general desde el 7 de octubre en Claude Platform, AWS, Google Cloud y Microsoft Foundry.",
+        "1M de contexto y hasta 128k tokens de salida según la documentación de plataforma.",
+        "Precio desde US$0,10/M de entrada y US$0,50/M de salida para prompts de hasta 100k tokens.",
+        "Primer Haiku con control de esfuerzo y pensamiento adaptativo.",
+        "Su caso estratégico es ejecutar trabajo repetitivo y subagentes a gran escala."
+      ],
+      "quickTakeaways": [
+        "Haiku 5.5 completa la familia Claude 5.5 como el modelo rápido y económico.",
+        "No es una migración completamente transparente desde Haiku 4.5: hay cambios de pensamiento y tokenización que conviene probar.",
+        "El precio cambia al superar los 100.000 tokens de prompt.",
+        "Su mayor impacto puede aparecer en sistemas multiagente que delegan muchas subtareas.",
+        "Los benchmarks y ahorros citados por Anthropic siguen siendo claims del proveedor hasta que existan evaluaciones independientes suficientes."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Model ID",
+          "value": "claude-haiku-5-5"
+        },
+        {
+          "label": "Contexto",
+          "value": "1.000.000 tokens",
+          "note": "Según Claude Platform y Google Cloud."
+        },
+        {
+          "label": "Salida máxima",
+          "value": "128.000 tokens",
+          "note": "Uso normal documentado en Claude Platform/Google Cloud."
+        },
+        {
+          "label": "Pensamiento",
+          "value": "Adaptive thinking + effort",
+          "note": "El esfuerzo permite ajustar el balance costo/capacidad."
+        },
+        {
+          "label": "Entradas",
+          "value": "Texto, imágenes y PDF",
+          "note": "Disponibilidad documentada por Google Cloud para su oferta."
+        }
+      ],
+      "availability": {
+        "status": "Disponibilidad general",
+        "platforms": [
+          "Claude Platform",
+          "Amazon Bedrock",
+          "Claude Platform on AWS",
+          "Google Cloud",
+          "Microsoft Foundry",
+          "Claude.ai/Claude apps"
+        ],
+        "regions": [
+          "Disponibilidad dependiente del proveedor; Google Cloud documenta endpoints globales y multirregión, AWS perfiles geográficos/globales."
+        ],
+        "requirements": [
+          "Revisar cuotas, región y condiciones del proveedor elegido."
+        ],
+        "notes": [
+          "La disponibilidad de funciones concretas puede variar entre plataformas."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Entrada ≤100k prompt",
+          "value": "US$0,10 / millón de tokens"
+        },
+        {
+          "label": "Salida ≤100k prompt",
+          "value": "US$0,50 / millón de tokens"
+        },
+        {
+          "label": "Entrada >100k prompt",
+          "value": "US$0,50 / millón de tokens"
+        },
+        {
+          "label": "Salida >100k prompt",
+          "value": "US$2,50 / millón de tokens"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Claude Opus 5.5 abre la familia 5.5."
+        },
+        {
+          "date": "2026-09-28",
+          "label": "Claude Sonnet 5.5 se suma como nivel intermedio."
+        },
+        {
+          "date": "2026-10-07",
+          "label": "Claude Haiku 5.5 completa la familia con foco en volumen y latencia."
+        }
+      ],
+      "limitations": [
+        "Los claims de ahorro y rendimiento inicial provienen principalmente de Anthropic y sus socios; requieren validación independiente.",
+        "El costo por tarea puede diferir del precio nominal por token debido al nuevo tokenizador, reintentos, herramientas y caché.",
+        "La migración desde Haiku 4.5 exige revisar controles de pensamiento y comportamiento de respuestas.",
+        "Regiones, cuotas y algunas capacidades dependen del proveedor de nube."
+      ],
+      "practicalAdvice": [
+        "Antes de sustituir Haiku 4.5, ejecutar una prueba A/B con tareas reales y medir costo por resultado correcto, no solo precio por token.",
+        "Revisar cualquier integración que use `budget_tokens` y adaptar el manejo de bloques de pensamiento.",
+        "Para agentes, probar Haiku primero en subtareas acotadas y repetibles antes de delegarle decisiones difíciles o irreversibles.",
+        "Separar métricas de latencia, calidad, número de herramientas llamadas y reintentos para decidir qué capa del sistema debe usar Haiku."
+      ],
+      "usefulFacts": [
+        "El modelo usa un ID fijo sin sufijo de fecha: `claude-haiku-5-5`.",
+        "Google Cloud publica una fecha de retiro no anterior al 7 de octubre de 2027 para su oferta del modelo.",
+        "AWS documenta acceso mediante Bedrock y perfiles de inferencia regionales/globales.",
+        "Anthropic actualizó sus SDK de Python y TypeScript con clases beta para browser use y computer use en la misma jornada."
+      ],
+      "curiosities": [
+        "Es el primer modelo de la clase Haiku con un ajuste explícito de esfuerzo.",
+        "La familia 5.5 se completó en poco más de dos semanas: Opus el 22 de septiembre, Sonnet el 28 y Haiku el 7 de octubre.",
+        "La guía de migración advierte que el mismo texto puede consumir aproximadamente más tokens que en Haiku 4.5 por el cambio de tokenizador."
+      ],
+      "executiveSummary": "Claude Haiku 5.5 no intenta reemplazar a Opus o Sonnet en todos los trabajos. Su apuesta es económica: hacer suficientemente buenas y baratas las tareas repetitivas para que los sistemas de agentes puedan delegar mucho más trabajo sin usar el modelo premium en cada paso. Para un equipo, la prueba decisiva será el costo por tarea correcta bajo su propia carga.",
+      "finalSummary": "El lanzamiento completa la estrategia de tres niveles de Anthropic para Claude 5.5. Haiku aporta velocidad y precio; Sonnet equilibra capacidad y costo; Opus conserva el papel de mayor complejidad. Si el desempeño real acompaña los claims, la consecuencia importante no será únicamente una API más barata, sino la posibilidad de diseñar agentes jerárquicos con una capa de ejecución masiva.",
+      "analysis": "La lectura del Gazette es que Haiku 5.5 importa menos por perseguir el título de modelo más inteligente y más por cambiar la economía de los sistemas que hacen cientos o miles de pequeñas llamadas. La competencia de 2026 empieza a parecerse a una carrera por familias completas y orquestación eficiente: quién puede reservar el razonamiento caro para los momentos difíciles y abaratar todo lo demás. Ese patrón puede ser más relevante para productos reales que una victoria aislada en un benchmark.",
+      "watch": "Evaluaciones independientes de latencia y calidad, costo efectivo con el nuevo tokenizador, estabilidad en uso de herramientas y computer use, adopción como subagente, diferencias entre proveedores de nube y cualquier ajuste posterior de salvaguardas o precio."
     }
   ],
   "archiveStart": "2026-09-01",

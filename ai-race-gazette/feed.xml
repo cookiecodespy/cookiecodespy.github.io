@@ -6,11 +6,19 @@
     <description>Noticias de IA y tecnología, con contexto y fuentes oficiales.</description>
     <language>es-cl</language>
     <item>
+      <title>Claude Haiku 5.5 lleva la familia Claude 5.5 al trabajo rápido y de alto volumen</title>
+      <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-haiku-5-5</link>
+      <description>Anthropic completa su familia 5.5 con un modelo pequeño orientado a latencia, subagentes y cargas sensibles al costo, con disponibilidad general y precios escalonados según la longitud del prompt.</description>
+      <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-haiku-5-5</guid>
+      <pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.anthropic.com/claude-haiku-5-5">Anthropic · Claude Haiku 5.5</source>
+    </item>
+    <item>
       <title>Nano Banana 2.1: una nueva etapa para crear y editar imágenes</title>
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/nano-banana-2-1</link>
       <description>Google documenta su modelo de generación de imágenes y edición conversacional en la API de Gemini.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/nano-banana-2-1</guid>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1">Google AI for Developers</source>
     </item>
     <item>
@@ -18,7 +26,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/mistral-large-4</link>
       <description>La compañía francesa presenta su nuevo modelo en vista previa pública y anuncia una apertura posterior de sus pesos.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/mistral-large-4</guid>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://mistral.ai/news/mistral-large-4/">Mistral AI</source>
     </item>
     <item>
@@ -26,7 +34,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-google-workspace</link>
       <description>El complemento lleva la asistencia de Claude al documento abierto y está en beta para planes de pago.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-google-workspace</guid>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://claude.com/es/resources/articles/claude-now-works-in-google-docs-sheets-and-slides">Anthropic · Claude</source>
     </item>
     <item>
@@ -34,7 +42,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/anthropic-cyber-verification</link>
       <description>El programa reúne tres niveles con requisitos diferentes para profesionales y organizaciones.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/anthropic-cyber-verification</guid>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.anthropic.com/news/cyber-verification-program">Anthropic · anuncio oficial</source>
     </item>
     <item>
@@ -42,7 +50,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-4-argon</link>
       <description>Google anuncia su nuevo modelo y comienza con un grupo de usuarios de confianza.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-4-argon</guid>
-      <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">Google · anuncio oficial</source>
     </item>
     <item>
@@ -50,7 +58,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gpt-6-1-sol-devday</link>
       <description>OpenAI presenta la versión en DevDay para programación, uso de herramientas y trabajo profesional.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gpt-6-1-sol-devday</guid>
-      <pubDate>Tue, 29 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://openai.com/index/devday-2026-recap/">OpenAI · anuncio oficial</source>
     </item>
     <item>
@@ -58,7 +66,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/dots-devday</link>
       <description>OpenAI anuncia agentes que pueden encargarse de trabajo persistente.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/dots-devday</guid>
-      <pubDate>Tue, 29 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://openai.com/index/devday-2026-recap/">OpenAI · anuncio oficial</source>
     </item>
     <item>
@@ -66,7 +74,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/decisions-api</link>
       <description>La beta pública usa gpt-6-luna para clasificar, elegir entre opciones y evaluar contenido con respuestas estructuradas.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/decisions-api</guid>
-      <pubDate>Tue, 29 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://developers.openai.com/api/docs/guides/decisions">OpenAI · documentación de Decisions</source>
     </item>
     <item>
@@ -74,7 +82,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-sonnet-5-5</link>
       <description>Anthropic presenta el segundo modelo de la familia Claude 5.5.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-sonnet-5-5</guid>
-      <pubDate>Mon, 28 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.anthropic.com/claude-sonnet-5-5">Anthropic · anuncio oficial</source>
     </item>
     <item>
@@ -82,7 +90,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-connected-apps</link>
       <description>Google comienza a desplegar conexiones con herramientas de productividad y creación.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-connected-apps</guid>
-      <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 23 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/">Google · anuncio oficial</source>
     </item>
     <item>
@@ -90,7 +98,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-opus-5-5</link>
       <description>Anthropic estrena la familia 5.5 y destaca mejoras de rendimiento y costo.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-opus-5-5</guid>
-      <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.anthropic.com/claude-opus-5-5">Anthropic · anuncio oficial</source>
     </item>
     <item>
@@ -98,7 +106,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-windows</link>
       <description>La nueva aplicación permite abrir el asistente sobre el trabajo activo con Alt + Espacio.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-windows</guid>
-      <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/">Google · anuncio oficial</source>
     </item>
     <item>
@@ -106,7 +114,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/minicpm5-2b</link>
       <description>El modelo de 2.000 millones de parámetros apunta a dispositivos y recursos limitados sin renunciar a contexto largo y uso de herramientas.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/minicpm5-2b</guid>
-      <pubDate>Mon, 07 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://github.com/OpenBMB/MiniCPM">OpenBMB · repositorio oficial</source>
     </item>
     <item>
@@ -114,7 +122,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/google-cathay-contrail-trial</link>
       <description>La aerolínea se suma a pruebas operativas de una herramienta de IA que busca identificar ajustes de vuelo capaces de reducir contrails.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/google-cathay-contrail-trial</guid>
-      <pubDate>Mon, 07 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://news.cathaypacific.com/translation-cathay-pacific-and-google-partner-to-research-and-trial-ai-powered-contrail-avoidance">Cathay Pacific · anuncio oficial</source>
     </item>
     <item>
@@ -122,7 +130,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-automated-research-intern</link>
       <description>La compañía afirma que sus agentes ya pueden completar tareas de investigación bien definidas que antes tomarían días a un investigador humano.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-automated-research-intern</guid>
-      <pubDate>Sun, 06 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://openai.com/index/research-acceleration-view-inside-openai/">OpenAI · anuncio oficial</source>
     </item>
     <item>
@@ -130,7 +138,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-an-alien-mind</link>
       <description>Jakub Pachocki sostiene que alignment y monitoreo todavía no están resueltos al nivel necesario para mantener indefinidamente el ritmo frontier.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-an-alien-mind</guid>
-      <pubDate>Sun, 06 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://openai.com/index/an-alien-mind/">OpenAI · ensayo de Jakub Pachocki</source>
     </item>
     <item>
@@ -138,7 +146,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/tcs-hypervault-hyderabad</link>
       <description>HyperVault aseguró terreno para un complejo preparado para despliegues de GPU de alta densidad y refrigeración líquida.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/tcs-hypervault-hyderabad</guid>
-      <pubDate>Sat, 05 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana">TCS · anuncio oficial</source>
     </item>
     <item>
@@ -146,7 +154,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/dome-agent-operations-platform</link>
       <description>La propuesta reúne registro de agentes, gateway MCP y enrutamiento de modelos bajo un control operativo común.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/dome-agent-operations-platform</guid>
-      <pubDate>Sat, 05 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.domesystems.ai/updates/dome-launches-agent-operations-platform">Dome Systems · anuncio oficial</source>
     </item>
     <item>
@@ -154,7 +162,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-agent-message-board-report</link>
       <description>Una investigación externa documentó actividad entre agentes en un espacio compartido; OpenAI reconoció después haber revisado el incidente.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-agent-message-board-report</guid>
-      <pubDate>Fri, 04 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://collusion.wiki/">Collusion Wiki · informe de investigación</source>
     </item>
     <item>
@@ -162,7 +170,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/lyria-3-5-gemini</link>
       <description>Google anuncia generación musical con opciones de género, voz y duración.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/lyria-3-5-gemini</guid>
-      <pubDate>Fri, 04 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/">Google · anuncio oficial</source>
     </item>
     <item>
@@ -170,7 +178,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/github-hydrafusion</link>
       <description>El sistema de investigación selecciona modelos distintos para planificar, redactar, criticar y revisar una misma tarea de programación.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/github-hydrafusion</guid>
-      <pubDate>Fri, 04 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/">GitHub Blog · anuncio oficial</source>
     </item>
     <item>
@@ -178,7 +186,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/anthropic-fermat-formalization</link>
       <description>Anthropic anuncia una prueba formal en Lean comprobada por computadora, construida con una participación autónoma extensa de Claude.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/anthropic-fermat-formalization</guid>
-      <pubDate>Fri, 04 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.anthropic.com/news/formalizing-fermats-last-theorem">Anthropic · anuncio oficial</source>
     </item>
     <item>
@@ -186,7 +194,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/weathernext-3</link>
       <description>El sistema meteorológico de IA actualiza pronósticos con mayor frecuencia e incorpora más variables para productos y energía.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/weathernext-3</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/">Google DeepMind · anuncio oficial</source>
     </item>
     <item>
@@ -194,7 +202,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/nvidia-pair</link>
       <description>Personal AI Router distribuye inferencia entre computadoras locales y busca convertir una red doméstica o de trabajo en un pequeño clúster de IA.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/nvidia-pair</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/">NVIDIA · anuncio oficial</source>
     </item>
     <item>
@@ -202,7 +210,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/nvidia-hugging-face-acquisition</link>
       <description>El fabricante de chips anuncia un acuerdo para comprar la plataforma open-source, sujeto a las condiciones habituales de cierre.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/nvidia-hugging-face-acquisition</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/">NVIDIA · anuncio oficial</source>
     </item>
     <item>
@@ -210,7 +218,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/ifm-k2-horizon</link>
       <description>La colección cubre varios tamaños y acompaña los modelos con código y materiales de entrenamiento para facilitar reproducción e investigación.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/ifm-k2-horizon</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://ifm.ai/blog/k2/">IFM · anuncio oficial</source>
     </item>
     <item>
@@ -218,7 +226,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/grok-bot-enterprise</link>
       <description>La oferta añade agentes con computadoras en la nube, controles organizacionales y acceso administrado para equipos.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/grok-bot-enterprise</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://x.ai/news/grok-bot-for-enterprise">xAI · anuncio oficial</source>
     </item>
     <item>
@@ -226,7 +234,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gpt-6-astra</link>
       <description>El nuevo modelo frontier se estrena con foco en software, ciencia y ciberseguridad, junto a restricciones específicas para capacidades de mayor riesgo.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gpt-6-astra</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://openai.com/index/gpt-6-astra/">OpenAI · anuncio oficial</source>
     </item>
     <item>
@@ -234,7 +242,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/wonderful-series-c-2026</link>
       <description>La Serie C valora la compañía en US$5.000 millones y financia la expansión de su plataforma de agentes para empresas.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/wonderful-series-c-2026</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.wonderful.ai/blog-articles/wonderful-raises-550m-series-c">Wonderful · anuncio oficial</source>
     </item>
     <item>
@@ -242,7 +250,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/qwen3-8-max-0902</link>
       <description>El snapshot del 2 de septiembre amplía la propuesta de Qwen para programación, contexto largo y colaboración entre herramientas.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/qwen3-8-max-0902</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.alibabacloud.com/help/en/model-studio/newly-released-models">Alibaba Cloud Model Studio · modelos publicados</source>
     </item>
     <item>
@@ -250,7 +258,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/muse-spark-1-3</link>
       <description>Spark 1.3 apunta a tareas de programación más largas, multitarea y uso más eficiente de herramientas.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/muse-spark-1-3</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://research.meta.ai/blog/introducing-muse-spark-1-3">Meta AI · anuncio oficial</source>
     </item>
     <item>
@@ -258,7 +266,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/hiddenlayer-series-b-agent-security</link>
       <description>La Serie B financia una expansión centrada en protección del runtime y del harness que rodea a los agentes de IA.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/hiddenlayer-series-b-agent-security</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.hiddenlayer.com/news/hiddenlayer-100m-series-b-ai-security">HiddenLayer · anuncio oficial</source>
     </item>
     <item>
@@ -266,7 +274,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/google-fairwind-program</link>
       <description>El programa de acceso limitado está dirigido a gobiernos, clientes y socios de confianza que trabajan en defensa.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/google-fairwind-program</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/">Google · anuncio oficial</source>
     </item>
     <item>
@@ -274,7 +282,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-3-8-flash-cyber</link>
       <description>Google separa una variante de ciberseguridad con capacidades más permisivas y acceso mediante su programa Fairwind.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-3-8-flash-cyber</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google · anuncio oficial</source>
     </item>
     <item>
@@ -282,7 +290,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-3-8-flash</link>
       <description>La nueva versión Flash llega a la API y a productos de Google con foco en software, razonamiento multietapa y trabajo agentivo.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-3-8-flash</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google · anuncio oficial</source>
     </item>
     <item>
@@ -290,7 +298,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/amazon-connect-agentic-cx-designer</link>
       <description>La herramienta no-code combina pasos deterministas y agentes para crear y probar experiencias de atención en voz y canales digitales.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/amazon-connect-agentic-cx-designer</guid>
-      <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://aws.amazon.com/about-aws/whats-new/2026/09/agentic-cx-designer/">AWS · What&apos;s New</source>
     </item>
     <item>
@@ -298,7 +306,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/waymo-denver-san-diego-tampa</link>
       <description>La compañía empieza a recibir pasajeros públicos en tres nuevos mercados y amplía gradualmente el acceso.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/waymo-denver-san-diego-tampa</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://waymo.com/blog/2026/09/ride-in-denver-san-diego-tampa/">Waymo · anuncio oficial</source>
     </item>
     <item>
@@ -306,7 +314,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/perplexity-hybrid-compute</link>
       <description>Hybrid Compute decide qué partes de una tarea pueden ejecutarse en el equipo y cuáles requieren servicios en la nube.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/perplexity-hybrid-compute</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.perplexity.ai/hub/blog/introducing-hybrid-compute-on-mac">Perplexity · anuncio oficial</source>
     </item>
     <item>
@@ -314,7 +322,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-path-to-astra-safeguards</link>
       <description>OpenAI dice que Astra alcanza su umbral crítico de capacidad cibernética y describe restricciones adicionales antes del lanzamiento.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-path-to-astra-safeguards</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://openai.com/index/path-to-astra/">OpenAI · Path to Astra</source>
     </item>
     <item>
@@ -322,7 +330,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/muse-voice-transcribe</link>
       <description>El modelo combina transcripción continua, diarización y detección de final de turno para aplicaciones de voz.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/muse-voice-transcribe</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://research.meta.ai/blog/introducing-muse-voice-transcribe">Meta AI · anuncio oficial</source>
     </item>
     <item>
@@ -330,7 +338,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-agentic-video</link>
       <description>Google incorpora una estrategia que decide qué segmentos inspeccionar con mayor detalle en vez de procesar cada video de forma uniforme.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-agentic-video</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/">Google · anuncio oficial</source>
     </item>
     <item>
@@ -338,7 +346,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/crowdstrike-safemind</link>
       <description>La familia combina modelos y harnesses orientados a tareas defensivas y ofensivas bajo controles de acceso.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/crowdstrike-safemind</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-frontier-models-for-cybersecurity-with-nvidia/">CrowdStrike · anuncio oficial</source>
     </item>
     <item>
@@ -346,7 +354,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/crowdstrike-falcon-guardian</link>
       <description>CrowdStrike presenta una capa de observabilidad y control para agentes de IA que actúan sobre sistemas empresariales.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/crowdstrike-falcon-guardian</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.crowdstrike.com/en-us/press-releases/crowdstrike-unveils-falcon-guardian-ai-agent-security/">CrowdStrike · anuncio oficial</source>
     </item>
     <item>
@@ -354,7 +362,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-mythos-5-1</link>
       <description>La variante comparte el modelo de Fable 5.1, con salvaguardas diferentes y acceso restringido.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-mythos-5-1</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.anthropic.com/claude-fable-and-mythos-5-1">Anthropic · anuncio oficial</source>
     </item>
     <item>
@@ -362,7 +370,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-fable-5-1</link>
       <description>Anthropic presenta su nueva versión de Fable con disponibilidad general.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/claude-fable-5-1</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.anthropic.com/claude-fable-and-mythos-5-1">Anthropic · anuncio oficial</source>
     </item>
     <item>
@@ -370,7 +378,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/anthropic-enterprise-frontier-safeguards</link>
       <description>Anthropic presenta controles adicionales para organizaciones que quieren usar capacidades avanzadas de Claude.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/anthropic-enterprise-frontier-safeguards</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.anthropic.com/news/enterprise-frontier-safeguards">Anthropic · anuncio oficial</source>
     </item>
     <item>
@@ -378,7 +386,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/amazon-quick-natural-language-apps</link>
       <description>AWS lleva a disponibilidad general la creación de aplicaciones conectadas a datos y herramientas empresariales a partir de una descripción.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/amazon-quick-natural-language-apps</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-custom-apps-natural-language/">AWS · What&apos;s New</source>
     </item>
     <item>
@@ -386,7 +394,7 @@
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/air-agent-security-platform</link>
       <description>La startup propone inspeccionar el contexto que reciben los agentes antes de que datos externos o herramientas maliciosas influyan en su ejecución.</description>
       <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/air-agent-security-platform</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.air.security/blog-posts/out-of-stealth">AIR · anuncio oficial</source>
     </item>
   </channel>
