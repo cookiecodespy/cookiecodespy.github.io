@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T16:30:08.226Z",
+  "updatedAt": "2026-10-08T16:36:53.243Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -5877,6 +5877,243 @@
       ]
     },
     {
+      "id": "google-deepmind-alphagenome-atlas-nine-billion-variants-2026-09-08",
+      "eventKey": "google-deepmind-alphagenome-atlas-nine-billion-dna-variants-2026-09-08",
+      "articleVersion": 2,
+      "date": "2026-09-08",
+      "announcedAt": "2026-09-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Google DeepMind",
+      "product": "AlphaGenome Atlas",
+      "title": "Google DeepMind abre AlphaGenome Atlas: nueve mil millones de variantes del ADN en un mapa predictivo",
+      "summary": "Google DeepMind lanzó el 8 de septiembre AlphaGenome Atlas, un recurso científico con predicciones precalculadas de unos 9.000 millones de cambios de una sola letra del ADN y una puntuación AVI para priorizar hipótesis. Es investigación, no diagnóstico clínico.",
+      "tags": [
+        "Investigación",
+        "Modelos",
+        "Biología",
+        "Open Science"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial genérica de inteligencia mecánica, no una visualización real de datos genómicos ni de un paciente.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado científico de diario antiguo, sepia y papel envejecido, gran atlas abierto con mapa abstracto de doble hélice y caminos punteados que conectan letras de ADN con instrumentos de laboratorio del siglo XIX, microscopio, impresora mecánica y hojas de anotaciones, no usar textos ni fotografías de pacientes, sin logos.",
+      "source": {
+        "name": "Google DeepMind · AlphaGenome Atlas (8 septiembre 2026)",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "publishedAt": "2026-09-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Google · Presentación oficial de AlphaGenome Atlas",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
+          "publishedAt": "2026-09-08"
+        },
+        {
+          "name": "Google DeepMind · AlphaGenome API y términos de acceso",
+          "url": "https://github.com/google-deepmind/alphagenome"
+        },
+        {
+          "name": "Google · Portal AlphaGenome Atlas",
+          "url": "https://alphagenome.google/"
+        },
+        {
+          "name": "Investigación AlphaGenome Atlas, preprint técnico posterior al anuncio",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363192v1",
+          "publishedAt": "2026-09-16"
+        }
+      ],
+      "keyPoints": [
+        "El 8 de septiembre Google DeepMind abrió un Atlas con predicciones de 9.000 millones de variantes de una sola letra del genoma humano.",
+        "El recurso precalculado ocupa aproximadamente un petabyte y ofrece el indicador AlphaGenome Variant Impact (AVI).",
+        "El portal es gratuito para uso no comercial; los resultados de investigación requieren validación experimental."
+      ],
+      "quickTakeaways": [
+        "Nuevo Atlas anunciado el 8 Sep: no confundirlo con el lanzamiento previo del modelo AlphaGenome.",
+        "Nueve mil millones de posibles sustituciones de una letra con predicciones precalculadas.",
+        "AVI combina señales de AlphaGenome y AlphaMissense para priorizar hipótesis.",
+        "Google cita investigaciones sobre DNM1 y 54.000+ participantes de UK Biobank.",
+        "El Atlas no certifica diagnósticos y tiene restricciones de uso comercial."
+      ],
+      "body": [
+        "Google DeepMind presentó AlphaGenome Atlas el 8 de septiembre de 2026: una base de predicciones genómicas que transforma la investigación previa de AlphaGenome en un recurso masivo consultable mediante web y API. Las salidas son hipótesis computacionales, nunca pruebas clínicas suficientes por sí mismas."
+      ],
+      "executiveSummary": "AlphaGenome Atlas convierte la capacidad de AlphaGenome en una plataforma de datos precalculados de aproximadamente un petabyte y nueve mil millones de variantes de ADN. Su puntuación AVI permite ordenar hipótesis sobre impacto molecular y explorar mecanismos regulatorios. Casos de investigación comunicados por colaboradores muestran potencial, pero las conclusiones médicas requieren evidencia independiente.",
+      "sections": [
+        {
+          "heading": "Qué se anunció el 8 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "Google DeepMind presentó AlphaGenome Atlas el 8 de septiembre de 2026 como una nueva plataforma para consultar predicciones de los efectos moleculares de variaciones en el ADN humano. Es un recurso de investigación derivado de AlphaGenome, el modelo genómico que la compañía ya había puesto a disposición de científicos. La novedad no es anunciar por primera vez el modelo base, sino convertir su capacidad de predicción en un mapa que abarca todas las sustituciones posibles de una sola letra en el genoma humano.",
+            "El laboratorio indica que el Atlas reúne los resultados precalculados de alrededor de 9.000 millones de variantes de un solo nucleótido, una escala difícil de reproducir con experimentos de laboratorio individuales. Las predicciones se pueden explorar en un portal visual sin programar; también hay acceso programático mediante la API de AlphaGenome. La fecha del comunicado y del anuncio de DeepMind coincide en el 8 de septiembre, por lo que no se asigna el lanzamiento a publicaciones científicas o noticias retrospectivas aparecidas después."
+          ]
+        },
+        {
+          "heading": "Por qué estudiar las letras individuales del ADN es difícil",
+          "kind": "context",
+          "paragraphs": [
+            "El genoma humano contiene cerca de 3.000 millones de pares de bases. En una posición concreta, cambiar una letra del ADN puede alterar una proteína, modificar cómo se procesa el ARN o afectar la cantidad de un gen que se expresa en un tejido. Muchas variantes no producen un efecto relevante; otras influyen en procesos complejos que dependen de diferentes células, señales y condiciones ambientales. Estudiar cada posibilidad experimentalmente sería prohibitivo en recursos y tiempo.",
+            "Alrededor del dos por ciento del genoma codifica proteínas y el resto contiene numerosas regiones no codificantes con funciones regulatorias. Una mutación situada lejos de un gen puede cambiar dónde o cuándo se activa. Un catálogo de predicciones sirve para priorizar qué hipótesis merecen un experimento, pero no convierte cada variante enumerada en una mutación observada en pacientes ni afirma que todas causen enfermedad."
+          ]
+        },
+        {
+          "heading": "Del modelo AlphaGenome al atlas de un petabyte",
+          "kind": "technical",
+          "paragraphs": [
+            "AlphaGenome procesa secuencias de ADN y predice varias propiedades relacionadas con la regulación génica, como expresión, accesibilidad de cromatina y patrones de empalme de ARN. En lugar de enviar al modelo millones de solicitudes aisladas durante cada estudio, el Atlas incorpora cálculos anticipados para variantes repartidas por todo el genoma. Google calcula un volumen total próximo a un petabyte, más de treinta veces el tamaño de la AlphaFold Database según su propia comparación.",
+            "Esta distinción importa para entender la innovación. La potencia del modelo base no aumentó automáticamente el 8 de septiembre: lo que se estrenó fue una infraestructura de consulta y análisis que vuelve accesibles predicciones ya generadas. El valor de la plataforma está en organizar grandes volúmenes de información, enlazar resultados de diferentes fenómenos moleculares y reducir el trabajo de obtener una primera priorización de variantes."
+          ]
+        },
+        {
+          "heading": "AVI: un indicador para ordenar hipótesis",
+          "kind": "technical",
+          "paragraphs": [
+            "La presentación introduce AlphaGenome Variant Impact, o AVI, una puntuación destinada a clasificar variantes según su posible impacto funcional. AVI reúne señales de AlphaGenome con componentes de AlphaMissense, otro modelo de DeepMind centrado en cambios que afectan a proteínas. La propuesta permite comparar mutaciones en regiones codificantes y no codificantes sin exigir que el investigador inspeccione de entrada cientos de variables independientes.",
+            "La puntuación no es una probabilidad clínica universal de enfermedad. Los investigadores pueden consultar las atribuciones de AVI para averiguar qué tipos de señales contribuyen al valor obtenido, por ejemplo un posible cambio de empalme, regulación de expresión o conservación. Estas atribuciones ayudan a formular explicaciones biológicas, pero no demuestran causalidad por sí solas. Un número grande merece examen, no equivale a diagnóstico ni a confirmación experimental."
+          ]
+        },
+        {
+          "heading": "Miles de señales moleculares y motivos de ADN",
+          "kind": "technical",
+          "paragraphs": [
+            "El Atlas permite navegar miles de predicciones por variante a través de distintos tipos de mediciones y cientos de contextos celulares humanos y de ratón. Incluye también un catálogo de más de 2.500 motivos recurrentes: fragmentos de ADN que pueden actuar como señales de unión o control de la maquinaria reguladora. Los motivos ofrecen una forma de relacionar el resultado de una variante con mecanismos que los especialistas pueden comprobar.",
+            "En la práctica, esta combinación mejora las preguntas que un biólogo puede hacer. No se limita a señalar que una alteración podría ser importante, sino que ayuda a localizar procesos celulares potencialmente afectados. Es necesario tener cuidado con la cobertura: hay tejidos y estados biológicos escasamente representados, y la predicción en una línea celular no se traslada automáticamente a todos los órganos."
+          ]
+        },
+        {
+          "heading": "Aplicaciones de investigación: enfermedades raras y rasgos complejos",
+          "kind": "report",
+          "paragraphs": [
+            "DeepMind describe una colaboración con el consorcio GREGoR y el Broad Institute para estudiar casos de enfermedades raras que no habían podido resolverse mediante los análisis habituales. El Atlas ayudó a priorizar una variante del gen DNM1, asociada a encefalopatía epiléptica. Los investigadores utilizaron las predicciones de empalme para generar una hipótesis molecular, y experimentos posteriores sirvieron para validar el mecanismo propuesto. El papel de la IA fue orientar la investigación, no emitir por sí sola un diagnóstico clínico.",
+            "En otro caso, Gareth Hawkes de la Universidad de Exeter analizó datos genéticos de más de 54.000 participantes de UK Biobank. Según el comunicado de Google, al agrupar variantes por sus efectos previstos, el equipo detectó un 22 por ciento más de asociaciones genéticas no codificantes que una estrategia comparativa. También identificó 19 regiones ligadas a índice de masa corporal al analizar el grupo de variantes que el modelo consideraba más relevante. Son resultados atribuidos al estudio presentado por los investigadores y dependen de su población, datos y método."
+          ]
+        },
+        {
+          "heading": "Acceso, condiciones de uso y límites comerciales",
+          "kind": "practical",
+          "paragraphs": [
+            "El sitio web del Atlas abrió el 8 de septiembre con acceso intuitivo y gratuito para investigación académica y otros usos no comerciales autorizados. DeepMind también enumera acceso mediante la API de AlphaGenome y una integración como habilidad de Google Antigravity. El anuncio distingue este nuevo repositorio de los servicios comerciales del modelo base: para el Atlas, la disponibilidad comercial a través de Google Cloud se presentaba como futura, no como acceso general listo desde el primer día.",
+            "El cliente de API publicado en GitHub no equivale a que todos los datos y salidas sean de dominio público o utilizables comercialmente. Los términos de AlphaGenome establecen restricciones para usos comerciales y para entrenar otros modelos sobre las salidas. Antes de usar la herramienta con datos de investigación sensibles, cualquier equipo debe revisar permisos, condiciones del portal y requisitos de seguridad del tratamiento de información genética."
+          ]
+        },
+        {
+          "heading": "Qué límites científicos impiden leer el atlas como un oráculo",
+          "kind": "analysis",
+          "paragraphs": [
+            "Los datos de entrenamiento biológico no cubren cada tipo celular, tejido, enfermedad y condición de desarrollo. Las predicciones de AlphaGenome se centran en mecanismos regulatorios concretos; no explican de manera completa interacciones entre genes, ambiente y procesos transitorios. Algunos fenómenos moleculares tienen poca evidencia experimental disponible, y una correlación estadística puede reflejar sesgos del conjunto de datos. Por eso, una puntuación AVI aislada no debe utilizarse para decisiones médicas.",
+            "El manuscrito técnico y las comunicaciones de DeepMind describen ventajas en múltiples evaluaciones, pero son resultados de sus autores en benchmarks y experimentos definidos. No implica que la herramienta sea superior en toda variante o población. La validación de una hipótesis requiere revisar literatura, calidad de datos, métodos de laboratorio y, cuando corresponde, evidencia clínica independiente."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: de modelos científicos a bases de conocimiento",
+          "kind": "analysis",
+          "paragraphs": [
+            "AlphaGenome Atlas representa una evolución interesante en la carrera de la inteligencia artificial: un modelo poderoso adquiere valor adicional cuando se convierte en un recurso consultable por científicos que no tienen que ejecutar por sí mismos miles de millones de predicciones. La infraestructura de datos, la interpretación de resultados y el acceso reproducible pueden importar tanto como el tamaño o la arquitectura del algoritmo original.",
+            "La noticia también muestra por qué la cobertura de IA necesita mirar más allá de los chatbots. Los avances materiales pueden adoptar la forma de mapas genéticos, sistemas meteorológicos, bases de proteínas o herramientas científicas. Su éxito no se mide exclusivamente en rankings de modelos, sino en hipótesis que se comprueban, tiempo de investigación ahorrado, errores conocidos y resultados que otros laboratorios logran reproducir."
+          ]
+        },
+        {
+          "heading": "Qué debería seguirse a partir de ahora",
+          "kind": "report",
+          "paragraphs": [
+            "Las señales importantes serán evaluaciones independientes por poblaciones y tejidos, publicaciones de casos con validación experimental, mejoras documentadas de precisión y cambios reales en las condiciones comerciales. También será necesario observar si los investigadores pueden integrar resultados con registros de variantes, herramientas de laboratorio y flujos de interpretación sin perder la trazabilidad de sus fuentes.",
+            "Gazette conservará la fecha de septiembre como apertura del Atlas, separada de actualizaciones posteriores del modelo AlphaGenome y del material científico que pueda publicarse en días siguientes. El criterio periodístico central permanece: distinguir predicción computacional, hallazgo experimental y consecuencia clínica evita inflar el anuncio y ofrece información realmente útil al lector."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Tipo de recurso",
+          "value": "Atlas de predicciones genómicas precalculadas, no un nuevo modelo conversacional"
+        },
+        {
+          "label": "Cobertura anunciada",
+          "value": "Alrededor de 9.000 millones de variantes de un solo nucleótido"
+        },
+        {
+          "label": "Tamaño comunicado",
+          "value": "Aproximadamente 1 petabyte",
+          "note": "Cifra declarada por Google DeepMind."
+        },
+        {
+          "label": "Puntuación",
+          "value": "AlphaGenome Variant Impact (AVI), combinando AlphaGenome y AlphaMissense"
+        },
+        {
+          "label": "Recursos adicionales",
+          "value": "Más de 2.500 motivos de secuencias regulatorias",
+          "note": "Conteo publicado por Google."
+        },
+        {
+          "label": "Casos de prueba",
+          "value": "Investigación de DNM1 y análisis de más de 54.000 genomas de UK Biobank",
+          "note": "Resultados de socios citados por DeepMind; no equivalen a diagnóstico."
+        }
+      ],
+      "availability": {
+        "status": "Disponible desde 8 septiembre para investigación académica/no comercial autorizada",
+        "platforms": [
+          "Portal AlphaGenome Atlas",
+          "AlphaGenome API",
+          "Google Antigravity Skill"
+        ],
+        "regions": [],
+        "requirements": [
+          "Revisar términos de AlphaGenome Atlas y de la API",
+          "No utilizar salidas como diagnóstico ni como sustituto de análisis clínico",
+          "Consultar permisos para reutilización de datos y resultados"
+        ],
+        "notes": [
+          "La disponibilidad comercial específica de Atlas mediante Google Cloud fue anunciada como futura.",
+          "El modelo base AlphaGenome tiene canales comerciales distintos; no equipararlos con Atlas."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Consulta en portal y API para investigación",
+          "value": "Gratuito para uso no comercial sujeto a términos y límites",
+          "note": "No implica licencia irrestricta para entrenar otros modelos ni servir diagnósticos."
+        },
+        {
+          "label": "Acceso comercial Atlas",
+          "value": "Anunciado para un lanzamiento posterior en Google Cloud",
+          "note": "No hay tarifa pública universal del nuevo Atlas en el anuncio."
+        }
+      ],
+      "limitations": [
+        "Las predicciones moleculares no constituyen diagnósticos médicos ni detección clínica confirmada.",
+        "La cobertura de tejidos, contextos biológicos y poblaciones estudiadas es desigual.",
+        "AVI prioriza variantes, pero no identifica causalidad universal ni probabilidad directa de enfermedad.",
+        "Benchmarks y casos de éxito son del equipo y sus colaboradores; requieren comprobación independiente.",
+        "Existen restricciones de uso comercial y sobre uso de salidas para entrenar otros modelos."
+      ],
+      "practicalAdvice": [
+        "Definir una hipótesis investigable y obtener revisión de expertos en genética.",
+        "Contrastar variantes con datos clínicos, bibliografía y pruebas experimentales apropiadas.",
+        "Consultar los términos del portal y las restricciones antes de integrar la API.",
+        "Documentar fecha, versión, puntuación y evidencia utilizada para cada análisis."
+      ],
+      "usefulFacts": [
+        "Aproximadamente el 98 % del genoma humano es no codificante para proteínas.",
+        "Las predicciones incluyen datos de múltiples tipos celulares y procesos regulatorios.",
+        "AVI integra indicadores que abarcan mutaciones dentro y fuera de regiones codificantes."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Google DeepMind anuncia y abre AlphaGenome Atlas para investigación no comercial."
+        },
+        {
+          "date": "2026-09-16",
+          "label": "Se deposita un preprint técnico ampliado, posterior a la apertura del Atlas."
+        }
+      ],
+      "analysis": "Análisis Gazette: construir un atlas de predicciones precalculadas muestra que la frontera de la IA científica incluye infraestructura, accesibilidad de datos y reproducibilidad, no solo nuevos modelos. El potencial se mide en experimentos y hallazgos verificados, nunca en decisiones clínicas sin evidencia.",
+      "watch": "Validaciones independientes, acceso comercial específico del Atlas, nuevas coberturas de tejidos, sesgos entre poblaciones y reproducciones de casos científicos.",
+      "finalSummary": "AlphaGenome Atlas, presentado el 8 de septiembre, vuelve consultables predicciones sobre miles de millones de posibles cambios del ADN. Es un avance material en acceso a IA para biología; cada interpretación debe tratarse como hipótesis de investigación hasta que existan pruebas adicionales."
+    },
+    {
       "id": "minicpm5-2b",
       "eventKey": "minicpm5-2b",
       "date": "2026-09-07",
@@ -7438,7 +7675,7 @@
     {
       "date": "2026-09-08",
       "status": "partial",
-      "verifiedArticles": 3
+      "verifiedArticles": 4
     },
     {
       "date": "2026-09-09",
