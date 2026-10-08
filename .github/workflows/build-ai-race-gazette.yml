@@ -58,6 +58,7 @@ jobs:
           python3 scripts/validate_coverage_audit.py
           python3 scripts/validate_visual_desk.py
           python3 scripts/validate_backlog.py
+          python3 scripts/refresh_master_checklist.py --check
 
       - name: Build
         run: npm run build
