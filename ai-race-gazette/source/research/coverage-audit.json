@@ -194,7 +194,8 @@
       "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
-        "mistral-news"
+        "mistral-news",
+        "google-ai-cloud"
       ],
       "reviewedCategories": [
         "agents",
@@ -203,15 +204,15 @@
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": 1,
+        "found": 3,
         "published": 1,
-        "discarded": 0,
-        "unresolved": 0
+        "discarded": 1,
+        "unresolved": 1
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Modernización Fortran publicada; no hay doble pasada todavía."
+      "notes": "Primera revisión Mistral y Google: caso Fortran publicado, Google AI plans aún en cola. Comunicado Gartner descartado como titular independiente por falta de nueva capacidad material. Falta DeepMind y pasada inversa."
     },
     {
       "date": "2026-09-10",
@@ -307,20 +308,25 @@
       "archiveStatus": "pending",
       "verifiedArticles": 0,
       "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [],
+      "reviewedSourceIds": [
+        "google-ai-cloud"
+      ],
+      "reviewedCategories": [
+        "datacenters-infrastructure",
+        "developer-tools"
+      ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": null,
+        "found": 1,
         "published": 0,
-        "discarded": null,
-        "unresolved": null
+        "discarded": 0,
+        "unresolved": 1
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Candidato Google Cloud Dataflow: Pause/Resume GA y soporte GPU Blackwell. No se ha publicado ni cerrado la fecha. Investigación pendiente."
     },
     {
       "date": "2026-09-15",

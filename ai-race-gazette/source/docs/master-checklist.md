@@ -1,72 +1,110 @@
 # AI Race Gazette — checklist maestro de cierre
 
-**Apertura:** 8 de octubre de 2026. **Cola persistente:** `../ops/backlog.json`.
+**Fuente de verdad:** `../ops/backlog.json`. La instantánea de apertura no se actualiza con cada publicación.
 
-Este documento resume los gates de cierre; el JSON guarda cada pendiente con ID único, prioridad, fase, dueño, evidencia y criterio de aceptación. **Cualquier descubrimiento posterior se añade a esa cola**. No eliminar tareas ni afirmar `done` sin commit/prueba/fuente. No cerrar fechas sin doble revisión. La tarea horaria solo lee este tablero; Historical Backfill y Product/QA gestionan los pendientes.
+## Línea base de apertura
 
-## Estado inicial (instantánea, no contador en vivo)
+53 artículos, 5 Reporter V2, 48 legacy; 7 de 37 jornadas cerradas. Estas cifras son históricas, no el estado actual.
 
-- 53 artículos: 5 Reporter V2 y 48 legacy.
-- 37 fechas registradas de 1 Sep a 7 Oct; 7 cerradas y 30 por cerrar.
-- 5 imágenes registradas; una imagen específica publicada.
-- Newsroom horaria habilitada; publicación desatendida todavía requiere demostración.
+## Fases y tareas
 
-## Fases restantes
+### P05 — 8–14 septiembre: reconstrucción Reporter V2 (in_progress)
 
-### 5. 8–14 septiembre: reconstrucción Reporter V2 — EN CURSO
-**Gate:** Cada fecha auditada por fuentes + categorías + segunda pasada y artículos extensos
+**Criterio de cierre:** Cada fecha auditada por fuentes + categorías + segunda pasada y artículos extensos
 
-- [x] **H-SEP08-IMAGES25** (P0, done): ChatGPT Images 2.5: informe Reporter V2. V2, fuente primaria, mirrors, RSS y coverage.
-- [ ] **H-SEP08-MISTRAL** (P0, queued): Mistral: ronda Serie D por €3.000 millones. Publicar V2 con términos atribuidos, fuentes oficiales y contexto competitivo.
-- [ ] **H-SEP10-GPTLIVE** (P0, queued): OpenAI: GPT-Live-1 API y evaluación de voz. Publicar V2 técnico y precio/estado correctamente atribuidos.
-- [ ] **H-SEP09-FORTRAN** (P1, queued): Investigar Mistral: agentes para Fortran. Evaluar materialidad, fecha y fuentes; publicar V2 o descartar con motivo.
-- [ ] **H-SEP10-CLOUDERA** (P1, queued): Investigar alianza Mistral–Cloudera. Confirmar efectos técnicos y fecha, publicar V2 o descartar con motivo.
-- [ ] **H-0814-SOURCES** (P0, in_progress): Barrido oficial, emergentes y categorías 8–14. Registro por día/fuente/sector, candidatos y descartes sin inventar métricas.
-- [ ] **H-0814-GOOGLE** (P0, queued): Revisar Google/DeepMind día a día 8–14. Comprobar novedades relevantes, fechas y completar matriz.
-- [ ] **H-SEP10-LEGACY** (P1, queued): Enriquecer Gemini para Windows. Conservar id/eventKey, recuperar fuentes y publicar informe Reporter V2.
-- [ ] **H-0814-GATE** (P0, blocked): Cerrar estados 8–14 con doble auditoría. Todos los candidatos resueltos, evidencia de dos pasadas, cobertura y RSS consistentes.
+- [x] **H-SEP08-IMAGES25** (P0, done): ChatGPT Images 2.5: informe Reporter V2.
+  - Aceptación: V2, fuente primaria, mirrors, RSS y coverage
+  - Commit: 5bc6358c50002d6dee4db567494665f7fc9d014f
+- [x] **H-SEP08-MISTRAL** (P0, done): Mistral: ronda Serie D por €3.000 millones.
+  - Aceptación: Publicar V2 con términos atribuidos, fuentes oficiales y contexto competitivo
+  - Evidencia: https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/
+- [x] **H-SEP10-GPTLIVE** (P0, done): OpenAI: GPT-Live-1 API y evaluación de voz.
+  - Aceptación: Publicar V2 técnico y precio/estado correctamente atribuidos
+  - Evidencia: https://openai.com/index/introducing-gpt-live-1-in-the-api/
+- [x] **H-SEP09-FORTRAN** (P1, done): Investigar Mistral: agentes para Fortran.
+  - Aceptación: Evaluar materialidad, fecha y fuentes; publicar V2 o descartar con motivo
+  - Evidencia: https://mistral.ai/news/legacy-code-modernization/
+- [x] **H-SEP10-CLOUDERA** (P1, done): Investigar alianza Mistral–Cloudera.
+  - Aceptación: Confirmar efectos técnicos y fecha, publicar V2 o descartar con motivo
+  - Evidencia: https://mistral.ai/news/mistral-x-cloudera/
+- [ ] **H-0814-SOURCES** (P0, in_progress): Barrido oficial, emergentes y categorías 8–14.
+  - Aceptación: Registro por día/fuente/sector, candidatos y descartes sin inventar métricas
+- [ ] **H-0814-GOOGLE** (P0, in_progress): Revisar Google/DeepMind día a día 8–14.
+  - Aceptación: Comprobar novedades relevantes, fechas y completar matriz
+  - Evidencia: https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai
+- [ ] **H-SEP10-LEGACY** (P1, queued): Enriquecer Gemini para Windows.
+  - Aceptación: Conservar id/eventKey, recuperar fuentes y publicar informe Reporter V2
+- [ ] **H-0814-GATE** (P0, blocked): Cerrar estados 8–14 con doble auditoría.
+  - Aceptación: Todos los candidatos resueltos, evidencia de dos pasadas, cobertura y RSS consistentes
+- [ ] **H-GOOGLE-SEP09-AIPLANS** (P1, queued): Evaluar Google AI plans: nuevas herramientas y acceso.
+  - Aceptación: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
+- [ ] **H-GOOGLE-SEP14-DATAFLOW** (P1, queued): Evaluar Google Cloud Dataflow con GPU Blackwell.
+  - Aceptación: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
+- [ ] **H-GOOGLE-SEP09-GARTNER** (P1, cancelled): Evaluar reconocimiento Gartner Google Gemini Enterprise.
+  - Aceptación: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
+  - Descartado: Reconocimiento en ranking de proveedor; el anuncio no introduce una capacidad técnica nueva ni disponibilidad material. Conservado como contexto, no pieza independiente.
+- [x] **H-GOOGLE-SEP08-GTIG** (P0, done): Google GTIG: informe de amenazas con agentes (8 Sep).
+  - Aceptación: Informe Reporter V2 extenso, fuente oficial, recomendaciones defensivas y fecha correcta.
+  - Evidencia: https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai
+- [ ] **H-GOOGLE-DEEPMIND-0814** (P1, queued): Segunda revisión de Google DeepMind 8–14 septiembre.
+  - Aceptación: Revisar todas las fechas en blogs, papers y repositorios DeepMind, registrar materialidad/duplicados y descartar con justificación.
 
-### 6. 15–21 septiembre: reconstrucción Reporter V2 — PENDIENTE
-**Gate:** Siete días revisados con documentación, artículos V2 y cierre verificable
+### P06 — 15–21 septiembre: reconstrucción Reporter V2 (queued)
 
-- [ ] **H-1521-GATE** (P0, queued): Reconstruir 15–21 septiembre. Siete fechas complete/reviewed-no-material-news con evidencia y Reporter V2.
+**Criterio de cierre:** Siete días revisados con documentación, artículos V2 y cierre verificable
 
-### 7. 22–30 septiembre: reconstrucción y legacy — PENDIENTE
-**Gate:** Nueve fechas cerradas con fuentes y piezas antiguas enriquecidas
+- [ ] **H-1521-GATE** (P0, queued): Reconstruir 15–21 septiembre.
+  - Aceptación: Siete fechas complete/reviewed-no-material-news con evidencia y Reporter V2
 
-- [ ] **H-2230-GATE** (P0, queued): Reconstruir 22–30 septiembre. Nueve fechas cerradas y artículos previos enriquecidos.
+### P07 — 22–30 septiembre: reconstrucción y legacy (queued)
 
-### 8. Octubre hasta la fecha y Newsroom continua — PENDIENTE
-**Gate:** Octubre al día, fechas sin huecos y publicación horaria realmente operativa
+**Criterio de cierre:** Nueve fechas cerradas con fuentes y piezas antiguas enriquecidas
 
-- [ ] **H-OCT-GATE** (P0, queued): Completar 1 octubre hasta fecha actual. Jornadas reales cerradas, sin inventar noticias ni fechas futuras.
-- [ ] **OPS-NEWSROOM** (P0, queued): Probar publicación desatendida de Scheduled Task. Demostrar commit horario autónomo o documentar aprobación pendiente.
-- [ ] **OPS-DAYCONTINUITY** (P1, queued): Cerrar huecos de ledger en días nuevos sin noticias. Calendario al día incluso cuando la tarea horaria hace no-op.
+- [ ] **H-2230-GATE** (P0, queued): Reconstruir 22–30 septiembre.
+  - Aceptación: Nueve fechas cerradas y artículos previos enriquecidos
 
-### 9. Enriquecimiento de legacy y Visual Desk — PENDIENTE
-**Gate:** 48 piezas legacy ampliadas o excepcionadas y arte editorial con QA
+### P08 — Octubre hasta la fecha y Newsroom continua (queued)
 
-- [ ] **ED-LEGACY48** (P0, queued): Enriquecer 48 artículos legacy. V2 verificado sin relleno, id/eventKey estables y fuentes.
-- [ ] **VIS-PREMIUM** (P1, queued): Crear lote visual periódico de grabados específicos. Disminuir el fallback repetido, resolver P0 de imagen y mantener créditos.
-- [ ] **VIS-GENERATION** (P1, queued): Explorar generación automática por noticia con QA. Pipeline de imágenes, permisos y costes probados antes de activar.
+**Criterio de cierre:** Octubre al día, fechas sin huecos y publicación horaria realmente operativa
 
-### 10. Segunda auditoría y lanzamiento v1.0 — PENDIENTE
-**Gate:** Cobertura inversa, fuentes, fechas, diseño, SEO, accesibilidad, CI y automatización revisados
+- [ ] **H-OCT-GATE** (P0, queued): Completar 1 octubre hasta fecha actual.
+  - Aceptación: Jornadas reales cerradas, sin inventar noticias ni fechas futuras
+- [ ] **OPS-NEWSROOM** (P0, queued): Probar publicación desatendida de Scheduled Task.
+  - Aceptación: Demostrar commit horario autónomo o documentar aprobación pendiente
+- [ ] **OPS-DAYCONTINUITY** (P1, queued): Cerrar huecos de ledger en días nuevos sin noticias.
+  - Aceptación: Calendario al día incluso cuando la tarea horaria hace no-op
 
-- [ ] **QA-REVERSE** (P0, queued): Segunda pasada por empresa/tema y replay 1–7 Sep. No omisiones materiales conocidas; fechas, rumores y claims auditados.
-- [ ] **QA-WEB** (P1, queued): QA UX, móvil, SEO social, RSS, accesibilidad. Browser QA y enlaces/previews comprobados.
-- [ ] **QA-LAUNCH** (P0, blocked): Aprobar lanzamiento Gazette v1.0. Gates P05–P10 con evidencias y excepciones explícitas.
+### P09 — Enriquecimiento de legacy y Visual Desk (queued)
 
-## Protocolo obligatorio para la cola
+**Criterio de cierre:** 48 piezas legacy ampliadas o excepcionadas y arte editorial con QA
 
-1. Cada hallazgo nuevo usa un ID inmutable, fase, prioridad P0/P1/P2, lane, estado, aceptación y evidencia URL/commit.
-2. Registrar primero los candidatos verificados como `queued`; publicar solo después de verificar fecha y relevancia. Las pistas no verificadas son tareas de investigación.
-3. No duplicar tareas por el mismo evento/eventKey ni duplicar noticias en news.json.
-4. Al publicar, refetch de main, reconciliar por id/eventKey y preservar Newsroom; actualizar mirrors y RSS juntos.
-5. Solo marcar tareas `done` con evidenciaCommit/verificación equivalente; cancelación requiere motivo.
-6. Una fecha `complete` exige revisión de fuentes + descubrimiento abierto + pasada inversa con evidencia auditada.
-7. Informar en cada cierre: estado antes/después, commits, controles de CI, pendientes nuevos y siguiente gate.
+- [ ] **ED-LEGACY48** (P0, queued): Enriquecer 48 artículos legacy.
+  - Aceptación: V2 verificado sin relleno, id/eventKey estables y fuentes
+- [ ] **VIS-PREMIUM** (P1, queued): Crear lote visual periódico de grabados específicos.
+  - Aceptación: Disminuir el fallback repetido, resolver P0 de imagen y mantener créditos
+- [ ] **VIS-GENERATION** (P1, queued): Explorar generación automática por noticia con QA.
+  - Aceptación: Pipeline de imágenes, permisos y costes probados antes de activar
 
-## Nota de producto
+### P10 — Segunda auditoría y lanzamiento v1.0 (queued)
 
-No retrasar cobertura real por cambios cosméticos. Una edición por día significa un día revisado, no una noticia inventada por fecha. Reporter V2 y Visual Desk permanecen como estándares de publicación.
+**Criterio de cierre:** Cobertura inversa, fuentes, fechas, diseño, SEO, accesibilidad, CI y automatización revisados
+
+- [ ] **QA-REVERSE** (P0, queued): Segunda pasada por empresa/tema y replay 1–7 Sep.
+  - Aceptación: No omisiones materiales conocidas; fechas, rumores y claims auditados
+- [ ] **QA-WEB** (P1, queued): QA UX, móvil, SEO social, RSS, accesibilidad.
+  - Aceptación: Browser QA y enlaces/previews comprobados
+- [ ] **QA-LAUNCH** (P0, blocked): Aprobar lanzamiento Gazette v1.0.
+  - Aceptación: Gates P05–P10 con evidencias y excepciones explícitas
+
+## Regla de cola
+
+Registrar todo descubrimiento nuevo en el JSON con identificador estable, fuente, estado, prioridad, responsable y aceptación. No eliminar pendientes ni marcar días completos por tener un titular. Las tareas no se cierran sin evidencia; las descartadas mantienen explicación.
+
+## Resumen de gestión
+
+- Fases restantes: 6
+- Tareas en la cola: 25
+- Terminadas: 6
+- En curso: 2
+- Pendientes o bloqueadas: 16
+- Descartadas con motivo: 1

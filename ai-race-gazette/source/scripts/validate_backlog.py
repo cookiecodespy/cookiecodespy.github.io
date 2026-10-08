@@ -15,4 +15,8 @@ for t in tasks:
  if t['status']=='done': assert t.get('evidenceCommit') or t.get('verifiedEvidence'),f"Missing done evidence: {t['id']}"
  if t['status']=='cancelled': assert t.get('cancellationReason'),f"Missing cancellation reason: {t['id']}"
  for dep in t.get('dependsOn',[]): assert dep in tids,f"Unknown dependency: {dep}"
+master=(root/'docs/master-checklist.md').read_text(encoding='utf-8')
+for t in tasks:
+ marker="- ["+("x" if t['status']=='done' else " ")+"] **"+t['id']+"**"
+ assert marker in master, f"Master checklist does not reflect task status: {t['id']}"
 print(f"Backlog OK: {len(phases)} phases, {len(tasks)} tasks, {sum(x['status']=='done' for x in tasks)} completed with evidence")

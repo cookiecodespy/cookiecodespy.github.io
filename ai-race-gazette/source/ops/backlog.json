@@ -340,14 +340,41 @@
       "phase": "P05",
       "title": "Evaluar reconocimiento Gartner Google Gemini Enterprise",
       "priority": "P1",
-      "status": "queued",
+      "status": "cancelled",
       "lane": "Historical Backfill",
       "acceptance": "Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.",
       "evidence": [
         "https://cloud.google.com/blog/products/ai-machine-learning/google-is-a-leader-in-2026-gartner-magic-quadrant-for-enterprise-ai-assistants"
       ],
       "date": "2026-09-09",
-      "notes": "Nota de marketing basada en evaluación externa; publicar solo si hay hecho nuevo relevante más allá del reconocimiento."
+      "notes": "Nota de marketing basada en evaluación externa; publicar solo si hay hecho nuevo relevante más allá del reconocimiento.",
+      "cancellationReason": "Reconocimiento en ranking de proveedor; el anuncio no introduce una capacidad técnica nueva ni disponibilidad material. Conservado como contexto, no pieza independiente."
+    },
+    {
+      "id": "H-GOOGLE-SEP08-GTIG",
+      "phase": "P05",
+      "title": "Google GTIG: informe de amenazas con agentes (8 Sep)",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "acceptance": "Informe Reporter V2 extenso, fuente oficial, recomendaciones defensivas y fecha correcta.",
+      "verifiedEvidence": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/google-gtig-ai-threat-tracker-agents-2026-09-08"
+      ]
+    },
+    {
+      "id": "H-GOOGLE-DEEPMIND-0814",
+      "phase": "P05",
+      "title": "Segunda revisión de Google DeepMind 8–14 septiembre",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Revisar todas las fechas en blogs, papers y repositorios DeepMind, registrar materialidad/duplicados y descartar con justificación.",
+      "evidence": [
+        "https://deepmind.google/discover/blog/",
+        "https://deepmind.google/research/publications/"
+      ]
     }
   ]
 }
