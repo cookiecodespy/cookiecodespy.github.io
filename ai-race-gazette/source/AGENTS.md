@@ -43,3 +43,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 2026-10-07 coverage-audit rule: Historical Backfill maintains `research/coverage-audit.json` alongside `history-coverage.json` and public `dailyCoverage`. New dates closed under Research Backbone v1 must record source/category checks, open discovery and reverse pass. Legacy Sep 1–7 remains complete but flagged for final Backbone replay.
 
 2026-10-07 Visual Desk v1 rule: read `docs/visual-desk.md` and `visual/asset-manifest.json` for non-routine image work. Every editorial hero/media asset must be registered. Use `visual/image-queue.json` as a production backlog, refreshable with `scripts/refresh_visual_queue.py`. Routine Newsroom remains forbidden from modifying assets.
+
+2026-10-07 Visual production rule: use `docs/visual-production-runbook.md` for story-specific art publishing. The canonical binary lives under `source/public/assets/news/YYYY-MM-DD/<article-id>.webp`; update manifest + both news mirrors + visual queue together. Do not change factual fields or id/eventKey when swapping art.
