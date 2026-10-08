@@ -136,3 +136,24 @@ Si se reanuda el proyecto tras un fallo del chat, **NO** repetir las publicacion
 - Al cerrar ronda, comprobar que Visual Desk actualice la cola del nuevo artículo (puede tardar en reflejarse después del merge) y no confundir sync de imágenes con automatización horaria autónoma.
 - **Automation:** una sola tarea horaria AI Race Gazette Newsroom habilitada. La prueba de una publicación 100 % autónoma en main continúa pendiente; un commit divergente de Upscale AI Token Fabric necesita reconciliación segura. No declarar automatización end-to-end hasta observar publicación desatendida, 3 corridas, colisión y rollback.
 - **Siguiente prioridad:** reabrir 12 Sep por fuente/categoría, verificar primer release de pesos AllSpark Iris del 13, completar Google/DeepMind 8–14 y pasar auditoría inversa de todo P05. Seguir con P06 15–21, P07 22–30, P08 octubre/automation, P09 legacy/visual, P10 QA/v1.0. Las cifras son snapshot; siempre releer main.
+
+## Nueva ronda P05 + rescate Newsroom — 8 octubre 2026
+
+**Estado observado de `main` tras PR #5 y #6:** **78 artículos, 31 Reporter V2 y 47 legacy**; 38 fechas desde 1 Sep a 8 Oct (21 `partial`, 17 `pending`, ninguna certificada como `complete`). Espejos JSON/RSS exactos, 78 RSS items, sin `id`/`eventKey` duplicados, `history-coverage` sincronizado y 78/78 entradas Visual Desk actualizadas. La cobertura auditada se amplió a Oct 8 mediante row propia; no implica segunda pasada ni cierre del día.
+
+**Artículos integrados en esta ronda:**
+
+- 9 Sep — **Cohere North Small Translate 1.0**, modelo de traducción MoE 218B/25B, acceso API limitado gratuito y pesos de uso **no comercial**; changelog original Sep 9, blog extendido Sep 10. Reporter V2 (1.040 palabras de secciones): `cohere-north-small-translate-open-weights-2026-09-09`.
+- 10 Sep — **Cognition SWE-2**, refuerzo para agentes de programación y disponibilidad inicial en Devin Desktop/CLI, benchmarks atribuidos y límites de Terminal-Bench 4: `cognition-swe-2-coding-agent-model-2026-09-10`, Reporter V2 (1.207 palabras de secciones).
+- 8 Oct — **Upscale Token Fabric**, rescatado del commit autónomo divergente `87d682f62efaea4a46a968f9eae8d9cba7f542b1` sin arrastrar su JSON/RSS antiguos sobre main: `upscale-ai-token-fabric-2026`, Reporter V2 (~1.296 palabras seccionales). Fuente oficial original del 8 Oct; **early access** actual y GA solo prevista a inicios 2027.
+
+**PR y evidencias:**
+
+- https://github.com/cookiecodespy/cookiecodespy.github.io/pull/5 (merge `dcf9c0f04e09b55fd52985720e542c0cf8031181`), validación GitHub Actions `37808999244` **success**. Fuentes en `source/docs/evidence-cohere-cognition-2026-09-09-10.md`.
+- https://github.com/cookiecodespy/cookiecodespy.github.io/pull/6 (merge `9c8ddfa5205363917a03cfaf4d81cb3c47f7607b`), validación GitHub Actions `37809437922` **success**. Incidencia en `source/docs/newsroom-divergent-commit-2026-10-08.md`.
+
+**Estado real automatización:** rescatar manualmente un commit de Newsroom **no** equivale a publicación autónoma certificada. La tarea horaria queda activada; falta comprobar una publicación desatendida `main`, un no-op real, colisión/control de SHA, alerta de aprobación y rollback. Mantener solo una tarea de Gazette.
+
+**Siguiente ronda:** bloque de origen Sep 12 sigue `pending`, Sep 13 `partial`; el historial oficial Hugging Face Iris-mini muestra commit `Iris release` de 2 Sep, aunque notas secundarias dicen 13 Sep. No inventar fecha de lanzamiento hasta verificar qué se liberó cuándo. Resolver primero Google/DeepMind 8–14 y actores emergentes, registrar segunda pasada de P05, después P06 15–21, P07 22–30, P08 1–8 Oct y automatización, P09 47 legacy/arte, P10 auditoría total y v1.0.
+
+**Plazos:** no anunciar fecha cerrada hasta inventariar eventos faltantes y superar gates. La única definición válida de septiembre completo es treinta fechas auditadas con segundo barrido, publicación de novedades materiales y evidencia de omisiones/descartes. Se conserva contenido significativo de octubre hasta fecha de corte pero tampoco tiene cierre exhaustivo.
