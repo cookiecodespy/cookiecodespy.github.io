@@ -16,7 +16,7 @@ test('Month labels distinguish archive years',()=>{assert.match(monthLabel('2026
 
 test('Reading time counts actual whitespace-separated words across V2 sections',()=>{
  const report={title:'Titular extendido',summary:'Informe relevante',body:['Resumen inicial'],sections:[{heading:'Detalle técnico',paragraphs:[Array(1000).fill('información').join(' ')]}],quickTakeaways:['Dato clave'],analysis:'Análisis Gazette',watch:'Seguimiento'};
- assert.equal(articleWordCount(report),1010);
+ assert.equal(articleWordCount(report),1013);
  assert.equal(estimatedReadingMinutes(report),6);
 });
 test('Legacy short articles have minimum reading time and empty fields are tolerated',()=>{
