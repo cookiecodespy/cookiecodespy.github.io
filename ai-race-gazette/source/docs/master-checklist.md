@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 57 tareas; 15 completadas; 7 en curso; 34 pendientes o bloqueadas; 1 descartadas con razón.
+- 6 fases; 58 tareas; 20 completadas; 3 en curso; 34 pendientes o bloqueadas; 1 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -120,10 +120,12 @@
   - Criterio: Simular dos writers, comprobar SHA conflict/rebase y ausencia de pérdida o duplicación en JSON/RSS.
 - [ ] **OPS-ROLLBACK-DRILL** · P1 · queued — Ensayar rollback y restauración de datos/arte
   - Criterio: Documentar y ensayar restauración desde Git con evidencia, sin afectar la raíz de cookiecodespy.github.io.
-- [ ] **OPS-RESUME-SAFE** · P0 · in_progress — Recuperación verificable después de interrupciones de chat
+- [x] **OPS-RESUME-SAFE** · P0 · done — Recuperación verificable después de interrupciones de chat
   - Criterio: Documentar y probar recuperación desde commits, GitHub Actions y backlog sin duplicar publicaciones.
-- [ ] **OPS-STALE-BUILD-GUARD** · P0 · in_progress — Evitar despliegues de bundles obsoletos por carreras de GitHub
+  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/blob/main/ai-race-gazette/source/docs/recovery-after-interruption.md
+- [x] **OPS-STALE-BUILD-GUARD** · P0 · done — Evitar despliegues de bundles obsoletos por carreras de GitHub
   - Criterio: CI impide publicar dist si fuentes React, scripts de compilación o assets cambiaron desde checkout.
+  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281532
 
 ## P09 — Enriquecimiento de legacy y Visual Desk
 
@@ -143,6 +145,7 @@
   - Criterio: Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido.
 - [ ] **VIS-AUTO-QUEUE-REFRESH** · P1 · in_progress — Sincronizar cola visual tras publicaciones Newsroom
   - Criterio: Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.
+  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798603043
 
 ## P10 — Segunda auditoría y lanzamiento v1.0
 
@@ -164,8 +167,9 @@
   - Criterio: Reabrir las fuentes del archivo completo, contrastar claims del proveedor, registrar errores y correcciones.
 - [ ] **QA-EVENT-DEDUP** · P1 · queued — Revisar eventos distintos con una misma URL
   - Criterio: Evaluar duplicados semánticos en historias con fuente principal común sin fusionar eventos verdaderamente independientes.
-- [ ] **QA-HTTP-SMOKE** · P0 · in_progress — Smoke tests públicos de artículos, RSS e imágenes
+- [x] **QA-HTTP-SMOKE** · P0 · done — Smoke tests públicos de artículos, RSS e imágenes
   - Criterio: Comprobar HTTP 200, assets, navegación móvil y RSS desplegado tras publicación; incluir URLs concretas.
+  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281530
 - [ ] **QA-SEO-PREVIEW** · P1 · queued — Auditar SEO y tarjetas al compartir artículos
   - Criterio: Revisar metadatos disponibles a crawlers sin JavaScript, canonical, sitemap, OG y previews por artículo.
 - [ ] **QA-A11Y** · P1 · queued — Auditar contraste, teclado, lectores de pantalla y responsive
@@ -185,8 +189,12 @@
   - Criterio: Reabrir fuentes primarias, validar claims y usar documentación o corroboración externa donde exista; no fabricar una segunda fuente.
 - [ ] **QA-EDITORIAL-METRICS-LIVE** · P1 · queued — Panel interno verificable de avance y frescura
   - Criterio: Generar métricas verificables de artículos, legacy, días registrados/auditados, última publicación y trabajo pendiente desde JSON de main.
-- [ ] **QA-PUBLIC-MOBILE-LIVE** · P1 · in_progress — Prueba diaria del sitio público en móvil y escritorio
+- [x] **QA-PUBLIC-MOBILE-LIVE** · P1 · done — Prueba diaria del sitio público en móvil y escritorio
   - Criterio: Smoke automatizado comprueba JSON/RSS, navegación, imágenes, ausencia de errores JS y desbordamiento horizontal móvil.
+  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281530
+- [x] **QA-RSS-SEMANTICS** · P1 · done — Validar coherencia semántica RSS con cada artículo
+  - Criterio: RSS principal y espejo coinciden en títulos, resúmenes, URL de origen, fecha y enlaces de todas las noticias; pruebas de regresión que rechazan cambios desincronizados.
+  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798463907
 
 ## Reglas para nuevas tareas
 

@@ -586,10 +586,13 @@
       "phase": "P10",
       "title": "Smoke tests públicos de artículos, RSS e imágenes",
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "lane": "Product / QA",
       "acceptance": "Comprobar HTTP 200, assets, navegación móvil y RSS desplegado tras publicación; incluir URLs concretas.",
-      "notes": "Dynamic live browser smoke workflow created; must pass against actual GitHub Pages before completion."
+      "notes": "Public browser test checked dynamic JSON/RSS, article links, artwork HTTP, client errors and mobile width. Daily scheduled smoke active.",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281530"
+      ]
     },
     {
       "id": "QA-SEO-PREVIEW",
@@ -682,7 +685,10 @@
       "status": "in_progress",
       "lane": "Visual Desk / CI",
       "acceptance": "Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.",
-      "notes": "Workflow push-triggered and unit-tested; end-to-end unattended push still needs a live publication event and successful sync run."
+      "notes": "Workflow successfully refreshed 71 stories in production (commit ae56c124); no subsequent Newsroom-triggered publish observed yet. Keep in_progress until live news event confirms auto-trigger and no-op.",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798603043"
+      ]
     },
     {
       "id": "QA-MAJOR-STORY-CORROBORATION",
@@ -708,30 +714,53 @@
       "phase": "P08",
       "title": "Recuperación verificable después de interrupciones de chat",
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "lane": "Product & QA",
       "acceptance": "Documentar y probar recuperación desde commits, GitHub Actions y backlog sin duplicar publicaciones.",
-      "notes": "Procedimiento añadido; pasar a done tras CI y verificación documental."
+      "notes": "Runbook linked in AGENTS and coordination; CI passed.",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/blob/main/ai-race-gazette/source/docs/recovery-after-interruption.md",
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281532"
+      ]
     },
     {
       "id": "OPS-STALE-BUILD-GUARD",
       "phase": "P08",
       "title": "Evitar despliegues de bundles obsoletos por carreras de GitHub",
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "lane": "Product & QA",
       "acceptance": "CI impide publicar dist si fuentes React, scripts de compilación o assets cambiaron desde checkout.",
-      "notes": "Guardia añadida a build; validar con CI y prueba de concurrencia."
+      "notes": "Build rejects stale frontend sources after refetch; actual two-writer collision drill remains separate OPS-CONCURRENCY-TEST.",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281532"
+      ]
     },
     {
       "id": "QA-PUBLIC-MOBILE-LIVE",
       "phase": "P10",
       "title": "Prueba diaria del sitio público en móvil y escritorio",
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "lane": "Product & QA",
       "acceptance": "Smoke automatizado comprueba JSON/RSS, navegación, imágenes, ausencia de errores JS y desbordamiento horizontal móvil.",
-      "notes": "Esperando primera ejecución real de smoke."
+      "notes": "Live Chromium mobile and desktop checks passed with published site.",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281530"
+      ]
+    },
+    {
+      "id": "QA-RSS-SEMANTICS",
+      "phase": "P10",
+      "title": "Validar coherencia semántica RSS con cada artículo",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Product & QA",
+      "acceptance": "RSS principal y espejo coinciden en títulos, resúmenes, URL de origen, fecha y enlaces de todas las noticias; pruebas de regresión que rechazan cambios desincronizados.",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798463907"
+      ],
+      "notes": "4 regression tests added to Build and Content workflows."
     }
   ]
 }
