@@ -1,0 +1,38 @@
+name: Validate AI Race Gazette Content
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ai-race-gazette/data/news.json'
+      - 'ai-race-gazette/feed.xml'
+      - 'ai-race-gazette/source/public/data/news.json'
+      - 'ai-race-gazette/source/public/feed.xml'
+      - 'ai-race-gazette/source/docs/history-coverage.json'
+      - 'ai-race-gazette/source/research/coverage-audit.json'
+      - 'ai-race-gazette/source/ops/backlog.json'
+      - 'ai-race-gazette/source/docs/master-checklist.md'
+      - 'ai-race-gazette/source/scripts/check_publication_integrity.py'
+      - '.github/workflows/validate-ai-race-gazette-content.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ai-race-gazette-content
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ai-race-gazette/source
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Public mirrors, RSS and calendar
+        run: python3 scripts/check_publication_integrity.py
+      - name: Structured editorial validation
+        run: |
+          python3 scripts/editorial.py --validate-only
+          python3 scripts/validate_coverage_audit.py
+          python3 scripts/validate_backlog.py
+          python3 scripts/validate_visual_desk.py
