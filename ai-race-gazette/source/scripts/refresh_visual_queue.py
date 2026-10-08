@@ -38,7 +38,7 @@ def refresh(news,manifest,old_queue):
         previous=old.get(article['id'],{})
         specific=article.get('imageStatus')=='specific'
         status='complete' if specific else previous.get('productionStatus')
-        if status in (None,'complete'):
+        if not specific and status in (None,'complete'):
             status='brief-ready' if article.get('imageBrief') else 'needs-art-direction'
         brief=(article.get('imageBrief') or previous.get('brief') or
             f"Crear una ilustración específica para “{article['title']}”. "
