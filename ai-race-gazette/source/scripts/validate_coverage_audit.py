@@ -1,4 +1,9 @@
-"""Cross-check historical coverage with the Research Backbone audit ledger."""
+"""Validate Research Backbone coverage without blocking live partial-day publishing.
+
+history-coverage.json + public dailyCoverage are live counts.
+coverage-audit.json is the Research Desk's immutable-ish audit snapshot.
+Completed audited days must match exactly. Open days may grow in Newsroom.
+"""
 import json
 from pathlib import Path
 
@@ -7,14 +12,11 @@ NEWS=ROOT/'public/data/news.json'
 COVERAGE=ROOT/'docs/history-coverage.json'
 AUDIT=ROOT/'research/coverage-audit.json'
 REGISTRY=ROOT/'research/source-registry.json'
-ALLOWED_STATUS={'pending','partial','complete','reviewed-no-material-news'}
-ALLOWED_AUDIT_MODE={'pending-backbone-audit','legacy-block-audit','backbone-v1'}
+STATUSES={'pending','partial','complete','reviewed-no-material-news'}
+MODES={'pending-backbone-audit','legacy-block-audit','backbone-v1'}
+CLOSED={'complete','reviewed-no-material-news'}
 
-def main():
-    news=json.loads(NEWS.read_text(encoding='utf-8'))
-    coverage=json.loads(COVERAGE.read_text(encoding='utf-8'))
-    audit=json.loads(AUDIT.read_text(encoding='utf-8'))
-    registry=json.loads(REGISTRY.read_text(encoding='utf-8'))
+def check(news,coverage,audit,registry):
     assert audit.get('schemaVersion')==1
     assert audit.get('periodStart')==news.get('coverageStart')
     source_ids={s['id'] for s in registry['sources']}
@@ -22,35 +24,64 @@ def main():
     assert categories
     rows={r['date']:r for r in coverage}
     audit_rows={r['date']:r for r in audit.get('days',[])}
-    assert len(rows)==len(coverage)==len(audit_rows)
-    article_counts={}
+    assert len(rows)==len(coverage),'Duplicate daily coverage records'
+    assert len(audit_rows)==len(audit.get('days',[])),'Duplicate audit dates'
+    assert set(audit_rows)<=set(rows),'Audited date missing from live history coverage'
+    live_counts={}
     for a in news['articles']:
-        article_counts[a['date']]=article_counts.get(a['date'],0)+1
+        live_counts[a['date']]=live_counts.get(a['date'],0)+1
+    new_days=0; growing=0; closed=0
     for day,row in rows.items():
-        assert row['status'] in ALLOWED_STATUS
-        assert day in audit_rows
-        ar=audit_rows[day]
-        assert ar['archiveStatus']==row['status']
-        assert ar['verifiedArticles']==row['verifiedArticles']==article_counts.get(day,0)
-        assert ar['auditMode'] in ALLOWED_AUDIT_MODE
-        reviewed_sources=ar.get('reviewedSourceIds',[])
-        reviewed_categories=ar.get('reviewedCategories',[])
-        assert isinstance(reviewed_sources,list) and len(reviewed_sources)==len(set(reviewed_sources))
-        assert set(reviewed_sources)<=source_ids
-        assert isinstance(reviewed_categories,list) and len(reviewed_categories)==len(set(reviewed_categories))
-        assert set(reviewed_categories)<=categories
+        assert row['status'] in STATUSES, f'{day}: invalid live status'
+        actual=live_counts.get(day,0)
+        assert row['verifiedArticles']==actual, f'{day}: live history/article count mismatch'
+        ar=audit_rows.get(day)
+        if ar is None:
+            # Newsroom may start a NEW day after the existing historical audit range.
+            assert day>audit['periodEnd'],f'{day}: missing historical audit record'
+            assert row['status'] in {'pending','partial'},f'{day}: close day only with audit evidence'
+            new_days+=1
+            continue
+        assert ar['auditMode'] in MODES,f'{day}: invalid audit mode'
+        checked_sources=ar.get('reviewedSourceIds',[])
+        checked_categories=ar.get('reviewedCategories',[])
+        assert isinstance(checked_sources,list) and len(set(checked_sources))==len(checked_sources)
+        assert set(checked_sources)<=source_ids
+        assert isinstance(checked_categories,list) and len(set(checked_categories))==len(checked_categories)
+        assert set(checked_categories)<=categories
         for key in ('openDiscoveryPerformed','reversePassPerformed','backboneReauditRequired'):
             assert isinstance(ar.get(key),bool)
-        stats=ar.get('candidateStats')
+        stats=ar.get('candidateStats',{})
         assert isinstance(stats,dict)
-        assert stats.get('published')==row['verifiedArticles']
-        if ar['auditMode']=='backbone-v1' and row['status'] in {'complete','reviewed-no-material-news'}:
-            assert reviewed_sources, f'{day}: completed Backbone audit needs source checks'
-            assert reviewed_categories, f'{day}: completed Backbone audit needs category checks'
-            assert ar['openDiscoveryPerformed'] is True
-            assert ar['reversePassPerformed'] is True
-            assert ar['backboneReauditRequired'] is False
-    print(f"coverage audit OK: {len(rows)} days cross-checked; {sum(r['auditMode']=='backbone-v1' for r in audit_rows.values())} days on Backbone v1")
+        assert stats.get('published')==ar['verifiedArticles'],f'{day}: audit snapshot totals inconsistent'
+        assert isinstance(ar['verifiedArticles'],int) and ar['verifiedArticles']>=0
+        if row['status'] in CLOSED or ar['archiveStatus'] in CLOSED:
+            # Complete means immutable evidence; additions require reauditing, not silence.
+            assert row['status']==ar['archiveStatus'],f'{day}: closed audit status changed'
+            assert ar['verifiedArticles']==actual,f'{day}: closed audit count changed; re-audit required'
+            if ar['auditMode']=='backbone-v1':
+                assert checked_sources, f'{day}: completed audit needs sources'
+                assert checked_categories, f'{day}: completed audit needs categories'
+                assert ar['openDiscoveryPerformed'] is True
+                assert ar['reversePassPerformed'] is True
+                assert ar['backboneReauditRequired'] is False
+            closed+=1
+        else:
+            # Open dates are intentionally not exhaustive; Newsroom can add later.
+            assert ar['archiveStatus'] in {'pending','partial'}
+            assert row['status'] in {'pending','partial'}
+            assert ar['verifiedArticles']<=actual, f'{day}: stories were removed; reconcile audit'
+            if ar['verifiedArticles']!=actual or ar['archiveStatus']!=row['status']:
+                growing+=1
+    return len(rows),closed,growing,new_days
+
+def main():
+    news=json.loads(NEWS.read_text(encoding='utf-8'))
+    coverage=json.loads(COVERAGE.read_text(encoding='utf-8'))
+    audit=json.loads(AUDIT.read_text(encoding='utf-8'))
+    registry=json.loads(REGISTRY.read_text(encoding='utf-8'))
+    days,closed,growing,new=check(news,coverage,audit,registry)
+    print(f"coverage audit OK: {days} live days; {closed} closed audits; {growing} open days newer than audit snapshot; {new} new unaudited dates")
 
 if __name__=='__main__':
     main()

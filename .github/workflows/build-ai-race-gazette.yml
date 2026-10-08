@@ -49,6 +49,7 @@ jobs:
       - name: Editorial validation
         run: |
           python3 -m unittest tests/editorial_test.py
+          python3 -m unittest tests/coverage_audit_test.py
           python3 -m unittest tests/visual_publish_test.py
           python3 scripts/editorial.py --validate-only
           python3 scripts/quality-audit.py

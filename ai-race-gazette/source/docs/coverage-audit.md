@@ -71,3 +71,15 @@ No inventar cifras. Usar `null` cuando el método histórico anterior no conserv
 ## Filosofía
 
 La meta es que `complete` signifique algo comprobable: no “parece que buscamos suficiente”, sino “sabemos qué fuentes/categorías se revisaron y qué pasó con los candidatos”.
+
+
+## Incidencia resuelta: Newsroom y auditorías en vivo
+
+El ledger de Research Backbone es una **instantánea documental**, no un contador vivo de cada corrida horaria. `history-coverage.json` y `news.json.dailyCoverage` sí son los contadores vivos.
+
+- En jornadas `pending` o `partial`, Newsroom puede aumentar publicaciones sin editar el ledger de investigación; el validador informa el desfase sin bloquear CI.
+- Fechas nuevas posteriores a `periodEnd` pueden existir en los contadores vivos como `pending` o `partial` mientras se crea su auditoría histórica.
+- Jornadas `complete` o `reviewed-no-material-news` exigen coincidencia exacta entre el cierre auditable y los artículos actuales: un cambio requiere reabrir y reauditar antes del cierre.
+- `candidateStats.published` refleja el recuento de la instantánea de auditoría, no el contador vivo actual.
+
+Este ajuste preserva la integridad histórica y evita que un anuncio nuevo publicado por la automatización bloquee la reconstrucción visual o frontend.
