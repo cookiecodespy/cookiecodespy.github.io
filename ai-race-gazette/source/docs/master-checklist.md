@@ -49,7 +49,7 @@
 - [ ] **H-GOOGLE-DEEPMIND-0814** (P1, queued): Segunda revisión de Google DeepMind 8–14 septiembre.
   - Aceptación: Revisar todas las fechas en blogs, papers y repositorios DeepMind, registrar materialidad/duplicados y descartar con justificación.
 
-- [ ] **H-GOOGLE-SEP14-BIGQUERY** (P0, queued): BigQuery anuncia seis funciones de análisis aumentado para agentes. Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias..
+- [x] **H-GOOGLE-SEP14-BIGQUERY** (P0, done): BigQuery anuncia seis funciones de análisis aumentado para agentes. Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias..
 - [ ] **H-GOOGLE-SEP09-MAPL** (P0, queued): Google y NASA/JPL: MAPL-EMIT detecta emisiones de metano. Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias..
 ### P06 — 15–21 septiembre: reconstrucción Reporter V2 (queued)
 

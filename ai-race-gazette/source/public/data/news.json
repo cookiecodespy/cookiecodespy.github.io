@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T12:52:58.056Z",
+  "updatedAt": "2026-10-08T12:54:24.486Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -2745,6 +2745,185 @@
       ]
     },
     {
+      "id": "google-bigquery-augmented-analytics-six-functions-2026-09-14",
+      "eventKey": "google-bigquery-augmented-analytics-six-functions-2026-09-14",
+      "articleVersion": 2,
+      "date": "2026-09-14",
+      "announcedAt": "2026-09-14",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Google",
+      "product": "BigQuery Augmented Analytics TVFs",
+      "title": "Google BigQuery estrena seis funciones de análisis para investigar datos con agentes de IA",
+      "summary": "Google presentó seis funciones TVF de análisis aumentado en BigQuery para encontrar cambios, causas probables, correlaciones, tendencias y patrones temporales. Las funciones se integran con Conversational Analytics y pueden servir como herramientas de agentes.",
+      "tags": [
+        "Datos",
+        "Agentes",
+        "Google Cloud",
+        "Analítica"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial conceptual de máquinas de análisis de datos; no es una imagen de una interfaz real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado científico de periódico antiguo: seis instrumentos mecánicos de análisis conectados a un gran archivo de datos, simbolizando causas, correlaciones, tendencia, estacionalidad y cambios. No palabras ni logos, sepia, no presentar como captura real.",
+      "source": {
+        "name": "Google Cloud · Agent-ready analytics: Unlocking insights with BigQuery augmented analytics",
+        "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs",
+        "publishedAt": "2026-09-14"
+      },
+      "keyPoints": [
+        "Seis TVF para análisis aumentado dentro de BigQuery.",
+        "AI.KEY_DRIVERS y AI.CAUSAL_EFFECT abordan explicación y efecto estimado.",
+        "Las funciones pueden encadenarse y usarse desde Conversational Analytics."
+      ],
+      "quickTakeaways": [
+        "El anuncio corresponde al 14 de septiembre de 2026.",
+        "Incluye seis funciones diferenciadas de análisis.",
+        "Los agentes pueden utilizar resultados tabulares en flujos de investigación.",
+        "Correlación y causalidad estimada no son equivalentes.",
+        "Es necesario revisar permisos, costos y supuestos estadísticos."
+      ],
+      "body": [
+        "La carrera de la IA empresarial también avanza en herramientas de análisis verificable sobre los datos. Google Cloud añadió funciones estructuradas en BigQuery y herramientas para conectarlas con agentes."
+      ],
+      "sections": [
+        {
+          "heading": "Un lanzamiento pensado para analizar datos, no solo consultarlos",
+          "kind": "report",
+          "paragraphs": [
+            "Google Cloud anunció el 14 de septiembre de 2026 seis funciones de análisis aumentado en BigQuery. Se presentan como funciones que aceptan tablas y devuelven resultados tabulares, conocidas como TVF. Su objetivo no es únicamente buscar una cifra en una base de datos: permiten investigar por qué cambió una métrica, detectar tendencias, evaluar correlaciones y estimar el efecto de una intervención. Esta noticia corresponde a funcionalidades de análisis dentro de BigQuery, distintas del anuncio de Dataflow y sus nuevas GPU del mismo día.",
+            "El valor del cambio está en acercar el cálculo a los datos que ya viven en el almacén. Exportar grandes volúmenes a herramientas externas puede agregar movimientos y operaciones de mantenimiento. Google plantea que los resultados estructurados de las TVF se incorporen a herramientas SQL y flujos de agentes, aunque las ventajas de coste, rendimiento y gobierno dependen de las consultas y el entorno real."
+          ]
+        },
+        {
+          "heading": "Las seis funciones, una por una",
+          "kind": "report",
+          "paragraphs": [
+            "AI.KEY_DRIVERS identifica segmentos que explican aumentos o caídas de indicadores entre grupos o periodos. AI.CAUSAL_EFFECT estima el efecto de una intervención comparando resultados observados con un escenario contrafactual modelado. ML.CORRELATION mide relaciones entre variables numéricas. ML.DETECT_CHANGE_POINTS localiza cambios estructurales en series temporales. ML.TREND separa la evolución de fondo de las fluctuaciones. ML.SEASONALITY analiza ciclos repetidos por hora, día, semana u otros periodos.",
+            "Cada nombre corresponde a una pregunta distinta. Detectar correlación no demuestra causalidad y observar un cambio de tendencia no explica automáticamente su origen. Google destaca que las funciones pueden encadenarse para explorar etapas sucesivas de una investigación. Un flujo serio debe guardar parámetros, datos de referencia y contexto del resultado para no convertir una hipótesis estadística en afirmación definitiva."
+          ]
+        },
+        {
+          "heading": "Un ejemplo que pasa de la observación a la explicación",
+          "kind": "report",
+          "paragraphs": [
+            "La documentación muestra un recorrido con un conjunto público de viajes de bicicletas compartidas de Austin. Primero ML.DETECT_CHANGE_POINTS identifica un cambio en la serie de viajes. Después AI.KEY_DRIVERS compara segmentos antes y después para buscar qué combinaciones de categorías contribuyeron al aumento. Por último AI.CAUSAL_EFFECT estima cuánto de ese cambio podría atribuirse a una intervención respecto de una evolución prevista sin ella.",
+            "Google presenta resultados cuantitativos para ese conjunto y vincula el contexto a un programa local de movilidad. Es un ejemplo didáctico del proveedor, no una validación independiente ni una prueba de que cualquier promoción produzca el mismo comportamiento. La estimación causal depende de supuestos sobre la línea base, los datos, otras intervenciones simultáneas y la estabilidad del proceso observado."
+          ]
+        },
+        {
+          "heading": "Por qué una TVF puede ser una habilidad para agentes",
+          "kind": "report",
+          "paragraphs": [
+            "Una función que devuelve una tabla tiene una interfaz relativamente clara para otro programa. En vez de pedir a un modelo que invente una explicación sobre ventas o tráfico, una aplicación puede construir una consulta que ejecute análisis estadístico y devuelva columnas interpretables. Google explica que estas TVF están disponibles también en Conversational Analytics y pueden utilizarse como habilidades para agentes que coordinan una investigación de varios pasos.",
+            "El beneficio de esa estructura es separar cálculo de narración. Un agente puede formular la pregunta, elegir una función y resumir su salida; aun así debe mostrar qué datos utilizó y cuáles son las condiciones del análisis. Si la herramienta se invoca con columnas erróneas o periodos engañosos, el resultado estructurado puede ser matemáticamente consistente y, al mismo tiempo, contestar una pregunta equivocada."
+          ]
+        },
+        {
+          "heading": "Análisis aumentado y límites de la causalidad",
+          "kind": "technical",
+          "paragraphs": [
+            "AI.CAUSAL_EFFECT merece especial cuidado. El artículo de Google describe el uso de una previsión contrafactual basada en ARIMA_PLUS. Ese tipo de comparación intenta aproximar qué habría ocurrido sin una acción. No puede demostrar por sí solo una relación causal indiscutible si hay factores omitidos, cambios externos o errores en la selección de la intervención. Las probabilidades comunicadas corresponden al método aplicado a los datos específicos de la demostración.",
+            "Lo mismo sucede con AI.KEY_DRIVERS: una contribución estadística grande indica segmentos asociados al cambio observado, no necesariamente una decisión o causa última. Para investigación corporativa, se recomienda contrastar resultados con registros de campañas, cambios de precios, interrupciones operativas y conocimiento de negocio antes de convertirlos en decisiones de inversión."
+          ]
+        },
+        {
+          "heading": "Aplicaciones para equipos comerciales y operativos",
+          "kind": "report",
+          "paragraphs": [
+            "Un negocio puede investigar por qué cayó su conversión, cuándo cambió su demanda, qué patrones de temporada explican una sobrecarga o si una campaña coincide con un aumento sostenido de operaciones. En logística, por ejemplo, una serie de entregas puede analizarse para diferenciar tendencia general de ciclos semanales. Estos son casos potenciales del tipo de análisis ofrecido, no implementaciones de clientes que Google haya certificado en el lanzamiento.",
+            "Para que el uso sea responsable, una organización debe gobernar el acceso a datos personales, definir métricas uniformes y mantener versiones de consultas. Los usuarios pueden necesitar ayuda para interpretar intervalos de confianza y relaciones engañosas. Una interfaz conversacional facilita el acceso, pero no elimina la obligación de validar la calidad de los datos que producen las conclusiones."
+          ]
+        },
+        {
+          "heading": "Disponibilidad e integración de las funciones",
+          "kind": "report",
+          "paragraphs": [
+            "El blog del 14 de septiembre anuncia seis funciones nuevas en BigQuery e indica que están disponibles dentro de Conversational Analytics. También remite a documentación técnica y a un repositorio de habilidades de Google para flujos con agentes. Los desarrolladores pueden revisar ahí requisitos concretos, argumentos de las funciones y tipos de tablas; no deben asumir que cualquier consulta compleja es válida sin cambios.",
+            "La publicación no ofrece un precio único por informe producido ni detalla los cargos de cada configuración posible. El costo real depende de la facturación del entorno BigQuery, de la cantidad de datos analizada y de las operaciones utilizadas. Quien vaya a lanzar un servicio debe revisar cuotas, permisos y condiciones vigentes en su cuenta, especialmente para conjuntos de datos empresariales sensibles."
+          ]
+        },
+        {
+          "heading": "Cómo comprobar la utilidad sin fiarse de un demo",
+          "kind": "practical",
+          "paragraphs": [
+            "Una evaluación reproducible puede comenzar con un conjunto histórico cuya evolución ya se conoce. Se formulan preguntas específicas, se ejecutan las seis funciones cuando corresponda y se contrastan salidas con cálculos de referencia. Es recomendable modificar ventanas temporales y segmentos para comprobar la sensibilidad de los resultados. Los hallazgos deben citar las tablas de origen, la consulta, el rango temporal y las limitaciones estadísticas.",
+            "Si se integra un agente, conviene impedir que ejecute consultas ilimitadas o lea bases fuera de su autorización. Se pueden usar credenciales de solo lectura, límites de gasto, registros de llamadas a herramientas y revisión humana para informes que vayan a afectar clientes o decisiones importantes. La facilidad de preguntar por lenguaje natural no debe convertirse en acceso indiscriminado a información corporativa."
+          ]
+        },
+        {
+          "heading": "Perspectiva Gazette y próximos pasos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: BigQuery se mueve hacia una plataforma donde las herramientas de análisis no solo almacenan registros, sino que permiten interrogarlos con procedimientos estadísticos reutilizables. Para sistemas de agentes, la diferencia frente a un chat conectado a SQL es que ahora aparecen capacidades estructuradas de detección y explicación que pueden encadenarse. Ese avance puede ser importante en productos de inteligencia empresarial, pero exige separar claramente cálculo, inferencia y narrativa.",
+            "Para evaluar la innovación habrá que seguir documentación, pruebas independientes de exactitud, costo por análisis, controles de acceso y experiencias reales de clientes. Un resultado convincente en una demostración no garantiza que una organización pueda inferir causalidad sin expertos. El evento merece una noticia propia por introducir seis herramientas concretas el 14 de septiembre de 2026."
+          ]
+        }
+      ],
+      "executiveSummary": "BigQuery incorpora seis funciones para explicar cambios, explorar relaciones y estimar efectos sobre datos existentes. Google las integra con Conversational Analytics; su utilidad depende de escoger bien los datos y validar los supuestos de cada análisis.",
+      "finalSummary": "El 14 de septiembre es un hito en análisis aumentado para empresas: disponer de herramientas estadísticas reutilizables dentro de consultas y agentes. La transparencia metodológica continúa siendo imprescindible.",
+      "analysis": "Análisis Gazette: una IA que usa procedimientos estructurados puede fundamentar mejor sus respuestas, pero una salida numérica por sí sola no demuestra una interpretación causal correcta.",
+      "watch": "Disponibilidad por proyecto, restricciones, facturación, documentación, evaluaciones externas y adopción real.",
+      "technicalDetails": [
+        {
+          "label": "Cantidad",
+          "value": "6 funciones TVF"
+        },
+        {
+          "label": "Modelado de causalidad",
+          "value": "AI.CAUSAL_EFFECT con referencia contrafactual"
+        },
+        {
+          "label": "Integración",
+          "value": "BigQuery y Conversational Analytics"
+        }
+      ],
+      "availability": {
+        "status": "Funciones anunciadas y disponibles en Conversational Analytics según Google",
+        "platforms": [
+          "Google BigQuery",
+          "Conversational Analytics"
+        ],
+        "regions": [
+          "Según configuración y regiones de BigQuery"
+        ],
+        "requirements": [
+          "Permisos adecuados sobre datasets",
+          "Confirmar documentación, quotas y precios"
+        ],
+        "notes": [
+          "No equivale a acceso gratuito universal."
+        ]
+      },
+      "limitations": [
+        "Correlación no es causalidad.",
+        "Estimaciones causales dependen de supuestos y línea base.",
+        "No se ofreció una tarifa universal por análisis."
+      ],
+      "practicalAdvice": [
+        "Versionar SQL, parámetros y datos utilizados.",
+        "Comparar resultados con cálculos de referencia.",
+        "Restringir acceso de agentes a tablas autorizadas.",
+        "Validar explicaciones causales antes de decisiones importantes."
+      ],
+      "usefulFacts": [
+        "Funciones anunciadas: AI.KEY_DRIVERS, AI.CAUSAL_EFFECT, ML.CORRELATION, ML.DETECT_CHANGE_POINTS, ML.TREND y ML.SEASONALITY.",
+        "Google demuestra encadenamiento sobre datos públicos de Austin Bikeshare.",
+        "Se publicaron habilidades para agentes en un repositorio de Google."
+      ],
+      "curiosities": [
+        "La demostración combina tres TVF para seguir un cambio en viajes de bicicletas.",
+        "Las salidas tabulares permiten separar el cálculo de la explicación en lenguaje natural."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-14",
+          "label": "BigQuery anuncia seis funciones de análisis aumentado."
+        }
+      ]
+    },
+    {
       "id": "openai-gpt-live-1-api-2026-09-10",
       "eventKey": "openai-gpt-live-1-api-2026-09-10",
       "articleVersion": 2,
@@ -5394,7 +5573,7 @@
     {
       "date": "2026-09-14",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-09-15",

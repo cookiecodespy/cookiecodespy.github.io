@@ -306,7 +306,7 @@
     {
       "date": "2026-09-14",
       "archiveStatus": "partial",
-      "verifiedArticles": 1,
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "google-ai-cloud"
@@ -319,14 +319,14 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": 1,
-        "published": 1,
+        "published": 2,
         "discarded": 0,
         "unresolved": 1
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Dataflow validado y publicado. BigQuery analytics TVFs detectado como candidato independiente; no se ha realizado doble pasada ni revisado todas las fuentes."
+      "notes": "Dataflow y BigQuery publicadas en Reporter V2; otras fuentes y segunda revisión pendientes. Fecha parcial."
     },
     {
       "date": "2026-09-15",

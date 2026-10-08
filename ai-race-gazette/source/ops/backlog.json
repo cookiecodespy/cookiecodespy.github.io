@@ -389,12 +389,16 @@
       "phase": "P05",
       "title": "BigQuery anuncia seis funciones de análisis aumentado para agentes",
       "priority": "P0",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "date": "2026-09-14",
       "acceptance": "Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias.",
       "evidence": [
         "https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs"
+      ],
+      "verifiedEvidence": [
+        "https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/google-bigquery-augmented-analytics-six-functions-2026-09-14"
       ]
     },
     {
