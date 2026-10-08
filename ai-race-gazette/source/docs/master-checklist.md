@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 58 tareas; 21 completadas; 3 en curso; 33 pendientes o bloqueadas; 1 descartadas con razón.
+- 6 fases; 61 tareas; 23 completadas; 5 en curso; 32 pendientes o bloqueadas; 1 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -42,7 +42,7 @@
   - Evidencia: https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/
 - [ ] **H-0814-GATE** · P0 · blocked — Cerrar estados 8–14 con doble auditoría
   - Criterio: Todos los candidatos resueltos, evidencia de dos pasadas, cobertura y RSS consistentes
-  - Depende de: H-0814-SOURCES, H-0814-GOOGLE, H-SEP08-MISTRAL, H-SEP10-GPTLIVE
+  - Depende de: H-0814-SOURCES, H-0814-GOOGLE, H-SEP08-MISTRAL, H-SEP10-GPTLIVE, H-SEP12-13, H-GOOGLE-DEEPMIND-0814
 - [ ] **H-GOOGLE-SEP09-AIPLANS** · P1 · queued — Evaluar Google AI plans: nuevas herramientas y acceso
   - Criterio: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
   - Fecha investigada: 2026-09-09
@@ -57,7 +57,7 @@
 - [x] **H-GOOGLE-SEP08-GTIG** · P0 · done — Google GTIG: informe de amenazas con agentes (8 Sep)
   - Criterio: Informe Reporter V2 extenso, fuente oficial, recomendaciones defensivas y fecha correcta.
   - Evidencia: https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai
-- [ ] **H-GOOGLE-DEEPMIND-0814** · P1 · queued — Segunda revisión de Google DeepMind 8–14 septiembre
+- [ ] **H-GOOGLE-DEEPMIND-0814** · P1 · in_progress — Segunda revisión de Google DeepMind 8–14 septiembre
   - Criterio: Revisar todas las fechas en blogs, papers y repositorios DeepMind, registrar materialidad/duplicados y descartar con justificación.
 - [x] **H-GOOGLE-SEP14-BIGQUERY** · P0 · done — BigQuery anuncia seis funciones de análisis aumentado para agentes
   - Criterio: Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias.
@@ -78,12 +78,25 @@
 - [ ] **H-OPENAI-SEP11-GPT-MIGRATION** · P0 · queued — ChatGPT anuncia retiro futuro de custom GPTs y migración a plugins
   - Criterio: Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.
   - Fecha investigada: 2026-09-11
-- [ ] **H-SEP12-13** · P0 · queued — Cobertura exhaustiva del 12 y 13 de septiembre
+- [ ] **H-SEP12-13** · P0 · in_progress — Cobertura exhaustiva del 12 y 13 de septiembre
   - Criterio: Fuentes por día, discovery abierto y pasada inversa; publicar V2 o registrar sin novedades con evidencia.
 - [ ] **H-SEP08-11-REVERSE** · P0 · queued — Segunda pasada por compañías del 8 al 11 septiembre
   - Criterio: Revisar laboratorios, startups, open source, chips, modelos, seguridad y producto; resolver pendientes.
 - [ ] **H-SEP14-REVERSE** · P0 · queued — Segunda pasada del 14 septiembre después de BigQuery y Dataflow
   - Criterio: Confirmar otros anuncios relevantes del día y registrar revisados/descartes antes de cerrar.
+- [ ] **H-SEP12-REWEIGHT** · P1 · queued — Evaluar ReWeight de robótica (12 Sep)
+  - Criterio: Corroborar arXiv, reproducibilidad y valor editorial; Reporter V2 o descarte con evidencia.
+  - Fecha investigada: 2026-09-12
+- [x] **H-SEP08-ALPHAGENOME** · P0 · done — Google DeepMind AlphaGenome Atlas
+  - Criterio: Reportaje V2, fuente primaria, límites clínicos y sincronización de publicación.
+  - Fecha investigada: 2026-09-08
+  - Commit: `ff2d3e0775cd8191362f54684df3fb9b052e918f`
+  - Evidencia: https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/
+- [x] **H-SEP12-ANTHROPIC** · P0 · done — Dario Amodei: evaluación independiente
+  - Criterio: Reportaje V2 sobre propuesta con fecha y compromiso diferenciados, CI verde.
+  - Fecha investigada: 2026-09-12
+  - Commit: `ff2d3e0775cd8191362f54684df3fb9b052e918f`
+  - Evidencia: https://darioamodei.com/post/we-must-pace-the-frontier
 
 ## P06 — 15–21 septiembre: reconstrucción Reporter V2
 
