@@ -404,15 +404,34 @@
     {
       "id": "H-GOOGLE-SEP09-MAPL",
       "phase": "P05",
-      "title": "Google y NASA/JPL: MAPL-EMIT detecta emisiones de metano",
+      "title": "MAPL‑EMIT publicado en fecha original del 1 de septiembre",
       "priority": "P0",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
-      "date": "2026-09-09",
+      "date": "2026-09-01",
       "acceptance": "Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias.",
       "evidence": [
         "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space/"
-      ]
+      ],
+      "verifiedEvidence": [
+        "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+        "https://pubmed.ncbi.nlm.nih.gov/42679027/",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/google-mapl-emit-methane-satellite-2026-09-01"
+      ],
+      "notes": "Fuente Research Google fechada 1 Sep; resumen Google del 9 Sep no se debe duplicar."
+    },
+    {
+      "id": "QA-SEP01-REOPEN",
+      "phase": "P10",
+      "title": "Reauditar 1 Sep por omisión de MAPL‑EMIT tras cierre legacy",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Editor-in-Chief / Historical Backfill",
+      "acceptance": "Rehacer checklist completo y segunda pasada de 1 Sep, resolver omisiones y volver a cerrar el día solo con evidencia.",
+      "evidence": [
+        "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/"
+      ],
+      "date": "2026-09-01"
     }
   ]
 }

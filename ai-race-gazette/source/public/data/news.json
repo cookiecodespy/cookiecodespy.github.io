@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T12:54:24.486Z",
+  "updatedAt": "2026-10-08T12:57:50.288Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -5206,6 +5206,208 @@
       "watch": "Latencia real, precisión por idioma y disponibilidad fuera de productos de Meta."
     },
     {
+      "id": "google-mapl-emit-methane-satellite-2026-09-01",
+      "eventKey": "google-mapl-emit-methane-satellite-2026-09-01",
+      "articleVersion": 2,
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Google",
+      "product": "MAPL‑EMIT / Google Research + NASA JPL",
+      "title": "MAPL‑EMIT: Google y NASA usan IA para localizar emisiones de metano desde satélites",
+      "summary": "Google Research presentó el 1 de septiembre MAPL‑EMIT, un modelo de visión para detectar columnas de metano en datos del instrumento EMIT de la NASA. El equipo comunicó más de 23.000 detecciones adicionales y publicó datos y herramientas abiertas.",
+      "tags": [
+        "Investigación",
+        "Ciencia",
+        "Clima",
+        "Modelos"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Ilustración editorial conceptual sobre observación satelital; no es una fotografía de datos EMIT.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado del siglo XIX: un observatorio elevado y un satélite simbólico estudian la Tierra, con finas líneas de espectro detectando columnas invisibles de gas; tinta sepia y negro, sin texto o marcas falsas, no simular datos reales.",
+      "source": {
+        "name": "Google Research · Mapping global methane emissions from space with deep learning",
+        "url": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+        "publishedAt": "2026-09-01"
+      },
+      "relatedSources": [
+        {
+          "name": "PNAS · Global monitoring of methane point sources using deep learning on hyperspectral radiance measurements from EMIT",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42679027/",
+          "publishedAt": "2026-09-08"
+        },
+        {
+          "name": "Google · A new deep learning model maps global methane emissions from space",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space/",
+          "publishedAt": "2026-09-09"
+        }
+      ],
+      "keyPoints": [
+        "Investigación original de Google fechada el 1 de septiembre.",
+        "Modelo de visión sobre espectros de radiancia del sensor EMIT.",
+        "Google reportó un 50 % más detecciones que expertos y más de 23.000 columnas adicionales, según su comparación."
+      ],
+      "quickTakeaways": [
+        "El anuncio técnico original data del 1 Sep; la nota del 9 es una recapitulación.",
+        "MAPL‑EMIT combina información espacial y espectral.",
+        "Las 3,6 millones de columnas simuladas corresponden al entrenamiento descrito.",
+        "Las 23.000 detecciones adicionales son una cifra del equipo investigador.",
+        "Google liberó datos y herramientas para análisis posterior."
+      ],
+      "body": [
+        "Investigadores vinculados a Google y NASA/JPL aplicaron aprendizaje profundo a espectros de un satélite para hacer más escalable la identificación de fuentes de metano."
+      ],
+      "sections": [
+        {
+          "heading": "El anuncio verdadero fue el 1 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "Google Research publicó el 1 de septiembre de 2026 una explicación técnica de MAPL‑EMIT, un sistema de aprendizaje profundo para localizar columnas de metano en imágenes espectrales tomadas por el instrumento EMIT de la NASA. El estudio apareció también en PNAS y recibió un resumen de Google el 9 de septiembre. Para una cronología rigurosa corresponde distinguir la primera divulgación técnica, la fecha editorial de la revista y la recapitulación posterior; ninguna de ellas debe confundirse con un segundo lanzamiento independiente.",
+            "El modelo fue desarrollado por investigadores vinculados a Google y al Jet Propulsion Laboratory de la NASA, entre otros equipos científicos. Su objetivo es ayudar a localizar focos de emisión y estimar señales de gas a gran escala. Detectar una posible columna no equivale a identificar automáticamente a un responsable ni a medir sin incertidumbre todas las emisiones de una instalación."
+          ]
+        },
+        {
+          "heading": "Qué observa realmente el instrumento EMIT",
+          "kind": "technical",
+          "paragraphs": [
+            "EMIT se diseñó para estudiar la superficie terrestre mediante espectroscopía de imágenes. Cada píxel contiene información de numerosas bandas de luz que permiten distinguir señales asociadas con compuestos como el metano. Los investigadores aprovechan esa huella espectral para buscar emisiones en condiciones donde la señal puede quedar oculta por ruido, terreno y variación atmosférica.",
+            "La propuesta de MAPL‑EMIT es combinar información espacial con el espectro de radiancia completo mediante una arquitectura de visión tipo transformer. En lugar de interpretar cada ubicación sin contexto, el sistema aprovecha relaciones dentro de la escena. Ese diseño puede ayudar a identificar señales débiles; aun así, el desempeño depende de la calidad del sensor, la cobertura, el fondo observado y los procedimientos de validación."
+          ]
+        },
+        {
+          "heading": "Entrenamiento con millones de simulaciones",
+          "kind": "technical",
+          "paragraphs": [
+            "Google afirma que el sistema se entrenó utilizando aproximadamente 3,6 millones de columnas de metano simuladas mediante métodos físicos. Esas simulaciones buscan exponer al modelo a condiciones diversas sin depender solo de anotaciones manuales escasas. El entrenamiento sintético puede ampliar cobertura de casos, pero su valor depende de que las simulaciones representen suficientemente bien las características de datos reales.",
+            "La técnica no elimina la necesidad de comprobaciones independientes. Los modelos de teledetección pueden confundir fenómenos visuales o espectrales y deben evaluarse por zonas, condiciones atmosféricas y sensores. Para entender una cifra de precisión hay que conocer la construcción del conjunto de prueba, sus etiquetas y las incertidumbres de las emisiones reportadas."
+          ]
+        },
+        {
+          "heading": "Qué significan las cifras difundidas",
+          "kind": "technical",
+          "paragraphs": [
+            "En el resumen del 9 de septiembre, Google comunicó que MAPL‑EMIT detectó un 50 % más de columnas que expertos humanos en la comparación presentada e identificó más de 23.000 columnas adicionales. También afirmó encontrar señales en 24 de los 25 vertederos más emisores considerados por el estudio. Son resultados atribuidos al equipo y no un conteo universal de todas las emisiones de metano del planeta.",
+            "La explicación técnica original menciona una recuperación del 84 % de columnas anotadas por expertos bajo la evaluación descrita. Ese número mide sensibilidad en una referencia concreta y no significa 84 % de exactitud en cualquier territorio o momento. Diferenciar precisión, recuperación y número de detecciones es fundamental cuando una noticia científica se lee fuera de su contexto metodológico."
+          ]
+        },
+        {
+          "heading": "Por qué el metano importa para la IA aplicada",
+          "kind": "report",
+          "paragraphs": [
+            "El metano contribuye significativamente al calentamiento global y tiene un potencial de calentamiento elevado frente al dióxido de carbono en horizontes de cien años. Identificar emisiones concentradas puede ayudar a dirigir inspecciones y reparaciones, por ejemplo en sistemas energéticos o instalaciones de residuos. El modelo no repara fugas: proporciona información que investigadores y operadores podrían utilizar para decidir dónde mirar primero.",
+            "El valor competitivo de la IA en este caso no está en un chatbot o benchmark general, sino en convertir grandes conjuntos de observaciones satelitales en hallazgos útiles. Es un ejemplo de modelos especializados aplicados a ciencia ambiental. Aun con detección mejorada, la cuantificación de la fuente y las acciones de mitigación requieren datos adicionales, inspección y mecanismos institucionales."
+          ]
+        },
+        {
+          "heading": "Datos y herramientas abiertos",
+          "kind": "report",
+          "paragraphs": [
+            "Google indicó que liberó una base global de columnas en Earth Engine y una aplicación para explorarlas. También señala la disponibilidad del modelo entrenado y conjuntos de datos sintéticos en Kaggle, junto con herramientas de inferencia en GitHub. Estas piezas pueden permitir que investigadores revisen detecciones y ejecuten experimentos sin reconstruir todo el trabajo desde cero.",
+            "Acceso abierto no implica resultados automáticamente reproducibles en cualquier máquina o uso operativo. Hay que revisar dependencias, licencia, requisitos de cómputo, versión de los datos y documentación sobre incertidumbres. Quien incorpore una detección a una política pública debería conservar la fuente original, la fecha de observación y un método de verificación."
+          ]
+        },
+        {
+          "heading": "La cronología científica detrás del mismo evento",
+          "kind": "report",
+          "paragraphs": [
+            "La página de investigación de Google lleva fecha 1 de septiembre de 2026. El registro bibliográfico del artículo de PNAS consigna publicación de septiembre y una fecha de artículo del día 1; el resumen de producto de Google apareció el día 9. En términos editoriales, son distintas manifestaciones de un solo acontecimiento científico. Publicarlas como tres descubrimientos nuevos distorsionaría la carrera de IA y produciría duplicados.",
+            "Por eso este informe se archiva el 1 de septiembre y se enlaza con la referencia bibliográfica y la nota posterior. El hallazgo también muestra que un día previamente marcado completo puede necesitar reapertura cuando una segunda auditoría encuentra una omisión material. Una hemeroteca profesional debe priorizar esa corrección por encima de conservar artificialmente un indicador verde."
+          ]
+        },
+        {
+          "heading": "Qué hacer con las detecciones",
+          "kind": "practical",
+          "paragraphs": [
+            "Las instituciones pueden empezar explorando el conjunto de datos abierto y comparando una zona conocida con observaciones independientes. Es recomendable comprobar coordenadas, fecha, intensidad de la señal y condiciones atmosféricas antes de interpretarla como emisión persistente. Los resultados de un satélite pueden orientar inspecciones, pero no reemplazar mediciones sobre el terreno en decisiones sancionatorias o contratos.",
+            "Para equipos de investigación, comparar errores por tipo de terreno, niveles de señal y regiones ayuda a evaluar sesgos. Una mejora relativa sobre un método manual debe describirse con su denominador, no simplemente como cobertura perfecta. Es útil publicar también falsos positivos, casos no detectados y actualizaciones de modelos, de modo que otros grupos puedan estimar su utilidad real."
+          ]
+        },
+        {
+          "heading": "Lectura Gazette y lo que falta",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: MAPL‑EMIT representa la dimensión científica de la carrera de IA: sistemas que amplían la capacidad de observar fenómenos que el análisis humano a escala global tiene dificultades para examinar. La investigación combina instrumentación espacial, datos simulados y modelos de visión, lo que hace más importante la colaboración entre disciplinas que la marca de un modelo generalista.",
+            "El progreso futuro deberá evaluarse con validaciones externas, nuevas zonas de observación y acciones concretas de mitigación. La noticia no afirma que todas las columnas detectadas sean fugas nuevas en septiembre ni que Google haya reducido emisiones directamente. La contribución comunicada es una herramienta de detección y un conjunto de datos que pueden mejorar la priorización de investigaciones."
+          ]
+        }
+      ],
+      "executiveSummary": "MAPL‑EMIT usa un modelo visual entrenado con simulaciones para interpretar datos del instrumento EMIT y localizar señales de metano. Los resultados comunicados por Google son significativos, aunque requieren contexto metodológico y validación independiente para aplicarlos.",
+      "finalSummary": "La fecha correcta para el primer anuncio técnico es el 1 de septiembre de 2026. Es un hito de IA para ciencia climática cuyo impacto dependerá del uso responsable de datos y nuevas validaciones.",
+      "analysis": "Análisis Gazette: este caso muestra cómo IA especializada puede ampliar observación científica, sin sustituir inspección física ni decisiones humanas sobre acciones de mitigación.",
+      "watch": "Calidad de detecciones, errores por región, nuevas validaciones independientes y aplicaciones reales en mitigación.",
+      "technicalDetails": [
+        {
+          "label": "Instrumento",
+          "value": "EMIT (NASA)"
+        },
+        {
+          "label": "Modelo",
+          "value": "MAPL‑EMIT, vision transformer"
+        },
+        {
+          "label": "Entrenamiento",
+          "value": "3,6 millones de columnas simuladas, según Google"
+        },
+        {
+          "label": "Resultados comunicados",
+          "value": "Más de 23.000 detecciones adicionales; recall de 84% en evaluación de Google"
+        }
+      ],
+      "availability": {
+        "status": "Investigación publicada con recursos abiertos",
+        "platforms": [
+          "Google Earth Engine",
+          "Kaggle",
+          "GitHub"
+        ],
+        "regions": [
+          "Datos de observaciones globales con cobertura instrumental variable"
+        ],
+        "requirements": [
+          "Revisar condiciones de datasets, software y atribución"
+        ],
+        "notes": [
+          "Detecciones satelitales no equivalen a inspecciones directas de instalaciones."
+        ]
+      },
+      "limitations": [
+        "Las cifras de resultados proceden del grupo investigador.",
+        "No todas las emisiones pueden observarse en cualquier condición atmosférica.",
+        "Una detección no determina automáticamente responsabilidad de una instalación."
+      ],
+      "practicalAdvice": [
+        "Cruzar señales con otras mediciones y fechas.",
+        "Preservar metadatos de observación e incertidumbre.",
+        "Reportar falsos positivos y sensibilidad al comparar métodos."
+      ],
+      "usefulFacts": [
+        "Google Research publicó el análisis el 1 de septiembre.",
+        "La revista PNAS consigna el artículo científico en septiembre.",
+        "El resumen del 9 no debe contarse como lanzamiento separado."
+      ],
+      "curiosities": [
+        "EMIT nació para investigar minerales y también permite detectar gases atmosféricos.",
+        "Una parte sustancial del entrenamiento se realizó con datos simulados físicamente."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Divulgación técnica original de MAPL‑EMIT."
+        },
+        {
+          "date": "2026-09-08",
+          "label": "Fecha bibliográfica de publicación PNAS."
+        },
+        {
+          "date": "2026-09-09",
+          "label": "Resumen posterior de Google, no nuevo lanzamiento."
+        }
+      ]
+    },
+    {
       "id": "gemini-agentic-video",
       "eventKey": "gemini-agentic-video",
       "date": "2026-09-01",
@@ -5493,8 +5695,8 @@
   "dailyCoverage": [
     {
       "date": "2026-09-01",
-      "status": "complete",
-      "verifiedArticles": 12,
+      "status": "partial",
+      "verifiedArticles": 13,
       "audit": "history-audit-2026-09-01-07.md",
       "reviewedAt": "2026-10-07"
     },

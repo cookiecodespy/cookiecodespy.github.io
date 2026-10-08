@@ -21,23 +21,23 @@
   "days": [
     {
       "date": "2026-09-01",
-      "archiveStatus": "complete",
-      "verifiedArticles": 12,
+      "archiveStatus": "partial",
+      "verifiedArticles": 13,
       "auditMode": "legacy-block-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": null,
-        "published": 12,
+        "found": 13,
+        "published": 13,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": "history-audit-2026-09-01-07.md",
       "reviewedAt": "2026-10-07",
       "backboneReauditRequired": true,
-      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+      "notes": "REOPENED after second-source discovery: MAPL‑EMIT original 1 Sep omitted from legacy close. Published now, day remains partial until renewed full research audit. Sep 9 Google recap not counted as new launch."
     },
     {
       "date": "2026-09-02",
