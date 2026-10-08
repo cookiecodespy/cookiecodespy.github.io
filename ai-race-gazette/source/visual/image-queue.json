@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedFromNewsUpdatedAt": "2026-10-08T12:57:50.288Z",
+  "generatedFromNewsUpdatedAt": "2026-10-08T13:01:20.524Z",
   "generatedAt": "2026-10-08",
   "purpose": "Cola editorial del Visual Desk. No bloquea Newsroom y no es fuente factual.",
   "statusDefinitions": {
@@ -218,6 +218,32 @@
         "safeCenterCrop": true
       },
       "publishRule": "Revisar calidad y factualidad antes de reemplazar fallback; imagen conceptual no implica fotografía."
+    },
+    {
+      "articleId": "openai-habitat-storage-python-rust-scale-2026-09-11",
+      "eventKey": "openai-habitat-storage-python-rust-scale-2026-09-11",
+      "date": "2026-09-11",
+      "company": "OpenAI",
+      "product": "Habitat / infraestructura Python-Rust",
+      "title": "OpenAI explica Habitat: 70 millones de solicitudes por segundo y una migración asistida por IA de Python a Rust",
+      "currentImage": "assets/globe.webp",
+      "currentAssetId": "gazette-global-infrastructure-v1",
+      "currentReuseCount": 3,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "brief-ready",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-11/openai-habitat-storage-python-rust-scale-2026-09-11.webp",
+      "brief": "Grabado de periódico industrial: red de archivos de datos gigantescos conectados mediante telégrafos y engranajes alrededor del globo, al fondo dos motores analíticos de distintas generaciones; sepia, sin marcas ni interfaces falsas.",
+      "sourceSummary": "OpenAI publicó un informe técnico sobre Habitat, su plataforma de almacenamiento para ChatGPT, Codex y otros productos. Describe latencias de asyncio, problemas de conexiones y una migración a Rust con Codex y GPT‑5.5; las cifras son del proveedor.",
+      "artDirection": "Grabado de prensa antigua, tinta negra y sepia, papel envejecido, sin texto o logos falsos y sin representar ilustración como fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "Revisión factual y visual obligatoria antes de sustituir arte."
     },
     {
       "articleId": "google-bigquery-augmented-analytics-six-functions-2026-09-14",
@@ -1736,7 +1762,7 @@
       "title": "Waymo abre viajes públicos en Denver, San Diego y Tampa",
       "currentImage": "assets/globe.webp",
       "currentAssetId": "gazette-global-infrastructure-v1",
-      "currentReuseCount": 2,
+      "currentReuseCount": 3,
       "articleImageStatus": "legacy-unclassified",
       "queuePriority": "P3",
       "productionStatus": "brief-ready",
@@ -1762,7 +1788,7 @@
       "title": "TCS planea un campus de centros de datos de IA de hasta 1 GW en Hyderabad",
       "currentImage": "assets/globe.webp",
       "currentAssetId": "gazette-global-infrastructure-v1",
-      "currentReuseCount": 2,
+      "currentReuseCount": 3,
       "articleImageStatus": "legacy-unclassified",
       "queuePriority": "P3",
       "productionStatus": "brief-ready",
@@ -1830,8 +1856,8 @@
         "safeCenterCrop": true
       },
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos.",
-      "completedAt": "2026-10-08",
       "completedAssetId": "story-claude-haiku-5-5-engraving-v1",
+      "completedAt": "2026-10-08",
       "producedBy": "Visual Desk — original vector engraving"
     }
   ]
