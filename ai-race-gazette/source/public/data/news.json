@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T15:30:00.000Z",
+  "updatedAt": "2026-10-08T15:55:00.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -3498,363 +3498,6 @@
       ]
     },
     {
-      "id": "mistral-cloudera-sovereign-ai-2026-09-10",
-      "eventKey": "mistral-cloudera-sovereign-ai-2026-09-10",
-      "articleVersion": 2,
-      "date": "2026-09-10",
-      "announcedAt": "2026-09-10",
-      "coveredAt": "2026-10-08",
-      "verifiedAt": "2026-10-08",
-      "company": "Mistral",
-      "product": "Alianza con Cloudera para IA soberana",
-      "title": "Mistral y Cloudera se unen: modelos personalizados sobre datos empresariales sin ceder el control",
-      "summary": "La colaboración anunciada el 10 de septiembre busca integrar modelos Mistral en entornos híbridos, locales y aislados a través de Cloudera, y facilitar adaptación con datos propios. Los detalles de disponibilidad y precios por instalación siguen abiertos.",
-      "tags": [
-        "Empresa",
-        "Agentes",
-        "Infraestructura",
-        "Datos",
-        "Alianzas"
-      ],
-      "image": "assets/mistral.webp",
-      "imageAlt": "Grabado ilustrativo de sistemas tecnológicos, no instalaciones reales de Mistral o Cloudera.",
-      "imageCredit": "Ilustración editorial generada con IA; no representa instalaciones reales.",
-      "imageStatus": "needs-specific-art",
-      "imageBrief": "Ilustración sepia de antiguos archivos de datos conectados mediante engranajes a una máquina de inteligencia ajustable, con puertas cerradas como símbolo de nube privada y red aislada; sin logos ni fotografías simuladas.",
-      "source": {
-        "name": "Mistral · Cloudera and Mistral Partner to Bring Specialized, Sovereign Intelligence to Enterprise Data",
-        "url": "https://mistral.ai/news/mistral-x-cloudera/",
-        "publishedAt": "2026-09-10"
-      },
-      "keyPoints": [
-        "Modelos integrados en infraestructura híbrida de Cloudera.",
-        "El anuncio contempla nubes privadas/públicas, instalaciones locales y entornos air-gapped.",
-        "Se busca personalizar modelos con información empresarial manteniendo el control del cliente."
-      ],
-      "quickTakeaways": [
-        "Es una alianza de integración, no un modelo nuevo.",
-        "La infraestructura y los datos pueden permanecer bajo control del cliente.",
-        "Los 30 exabytes citados describen escala de Cloudera, no datos cedidos a Mistral.",
-        "La disponibilidad concreta debe verificarse por entorno y contrato."
-      ],
-      "body": [
-        "Mistral y Cloudera anunciaron una alianza para llevar modelos de IA personalizables a entornos corporativos donde residen datos críticos y restricciones de operación."
-      ],
-      "sections": [
-        {
-          "heading": "La nueva alianza",
-          "kind": "report",
-          "paragraphs": [
-            "El 10 de septiembre de 2026 Mistral y Cloudera anunciaron una asociación orientada a llevar modelos de IA personalizables a entornos donde las empresas conservan control de datos e infraestructura. La colaboración se dirige especialmente a actividades reguladas, incluidas finanzas, manufactura y telecomunicaciones. La noticia es un acuerdo de integración y trabajo conjunto, no un lanzamiento confirmado de un nuevo modelo general ni la apertura universal de un servicio gratuito. Las capacidades anunciadas deben evaluarse según lo que llegue efectivamente a cada plataforma y cliente."
-          ]
-        },
-        {
-          "heading": "Inferencia dentro de los límites del cliente",
-          "kind": "report",
-          "paragraphs": [
-            "Una de las dos líneas centrales del anuncio es integrar modelos de Mistral con la plataforma híbrida de Cloudera. El objetivo es permitir despliegues en nube privada, nube pública, infraestructura local y entornos completamente aislados de Internet, conocidos como air-gapped. Esa flexibilidad tiene valor cuando una empresa debe limitar dónde se procesan datos sensibles o no puede depender de un servicio externo conectado continuamente. El anuncio describe la dirección de la integración, sin proporcionar una matriz completa de fechas de disponibilidad, regiones, versiones y requisitos para cada arquitectura."
-          ]
-        },
-        {
-          "heading": "Modelos especializados con datos propios",
-          "kind": "report",
-          "paragraphs": [
-            "La segunda línea de colaboración apunta al entrenamiento o adaptación de modelos con grandes cantidades de información empresarial. Cloudera administra plataformas de datos donde pueden existir registros históricos, decisiones de crédito, procesos industriales y telemetría de redes. La propuesta es transformar ese conocimiento en modelos especializados, manteniendo el control del cliente sobre los datos y, según los términos concretos, sobre la inteligencia obtenida. No todo dato histórico es automáticamente apropiado para entrenar; son necesarios controles de calidad, permisos, minimización de datos y mediciones de resultados."
-          ]
-        },
-        {
-          "heading": "Qué significa soberanía en términos técnicos",
-          "kind": "technical",
-          "paragraphs": [
-            "El comunicado presenta soberanía como control del dato, del modelo, de la infraestructura y del ciclo de operación. Para una organización, ello requiere revisar residencia, aislamiento, acceso de administradores, gestión de claves, opciones de auditoría y el comportamiento de actualizaciones. Un despliegue en red aislada no se vuelve automáticamente seguro si el modelo o sus herramientas tienen permisos excesivos. La soberanía debe demostrarse mediante arquitectura, contratos, registros y pruebas, no por aparecer en un nombre comercial. Los pesos abiertos ofrecen opciones, pero licencias y sistemas de soporte siguen importando."
-          ]
-        },
-        {
-          "heading": "El dato de 30 exabytes, con cuidado",
-          "kind": "report",
-          "paragraphs": [
-            "En el anuncio Mistral cita 30 exabytes de datos gestionados por clientes que utilizan la plataforma de Cloudera. La cifra dimensiona la presencia de esa infraestructura, pero no significa que Mistral reciba o procese todo ese volumen, ni que todos los clientes hayan aprobado entrenamiento con sus registros. Es una afirmación de escala pronunciada por la compañía en el contexto de la alianza. Las decisiones de usar datos de cada empresa deben tratarse separadamente, bajo contratos, autorizaciones y configuraciones específicas."
-          ]
-        },
-        {
-          "heading": "Por qué los sectores regulados aparecen primero",
-          "kind": "report",
-          "paragraphs": [
-            "Bancos, operadores de telecomunicaciones e industrias mantienen sistemas que no pueden trasladarse sin más a un servicio externo. Pueden requerir registros de auditoría, cumplimiento jurisdiccional y continuidad en redes aisladas. Por eso una integración entre modelos y plataforma de datos empresarial tiene una propuesta de valor distinta de la de un chatbot de consumo. Su éxito dependerá de la robustez de conectores, protección de datos y coste de administrar infraestructuras distintas sin multiplicar las operaciones de seguridad y mantenimiento."
-          ]
-        },
-        {
-          "heading": "Qué verificar antes de contratar",
-          "kind": "practical",
-          "paragraphs": [
-            "Un responsable técnico debería solicitar una matriz de entornos soportados, versiones de modelos, licencias de pesos, requerimientos de hardware y soporte para redes aisladas. También debe confirmar dónde quedan los datos de ajuste, quién controla claves, cómo se gestionan copias y cuánto costaría cambiar de proveedor. Es aconsejable ejecutar una prueba con datos de bajo riesgo antes de usar expedientes sensibles y comparar precisión, latencia, observabilidad y comportamiento bajo fallos. Un anuncio de alianza no equivale a una certificación independiente de cada integración posible."
-          ]
-        },
-        {
-          "heading": "El reto de la personalización",
-          "kind": "technical",
-          "paragraphs": [
-            "Entrenar o adaptar un modelo con datos institucionales puede mejorar tareas especializadas, pero también introduce riesgos de memorizar información sensible, aprender sesgos históricos o producir respuestas convincentes pero incorrectas. Una organización debe separar recuperación documental, ajuste supervisado y entrenamiento extensivo, porque resuelven problemas distintos. La afirmación de poder controlar el modelo no sustituye una evaluación específica de errores, retención y fugas. Además, conservar versiones y datos de entrenamiento es fundamental para reproducir resultados cuando el comportamiento cambie."
-          ]
-        },
-        {
-          "heading": "Análisis Gazette: más allá del catálogo de modelos",
-          "kind": "analysis",
-          "paragraphs": [
-            "La alianza representa una dimensión poco visible de la carrera de IA: instalar modelos donde ya vive la información y donde están las reglas de operación de las empresas. Mistral compite mediante apertura y opciones de control, mientras Cloudera aprovecha la distribución de su plataforma de datos. La importancia competitiva se demostrará si reduce el costo de adoptar IA gobernable en producción y si los clientes conservan de verdad portabilidad y autonomía contractual, no solamente si las compañías presentan una demostración atractiva."
-          ]
-        },
-        {
-          "heading": "Lo que aún no sabemos",
-          "kind": "report",
-          "paragraphs": [
-            "Las fuentes consultadas no entregan una fecha general comprobada para todas las variantes de despliegue, precios detallados, rendimiento comparativo independiente ni un catálogo completo de modelos compatibles. Tampoco prueban que los 30 exabytes mencionados estén disponibles para entrenar sistemas de Mistral. Esas limitaciones deben quedar visibles. El seguimiento incluirá integraciones liberadas, documentación técnica, casos de clientes publicados con consentimiento, licencias y herramientas de gobierno. En una cronología, este evento debe distinguirse tanto de la Serie D de Mistral del día 8 como de un eventual lanzamiento de producto posterior."
-          ]
-        }
-      ],
-      "executiveSummary": "La alianza busca integrar modelos de Mistral en la plataforma híbrida de Cloudera y habilitar personalización con datos institucionales. La promesa de soberanía implica controles técnicos y contractuales que deben validarse por instalación.",
-      "finalSummary": "El 10 de septiembre marca una colaboración relevante en IA empresarial: combinar modelos abiertos o personalizables con infraestructuras de datos existentes. La adopción real dependerá de documentación, licencias y resultados en producción.",
-      "analysis": "Análisis Gazette: ganar la carrera empresarial exige operar donde viven los datos y con controles demostrables; no basta con lanzar modelos cada semana.",
-      "watch": "Integraciones disponibles, hardware, soporte air-gapped, precios, seguridad y casos auditables.",
-      "technicalDetails": [
-        {
-          "label": "Anuncio",
-          "value": "10 septiembre 2026"
-        },
-        {
-          "label": "Modalidades previstas",
-          "value": "Nube híbrida, local y air-gapped"
-        },
-        {
-          "label": "Escala citada de Cloudera",
-          "value": "30 exabytes de datos administrados por clientes",
-          "note": "Cifra declarada, no datos compartidos con Mistral."
-        }
-      ],
-      "availability": {
-        "status": "Alianza anunciada; despliegues sujetos a integración",
-        "platforms": [
-          "Plataforma de datos híbrida de Cloudera"
-        ],
-        "regions": [
-          "Según plataforma y jurisdicción del cliente"
-        ],
-        "requirements": [
-          "Revisión contractual y técnica de modelos, licencias e infraestructura"
-        ],
-        "notes": [
-          "No se anunció acceso universal e inmediato a cada combinación de modelos y entorno."
-        ]
-      },
-      "limitations": [
-        "No hay un precio general por instalación en el anuncio.",
-        "La compatibilidad de cada entorno debe confirmarse.",
-        "Los datos gestionados por Cloudera no pasan automáticamente a Mistral."
-      ],
-      "practicalAdvice": [
-        "Solicitar matriz de arquitecturas y versiones soportadas.",
-        "Probar aislamiento, auditoría y retención con datos de bajo riesgo.",
-        "Verificar licencias, control de claves y plan de salida."
-      ],
-      "usefulFacts": [
-        "El comunicado destaca instalaciones air-gapped.",
-        "Mistral cita 30 exabytes de datos gestionados por usuarios de Cloudera.",
-        "La alianza se orienta a empresas con datos propietarios."
-      ],
-      "curiosities": [
-        "El anuncio menciona datos de decisiones crediticias y telemetría de redes como ejemplos de conocimiento especializado.",
-        "La colaboración busca que el ciclo de aprendizaje permanezca bajo gobierno del cliente."
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-10",
-          "label": "Mistral y Cloudera anuncian alianza."
-        }
-      ]
-    },
-    {
-      "id": "gemini-windows",
-      "eventKey": "gemini-windows",
-      "date": "2026-09-10",
-      "coveredAt": "2026-10-07",
-      "company": "Google",
-      "product": "Gemini para Windows",
-      "title": "Gemini llega al escritorio de Windows",
-      "summary": "Google estrenó Gemini para Windows 10 y 11 el 10 de septiembre: acceso con Alt + Espacio, un espacio para tareas complejas con apps conectadas y opciones de creación visual. Algunas funciones requieren suscripción y tienen límites de disponibilidad.",
-      "tags": [
-        "Productos",
-        "Productividad"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-        "publishedAt": "2026-09-10"
-      },
-      "verifiedAt": "2026-10-08",
-      "body": [
-        "Google presentó una aplicación nativa para Windows con acceso rápido al asistente. La innovación es acercar consultas, tareas y creación visual al escritorio, no un lanzamiento de un nuevo modelo fundacional."
-      ],
-      "keyPoints": [
-        "Aplicación para Windows 10 y 11.",
-        "Acceso mediante Alt + Espacio."
-      ],
-      "analysis": "Análisis Gazette: la competencia se acerca al escritorio. La comodidad de una ventana contextual importa, pero debe acompañarse de permisos legibles y controles verificables.",
-      "watch": "Permisos por aplicación, consumo de recursos, funciones nativas futuras, disponibilidad regional y límites por plan.",
-      "announcedAt": "2026-09-10",
-      "articleVersion": 2,
-      "quickTakeaways": [
-        "Aplicación disponible globalmente para Windows 10 y 11 desde el 10 de septiembre de 2026.",
-        "Alt + Espacio permite invocar Gemini sin abandonar el trabajo activo.",
-        "El espacio de trabajo reúne integraciones con Gmail/Drive y menciona al agente Gemini Spark.",
-        "Nano Banana y Gemini Omni aportan funciones visuales sujetas a condiciones.",
-        "Determinadas capacidades requieren suscripción Google AI, edad mínima de 18 años y disponibilidad variable."
-      ],
-      "sections": [
-        {
-          "heading": "La llegada oficial al escritorio",
-          "kind": "context",
-          "paragraphs": [
-            "Google lanzó el 10 de septiembre de 2026 una aplicación de Gemini para Windows 10 y 11, disponible globalmente según su comunicado. El objetivo anunciado es ofrecer acceso al asistente desde el flujo de trabajo habitual, sin obligar a abrir constantemente una pestaña separada. Es una novedad de distribución y experiencia de uso, no una presentación de un modelo fundacional ni una prueba de que Windows ejecute el modelo de manera local. La compañía proporcionó un sitio específico para descargar la aplicación.",
-            "El titular importa porque el escritorio concentra una buena parte del trabajo profesional: documentos, presentaciones, investigación y navegación. Acercar un asistente a ese entorno puede reducir operaciones repetitivas, pero la utilidad dependerá de integración, velocidad de respuesta y facilidad para controlar la información compartida. La noticia no autoriza afirmar que Gemini tenga automáticamente permisos sobre cualquier archivo o proceso de una computadora."
-          ]
-        },
-        {
-          "heading": "Alt + Espacio y el modo de uso",
-          "kind": "report",
-          "paragraphs": [
-            "La puerta de entrada es el atajo Alt + Espacio. Google describe una ventana de Gemini que aparece sobre el trabajo activo para pedir una explicación, revisar una idea o redactar contenido. La ventaja frente al navegador no es necesariamente otro modelo inteligente, sino la reducción de cambios de aplicación. El teclado actúa como mecanismo de invocación para consultas breves, que pueden resolverse sin abandonar por completo el documento que se está editando.",
-            "Este tipo de integración exige cuidado con conflictos de atajos y con la sensación de que el asistente conoce todo lo que aparece en la pantalla. El comunicado habla de acceso rápido, pero no detalla de manera exhaustiva qué contexto recibe por defecto, qué permisos solicita ni cómo cambia ese acceso entre cuentas. Para un usuario profesional, esas preguntas requieren comprobación en la aplicación y su configuración actual."
-          ]
-        },
-        {
-          "heading": "Un espacio dedicado a tareas más largas",
-          "kind": "report",
-          "paragraphs": [
-            "Además de la invocación inmediata, el producto ofrece un espacio dedicado para procesos más extensos. Google menciona redacción de resúmenes y recuperación de información desde aplicaciones conectadas como Gmail y Google Drive. Un usuario podría centralizar parte de su trabajo en el asistente, siempre sujeto a los conectores habilitados y autorizaciones correspondientes. La disponibilidad de una herramienta no implica que todas las organizaciones permitan usarla con archivos corporativos.",
-            "La compañía también presenta Gemini Spark como agente personal para delegar tareas de varios pasos. El anuncio indica que ciertas funciones llevan condiciones adicionales de suscripción y edad. Conviene distinguir entre conversar con el asistente, conectarlo a un servicio y concederle capacidad para realizar acciones: son niveles diferentes de acceso y de riesgo. Una gestión sensible debería tener confirmación y registros."
-          ]
-        },
-        {
-          "heading": "Imágenes y video desde Windows",
-          "kind": "report",
-          "paragraphs": [
-            "Google destaca la posibilidad de usar Nano Banana para generar imágenes y Gemini Omni para crear o dirigir videos. Estas capacidades aparecen dentro del relato de una aplicación que reúne distintas herramientas de IA. No significa que el sistema realice toda la inferencia en la GPU del computador ni que dichas funciones tengan acceso ilimitado. Los planes, límites y condiciones pueden variar según modalidad y región.",
-            "Para un creador, el interés es pasar de una idea a un material visual sin cambiar constantemente de interfaz. Pero el valor práctico debe medirse por el control de la edición, la calidad del resultado y los derechos y créditos aplicables. En un medio como Gazette, un material generado sigue siendo una ilustración; no se convierte en fotografía documental por haber sido producido dentro de una app de escritorio."
-          ]
-        },
-        {
-          "heading": "Disponibilidad, requisitos y planes",
-          "kind": "report",
-          "paragraphs": [
-            "El anuncio oficial establece disponibilidad global para Windows 10 y Windows 11 desde el día 10. La empresa remite al sitio de descarga del producto. La nota incluye una aclaración: determinadas prestaciones requieren una suscripción Google AI, tienen disponibilidad variable y exigen ser mayor de 18 años. Por lo tanto, decir simplemente que todas las funciones son gratuitas para cualquier persona sería incorrecto.",
-            "Google no proporciona en esta pieza un precio único para todos los servicios incluidos. Un lector debe consultar su plan, región y configuración de cuenta antes de comprometer una actividad profesional. Una organización también debería comprobar compatibilidad con políticas de TI, métodos de autenticación, actualizaciones y gestión de datos. El alcance global de la aplicación no equivale a funciones idénticas disponibles en todas las cuentas."
-          ]
-        },
-        {
-          "heading": "Seguridad y privacidad del asistente contextual",
-          "kind": "context",
-          "paragraphs": [
-            "Un asistente en el escritorio puede interactuar con información valiosa: documentos de trabajo, correos, calendarios y archivos con datos personales. La existencia de conectores no autoriza asumir que todo se lee de manera automática. Las aplicaciones responsables necesitan explicar sus permisos y permitir revocarlos. Antes de activar conexiones empresariales, conviene revisar políticas de datos, retención y configuración administrativa.",
-            "La noticia tampoco debe interpretarse como una certificación de seguridad. Un modelo puede equivocarse al resumir un correo o describir una tarea, aunque la interfaz sea cómoda. Para acciones como enviar mensajes, mover documentos o modificar información compartida, lo prudente es conservar pasos de revisión. El asistente puede ahorrar tiempo, pero la responsabilidad de decisiones y autorizaciones continúa en la persona o la organización."
-          ]
-        },
-        {
-          "heading": "Cómo probar si sirve de verdad",
-          "kind": "practical",
-          "paragraphs": [
-            "Una evaluación simple puede comparar tareas idénticas con y sin la aplicación: encontrar una referencia, redactar un borrador, resumir un documento conectado y producir un primer boceto visual. Se debería anotar tiempo total, número de cambios de ventana, correcciones necesarias, consumo del plan y errores. Así se determina si el acceso directo realmente mejora productividad y no solamente da una sensación de novedad.",
-            "Es importante ensayar también escenarios de fallo: una cuenta sin permiso, información desactualizada, un documento que el asistente no puede ver o una petición ambigua. Si el usuario desconoce qué contexto se compartió, la integración pierde parte de su valor. Las funciones avanzadas deben activarse progresivamente y probarse con información que pueda utilizarse sin riesgos."
-          ]
-        },
-        {
-          "heading": "El análisis competitivo de Gazette",
-          "kind": "context",
-          "paragraphs": [
-            "La llegada de Gemini a Windows muestra que la carrera de IA se libra también en el lugar donde trabaja el usuario. Microsoft, OpenAI, Google y otros proveedores buscan que sus asistentes se integren con archivos, aplicaciones, navegadores y automatizaciones. La calidad del modelo seguirá siendo relevante, pero la elección cotidiana puede depender tanto del acceso a datos y acciones como de benchmarks generales.",
-            "Análisis Gazette: la mayor oportunidad está en combinar asistencia contextual, ejecución controlada y experiencia fluida. El mayor riesgo consiste en confundir una interfaz cercana con una herramienta que tiene comprensión perfecta del entorno y permisos ilimitados. El 10 de septiembre debe registrarse como disponibilidad de una aplicación, mientras las funciones concretas de Spark, conectores y creación visual necesitan seguimiento según planes."
-          ]
-        },
-        {
-          "heading": "Qué faltará comprobar",
-          "kind": "analysis",
-          "paragraphs": [
-            "Google afirma que la aplicación es ligera y que no ralentiza el computador en condiciones normales. El comunicado no incorpora una batería independiente de mediciones de memoria, batería, CPU ni tiempos de respuesta. Por ello, la promesa de rendimiento debe tratarse como descripción del fabricante. Los resultados en equipos antiguos, instalaciones corporativas o sesiones intensivas pueden diferir.",
-            "Las próximas noticias relevantes serán nuevas capacidades nativas del escritorio, cambios de planes, controles administrativos y evaluaciones independientes de privacidad, rendimiento y acciones de agentes. Una versión de escritorio debe juzgarse por lo que permite hacer de forma estable y segura, no por la cantidad de funciones mencionadas en un anuncio."
-          ]
-        }
-      ],
-      "executiveSummary": "Gemini llega a Windows como un punto de acceso permanente al asistente, con atajo de teclado y un espacio para tareas, creación visual y aplicaciones conectadas. El anuncio no garantiza acceso irrestricto a todos los datos o funciones.",
-      "finalSummary": "La noticia del 10 de septiembre trata de distribución y experiencia de usuario: un asistente integrado en el entorno laboral. Su valor dependerá de permisos, acceso a herramientas, tiempo ahorrado y fiabilidad real.",
-      "imageStatus": "needs-specific-art",
-      "imageBrief": "Grabado sepia de un escritorio Windows estilizado como un gabinete de estudio antiguo, con un pequeño autómata de consulta sobre libros y documentos; perspectiva editorial, sin interfaces ficticias presentadas como capturas reales, sin logotipos falsos.",
-      "technicalDetails": [
-        {
-          "label": "Sistema",
-          "value": "Windows 10 y 11"
-        },
-        {
-          "label": "Acceso rápido",
-          "value": "Alt + Espacio"
-        },
-        {
-          "label": "Disponibilidad",
-          "value": "Global desde el 10 de septiembre, según Google"
-        }
-      ],
-      "availability": {
-        "status": "Aplicación de escritorio disponible",
-        "platforms": [
-          "Windows 10",
-          "Windows 11"
-        ],
-        "regions": [
-          "Disponibilidad global de app; funciones según región y plan"
-        ],
-        "requirements": [
-          "Algunas funciones requieren suscripción Google AI",
-          "Ciertas prestaciones 18+"
-        ],
-        "notes": [
-          "Conectores y funciones avanzadas varían según cuenta."
-        ]
-      },
-      "pricing": [
-        {
-          "label": "Aplicación y funciones",
-          "value": "Según plan y disponibilidad; el anuncio no ofrece una tarifa universal."
-        }
-      ],
-      "limitations": [
-        "No está demostrado que todos los datos de pantalla sean contextuales por defecto.",
-        "Las funciones adicionales tienen planes, edades y regiones específicas.",
-        "El rendimiento ligero es una afirmación del proveedor sin benchmarking independiente en el anuncio."
-      ],
-      "practicalAdvice": [
-        "Comprobar permisos antes de habilitar Gmail y Drive.",
-        "Ensayar tareas iguales con y sin la app para medir ahorro real.",
-        "Confirmar explícitamente acciones con datos sensibles.",
-        "Revisar restricciones del plan para Spark y funciones de imagen/video."
-      ],
-      "usefulFacts": [
-        "Google anunció descarga en gemini.google/desktop.",
-        "El acceso rápido usa Alt + Espacio.",
-        "Nano Banana y Gemini Omni se mencionan como herramientas de creación."
-      ],
-      "curiosities": [
-        "La aplicación reúne invocación instantánea y espacio dedicado para flujos largos.",
-        "Google habla de capacidades nativas futuras más allá de esta primera versión."
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-10",
-          "label": "Lanzamiento de la app Gemini para Windows 10 y 11."
-        }
-      ]
-    },
-    {
       "id": "openai-agents-api-public-beta-2026-09-10",
       "eventKey": "openai-agents-api-codex-harness-public-beta-2026-09-10",
       "articleVersion": 2,
@@ -4079,6 +3722,596 @@
       "analysis": "Análisis Gazette: la carrera de la IA incorpora el harness como capa competitiva autónoma. Externalizar orquestación acelera prototipos, pero éxito técnico de una llamada no prueba que la tarea haya quedado realizada en el sistema final.",
       "watch": "Evidencia independiente de fiabilidad, costos por tarea, comportamiento de context compaction, estabilidad de la beta y compatibilidad al sustituir modelos o sandboxes.",
       "finalSummary": "El 10 de septiembre, OpenAI convirtió una capa operativa crucial de Codex en una API para desarrolladores. Abre una opción más rápida para desplegar agentes con herramientas y sesiones duraderas, pero la calidad de producto dependerá de permisos, observabilidad, costos totales y verificación real de resultados."
+    },
+    {
+      "id": "mistral-cloudera-sovereign-ai-2026-09-10",
+      "eventKey": "mistral-cloudera-sovereign-ai-2026-09-10",
+      "articleVersion": 2,
+      "date": "2026-09-10",
+      "announcedAt": "2026-09-10",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Mistral",
+      "product": "Alianza con Cloudera para IA soberana",
+      "title": "Mistral y Cloudera se unen: modelos personalizados sobre datos empresariales sin ceder el control",
+      "summary": "La colaboración anunciada el 10 de septiembre busca integrar modelos Mistral en entornos híbridos, locales y aislados a través de Cloudera, y facilitar adaptación con datos propios. Los detalles de disponibilidad y precios por instalación siguen abiertos.",
+      "tags": [
+        "Empresa",
+        "Agentes",
+        "Infraestructura",
+        "Datos",
+        "Alianzas"
+      ],
+      "image": "assets/mistral.webp",
+      "imageAlt": "Grabado ilustrativo de sistemas tecnológicos, no instalaciones reales de Mistral o Cloudera.",
+      "imageCredit": "Ilustración editorial generada con IA; no representa instalaciones reales.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración sepia de antiguos archivos de datos conectados mediante engranajes a una máquina de inteligencia ajustable, con puertas cerradas como símbolo de nube privada y red aislada; sin logos ni fotografías simuladas.",
+      "source": {
+        "name": "Mistral · Cloudera and Mistral Partner to Bring Specialized, Sovereign Intelligence to Enterprise Data",
+        "url": "https://mistral.ai/news/mistral-x-cloudera/",
+        "publishedAt": "2026-09-10"
+      },
+      "keyPoints": [
+        "Modelos integrados en infraestructura híbrida de Cloudera.",
+        "El anuncio contempla nubes privadas/públicas, instalaciones locales y entornos air-gapped.",
+        "Se busca personalizar modelos con información empresarial manteniendo el control del cliente."
+      ],
+      "quickTakeaways": [
+        "Es una alianza de integración, no un modelo nuevo.",
+        "La infraestructura y los datos pueden permanecer bajo control del cliente.",
+        "Los 30 exabytes citados describen escala de Cloudera, no datos cedidos a Mistral.",
+        "La disponibilidad concreta debe verificarse por entorno y contrato."
+      ],
+      "body": [
+        "Mistral y Cloudera anunciaron una alianza para llevar modelos de IA personalizables a entornos corporativos donde residen datos críticos y restricciones de operación."
+      ],
+      "sections": [
+        {
+          "heading": "La nueva alianza",
+          "kind": "report",
+          "paragraphs": [
+            "El 10 de septiembre de 2026 Mistral y Cloudera anunciaron una asociación orientada a llevar modelos de IA personalizables a entornos donde las empresas conservan control de datos e infraestructura. La colaboración se dirige especialmente a actividades reguladas, incluidas finanzas, manufactura y telecomunicaciones. La noticia es un acuerdo de integración y trabajo conjunto, no un lanzamiento confirmado de un nuevo modelo general ni la apertura universal de un servicio gratuito. Las capacidades anunciadas deben evaluarse según lo que llegue efectivamente a cada plataforma y cliente."
+          ]
+        },
+        {
+          "heading": "Inferencia dentro de los límites del cliente",
+          "kind": "report",
+          "paragraphs": [
+            "Una de las dos líneas centrales del anuncio es integrar modelos de Mistral con la plataforma híbrida de Cloudera. El objetivo es permitir despliegues en nube privada, nube pública, infraestructura local y entornos completamente aislados de Internet, conocidos como air-gapped. Esa flexibilidad tiene valor cuando una empresa debe limitar dónde se procesan datos sensibles o no puede depender de un servicio externo conectado continuamente. El anuncio describe la dirección de la integración, sin proporcionar una matriz completa de fechas de disponibilidad, regiones, versiones y requisitos para cada arquitectura."
+          ]
+        },
+        {
+          "heading": "Modelos especializados con datos propios",
+          "kind": "report",
+          "paragraphs": [
+            "La segunda línea de colaboración apunta al entrenamiento o adaptación de modelos con grandes cantidades de información empresarial. Cloudera administra plataformas de datos donde pueden existir registros históricos, decisiones de crédito, procesos industriales y telemetría de redes. La propuesta es transformar ese conocimiento en modelos especializados, manteniendo el control del cliente sobre los datos y, según los términos concretos, sobre la inteligencia obtenida. No todo dato histórico es automáticamente apropiado para entrenar; son necesarios controles de calidad, permisos, minimización de datos y mediciones de resultados."
+          ]
+        },
+        {
+          "heading": "Qué significa soberanía en términos técnicos",
+          "kind": "technical",
+          "paragraphs": [
+            "El comunicado presenta soberanía como control del dato, del modelo, de la infraestructura y del ciclo de operación. Para una organización, ello requiere revisar residencia, aislamiento, acceso de administradores, gestión de claves, opciones de auditoría y el comportamiento de actualizaciones. Un despliegue en red aislada no se vuelve automáticamente seguro si el modelo o sus herramientas tienen permisos excesivos. La soberanía debe demostrarse mediante arquitectura, contratos, registros y pruebas, no por aparecer en un nombre comercial. Los pesos abiertos ofrecen opciones, pero licencias y sistemas de soporte siguen importando."
+          ]
+        },
+        {
+          "heading": "El dato de 30 exabytes, con cuidado",
+          "kind": "report",
+          "paragraphs": [
+            "En el anuncio Mistral cita 30 exabytes de datos gestionados por clientes que utilizan la plataforma de Cloudera. La cifra dimensiona la presencia de esa infraestructura, pero no significa que Mistral reciba o procese todo ese volumen, ni que todos los clientes hayan aprobado entrenamiento con sus registros. Es una afirmación de escala pronunciada por la compañía en el contexto de la alianza. Las decisiones de usar datos de cada empresa deben tratarse separadamente, bajo contratos, autorizaciones y configuraciones específicas."
+          ]
+        },
+        {
+          "heading": "Por qué los sectores regulados aparecen primero",
+          "kind": "report",
+          "paragraphs": [
+            "Bancos, operadores de telecomunicaciones e industrias mantienen sistemas que no pueden trasladarse sin más a un servicio externo. Pueden requerir registros de auditoría, cumplimiento jurisdiccional y continuidad en redes aisladas. Por eso una integración entre modelos y plataforma de datos empresarial tiene una propuesta de valor distinta de la de un chatbot de consumo. Su éxito dependerá de la robustez de conectores, protección de datos y coste de administrar infraestructuras distintas sin multiplicar las operaciones de seguridad y mantenimiento."
+          ]
+        },
+        {
+          "heading": "Qué verificar antes de contratar",
+          "kind": "practical",
+          "paragraphs": [
+            "Un responsable técnico debería solicitar una matriz de entornos soportados, versiones de modelos, licencias de pesos, requerimientos de hardware y soporte para redes aisladas. También debe confirmar dónde quedan los datos de ajuste, quién controla claves, cómo se gestionan copias y cuánto costaría cambiar de proveedor. Es aconsejable ejecutar una prueba con datos de bajo riesgo antes de usar expedientes sensibles y comparar precisión, latencia, observabilidad y comportamiento bajo fallos. Un anuncio de alianza no equivale a una certificación independiente de cada integración posible."
+          ]
+        },
+        {
+          "heading": "El reto de la personalización",
+          "kind": "technical",
+          "paragraphs": [
+            "Entrenar o adaptar un modelo con datos institucionales puede mejorar tareas especializadas, pero también introduce riesgos de memorizar información sensible, aprender sesgos históricos o producir respuestas convincentes pero incorrectas. Una organización debe separar recuperación documental, ajuste supervisado y entrenamiento extensivo, porque resuelven problemas distintos. La afirmación de poder controlar el modelo no sustituye una evaluación específica de errores, retención y fugas. Además, conservar versiones y datos de entrenamiento es fundamental para reproducir resultados cuando el comportamiento cambie."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: más allá del catálogo de modelos",
+          "kind": "analysis",
+          "paragraphs": [
+            "La alianza representa una dimensión poco visible de la carrera de IA: instalar modelos donde ya vive la información y donde están las reglas de operación de las empresas. Mistral compite mediante apertura y opciones de control, mientras Cloudera aprovecha la distribución de su plataforma de datos. La importancia competitiva se demostrará si reduce el costo de adoptar IA gobernable en producción y si los clientes conservan de verdad portabilidad y autonomía contractual, no solamente si las compañías presentan una demostración atractiva."
+          ]
+        },
+        {
+          "heading": "Lo que aún no sabemos",
+          "kind": "report",
+          "paragraphs": [
+            "Las fuentes consultadas no entregan una fecha general comprobada para todas las variantes de despliegue, precios detallados, rendimiento comparativo independiente ni un catálogo completo de modelos compatibles. Tampoco prueban que los 30 exabytes mencionados estén disponibles para entrenar sistemas de Mistral. Esas limitaciones deben quedar visibles. El seguimiento incluirá integraciones liberadas, documentación técnica, casos de clientes publicados con consentimiento, licencias y herramientas de gobierno. En una cronología, este evento debe distinguirse tanto de la Serie D de Mistral del día 8 como de un eventual lanzamiento de producto posterior."
+          ]
+        }
+      ],
+      "executiveSummary": "La alianza busca integrar modelos de Mistral en la plataforma híbrida de Cloudera y habilitar personalización con datos institucionales. La promesa de soberanía implica controles técnicos y contractuales que deben validarse por instalación.",
+      "finalSummary": "El 10 de septiembre marca una colaboración relevante en IA empresarial: combinar modelos abiertos o personalizables con infraestructuras de datos existentes. La adopción real dependerá de documentación, licencias y resultados en producción.",
+      "analysis": "Análisis Gazette: ganar la carrera empresarial exige operar donde viven los datos y con controles demostrables; no basta con lanzar modelos cada semana.",
+      "watch": "Integraciones disponibles, hardware, soporte air-gapped, precios, seguridad y casos auditables.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "10 septiembre 2026"
+        },
+        {
+          "label": "Modalidades previstas",
+          "value": "Nube híbrida, local y air-gapped"
+        },
+        {
+          "label": "Escala citada de Cloudera",
+          "value": "30 exabytes de datos administrados por clientes",
+          "note": "Cifra declarada, no datos compartidos con Mistral."
+        }
+      ],
+      "availability": {
+        "status": "Alianza anunciada; despliegues sujetos a integración",
+        "platforms": [
+          "Plataforma de datos híbrida de Cloudera"
+        ],
+        "regions": [
+          "Según plataforma y jurisdicción del cliente"
+        ],
+        "requirements": [
+          "Revisión contractual y técnica de modelos, licencias e infraestructura"
+        ],
+        "notes": [
+          "No se anunció acceso universal e inmediato a cada combinación de modelos y entorno."
+        ]
+      },
+      "limitations": [
+        "No hay un precio general por instalación en el anuncio.",
+        "La compatibilidad de cada entorno debe confirmarse.",
+        "Los datos gestionados por Cloudera no pasan automáticamente a Mistral."
+      ],
+      "practicalAdvice": [
+        "Solicitar matriz de arquitecturas y versiones soportadas.",
+        "Probar aislamiento, auditoría y retención con datos de bajo riesgo.",
+        "Verificar licencias, control de claves y plan de salida."
+      ],
+      "usefulFacts": [
+        "El comunicado destaca instalaciones air-gapped.",
+        "Mistral cita 30 exabytes de datos gestionados por usuarios de Cloudera.",
+        "La alianza se orienta a empresas con datos propietarios."
+      ],
+      "curiosities": [
+        "El anuncio menciona datos de decisiones crediticias y telemetría de redes como ejemplos de conocimiento especializado.",
+        "La colaboración busca que el ciclo de aprendizaje permanezca bajo gobierno del cliente."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "label": "Mistral y Cloudera anuncian alianza."
+        }
+      ]
+    },
+    {
+      "id": "ibm-nasa-lunar-foundation-model-open-release-2026-09-10",
+      "eventKey": "ibm-nasa-lunar-foundation-model-open-source-2026-09-10",
+      "articleVersion": 2,
+      "date": "2026-09-10",
+      "announcedAt": "2026-09-10",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "IBM",
+      "product": "NASA-IBM Lunar Foundation Model",
+      "title": "IBM y NASA liberan un modelo lunar abierto: IA para cráteres, volcanes y posibles depósitos de hielo",
+      "summary": "IBM y NASA anunciaron el 10 de septiembre un modelo fundacional abierto para estudiar la Luna. Integra observaciones a diferentes escalas, publica pesos y datos, y reporta mejoras en tareas científicas; las predicciones de hielo no son detecciones físicas confirmadas.",
+      "tags": [
+        "Investigación",
+        "Open Source",
+        "Modelos",
+        "Ciencia",
+        "NASA"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial genérica de inteligencia mecánica, no una imagen real del modelo lunar ni una fotografía de la superficie lunar.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado astronómico de diario decimonónico: observatorio terrestre con telescopio monumental apuntando a la Luna, su superficie representada en dos mapas técnicos superpuestos de cráteres y regiones sombrías polares, instrumentos conectados con engranajes y cables, tinta y sepia, sin texto, sin logotipos ni datos ficticios.",
+      "source": {
+        "name": "NASA Science · NASA, IBM Launch AI Foundation Model for Lunar Science",
+        "url": "https://science.nasa.gov/science-research/artificial-intelligence-lunar-foundation-model/",
+        "publishedAt": "2026-09-10"
+      },
+      "relatedSources": [
+        {
+          "name": "IBM Newsroom · NASA-IBM Lunar Foundation Model",
+          "url": "https://newsroom.ibm.com/2026-09-10-ibm-and-nasa-release-open-source-ai-model-to-support-lunar-exploration",
+          "publishedAt": "2026-09-10"
+        },
+        {
+          "name": "IBM Research · A rough guide for going back to the Moon",
+          "url": "https://research.ibm.com/blog/nasa-ibm-lunar-foundation-model",
+          "publishedAt": "2026-09-10"
+        },
+        {
+          "name": "Hugging Face · NASA-IBM Lunar Foundation Model model card",
+          "url": "https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model"
+        },
+        {
+          "name": "arXiv · Multimodal-Multiresolution Foundation Model for Lunar Remote Sensing",
+          "url": "https://arxiv.org/abs/2609.13283",
+          "publishedAt": "2026-09-08"
+        },
+        {
+          "name": "GitHub · NASA-IBM Lunar Foundation Model",
+          "url": "https://github.com/NASA-IMPACT/NASA-IBM-Lunar-Foundation-Model"
+        }
+      ],
+      "keyPoints": [
+        "El modelo y su código se anunciaron abiertamente el 10 de septiembre de 2026.",
+        "SomBench reúne más de 30 capas alineadas; el modelo entrena con 11 modalidades y dos escalas principales.",
+        "La mejora declarada de hasta 22 % corresponde a una tarea experimental de prospectividad de hielo, no a detección física.",
+        "La ficha del modelo advierte que no está validado para certificar zonas de aterrizaje ni decisiones operacionales."
+      ],
+      "quickTakeaways": [
+        "NASA e IBM publicaron el modelo y sus recursos de investigación el 10 de septiembre.",
+        "Las imágenes NAC y WAC cubren escalas aproximadas de 1 y 100 metros por píxel.",
+        "Pesos en Hugging Face, código en GitHub e integración con TerraTorch.",
+        "Los benchmarks son resultados de los investigadores y sus condiciones importan.",
+        "Predecir zonas probables de hielo no demuestra que exista hielo en ellas."
+      ],
+      "body": [
+        "NASA e IBM presentaron el 10 de septiembre un modelo fundacional especializado en datos lunares, junto con pesos y código públicos. El sistema combina observaciones a distintas resoluciones para facilitar investigaciones sobre cráteres, volcanismo y prospectividad de hielo, pero no sustituye mediciones directas ni ha sido validado para decisiones operacionales."
+      ],
+      "executiveSummary": "El NASA-IBM Lunar Foundation Model es una nueva herramienta abierta para ciencia planetaria: conecta observaciones lunares de diversas fuentes, permite ajustar modelos a tareas científicas y publica un conjunto reproducible de datos y benchmarks. Sus mejoras experimentales son específicas, y su utilidad para decisiones reales dependerá de validación independiente.",
+      "sections": [
+        {
+          "heading": "Un modelo fundacional para estudiar la Luna",
+          "kind": "report",
+          "paragraphs": [
+            "El 10 de septiembre de 2026, IBM y NASA anunciaron el lanzamiento abierto de NASA-IBM Lunar Foundation Model, un modelo de inteligencia artificial entrenado para analizar observaciones científicas de la superficie lunar. La colaboración publicó pesos, código y recursos de evaluación con los que investigadores pueden adaptar el sistema a preguntas concretas. A diferencia de un generador de imágenes de uso general, su objetivo es organizar información captada por instrumentos orbitales y facilitar estudios de cráteres, regiones polares y formaciones volcánicas.",
+            "La fecha importa para reconstruir el archivo: el artículo científico asociado se había presentado en arXiv el 8 de septiembre, pero el comunicado conjunto y la disponibilidad pública del sistema se anunciaron el 10. No conviene duplicar el mismo hecho como si fueran dos lanzamientos independientes, ni trasladar la fecha a una traducción o cobertura posterior. Gazette registra aquí la publicación abierta y conserva el documento técnico como antecedente."
+          ]
+        },
+        {
+          "heading": "El problema científico de combinar sensores",
+          "kind": "technical",
+          "paragraphs": [
+            "Las sondas lunares han observado el terreno durante décadas con cámaras, sensores térmicos, radar y mediciones gravitacionales. Una imagen puede mostrar el borde de un cráter, mientras otro instrumento aporta temperatura, relieve o una pista mineralógica a una resolución muy diferente. Los datos no llegan de manera uniforme: dependen de la órbita, el ángulo solar y la cobertura geográfica. Compararlos exige trabajo de alineación y normalización que tradicionalmente consumía muchos recursos de los equipos científicos.",
+            "IBM y NASA explican que construyeron SomBench para reunir más de treinta capas espaciales alineadas procedentes de nueve instrumentos y cuatro misiones, entre ellas Lunar Reconnaissance Orbiter, GRAIL y SELENE/Kaguya. Esa riqueza de datos no significa que el modelo procese treinta modalidades idénticas. La ficha técnica especifica once modalidades de entrenamiento, con representaciones densas y metadatos contextuales. Distinguir la descripción del conjunto de datos de la arquitectura de entrada evita presentar números aparentemente contradictorios."
+          ]
+        },
+        {
+          "heading": "Cómo funciona la arquitectura",
+          "kind": "technical",
+          "paragraphs": [
+            "El modelo emplea una arquitectura de visión de tipo ViT-B basada en ideas de TerraMind. Durante el preentrenamiento aprende relaciones entre modalidades a partir de fragmentos representados mediante tokens y objetivos de reconstrucción. La geometría de adquisición forma parte de las entradas: datos como ángulos de iluminación y posición del Sol permiten distinguir cambios de brillo de verdaderas diferencias geológicas. La iluminación resulta especialmente problemática en la Luna, donde las sombras polares son muy extensas.",
+            "Los autores entrenaron con dos familias de imágenes: NAC, de aproximadamente un metro por píxel, y WAC, de unos cien metros por píxel. La ficha técnica describe casi dos millones de grupos de recortes registrados, mezclados durante el entrenamiento sin obligar a bajar todas las observaciones a una única escala. También incorpora FlexiViT para adaptar tamaños de parche durante el ajuste posterior. La finalidad no es inventar detalle que un sensor nunca midió, sino aprender una representación reutilizable que sirva de punto de partida para tareas específicas."
+          ]
+        },
+        {
+          "heading": "Tres aplicaciones prioritarias",
+          "kind": "report",
+          "paragraphs": [
+            "La primera aplicación son los cráteres. Contarlos y medir sus formas ayuda a reconstruir episodios de impacto, entender la edad relativa de terrenos y reconocer peligros para futuras operaciones. La segunda estudia las manchas de mare irregular, formaciones vinculadas a la historia volcánica de la Luna cuya extensión puede resultar difícil de delimitar en imágenes. La tercera busca indicadores de posible hielo en regiones polares, una cuestión importante para comprender el entorno y planear campañas científicas.",
+            "El hielo lunar potencial es particularmente relevante porque el agua podría apoyar una presencia humana sostenida y, tras su procesamiento, contribuir a producir oxígeno o propelentes. Pero predecir dónde podría haber depósitos no equivale a detectarlos físicamente. La ficha del modelo precisa que las salidas de prospectividad de hielo aprenden a reproducir un mapa de potencial elaborado a partir de conocimiento previo, no muestras directas de agua. Cualquier decisión de extracción o exploración requiere observaciones y validación adicionales."
+          ]
+        },
+        {
+          "heading": "Qué significan los benchmarks anunciados",
+          "kind": "technical",
+          "paragraphs": [
+            "En su comunicado, IBM destaca hasta un 22 % menos error en la tarea de prospectividad de hielo frente a un modelo SwinV2-B de referencia. La ficha técnica publica un RMSE de 0,0293 para una configuración del nuevo modelo y 0,0377 para esa línea base. El RMSE es una medida de error de predicción: cuanto más bajo, mejor, siempre dentro del conjunto de evaluación y del objetivo empleado. El porcentaje procede de comparaciones reportadas por los propios autores, no de una evaluación científica independiente.",
+            "Los resultados varían entre tareas y resoluciones. Para cráteres a escala de un metro, el rendimiento comunicado es comparable al de SwinV2-B; para la segmentación volcánica, los márgenes respecto al mejor competidor son pequeños. La ficha incluso advierte que ciertas diferencias quedan dentro de la variabilidad entre semillas. Por eso, no sería riguroso afirmar que el nuevo modelo es superior a todos sus rivales en cualquier misión. La evidencia publicada respalda mejoras específicas y una representación reutilizable, no una garantía universal."
+          ]
+        },
+        {
+          "heading": "La apertura y cómo probarlo",
+          "kind": "practical",
+          "paragraphs": [
+            "NASA informa que los pesos están disponibles públicamente en Hugging Face y el código en GitHub; el repositorio del modelo indica licencia Apache 2.0. La integración recomendada utiliza TerraTorch, un conjunto de herramientas para adaptar modelos de teledetección. Investigadores pueden descargar el checkpoint, definir una tarea de segmentación o detección y ajustar el modelo con anotaciones de su propio estudio. También existen datos preparados y benchmarks publicados, que permiten replicar parte de las evaluaciones.",
+            "Para una prueba reproducible, el punto de partida no debería ser elegir una imagen bonita. Es preferible declarar una pregunta concreta, identificar la modalidad y resolución disponibles, seleccionar un conjunto de evaluación separado geográficamente y comparar el modelo con una referencia razonable. El equipo que reporte resultados debe incluir métricas, desviaciones y límites de uso. La disponibilidad pública de pesos facilita la investigación, pero no sustituye recursos de cómputo, conocimiento planetario ni validación de los datos."
+          ]
+        },
+        {
+          "heading": "Lo que este modelo todavía no puede prometer",
+          "kind": "report",
+          "paragraphs": [
+            "La documentación advierte que la generación multimodal de campos no es un producto de predicción científica calibrado. El sistema tampoco conserva un marco geodésico absoluto al generar algunos datos: puede reconocer estructura local y, aun así, producir coordenadas o elevaciones incorrectas. Las salidas no han sido validadas para certificar sitios de aterrizaje ni autorizar decisiones operacionales de seguridad. Son restricciones fundamentales para no confundir una herramienta de investigación con un navegador autónomo de una nave.",
+            "También hay sesgos inevitables de cobertura. Las observaciones de gran resolución provienen de regiones y condiciones en que los sensores lograron adquirir información adecuada. Un resultado que funciona en una región estudiada no garantiza igual precisión bajo otra iluminación o en un terreno poco representado. La investigación futura tendrá que medir robustez, incertidumbre y transferibilidad por misión, instrumento, latitud y objetivo científico."
+          ]
+        },
+        {
+          "heading": "Una tendencia mayor: IA especializada para ciencia abierta",
+          "kind": "context",
+          "paragraphs": [
+            "El proyecto se suma a la familia de investigación Prithvi de IBM y NASA, que ya incluye sistemas para observación terrestre y otros dominios científicos. Su aportación a la carrera de la IA no está en competir con asistentes conversacionales, sino en mostrar que un modelo reutilizable puede especializarse en datos difíciles, combinando instrumentos que históricamente se investigaban por separado. También pone el acento en publicar datos, código y evaluaciones en lugar de comunicar únicamente resultados de una demostración.",
+            "Una hemeroteca de IA que cubra solo grandes modelos de lenguaje se perdería esta transformación. Meteorología, materiales, satélites, medicina e ingeniería están desarrollando sistemas que aprenden representaciones de sus propios sensores. La utilidad de cada uno dependerá de si acelera trabajo científico que después puede verificarse mediante instrumentos, experimentos o mediciones externas."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y lo que conviene seguir",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para Gazette, este lanzamiento es un ejemplo de cómo la competencia en inteligencia artificial también se decide por la capacidad de integrar datos del mundo real. El activo estratégico no es únicamente el modelo entrenado; lo es el conjunto de datos alineados, la metodología para combinar escalas y la posibilidad de que otros científicos reproduzcan y mejoren resultados. La colaboración con una agencia pública y la apertura del software crean un terreno de investigación compartido, distinto de un producto cerrado para consumidores.",
+            "Las preguntas decisivas son si el modelo ayuda a descubrir lugares que luego se confirmen mediante observaciones independientes, si sus ventajas se mantienen fuera de los benchmarks de los autores y si los equipos científicos pueden operar con costos razonables. Un hallazgo asistido por IA no debe anunciarse como descubrimiento comprobado antes de que exista evidencia física. Esa separación entre predicción, hipótesis y validación es esencial para cubrir correctamente IA aplicada a ciencia."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Disponibilidad",
+          "value": "Modelo abierto desde el anuncio del 10 de septiembre de 2026"
+        },
+        {
+          "label": "Licencia del checkpoint",
+          "value": "Apache-2.0",
+          "note": "Según la ficha del modelo en Hugging Face."
+        },
+        {
+          "label": "Arquitectura",
+          "value": "Encoder ViT-B de 12 capas, 768 dimensiones; entrenamiento de tokens enmascarados",
+          "note": "Ficha técnica del modelo."
+        },
+        {
+          "label": "Datos",
+          "value": "SomBench: casi dos millones de conjuntos de recortes, 11 modalidades a dos escalas",
+          "note": "Modelo y paper."
+        },
+        {
+          "label": "Escalas",
+          "value": "NAC ~1 m/píxel y WAC ~100 m/píxel"
+        },
+        {
+          "label": "Benchmark del proveedor",
+          "value": "RMSE 0,0293 frente a 0,0377 para prospectividad de hielo",
+          "note": "Evaluación de los autores; la variable objetivo no es hielo medido."
+        }
+      ],
+      "availability": {
+        "status": "Abierto al público para investigación según NASA e IBM",
+        "platforms": [
+          "Hugging Face",
+          "GitHub",
+          "TerraTorch"
+        ],
+        "regions": [],
+        "requirements": [
+          "Descargar checkpoint y dependencias",
+          "Contar con datos lunares apropiados y permisos sobre ellos",
+          "Verificar licencia y condiciones de datasets por separado"
+        ],
+        "notes": [
+          "No existe garantía de inferencia administrada o API comercial.",
+          "No aprobado para certificar aterrizajes ni decisiones operacionales."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Pesos del modelo",
+          "value": "Disponibles públicamente",
+          "note": "Apache-2.0 para el checkpoint según Hugging Face; cómputo y datos pueden tener costos."
+        }
+      ],
+      "limitations": [
+        "El objetivo de prospectividad de hielo es un mapa derivado, no observación directa de hielo.",
+        "La generación de variables físicas no posee calibración científica ni referencia geodésica absoluta.",
+        "No se ha validado para certificación de aterrizajes o despeje de riesgos.",
+        "El conjunto de datos tiene cobertura geográfica y de instrumentos desigual.",
+        "Benchmarks internos; no equivalen a pruebas independientes en todas las regiones."
+      ],
+      "practicalAdvice": [
+        "Comparar con baselines usando divisiones geográficas independientes.",
+        "Separar una predicción de hielo de mediciones físicas confirmadas.",
+        "Registrar resoluciones y procedencia de cada modalidad.",
+        "No utilizar el checkpoint para navegación ni seguridad operacional sin evaluación específica."
+      ],
+      "usefulFacts": [
+        "El paper se depositó en arXiv el 8 de septiembre, dos días antes del anuncio abierto.",
+        "Los recursos públicos incluyen model card, código, datos y benchmarks.",
+        "NASA explica que los datos proceden de varias misiones estadounidenses y japonesas.",
+        "La ficha recomienda adaptar el encoder con TerraTorch y compara técnicas LoRA con fine-tuning completo."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Presentación del paper técnico en arXiv."
+        },
+        {
+          "date": "2026-09-10",
+          "label": "IBM y NASA anuncian la liberación abierta del modelo lunar."
+        }
+      ],
+      "analysis": "Análisis Gazette: el modelo muestra una vía alternativa de progreso en IA: representaciones reutilizables para datos científicos multimodales, con pesos, benchmarks y código abiertos. La ventaja se mide en descubrimientos confirmables, no solo en métricas del proveedor.",
+      "watch": "Reproducciones independientes, comprobación posterior de zonas de hielo, robustez ante nuevos instrumentos y regiones, y costos de ajuste para equipos científicos.",
+      "finalSummary": "La publicación del modelo lunar el 10 de septiembre amplía la aplicación de la IA fundacional a la ciencia planetaria. Su valor está en reunir instrumentos diversos y hacer reproducibles nuevas investigaciones; sus predicciones deben seguir distinguiéndose de observaciones físicas verificadas."
+    },
+    {
+      "id": "gemini-windows",
+      "eventKey": "gemini-windows",
+      "date": "2026-09-10",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Gemini para Windows",
+      "title": "Gemini llega al escritorio de Windows",
+      "summary": "Google estrenó Gemini para Windows 10 y 11 el 10 de septiembre: acceso con Alt + Espacio, un espacio para tareas complejas con apps conectadas y opciones de creación visual. Algunas funciones requieren suscripción y tienen límites de disponibilidad.",
+      "tags": [
+        "Productos",
+        "Productividad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+        "publishedAt": "2026-09-10"
+      },
+      "verifiedAt": "2026-10-08",
+      "body": [
+        "Google presentó una aplicación nativa para Windows con acceso rápido al asistente. La innovación es acercar consultas, tareas y creación visual al escritorio, no un lanzamiento de un nuevo modelo fundacional."
+      ],
+      "keyPoints": [
+        "Aplicación para Windows 10 y 11.",
+        "Acceso mediante Alt + Espacio."
+      ],
+      "analysis": "Análisis Gazette: la competencia se acerca al escritorio. La comodidad de una ventana contextual importa, pero debe acompañarse de permisos legibles y controles verificables.",
+      "watch": "Permisos por aplicación, consumo de recursos, funciones nativas futuras, disponibilidad regional y límites por plan.",
+      "announcedAt": "2026-09-10",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Aplicación disponible globalmente para Windows 10 y 11 desde el 10 de septiembre de 2026.",
+        "Alt + Espacio permite invocar Gemini sin abandonar el trabajo activo.",
+        "El espacio de trabajo reúne integraciones con Gmail/Drive y menciona al agente Gemini Spark.",
+        "Nano Banana y Gemini Omni aportan funciones visuales sujetas a condiciones.",
+        "Determinadas capacidades requieren suscripción Google AI, edad mínima de 18 años y disponibilidad variable."
+      ],
+      "sections": [
+        {
+          "heading": "La llegada oficial al escritorio",
+          "kind": "context",
+          "paragraphs": [
+            "Google lanzó el 10 de septiembre de 2026 una aplicación de Gemini para Windows 10 y 11, disponible globalmente según su comunicado. El objetivo anunciado es ofrecer acceso al asistente desde el flujo de trabajo habitual, sin obligar a abrir constantemente una pestaña separada. Es una novedad de distribución y experiencia de uso, no una presentación de un modelo fundacional ni una prueba de que Windows ejecute el modelo de manera local. La compañía proporcionó un sitio específico para descargar la aplicación.",
+            "El titular importa porque el escritorio concentra una buena parte del trabajo profesional: documentos, presentaciones, investigación y navegación. Acercar un asistente a ese entorno puede reducir operaciones repetitivas, pero la utilidad dependerá de integración, velocidad de respuesta y facilidad para controlar la información compartida. La noticia no autoriza afirmar que Gemini tenga automáticamente permisos sobre cualquier archivo o proceso de una computadora."
+          ]
+        },
+        {
+          "heading": "Alt + Espacio y el modo de uso",
+          "kind": "report",
+          "paragraphs": [
+            "La puerta de entrada es el atajo Alt + Espacio. Google describe una ventana de Gemini que aparece sobre el trabajo activo para pedir una explicación, revisar una idea o redactar contenido. La ventaja frente al navegador no es necesariamente otro modelo inteligente, sino la reducción de cambios de aplicación. El teclado actúa como mecanismo de invocación para consultas breves, que pueden resolverse sin abandonar por completo el documento que se está editando.",
+            "Este tipo de integración exige cuidado con conflictos de atajos y con la sensación de que el asistente conoce todo lo que aparece en la pantalla. El comunicado habla de acceso rápido, pero no detalla de manera exhaustiva qué contexto recibe por defecto, qué permisos solicita ni cómo cambia ese acceso entre cuentas. Para un usuario profesional, esas preguntas requieren comprobación en la aplicación y su configuración actual."
+          ]
+        },
+        {
+          "heading": "Un espacio dedicado a tareas más largas",
+          "kind": "report",
+          "paragraphs": [
+            "Además de la invocación inmediata, el producto ofrece un espacio dedicado para procesos más extensos. Google menciona redacción de resúmenes y recuperación de información desde aplicaciones conectadas como Gmail y Google Drive. Un usuario podría centralizar parte de su trabajo en el asistente, siempre sujeto a los conectores habilitados y autorizaciones correspondientes. La disponibilidad de una herramienta no implica que todas las organizaciones permitan usarla con archivos corporativos.",
+            "La compañía también presenta Gemini Spark como agente personal para delegar tareas de varios pasos. El anuncio indica que ciertas funciones llevan condiciones adicionales de suscripción y edad. Conviene distinguir entre conversar con el asistente, conectarlo a un servicio y concederle capacidad para realizar acciones: son niveles diferentes de acceso y de riesgo. Una gestión sensible debería tener confirmación y registros."
+          ]
+        },
+        {
+          "heading": "Imágenes y video desde Windows",
+          "kind": "report",
+          "paragraphs": [
+            "Google destaca la posibilidad de usar Nano Banana para generar imágenes y Gemini Omni para crear o dirigir videos. Estas capacidades aparecen dentro del relato de una aplicación que reúne distintas herramientas de IA. No significa que el sistema realice toda la inferencia en la GPU del computador ni que dichas funciones tengan acceso ilimitado. Los planes, límites y condiciones pueden variar según modalidad y región.",
+            "Para un creador, el interés es pasar de una idea a un material visual sin cambiar constantemente de interfaz. Pero el valor práctico debe medirse por el control de la edición, la calidad del resultado y los derechos y créditos aplicables. En un medio como Gazette, un material generado sigue siendo una ilustración; no se convierte en fotografía documental por haber sido producido dentro de una app de escritorio."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, requisitos y planes",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio oficial establece disponibilidad global para Windows 10 y Windows 11 desde el día 10. La empresa remite al sitio de descarga del producto. La nota incluye una aclaración: determinadas prestaciones requieren una suscripción Google AI, tienen disponibilidad variable y exigen ser mayor de 18 años. Por lo tanto, decir simplemente que todas las funciones son gratuitas para cualquier persona sería incorrecto.",
+            "Google no proporciona en esta pieza un precio único para todos los servicios incluidos. Un lector debe consultar su plan, región y configuración de cuenta antes de comprometer una actividad profesional. Una organización también debería comprobar compatibilidad con políticas de TI, métodos de autenticación, actualizaciones y gestión de datos. El alcance global de la aplicación no equivale a funciones idénticas disponibles en todas las cuentas."
+          ]
+        },
+        {
+          "heading": "Seguridad y privacidad del asistente contextual",
+          "kind": "context",
+          "paragraphs": [
+            "Un asistente en el escritorio puede interactuar con información valiosa: documentos de trabajo, correos, calendarios y archivos con datos personales. La existencia de conectores no autoriza asumir que todo se lee de manera automática. Las aplicaciones responsables necesitan explicar sus permisos y permitir revocarlos. Antes de activar conexiones empresariales, conviene revisar políticas de datos, retención y configuración administrativa.",
+            "La noticia tampoco debe interpretarse como una certificación de seguridad. Un modelo puede equivocarse al resumir un correo o describir una tarea, aunque la interfaz sea cómoda. Para acciones como enviar mensajes, mover documentos o modificar información compartida, lo prudente es conservar pasos de revisión. El asistente puede ahorrar tiempo, pero la responsabilidad de decisiones y autorizaciones continúa en la persona o la organización."
+          ]
+        },
+        {
+          "heading": "Cómo probar si sirve de verdad",
+          "kind": "practical",
+          "paragraphs": [
+            "Una evaluación simple puede comparar tareas idénticas con y sin la aplicación: encontrar una referencia, redactar un borrador, resumir un documento conectado y producir un primer boceto visual. Se debería anotar tiempo total, número de cambios de ventana, correcciones necesarias, consumo del plan y errores. Así se determina si el acceso directo realmente mejora productividad y no solamente da una sensación de novedad.",
+            "Es importante ensayar también escenarios de fallo: una cuenta sin permiso, información desactualizada, un documento que el asistente no puede ver o una petición ambigua. Si el usuario desconoce qué contexto se compartió, la integración pierde parte de su valor. Las funciones avanzadas deben activarse progresivamente y probarse con información que pueda utilizarse sin riesgos."
+          ]
+        },
+        {
+          "heading": "El análisis competitivo de Gazette",
+          "kind": "context",
+          "paragraphs": [
+            "La llegada de Gemini a Windows muestra que la carrera de IA se libra también en el lugar donde trabaja el usuario. Microsoft, OpenAI, Google y otros proveedores buscan que sus asistentes se integren con archivos, aplicaciones, navegadores y automatizaciones. La calidad del modelo seguirá siendo relevante, pero la elección cotidiana puede depender tanto del acceso a datos y acciones como de benchmarks generales.",
+            "Análisis Gazette: la mayor oportunidad está en combinar asistencia contextual, ejecución controlada y experiencia fluida. El mayor riesgo consiste en confundir una interfaz cercana con una herramienta que tiene comprensión perfecta del entorno y permisos ilimitados. El 10 de septiembre debe registrarse como disponibilidad de una aplicación, mientras las funciones concretas de Spark, conectores y creación visual necesitan seguimiento según planes."
+          ]
+        },
+        {
+          "heading": "Qué faltará comprobar",
+          "kind": "analysis",
+          "paragraphs": [
+            "Google afirma que la aplicación es ligera y que no ralentiza el computador en condiciones normales. El comunicado no incorpora una batería independiente de mediciones de memoria, batería, CPU ni tiempos de respuesta. Por ello, la promesa de rendimiento debe tratarse como descripción del fabricante. Los resultados en equipos antiguos, instalaciones corporativas o sesiones intensivas pueden diferir.",
+            "Las próximas noticias relevantes serán nuevas capacidades nativas del escritorio, cambios de planes, controles administrativos y evaluaciones independientes de privacidad, rendimiento y acciones de agentes. Una versión de escritorio debe juzgarse por lo que permite hacer de forma estable y segura, no por la cantidad de funciones mencionadas en un anuncio."
+          ]
+        }
+      ],
+      "executiveSummary": "Gemini llega a Windows como un punto de acceso permanente al asistente, con atajo de teclado y un espacio para tareas, creación visual y aplicaciones conectadas. El anuncio no garantiza acceso irrestricto a todos los datos o funciones.",
+      "finalSummary": "La noticia del 10 de septiembre trata de distribución y experiencia de usuario: un asistente integrado en el entorno laboral. Su valor dependerá de permisos, acceso a herramientas, tiempo ahorrado y fiabilidad real.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia de un escritorio Windows estilizado como un gabinete de estudio antiguo, con un pequeño autómata de consulta sobre libros y documentos; perspectiva editorial, sin interfaces ficticias presentadas como capturas reales, sin logotipos falsos.",
+      "technicalDetails": [
+        {
+          "label": "Sistema",
+          "value": "Windows 10 y 11"
+        },
+        {
+          "label": "Acceso rápido",
+          "value": "Alt + Espacio"
+        },
+        {
+          "label": "Disponibilidad",
+          "value": "Global desde el 10 de septiembre, según Google"
+        }
+      ],
+      "availability": {
+        "status": "Aplicación de escritorio disponible",
+        "platforms": [
+          "Windows 10",
+          "Windows 11"
+        ],
+        "regions": [
+          "Disponibilidad global de app; funciones según región y plan"
+        ],
+        "requirements": [
+          "Algunas funciones requieren suscripción Google AI",
+          "Ciertas prestaciones 18+"
+        ],
+        "notes": [
+          "Conectores y funciones avanzadas varían según cuenta."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Aplicación y funciones",
+          "value": "Según plan y disponibilidad; el anuncio no ofrece una tarifa universal."
+        }
+      ],
+      "limitations": [
+        "No está demostrado que todos los datos de pantalla sean contextuales por defecto.",
+        "Las funciones adicionales tienen planes, edades y regiones específicas.",
+        "El rendimiento ligero es una afirmación del proveedor sin benchmarking independiente en el anuncio."
+      ],
+      "practicalAdvice": [
+        "Comprobar permisos antes de habilitar Gmail y Drive.",
+        "Ensayar tareas iguales con y sin la app para medir ahorro real.",
+        "Confirmar explícitamente acciones con datos sensibles.",
+        "Revisar restricciones del plan para Spark y funciones de imagen/video."
+      ],
+      "usefulFacts": [
+        "Google anunció descarga en gemini.google/desktop.",
+        "El acceso rápido usa Alt + Espacio.",
+        "Nano Banana y Gemini Omni se mencionan como herramientas de creación."
+      ],
+      "curiosities": [
+        "La aplicación reúne invocación instantánea y espacio dedicado para flujos largos.",
+        "Google habla de capacidades nativas futuras más allá de esta primera versión."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "label": "Lanzamiento de la app Gemini para Windows 10 y 11."
+        }
+      ]
     },
     {
       "id": "mistral-fortran-agent-modernization-2026-09-09",
@@ -6378,7 +6611,7 @@
     {
       "date": "2026-09-10",
       "status": "partial",
-      "verifiedArticles": 4
+      "verifiedArticles": 5
     },
     {
       "date": "2026-09-11",
