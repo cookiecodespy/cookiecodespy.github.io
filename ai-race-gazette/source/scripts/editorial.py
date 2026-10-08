@@ -143,7 +143,10 @@ def validate(data):
             _nonempty(a[key],key)
         for key in ['tags','body','keyPoints']:
             _string_list(a[key],key)
-        assert len(a['body']) >= 2, 'An article needs developed context'
+        # Legacy articles require two body paragraphs. Reporter V2 may keep a short
+        # legacy body and develop the complete report in structured sections.
+        section_paragraphs=sum(len(s.get('paragraphs',[])) for s in a.get('sections',[]) if isinstance(s,dict))
+        assert len(a['body']) >= 2 or (a.get('articleVersion')==2 and section_paragraphs >= 2), 'An article needs developed context'
         _asset(a['image'])
         for source in [a['source'], *a.get('relatedSources',[])]:
             _source(source)

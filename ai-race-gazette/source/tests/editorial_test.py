@@ -41,6 +41,14 @@ class EditorialTests(unittest.TestCase):
   a['finalSummary']='Resumen final.'
   a['imageStatus']='library'
   validate(self.data)
+ def test_reporter_v2_structured_sections_satisfy_context(self):
+  a=next(a for a in self.data['articles'] if a.get('articleVersion')==2 and len(a['sections'])>=2)
+  a['body']=['Resumen compatible con frontend anterior.']
+  validate(self.data)
+ def test_legacy_short_body_still_rejected(self):
+  a=next(a for a in self.data['articles'] if a.get('articleVersion')!=2 and len(a['body'])>=2)
+  a['body']=['Solo un párrafo superficial.']
+  with self.assertRaisesRegex(AssertionError,'An article needs developed context'):validate(self.data)
  def test_reporter_v2_rejects_invalid_section_kind(self):
   a=next(a for a in self.data['articles'] if a.get('articleVersion')==2)
   self.assertTrue(a.get('sections'))
