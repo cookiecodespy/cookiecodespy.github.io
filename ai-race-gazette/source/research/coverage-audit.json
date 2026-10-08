@@ -162,31 +162,34 @@
     {
       "date": "2026-09-08",
       "archiveStatus": "partial",
-      "verifiedArticles": 3,
+      "verifiedArticles": 4,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "openai-research",
         "mistral-news",
-        "google-ai-cloud"
+        "google-ai-cloud",
+        "google-deepmind"
       ],
       "reviewedCategories": [
         "image-video",
         "deals-financing",
         "security",
-        "agents"
+        "agents",
+        "research",
+        "models"
       ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": 2,
-        "published": 3,
+        "found": 4,
+        "published": 4,
         "discarded": 0,
         "unresolved": 0
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "OpenAI Images, Mistral financiación y GTIG Threat Tracker publicados para 8 Sep. No se cierra: faltan Google y resto de actores por día."
+      "notes": "OpenAI Images, Mistral financiación y GTIG Threat Tracker publicados para 8 Sep. No se cierra: faltan Google y resto de actores por día. Google DeepMind AlphaGenome Atlas: lanzamiento de plataforma científica 8 Sep verificado en dos anuncios oficiales; no confundir con AlphaGenome modelo previo. Día sigue partial, reverse pass pendiente."
     },
     {
       "date": "2026-09-09",
