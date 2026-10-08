@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T13:01:20.524Z",
+  "updatedAt": "2026-10-08T15:15:08.518Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -3111,6 +3111,216 @@
       ]
     },
     {
+      "id": "openai-gpt-rosalind-trusted-access-global-2026-09-11",
+      "eventKey": "openai-gpt-rosalind-trusted-access-global-2026-09-11",
+      "articleVersion": 2,
+      "date": "2026-09-11",
+      "announcedAt": "2026-09-11",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "OpenAI",
+      "product": "GPT‑Rosalind: acceso global para organizaciones elegibles",
+      "title": "GPT‑Rosalind sale de research preview y amplía su acceso global a instituciones aprobadas",
+      "summary": "OpenAI actualizó el 11 de septiembre la disponibilidad de GPT‑Rosalind, especializado en ciencias de la vida. Sale de research preview y se abre globalmente a organizaciones elegibles bajo trusted-access, sin convertirse en modelo público irrestricto.",
+      "tags": [
+        "Investigación",
+        "Ciencias de la vida",
+        "Modelos",
+        "Disponibilidad"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de investigación científica e IA; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado antiguo de un laboratorio de biología y mecanismos de cálculo analizando estructuras moleculares; se debe distinguir representación conceptual de fotografía real, estilo sepia, sin letras ni logos.",
+      "source": {
+        "name": "OpenAI · Introducing GPT-Rosalind (actualización de acceso del 11 de septiembre)",
+        "url": "https://openai.com/index/introducing-gpt-rosalind/",
+        "publishedAt": "2026-09-11"
+      },
+      "relatedSources": [
+        {
+          "name": "OpenAI · GPT-Rosalind for life sciences research",
+          "url": "https://help.openai.com/en/articles/20001193-gpt-rosalind-for-life-sciences-research",
+          "publishedAt": "2026-09-11"
+        },
+        {
+          "name": "OpenAI · API pricing",
+          "url": "https://developers.openai.com/api/docs/pricing",
+          "publishedAt": "2026-10-05"
+        }
+      ],
+      "keyPoints": [
+        "La noticia del 11 de septiembre es el cambio de estado y alcance, no el lanzamiento inicial.",
+        "Acceso global únicamente para organizaciones que cumplan el trusted-access.",
+        "Tarifas publicadas entrarían en vigor el 5 de octubre."
+      ],
+      "quickTakeaways": [
+        "El modelo había sido anunciado en abril; este es un cambio de disponibilidad.",
+        "La expansión global conserva aprobación institucional y controles de seguridad.",
+        "El sistema se orienta a investigación con herramientas, no a diagnósticos garantizados.",
+        "Los resultados de benchmarks son declaraciones de OpenAI.",
+        "Las tarifas API citadas pertenecen a octubre."
+      ],
+      "body": [
+        "GPT‑Rosalind amplió su distribución a organizaciones elegibles el 11 de septiembre de 2026. Para entender el hito es indispensable distinguir acceso institucional, capacidad técnica y precios efectivos."
+      ],
+      "sections": [
+        {
+          "heading": "Qué cambió el 11 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI actualizó el 11 de septiembre la situación de GPT‑Rosalind, un modelo especializado en ciencias de la vida anunciado originalmente en abril. La novedad consistió en pasar de research preview a disponibilidad global para organizaciones aprobadas mediante el programa trusted-access. No se lanzó ese día por primera vez el modelo, ni quedó abierto para todas las personas con una cuenta común de ChatGPT.",
+            "La empresa también comunicó que las organizaciones elegibles mantendrían acceso a los modelos de la familia Rosalind conforme llegaran nuevas versiones. El cambio es relevante porque transforma un programa inicial de investigación en una oferta con mayor alcance institucional, aunque todavía sometida a requisitos de elegibilidad, controles de acceso y supervisión."
+          ]
+        },
+        {
+          "heading": "De qué trata el sistema científico",
+          "kind": "technical",
+          "paragraphs": [
+            "GPT‑Rosalind está orientado a investigación biológica, química, genómica y descubrimiento de medicamentos. OpenAI lo describe como un modelo que razona sobre moléculas, proteínas, genes y rutas biológicas y que puede utilizar herramientas científicas en flujos de varios pasos. Su finalidad es ayudar con análisis de literatura, interpretación de secuencias y diseño de investigaciones; no demostrar automáticamente que una hipótesis sea verdadera.",
+            "La preparación de un experimento exige evidencia, hipótesis contrastables y conocimiento de especialistas. Un asistente puede proponer literatura relevante, resumir resultados o sugerir qué datos faltan, pero debe conservar referencias verificables y no sustituir revisiones éticas, protocolos institucionales o comprobaciones de laboratorio."
+          ]
+        },
+        {
+          "heading": "Herramientas e integración con investigación",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI vincula Rosalind con un plugin de Life Sciences Research disponible para Codex, que organiza habilidades y recursos para consultar más de cincuenta bases y herramientas científicas. Una capa de orquestación puede acelerar búsquedas de proteínas, genes, estudios y literatura. Sin embargo, que el plugin esté disponible para una audiencia más amplia no significa que todas esas cuentas reciban acceso al modelo Rosalind.",
+            "La distinción entre modelo, conectores y permiso institucional es esencial. Un investigador puede utilizar herramientas científicas con un modelo generalista y, por separado, solicitar el modelo especializado. Cada componente tiene reglas de acceso, calidad y potenciales limitaciones diferentes."
+          ]
+        },
+        {
+          "heading": "Cómo interpretar las evaluaciones de OpenAI",
+          "kind": "technical",
+          "paragraphs": [
+            "La empresa publicó resultados en tareas de química orgánica, proteínas, genómica y uso de herramientas. En LABBench2 atribuye a Rosalind mejores resultados que GPT‑5.4 en seis de once tareas; también presenta señales positivas en BixBench y una evaluación de secuencias realizada con Dyno Therapeutics. Son datos del proveedor y de colaboradores citados en su material, no garantía de desempeño uniforme en todos los laboratorios.",
+            "Parte de las comparaciones utiliza varios intentos y selecciona el mejor. Esto importa: una puntuación best-of-ten no equivale a acertar al primer intento con la misma frecuencia. Tampoco una buena puntuación en bioinformática demuestra que se hayan descubierto tratamientos eficaces, ni evita errores al recomendar un experimento concreto."
+          ]
+        },
+        {
+          "heading": "El acceso de confianza no equivale a acceso abierto",
+          "kind": "report",
+          "paragraphs": [
+            "La expansión anunciada es global para organizaciones elegibles. OpenAI describe requisitos ligados a investigación legítima, gobernanza y controles de prevención de usos maliciosos. El despliegue puede incluir ChatGPT Enterprise, Codex y API, pero los permisos deben estar aprobados para cada superficie. Una persona puede formar parte de una organización elegible y aun así necesitar habilitación del administrador.",
+            "El beneficio potencial de una plataforma controlada es permitir trabajo científico con usuarios autorizados y medidas de seguridad. La limitación es que el acceso no puede suponerse por región o plan genérico. Una organización interesada debe presentar su caso, completar el proceso de revisión y consultar las condiciones aplicables a su proyecto."
+          ]
+        },
+        {
+          "heading": "Precios: distinguir septiembre y octubre",
+          "kind": "report",
+          "paragraphs": [
+            "El comunicado especifica que las tarifas publicadas entrarían en vigor el 5 de octubre de 2026. La documentación API ahora lista gpt-rosalind-research a US$5 por millón de tokens de entrada, US$0,50 por millón de entrada almacenada en caché y US$25 por millón de salida, con restricciones adicionales para investigaciones internas aprobadas. Es información de tarifas posterior al evento histórico del 11 de septiembre.",
+            "Calcular costes solo por tokens sería incompleto para equipos científicos. Es posible necesitar preparación de datasets, herramientas, revisión humana, permisos, ejecución de cálculos y registro de resultados. La unidad apropiada de comparación puede ser coste por hipótesis bien evaluada o por tarea de investigación validada, no simplemente por texto generado."
+          ]
+        },
+        {
+          "heading": "Cómo probar valor sin riesgos innecesarios",
+          "kind": "practical",
+          "paragraphs": [
+            "Antes de solicitar acceso, un laboratorio puede seleccionar flujos sobre información pública o datos autorizados, con ejemplos cuya respuesta correcta se conozca. Para revisión bibliográfica, medir fuentes pertinentes, omisiones y tiempo de verificación. Para análisis de secuencias, comparar contra herramientas reconocidas y contrastar salidas con especialistas. Conviene mantener registro de versiones, consultas, parámetros y resultados reproducibles.",
+            "La adopción debe incluir instrucciones claras sobre datos privados, permisos, evaluación de hipótesis y aprobación humana. En investigación biomédica, una respuesta incorrecta no es solamente un error de productividad: puede desviar recursos experimentales. Un proceso controlado limita el impacto de fallos mientras permite evaluar el beneficio real."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximas señales",
+          "kind": "analysis",
+          "paragraphs": [
+            "Esta actualización ilustra una dimensión de la carrera de la IA distinta de las demostraciones de modelos generalistas. Las aplicaciones científicas se diferencian por acceso a fuentes especializadas, utilización fiable de herramientas, integración institucional y criterios de éxito del dominio. La expansión internacional aprobada crea nuevas oportunidades para adopción, pero también hace más importante la trazabilidad de resultados.",
+            "Análisis Gazette: un modelo especializado debe juzgarse por la calidad de las decisiones de investigación que respalda, no por la impresión que deja una respuesta aislada. Para determinar el impacto habrá que observar estudios independientes, resultados reproducibles, acceso efectivo en instituciones de distintos países y las condiciones reales de los modelos que sucedan a Rosalind."
+          ]
+        }
+      ],
+      "executiveSummary": "GPT‑Rosalind sale de research preview y pasa a acceso institucional global bajo controles de confianza. La actualización no autoriza anunciar acceso general a cuentas personales; la adopción exige validación científica y permisos.",
+      "finalSummary": "El 11 de septiembre es un hito de disponibilidad, no de descubrimiento científico ni lanzamiento inicial. Los resultados futuros deberán evaluarse con pruebas reproducibles y supervisión especializada.",
+      "analysis": "Análisis Gazette: el verdadero valor de la IA científica depende de evidencia, integración en flujos de investigación y controles institucionales, no solamente de un benchmark publicado.",
+      "watch": "Adopción y requisitos por institución, tarifas efectivas, resultados reproducibles y evolución del modelo.",
+      "technicalDetails": [
+        {
+          "label": "Cambio",
+          "value": "Salida de research preview el 11 Sep 2026"
+        },
+        {
+          "label": "Alcance",
+          "value": "Organizaciones elegibles a nivel global"
+        },
+        {
+          "label": "Áreas",
+          "value": "Biología, genómica, química y proteínas"
+        }
+      ],
+      "availability": {
+        "status": "Disponible globalmente bajo aprobación trusted-access",
+        "platforms": [
+          "ChatGPT Enterprise",
+          "Codex",
+          "API según aprobación"
+        ],
+        "regions": [
+          "Global para organizaciones elegibles"
+        ],
+        "requirements": [
+          "Evaluación de elegibilidad y gobernanza",
+          "Autorización institucional y por superficie"
+        ],
+        "notes": [
+          "No disponible de manera universal para cuentas personales."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Tarifas efectivas desde",
+          "value": "5 octubre 2026"
+        },
+        {
+          "label": "API entrada",
+          "value": "US$5 por millón de tokens"
+        },
+        {
+          "label": "API caché de entrada",
+          "value": "US$0,50 por millón"
+        },
+        {
+          "label": "API salida",
+          "value": "US$25 por millón",
+          "note": "Consultar documentación para condiciones."
+        }
+      ],
+      "limitations": [
+        "No es acceso libre sin revisión.",
+        "Benchmarks del proveedor no garantizan descubrimientos seguros.",
+        "Los precios citados comenzaron a regir después de septiembre."
+      ],
+      "practicalAdvice": [
+        "Establecer métricas de investigación antes de solicitar acceso.",
+        "Validar fuentes y resultados con especialistas.",
+        "Registrar permisos, datos y pruebas reproducibles."
+      ],
+      "usefulFacts": [
+        "OpenAI anunció el modelo originalmente en abril de 2026.",
+        "El plugin científico conecta más de 50 fuentes y herramientas, según la empresa.",
+        "La expansión se comunicó el 11 de septiembre."
+      ],
+      "curiosities": [
+        "El nombre homenajea a Rosalind Franklin.",
+        "Un plugin de herramientas científicas no es lo mismo que acceso al modelo especializado."
+      ],
+      "timeline": [
+        {
+          "date": "2026-04-16",
+          "label": "Anuncio original."
+        },
+        {
+          "date": "2026-09-11",
+          "label": "Salida de research preview y acceso global elegible."
+        },
+        {
+          "date": "2026-10-05",
+          "label": "Inicio de tarifas publicadas."
+        }
+      ]
+    },
+    {
       "id": "openai-gpt-live-1-api-2026-09-10",
       "eventKey": "openai-gpt-live-1-api-2026-09-10",
       "articleVersion": 2,
@@ -5947,7 +6157,7 @@
     {
       "date": "2026-09-11",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-09-12",

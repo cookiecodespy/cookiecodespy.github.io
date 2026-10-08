@@ -246,7 +246,7 @@
     {
       "date": "2026-09-11",
       "archiveStatus": "partial",
-      "verifiedArticles": 1,
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "openai-research"
@@ -259,14 +259,14 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": 3,
-        "published": 1,
+        "published": 2,
         "discarded": 0,
         "unresolved": 2
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Primer barrido Sep11: OpenAI Habitat publicado; acceso GPT‑Rosalind y retiro planificado de custom GPTs pendientes. Otras compañías y revisión inversa pendientes."
+      "notes": "OpenAI Habitat y Rosalind publicados. El plan de migración de custom GPTs sigue candidato sin publicar; falta el resto de actores y segunda auditoría."
     },
     {
       "date": "2026-09-12",
