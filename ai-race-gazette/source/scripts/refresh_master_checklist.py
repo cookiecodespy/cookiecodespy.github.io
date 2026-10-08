@@ -20,14 +20,14 @@ def render(data):
     lines = [
         "# AI Race Gazette — checklist maestro de cierre",
         "",
-        "> Archivo generado desde \`source/ops/backlog.json\`. Edita la cola, no las casillas de esta página. Regenera con \`python3 scripts/refresh_master_checklist.py\`.",
+        "> Archivo generado desde `source/ops/backlog.json`. Edita la cola, no las casillas de esta página. Regenera con `python3 scripts/refresh_master_checklist.py`.",
         "",
         "## Línea base histórica (no métricas vivas)",
         "",
         f"- Apertura: {data['asOf']}.",
         f"- Archivo inicial: {baseline['articles']} artículos, {baseline['reporterV2']} Reporter V2 y {baseline['legacy']} legacy.",
         f"- Calendario inicial: {baseline['registeredDays']} jornadas, {baseline['closedDays']} cerradas y {baseline['openDays']} abiertas.",
-        f"- Commit base: \`{baseline['commit']}\`.",
+        f"- Commit base: `{baseline['commit']}`.",
         "",
         "## Progreso de la cola",
         "",
@@ -52,7 +52,7 @@ def render(data):
             if task.get("dependsOn"):
                 lines.append("  - Depende de: " + ", ".join(task["dependsOn"]))
             if task.get("evidenceCommit"):
-                lines.append(f"  - Commit: \`{task['evidenceCommit']}\`")
+                lines.append(f"  - Commit: `{task['evidenceCommit']}`")
             if task.get("verifiedEvidence"):
                 lines.append(f"  - Evidencia: {task['verifiedEvidence'][0]}")
             if task.get("cancellationReason"):
@@ -61,7 +61,7 @@ def render(data):
     lines.extend([
         "## Reglas para nuevas tareas",
         "",
-        "Toda tarea descubierta se agrega a \`source/ops/backlog.json\` con ID estable, fase, prioridad, dueño, evidencia y criterio de aceptación. No se borra historial ni se marca \`done\` sin evidencia. Un día con noticias no se considera completo sin doble revisión documentada. Concurrencia: releer \`main\` y deduplicar por \`eventKey\` antes de escribir.",
+        "Toda tarea descubierta se agrega a `source/ops/backlog.json` con ID estable, fase, prioridad, dueño, evidencia y criterio de aceptación. No se borra historial ni se marca `done` sin evidencia. Un día con noticias no se considera completo sin doble revisión documentada. Concurrencia: releer `main` y deduplicar por `eventKey` antes de escribir.",
         "",
     ])
     return "\n".join(lines)
