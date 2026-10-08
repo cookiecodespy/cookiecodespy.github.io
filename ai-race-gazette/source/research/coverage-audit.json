@@ -305,8 +305,8 @@
     },
     {
       "date": "2026-09-14",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "google-ai-cloud"
@@ -319,14 +319,14 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": 1,
-        "published": 0,
+        "published": 1,
         "discarded": 0,
         "unresolved": 1
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Candidato Google Cloud Dataflow: Pause/Resume GA y soporte GPU Blackwell. No se ha publicado ni cerrado la fecha. Investigación pendiente."
+      "notes": "Dataflow validado y publicado. BigQuery analytics TVFs detectado como candidato independiente; no se ha realizado doble pasada ni revisado todas las fuentes."
     },
     {
       "date": "2026-09-15",

@@ -326,14 +326,18 @@
       "phase": "P05",
       "title": "Evaluar Google Cloud Dataflow con GPU Blackwell",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "acceptance": "Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.",
       "evidence": [
         "https://cloud.google.com/blog/products/data-analytics/new-dataflow-features-to-enable-large-scale-ai-workloads/"
       ],
       "date": "2026-09-14",
-      "notes": "GA Pause/Resume y soporte de GPU para IA; revisar novedad material y antecedentes."
+      "notes": "GA Pause/Resume y soporte de GPU para IA; revisar novedad material y antecedentes.",
+      "verifiedEvidence": [
+        "https://cloud.google.com/blog/products/data-analytics/new-dataflow-features-to-enable-large-scale-ai-workloads/",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/google-cloud-dataflow-blackwell-pause-resume-2026-09-14"
+      ]
     },
     {
       "id": "H-GOOGLE-SEP09-GARTNER",
@@ -374,6 +378,32 @@
       "evidence": [
         "https://deepmind.google/discover/blog/",
         "https://deepmind.google/research/publications/"
+      ]
+    },
+    {
+      "id": "H-GOOGLE-SEP14-BIGQUERY",
+      "phase": "P05",
+      "title": "BigQuery anuncia seis funciones de análisis aumentado para agentes",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "date": "2026-09-14",
+      "acceptance": "Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias.",
+      "evidence": [
+        "https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs"
+      ]
+    },
+    {
+      "id": "H-GOOGLE-SEP09-MAPL",
+      "phase": "P05",
+      "title": "Google y NASA/JPL: MAPL-EMIT detecta emisiones de metano",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "date": "2026-09-09",
+      "acceptance": "Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias.",
+      "evidence": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space/"
       ]
     }
   ]
