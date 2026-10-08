@@ -95,6 +95,11 @@ Uno de:
 - `library`;
 - `needs-specific-art`.
 
+### `visualAssetId`
+ID opcional del asset hero en `visual/asset-manifest.json`.
+
+Durante la migración legacy puede omitirse; cuando una ilustración específica se publique, se recomienda guardar el ID estable además de `image`.
+
 ### `sources`
 Array opcional ampliado de fuentes. Se mantiene `source` como fuente primaria y `relatedSources` por compatibilidad.
 
