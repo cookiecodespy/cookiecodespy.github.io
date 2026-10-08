@@ -10,7 +10,8 @@
     "fonts": "node scripts/prepare-fonts.mjs",
     "build": "vite build && node scripts/prepare-sites-build.mjs",
     "preview": "vite preview",
-    "test:sites": "node --test tests/sites-worker.test.mjs"
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test:live": "node scripts/live-qa.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "5.0.4",

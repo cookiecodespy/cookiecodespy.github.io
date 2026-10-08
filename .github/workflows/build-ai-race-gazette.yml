@@ -79,10 +79,23 @@ jobs:
           done
           npm run test:browser
 
-      - name: Reconcile latest main
+      - name: Reconcile latest main without publishing a stale build
         working-directory: .
         run: |
           git fetch origin main
+          # If frontend/build inputs change while CI runs, newer CI owns publishing.
+          if ! git diff --quiet HEAD origin/main -- \
+            ai-race-gazette/source/src \
+            ai-race-gazette/source/index.html \
+            ai-race-gazette/source/package.json \
+            ai-race-gazette/source/package-lock.json \
+            ai-race-gazette/source/vite.config.mjs \
+            ai-race-gazette/source/scripts/prepare-sites-build.mjs \
+            ai-race-gazette/source/scripts/prepare-fonts.mjs \
+            ai-race-gazette/source/public/assets; then
+            echo "Build inputs changed while tests ran. Refusing stale publication."
+            exit 1
+          fi
           git reset --hard origin/main
 
       - name: Publish compiled frontend
