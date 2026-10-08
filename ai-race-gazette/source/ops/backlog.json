@@ -201,7 +201,9 @@
         "H-0814-SOURCES",
         "H-0814-GOOGLE",
         "H-SEP08-MISTRAL",
-        "H-SEP10-GPTLIVE"
+        "H-SEP10-GPTLIVE",
+        "H-SEP12-13",
+        "H-GOOGLE-DEEPMIND-0814"
       ]
     },
     {
@@ -778,6 +780,36 @@
       "acceptance": "Corroborar arXiv, reproducibilidad y valor editorial; Reporter V2 o descarte con evidencia.",
       "evidence": [
         "https://arxiv.org/abs/2609.13851"
+      ]
+    },
+    {
+      "id": "H-SEP08-ALPHAGENOME",
+      "phase": "P05",
+      "title": "Google DeepMind AlphaGenome Atlas",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "date": "2026-09-08",
+      "acceptance": "Reportaje V2, fuente primaria, límites clínicos y sincronización de publicación.",
+      "eventKey": "google-deepmind-alphagenome-atlas-nine-billion-dna-variants-2026-09-08",
+      "evidenceCommit": "ff2d3e0775cd8191362f54684df3fb9b052e918f",
+      "verifiedEvidence": [
+        "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/"
+      ]
+    },
+    {
+      "id": "H-SEP12-ANTHROPIC",
+      "phase": "P05",
+      "title": "Dario Amodei: evaluación independiente",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "date": "2026-09-12",
+      "acceptance": "Reportaje V2 sobre propuesta con fecha y compromiso diferenciados, CI verde.",
+      "eventKey": "anthropic-amodei-we-must-pace-the-frontier-pledge-2026-09-12",
+      "evidenceCommit": "ff2d3e0775cd8191362f54684df3fb9b052e918f",
+      "verifiedEvidence": [
+        "https://darioamodei.com/post/we-must-pace-the-frontier"
       ]
     }
   ]
