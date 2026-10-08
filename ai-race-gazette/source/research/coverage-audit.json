@@ -161,23 +161,27 @@
     },
     {
       "date": "2026-09-08",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [],
+      "reviewedSourceIds": [
+        "openai-research"
+      ],
+      "reviewedCategories": [
+        "image-video"
+      ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": null,
-        "published": 0,
-        "discarded": null,
-        "unresolved": null
+        "found": 2,
+        "published": 1,
+        "discarded": 0,
+        "unresolved": 1
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Revisión inicial de la jornada: OpenAI Images 2.5 publicado en Reporter V2. Mistral 3B verificado como candidato y aún no publicado. No se realizó doble pasada ni se cierra el día."
     },
     {
       "date": "2026-09-09",

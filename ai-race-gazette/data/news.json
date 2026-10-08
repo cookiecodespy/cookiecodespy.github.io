@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T01:24:35.000Z",
+  "updatedAt": "2026-10-08T04:08:00.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -558,6 +558,85 @@
       "visualAssetId": "story-claude-haiku-5-5-engraving-v1"
     },
     {
+      "id": "nano-banana-2-1",
+      "date": "2026-10-06",
+      "company": "Google",
+      "title": "Nano Banana 2.1: una nueva etapa para crear y editar imágenes",
+      "summary": "Google documenta su modelo de generación de imágenes y edición conversacional en la API de Gemini.",
+      "tags": [
+        "Modelos",
+        "Imágenes"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de un edificio tecnológico con un globo reflejado",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía de Google.",
+      "source": {
+        "name": "Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
+        "publishedAt": "2026-10-06"
+      },
+      "relatedSources": [
+        {
+          "name": "Google DeepMind · ficha del modelo",
+          "url": "https://deepmind.google/models/model-cards/nano-banana-2-1/"
+        }
+      ],
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "La documentación de Gemini incorpora Nano Banana 2.1, un modelo orientado a la generación de imágenes y a la edición mediante instrucciones conversacionales. El identificador de la API permite distinguir esta versión de otros modelos de la misma familia.",
+        "El flujo combina instrucciones de texto y material visual. Su utilidad está en iterar sobre una imagen: pedir cambios, ajustar elementos y trabajar en una conversación, en vez de tratar cada generación como una operación aislada.",
+        "La ficha publicada por DeepMind describe las capacidades y limitaciones del modelo. Para integrar una herramienta de este tipo, la elección debe considerar calidad, consistencia, condiciones de uso y costo de la versión disponible. La documentación de la API no confirma por sí sola que todas las aplicaciones de Google hayan recibido el mismo despliegue."
+      ],
+      "keyPoints": [
+        "Generación de imágenes y edición conversacional.",
+        "Modelo documentado en la API de Gemini.",
+        "Disponibilidad por producto debe comprobarse por separado."
+      ],
+      "analysis": "La competencia visual se decide también en la facilidad de corregir resultados. Un modelo integrado en un flujo de trabajo puede ser más útil que una mejora aislada de calidad, siempre que conserve el control del usuario y responda de forma consistente a los cambios.",
+      "watch": "Pruebas de edición repetida, condiciones de acceso y anuncios de disponibilidad en cada producto.",
+      "eventKey": "nano-banana-2-1",
+      "coveredAt": "2026-10-07",
+      "product": "Nano Banana 2.1",
+      "announcedAt": "2026-10-06"
+    },
+    {
+      "id": "mistral-large-4",
+      "date": "2026-10-06",
+      "company": "Mistral",
+      "title": "Mistral presenta Large 4 en vista previa",
+      "summary": "La compañía francesa presenta su nuevo modelo en vista previa pública y anuncia una apertura posterior de sus pesos.",
+      "tags": [
+        "Modelos",
+        "Código abierto"
+      ],
+      "image": "assets/mistral.webp",
+      "imageAlt": "Grabado editorial de montañas y un laboratorio de computación",
+      "imageCredit": "Ilustración editorial generada con IA; no representa instalaciones reales.",
+      "source": {
+        "name": "Mistral AI",
+        "url": "https://mistral.ai/news/mistral-large-4/",
+        "publishedAt": "2026-10-06"
+      },
+      "verifiedAt": "2026-10-07",
+      "verificationNote": "Anuncio oficial localizado. La página completa no estuvo accesible durante esta revisión; se omiten cifras y benchmarks no comprobados.",
+      "body": [
+        "Mistral ha anunciado Large 4 y lo ofrece en una fase de vista previa pública. El lanzamiento renueva su propuesta para quienes siguen la evolución de los modelos con pesos abiertos, aunque la apertura anunciada y el acceso actual son etapas diferentes.",
+        "La distinción es práctica: probar un modelo mediante un servicio no equivale a poder descargarlo y ejecutarlo en infraestructura propia. Antes de planificar una implementación, conviene comprobar el estado de disponibilidad y las condiciones de la versión concreta.",
+        "El anuncio pone de nuevo a Mistral en la conversación sobre modelos avanzados y ciberseguridad. Las afirmaciones de rendimiento del fabricante requieren contrastarse con evaluaciones independientes y con pruebas sobre tareas reales. Esta edición no reproduce puntuaciones que no pudo verificar directamente."
+      ],
+      "keyPoints": [
+        "Anuncio oficial fechado el 6 de octubre.",
+        "Disponible en vista previa pública.",
+        "La apertura de pesos se anuncia como una etapa posterior."
+      ],
+      "analysis": "Para la carrera de la IA, el punto a seguir es cuánto de esta capacidad podrá desplegarse fuera de un servicio centralizado. Esa posibilidad influye en el control de datos y en las opciones de las empresas, pero dependerá de la disponibilidad, licencia y requisitos finales.",
+      "watch": "La publicación de los pesos, su licencia y pruebas independientes de la versión disponible.",
+      "eventKey": "mistral-large-4",
+      "coveredAt": "2026-10-07",
+      "product": "Mistral Large 4",
+      "announcedAt": "2026-10-06"
+    },
+    {
       "id": "google-embeddinggemma-2",
       "eventKey": "google-embeddinggemma-2",
       "articleVersion": 2,
@@ -752,41 +831,6 @@
       "visualAssetId": "gazette-generic-ai-hero-v1"
     },
     {
-      "id": "anthropic-cyber-verification",
-      "eventKey": "anthropic-cyber-verification",
-      "date": "2026-10-06",
-      "coveredAt": "2026-10-07",
-      "company": "Anthropic",
-      "product": "Cyber Verification Program",
-      "title": "Anthropic amplía el acceso para equipos de seguridad",
-      "summary": "El programa reúne tres niveles con requisitos diferentes para profesionales y organizaciones.",
-      "tags": [
-        "Seguridad",
-        "Productos"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Anthropic · anuncio oficial",
-        "url": "https://www.anthropic.com/news/cyber-verification-program",
-        "publishedAt": "2026-10-06"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "El 6 de octubre Anthropic anunció una ampliación de su Cyber Verification Program. El programa distingue Defense Access, Red Team Access y Specialized Access.",
-        "Cada nivel aplica requisitos y controles diferentes. El acceso para pruebas adversariales exige autorización sobre los sistemas evaluados; las capacidades especializadas se reservan a un conjunto limitado de organizaciones verificadas.",
-        "Para los lectores que siguen el lanzamiento de modelos, este cambio es una noticia propia: amplía las condiciones de uso de herramientas existentes, sin ser por ello un modelo nuevo."
-      ],
-      "keyPoints": [
-        "Tres niveles de acceso.",
-        "Requisitos según tipo de trabajo."
-      ],
-      "analysis": "La disponibilidad de una capacidad depende también de quién puede utilizarla y bajo qué condiciones.",
-      "watch": "Criterios de admisión y evolución del programa.",
-      "announcedAt": "2026-10-06"
-    },
-    {
       "id": "claude-google-workspace",
       "date": "2026-10-06",
       "company": "Anthropic",
@@ -823,82 +867,38 @@
       "announcedAt": "2026-10-06"
     },
     {
-      "id": "mistral-large-4",
+      "id": "anthropic-cyber-verification",
+      "eventKey": "anthropic-cyber-verification",
       "date": "2026-10-06",
-      "company": "Mistral",
-      "title": "Mistral presenta Large 4 en vista previa",
-      "summary": "La compañía francesa presenta su nuevo modelo en vista previa pública y anuncia una apertura posterior de sus pesos.",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Cyber Verification Program",
+      "title": "Anthropic amplía el acceso para equipos de seguridad",
+      "summary": "El programa reúne tres niveles con requisitos diferentes para profesionales y organizaciones.",
       "tags": [
-        "Modelos",
-        "Código abierto"
+        "Seguridad",
+        "Productos"
       ],
-      "image": "assets/mistral.webp",
-      "imageAlt": "Grabado editorial de montañas y un laboratorio de computación",
-      "imageCredit": "Ilustración editorial generada con IA; no representa instalaciones reales.",
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
       "source": {
-        "name": "Mistral AI",
-        "url": "https://mistral.ai/news/mistral-large-4/",
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/news/cyber-verification-program",
         "publishedAt": "2026-10-06"
       },
       "verifiedAt": "2026-10-07",
-      "verificationNote": "Anuncio oficial localizado. La página completa no estuvo accesible durante esta revisión; se omiten cifras y benchmarks no comprobados.",
       "body": [
-        "Mistral ha anunciado Large 4 y lo ofrece en una fase de vista previa pública. El lanzamiento renueva su propuesta para quienes siguen la evolución de los modelos con pesos abiertos, aunque la apertura anunciada y el acceso actual son etapas diferentes.",
-        "La distinción es práctica: probar un modelo mediante un servicio no equivale a poder descargarlo y ejecutarlo en infraestructura propia. Antes de planificar una implementación, conviene comprobar el estado de disponibilidad y las condiciones de la versión concreta.",
-        "El anuncio pone de nuevo a Mistral en la conversación sobre modelos avanzados y ciberseguridad. Las afirmaciones de rendimiento del fabricante requieren contrastarse con evaluaciones independientes y con pruebas sobre tareas reales. Esta edición no reproduce puntuaciones que no pudo verificar directamente."
+        "El 6 de octubre Anthropic anunció una ampliación de su Cyber Verification Program. El programa distingue Defense Access, Red Team Access y Specialized Access.",
+        "Cada nivel aplica requisitos y controles diferentes. El acceso para pruebas adversariales exige autorización sobre los sistemas evaluados; las capacidades especializadas se reservan a un conjunto limitado de organizaciones verificadas.",
+        "Para los lectores que siguen el lanzamiento de modelos, este cambio es una noticia propia: amplía las condiciones de uso de herramientas existentes, sin ser por ello un modelo nuevo."
       ],
       "keyPoints": [
-        "Anuncio oficial fechado el 6 de octubre.",
-        "Disponible en vista previa pública.",
-        "La apertura de pesos se anuncia como una etapa posterior."
+        "Tres niveles de acceso.",
+        "Requisitos según tipo de trabajo."
       ],
-      "analysis": "Para la carrera de la IA, el punto a seguir es cuánto de esta capacidad podrá desplegarse fuera de un servicio centralizado. Esa posibilidad influye en el control de datos y en las opciones de las empresas, pero dependerá de la disponibilidad, licencia y requisitos finales.",
-      "watch": "La publicación de los pesos, su licencia y pruebas independientes de la versión disponible.",
-      "eventKey": "mistral-large-4",
-      "coveredAt": "2026-10-07",
-      "product": "Mistral Large 4",
-      "announcedAt": "2026-10-06"
-    },
-    {
-      "id": "nano-banana-2-1",
-      "date": "2026-10-06",
-      "company": "Google",
-      "title": "Nano Banana 2.1: una nueva etapa para crear y editar imágenes",
-      "summary": "Google documenta su modelo de generación de imágenes y edición conversacional en la API de Gemini.",
-      "tags": [
-        "Modelos",
-        "Imágenes"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de un edificio tecnológico con un globo reflejado",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía de Google.",
-      "source": {
-        "name": "Google AI for Developers",
-        "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
-        "publishedAt": "2026-10-06"
-      },
-      "relatedSources": [
-        {
-          "name": "Google DeepMind · ficha del modelo",
-          "url": "https://deepmind.google/models/model-cards/nano-banana-2-1/"
-        }
-      ],
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "La documentación de Gemini incorpora Nano Banana 2.1, un modelo orientado a la generación de imágenes y a la edición mediante instrucciones conversacionales. El identificador de la API permite distinguir esta versión de otros modelos de la misma familia.",
-        "El flujo combina instrucciones de texto y material visual. Su utilidad está en iterar sobre una imagen: pedir cambios, ajustar elementos y trabajar en una conversación, en vez de tratar cada generación como una operación aislada.",
-        "La ficha publicada por DeepMind describe las capacidades y limitaciones del modelo. Para integrar una herramienta de este tipo, la elección debe considerar calidad, consistencia, condiciones de uso y costo de la versión disponible. La documentación de la API no confirma por sí sola que todas las aplicaciones de Google hayan recibido el mismo despliegue."
-      ],
-      "keyPoints": [
-        "Generación de imágenes y edición conversacional.",
-        "Modelo documentado en la API de Gemini.",
-        "Disponibilidad por producto debe comprobarse por separado."
-      ],
-      "analysis": "La competencia visual se decide también en la facilidad de corregir resultados. Un modelo integrado en un flujo de trabajo puede ser más útil que una mejora aislada de calidad, siempre que conserve el control del usuario y responda de forma consistente a los cambios.",
-      "watch": "Pruebas de edición repetida, condiciones de acceso y anuncios de disponibilidad en cada producto.",
-      "eventKey": "nano-banana-2-1",
-      "coveredAt": "2026-10-07",
-      "product": "Nano Banana 2.1",
+      "analysis": "La disponibilidad de una capacidad depende también de quién puede utilizarla y bajo qué condiciones.",
+      "watch": "Criterios de admisión y evolución del programa.",
       "announcedAt": "2026-10-06"
     },
     {
@@ -935,6 +935,74 @@
       "analysis": "La carrera de modelos incluye tanto capacidad como distribución. Un producto restringido tiene un impacto distinto de una herramienta abierta a todos.",
       "watch": "Ampliación del acceso y evaluaciones independientes.",
       "announcedAt": "2026-09-30"
+    },
+    {
+      "id": "gpt-6-1-sol-devday",
+      "eventKey": "gpt-6-1-sol-devday",
+      "date": "2026-09-29",
+      "coveredAt": "2026-10-07",
+      "company": "OpenAI",
+      "product": "GPT-6.1 Sol",
+      "title": "GPT-6.1 Sol llega como actualización del modelo de trabajo de OpenAI",
+      "summary": "OpenAI presenta la versión en DevDay para programación, uso de herramientas y trabajo profesional.",
+      "tags": [
+        "Modelos",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "OpenAI · anuncio oficial",
+        "url": "https://openai.com/index/devday-2026-recap/",
+        "publishedAt": "2026-09-29"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "OpenAI presentó GPT-6.1 Sol el 29 de septiembre en DevDay, como actualización de GPT-6 Sol. El resumen oficial indica disponibilidad en la API y planes de pago de ChatGPT.",
+        "La empresa destaca programación y trabajo profesional. Para decidir una migración, conviene comparar tareas reales, calidad, reintentos y costo total."
+      ],
+      "keyPoints": [
+        "Presentado en DevDay.",
+        "Disponible en API y planes de pago."
+      ],
+      "analysis": "Una nueva versión merece una evaluación del flujo de trabajo completo, más allá del titular del lanzamiento.",
+      "watch": "Pruebas comparables con la versión anterior.",
+      "announcedAt": "2026-09-29"
+    },
+    {
+      "id": "dots-devday",
+      "eventKey": "dots-devday",
+      "date": "2026-09-29",
+      "coveredAt": "2026-10-07",
+      "company": "OpenAI",
+      "product": "Dots",
+      "title": "Dots propone agentes para tareas continuas",
+      "summary": "OpenAI anuncia agentes que pueden encargarse de trabajo persistente.",
+      "tags": [
+        "Agentes",
+        "Productos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "OpenAI · anuncio oficial",
+        "url": "https://openai.com/index/devday-2026-recap/",
+        "publishedAt": "2026-09-29"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "OpenAI presentó Dots en DevDay el 29 de septiembre. Los describe como agentes que mantienen responsabilidades continuas.",
+        "El anuncio limita su acceso por plan, mercado y configuración del administrador. Antes de delegar una tarea recurrente, corresponde definir qué puede hacer el agente y cómo se revisan sus resultados."
+      ],
+      "keyPoints": [
+        "Agentes con responsabilidades continuas.",
+        "Acceso sujeto a elegibilidad."
+      ],
+      "analysis": "El seguimiento y la revisión son parte de una tarea delegada: automatizar exige criterios claros de éxito.",
+      "watch": "Disponibilidad y control de tareas delegadas.",
+      "announcedAt": "2026-09-29"
     },
     {
       "id": "decisions-api",
@@ -984,74 +1052,6 @@
         }
       ],
       "product": "Decisions API",
-      "announcedAt": "2026-09-29"
-    },
-    {
-      "id": "dots-devday",
-      "eventKey": "dots-devday",
-      "date": "2026-09-29",
-      "coveredAt": "2026-10-07",
-      "company": "OpenAI",
-      "product": "Dots",
-      "title": "Dots propone agentes para tareas continuas",
-      "summary": "OpenAI anuncia agentes que pueden encargarse de trabajo persistente.",
-      "tags": [
-        "Agentes",
-        "Productos"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "OpenAI · anuncio oficial",
-        "url": "https://openai.com/index/devday-2026-recap/",
-        "publishedAt": "2026-09-29"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "OpenAI presentó Dots en DevDay el 29 de septiembre. Los describe como agentes que mantienen responsabilidades continuas.",
-        "El anuncio limita su acceso por plan, mercado y configuración del administrador. Antes de delegar una tarea recurrente, corresponde definir qué puede hacer el agente y cómo se revisan sus resultados."
-      ],
-      "keyPoints": [
-        "Agentes con responsabilidades continuas.",
-        "Acceso sujeto a elegibilidad."
-      ],
-      "analysis": "El seguimiento y la revisión son parte de una tarea delegada: automatizar exige criterios claros de éxito.",
-      "watch": "Disponibilidad y control de tareas delegadas.",
-      "announcedAt": "2026-09-29"
-    },
-    {
-      "id": "gpt-6-1-sol-devday",
-      "eventKey": "gpt-6-1-sol-devday",
-      "date": "2026-09-29",
-      "coveredAt": "2026-10-07",
-      "company": "OpenAI",
-      "product": "GPT-6.1 Sol",
-      "title": "GPT-6.1 Sol llega como actualización del modelo de trabajo de OpenAI",
-      "summary": "OpenAI presenta la versión en DevDay para programación, uso de herramientas y trabajo profesional.",
-      "tags": [
-        "Modelos",
-        "Desarrollo"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "OpenAI · anuncio oficial",
-        "url": "https://openai.com/index/devday-2026-recap/",
-        "publishedAt": "2026-09-29"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "OpenAI presentó GPT-6.1 Sol el 29 de septiembre en DevDay, como actualización de GPT-6 Sol. El resumen oficial indica disponibilidad en la API y planes de pago de ChatGPT.",
-        "La empresa destaca programación y trabajo profesional. Para decidir una migración, conviene comparar tareas reales, calidad, reintentos y costo total."
-      ],
-      "keyPoints": [
-        "Presentado en DevDay.",
-        "Disponible en API y planes de pago."
-      ],
-      "analysis": "Una nueva versión merece una evaluación del flujo de trabajo completo, más allá del titular del lanzamiento.",
-      "watch": "Pruebas comparables con la versión anterior.",
       "announcedAt": "2026-09-29"
     },
     {
@@ -1195,40 +1195,222 @@
       "announcedAt": "2026-09-10"
     },
     {
-      "id": "google-cathay-contrail-trial",
-      "eventKey": "google-cathay-contrail-trial",
-      "date": "2026-09-07",
-      "announcedAt": "2026-09-07",
-      "company": "Google",
-      "product": "AI-powered contrail avoidance",
-      "title": "Cathay Pacific probará con Google rutas para evitar estelas de condensación",
-      "summary": "La aerolínea se suma a pruebas operativas de una herramienta de IA que busca identificar ajustes de vuelo capaces de reducir contrails.",
+      "id": "openai-chatgpt-images-2-5-2026-09-08",
+      "eventKey": "openai-chatgpt-images-2-5-launch-2026-09-08",
+      "articleVersion": 2,
+      "date": "2026-09-08",
+      "announcedAt": "2026-09-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "OpenAI",
+      "product": "ChatGPT Images 2.5 / GPT-Image-2.5 Flare y Sunburst",
+      "title": "ChatGPT Images 2.5: edición más precisa, bocetos y dos modelos para crear imágenes por API",
+      "summary": "OpenAI lanzó ChatGPT Images 2.5 el 8 de septiembre, con mejoras declaradas en fidelidad, velocidad y edición por turnos. También presentó Flare y Sunburst para desarrolladores, junto con Sketch, plantillas y nuevas opciones para reutilizar prompts.",
       "tags": [
-        "IA aplicada",
-        "Clima",
-        "Investigación"
+        "Imágenes",
+        "Modelos",
+        "API",
+        "Productos",
+        "Creación visual"
       ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial conceptual de máquinas inteligentes; imagen genérica temporal para ChatGPT Images 2.5.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "ChatGPT Images 2.5: grabado editorial de periódico científico antiguo que muestra a una imprenta mecánica transformando un boceto a lápiz en un elaborado grabado; dos módulos de taller rotulados solo visualmente por diferencias de tamaño/precisión, uno ágil y otro minucioso. Composición horizontal 3:2, tinta negra y sepia, papel envejecido, alto detalle, sin texto, sin logotipos falsos, sin interfaces simuladas presentadas como capturas.",
       "source": {
-        "name": "Cathay Pacific · anuncio oficial",
-        "url": "https://news.cathaypacific.com/translation-cathay-pacific-and-google-partner-to-research-and-trial-ai-powered-contrail-avoidance",
-        "publishedAt": "2026-09-07"
+        "name": "OpenAI · Introducing ChatGPT Images 2.5",
+        "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+        "publishedAt": "2026-09-08"
       },
-      "body": [
-        "Cathay Pacific anunció una colaboración con Google para investigar y probar una herramienta de IA orientada a evitar estelas de condensación cuando las condiciones de vuelo lo permitan.",
-        "El programa evaluará factibilidad operativa e impacto climático en vuelos reales. Es una prueba de campo, no una declaración de que el sistema ya elimine contrails de forma general."
+      "relatedSources": [
+        {
+          "name": "OpenAI · ChatGPT Images 2.5 System Card",
+          "url": "https://deploymentsafety.openai.com/chatgpt-images-2-5/safety-evaluations",
+          "publishedAt": "2026-09-08"
+        }
       ],
       "keyPoints": [
-        "Prueba operativa con una aerolínea comercial.",
-        "Uso de IA para identificar condiciones asociadas a contrails.",
-        "El objetivo es evaluar factibilidad e impacto."
+        "OpenAI anunció un modelo visual renovado con foco en conservar sujetos y detalles durante ediciones sucesivas.",
+        "Sketch, plantillas y comentarios sobre imágenes amplían las formas de dirigir una edición dentro de ChatGPT.",
+        "La API distingue Flare, orientado a velocidad, y Sunburst, orientado a trabajos visuales que requieren mayor precisión."
       ],
-      "analysis": "La IA aplicada a operaciones físicas necesita demostrar beneficio sin introducir costos o riesgos mayores.",
-      "watch": "Resultados de los vuelos de prueba y métricas públicas de impacto."
+      "quickTakeaways": [
+        "El anuncio es del 8 de septiembre de 2026: añade capacidades de creación y edición de imágenes, no un nuevo modelo de chat de texto.",
+        "OpenAI atribuye al nuevo sistema una reducción de latencia de hasta el 50 % frente a Images 2.0; no es una medición independiente de Gazette.",
+        "En ChatGPT incorpora bocetos como guía, plantillas y edición guiada por comentarios.",
+        "Los desarrolladores reciben GPT-Image-2.5 Flare y Sunburst con prioridades distintas.",
+        "El sistema de seguridad y trazabilidad utiliza controles de entrada/salida, C2PA y marcas invisibles; ninguna técnica por sí sola certifica autenticidad absoluta."
+      ],
+      "body": [
+        "El 8 de septiembre de 2026, OpenAI presentó ChatGPT Images 2.5 y dos variantes para su API. La novedad no se limita a obtener una imagen nueva a partir de una descripción: está orientada a mejorar un proceso completo de creación, con referencias, correcciones y varias iteraciones sin perder lo que ya funcionaba."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se lanzó exactamente",
+          "kind": "report",
+          "paragraphs": [
+            "La noticia comprende dos capas. La primera es la experiencia de imágenes dentro de ChatGPT, donde el usuario puede generar, modificar y compartir piezas. La segunda es la oferta para quienes incorporan esa misma familia de capacidades a aplicaciones externas: GPT-Image-2.5 Flare y GPT-Image-2.5 Sunburst. Separarlas es importante porque las funciones de la interfaz de ChatGPT y los controles disponibles para una integración por API no tienen necesariamente la misma forma ni los mismos costes.",
+            "El punto editorial es la transición de una generación aislada a un flujo de trabajo iterativo. Un diseñador puede empezar con una escena, corregir solo un producto, modificar la composición y después adaptar la misma pieza a otro formato. El criterio de éxito no es únicamente si la última imagen luce bien, sino cuánto del trabajo anterior sobrevivió a cada instrucción."
+          ]
+        },
+        {
+          "heading": "Fidelidad visual y trabajo con referencias",
+          "kind": "technical",
+          "paragraphs": [
+            "OpenAI destaca mejoras en iluminación, textura y conservación de rasgos de un sujeto de referencia. En vez de rehacer toda una escena cuando cambia el fondo o la estética, el sistema intenta mantener reconocibles los elementos centrales. Eso resulta especialmente relevante para fotografías de productos, campañas visuales coherentes y variaciones creativas de una misma escena.",
+            "Conviene distinguir capacidad declarada de resultado garantizado. La publicación no implica que todas las identidades, objetos o materiales permanezcan intactos en cada intento. Para valorar la consistencia hay que comparar referencias y resultados en distintos tipos de escenas, incluidos retratos, objetos pequeños, tipografía y combinaciones difíciles de iluminación."
+          ]
+        },
+        {
+          "heading": "Edición precisa y consistencia a lo largo de varios turnos",
+          "kind": "technical",
+          "paragraphs": [
+            "Una de las mejoras anunciadas es poder cambiar una región o un atributo concreto sin provocar cambios accidentales en el resto. La compañía también sostiene que, tras varias instrucciones sucesivas, el sistema conserva mejor las decisiones que ya se habían aprobado. Es una diferencia significativa respecto de flujos donde cada ajuste produce una reinterpretación casi completa.",
+            "En producción eso se traduce en una métrica sencilla: cuántas revisiones necesita un equipo para alcanzar una versión utilizable. Si modificar una etiqueta obliga a reconstruir el fondo y la iluminación, la aparente rapidez de una generación pierde sentido. Por eso el control de cambios —qué debe variar y qué debe permanecer igual— merece tanta atención como la calidad estética inicial."
+          ]
+        },
+        {
+          "heading": "Sketch, plantillas y comentarios: herramientas de dirección creativa",
+          "kind": "report",
+          "paragraphs": [
+            "La novedad para el usuario no está solo en el modelo. Sketch permite dibujar una guía rápida para transmitir relaciones espaciales o una composición difícil de explicar con palabras. Las plantillas ofrecen estructuras iniciales para formatos habituales como carteles y mercancía. También aparece la posibilidad de indicar comentarios más localizados sobre una imagen y compartir instrucciones utilizadas para que otra persona parta de ellas.",
+            "Estas herramientas atacan un problema frecuente: describir una idea visual exige un lenguaje que muchas personas no dominan, incluso si saben exactamente cómo debería verse el resultado. Un boceto comunica posiciones, tamaños y énfasis que un prompt largo puede dejar ambiguos. El límite es que una referencia dibujada sigue siendo una indicación, no una restricción matemática sobre todos los píxeles."
+          ]
+        },
+        {
+          "heading": "Dos modelos en la API: cuándo mirar Flare y cuándo Sunburst",
+          "kind": "technical",
+          "paragraphs": [
+            "GPT-Image-2.5 Flare se presenta como la opción predeterminada para una gran parte de los casos: prioriza generación y edición más rápidas, con una reducción de latencia que OpenAI cuantifica frente a su modelo anterior. Es atractivo para prototipos, grandes volúmenes y productos que necesitan responder de inmediato. Sunburst se orienta a trabajos que requieren un grado mayor de refinamiento y control de detalles, aceptando tiempos de generación más largos.",
+            "No sería riguroso declarar ganador a uno de los dos para todos los usos. Un estudio de producto debería medir coste total por imagen aprobada, no solo coste por solicitud; un flujo de campaña puede preferir Sunburst si reduce las iteraciones, mientras una herramienta de experimentación puede beneficiarse más de Flare. La elección depende del formato, la tolerancia a errores y la velocidad exigida al usuario."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y precio: qué está confirmado",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio sitúa la expansión de Images 2.5 en ChatGPT, ChatGPT Work y Codex, con acceso en escritorio, móvil y web y despliegue para los distintos niveles. Flare y Sunburst se anunciaron como disponibles mediante API. No debe confundirse esa disponibilidad anunciada con idénticos límites de uso, controles administrativos o precios para todos los planes y regiones.",
+            "La fuente principal remite la tarifa de la API a una página de precios separada, por lo que este informe no inventa un precio fijo por imagen. Quien evalúe costes debe consultar el listado vigente para el modelo, resolución y modalidad concreta, además de considerar generaciones fallidas, repeticiones y revisiones. Una cifra aislada sin tamaño de salida ni parámetros puede ser más engañosa que útil."
+          ]
+        },
+        {
+          "heading": "Seguridad, procedencia y el valor real de una marca de agua",
+          "kind": "report",
+          "paragraphs": [
+            "La documentación de seguridad explica que la familia incorpora evaluaciones de solicitudes y de resultados, con componentes que pueden rechazar instrucciones y bloquear determinadas salidas. También describe el uso de información de procedencia C2PA y marcas invisibles para ayudar a identificar contenido creado con estas herramientas. Esas medidas operan en planos distintos: moderación, rastreabilidad y explicación de origen.",
+            "Una marca o metadato no convierte una imagen en testimonio de que una escena ocurrió. También puede faltar información después de recortes, capturas o transformaciones, y detectar una señal no sustituye la verificación periodística de una fotografía. Para una publicación como Gazette, la obligación editorial sigue siendo etiquetar claramente una ilustración generada, verificar las imágenes documentales y no presentar escenas inventadas como instalaciones o prototipos reales."
+          ]
+        },
+        {
+          "heading": "Cómo comprobar la mejora sin depender de una demostración",
+          "kind": "practical",
+          "paragraphs": [
+            "Para probar Images 2.5 conviene escoger entre diez y veinte tareas reproducibles: sustituir un elemento sin alterar otro, preservar el mismo objeto a través de estilos, mantener una composición durante cinco iteraciones y crear variantes para distintas relaciones de aspecto. Guardar prompts, imágenes iniciales, resultados y número de intentos permite comparar flujos anteriores y nuevos sin seleccionar solamente los casos que salieron mejor.",
+            "También es útil revisar fallos que suelen quedar ocultos en una vista rápida: manos y objetos complejos, reflejos, texto dentro de la imagen, bordes transparentes, elementos repetidos o variaciones indeseadas de un logotipo de referencia. Si se trabaja con una marca, las salidas deben revisarse antes de publicarse. Una mejora de consistencia declarada por el proveedor no equivale a una certificación de cumplimiento gráfico."
+          ]
+        },
+        {
+          "heading": "Lo que significa para creadores, desarrolladores y empresas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: para creadores, el valor principal puede estar en reducir la fricción entre imaginar y corregir. Para desarrolladores, la decisión cambia hacia la composición de una experiencia: cómo recoger feedback localizado, cómo versionar imágenes, cómo hacer revisiones y qué modelo utilizar en cada etapa. Para empresas, interesa especialmente la repetibilidad, los controles sobre contenido y el coste por pieza finalmente aprobada.",
+            "La competencia en generación visual no se decidirá únicamente por imágenes de exhibición. Importan la velocidad de iteración, la continuidad del diseño, el manejo de material de referencia, la seguridad y el grado en que una herramienta se conecta con el trabajo cotidiano. Ninguna cifra del anuncio demuestra por sí sola que Images 2.5 supere a todos sus competidores en todas esas dimensiones."
+          ]
+        },
+        {
+          "heading": "Limitaciones, dudas y lo que hay que seguir",
+          "kind": "competition",
+          "paragraphs": [
+            "Quedan preguntas razonables: cómo se comporta la edición con referencias muy diferentes, qué ocurre con sesiones largas, si las mejoras se sostienen en idiomas y estilos poco frecuentes y cómo varía el rendimiento por tamaño de imagen. Tampoco se publica aquí una comparación externa controlada que permita trasladar directamente las cifras promocionales a toda la industria.",
+            "Los próximos indicadores útiles serán pruebas de terceros con prompts reproducibles, documentación de precios por modalidad, experiencia real de equipos creativos y evolución de los controles de procedencia. El hito a recordar en una cronología es el 8 de septiembre: la familia de imágenes pasó a ofrecer nuevas funciones de edición en el producto y dos opciones diferenciadas para integraciones profesionales."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Fecha del lanzamiento",
+          "value": "8 de septiembre de 2026"
+        },
+        {
+          "label": "Modelos API",
+          "value": "GPT-Image-2.5 Flare y GPT-Image-2.5 Sunburst"
+        },
+        {
+          "label": "Mejora de latencia declarada",
+          "value": "Hasta un 50 % frente a Images 2.0",
+          "note": "Cifra publicada por OpenAI; depende de la comparación y no es una medición independiente."
+        },
+        {
+          "label": "Formatos de dirección",
+          "value": "Texto, referencias visuales, bocetos y comentarios"
+        }
+      ],
+      "availability": {
+        "status": "Anunciado y en despliegue desde el 8 de septiembre de 2026",
+        "platforms": [
+          "ChatGPT",
+          "ChatGPT Work",
+          "Codex",
+          "OpenAI API: Flare y Sunburst"
+        ],
+        "regions": [
+          "La publicación anuncia acceso amplio; verificar límites concretos por plan y región"
+        ],
+        "requirements": [
+          "Consultar límites de la cuenta o espacio de trabajo",
+          "API: revisar acceso, documentación y precios vigentes"
+        ],
+        "notes": [
+          "La expansión de producto y los modelos para API no son la misma superficie."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "ChatGPT/Work/Codex",
+          "value": "Según plan y límites de uso; no se anunció aquí una tarifa universal por imagen."
+        },
+        {
+          "label": "API Flare / Sunburst",
+          "value": "Consultar la página oficial vigente de precios de OpenAI.",
+          "note": "No atribuir una cifra fija sin modalidad, resolución y fecha de consulta."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "OpenAI anuncia Images 2.5 y los modelos Flare/Sunburst."
+        }
+      ],
+      "limitations": [
+        "Las mejoras de calidad y latencia citadas proceden de OpenAI; faltan evaluaciones independientes reproducibles.",
+        "No existe garantía de consistencia perfecta en todas las imágenes o instrucciones.",
+        "Los precios de API dependen de condiciones y modalidades no cuantificadas en el anuncio principal.",
+        "C2PA y las marcas invisibles no sustituyen la verificación documental del contenido.",
+        "La disponibilidad real puede variar durante el despliegue y según la cuenta."
+      ],
+      "practicalAdvice": [
+        "Probar una secuencia de cinco ediciones sobre la misma imagen y documentar cuáles detalles se conservaron.",
+        "Para flujos profesionales, comparar Flare y Sunburst por coste de imagen aprobada, no solo por velocidad.",
+        "Guardar referencias, prompts y versiones para repetir la evaluación cuando cambie el modelo.",
+        "Revisar manualmente texto incrustado, identidades, marcas comerciales y elementos de fondo antes de publicar.",
+        "Acreditar siempre como ilustración el material sintético usado editorialmente."
+      ],
+      "usefulFacts": [
+        "Sketch permite usar un dibujo como referencia espacial para una imagen.",
+        "Flare prioriza rapidez y Sunburst mayor precisión de edición en flujos exigentes.",
+        "OpenAI anunció disponibilidad en ChatGPT, ChatGPT Work y Codex, además de modelos separados para API.",
+        "La system card documenta seguridad de entrada/salida y herramientas de procedencia."
+      ],
+      "curiosities": [
+        "El anuncio destaca que los usuarios crean más de 3.000 millones de imágenes por semana a través de sus productos visuales; es una cifra aportada por OpenAI.",
+        "Las plantillas y los comentarios localizados apuntan a reducir la dependencia de prompts escritos extensos.",
+        "La oferta API se separa en dos modelos con prioridades de velocidad y control diferentes."
+      ],
+      "executiveSummary": "ChatGPT Images 2.5 amplía el trabajo de edición visual de OpenAI con herramientas de boceto, plantillas, comentarios y una mayor consistencia declarada entre cambios. La API recibe Flare, orientado a velocidad, y Sunburst, orientado a ajustes más precisos. La mejora de rendimiento procede de datos de OpenAI y debe validarse en las tareas reales de cada equipo.",
+      "finalSummary": "La fecha del 8 de septiembre de 2026 merece una entrada propia en la cronología: generación visual pasa a ser también control detallado del proceso de edición. La ventaja competitiva real dependerá de cuánto esfuerzo y coste ahorre antes de obtener una imagen revisada, útil y publicable.",
+      "analysis": "Análisis Gazette: el progreso más interesante no es una imagen aislada más vistosa, sino un flujo que protege decisiones creativas anteriores y permite iterar. La diferencia entre velocidad y control se vuelve explícita en Flare y Sunburst. La prueba que importa es el trabajo aprobado, no el ejemplo promocional.",
+      "watch": "Benchmarks externos reproducibles, costes completos de API, consistencia tras múltiples ediciones, control de marcas e identidades, límites de disponibilidad y eficacia de las señales de procedencia."
     },
     {
       "id": "minicpm5-2b",
@@ -1267,40 +1449,40 @@
       "watch": "Velocidad y calidad en hardware de consumo, licencias y resultados independientes."
     },
     {
-      "id": "openai-an-alien-mind",
-      "eventKey": "openai-an-alien-mind",
-      "date": "2026-09-06",
-      "announcedAt": "2026-09-06",
-      "company": "OpenAI",
-      "product": "Safety research",
-      "title": "El jefe científico de OpenAI pide barras comunes antes de seguir escalando al máximo",
-      "summary": "Jakub Pachocki sostiene que alignment y monitoreo todavía no están resueltos al nivel necesario para mantener indefinidamente el ritmo frontier.",
+      "id": "google-cathay-contrail-trial",
+      "eventKey": "google-cathay-contrail-trial",
+      "date": "2026-09-07",
+      "announcedAt": "2026-09-07",
+      "company": "Google",
+      "product": "AI-powered contrail avoidance",
+      "title": "Cathay Pacific probará con Google rutas para evitar estelas de condensación",
+      "summary": "La aerolínea se suma a pruebas operativas de una herramienta de IA que busca identificar ajustes de vuelo capaces de reducir contrails.",
       "tags": [
-        "Seguridad",
-        "Investigación",
-        "Política"
+        "IA aplicada",
+        "Clima",
+        "Investigación"
       ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
       "verifiedAt": "2026-10-07",
       "coveredAt": "2026-10-07",
       "source": {
-        "name": "OpenAI · ensayo de Jakub Pachocki",
-        "url": "https://openai.com/index/an-alien-mind/",
-        "publishedAt": "2026-09-06"
+        "name": "Cathay Pacific · anuncio oficial",
+        "url": "https://news.cathaypacific.com/translation-cathay-pacific-and-google-partner-to-research-and-trial-ai-powered-contrail-avoidance",
+        "publishedAt": "2026-09-07"
       },
       "body": [
-        "Jakub Pachocki, chief scientist de OpenAI, publicó un ensayo sobre los límites actuales de alignment y monitoreo. Es una posición argumentada, no un anuncio de que OpenAI haya detenido el entrenamiento.",
-        "Pachocki sostiene que los laboratorios necesitan criterios de seguridad compartidos y coordinación internacional si la supervisión deja de seguir el ritmo de las capacidades."
+        "Cathay Pacific anunció una colaboración con Google para investigar y probar una herramienta de IA orientada a evitar estelas de condensación cuando las condiciones de vuelo lo permitan.",
+        "El programa evaluará factibilidad operativa e impacto climático en vuelos reales. Es una prueba de campo, no una declaración de que el sistema ya elimine contrails de forma general."
       ],
       "keyPoints": [
-        "Ensayo publicado el 6 de septiembre.",
-        "Pide mejores barras de seguridad y coordinación.",
-        "No anuncia una pausa inmediata de OpenAI."
+        "Prueba operativa con una aerolínea comercial.",
+        "Uso de IA para identificar condiciones asociadas a contrails.",
+        "El objetivo es evaluar factibilidad e impacto."
       ],
-      "analysis": "Las políticas internas pueden convertirse en un factor competitivo cuando las capacidades avanzan más rápido que las técnicas de control.",
-      "watch": "Cambios concretos en políticas de lanzamiento, evaluaciones y coordinación."
+      "analysis": "La IA aplicada a operaciones físicas necesita demostrar beneficio sin introducir costos o riesgos mayores.",
+      "watch": "Resultados de los vuelos de prueba y métricas públicas de impacto."
     },
     {
       "id": "openai-automated-research-intern",
@@ -1338,18 +1520,18 @@
       "watch": "Evaluaciones externas y desempeño en proyectos con objetivos menos definidos."
     },
     {
-      "id": "dome-agent-operations-platform",
-      "eventKey": "dome-agent-operations-platform",
-      "date": "2026-09-05",
-      "announcedAt": "2026-09-05",
-      "company": "Dome Systems",
-      "product": "Agent Operations Platform",
-      "title": "Dome abre una plataforma de operaciones para agentes",
-      "summary": "La propuesta reúne registro de agentes, gateway MCP y enrutamiento de modelos bajo un control operativo común.",
+      "id": "openai-an-alien-mind",
+      "eventKey": "openai-an-alien-mind",
+      "date": "2026-09-06",
+      "announcedAt": "2026-09-06",
+      "company": "OpenAI",
+      "product": "Safety research",
+      "title": "El jefe científico de OpenAI pide barras comunes antes de seguir escalando al máximo",
+      "summary": "Jakub Pachocki sostiene que alignment y monitoreo todavía no están resueltos al nivel necesario para mantener indefinidamente el ritmo frontier.",
       "tags": [
-        "Agentes",
-        "Infraestructura",
-        "Desarrollo"
+        "Seguridad",
+        "Investigación",
+        "Política"
       ],
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
@@ -1357,21 +1539,21 @@
       "verifiedAt": "2026-10-07",
       "coveredAt": "2026-10-07",
       "source": {
-        "name": "Dome Systems · anuncio oficial",
-        "url": "https://www.domesystems.ai/updates/dome-launches-agent-operations-platform",
-        "publishedAt": "2026-09-05"
+        "name": "OpenAI · ensayo de Jakub Pachocki",
+        "url": "https://openai.com/index/an-alien-mind/",
+        "publishedAt": "2026-09-06"
       },
       "body": [
-        "Dome Systems anunció acceso self-service a su Agent Operations Platform.",
-        "El producto reúne un registro de agentes, un gateway para MCP y controles para enrutar modelos y herramientas. Intenta resolver el problema operativo de administrar muchos agentes dentro de una organización."
+        "Jakub Pachocki, chief scientist de OpenAI, publicó un ensayo sobre los límites actuales de alignment y monitoreo. Es una posición argumentada, no un anuncio de que OpenAI haya detenido el entrenamiento.",
+        "Pachocki sostiene que los laboratorios necesitan criterios de seguridad compartidos y coordinación internacional si la supervisión deja de seguir el ritmo de las capacidades."
       ],
       "keyPoints": [
-        "Acceso self-service anunciado el 5 de septiembre.",
-        "Registro de agentes y gateway MCP.",
-        "Control de modelos y herramientas desde una capa común."
+        "Ensayo publicado el 6 de septiembre.",
+        "Pide mejores barras de seguridad y coordinación.",
+        "No anuncia una pausa inmediata de OpenAI."
       ],
-      "analysis": "La administración de agentes puede terminar pareciéndose a la administración de servicios: inventario, identidad, permisos y observabilidad.",
-      "watch": "Adopción, interoperabilidad y controles de seguridad."
+      "analysis": "Las políticas internas pueden convertirse en un factor competitivo cuando las capacidades avanzan más rápido que las técnicas de control.",
+      "watch": "Cambios concretos en políticas de lanzamiento, evaluaciones y coordinación."
     },
     {
       "id": "tcs-hypervault-hyderabad",
@@ -1409,54 +1591,18 @@
       "watch": "Calendario de construcción, clientes y capacidad que realmente entra en operación."
     },
     {
-      "id": "anthropic-fermat-formalization",
-      "eventKey": "anthropic-fermat-formalization",
-      "date": "2026-09-04",
-      "announcedAt": "2026-09-04",
-      "company": "Anthropic",
-      "product": "Claude",
-      "title": "Claude completa una formalización verificable del último teorema de Fermat",
-      "summary": "Anthropic anuncia una prueba formal en Lean comprobada por computadora, construida con una participación autónoma extensa de Claude.",
-      "tags": [
-        "Investigación",
-        "Ciencia",
-        "Agentes"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Anthropic · anuncio oficial",
-        "url": "https://www.anthropic.com/news/formalizing-fermats-last-theorem",
-        "publishedAt": "2026-09-04"
-      },
-      "body": [
-        "Anthropic anunció una formalización completa del último teorema de Fermat en Lean, de modo que los pasos pueden ser comprobados por un verificador formal.",
-        "El trabajo no constituye una nueva demostración matemática del teorema; formaliza una prueba conocida. La empresa describe a Claude realizando gran parte del trabajo con supervisión humana."
-      ],
-      "keyPoints": [
-        "Formalización en Lean comprobada por máquina.",
-        "No es una nueva prueba matemática del teorema.",
-        "Anthropic atribuye a Claude una participación autónoma extensa."
-      ],
-      "analysis": "Los verificadores formales crean un entorno atractivo para agentes de investigación porque permiten validar resultados de forma estricta.",
-      "watch": "Reproducción independiente y aplicación del enfoque a nuevos problemas."
-    },
-    {
-      "id": "github-hydrafusion",
-      "eventKey": "github-hydrafusion",
-      "date": "2026-09-04",
-      "announcedAt": "2026-09-04",
-      "company": "GitHub",
-      "product": "Project HydraFusion",
-      "title": "GitHub prueba HydraFusion para orquestar varios modelos en Copilot",
-      "summary": "El sistema de investigación selecciona modelos distintos para planificar, redactar, criticar y revisar una misma tarea de programación.",
+      "id": "dome-agent-operations-platform",
+      "eventKey": "dome-agent-operations-platform",
+      "date": "2026-09-05",
+      "announcedAt": "2026-09-05",
+      "company": "Dome Systems",
+      "product": "Agent Operations Platform",
+      "title": "Dome abre una plataforma de operaciones para agentes",
+      "summary": "La propuesta reúne registro de agentes, gateway MCP y enrutamiento de modelos bajo un control operativo común.",
       "tags": [
         "Agentes",
-        "Desarrollo",
-        "Investigación"
+        "Infraestructura",
+        "Desarrollo"
       ],
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
@@ -1464,56 +1610,21 @@
       "verifiedAt": "2026-10-07",
       "coveredAt": "2026-10-07",
       "source": {
-        "name": "GitHub Blog · anuncio oficial",
-        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-        "publishedAt": "2026-09-04"
+        "name": "Dome Systems · anuncio oficial",
+        "url": "https://www.domesystems.ai/updates/dome-launches-agent-operations-platform",
+        "publishedAt": "2026-09-05"
       },
       "body": [
-        "GitHub presentó Project HydraFusion como una investigación de orquestación multi-modelo dentro del ecosistema Copilot.",
-        "El sistema puede asignar modelos diferentes a planificación, generación, crítica y revisión. GitHub reporta mejoras internas; esos resultados dependen de su configuración y tareas."
+        "Dome Systems anunció acceso self-service a su Agent Operations Platform.",
+        "El producto reúne un registro de agentes, un gateway para MCP y controles para enrutar modelos y herramientas. Intenta resolver el problema operativo de administrar muchos agentes dentro de una organización."
       ],
       "keyPoints": [
-        "Orquestación de varios modelos.",
-        "Diferentes modelos pueden asumir distintas etapas.",
-        "Presentado como proyecto de investigación."
+        "Acceso self-service anunciado el 5 de septiembre.",
+        "Registro de agentes y gateway MCP.",
+        "Control de modelos y herramientas desde una capa común."
       ],
-      "analysis": "El moat puede moverse del modelo individual hacia el sistema que sabe combinar modelos, herramientas y verificadores.",
-      "watch": "Disponibilidad fuera de investigación y costo total por tarea."
-    },
-    {
-      "id": "lyria-3-5-gemini",
-      "eventKey": "lyria-3-5-gemini",
-      "date": "2026-09-04",
-      "coveredAt": "2026-10-07",
-      "company": "Google",
-      "product": "Lyria 3.5",
-      "title": "Lyria 3.5 lleva la creación musical a Gemini",
-      "summary": "Google anuncia generación musical con opciones de género, voz y duración.",
-      "tags": [
-        "Productos",
-        "Audio"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
-        "publishedAt": "2026-09-04"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "Google anunció el 4 de septiembre la llegada de Lyria 3.5 a Gemini y a la API de Gemini. El modelo está orientado a generar música a partir de instrucciones.",
-        "La aplicación permite elegir o describir géneros, trabajar con estilos vocales o instrumentales y seleccionar pistas cortas o más largas. El anuncio también cita AI Studio, Flow Music y Vids.",
-        "Antes de incorporar una pista a un proyecto público, corresponde revisar las condiciones de uso de la herramienta y escuchar el resultado completo. Generar audio y decidir cómo publicarlo son pasos diferentes."
-      ],
-      "keyPoints": [
-        "Creación musical en Gemini.",
-        "Opciones vocales e instrumentales."
-      ],
-      "analysis": "La música generativa gana utilidad cuando el usuario puede dirigir e iterar el resultado, además de obtener una primera pista.",
-      "watch": "Control creativo, consistencia y condiciones de uso.",
-      "announcedAt": "2026-09-04"
+      "analysis": "La administración de agentes puede terminar pareciéndose a la administración de servicios: inventario, identidad, permisos y observabilidad.",
+      "watch": "Adopción, interoperabilidad y controles de seguridad."
     },
     {
       "id": "openai-agent-message-board-report",
@@ -1556,6 +1667,292 @@
       ],
       "analysis": "La observabilidad multiagente necesita cubrir también canales externos que un agente pueda crear o reutilizar.",
       "watch": "Criterios de divulgación y controles que impidan coordinación no autorizada."
+    },
+    {
+      "id": "lyria-3-5-gemini",
+      "eventKey": "lyria-3-5-gemini",
+      "date": "2026-09-04",
+      "coveredAt": "2026-10-07",
+      "company": "Google",
+      "product": "Lyria 3.5",
+      "title": "Lyria 3.5 lleva la creación musical a Gemini",
+      "summary": "Google anuncia generación musical con opciones de género, voz y duración.",
+      "tags": [
+        "Productos",
+        "Audio"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
+        "publishedAt": "2026-09-04"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Google anunció el 4 de septiembre la llegada de Lyria 3.5 a Gemini y a la API de Gemini. El modelo está orientado a generar música a partir de instrucciones.",
+        "La aplicación permite elegir o describir géneros, trabajar con estilos vocales o instrumentales y seleccionar pistas cortas o más largas. El anuncio también cita AI Studio, Flow Music y Vids.",
+        "Antes de incorporar una pista a un proyecto público, corresponde revisar las condiciones de uso de la herramienta y escuchar el resultado completo. Generar audio y decidir cómo publicarlo son pasos diferentes."
+      ],
+      "keyPoints": [
+        "Creación musical en Gemini.",
+        "Opciones vocales e instrumentales."
+      ],
+      "analysis": "La música generativa gana utilidad cuando el usuario puede dirigir e iterar el resultado, además de obtener una primera pista.",
+      "watch": "Control creativo, consistencia y condiciones de uso.",
+      "announcedAt": "2026-09-04"
+    },
+    {
+      "id": "github-hydrafusion",
+      "eventKey": "github-hydrafusion",
+      "date": "2026-09-04",
+      "announcedAt": "2026-09-04",
+      "company": "GitHub",
+      "product": "Project HydraFusion",
+      "title": "GitHub prueba HydraFusion para orquestar varios modelos en Copilot",
+      "summary": "El sistema de investigación selecciona modelos distintos para planificar, redactar, criticar y revisar una misma tarea de programación.",
+      "tags": [
+        "Agentes",
+        "Desarrollo",
+        "Investigación"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "GitHub Blog · anuncio oficial",
+        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+        "publishedAt": "2026-09-04"
+      },
+      "body": [
+        "GitHub presentó Project HydraFusion como una investigación de orquestación multi-modelo dentro del ecosistema Copilot.",
+        "El sistema puede asignar modelos diferentes a planificación, generación, crítica y revisión. GitHub reporta mejoras internas; esos resultados dependen de su configuración y tareas."
+      ],
+      "keyPoints": [
+        "Orquestación de varios modelos.",
+        "Diferentes modelos pueden asumir distintas etapas.",
+        "Presentado como proyecto de investigación."
+      ],
+      "analysis": "El moat puede moverse del modelo individual hacia el sistema que sabe combinar modelos, herramientas y verificadores.",
+      "watch": "Disponibilidad fuera de investigación y costo total por tarea."
+    },
+    {
+      "id": "anthropic-fermat-formalization",
+      "eventKey": "anthropic-fermat-formalization",
+      "date": "2026-09-04",
+      "announcedAt": "2026-09-04",
+      "company": "Anthropic",
+      "product": "Claude",
+      "title": "Claude completa una formalización verificable del último teorema de Fermat",
+      "summary": "Anthropic anuncia una prueba formal en Lean comprobada por computadora, construida con una participación autónoma extensa de Claude.",
+      "tags": [
+        "Investigación",
+        "Ciencia",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/news/formalizing-fermats-last-theorem",
+        "publishedAt": "2026-09-04"
+      },
+      "body": [
+        "Anthropic anunció una formalización completa del último teorema de Fermat en Lean, de modo que los pasos pueden ser comprobados por un verificador formal.",
+        "El trabajo no constituye una nueva demostración matemática del teorema; formaliza una prueba conocida. La empresa describe a Claude realizando gran parte del trabajo con supervisión humana."
+      ],
+      "keyPoints": [
+        "Formalización en Lean comprobada por máquina.",
+        "No es una nueva prueba matemática del teorema.",
+        "Anthropic atribuye a Claude una participación autónoma extensa."
+      ],
+      "analysis": "Los verificadores formales crean un entorno atractivo para agentes de investigación porque permiten validar resultados de forma estricta.",
+      "watch": "Reproducción independiente y aplicación del enfoque a nuevos problemas."
+    },
+    {
+      "id": "weathernext-3",
+      "eventKey": "weathernext-3",
+      "date": "2026-09-03",
+      "announcedAt": "2026-09-03",
+      "company": "Google",
+      "product": "WeatherNext 3",
+      "title": "Google presenta WeatherNext 3 y lleva sus pronósticos a más productos",
+      "summary": "El sistema meteorológico de IA actualiza pronósticos con mayor frecuencia e incorpora más variables para productos y energía.",
+      "tags": [
+        "Modelos",
+        "Ciencia",
+        "Productos"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google DeepMind · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+        "publishedAt": "2026-09-03"
+      },
+      "body": [
+        "Google presentó WeatherNext 3, una nueva generación de su sistema de predicción meteorológica basado en IA.",
+        "La compañía destaca actualizaciones más frecuentes, mayor resolución y variables adicionales, y anunció integración en productos y servicios para desarrolladores."
+      ],
+      "keyPoints": [
+        "Pronósticos actualizados con mayor frecuencia.",
+        "Nuevas variables meteorológicas y energéticas.",
+        "Integración anunciada en varios productos de Google."
+      ],
+      "analysis": "Los modelos especializados pueden tener gran impacto económico aunque reciban menos atención que los LLM.",
+      "watch": "Comparaciones con sistemas meteorológicos tradicionales y desempeño por región."
+    },
+    {
+      "id": "nvidia-pair",
+      "eventKey": "nvidia-pair",
+      "date": "2026-09-03",
+      "announcedAt": "2026-09-03",
+      "company": "NVIDIA",
+      "product": "Personal AI Router (PAIR)",
+      "title": "NVIDIA presenta PAIR para repartir IA local entre varios equipos",
+      "summary": "Personal AI Router distribuye inferencia entre computadoras locales y busca convertir una red doméstica o de trabajo en un pequeño clúster de IA.",
+      "tags": [
+        "Infraestructura",
+        "Modelos",
+        "Código abierto"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "NVIDIA · anuncio oficial",
+        "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+        "publishedAt": "2026-09-03"
+      },
+      "body": [
+        "NVIDIA presentó Personal AI Router, o PAIR, como software gratuito y open source para repartir cargas de inferencia entre varios equipos locales.",
+        "La beta anunciada contempla Windows, macOS y Linux y busca aprovechar memoria y cómputo distribuido sin enviar cada tarea a la nube."
+      ],
+      "keyPoints": [
+        "Router local de inferencia.",
+        "Beta multiplataforma.",
+        "Diseñado para coordinar varios equipos."
+      ],
+      "analysis": "La agregación de recursos locales puede hacer útiles modelos mayores sin comprar una única estación extremadamente cara.",
+      "watch": "Rendimiento sobre redes domésticas y soporte para hardware heterogéneo."
+    },
+    {
+      "id": "nvidia-hugging-face-acquisition",
+      "eventKey": "nvidia-hugging-face-acquisition",
+      "date": "2026-09-03",
+      "announcedAt": "2026-09-03",
+      "company": "NVIDIA",
+      "product": "Hugging Face",
+      "title": "NVIDIA acuerda adquirir Hugging Face",
+      "summary": "El fabricante de chips anuncia un acuerdo para comprar la plataforma open-source, sujeto a las condiciones habituales de cierre.",
+      "tags": [
+        "Negocio",
+        "Código abierto",
+        "Infraestructura"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "NVIDIA · anuncio oficial",
+        "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+        "publishedAt": "2026-09-03"
+      },
+      "body": [
+        "NVIDIA anunció un acuerdo para adquirir Hugging Face. Es un acuerdo pendiente de cierre, no una adquisición ya consumada.",
+        "NVIDIA afirma que Hugging Face seguirá operando como una plataforma abierta, multi-cloud y multi-acelerador. La operación une al proveedor dominante de aceleradores con uno de los principales centros de distribución de modelos y datasets."
+      ],
+      "keyPoints": [
+        "Acuerdo anunciado el 3 de septiembre.",
+        "El cierre todavía está sujeto a condiciones.",
+        "NVIDIA promete mantener el carácter abierto y multi-plataforma de Hugging Face."
+      ],
+      "analysis": "La integración vertical entre chips, software y distribución de modelos puede alterar la estructura del ecosistema.",
+      "watch": "Aprobaciones, fecha de cierre y cambios en gobernanza y neutralidad de la plataforma."
+    },
+    {
+      "id": "ifm-k2-horizon",
+      "eventKey": "ifm-k2-horizon",
+      "date": "2026-09-03",
+      "announcedAt": "2026-09-03",
+      "company": "IFM",
+      "product": "K2 Horizon",
+      "title": "IFM publica K2 Horizon como familia abierta de modelos",
+      "summary": "La colección cubre varios tamaños y acompaña los modelos con código y materiales de entrenamiento para facilitar reproducción e investigación.",
+      "tags": [
+        "Modelos",
+        "Código abierto",
+        "Investigación"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "IFM · anuncio oficial",
+        "url": "https://ifm.ai/blog/k2/",
+        "publishedAt": "2026-09-03"
+      },
+      "body": [
+        "IFM presentó K2 Horizon, una familia de modelos que abarca desde variantes compactas hasta sistemas mucho mayores.",
+        "La organización publica pesos y código junto con información sobre datasets y metodología. El lanzamiento intenta competir también en trazabilidad y reproducibilidad."
+      ],
+      "keyPoints": [
+        "Familia de varios tamaños.",
+        "Pesos y código publicados.",
+        "Materiales de entrenamiento y metodología acompañan el lanzamiento."
+      ],
+      "analysis": "La apertura del proceso puede ser un diferenciador para investigación y despliegues que requieren auditar la procedencia de los modelos.",
+      "watch": "Reproducción por terceros, uso comercial y desempeño fuera de los benchmarks del proveedor."
+    },
+    {
+      "id": "grok-bot-enterprise",
+      "eventKey": "grok-bot-enterprise",
+      "date": "2026-09-03",
+      "announcedAt": "2026-09-03",
+      "company": "xAI",
+      "product": "Grok Bot for Enterprise",
+      "title": "xAI lleva Grok Bot al entorno empresarial",
+      "summary": "La oferta añade agentes con computadoras en la nube, controles organizacionales y acceso administrado para equipos.",
+      "tags": [
+        "Agentes",
+        "Empresa"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "xAI · anuncio oficial",
+        "url": "https://x.ai/news/grok-bot-for-enterprise",
+        "publishedAt": "2026-09-03"
+      },
+      "body": [
+        "xAI presentó Grok Bot for Enterprise como una versión orientada a organizaciones que necesitan administrar agentes de trabajo.",
+        "El producto incorpora agentes persistentes que operan en computadoras en la nube y controles de organización, red y acceso. El movimiento extiende la propuesta de xAI más allá del chat."
+      ],
+      "keyPoints": [
+        "Oferta empresarial anunciada el 3 de septiembre.",
+        "Agentes persistentes con entorno de cómputo.",
+        "Controles administrativos y de acceso."
+      ],
+      "analysis": "La competencia por agentes empresariales depende de plataforma de ejecución y gobernanza tanto como del modelo.",
+      "watch": "Precios y evidencia de confiabilidad en tareas largas."
     },
     {
       "id": "gpt-6-astra",
@@ -1606,195 +2003,17 @@
       "watch": "Ampliación de acceso, precio y evaluaciones independientes."
     },
     {
-      "id": "grok-bot-enterprise",
-      "eventKey": "grok-bot-enterprise",
-      "date": "2026-09-03",
-      "announcedAt": "2026-09-03",
-      "company": "xAI",
-      "product": "Grok Bot for Enterprise",
-      "title": "xAI lleva Grok Bot al entorno empresarial",
-      "summary": "La oferta añade agentes con computadoras en la nube, controles organizacionales y acceso administrado para equipos.",
+      "id": "wonderful-series-c-2026",
+      "eventKey": "wonderful-series-c-2026",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Wonderful",
+      "product": "Wonderful AI OS",
+      "title": "Wonderful levanta US$550 millones para expandir sus agentes empresariales",
+      "summary": "La Serie C valora la compañía en US$5.000 millones y financia la expansión de su plataforma de agentes para empresas.",
       "tags": [
         "Agentes",
-        "Empresa"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "xAI · anuncio oficial",
-        "url": "https://x.ai/news/grok-bot-for-enterprise",
-        "publishedAt": "2026-09-03"
-      },
-      "body": [
-        "xAI presentó Grok Bot for Enterprise como una versión orientada a organizaciones que necesitan administrar agentes de trabajo.",
-        "El producto incorpora agentes persistentes que operan en computadoras en la nube y controles de organización, red y acceso. El movimiento extiende la propuesta de xAI más allá del chat."
-      ],
-      "keyPoints": [
-        "Oferta empresarial anunciada el 3 de septiembre.",
-        "Agentes persistentes con entorno de cómputo.",
-        "Controles administrativos y de acceso."
-      ],
-      "analysis": "La competencia por agentes empresariales depende de plataforma de ejecución y gobernanza tanto como del modelo.",
-      "watch": "Precios y evidencia de confiabilidad en tareas largas."
-    },
-    {
-      "id": "ifm-k2-horizon",
-      "eventKey": "ifm-k2-horizon",
-      "date": "2026-09-03",
-      "announcedAt": "2026-09-03",
-      "company": "IFM",
-      "product": "K2 Horizon",
-      "title": "IFM publica K2 Horizon como familia abierta de modelos",
-      "summary": "La colección cubre varios tamaños y acompaña los modelos con código y materiales de entrenamiento para facilitar reproducción e investigación.",
-      "tags": [
-        "Modelos",
-        "Código abierto",
-        "Investigación"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "IFM · anuncio oficial",
-        "url": "https://ifm.ai/blog/k2/",
-        "publishedAt": "2026-09-03"
-      },
-      "body": [
-        "IFM presentó K2 Horizon, una familia de modelos que abarca desde variantes compactas hasta sistemas mucho mayores.",
-        "La organización publica pesos y código junto con información sobre datasets y metodología. El lanzamiento intenta competir también en trazabilidad y reproducibilidad."
-      ],
-      "keyPoints": [
-        "Familia de varios tamaños.",
-        "Pesos y código publicados.",
-        "Materiales de entrenamiento y metodología acompañan el lanzamiento."
-      ],
-      "analysis": "La apertura del proceso puede ser un diferenciador para investigación y despliegues que requieren auditar la procedencia de los modelos.",
-      "watch": "Reproducción por terceros, uso comercial y desempeño fuera de los benchmarks del proveedor."
-    },
-    {
-      "id": "nvidia-hugging-face-acquisition",
-      "eventKey": "nvidia-hugging-face-acquisition",
-      "date": "2026-09-03",
-      "announcedAt": "2026-09-03",
-      "company": "NVIDIA",
-      "product": "Hugging Face",
-      "title": "NVIDIA acuerda adquirir Hugging Face",
-      "summary": "El fabricante de chips anuncia un acuerdo para comprar la plataforma open-source, sujeto a las condiciones habituales de cierre.",
-      "tags": [
         "Negocio",
-        "Código abierto",
-        "Infraestructura"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "NVIDIA · anuncio oficial",
-        "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
-        "publishedAt": "2026-09-03"
-      },
-      "body": [
-        "NVIDIA anunció un acuerdo para adquirir Hugging Face. Es un acuerdo pendiente de cierre, no una adquisición ya consumada.",
-        "NVIDIA afirma que Hugging Face seguirá operando como una plataforma abierta, multi-cloud y multi-acelerador. La operación une al proveedor dominante de aceleradores con uno de los principales centros de distribución de modelos y datasets."
-      ],
-      "keyPoints": [
-        "Acuerdo anunciado el 3 de septiembre.",
-        "El cierre todavía está sujeto a condiciones.",
-        "NVIDIA promete mantener el carácter abierto y multi-plataforma de Hugging Face."
-      ],
-      "analysis": "La integración vertical entre chips, software y distribución de modelos puede alterar la estructura del ecosistema.",
-      "watch": "Aprobaciones, fecha de cierre y cambios en gobernanza y neutralidad de la plataforma."
-    },
-    {
-      "id": "nvidia-pair",
-      "eventKey": "nvidia-pair",
-      "date": "2026-09-03",
-      "announcedAt": "2026-09-03",
-      "company": "NVIDIA",
-      "product": "Personal AI Router (PAIR)",
-      "title": "NVIDIA presenta PAIR para repartir IA local entre varios equipos",
-      "summary": "Personal AI Router distribuye inferencia entre computadoras locales y busca convertir una red doméstica o de trabajo en un pequeño clúster de IA.",
-      "tags": [
-        "Infraestructura",
-        "Modelos",
-        "Código abierto"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "NVIDIA · anuncio oficial",
-        "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
-        "publishedAt": "2026-09-03"
-      },
-      "body": [
-        "NVIDIA presentó Personal AI Router, o PAIR, como software gratuito y open source para repartir cargas de inferencia entre varios equipos locales.",
-        "La beta anunciada contempla Windows, macOS y Linux y busca aprovechar memoria y cómputo distribuido sin enviar cada tarea a la nube."
-      ],
-      "keyPoints": [
-        "Router local de inferencia.",
-        "Beta multiplataforma.",
-        "Diseñado para coordinar varios equipos."
-      ],
-      "analysis": "La agregación de recursos locales puede hacer útiles modelos mayores sin comprar una única estación extremadamente cara.",
-      "watch": "Rendimiento sobre redes domésticas y soporte para hardware heterogéneo."
-    },
-    {
-      "id": "weathernext-3",
-      "eventKey": "weathernext-3",
-      "date": "2026-09-03",
-      "announcedAt": "2026-09-03",
-      "company": "Google",
-      "product": "WeatherNext 3",
-      "title": "Google presenta WeatherNext 3 y lleva sus pronósticos a más productos",
-      "summary": "El sistema meteorológico de IA actualiza pronósticos con mayor frecuencia e incorpora más variables para productos y energía.",
-      "tags": [
-        "Modelos",
-        "Ciencia",
-        "Productos"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Google DeepMind · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
-        "publishedAt": "2026-09-03"
-      },
-      "body": [
-        "Google presentó WeatherNext 3, una nueva generación de su sistema de predicción meteorológica basado en IA.",
-        "La compañía destaca actualizaciones más frecuentes, mayor resolución y variables adicionales, y anunció integración en productos y servicios para desarrolladores."
-      ],
-      "keyPoints": [
-        "Pronósticos actualizados con mayor frecuencia.",
-        "Nuevas variables meteorológicas y energéticas.",
-        "Integración anunciada en varios productos de Google."
-      ],
-      "analysis": "Los modelos especializados pueden tener gran impacto económico aunque reciban menos atención que los LLM.",
-      "watch": "Comparaciones con sistemas meteorológicos tradicionales y desempeño por región."
-    },
-    {
-      "id": "amazon-connect-agentic-cx-designer",
-      "eventKey": "amazon-connect-agentic-cx-designer",
-      "date": "2026-09-02",
-      "announcedAt": "2026-09-02",
-      "company": "AWS",
-      "product": "Amazon Connect agentic CX designer",
-      "title": "AWS lleva un diseñador agentivo a Amazon Connect",
-      "summary": "La herramienta no-code combina pasos deterministas y agentes para crear y probar experiencias de atención en voz y canales digitales.",
-      "tags": [
-        "Agentes",
         "Empresa"
       ],
       "image": "assets/hero.webp",
@@ -1803,199 +2022,21 @@
       "verifiedAt": "2026-10-07",
       "coveredAt": "2026-10-07",
       "source": {
-        "name": "AWS · What's New",
-        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/agentic-cx-designer/",
+        "name": "Wonderful · anuncio oficial",
+        "url": "https://www.wonderful.ai/blog-articles/wonderful-raises-550m-series-c",
         "publishedAt": "2026-09-02"
       },
       "body": [
-        "AWS anunció disponibilidad general de su diseñador agentivo de experiencias de cliente para Amazon Connect.",
-        "La interfaz permite combinar pasos deterministas con componentes de IA en un lienzo visual. Ese diseño híbrido conserva lógica explícita donde se necesita previsibilidad y usa agentes para partes menos estructuradas."
+        "Wonderful anunció una Serie C de 550 millones de dólares con una valoración de 5.000 millones.",
+        "La compañía construye una plataforma de agentes empresariales y vincula la ronda con expansión de producto y mercados. El tamaño de la ronda la convierte en una señal material de la capa operativa de agentes."
       ],
       "keyPoints": [
-        "Disponibilidad general.",
-        "Diseño visual sin código.",
-        "Combina lógica determinista y agentes."
+        "Serie C de US$550 millones.",
+        "Valoración anunciada de US$5.000 millones.",
+        "Capital dirigido a agentes empresariales."
       ],
-      "analysis": "Los agentes empresariales probablemente convivirán con reglas tradicionales; integrar ambos enfoques puede reducir riesgo operativo.",
-      "watch": "Cómo se auditan decisiones del agente dentro de flujos reales."
-    },
-    {
-      "id": "gemini-3-8-flash",
-      "eventKey": "gemini-3-8-flash",
-      "date": "2026-09-02",
-      "announcedAt": "2026-09-02",
-      "company": "Google",
-      "product": "Gemini 3.8 Flash",
-      "title": "Google lanza Gemini 3.8 Flash para agentes y desarrollo",
-      "summary": "La nueva versión Flash llega a la API y a productos de Google con foco en software, razonamiento multietapa y trabajo agentivo.",
-      "tags": [
-        "Modelos",
-        "Agentes",
-        "Desarrollo"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-        "publishedAt": "2026-09-02"
-      },
-      "body": [
-        "Google anunció Gemini 3.8 Flash como una nueva versión generalista de su línea Flash, con foco en programación, razonamiento multietapa y tareas agentivas.",
-        "Google publicó precio y resultados internos de rendimiento; esas cifras pertenecen al proveedor. La misma publicación incluye una variante Cyber con condiciones de acceso distintas."
-      ],
-      "keyPoints": [
-        "Nueva versión generalista de la línea Flash.",
-        "Disponible en API y productos de Google según el anuncio.",
-        "La variante Cyber tiene un régimen de acceso separado."
-      ],
-      "analysis": "Flash compite donde capacidad y costo operativo importan al mismo tiempo, especialmente para agentes que realizan muchos pasos.",
-      "watch": "Precio, calidad end-to-end y comparaciones independientes."
-    },
-    {
-      "id": "gemini-3-8-flash-cyber",
-      "eventKey": "gemini-3-8-flash-cyber",
-      "date": "2026-09-02",
-      "announcedAt": "2026-09-02",
-      "company": "Google",
-      "product": "Gemini 3.8 Flash Cyber",
-      "title": "Gemini 3.8 Flash Cyber queda reservado a defensores verificados",
-      "summary": "Google separa una variante de ciberseguridad con capacidades más permisivas y acceso mediante su programa Fairwind.",
-      "tags": [
-        "Modelos",
-        "Seguridad"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-        "publishedAt": "2026-09-02"
-      },
-      "body": [
-        "Google presentó Gemini 3.8 Flash Cyber como una variante especializada en ciberseguridad.",
-        "El acceso inicial se limita a defensores de confianza a través de Fairwind, por lo que el lanzamiento no equivale a disponibilidad general en la API."
-      ],
-      "keyPoints": [
-        "Variante especializada en ciberseguridad.",
-        "Acceso inicial restringido.",
-        "Vinculada al programa Fairwind."
-      ],
-      "analysis": "La segmentación de acceso puede convertirse en una característica permanente de modelos frontier con capacidades duales.",
-      "watch": "Criterios de elegibilidad y ampliación del acceso."
-    },
-    {
-      "id": "google-fairwind-program",
-      "eventKey": "google-fairwind-program",
-      "date": "2026-09-02",
-      "announcedAt": "2026-09-02",
-      "company": "Google",
-      "product": "Fairwind",
-      "title": "Google crea Fairwind para distribuir capacidades cibernéticas avanzadas",
-      "summary": "El programa de acceso limitado está dirigido a gobiernos, clientes y socios de confianza que trabajan en defensa.",
-      "tags": [
-        "Seguridad",
-        "Productos"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
-        "publishedAt": "2026-09-02"
-      },
-      "body": [
-        "Google anunció Fairwind, un programa diseñado para dar acceso controlado a capacidades avanzadas de IA para defensa cibernética.",
-        "El programa funciona como una capa de distribución y gobernanza para modelos que no se ofrecen de la misma forma al público general; Gemini 3.8 Flash Cyber es una de las capacidades asociadas."
-      ],
-      "keyPoints": [
-        "Programa de acceso limitado.",
-        "Orientado a defensa cibernética.",
-        "Separa capacidades avanzadas del acceso público."
-      ],
-      "analysis": "El control de distribución está pasando a ser parte de la arquitectura de producto para capacidades de doble uso.",
-      "watch": "Nuevos modelos incorporados y transparencia sobre criterios de acceso."
-    },
-    {
-      "id": "hiddenlayer-series-b-agent-security",
-      "eventKey": "hiddenlayer-series-b-agent-security",
-      "date": "2026-09-02",
-      "announcedAt": "2026-09-02",
-      "company": "HiddenLayer",
-      "product": "Agent Harness Security",
-      "title": "HiddenLayer recauda US$100 millones y amplía seguridad para agentes",
-      "summary": "La Serie B financia una expansión centrada en protección del runtime y del harness que rodea a los agentes de IA.",
-      "tags": [
-        "Seguridad",
-        "Agentes",
-        "Negocio"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "HiddenLayer · anuncio oficial",
-        "url": "https://www.hiddenlayer.com/news/hiddenlayer-100m-series-b-ai-security",
-        "publishedAt": "2026-09-02"
-      },
-      "body": [
-        "HiddenLayer anunció una Serie B de 100 millones de dólares liderada por Delta-v Capital.",
-        "La empresa vincula el capital con la expansión de su plataforma y Agent Harness Security. La ronda es material porque muestra capital considerable entrando en seguridad específica para sistemas agentivos."
-      ],
-      "keyPoints": [
-        "Serie B de US$100 millones.",
-        "Foco en seguridad de agentes y runtime.",
-        "Ronda liderada por Delta-v Capital."
-      ],
-      "analysis": "La seguridad agentiva está pasando de proyecto interno a mercado propio.",
-      "watch": "Uso real de la plataforma y evidencia de reducción de incidentes."
-    },
-    {
-      "id": "muse-spark-1-3",
-      "eventKey": "muse-spark-1-3",
-      "date": "2026-09-02",
-      "announcedAt": "2026-09-02",
-      "company": "Meta",
-      "product": "Muse Spark 1.3",
-      "title": "Meta actualiza Muse Spark para agentes de código de mayor duración",
-      "summary": "Spark 1.3 apunta a tareas de programación más largas, multitarea y uso más eficiente de herramientas.",
-      "tags": [
-        "Modelos",
-        "Agentes",
-        "Desarrollo"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Meta AI · anuncio oficial",
-        "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
-        "publishedAt": "2026-09-02"
-      },
-      "body": [
-        "Meta presentó Muse Spark 1.3, una actualización de su modelo orientado a trabajo agentivo y programación.",
-        "La compañía lo posiciona para tareas de mayor duración y multitarea y reporta mejoras de eficiencia en pruebas internas. La versión aparece en Muse Code y Meta Model API."
-      ],
-      "keyPoints": [
-        "Lanzamiento del 2 de septiembre.",
-        "Foco en programación y tareas largas.",
-        "Disponible en productos y API de Meta según el anuncio."
-      ],
-      "analysis": "Para agentes de código, eficiencia significa completar una tarea con menos pasos fallidos, no sólo generar tokens más rápido.",
-      "watch": "Comparaciones independientes sobre tareas completas y repositorios grandes."
+      "analysis": "Parte del valor de la carrera puede migrar hacia distribución, integración y operación de agentes dentro de empresas.",
+      "watch": "Crecimiento de clientes, economía por agente y dependencia de proveedores de modelos."
     },
     {
       "id": "qwen3-8-max-0902",
@@ -2040,335 +2081,18 @@
       "watch": "Benchmarks independientes, disponibilidad internacional y comportamiento en tareas completas."
     },
     {
-      "id": "wonderful-series-c-2026",
-      "eventKey": "wonderful-series-c-2026",
+      "id": "muse-spark-1-3",
+      "eventKey": "muse-spark-1-3",
       "date": "2026-09-02",
       "announcedAt": "2026-09-02",
-      "company": "Wonderful",
-      "product": "Wonderful AI OS",
-      "title": "Wonderful levanta US$550 millones para expandir sus agentes empresariales",
-      "summary": "La Serie C valora la compañía en US$5.000 millones y financia la expansión de su plataforma de agentes para empresas.",
-      "tags": [
-        "Agentes",
-        "Negocio",
-        "Empresa"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Wonderful · anuncio oficial",
-        "url": "https://www.wonderful.ai/blog-articles/wonderful-raises-550m-series-c",
-        "publishedAt": "2026-09-02"
-      },
-      "body": [
-        "Wonderful anunció una Serie C de 550 millones de dólares con una valoración de 5.000 millones.",
-        "La compañía construye una plataforma de agentes empresariales y vincula la ronda con expansión de producto y mercados. El tamaño de la ronda la convierte en una señal material de la capa operativa de agentes."
-      ],
-      "keyPoints": [
-        "Serie C de US$550 millones.",
-        "Valoración anunciada de US$5.000 millones.",
-        "Capital dirigido a agentes empresariales."
-      ],
-      "analysis": "Parte del valor de la carrera puede migrar hacia distribución, integración y operación de agentes dentro de empresas.",
-      "watch": "Crecimiento de clientes, economía por agente y dependencia de proveedores de modelos."
-    },
-    {
-      "id": "air-agent-security-platform",
-      "eventKey": "air-agent-security-platform",
-      "date": "2026-09-01",
-      "announcedAt": "2026-09-01",
-      "company": "AIR",
-      "product": "AIR",
-      "title": "AIR sale del modo sigiloso con seguridad para agentes",
-      "summary": "La startup propone inspeccionar el contexto que reciben los agentes antes de que datos externos o herramientas maliciosas influyan en su ejecución.",
-      "tags": [
-        "Seguridad",
-        "Agentes"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "AIR · anuncio oficial",
-        "url": "https://www.air.security/blog-posts/out-of-stealth",
-        "publishedAt": "2026-09-01"
-      },
-      "body": [
-        "AIR anunció su salida del modo sigiloso con una plataforma centrada en seguridad de agentes.",
-        "Su enfoque busca filtrar amenazas antes de que información procedente de web, complementos o sistemas internos llegue al contexto operativo del agente. El lanzamiento refleja un mercado emergente alrededor de contexto, herramientas y permisos."
-      ],
-      "keyPoints": [
-        "Startup enfocada en seguridad de agentes.",
-        "Filtrado previo al contexto operativo.",
-        "Cobertura anunciada para entornos empresariales."
-      ],
-      "analysis": "A medida que los agentes obtienen herramientas y credenciales, el perímetro de seguridad se desplaza hacia lo que pueden leer y ejecutar.",
-      "watch": "Pruebas independientes y adopción en agentes con herramientas reales."
-    },
-    {
-      "id": "amazon-quick-natural-language-apps",
-      "eventKey": "amazon-quick-natural-language-apps",
-      "date": "2026-09-01",
-      "announcedAt": "2026-09-01",
-      "company": "AWS",
-      "product": "Amazon Quick",
-      "title": "Amazon Quick permite crear aplicaciones desde lenguaje natural",
-      "summary": "AWS lleva a disponibilidad general la creación de aplicaciones conectadas a datos y herramientas empresariales a partir de una descripción.",
-      "tags": [
-        "Agentes",
-        "Empresa",
-        "Desarrollo"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "AWS · What's New",
-        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-custom-apps-natural-language/",
-        "publishedAt": "2026-09-01"
-      },
-      "body": [
-        "AWS anunció disponibilidad general para crear aplicaciones personalizadas en Amazon Quick mediante lenguaje natural.",
-        "El producto conecta flujos con servicios y datos empresariales y, según AWS, respeta los permisos de las fuentes conectadas. Es otra forma de empaquetar agentes alrededor de procesos concretos."
-      ],
-      "keyPoints": [
-        "Disponibilidad general desde el 1 de septiembre.",
-        "Creación de apps a partir de descripciones.",
-        "Conectores empresariales y control de permisos."
-      ],
-      "analysis": "La barrera para automatizar procesos baja cuando la interfaz de construcción es lenguaje natural, pero la gobernanza de datos y permisos gana importancia.",
-      "watch": "Calidad de las aplicaciones generadas y controles de revisión y cambios."
-    },
-    {
-      "id": "anthropic-enterprise-frontier-safeguards",
-      "eventKey": "anthropic-enterprise-frontier-safeguards",
-      "date": "2026-09-01",
-      "announcedAt": "2026-09-01",
-      "company": "Anthropic",
-      "product": "Enterprise Frontier Safeguards",
-      "title": "Anthropic lleva salvaguardas frontier al entorno empresarial",
-      "summary": "Anthropic presenta controles adicionales para organizaciones que quieren usar capacidades avanzadas de Claude.",
-      "tags": [
-        "Seguridad",
-        "Empresa"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Anthropic · anuncio oficial",
-        "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-        "publishedAt": "2026-09-01"
-      },
-      "body": [
-        "Anthropic presentó Enterprise Frontier Safeguards como una capa de protección para organizaciones que quieren usar capacidades avanzadas de Claude con controles adicionales alrededor de datos y operación.",
-        "La compañía describe detección de riesgos, opciones de retención y un despliegue por fases; el anuncio no implica disponibilidad idéntica para todas las cuentas desde el primer día."
-      ],
-      "keyPoints": [
-        "Anunciado el 1 de septiembre.",
-        "Orientado a clientes empresariales y usos frontier.",
-        "Despliegue planteado por fases."
-      ],
-      "analysis": "La seguridad pasa a formar parte explícita del producto empresarial y puede pesar tanto como la capacidad del modelo en decisiones de adopción.",
-      "watch": "Disponibilidad efectiva, opciones de despliegue y evidencia independiente de los controles."
-    },
-    {
-      "id": "claude-fable-5-1",
-      "eventKey": "claude-fable-5-1",
-      "date": "2026-09-01",
-      "coveredAt": "2026-10-07",
-      "company": "Anthropic",
-      "product": "Claude Fable 5.1",
-      "title": "Claude Fable 5.1 abre septiembre con foco en código y trabajo profesional",
-      "summary": "Anthropic presenta su nueva versión de Fable con disponibilidad general.",
-      "tags": [
-        "Modelos",
-        "Desarrollo"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Anthropic · anuncio oficial",
-        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-        "publishedAt": "2026-09-01"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "El 1 de septiembre, Anthropic anunció Fable 5.1 y Mythos 5.1. Fable es la variante de disponibilidad general, orientada a programación y trabajo profesional.",
-        "El proveedor afirma haber mejorado capacidad, costo y salvaguardas. Esta cobertura no convierte sus evaluaciones internas en una comparación independiente.",
-        "Para adoptar una versión nueva conviene probar tareas representativas: corregir errores, interpretar documentos y conservar instrucciones durante trabajos largos. Una mejora en un benchmark no garantiza el mismo resultado en cada proyecto."
-      ],
-      "keyPoints": [
-        "Disponibilidad general.",
-        "Trabajo profesional y programación."
-      ],
-      "analysis": "La competencia se mide también en calidad por tarea y facilidad de integración. Conviene comparar con el flujo de trabajo actual antes de migrar.",
-      "watch": "Pruebas propias y condiciones de acceso de la plataforma elegida.",
-      "announcedAt": "2026-09-01"
-    },
-    {
-      "id": "claude-mythos-5-1",
-      "eventKey": "claude-mythos-5-1",
-      "date": "2026-09-01",
-      "coveredAt": "2026-10-07",
-      "company": "Anthropic",
-      "product": "Claude Mythos 5.1",
-      "title": "Mythos 5.1 llega mediante programas de acceso de confianza",
-      "summary": "La variante comparte el modelo de Fable 5.1, con salvaguardas diferentes y acceso restringido.",
-      "tags": [
-        "Modelos",
-        "Seguridad"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "source": {
-        "name": "Anthropic · anuncio oficial",
-        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-        "publishedAt": "2026-09-01"
-      },
-      "verifiedAt": "2026-10-07",
-      "body": [
-        "Mythos 5.1 fue anunciado junto a Fable 5.1 el 1 de septiembre. Anthropic describe ambos como el mismo modelo con niveles diferentes de salvaguardas.",
-        "Mythos se ofrece mediante programas de acceso de confianza para ciberseguridad y ciencias de la vida; no es un lanzamiento general.",
-        "Separar esta noticia de Fable permite entender la disponibilidad: compartir una familia de modelos no significa compartir permisos, requisitos ni condiciones de uso."
-      ],
-      "keyPoints": [
-        "Acceso restringido.",
-        "Salvaguardas distintas de Fable."
-      ],
-      "analysis": "La disponibilidad es parte del producto. El nombre de un modelo por sí solo no indica si un equipo puede utilizarlo.",
-      "watch": "Requisitos y evolución de los programas de acceso.",
-      "announcedAt": "2026-09-01"
-    },
-    {
-      "id": "crowdstrike-falcon-guardian",
-      "eventKey": "crowdstrike-falcon-guardian",
-      "date": "2026-09-01",
-      "announcedAt": "2026-09-01",
-      "company": "CrowdStrike",
-      "product": "Falcon Guardian",
-      "title": "Falcon Guardian lleva detección y respuesta al comportamiento de agentes",
-      "summary": "CrowdStrike presenta una capa de observabilidad y control para agentes de IA que actúan sobre sistemas empresariales.",
-      "tags": [
-        "Seguridad",
-        "Agentes"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "CrowdStrike · anuncio oficial",
-        "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-unveils-falcon-guardian-ai-agent-security/",
-        "publishedAt": "2026-09-01"
-      },
-      "body": [
-        "CrowdStrike anunció Falcon Guardian como una propuesta de detección y respuesta para observar y controlar agentes que interactúan con sistemas empresariales.",
-        "La compañía busca registrar actividad, identificar comportamientos de riesgo y aplicar controles en tiempo de ejecución. Es un problema diferente al de entrenar un modelo especializado."
-      ],
-      "keyPoints": [
-        "Seguridad en tiempo de ejecución para agentes.",
-        "Visibilidad sobre acciones y accesos.",
-        "Producto independiente de SafeMind."
-      ],
-      "analysis": "La observabilidad de agentes puede convertirse en una categoría propia a medida que las empresas delegan acciones con consecuencias reales.",
-      "watch": "Cobertura efectiva de herramientas, identidades y sistemas externos."
-    },
-    {
-      "id": "crowdstrike-safemind",
-      "eventKey": "crowdstrike-safemind",
-      "date": "2026-09-01",
-      "announcedAt": "2026-09-01",
-      "company": "CrowdStrike",
-      "product": "SafeMind",
-      "title": "CrowdStrike presenta SafeMind, modelos especializados en ciberseguridad",
-      "summary": "La familia combina modelos y harnesses orientados a tareas defensivas y ofensivas bajo controles de acceso.",
-      "tags": [
-        "Seguridad",
-        "Modelos"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "CrowdStrike · anuncio oficial",
-        "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-frontier-models-for-cybersecurity-with-nvidia/",
-        "publishedAt": "2026-09-01"
-      },
-      "body": [
-        "CrowdStrike presentó SafeMind, una familia de modelos y sistemas especializados en ciberseguridad desarrollada con tecnología de NVIDIA.",
-        "El anuncio conecta estos modelos con Falcon y describe distintos controles de acceso. Es una apuesta por sistemas estrechos que incorporan conocimiento, herramientas y reglas de un dominio."
-      ],
-      "keyPoints": [
-        "Modelos especializados en seguridad.",
-        "Integración con el ecosistema Falcon.",
-        "Desarrollo anunciado junto a NVIDIA."
-      ],
-      "analysis": "En seguridad, el conocimiento de dominio y el harness pueden importar tanto como el modelo base.",
-      "watch": "Evaluaciones independientes y resultados en operaciones defensivas reales."
-    },
-    {
-      "id": "gemini-agentic-video",
-      "eventKey": "gemini-agentic-video",
-      "date": "2026-09-01",
-      "announcedAt": "2026-09-01",
-      "company": "Google",
-      "product": "Agentic video understanding",
-      "title": "Gemini empieza a explorar videos de forma agentiva",
-      "summary": "Google incorpora una estrategia que decide qué segmentos inspeccionar con mayor detalle en vez de procesar cada video de forma uniforme.",
-      "tags": [
-        "Modelos",
-        "Video",
-        "Agentes"
-      ],
-      "image": "assets/google.webp",
-      "imageAlt": "Grabado editorial de arquitectura tecnológica",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "source": {
-        "name": "Google · anuncio oficial",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
-        "publishedAt": "2026-09-01"
-      },
-      "body": [
-        "Google anunció una modalidad de comprensión de video que permite a Gemini decidir qué partes de una grabación necesita inspeccionar con mayor detalle para responder una tarea.",
-        "Google reporta mejoras de costo, tokens y calidad en pruebas internas. Son mediciones del proveedor; la idea técnica central es asignar más cómputo sólo donde el modelo lo necesita."
-      ],
-      "keyPoints": [
-        "Selección dinámica de segmentos relevantes.",
-        "Expuesta mediante configuración de API según el anuncio.",
-        "Las mejoras de eficiencia publicadas son mediciones de Google."
-      ],
-      "analysis": "La asignación dinámica de cómputo puede ser tan importante como un modelo más grande cuando se trabaja con horas de video.",
-      "watch": "Resultados independientes en videos largos y escenas difíciles de localizar."
-    },
-    {
-      "id": "muse-voice-transcribe",
-      "eventKey": "muse-voice-transcribe",
-      "date": "2026-09-01",
-      "announcedAt": "2026-09-01",
       "company": "Meta",
-      "product": "Muse Voice Transcribe",
-      "title": "Meta presenta Muse Voice Transcribe para audio en tiempo real",
-      "summary": "El modelo combina transcripción continua, diarización y detección de final de turno para aplicaciones de voz.",
+      "product": "Muse Spark 1.3",
+      "title": "Meta actualiza Muse Spark para agentes de código de mayor duración",
+      "summary": "Spark 1.3 apunta a tareas de programación más largas, multitarea y uso más eficiente de herramientas.",
       "tags": [
         "Modelos",
-        "Audio"
+        "Agentes",
+        "Desarrollo"
       ],
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
@@ -2377,33 +2101,34 @@
       "coveredAt": "2026-10-07",
       "source": {
         "name": "Meta AI · anuncio oficial",
-        "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
-        "publishedAt": "2026-09-01"
+        "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+        "publishedAt": "2026-09-02"
       },
       "body": [
-        "Meta presentó Muse Voice Transcribe, un modelo de percepción de audio en tiempo real orientado a transcripción continua.",
-        "La compañía destaca diarización de múltiples hablantes y detección de fin de turno. Meta informa entrenamiento multilingüe amplio, aunque la calidad final debe comprobarse por idioma, acento y ruido."
+        "Meta presentó Muse Spark 1.3, una actualización de su modelo orientado a trabajo agentivo y programación.",
+        "La compañía lo posiciona para tareas de mayor duración y multitarea y reporta mejoras de eficiencia en pruebas internas. La versión aparece en Muse Code y Meta Model API."
       ],
       "keyPoints": [
-        "Streaming de audio en tiempo real.",
-        "Incluye diarización y endpointing.",
-        "Meta informa entrenamiento multilingüe."
+        "Lanzamiento del 2 de septiembre.",
+        "Foco en programación y tareas largas.",
+        "Disponible en productos y API de Meta según el anuncio."
       ],
-      "analysis": "La voz se está convirtiendo en una interfaz nativa para agentes y concentrar varias funciones en un modelo simplifica la arquitectura.",
-      "watch": "Latencia real, precisión por idioma y disponibilidad fuera de productos de Meta."
+      "analysis": "Para agentes de código, eficiencia significa completar una tarea con menos pasos fallidos, no sólo generar tokens más rápido.",
+      "watch": "Comparaciones independientes sobre tareas completas y repositorios grandes."
     },
     {
-      "id": "openai-path-to-astra-safeguards",
-      "eventKey": "openai-path-to-astra-safeguards",
-      "date": "2026-09-01",
-      "announcedAt": "2026-09-01",
-      "company": "OpenAI",
-      "product": "GPT-6 Astra",
-      "title": "OpenAI endurece las salvaguardas antes de GPT-6 Astra",
-      "summary": "OpenAI dice que Astra alcanza su umbral crítico de capacidad cibernética y describe restricciones adicionales antes del lanzamiento.",
+      "id": "hiddenlayer-series-b-agent-security",
+      "eventKey": "hiddenlayer-series-b-agent-security",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "HiddenLayer",
+      "product": "Agent Harness Security",
+      "title": "HiddenLayer recauda US$100 millones y amplía seguridad para agentes",
+      "summary": "La Serie B financia una expansión centrada en protección del runtime y del harness que rodea a los agentes de IA.",
       "tags": [
         "Seguridad",
-        "Modelos"
+        "Agentes",
+        "Negocio"
       ],
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
@@ -2411,21 +2136,197 @@
       "verifiedAt": "2026-10-07",
       "coveredAt": "2026-10-07",
       "source": {
-        "name": "OpenAI · Path to Astra",
-        "url": "https://openai.com/index/path-to-astra/",
+        "name": "HiddenLayer · anuncio oficial",
+        "url": "https://www.hiddenlayer.com/news/hiddenlayer-100m-series-b-ai-security",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "HiddenLayer anunció una Serie B de 100 millones de dólares liderada por Delta-v Capital.",
+        "La empresa vincula el capital con la expansión de su plataforma y Agent Harness Security. La ronda es material porque muestra capital considerable entrando en seguridad específica para sistemas agentivos."
+      ],
+      "keyPoints": [
+        "Serie B de US$100 millones.",
+        "Foco en seguridad de agentes y runtime.",
+        "Ronda liderada por Delta-v Capital."
+      ],
+      "analysis": "La seguridad agentiva está pasando de proyecto interno a mercado propio.",
+      "watch": "Uso real de la plataforma y evidencia de reducción de incidentes."
+    },
+    {
+      "id": "google-fairwind-program",
+      "eventKey": "google-fairwind-program",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Google",
+      "product": "Fairwind",
+      "title": "Google crea Fairwind para distribuir capacidades cibernéticas avanzadas",
+      "summary": "El programa de acceso limitado está dirigido a gobiernos, clientes y socios de confianza que trabajan en defensa.",
+      "tags": [
+        "Seguridad",
+        "Productos"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "Google anunció Fairwind, un programa diseñado para dar acceso controlado a capacidades avanzadas de IA para defensa cibernética.",
+        "El programa funciona como una capa de distribución y gobernanza para modelos que no se ofrecen de la misma forma al público general; Gemini 3.8 Flash Cyber es una de las capacidades asociadas."
+      ],
+      "keyPoints": [
+        "Programa de acceso limitado.",
+        "Orientado a defensa cibernética.",
+        "Separa capacidades avanzadas del acceso público."
+      ],
+      "analysis": "El control de distribución está pasando a ser parte de la arquitectura de producto para capacidades de doble uso.",
+      "watch": "Nuevos modelos incorporados y transparencia sobre criterios de acceso."
+    },
+    {
+      "id": "gemini-3-8-flash-cyber",
+      "eventKey": "gemini-3-8-flash-cyber",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Google",
+      "product": "Gemini 3.8 Flash Cyber",
+      "title": "Gemini 3.8 Flash Cyber queda reservado a defensores verificados",
+      "summary": "Google separa una variante de ciberseguridad con capacidades más permisivas y acceso mediante su programa Fairwind.",
+      "tags": [
+        "Modelos",
+        "Seguridad"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "Google presentó Gemini 3.8 Flash Cyber como una variante especializada en ciberseguridad.",
+        "El acceso inicial se limita a defensores de confianza a través de Fairwind, por lo que el lanzamiento no equivale a disponibilidad general en la API."
+      ],
+      "keyPoints": [
+        "Variante especializada en ciberseguridad.",
+        "Acceso inicial restringido.",
+        "Vinculada al programa Fairwind."
+      ],
+      "analysis": "La segmentación de acceso puede convertirse en una característica permanente de modelos frontier con capacidades duales.",
+      "watch": "Criterios de elegibilidad y ampliación del acceso."
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "eventKey": "gemini-3-8-flash",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "Google",
+      "product": "Gemini 3.8 Flash",
+      "title": "Google lanza Gemini 3.8 Flash para agentes y desarrollo",
+      "summary": "La nueva versión Flash llega a la API y a productos de Google con foco en software, razonamiento multietapa y trabajo agentivo.",
+      "tags": [
+        "Modelos",
+        "Agentes",
+        "Desarrollo"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "Google anunció Gemini 3.8 Flash como una nueva versión generalista de su línea Flash, con foco en programación, razonamiento multietapa y tareas agentivas.",
+        "Google publicó precio y resultados internos de rendimiento; esas cifras pertenecen al proveedor. La misma publicación incluye una variante Cyber con condiciones de acceso distintas."
+      ],
+      "keyPoints": [
+        "Nueva versión generalista de la línea Flash.",
+        "Disponible en API y productos de Google según el anuncio.",
+        "La variante Cyber tiene un régimen de acceso separado."
+      ],
+      "analysis": "Flash compite donde capacidad y costo operativo importan al mismo tiempo, especialmente para agentes que realizan muchos pasos.",
+      "watch": "Precio, calidad end-to-end y comparaciones independientes."
+    },
+    {
+      "id": "amazon-connect-agentic-cx-designer",
+      "eventKey": "amazon-connect-agentic-cx-designer",
+      "date": "2026-09-02",
+      "announcedAt": "2026-09-02",
+      "company": "AWS",
+      "product": "Amazon Connect agentic CX designer",
+      "title": "AWS lleva un diseñador agentivo a Amazon Connect",
+      "summary": "La herramienta no-code combina pasos deterministas y agentes para crear y probar experiencias de atención en voz y canales digitales.",
+      "tags": [
+        "Agentes",
+        "Empresa"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "AWS · What's New",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/agentic-cx-designer/",
+        "publishedAt": "2026-09-02"
+      },
+      "body": [
+        "AWS anunció disponibilidad general de su diseñador agentivo de experiencias de cliente para Amazon Connect.",
+        "La interfaz permite combinar pasos deterministas con componentes de IA en un lienzo visual. Ese diseño híbrido conserva lógica explícita donde se necesita previsibilidad y usa agentes para partes menos estructuradas."
+      ],
+      "keyPoints": [
+        "Disponibilidad general.",
+        "Diseño visual sin código.",
+        "Combina lógica determinista y agentes."
+      ],
+      "analysis": "Los agentes empresariales probablemente convivirán con reglas tradicionales; integrar ambos enfoques puede reducir riesgo operativo.",
+      "watch": "Cómo se auditan decisiones del agente dentro de flujos reales."
+    },
+    {
+      "id": "waymo-denver-san-diego-tampa",
+      "eventKey": "waymo-denver-san-diego-tampa",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Waymo",
+      "product": "Waymo One",
+      "title": "Waymo abre viajes públicos en Denver, San Diego y Tampa",
+      "summary": "La compañía empieza a recibir pasajeros públicos en tres nuevos mercados y amplía gradualmente el acceso.",
+      "tags": [
+        "Robótica",
+        "Movilidad"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial de un globo terrestre",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Waymo · anuncio oficial",
+        "url": "https://waymo.com/blog/2026/09/ride-in-denver-san-diego-tampa/",
         "publishedAt": "2026-09-01"
       },
       "body": [
-        "OpenAI publicó su enfoque de seguridad previo a GPT-6 Astra y afirmó que el modelo alcanza el umbral Critical en ciberseguridad de su marco de preparación. Esa clasificación es una evaluación del propio proveedor.",
-        "La empresa explica que reforzó controles y restringió determinadas capacidades de alto riesgo mientras preparaba el despliegue, por lo que el documento es una noticia distinta del lanzamiento posterior."
+        "Waymo anunció que comenzó a recibir a sus primeros pasajeros públicos en Denver, San Diego y Tampa.",
+        "El acceso se amplía gradualmente, de modo que el anuncio no significa cobertura instantánea para todos. Es una expansión comercial de conducción autónoma en entornos urbanos reales."
       ],
       "keyPoints": [
-        "Publicado dos días antes del lanzamiento de Astra.",
-        "OpenAI atribuye al modelo capacidad cibernética de nivel Critical.",
-        "El acceso a capacidades avanzadas incorpora restricciones adicionales."
+        "Primeros pasajeros públicos en tres nuevas ciudades.",
+        "Despliegue gradual.",
+        "Expansión comercial de conducción autónoma."
       ],
-      "analysis": "La carrera frontier incluye también quién puede acceder a cada capacidad y bajo qué controles.",
-      "watch": "Cómo evolucionan los controles de acceso y qué capacidades llegan a desarrolladores comunes."
+      "analysis": "La robótica se valida en operación repetida, no sólo en benchmarks; cada nueva ciudad añade condiciones reales al sistema completo.",
+      "watch": "Ritmo de ampliación, área de servicio y métricas públicas de seguridad."
     },
     {
       "id": "perplexity-hybrid-compute",
@@ -2464,39 +2365,356 @@
       "watch": "Qué información permanece realmente en el dispositivo y el impacto en latencia y costo."
     },
     {
-      "id": "waymo-denver-san-diego-tampa",
-      "eventKey": "waymo-denver-san-diego-tampa",
+      "id": "openai-path-to-astra-safeguards",
+      "eventKey": "openai-path-to-astra-safeguards",
       "date": "2026-09-01",
       "announcedAt": "2026-09-01",
-      "company": "Waymo",
-      "product": "Waymo One",
-      "title": "Waymo abre viajes públicos en Denver, San Diego y Tampa",
-      "summary": "La compañía empieza a recibir pasajeros públicos en tres nuevos mercados y amplía gradualmente el acceso.",
+      "company": "OpenAI",
+      "product": "GPT-6 Astra",
+      "title": "OpenAI endurece las salvaguardas antes de GPT-6 Astra",
+      "summary": "OpenAI dice que Astra alcanza su umbral crítico de capacidad cibernética y describe restricciones adicionales antes del lanzamiento.",
       "tags": [
-        "Robótica",
-        "Movilidad"
+        "Seguridad",
+        "Modelos"
       ],
-      "image": "assets/globe.webp",
-      "imageAlt": "Grabado editorial de un globo terrestre",
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
       "verifiedAt": "2026-10-07",
       "coveredAt": "2026-10-07",
       "source": {
-        "name": "Waymo · anuncio oficial",
-        "url": "https://waymo.com/blog/2026/09/ride-in-denver-san-diego-tampa/",
+        "name": "OpenAI · Path to Astra",
+        "url": "https://openai.com/index/path-to-astra/",
         "publishedAt": "2026-09-01"
       },
       "body": [
-        "Waymo anunció que comenzó a recibir a sus primeros pasajeros públicos en Denver, San Diego y Tampa.",
-        "El acceso se amplía gradualmente, de modo que el anuncio no significa cobertura instantánea para todos. Es una expansión comercial de conducción autónoma en entornos urbanos reales."
+        "OpenAI publicó su enfoque de seguridad previo a GPT-6 Astra y afirmó que el modelo alcanza el umbral Critical en ciberseguridad de su marco de preparación. Esa clasificación es una evaluación del propio proveedor.",
+        "La empresa explica que reforzó controles y restringió determinadas capacidades de alto riesgo mientras preparaba el despliegue, por lo que el documento es una noticia distinta del lanzamiento posterior."
       ],
       "keyPoints": [
-        "Primeros pasajeros públicos en tres nuevas ciudades.",
-        "Despliegue gradual.",
-        "Expansión comercial de conducción autónoma."
+        "Publicado dos días antes del lanzamiento de Astra.",
+        "OpenAI atribuye al modelo capacidad cibernética de nivel Critical.",
+        "El acceso a capacidades avanzadas incorpora restricciones adicionales."
       ],
-      "analysis": "La robótica se valida en operación repetida, no sólo en benchmarks; cada nueva ciudad añade condiciones reales al sistema completo.",
-      "watch": "Ritmo de ampliación, área de servicio y métricas públicas de seguridad."
+      "analysis": "La carrera frontier incluye también quién puede acceder a cada capacidad y bajo qué controles.",
+      "watch": "Cómo evolucionan los controles de acceso y qué capacidades llegan a desarrolladores comunes."
+    },
+    {
+      "id": "muse-voice-transcribe",
+      "eventKey": "muse-voice-transcribe",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Meta",
+      "product": "Muse Voice Transcribe",
+      "title": "Meta presenta Muse Voice Transcribe para audio en tiempo real",
+      "summary": "El modelo combina transcripción continua, diarización y detección de final de turno para aplicaciones de voz.",
+      "tags": [
+        "Modelos",
+        "Audio"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Meta AI · anuncio oficial",
+        "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "Meta presentó Muse Voice Transcribe, un modelo de percepción de audio en tiempo real orientado a transcripción continua.",
+        "La compañía destaca diarización de múltiples hablantes y detección de fin de turno. Meta informa entrenamiento multilingüe amplio, aunque la calidad final debe comprobarse por idioma, acento y ruido."
+      ],
+      "keyPoints": [
+        "Streaming de audio en tiempo real.",
+        "Incluye diarización y endpointing.",
+        "Meta informa entrenamiento multilingüe."
+      ],
+      "analysis": "La voz se está convirtiendo en una interfaz nativa para agentes y concentrar varias funciones en un modelo simplifica la arquitectura.",
+      "watch": "Latencia real, precisión por idioma y disponibilidad fuera de productos de Meta."
+    },
+    {
+      "id": "gemini-agentic-video",
+      "eventKey": "gemini-agentic-video",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Google",
+      "product": "Agentic video understanding",
+      "title": "Gemini empieza a explorar videos de forma agentiva",
+      "summary": "Google incorpora una estrategia que decide qué segmentos inspeccionar con mayor detalle en vez de procesar cada video de forma uniforme.",
+      "tags": [
+        "Modelos",
+        "Video",
+        "Agentes"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial de arquitectura tecnológica",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Google · anuncio oficial",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "Google anunció una modalidad de comprensión de video que permite a Gemini decidir qué partes de una grabación necesita inspeccionar con mayor detalle para responder una tarea.",
+        "Google reporta mejoras de costo, tokens y calidad en pruebas internas. Son mediciones del proveedor; la idea técnica central es asignar más cómputo sólo donde el modelo lo necesita."
+      ],
+      "keyPoints": [
+        "Selección dinámica de segmentos relevantes.",
+        "Expuesta mediante configuración de API según el anuncio.",
+        "Las mejoras de eficiencia publicadas son mediciones de Google."
+      ],
+      "analysis": "La asignación dinámica de cómputo puede ser tan importante como un modelo más grande cuando se trabaja con horas de video.",
+      "watch": "Resultados independientes en videos largos y escenas difíciles de localizar."
+    },
+    {
+      "id": "crowdstrike-safemind",
+      "eventKey": "crowdstrike-safemind",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "CrowdStrike",
+      "product": "SafeMind",
+      "title": "CrowdStrike presenta SafeMind, modelos especializados en ciberseguridad",
+      "summary": "La familia combina modelos y harnesses orientados a tareas defensivas y ofensivas bajo controles de acceso.",
+      "tags": [
+        "Seguridad",
+        "Modelos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "CrowdStrike · anuncio oficial",
+        "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-frontier-models-for-cybersecurity-with-nvidia/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "CrowdStrike presentó SafeMind, una familia de modelos y sistemas especializados en ciberseguridad desarrollada con tecnología de NVIDIA.",
+        "El anuncio conecta estos modelos con Falcon y describe distintos controles de acceso. Es una apuesta por sistemas estrechos que incorporan conocimiento, herramientas y reglas de un dominio."
+      ],
+      "keyPoints": [
+        "Modelos especializados en seguridad.",
+        "Integración con el ecosistema Falcon.",
+        "Desarrollo anunciado junto a NVIDIA."
+      ],
+      "analysis": "En seguridad, el conocimiento de dominio y el harness pueden importar tanto como el modelo base.",
+      "watch": "Evaluaciones independientes y resultados en operaciones defensivas reales."
+    },
+    {
+      "id": "crowdstrike-falcon-guardian",
+      "eventKey": "crowdstrike-falcon-guardian",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "CrowdStrike",
+      "product": "Falcon Guardian",
+      "title": "Falcon Guardian lleva detección y respuesta al comportamiento de agentes",
+      "summary": "CrowdStrike presenta una capa de observabilidad y control para agentes de IA que actúan sobre sistemas empresariales.",
+      "tags": [
+        "Seguridad",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "CrowdStrike · anuncio oficial",
+        "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-unveils-falcon-guardian-ai-agent-security/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "CrowdStrike anunció Falcon Guardian como una propuesta de detección y respuesta para observar y controlar agentes que interactúan con sistemas empresariales.",
+        "La compañía busca registrar actividad, identificar comportamientos de riesgo y aplicar controles en tiempo de ejecución. Es un problema diferente al de entrenar un modelo especializado."
+      ],
+      "keyPoints": [
+        "Seguridad en tiempo de ejecución para agentes.",
+        "Visibilidad sobre acciones y accesos.",
+        "Producto independiente de SafeMind."
+      ],
+      "analysis": "La observabilidad de agentes puede convertirse en una categoría propia a medida que las empresas delegan acciones con consecuencias reales.",
+      "watch": "Cobertura efectiva de herramientas, identidades y sistemas externos."
+    },
+    {
+      "id": "claude-mythos-5-1",
+      "eventKey": "claude-mythos-5-1",
+      "date": "2026-09-01",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Claude Mythos 5.1",
+      "title": "Mythos 5.1 llega mediante programas de acceso de confianza",
+      "summary": "La variante comparte el modelo de Fable 5.1, con salvaguardas diferentes y acceso restringido.",
+      "tags": [
+        "Modelos",
+        "Seguridad"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "publishedAt": "2026-09-01"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "Mythos 5.1 fue anunciado junto a Fable 5.1 el 1 de septiembre. Anthropic describe ambos como el mismo modelo con niveles diferentes de salvaguardas.",
+        "Mythos se ofrece mediante programas de acceso de confianza para ciberseguridad y ciencias de la vida; no es un lanzamiento general.",
+        "Separar esta noticia de Fable permite entender la disponibilidad: compartir una familia de modelos no significa compartir permisos, requisitos ni condiciones de uso."
+      ],
+      "keyPoints": [
+        "Acceso restringido.",
+        "Salvaguardas distintas de Fable."
+      ],
+      "analysis": "La disponibilidad es parte del producto. El nombre de un modelo por sí solo no indica si un equipo puede utilizarlo.",
+      "watch": "Requisitos y evolución de los programas de acceso.",
+      "announcedAt": "2026-09-01"
+    },
+    {
+      "id": "claude-fable-5-1",
+      "eventKey": "claude-fable-5-1",
+      "date": "2026-09-01",
+      "coveredAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Claude Fable 5.1",
+      "title": "Claude Fable 5.1 abre septiembre con foco en código y trabajo profesional",
+      "summary": "Anthropic presenta su nueva versión de Fable con disponibilidad general.",
+      "tags": [
+        "Modelos",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "publishedAt": "2026-09-01"
+      },
+      "verifiedAt": "2026-10-07",
+      "body": [
+        "El 1 de septiembre, Anthropic anunció Fable 5.1 y Mythos 5.1. Fable es la variante de disponibilidad general, orientada a programación y trabajo profesional.",
+        "El proveedor afirma haber mejorado capacidad, costo y salvaguardas. Esta cobertura no convierte sus evaluaciones internas en una comparación independiente.",
+        "Para adoptar una versión nueva conviene probar tareas representativas: corregir errores, interpretar documentos y conservar instrucciones durante trabajos largos. Una mejora en un benchmark no garantiza el mismo resultado en cada proyecto."
+      ],
+      "keyPoints": [
+        "Disponibilidad general.",
+        "Trabajo profesional y programación."
+      ],
+      "analysis": "La competencia se mide también en calidad por tarea y facilidad de integración. Conviene comparar con el flujo de trabajo actual antes de migrar.",
+      "watch": "Pruebas propias y condiciones de acceso de la plataforma elegida.",
+      "announcedAt": "2026-09-01"
+    },
+    {
+      "id": "anthropic-enterprise-frontier-safeguards",
+      "eventKey": "anthropic-enterprise-frontier-safeguards",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "Anthropic",
+      "product": "Enterprise Frontier Safeguards",
+      "title": "Anthropic lleva salvaguardas frontier al entorno empresarial",
+      "summary": "Anthropic presenta controles adicionales para organizaciones que quieren usar capacidades avanzadas de Claude.",
+      "tags": [
+        "Seguridad",
+        "Empresa"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "Anthropic presentó Enterprise Frontier Safeguards como una capa de protección para organizaciones que quieren usar capacidades avanzadas de Claude con controles adicionales alrededor de datos y operación.",
+        "La compañía describe detección de riesgos, opciones de retención y un despliegue por fases; el anuncio no implica disponibilidad idéntica para todas las cuentas desde el primer día."
+      ],
+      "keyPoints": [
+        "Anunciado el 1 de septiembre.",
+        "Orientado a clientes empresariales y usos frontier.",
+        "Despliegue planteado por fases."
+      ],
+      "analysis": "La seguridad pasa a formar parte explícita del producto empresarial y puede pesar tanto como la capacidad del modelo en decisiones de adopción.",
+      "watch": "Disponibilidad efectiva, opciones de despliegue y evidencia independiente de los controles."
+    },
+    {
+      "id": "amazon-quick-natural-language-apps",
+      "eventKey": "amazon-quick-natural-language-apps",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "AWS",
+      "product": "Amazon Quick",
+      "title": "Amazon Quick permite crear aplicaciones desde lenguaje natural",
+      "summary": "AWS lleva a disponibilidad general la creación de aplicaciones conectadas a datos y herramientas empresariales a partir de una descripción.",
+      "tags": [
+        "Agentes",
+        "Empresa",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "AWS · What's New",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-custom-apps-natural-language/",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "AWS anunció disponibilidad general para crear aplicaciones personalizadas en Amazon Quick mediante lenguaje natural.",
+        "El producto conecta flujos con servicios y datos empresariales y, según AWS, respeta los permisos de las fuentes conectadas. Es otra forma de empaquetar agentes alrededor de procesos concretos."
+      ],
+      "keyPoints": [
+        "Disponibilidad general desde el 1 de septiembre.",
+        "Creación de apps a partir de descripciones.",
+        "Conectores empresariales y control de permisos."
+      ],
+      "analysis": "La barrera para automatizar procesos baja cuando la interfaz de construcción es lenguaje natural, pero la gobernanza de datos y permisos gana importancia.",
+      "watch": "Calidad de las aplicaciones generadas y controles de revisión y cambios."
+    },
+    {
+      "id": "air-agent-security-platform",
+      "eventKey": "air-agent-security-platform",
+      "date": "2026-09-01",
+      "announcedAt": "2026-09-01",
+      "company": "AIR",
+      "product": "AIR",
+      "title": "AIR sale del modo sigiloso con seguridad para agentes",
+      "summary": "La startup propone inspeccionar el contexto que reciben los agentes antes de que datos externos o herramientas maliciosas influyan en su ejecución.",
+      "tags": [
+        "Seguridad",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "verifiedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "source": {
+        "name": "AIR · anuncio oficial",
+        "url": "https://www.air.security/blog-posts/out-of-stealth",
+        "publishedAt": "2026-09-01"
+      },
+      "body": [
+        "AIR anunció su salida del modo sigiloso con una plataforma centrada en seguridad de agentes.",
+        "Su enfoque busca filtrar amenazas antes de que información procedente de web, complementos o sistemas internos llegue al contexto operativo del agente. El lanzamiento refleja un mercado emergente alrededor de contexto, herramientas y permisos."
+      ],
+      "keyPoints": [
+        "Startup enfocada en seguridad de agentes.",
+        "Filtrado previo al contexto operativo.",
+        "Cobertura anunciada para entornos empresariales."
+      ],
+      "analysis": "A medida que los agentes obtienen herramientas y credenciales, el perímetro de seguridad se desplaza hacia lo que pueden leer y ejecutar.",
+      "watch": "Pruebas independientes y adopción en agentes con herramientas reales."
     }
   ],
   "archiveStart": "2026-09-01",
@@ -2553,8 +2771,8 @@
     },
     {
       "date": "2026-09-08",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1
     },
     {
       "date": "2026-09-09",
