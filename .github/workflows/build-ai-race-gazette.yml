@@ -9,6 +9,7 @@ on:
       - 'ai-race-gazette/source/package.json'
       - 'ai-race-gazette/source/package-lock.json'
       - 'ai-race-gazette/source/vite.config.mjs'
+      - 'ai-race-gazette/source/public/assets/**'
       - 'ai-race-gazette/source/scripts/**'
       - 'ai-race-gazette/source/research/**'
       - 'ai-race-gazette/source/visual/**'
