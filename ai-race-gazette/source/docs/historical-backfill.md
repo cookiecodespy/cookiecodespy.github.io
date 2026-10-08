@@ -16,6 +16,8 @@ Leer primero:
 - `content-model.md`
 - `coordination.md`
 - `image-policy.md`
+- `visual-desk.md`
+- `../visual/asset-manifest.json`
 - `coverage-audit.md`
 - `../research/coverage-audit.json`
 
@@ -143,3 +145,16 @@ Una fecha nueva bajo el estándar actual debe usar `auditMode: backbone-v1` y re
 - candidatos encontrados/publicados/descartados/no resueltos.
 
 No inventar métricas históricas. Las fechas 1–7 Sep cerradas antes de este sistema permanecen como `legacy-block-audit` y se revisarán de nuevo durante la auditoría inversa final.
+
+
+## Coordinación con Visual Desk
+
+Historical Backfill no debe generar deuda visual silenciosa.
+
+Para cada Reporter V2:
+- elegir un fallback ya registrado en `../visual/asset-manifest.json`;
+- si la historia merece arte específico, añadir `imageBrief` y `imageStatus: needs-specific-art`;
+- no modificar binarios/assets durante el backfill;
+- no cambiar id/eventKey cuando Visual Desk sustituya la imagen después.
+
+La cola visual se mantiene aparte en `../visual/image-queue.json`.
