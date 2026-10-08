@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-08T16:26:45.111Z",
+  "generatedFromNewsUpdatedAt": "2026-10-08T16:30:08.226Z",
   "generatedAt": "2026-10-08",
   "items": [
     {
@@ -358,7 +358,7 @@
       "title": "OpenAI explica Habitat: 70 millones de solicitudes por segundo y una migración asistida por IA de Python a Rust",
       "currentImage": "assets/globe.webp",
       "currentAssetId": "gazette-global-infrastructure-v1",
-      "currentReuseCount": 3,
+      "currentReuseCount": 4,
       "articleImageStatus": "needs-specific-art",
       "queuePriority": "P0",
       "productionStatus": "brief-ready",
@@ -764,6 +764,32 @@
         "safeCenterCrop": true
       },
       "publishRule": "Revisar calidad y factualidad antes de reemplazar fallback; imagen conceptual no implica fotografía."
+    },
+    {
+      "articleId": "upscale-ai-token-fabric-2026",
+      "eventKey": "upscale-ai-token-fabric-heterogeneous-network-2026-10-08",
+      "date": "2026-10-08",
+      "company": "Upscale AI",
+      "product": "Token Fabric",
+      "title": "Upscale AI presenta Token Fabric: una red para conectar aceleradores de IA de distintos fabricantes",
+      "currentImage": "assets/globe.webp",
+      "currentAssetId": "gazette-global-infrastructure-v1",
+      "currentReuseCount": 4,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "brief-ready",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-10-08/upscale-ai-token-fabric-2026.webp",
+      "brief": "Grabado editorial horizontal 3:2 en tinta sepia y papel envejecido: varios racks de aceleradores de diseños diferentes enlazados por fibras ópticas y conmutadores en dos niveles, conexiones dentro de un pod y entre pods. Metáfora de interoperabilidad, sin presentar una instalación real; sin logotipos falsos, pantallas inventadas, cifras impresas ni apariencia fotográfica documental.",
+      "sourceSummary": "Upscale anuncia Token Fabric, una arquitectura que reúne SkyFabriX, redes basadas en NVIDIA Spectrum-X, SkyOS y SkyCMD. Promete interoperabilidad entre aceleradores; el acceso temprano está en marcha y la disponibilidad general se proyecta para 2027.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
       "articleId": "air-agent-security-platform",
@@ -1918,7 +1944,7 @@
       "title": "Waymo abre viajes públicos en Denver, San Diego y Tampa",
       "currentImage": "assets/globe.webp",
       "currentAssetId": "gazette-global-infrastructure-v1",
-      "currentReuseCount": 3,
+      "currentReuseCount": 4,
       "articleImageStatus": "legacy-unclassified",
       "queuePriority": "P3",
       "productionStatus": "brief-ready",
@@ -1944,7 +1970,7 @@
       "title": "TCS planea un campus de centros de datos de IA de hasta 1 GW en Hyderabad",
       "currentImage": "assets/globe.webp",
       "currentAssetId": "gazette-global-infrastructure-v1",
-      "currentReuseCount": 3,
+      "currentReuseCount": 4,
       "articleImageStatus": "legacy-unclassified",
       "queuePriority": "P3",
       "productionStatus": "brief-ready",
