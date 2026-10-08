@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "periodStart": "2026-09-01",
-  "periodEnd": "2026-10-07",
+  "periodEnd": "2026-10-08",
   "sourceRegistry": "research/source-registry.json",
   "categories": [
     "models",
@@ -799,6 +799,28 @@
       "reviewedAt": "2026-10-07",
       "backboneReauditRequired": false,
       "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+    },
+    {
+      "date": "2026-10-08",
+      "archiveStatus": "partial",
+      "verifiedArticles": 2,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [
+        "datacenters-infrastructure"
+      ],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": 2,
+        "published": 2,
+        "discarded": 0,
+        "unresolved": 0
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Noticias verificadas en el archivo, incluida Upscale Token Fabric, reconciliada manualmente desde commit autónomo 87d682f62e divergente. Día en curso y segunda pasada pendiente."
     }
   ]
 }
