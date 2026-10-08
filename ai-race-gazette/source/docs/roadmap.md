@@ -5,6 +5,7 @@ Fecha de corte: 2026-10-07.
 ## Estado general
 
 ### Terminado
+- Visual Desk v1: manifest de assets, cola por artículo, prioridades P0–P3, refresco, validación CI y auditoría inicial.
 - Calendario mensual auditable en la web, incluyendo días sin artículos y navegación a ediciones vacías/pending.
 - Coverage Audit Ledger machine-readable enlazado a history-coverage y dailyCoverage.
 - Source Registry ampliado a actores core/radar con discovery abierto obligatorio.
@@ -34,6 +35,7 @@ Fecha de corte: 2026-10-07.
 - Algunas fechas de la maqueta antigua solo son pistas de investigación y no pueden publicarse sin volver a verificarlas.
 
 ### Falta
+- Producir primer lote visual específico y reducir la reutilización de `hero.webp` (34 usos en la auditoría inicial).
 - Reauditar 1–7 Sep con el checklist Research Backbone v1 durante la pasada inversa final (sin degradar su cierre legacy).
 - Completar la cobertura real y verificable del 8–30 de septiembre de 2026.
 - Completar el tramo 1–7 de octubre de 2026 y continuar día a día.
