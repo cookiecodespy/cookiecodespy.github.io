@@ -65,4 +65,24 @@ report={
  'coverage_states':dict(states),
  'shortest':sorted((words(a),a['id']) for a in articles)[:10],
 }
+# Operational scorecard: derived on every CI run, never stored as a stale snapshot.
+backlog_path=ROOT/'ops/backlog.json'
+backlog=json.loads(backlog_path.read_text(encoding='utf-8')) if backlog_path.exists() else {'items':[],'phases':[]}
+all_tasks=backlog.get('items',[])
+done_days=sum(s in ('complete','reviewed-no-material-news') for s in states.elements())
+report['editorial_progress']={
+ 'archive_updated_at':data.get('updatedAt'),
+ 'latest_article_date':max(dates) if dates else None,
+ 'calendar_days_registered':len(coverage),
+ 'calendar_days_closed':done_days,
+ 'calendar_days_open':len(coverage)-done_days,
+ 'v2_articles':len(v2),
+ 'legacy_articles':len(articles)-len(v2),
+ 'v2_single_linked_source':sum(1 for a in v2 if len(a.get('relatedSources',[]))==0),
+ 'visual_queue_articles':len(visual_queue.get('items',[])),
+ 'visual_queue_fresh':visual_queue.get('generatedFromNewsUpdatedAt')==data.get('updatedAt'),
+ 'task_statuses':dict(Counter(t.get('status') for t in all_tasks)),
+ 'active_phase_ids':[p['id'] for p in backlog.get('phases',[]) if p['status']=='in_progress'],
+}
+
 print(json.dumps(report,ensure_ascii=False,indent=2))
