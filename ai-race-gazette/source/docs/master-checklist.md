@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 58 tareas; 20 completadas; 3 en curso; 34 pendientes o bloqueadas; 1 descartadas con razón.
+- 6 fases; 58 tareas; 21 completadas; 3 en curso; 33 pendientes o bloqueadas; 1 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -71,9 +71,10 @@
   - Criterio: Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.
   - Fecha investigada: 2026-09-11
   - Evidencia: https://openai.com/index/scaling-storage-one-billion-users-part-one/
-- [ ] **H-OPENAI-SEP11-ROSALIND** · P0 · queued — GPT‑Rosalind sale de preview para organizaciones elegibles
+- [x] **H-OPENAI-SEP11-ROSALIND** · P0 · done — GPT‑Rosalind sale de preview para organizaciones elegibles
   - Criterio: Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.
   - Fecha investigada: 2026-09-11
+  - Evidencia: https://openai.com/index/introducing-gpt-rosalind/
 - [ ] **H-OPENAI-SEP11-GPT-MIGRATION** · P0 · queued — ChatGPT anuncia retiro futuro de custom GPTs y migración a plugins
   - Criterio: Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.
   - Fecha investigada: 2026-09-11

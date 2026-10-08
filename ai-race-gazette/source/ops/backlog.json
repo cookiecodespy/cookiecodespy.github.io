@@ -455,13 +455,18 @@
       "phase": "P05",
       "title": "GPT‑Rosalind sale de preview para organizaciones elegibles",
       "priority": "P0",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "date": "2026-09-11",
       "acceptance": "Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.",
       "evidence": [
         "https://openai.com/index/introducing-gpt-rosalind/"
-      ]
+      ],
+      "verifiedEvidence": [
+        "https://openai.com/index/introducing-gpt-rosalind/",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-gpt-rosalind-trusted-access-global-2026-09-11"
+      ],
+      "notes": "Nuevo estado del 11 sep (no lanzamiento original); la factura API citada entró en vigor 5 oct."
     },
     {
       "id": "H-OPENAI-SEP11-GPT-MIGRATION",
