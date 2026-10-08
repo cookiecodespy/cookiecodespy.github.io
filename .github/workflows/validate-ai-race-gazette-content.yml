@@ -13,6 +13,19 @@ on:
       - 'ai-race-gazette/source/docs/master-checklist.md'
       - 'ai-race-gazette/source/scripts/check_publication_integrity.py'
       - '.github/workflows/validate-ai-race-gazette-content.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'ai-race-gazette/data/news.json'
+      - 'ai-race-gazette/feed.xml'
+      - 'ai-race-gazette/source/public/data/news.json'
+      - 'ai-race-gazette/source/public/feed.xml'
+      - 'ai-race-gazette/source/docs/history-coverage.json'
+      - 'ai-race-gazette/source/research/coverage-audit.json'
+      - 'ai-race-gazette/source/ops/backlog.json'
+      - 'ai-race-gazette/source/docs/master-checklist.md'
+      - 'ai-race-gazette/source/scripts/check_publication_integrity.py'
+      - '.github/workflows/validate-ai-race-gazette-content.yml'
   workflow_dispatch:
 permissions:
   contents: read
