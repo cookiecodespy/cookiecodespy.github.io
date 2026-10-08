@@ -41,9 +41,11 @@ La cola inicial contiene 49 historias:
 - P2: 12;
 - P3: 3.
 
-Estados:
-- brief-ready: 1;
-- needs-art-direction: 48.
+Después de la dirección de arte del primer lote:
+- brief-ready: 12;
+- needs-art-direction: 37.
+
+Los 12 briefs listos cubren Claude Haiku/Sonnet/Opus 5.5, GPT-6 Astra, Mistral Large 4, Gemini 3.8 Flash/Flash Cyber, NVIDIA PAIR, Qwen3.8-Max, Grok Bot Enterprise, Waymo y TCS HyperVault.
 
 P0 corresponde a la historia que ya pide explícitamente arte específico. P1 representa principalmente artículos atrapados en el hero genérico reutilizado.
 
@@ -81,3 +83,19 @@ El objetivo del primer lote no es “cerrar todo”, sino crear una biblioteca r
 ## Regla de verdad visual
 
 Una imagen generada es ilustración editorial, no evidencia del evento. Debe acreditarse como tal y nunca simular una fotografía documental, una interfaz real o una instalación concreta sin evidencia.
+
+
+## Primer lote ya art-directed
+
+Se prepararon briefs específicos, no prompts genéricos por título, para 12 historias representativas:
+- tres niveles de Claude 5.5;
+- un frontier model de OpenAI;
+- Mistral;
+- dos historias Gemini;
+- infraestructura local NVIDIA;
+- Qwen;
+- agentes empresariales xAI;
+- robótica/autonomía Waymo;
+- infraestructura de datacenter TCS.
+
+Esto crea un lote equilibrado entre modelos, agentes, seguridad, infraestructura y robótica para probar el lenguaje visual antes de producir decenas de imágenes.
