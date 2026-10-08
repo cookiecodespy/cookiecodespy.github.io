@@ -1,5 +1,7 @@
 # AI Race Gazette — roadmap operativo
 
+**Seguimiento vivo:** [`master-checklist.md`](master-checklist.md) y `../ops/backlog.json`. Toda novedad nueva entra en la cola con ID estable y evidencia.
+
 Fecha de corte: 2026-10-07.
 
 ## Estado general

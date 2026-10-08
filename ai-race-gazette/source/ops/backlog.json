@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "project": "AI Race Gazette",
+  "asOf": "2026-10-08",
+  "masterChecklist": "docs/master-checklist.md",
+  "baseline": {
+    "articles": 53,
+    "reporterV2": 5,
+    "legacy": 48,
+    "registeredDays": 37,
+    "closedDays": 7,
+    "openDays": 30,
+    "commit": "5bc6358c50002d6dee4db567494665f7fc9d014f"
+  },
+  "rules": {
+    "statuses": [
+      "done",
+      "in_progress",
+      "queued",
+      "blocked",
+      "cancelled"
+    ],
+    "priorities": [
+      "P0",
+      "P1",
+      "P2"
+    ],
+    "preserveHistory": true,
+    "appendNewFindings": true,
+    "closureRequiresEvidence": true,
+    "newsroomReadOnly": true,
+    "unverifiedLeadsNotPublishable": true
+  },
+  "phases": [
+    {
+      "id": "P05",
+      "title": "8–14 septiembre: reconstrucción Reporter V2",
+      "status": "in_progress",
+      "gate": "Cada fecha auditada por fuentes + categorías + segunda pasada y artículos extensos"
+    },
+    {
+      "id": "P06",
+      "title": "15–21 septiembre: reconstrucción Reporter V2",
+      "status": "queued",
+      "gate": "Siete días revisados con documentación, artículos V2 y cierre verificable"
+    },
+    {
+      "id": "P07",
+      "title": "22–30 septiembre: reconstrucción y legacy",
+      "status": "queued",
+      "gate": "Nueve fechas cerradas con fuentes y piezas antiguas enriquecidas"
+    },
+    {
+      "id": "P08",
+      "title": "Octubre hasta la fecha y Newsroom continua",
+      "status": "queued",
+      "gate": "Octubre al día, fechas sin huecos y publicación horaria realmente operativa"
+    },
+    {
+      "id": "P09",
+      "title": "Enriquecimiento de legacy y Visual Desk",
+      "status": "queued",
+      "gate": "48 piezas legacy ampliadas o excepcionadas y arte editorial con QA"
+    },
+    {
+      "id": "P10",
+      "title": "Segunda auditoría y lanzamiento v1.0",
+      "status": "queued",
+      "gate": "Cobertura inversa, fuentes, fechas, diseño, SEO, accesibilidad, CI y automatización revisados"
+    }
+  ],
+  "items": [
+    {
+      "id": "H-SEP08-IMAGES25",
+      "phase": "P05",
+      "title": "ChatGPT Images 2.5: informe Reporter V2",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "acceptance": "V2, fuente primaria, mirrors, RSS y coverage",
+      "eventKey": "openai-chatgpt-images-2-5-launch-2026-09-08",
+      "evidenceCommit": "5bc6358c50002d6dee4db567494665f7fc9d014f",
+      "evidence": [
+        "https://openai.com/index/introducing-chatgpt-images-2-5/"
+      ]
+    },
+    {
+      "id": "H-SEP08-MISTRAL",
+      "phase": "P05",
+      "title": "Mistral: ronda Serie D por €3.000 millones",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Publicar V2 con términos atribuidos, fuentes oficiales y contexto competitivo",
+      "eventKey": "mistral-series-d-3b-eur-2026-09-08",
+      "evidence": [
+        "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+      ]
+    },
+    {
+      "id": "H-SEP10-GPTLIVE",
+      "phase": "P05",
+      "title": "OpenAI: GPT-Live-1 API y evaluación de voz",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Publicar V2 técnico y precio/estado correctamente atribuidos",
+      "eventKey": "openai-gpt-live-1-api-2026-09-10",
+      "evidence": [
+        "https://openai.com/index/introducing-gpt-live-1-in-the-api/"
+      ]
+    },
+    {
+      "id": "H-SEP09-FORTRAN",
+      "phase": "P05",
+      "title": "Investigar Mistral: agentes para Fortran",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Evaluar materialidad, fecha y fuentes; publicar V2 o descartar con motivo",
+      "evidence": [
+        "https://mistral.ai/news/"
+      ]
+    },
+    {
+      "id": "H-SEP10-CLOUDERA",
+      "phase": "P05",
+      "title": "Investigar alianza Mistral–Cloudera",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Confirmar efectos técnicos y fecha, publicar V2 o descartar con motivo",
+      "evidence": [
+        "https://mistral.ai/news/"
+      ]
+    },
+    {
+      "id": "H-0814-SOURCES",
+      "phase": "P05",
+      "title": "Barrido oficial, emergentes y categorías 8–14",
+      "priority": "P0",
+      "status": "in_progress",
+      "lane": "Historical Backfill",
+      "acceptance": "Registro por día/fuente/sector, candidatos y descartes sin inventar métricas"
+    },
+    {
+      "id": "H-0814-GOOGLE",
+      "phase": "P05",
+      "title": "Revisar Google/DeepMind día a día 8–14",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Comprobar novedades relevantes, fechas y completar matriz",
+      "evidence": [
+        "https://blog.google/products-and-platforms/products/gemini/"
+      ]
+    },
+    {
+      "id": "H-SEP10-LEGACY",
+      "phase": "P05",
+      "title": "Enriquecer Gemini para Windows",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Conservar id/eventKey, recuperar fuentes y publicar informe Reporter V2",
+      "eventKey": "gemini-windows"
+    },
+    {
+      "id": "H-0814-GATE",
+      "phase": "P05",
+      "title": "Cerrar estados 8–14 con doble auditoría",
+      "priority": "P0",
+      "status": "blocked",
+      "lane": "Historical Backfill",
+      "acceptance": "Todos los candidatos resueltos, evidencia de dos pasadas, cobertura y RSS consistentes",
+      "dependsOn": [
+        "H-0814-SOURCES",
+        "H-0814-GOOGLE",
+        "H-SEP08-MISTRAL",
+        "H-SEP10-GPTLIVE"
+      ]
+    },
+    {
+      "id": "H-1521-GATE",
+      "phase": "P06",
+      "title": "Reconstruir 15–21 septiembre",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Siete fechas complete/reviewed-no-material-news con evidencia y Reporter V2"
+    },
+    {
+      "id": "H-2230-GATE",
+      "phase": "P07",
+      "title": "Reconstruir 22–30 septiembre",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Nueve fechas cerradas y artículos previos enriquecidos"
+    },
+    {
+      "id": "H-OCT-GATE",
+      "phase": "P08",
+      "title": "Completar 1 octubre hasta fecha actual",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Jornadas reales cerradas, sin inventar noticias ni fechas futuras"
+    },
+    {
+      "id": "OPS-NEWSROOM",
+      "phase": "P08",
+      "title": "Probar publicación desatendida de Scheduled Task",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Automation & Newsroom",
+      "acceptance": "Demostrar commit horario autónomo o documentar aprobación pendiente"
+    },
+    {
+      "id": "OPS-DAYCONTINUITY",
+      "phase": "P08",
+      "title": "Cerrar huecos de ledger en días nuevos sin noticias",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Product & QA",
+      "acceptance": "Calendario al día incluso cuando la tarea horaria hace no-op"
+    },
+    {
+      "id": "ED-LEGACY48",
+      "phase": "P09",
+      "title": "Enriquecer 48 artículos legacy",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Editor-in-Chief / Historical Backfill",
+      "acceptance": "V2 verificado sin relleno, id/eventKey estables y fuentes"
+    },
+    {
+      "id": "VIS-PREMIUM",
+      "phase": "P09",
+      "title": "Crear lote visual periódico de grabados específicos",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Visual Desk",
+      "acceptance": "Disminuir el fallback repetido, resolver P0 de imagen y mantener créditos"
+    },
+    {
+      "id": "VIS-GENERATION",
+      "phase": "P09",
+      "title": "Explorar generación automática por noticia con QA",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Visual Desk",
+      "acceptance": "Pipeline de imágenes, permisos y costes probados antes de activar"
+    },
+    {
+      "id": "QA-REVERSE",
+      "phase": "P10",
+      "title": "Segunda pasada por empresa/tema y replay 1–7 Sep",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Editor-in-Chief",
+      "acceptance": "No omisiones materiales conocidas; fechas, rumores y claims auditados"
+    },
+    {
+      "id": "QA-WEB",
+      "phase": "P10",
+      "title": "QA UX, móvil, SEO social, RSS, accesibilidad",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Product & QA",
+      "acceptance": "Browser QA y enlaces/previews comprobados"
+    },
+    {
+      "id": "QA-LAUNCH",
+      "phase": "P10",
+      "title": "Aprobar lanzamiento Gazette v1.0",
+      "priority": "P0",
+      "status": "blocked",
+      "lane": "Editor-in-Chief",
+      "acceptance": "Gates P05–P10 con evidencias y excepciones explícitas",
+      "dependsOn": [
+        "H-0814-GATE",
+        "H-1521-GATE",
+        "H-2230-GATE",
+        "H-OCT-GATE",
+        "ED-LEGACY48",
+        "QA-REVERSE"
+      ]
+    }
+  ]
+}

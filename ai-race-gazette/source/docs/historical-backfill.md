@@ -158,3 +158,8 @@ Para cada Reporter V2:
 - no cambiar id/eventKey cuando Visual Desk sustituya la imagen después.
 
 La cola visual se mantiene aparte en `../visual/image-queue.json`.
+
+
+## Cola y checklist maestro
+
+Antes de abrir o cerrar un lote, leer `master-checklist.md` y `../ops/backlog.json`. Registrar todos los hallazgos nuevos, comprobaciones, candidatos y descartes en la cola, manteniendo los IDs y criterios de aceptación. El estado `complete` solo se permite después de la doble pasada documentada.
