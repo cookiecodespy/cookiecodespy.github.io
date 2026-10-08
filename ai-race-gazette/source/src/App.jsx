@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { dateLabel, filterArticles, groupEditions, sortArticles, monthLabel } from './news.js';
+import { estimatedReadingMinutes, dateLabel, filterArticles, groupEditions, sortArticles, monthLabel } from './news.js';
 const asset = path => `${import.meta.env.BASE_URL}${path}`;
 const readPreferences = () => {try{return JSON.parse(sessionStorage.getItem('gazette-filters'))||{};}catch{return {};}};
 const preferences = readPreferences();
@@ -9,11 +9,6 @@ function Masthead({query,onQuery,home}) {return <header className="masthead arch
 function NewsCover({article,index}) {return <a className="edition-card news-cover" href={`#articulo/${article.id}`}><div className="card-paper" aria-hidden="true"/><div className="card-content"><div className="card-date"><span>Noticia</span><time dateTime={article.date}>{dateLabel(article.date,true)}</time><span>Acceso libre</span></div><div className="card-mast">AI Race Gazette</div><div className="eyebrow">{article.company} · {article.product||'Novedad'}</div><h3>{article.title}</h3><p>{article.summary}</p><div className="cover-detail"><img src={asset(article.image)} alt={article.imageAlt} loading={index<4?'eager':'lazy'} width="600" height="400"/><div className="cover-keys"><h4>Puntos clave</h4>{article.keyPoints.slice(0,2).map(point=><p key={point}>{point}</p>)}</div></div><div className="cover-tags">{article.tags.map(t=><span key={t}>{t}</span>)}</div><div className="card-bottom"><span>Fuente oficial</span><span>Abrir noticia</span></div></div></a>;}
 function Illustration({article,hero=false}) {return <figure className="hero-art"><img src={asset(article?.image||'assets/hero.webp')} alt={article?.imageAlt||'Grabado de un humanoide mecánico junto a un globo terrestre'} loading={hero?'eager':'lazy'} width="900" height="600"/><figcaption>{article?.imageCredit||'Ilustración editorial generada con IA · AI Race Gazette'}</figcaption></figure>;}
 function MiniArticle({article,index}) {return <a className="mini-article" href={`#articulo/${article.id}`}><div className="company-name">{article.company}</div><img src={asset(article.image)} alt="" loading="lazy" width="400" height="220"/><h3>{article.title}</h3><p>{article.summary}</p><span className="read-label">Leer noticia <span>Pág. {index+2}</span></span></a>;}
-const articleWordCount = article => {
- const parts=[article.title,article.summary,...(article.body||[]),article.analysis,article.watch,article.executiveSummary,article.finalSummary,...(article.quickTakeaways||[]),...(article.limitations||[]),...(article.practicalAdvice||[]),...(article.usefulFacts||[]),...(article.curiosities||[])];
- for(const section of article.sections||[]) parts.push(section.heading,...(section.paragraphs||[]));
- return parts.filter(Boolean).join(' ').trim().split(/\\s+/).filter(Boolean).length;
-};
 function DetailList({title,items,className=''}) {
  if(!items?.length)return null;
  return <section className={`detail-card ${className}`}><h2>{title}</h2><dl>{items.map((item,i)=><div className="detail-row" key={item.label+i}><dt>{item.label}</dt><dd>{item.value}{item.note&&<small>{item.note}</small>}</dd></div>)}</dl></section>;
@@ -40,7 +35,7 @@ function MediaGallery({items}) {
  return <div className="article-media-grid">{items.map((media,i)=><figure key={media.src+i}><img src={asset(media.src)} alt={media.alt} loading="lazy"/><figcaption>{media.caption&&<span>{media.caption} </span>}{media.credit}</figcaption></figure>)}</div>;
 }
 function Article({article,articles,onShare}) {
- const readingMinutes=Math.max(2,Math.ceil(articleWordCount(article)/200));
+ const readingMinutes=estimatedReadingMinutes(article);
  const isV2=article.articleVersion===2;
  const secondaryMedia=(article.media||[]).filter(media=>media.src!==article.image);
  return <article className={isV2?'full-article reporter-v2':'full-article'}>

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {filterArticles,groupEditions,sortArticles,monthLabel} from '../src/news.js';
+import {filterArticles,groupEditions,sortArticles,monthLabel,articleWordCount,estimatedReadingMinutes} from '../src/news.js';
 const articles=[{date:'2026-10-07',company:'Google',title:'Edición de imágenes',summary:'Modelo nuevo',tags:['Imágenes']},{date:'2026-09-06',company:'OpenAI',title:'API para agentes',summary:'Desarrollo',tags:['Agentes']}];
 test('Search handles accents and requires every query word',()=>{assert.equal(filterArticles(articles,{query:'edicion imagenes'}).length,1);assert.equal(filterArticles(articles,{query:'google agentes'}).length,0);});
 test('Company, month and topic filters combine',()=>{assert.equal(filterArticles(articles,{company:'Google',month:'2026-09'}).length,0);assert.equal(filterArticles(articles,{topic:'Agentes',month:'2026-09'}).length,1);});
@@ -13,3 +13,13 @@ test('Several features from one company remain independent on the same day',()=>
  assert.deepEqual(sortArticles([...launches].reverse()).map(a=>a.id),launches.map(a=>a.id));
 });
 test('Month labels distinguish archive years',()=>{assert.match(monthLabel('2026-09'),/septiembre.*2026/);assert.match(monthLabel('2027-09'),/2027/);});
+
+test('Reading time counts actual whitespace-separated words across V2 sections',()=>{
+ const report={title:'Titular extendido',summary:'Informe relevante',body:['Resumen inicial'],sections:[{heading:'Detalle técnico',paragraphs:[Array(1000).fill('información').join(' ')]}],quickTakeaways:['Dato clave'],analysis:'Análisis Gazette',watch:'Seguimiento'};
+ assert.equal(articleWordCount(report),1010);
+ assert.equal(estimatedReadingMinutes(report),6);
+});
+test('Legacy short articles have minimum reading time and empty fields are tolerated',()=>{
+ assert.equal(articleWordCount({title:'Dos palabras',summary:'',body:[]}),2);
+ assert.equal(estimatedReadingMinutes({title:'Dos palabras'}),2);
+});
