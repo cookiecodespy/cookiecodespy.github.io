@@ -1,0 +1,53 @@
+name: Sync AI Race Gazette Visual Queue
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ai-race-gazette/data/news.json'
+      - 'ai-race-gazette/source/public/data/news.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-race-gazette-visual-sync
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Refresh safely against latest main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "AI Race Gazette Visual Desk"
+          git config user.email "actions@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            (
+              cd ai-race-gazette/source
+              python3 scripts/refresh_visual_queue.py
+              python3 scripts/validate_visual_desk.py --strict
+            )
+            git add -A ai-race-gazette/source/visual/image-queue.json ai-race-gazette/source/visual/asset-manifest.json
+            if git diff --cached --quiet; then
+              echo "Visual Desk already synchronized. No commit."
+              exit 0
+            fi
+            git commit -m "visual: sync queue from latest Gazette stories [skip ci]"
+            if git push origin HEAD:main; then
+              echo "Visual queue synchronized after attempt $attempt"
+              exit 0
+            fi
+            echo "Concurrent main update; recomputing against newest main."
+            sleep "$attempt"
+          done
+          echo "Visual Desk sync could not safely push after retries"
+          exit 1
