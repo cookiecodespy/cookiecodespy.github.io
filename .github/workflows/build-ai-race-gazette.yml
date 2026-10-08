@@ -87,16 +87,22 @@ jobs:
           mkdir -p ../assets
           rm -f ../assets/index-*.js ../assets/index-*.css
           cp -R dist/client/assets/. ../assets/
+          if [ -d public/assets/news ]; then
+            test -d dist/client/assets/news
+            diff -qr public/assets/news dist/client/assets/news
+          fi
 
       - name: Commit compiled frontend when changed
         working-directory: .
         run: |
-          if git diff --quiet -- ai-race-gazette/index.html ai-race-gazette/assets; then
+          # git diff ignores untracked files; stage first so brand-new WebP assets
+          # are included in the change detection and published atomically.
+          git add -A ai-race-gazette/index.html ai-race-gazette/assets
+          if git diff --cached --quiet -- ai-race-gazette/index.html ai-race-gazette/assets; then
             echo "No compiled frontend changes."
             exit 0
           fi
           git config user.name "AI Race Gazette Build"
           git config user.email "actions@users.noreply.github.com"
-          git add -A ai-race-gazette/index.html ai-race-gazette/assets
           git commit -m "build: publish AI Race Gazette frontend [skip ci]"
           git push
