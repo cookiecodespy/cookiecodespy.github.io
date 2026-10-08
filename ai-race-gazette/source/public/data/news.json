@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T12:51:23.364Z",
+  "updatedAt": "2026-10-08T12:52:58.056Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -3104,7 +3104,7 @@
       "company": "Google",
       "product": "Gemini para Windows",
       "title": "Gemini llega al escritorio de Windows",
-      "summary": "La nueva aplicación permite abrir el asistente sobre el trabajo activo con Alt + Espacio.",
+      "summary": "Google estrenó Gemini para Windows 10 y 11 el 10 de septiembre: acceso con Alt + Espacio, un espacio para tareas complejas con apps conectadas y opciones de creación visual. Algunas funciones requieren suscripción y tienen límites de disponibilidad.",
       "tags": [
         "Productos",
         "Productividad"
@@ -3117,19 +3117,166 @@
         "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
         "publishedAt": "2026-09-10"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-08",
       "body": [
-        "El 10 de septiembre Google anunció su aplicación de Gemini para Windows 10 y 11, con disponibilidad global según su publicación.",
-        "El acceso rápido utiliza Alt + Espacio. La aplicación reúne asistencia sobre el trabajo activo y un espacio para tareas, documentos y creación visual. Algunas funciones dependen de la suscripción y la disponibilidad.",
-        "El interés del formato es reducir el cambio entre ventanas. Para evaluar su utilidad, importa comprobar qué contexto recibe el asistente y qué acciones requieren intervención del usuario."
+        "Google presentó una aplicación nativa para Windows con acceso rápido al asistente. La innovación es acercar consultas, tareas y creación visual al escritorio, no un lanzamiento de un nuevo modelo fundacional."
       ],
       "keyPoints": [
         "Aplicación para Windows 10 y 11.",
         "Acceso mediante Alt + Espacio."
       ],
-      "analysis": "Acercar el asistente al escritorio puede reducir pasos, pero el control del contexto y de los permisos sigue siendo esencial.",
-      "watch": "Integración con herramientas habituales y disponibilidad por cuenta.",
-      "announcedAt": "2026-09-10"
+      "analysis": "Análisis Gazette: la competencia se acerca al escritorio. La comodidad de una ventana contextual importa, pero debe acompañarse de permisos legibles y controles verificables.",
+      "watch": "Permisos por aplicación, consumo de recursos, funciones nativas futuras, disponibilidad regional y límites por plan.",
+      "announcedAt": "2026-09-10",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Aplicación disponible globalmente para Windows 10 y 11 desde el 10 de septiembre de 2026.",
+        "Alt + Espacio permite invocar Gemini sin abandonar el trabajo activo.",
+        "El espacio de trabajo reúne integraciones con Gmail/Drive y menciona al agente Gemini Spark.",
+        "Nano Banana y Gemini Omni aportan funciones visuales sujetas a condiciones.",
+        "Determinadas capacidades requieren suscripción Google AI, edad mínima de 18 años y disponibilidad variable."
+      ],
+      "sections": [
+        {
+          "heading": "La llegada oficial al escritorio",
+          "kind": "context",
+          "paragraphs": [
+            "Google lanzó el 10 de septiembre de 2026 una aplicación de Gemini para Windows 10 y 11, disponible globalmente según su comunicado. El objetivo anunciado es ofrecer acceso al asistente desde el flujo de trabajo habitual, sin obligar a abrir constantemente una pestaña separada. Es una novedad de distribución y experiencia de uso, no una presentación de un modelo fundacional ni una prueba de que Windows ejecute el modelo de manera local. La compañía proporcionó un sitio específico para descargar la aplicación.",
+            "El titular importa porque el escritorio concentra una buena parte del trabajo profesional: documentos, presentaciones, investigación y navegación. Acercar un asistente a ese entorno puede reducir operaciones repetitivas, pero la utilidad dependerá de integración, velocidad de respuesta y facilidad para controlar la información compartida. La noticia no autoriza afirmar que Gemini tenga automáticamente permisos sobre cualquier archivo o proceso de una computadora."
+          ]
+        },
+        {
+          "heading": "Alt + Espacio y el modo de uso",
+          "kind": "report",
+          "paragraphs": [
+            "La puerta de entrada es el atajo Alt + Espacio. Google describe una ventana de Gemini que aparece sobre el trabajo activo para pedir una explicación, revisar una idea o redactar contenido. La ventaja frente al navegador no es necesariamente otro modelo inteligente, sino la reducción de cambios de aplicación. El teclado actúa como mecanismo de invocación para consultas breves, que pueden resolverse sin abandonar por completo el documento que se está editando.",
+            "Este tipo de integración exige cuidado con conflictos de atajos y con la sensación de que el asistente conoce todo lo que aparece en la pantalla. El comunicado habla de acceso rápido, pero no detalla de manera exhaustiva qué contexto recibe por defecto, qué permisos solicita ni cómo cambia ese acceso entre cuentas. Para un usuario profesional, esas preguntas requieren comprobación en la aplicación y su configuración actual."
+          ]
+        },
+        {
+          "heading": "Un espacio dedicado a tareas más largas",
+          "kind": "report",
+          "paragraphs": [
+            "Además de la invocación inmediata, el producto ofrece un espacio dedicado para procesos más extensos. Google menciona redacción de resúmenes y recuperación de información desde aplicaciones conectadas como Gmail y Google Drive. Un usuario podría centralizar parte de su trabajo en el asistente, siempre sujeto a los conectores habilitados y autorizaciones correspondientes. La disponibilidad de una herramienta no implica que todas las organizaciones permitan usarla con archivos corporativos.",
+            "La compañía también presenta Gemini Spark como agente personal para delegar tareas de varios pasos. El anuncio indica que ciertas funciones llevan condiciones adicionales de suscripción y edad. Conviene distinguir entre conversar con el asistente, conectarlo a un servicio y concederle capacidad para realizar acciones: son niveles diferentes de acceso y de riesgo. Una gestión sensible debería tener confirmación y registros."
+          ]
+        },
+        {
+          "heading": "Imágenes y video desde Windows",
+          "kind": "report",
+          "paragraphs": [
+            "Google destaca la posibilidad de usar Nano Banana para generar imágenes y Gemini Omni para crear o dirigir videos. Estas capacidades aparecen dentro del relato de una aplicación que reúne distintas herramientas de IA. No significa que el sistema realice toda la inferencia en la GPU del computador ni que dichas funciones tengan acceso ilimitado. Los planes, límites y condiciones pueden variar según modalidad y región.",
+            "Para un creador, el interés es pasar de una idea a un material visual sin cambiar constantemente de interfaz. Pero el valor práctico debe medirse por el control de la edición, la calidad del resultado y los derechos y créditos aplicables. En un medio como Gazette, un material generado sigue siendo una ilustración; no se convierte en fotografía documental por haber sido producido dentro de una app de escritorio."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, requisitos y planes",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio oficial establece disponibilidad global para Windows 10 y Windows 11 desde el día 10. La empresa remite al sitio de descarga del producto. La nota incluye una aclaración: determinadas prestaciones requieren una suscripción Google AI, tienen disponibilidad variable y exigen ser mayor de 18 años. Por lo tanto, decir simplemente que todas las funciones son gratuitas para cualquier persona sería incorrecto.",
+            "Google no proporciona en esta pieza un precio único para todos los servicios incluidos. Un lector debe consultar su plan, región y configuración de cuenta antes de comprometer una actividad profesional. Una organización también debería comprobar compatibilidad con políticas de TI, métodos de autenticación, actualizaciones y gestión de datos. El alcance global de la aplicación no equivale a funciones idénticas disponibles en todas las cuentas."
+          ]
+        },
+        {
+          "heading": "Seguridad y privacidad del asistente contextual",
+          "kind": "context",
+          "paragraphs": [
+            "Un asistente en el escritorio puede interactuar con información valiosa: documentos de trabajo, correos, calendarios y archivos con datos personales. La existencia de conectores no autoriza asumir que todo se lee de manera automática. Las aplicaciones responsables necesitan explicar sus permisos y permitir revocarlos. Antes de activar conexiones empresariales, conviene revisar políticas de datos, retención y configuración administrativa.",
+            "La noticia tampoco debe interpretarse como una certificación de seguridad. Un modelo puede equivocarse al resumir un correo o describir una tarea, aunque la interfaz sea cómoda. Para acciones como enviar mensajes, mover documentos o modificar información compartida, lo prudente es conservar pasos de revisión. El asistente puede ahorrar tiempo, pero la responsabilidad de decisiones y autorizaciones continúa en la persona o la organización."
+          ]
+        },
+        {
+          "heading": "Cómo probar si sirve de verdad",
+          "kind": "practical",
+          "paragraphs": [
+            "Una evaluación simple puede comparar tareas idénticas con y sin la aplicación: encontrar una referencia, redactar un borrador, resumir un documento conectado y producir un primer boceto visual. Se debería anotar tiempo total, número de cambios de ventana, correcciones necesarias, consumo del plan y errores. Así se determina si el acceso directo realmente mejora productividad y no solamente da una sensación de novedad.",
+            "Es importante ensayar también escenarios de fallo: una cuenta sin permiso, información desactualizada, un documento que el asistente no puede ver o una petición ambigua. Si el usuario desconoce qué contexto se compartió, la integración pierde parte de su valor. Las funciones avanzadas deben activarse progresivamente y probarse con información que pueda utilizarse sin riesgos."
+          ]
+        },
+        {
+          "heading": "El análisis competitivo de Gazette",
+          "kind": "context",
+          "paragraphs": [
+            "La llegada de Gemini a Windows muestra que la carrera de IA se libra también en el lugar donde trabaja el usuario. Microsoft, OpenAI, Google y otros proveedores buscan que sus asistentes se integren con archivos, aplicaciones, navegadores y automatizaciones. La calidad del modelo seguirá siendo relevante, pero la elección cotidiana puede depender tanto del acceso a datos y acciones como de benchmarks generales.",
+            "Análisis Gazette: la mayor oportunidad está en combinar asistencia contextual, ejecución controlada y experiencia fluida. El mayor riesgo consiste en confundir una interfaz cercana con una herramienta que tiene comprensión perfecta del entorno y permisos ilimitados. El 10 de septiembre debe registrarse como disponibilidad de una aplicación, mientras las funciones concretas de Spark, conectores y creación visual necesitan seguimiento según planes."
+          ]
+        },
+        {
+          "heading": "Qué faltará comprobar",
+          "kind": "analysis",
+          "paragraphs": [
+            "Google afirma que la aplicación es ligera y que no ralentiza el computador en condiciones normales. El comunicado no incorpora una batería independiente de mediciones de memoria, batería, CPU ni tiempos de respuesta. Por ello, la promesa de rendimiento debe tratarse como descripción del fabricante. Los resultados en equipos antiguos, instalaciones corporativas o sesiones intensivas pueden diferir.",
+            "Las próximas noticias relevantes serán nuevas capacidades nativas del escritorio, cambios de planes, controles administrativos y evaluaciones independientes de privacidad, rendimiento y acciones de agentes. Una versión de escritorio debe juzgarse por lo que permite hacer de forma estable y segura, no por la cantidad de funciones mencionadas en un anuncio."
+          ]
+        }
+      ],
+      "executiveSummary": "Gemini llega a Windows como un punto de acceso permanente al asistente, con atajo de teclado y un espacio para tareas, creación visual y aplicaciones conectadas. El anuncio no garantiza acceso irrestricto a todos los datos o funciones.",
+      "finalSummary": "La noticia del 10 de septiembre trata de distribución y experiencia de usuario: un asistente integrado en el entorno laboral. Su valor dependerá de permisos, acceso a herramientas, tiempo ahorrado y fiabilidad real.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia de un escritorio Windows estilizado como un gabinete de estudio antiguo, con un pequeño autómata de consulta sobre libros y documentos; perspectiva editorial, sin interfaces ficticias presentadas como capturas reales, sin logotipos falsos.",
+      "technicalDetails": [
+        {
+          "label": "Sistema",
+          "value": "Windows 10 y 11"
+        },
+        {
+          "label": "Acceso rápido",
+          "value": "Alt + Espacio"
+        },
+        {
+          "label": "Disponibilidad",
+          "value": "Global desde el 10 de septiembre, según Google"
+        }
+      ],
+      "availability": {
+        "status": "Aplicación de escritorio disponible",
+        "platforms": [
+          "Windows 10",
+          "Windows 11"
+        ],
+        "regions": [
+          "Disponibilidad global de app; funciones según región y plan"
+        ],
+        "requirements": [
+          "Algunas funciones requieren suscripción Google AI",
+          "Ciertas prestaciones 18+"
+        ],
+        "notes": [
+          "Conectores y funciones avanzadas varían según cuenta."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Aplicación y funciones",
+          "value": "Según plan y disponibilidad; el anuncio no ofrece una tarifa universal."
+        }
+      ],
+      "limitations": [
+        "No está demostrado que todos los datos de pantalla sean contextuales por defecto.",
+        "Las funciones adicionales tienen planes, edades y regiones específicas.",
+        "El rendimiento ligero es una afirmación del proveedor sin benchmarking independiente en el anuncio."
+      ],
+      "practicalAdvice": [
+        "Comprobar permisos antes de habilitar Gmail y Drive.",
+        "Ensayar tareas iguales con y sin la app para medir ahorro real.",
+        "Confirmar explícitamente acciones con datos sensibles.",
+        "Revisar restricciones del plan para Spark y funciones de imagen/video."
+      ],
+      "usefulFacts": [
+        "Google anunció descarga en gemini.google/desktop.",
+        "El acceso rápido usa Alt + Espacio.",
+        "Nano Banana y Gemini Omni se mencionan como herramientas de creación."
+      ],
+      "curiosities": [
+        "La aplicación reúne invocación instantánea y espacio dedicado para flujos largos.",
+        "Google habla de capacidades nativas futuras más allá de esta primera versión."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "label": "Lanzamiento de la app Gemini para Windows 10 y 11."
+        }
+      ]
     },
     {
       "id": "mistral-fortran-agent-modernization-2026-09-09",

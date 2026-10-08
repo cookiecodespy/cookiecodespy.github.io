@@ -180,10 +180,14 @@
       "phase": "P05",
       "title": "Enriquecer Gemini para Windows",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "acceptance": "Conservar id/eventKey, recuperar fuentes y publicar informe Reporter V2",
-      "eventKey": "gemini-windows"
+      "eventKey": "gemini-windows",
+      "verifiedEvidence": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-windows"
+      ]
     },
     {
       "id": "H-0814-GATE",

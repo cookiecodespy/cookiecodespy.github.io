@@ -32,13 +32,13 @@
 - [ ] **H-0814-GOOGLE** (P0, in_progress): Revisar Google/DeepMind día a día 8–14.
   - Aceptación: Comprobar novedades relevantes, fechas y completar matriz
   - Evidencia: https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai
-- [ ] **H-SEP10-LEGACY** (P1, queued): Enriquecer Gemini para Windows.
+- [x] **H-SEP10-LEGACY** (P1, done): Enriquecer Gemini para Windows.
   - Aceptación: Conservar id/eventKey, recuperar fuentes y publicar informe Reporter V2
 - [ ] **H-0814-GATE** (P0, blocked): Cerrar estados 8–14 con doble auditoría.
   - Aceptación: Todos los candidatos resueltos, evidencia de dos pasadas, cobertura y RSS consistentes
 - [ ] **H-GOOGLE-SEP09-AIPLANS** (P1, queued): Evaluar Google AI plans: nuevas herramientas y acceso.
   - Aceptación: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
-- [ ] **H-GOOGLE-SEP14-DATAFLOW** (P1, queued): Evaluar Google Cloud Dataflow con GPU Blackwell.
+- [x] **H-GOOGLE-SEP14-DATAFLOW** (P1, done): Evaluar Google Cloud Dataflow con GPU Blackwell.
   - Aceptación: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
 - [ ] **H-GOOGLE-SEP09-GARTNER** (P1, cancelled): Evaluar reconocimiento Gartner Google Gemini Enterprise.
   - Aceptación: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
@@ -49,6 +49,8 @@
 - [ ] **H-GOOGLE-DEEPMIND-0814** (P1, queued): Segunda revisión de Google DeepMind 8–14 septiembre.
   - Aceptación: Revisar todas las fechas en blogs, papers y repositorios DeepMind, registrar materialidad/duplicados y descartar con justificación.
 
+- [ ] **H-GOOGLE-SEP14-BIGQUERY** (P0, queued): BigQuery anuncia seis funciones de análisis aumentado para agentes. Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias..
+- [ ] **H-GOOGLE-SEP09-MAPL** (P0, queued): Google y NASA/JPL: MAPL-EMIT detecta emisiones de metano. Verificar fuentes originales, fecha, claims y publicar Reporter V2 profundo con evidencias..
 ### P06 — 15–21 septiembre: reconstrucción Reporter V2 (queued)
 
 **Criterio de cierre:** Siete días revisados con documentación, artículos V2 y cierre verificable
