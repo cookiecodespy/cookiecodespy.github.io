@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T16:40:19.193Z",
+  "updatedAt": "2026-10-08T18:21:50.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -336,6 +336,370 @@
         "Manus comunicó su independencia el 1 de septiembre de 2026.",
         "La financiación se anunció el 8 de octubre de 2026.",
         "El monto captado y los ingresos anualizados reportados son magnitudes distintas."
+      ]
+    },
+    {
+      "id": "google-gemini-agent-work-2026",
+      "eventKey": "google-gemini-agent-work-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Google",
+      "product": "Gemini agent para el trabajo",
+      "title": "Google presenta Gemini agent para el trabajo: memoria persistente, subagentes y acceso entre aplicaciones",
+      "summary": "Google Cloud anunció en Gemini at Work 2026 un agente empresarial unificado que combina tareas prolongadas, memoria, herramientas y coordinación de subagentes. El acceso inicial es una preview privada para clientes empresariales, no un lanzamiento general.",
+      "tags": [
+        "Agentes",
+        "Google",
+        "Empresas",
+        "Productividad",
+        "Orquestación"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Ilustración editorial conceptual de una arquitectura de agentes; no representa la interfaz real de Gemini.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 en sepia: oficina de principios del siglo XX con un agente mecánico coordinador y asistentes especializados conectados mediante tubos neumáticos a archivadores, documentos y terminales. Representar continuidad de memoria y permisos mediante llaves y registros; no incluir pantallas reales, logotipos inventados ni texto incrustado.",
+      "visualAssetId": "gazette-google-architecture-v1",
+      "source": {
+        "name": "Google Cloud · Welcome to Gemini at Work 2026",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "The Verge · Google is launching a one-stop Gemini agent for your work tasks",
+          "url": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Reuters · Google Cloud introduces Gemini agent for work",
+          "url": "https://www.reuters.com/business/google-cloud-introduces-gemini-agent-work-ai-race-heats-up-2026-10-08/",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "Durante Gemini at Work 2026, Google Cloud presentó Gemini agent como un agente universal de trabajo. Según la empresa, el usuario puede encargar un resultado y volver a un documento, un correo o un artefacto terminado, en lugar de mantener una conversación paso a paso. El agente se propone para responder preguntas, producir contenido, escribir y ejecutar código, coordinar tareas y trabajar en sistemas empresariales. Es una nueva capa de producto alrededor de modelos y herramientas, no un nuevo modelo fundacional anunciado con pesos o benchmark propio."
+      ],
+      "keyPoints": [
+        "Google describe un agente único que puede ejecutar tareas de varias horas o días y conservar contexto entre dispositivos y canales.",
+        "El diseño incluye subagentes temporales y agentes compañeros con identidad, almacenamiento y permisos propios.",
+        "The Verge informa que el nuevo agente está en preview privada empresarial; precio, regiones y disponibilidad general no se detallaron."
+      ],
+      "quickTakeaways": [
+        "Google describe un agente único que puede ejecutar tareas de varias horas o días y conservar contexto entre dispositivos y canales.",
+        "El diseño incluye subagentes temporales y agentes compañeros con identidad, almacenamiento y permisos propios.",
+        "The Verge informa que el nuevo agente está en preview privada empresarial; precio, regiones y disponibilidad general no se detallaron."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "Durante Gemini at Work 2026, Google Cloud presentó Gemini agent como un agente universal de trabajo. Según la empresa, el usuario puede encargar un resultado y volver a un documento, un correo o un artefacto terminado, en lugar de mantener una conversación paso a paso. El agente se propone para responder preguntas, producir contenido, escribir y ejecutar código, coordinar tareas y trabajar en sistemas empresariales. Es una nueva capa de producto alrededor de modelos y herramientas, no un nuevo modelo fundacional anunciado con pesos o benchmark propio.",
+            "La distinción importa porque las empresas ya utilizan asistentes dentro de aplicaciones, pero un flujo real suele cruzar calendarios, archivos, bases de datos, sistemas de ventas y canales de comunicación. El anuncio intenta reunir esos pasos en una misma identidad operativa y en un mismo contexto persistente. Que el sistema sea capaz de iniciar una tarea no garantiza que la complete con precisión, permisos correctos o coste previsible; esas propiedades deberán evaluarse caso por caso."
+          ]
+        },
+        {
+          "heading": "Una ejecución que persiste entre dispositivos",
+          "kind": "technical",
+          "paragraphs": [
+            "Google afirma que el agente se ejecuta en la nube y mantiene una memoria y un grafo de personalización compartidos entre web, iOS, Android, Windows, Mac, línea de comandos, Workspace y aplicaciones de terceros. Una tarea puede continuar después de cerrar el portátil y retomarse desde otro dispositivo. Esa continuidad evita que cada sesión dependa de volver a explicar el historial, aunque introduce preguntas sobre retención, aislamiento, actualización y eliminación de contexto.",
+            "La arquitectura descrita separa memoria de sesión, memoria semántica sobre conocimiento, memoria procedimental sobre habilidades y memoria episódica de acciones pasadas. La existencia de estas categorías es un diseño anunciado por Google; no hay en el comunicado una auditoría externa que pruebe su comportamiento en todos los conectores. Para operaciones críticas conviene exigir un registro legible de qué información utilizó el agente, cuándo la obtuvo y qué acciones efectivamente ejecutó."
+          ]
+        },
+        {
+          "heading": "Subagentes, compañeros y selección de modelos",
+          "kind": "technical",
+          "paragraphs": [
+            "El agente principal puede crear subagentes temporales para partes especializadas de un trabajo y coordinarlos en secuencia o paralelo. Google diferencia esos colaboradores efímeros de los coworker agents, agentes persistentes que representan un rol dentro de una organización. Estos últimos pueden tener cuenta de Workspace, correo propio, calendario, Drive y presencia en el directorio, con acceso definido por lo que el equipo comparte con esa identidad. La separación de identidad es esencial para rastrear responsabilidades.",
+            "Google también presenta selección flexible de modelos: la capa de agente decide qué modelo conviene a cada tarea, incluyendo modelos Gemini y Claude de Anthropic, y anuncia apertura futura a más opciones. Es una afirmación sobre la orquestación del producto, no evidencia de que todas las combinaciones tengan calidad equivalente. La selección puede ayudar a optimizar coste y latencia, pero el comportamiento real dependerá de la política de enrutamiento, la disponibilidad de modelos y las restricciones de cada organización."
+          ]
+        },
+        {
+          "heading": "Herramientas, habilidades y contexto empresarial",
+          "kind": "technical",
+          "paragraphs": [
+            "El anuncio enumera conectores con Workspace, Microsoft 365, Slack, Jira, Git, Salesforce, ServiceNow, BigQuery, Postgres, Snowflake y otras plataformas, además de servidores compatibles con Model Context Protocol. Google propone un registro de herramientas compartidas y un registro de skills reutilizables. Una skill es una secuencia de instrucciones o procedimientos que orienta al agente; no debe confundirse con una autorización para acceder a datos o ejecutar operaciones sensibles.",
+            "Para equipos de desarrollo, esta estructura puede facilitar la reutilización de procesos entre departamentos, pero también multiplica los puntos de integración. Cada conector debe probarse con datos de ejemplo, cuentas de mínimo privilegio, permisos revocables y límites explícitos. Un resultado convincente en una demo no demuestra que el mismo flujo resista documentos incompletos, conflictos de permisos, errores de red o cambios de esquema en producción."
+          ]
+        },
+        {
+          "heading": "Seguridad, identidad y observabilidad",
+          "kind": "report",
+          "paragraphs": [
+            "Google describe identidades de agente verificables, autorización por roles, propagación de permisos mediante estándares como OAuth, auditoría de acciones, Agent Sandbox y Agent Gateway. La intención declarada es que una política empresarial se aplique de forma uniforme a los agentes, incluso cuando estos ejecuten código o contacten servicios externos. Se trata de capacidades anunciadas por el proveedor; los detalles operativos y certificaciones concretas deben comprobarse en documentación de producto y contratos antes de tomar decisiones de cumplimiento.",
+            "La pregunta práctica no es solamente si un agente tiene una identidad, sino si cada operación queda atribuida, puede ser detenida y respeta los límites al cambiar de herramienta. Las organizaciones deberían verificar qué ocurre ante una instrucción maliciosa incrustada en un documento, un permiso revocado a mitad de una tarea y una llamada de herramienta fallida. El anuncio no presenta resultados independientes para todos esos escenarios."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, precios y alcance real",
+          "kind": "report",
+          "paragraphs": [
+            "The Verge informa que el nuevo Gemini agent está disponible inicialmente para clientes empresariales mediante preview privada. Google lo presenta dentro de su estrategia Gemini Enterprise y Workspace, pero el anuncio no ofrece una lista pública completa de países habilitados, fechas de disponibilidad general, planes elegibles o precio independiente del nuevo agente. Por tanto, no corresponde describirlo como accesible hoy para cualquier cuenta de Gmail ni asumir que una suscripción de consumidor lo incluye.",
+            "El evento también incluye novedades de analítica, datos e industrias. Son anuncios relacionados, pero no deben confundirse con funcionalidades ya desplegadas para todos los usuarios del agente. Antes de presupuestar un piloto, una empresa debería solicitar condiciones de acceso, residencia de datos, coste de ejecución y modelos permitidos, además de comprobar qué integraciones funcionan efectivamente en su región."
+          ]
+        },
+        {
+          "heading": "Competencia e implicaciones para distintos lectores",
+          "kind": "competition",
+          "paragraphs": [
+            "El movimiento se sitúa junto a la expansión de agentes de OpenAI, Microsoft y otros proveedores que buscan pasar de respuestas a acciones. La diferenciación declarada de Google está en unir aplicaciones de trabajo, identidad corporativa, memoria persistente y modelos alternativos. No hay una comparación pública homogénea que permita concluir que este agente es superior en fiabilidad, seguridad o coste a todos sus rivales. Las arquitecturas y condiciones de acceso son distintas.",
+            "Para developers, la oportunidad es construir herramientas reutilizables y flujos que no dependan de un único modelo. Para usuarios, el beneficio potencial es delegar tareas repetitivas sin rehacer contexto. Para empresas, el valor dependerá de control de acceso, auditoría y ahorro medible, no del número de subagentes que se puedan crear. Un piloto útil debe comparar tareas terminadas correctamente, intervenciones humanas, errores y coste total por proceso."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y qué seguir",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la novedad más importante es la separación conceptual entre agente, modelo, memoria y herramientas. Si se materializa con garantías, permitirá cambiar el motor de inferencia sin perder necesariamente la identidad y los procedimientos del trabajo. Pero un agente omnipresente también concentra información sensible y privilegios; la observabilidad y el control humano son requisitos del producto, no adornos técnicos.",
+            "Qué seguir: ampliación de la preview, condiciones por país y plan, documentación de precios, auditorías de seguridad, compatibilidad real de conectores, pruebas de tareas de larga duración y métricas reproducibles. Como consejo práctico, definir primero una tarea de bajo riesgo con resultado verificable y registrar cada paso antes de conectar sistemas con permisos de escritura amplios."
+          ]
+        }
+      ],
+      "executiveSummary": "El anuncio del 8 de octubre no es simplemente otra interfaz de chat. Google Cloud plantea que Gemini agent funcione como capa de ejecución para trabajo empresarial: interpreta objetivos, usa herramientas y habilidades, recuerda contexto y puede coordinar agentes con identidades separadas. La arquitectura anunciada es ambiciosa, pero su fase inicial sigue limitada. Las capacidades descritas por Google son afirmaciones del proveedor; todavía no equivalen a una demostración pública de fiabilidad universal.",
+      "finalSummary": "Gemini agent apunta a convertir el asistente empresarial en una capa de trabajo persistente y multiagente. Hoy está anunciado con capacidades extensas y acceso inicial limitado; su relevancia definitiva dependerá de que los controles, integraciones y resultados funcionen de forma verificable fuera de las demostraciones.",
+      "analysis": "Análisis Gazette: la arquitectura de agente persistente, separada de modelos y herramientas, es una apuesta estratégica por el trabajo delegado; la seguridad y la fiabilidad siguen siendo condiciones por demostrar.",
+      "watch": "Disponibilidad general, países y planes, tarifas, controles auditables, pruebas independientes y resultados de pilotos.",
+      "technicalDetails": [
+        {
+          "label": "Ejecución",
+          "value": "Nube, tareas prolongadas y contexto entre canales",
+          "note": "Arquitectura anunciada por Google"
+        },
+        {
+          "label": "Orquestación",
+          "value": "Subagentes temporales y coworker agents persistentes",
+          "note": "Identidades y permisos separados según el proveedor"
+        },
+        {
+          "label": "Modelos",
+          "value": "Selección entre Gemini y Claude, con más opciones previstas",
+          "note": "Disponibilidad por organización no detallada"
+        }
+      ],
+      "availability": {
+        "status": "Preview privada empresarial según The Verge",
+        "platforms": [
+          "Gemini Enterprise y superficies empresariales anunciadas"
+        ],
+        "regions": [
+          "Sin lista pública completa de regiones"
+        ],
+        "requirements": [
+          "Acceso empresarial habilitado"
+        ],
+        "notes": [
+          "No equivale a disponibilidad general en cuentas personales"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio independiente del nuevo agente",
+          "value": "No anunciado",
+          "note": "Solicitar condiciones y costes del piloto a Google Cloud"
+        }
+      ],
+      "limitations": [
+        "No hay disponibilidad general ni matriz completa de países y planes publicada.",
+        "No se presentaron benchmarks independientes de éxito de tareas prolongadas.",
+        "Integraciones y controles anunciados requieren verificación por entorno."
+      ],
+      "practicalAdvice": [
+        "Pilotar con tareas reversibles y criterios medibles de éxito.",
+        "Auditar permisos por identidad de agente y conservar registros de acciones.",
+        "Solicitar información escrita sobre residencia de datos, modelos y costes."
+      ],
+      "usefulFacts": [
+        "El anuncio oficial se publicó el 8 de octubre de 2026.",
+        "Los coworker agents pueden disponer de identidad y recursos propios de Workspace según Google.",
+        "El acceso inicial reportado es una preview privada empresarial."
+      ]
+    },
+    {
+      "id": "globalfoundries-tsmc-cowos-interposers-2026",
+      "eventKey": "globalfoundries-tsmc-cowos-interposer-manufacturing-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "GlobalFoundries",
+      "product": "Interposers de silicio para TSMC CoWoS",
+      "title": "GlobalFoundries y TSMC acuerdan US$2.000 millones para fabricar interposers de chips de IA en Nueva York",
+      "summary": "GlobalFoundries anunció un acuerdo de fabricación con TSMC por US$2.000 millones para suministrar interposers de silicio del ecosistema CoWoS desde Malta, Nueva York. La producción en volumen comenzaría a aumentar en el primer semestre de 2028.",
+      "tags": [
+        "Semiconductores",
+        "Chips",
+        "Infraestructura",
+        "Fabricación",
+        "Acuerdos"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de infraestructura tecnológica; no representa una fábrica ni un interposer real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración editorial horizontal 3:2, grabado técnico en tinta sepia sobre papel antiguo: corte conceptual de un paquete avanzado con procesador, módulos de memoria y un interposer de silicio, acompañado por una silueta industrial abstracta. Evitar logotipos falsos, fotografías de fábricas, números impresos y diseños de chips atribuidos a un fabricante específico.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "source": {
+        "name": "GlobalFoundries · acuerdo de interposers para TSMC",
+        "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Reuters · GlobalFoundries to make key AI chip component for TSMC",
+          "url": "https://www.reuters.com/world/asia-pacific/globalfoundries-make-key-ai-chip-component-tsmc-2026-10-08/",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "GlobalFoundries comunicó un acuerdo plurianual de fabricación con TSMC para suministrar interposers de silicio destinados al ecosistema CoWoS de empaquetado avanzado. La empresa sitúa el valor del acuerdo en US$2.000 millones, con un plazo inicial de cinco años. El anuncio contempla ampliar capacidad en su instalación de Malta, estado de Nueva York, y deja abierta la posibilidad de aumentos posteriores según evolucione la demanda de clientes. Reuters también informó el acuerdo el 8 de octubre."
+      ],
+      "keyPoints": [
+        "El acuerdo anunciado asciende a US$2.000 millones y tiene un plazo inicial de cinco años.",
+        "GlobalFoundries fabricará interposers de silicio para el ecosistema CoWoS de TSMC en Malta, Nueva York.",
+        "La producción en volumen se espera para el primer semestre de 2028; no son entregas comerciales inmediatas."
+      ],
+      "quickTakeaways": [
+        "El acuerdo anunciado asciende a US$2.000 millones y tiene un plazo inicial de cinco años.",
+        "GlobalFoundries fabricará interposers de silicio para el ecosistema CoWoS de TSMC en Malta, Nueva York.",
+        "La producción en volumen se espera para el primer semestre de 2028; no son entregas comerciales inmediatas."
+      ],
+      "sections": [
+        {
+          "heading": "El acuerdo y su alcance",
+          "kind": "report",
+          "paragraphs": [
+            "GlobalFoundries comunicó un acuerdo plurianual de fabricación con TSMC para suministrar interposers de silicio destinados al ecosistema CoWoS de empaquetado avanzado. La empresa sitúa el valor del acuerdo en US$2.000 millones, con un plazo inicial de cinco años. El anuncio contempla ampliar capacidad en su instalación de Malta, estado de Nueva York, y deja abierta la posibilidad de aumentos posteriores según evolucione la demanda de clientes. Reuters también informó el acuerdo el 8 de octubre.",
+            "El acuerdo no implica que TSMC transfiera la fabricación de todos sus chips a GlobalFoundries. La tarea descrita corresponde a un componente especializado del empaquetado que une distintos chips dentro de un mismo conjunto. Tampoco equivale a una adquisición entre compañías. La relación propuesta es de servicio de fabricación y diversificación de suministro, con el objetivo de aumentar opciones industriales para una parte del sistema."
+          ]
+        },
+        {
+          "heading": "Qué es un interposer y por qué importa en IA",
+          "kind": "technical",
+          "paragraphs": [
+            "Un interposer de silicio es una pieza de interconexión que se sitúa entre componentes como procesadores y memorias de alto ancho de banda dentro de un paquete avanzado. Permite colocar rutas de señal densas y relativamente cortas entre elementos que deben intercambiar enormes cantidades de datos. En sistemas de IA, el rendimiento de un acelerador depende tanto de su capacidad de cálculo como del acceso a memoria y de la comunicación entre componentes. El interposer no ejecuta por sí solo un modelo de lenguaje.",
+            "CoWoS, la familia de tecnologías de empaquetado avanzado de TSMC, integra varios componentes de semiconductores en configuraciones de alta densidad. El anuncio de GlobalFoundries se refiere a una fuente de interposers compatible con ese ecosistema. La compatibilidad industrial debe validarse en procesos concretos de diseño, fabricación, ensamblaje y prueba; el comunicado no detalla una lista completa de paquetes o clientes finales que utilizarán los nuevos componentes."
+          ]
+        },
+        {
+          "heading": "Producción en Malta y calendario industrial",
+          "kind": "report",
+          "paragraphs": [
+            "GlobalFoundries espera ampliar capacidad en Malta y establecer allí una fuente estadounidense de interposers de silicio para tecnologías de empaquetado avanzado. La empresa menciona la posibilidad de incorporar componentes con condensadores de trinchera profunda integrados, relevantes para la gestión eléctrica en determinados diseños. Se trata de un objetivo industrial y de una capacidad que se desarrollará, no de una línea de producción en volumen que haya empezado a entregar el 8 de octubre.",
+            "El dato temporal más importante es el inicio previsto del aumento de producción en volumen durante el primer semestre de 2028. En semiconductores, llegar a ese punto exige ingeniería de procesos, cualificación de materiales, rendimiento de fabricación y coordinación con las etapas posteriores de ensamblaje. El comunicado no proporciona un calendario de hitos intermedios ni una capacidad anual de obleas o interposers que permita cuantificar el impacto inmediato en la oferta."
+          ]
+        },
+        {
+          "heading": "Cómo interpretar los US$2.000 millones",
+          "kind": "context",
+          "paragraphs": [
+            "El titular financiero representa el valor anunciado de un acuerdo de fabricación plurianual. No debe confundirse automáticamente con una inversión de capital de US$2.000 millones en una sola fábrica, un desembolso realizado hoy o un volumen de ventas ya reconocido. El comunicado no desglosa condiciones de pago, precios unitarios, volúmenes garantizados ni estructura de inversión. Esas ausencias impiden calcular cuántos paquetes de IA podrían abastecerse o qué margen obtendrá cada compañía.",
+            "Para evaluar el avance real convendrá seguir anuncios posteriores sobre expansión de capacidad, cualificación del proceso, rendimiento de fabricación y contratos de suministro. La cifra nominal es material para el sector, pero por sí sola no demuestra una reducción de precio por acelerador, un aumento concreto de disponibilidad de GPU ni una mejora medible de eficiencia energética."
+          ]
+        },
+        {
+          "heading": "Por qué el empaquetado es un cuello de botella",
+          "kind": "technical",
+          "paragraphs": [
+            "El entrenamiento y la inferencia a gran escala demandan procesadores con memoria próxima y conexiones de alta velocidad. Aunque una fundición aumente la producción de matrices de cómputo, el suministro final puede quedar limitado por empaquetado, memoria, sustratos, pruebas u otros componentes. Añadir una fuente de interposers busca reforzar una etapa de esa cadena, pero no elimina automáticamente los demás cuellos de botella.",
+            "El anuncio también refleja que el valor estratégico de los semiconductores de IA ya no se concentra exclusivamente en el transistor más pequeño. La ingeniería de empaquetado, la gestión térmica, la entrega de energía y la interconexión entre chips pueden condicionar el desempeño del sistema completo. Es un cambio relevante para proveedores especializados, incluso cuando no fabrican los procesadores de vanguardia."
+          ]
+        },
+        {
+          "heading": "Competencia y cadena de suministro",
+          "kind": "competition",
+          "paragraphs": [
+            "TSMC ocupa una posición central en el empaquetado de numerosos procesadores avanzados, mientras que GlobalFoundries se especializa en una cartera distinta de procesos de fabricación. La cooperación descrita muestra que dos empresas pueden competir en ciertas áreas y colaborar en componentes complementarios. Una fuente adicional en Estados Unidos podría aportar flexibilidad logística y capacidad industrial, pero todavía no hay datos suficientes para medir cuánto reduce riesgos geopolíticos o tiempos de entrega.",
+            "El anuncio no demuestra que otras regiones o proveedores hayan quedado desplazados. Tampoco identifica productos específicos de NVIDIA, AMD u otros fabricantes que vayan a incorporar estos interposers. Cualquier asociación con una GPU comercial concreta necesitaría documentación de ese fabricante o de la cadena de suministro. La competencia relevante incluye a quienes suministran empaquetado avanzado, sustratos, memoria y servicios de fabricación especializados."
+          ]
+        },
+        {
+          "heading": "Implicaciones para empresas y desarrolladores",
+          "kind": "practical",
+          "paragraphs": [
+            "Para fabricantes de hardware, la novedad abre la perspectiva de mayor flexibilidad en un componente crítico, sujeta a certificaciones y calendarios. Para operadores de centros de datos, el impacto potencial aparecería indirectamente en plazos de entrega y disponibilidad de sistemas completos, no en una función de software activable hoy. Para desarrolladores de modelos, no cambia de inmediato APIs, bibliotecas ni precios de inferencia; su efecto dependerá de cómo evolucione la oferta de hardware durante los próximos años.",
+            "Quien planifique capacidad de cómputo debería separar tres horizontes: anuncio contractual en 2026, industrialización durante 2027 y aumento de volumen previsto para 2028. Incorporar el valor total del acuerdo como capacidad ya disponible sería un error de planificación. También conviene seguir la memoria de alto ancho de banda y el ensamblaje final, porque un interposer disponible no basta para producir un acelerador terminado."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y preguntas abiertas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: esta noticia ilustra que la carrera de IA se decide también en infraestructura industrial menos visible. La capacidad de empaquetar chips y memorias puede determinar cuánto cómputo llega al mercado, incluso si los laboratorios siguen mejorando sus modelos. El acuerdo ofrece una señal verificable de inversión comercial en la cadena de suministro, pero la materialización física tardará años y debe medirse por producción, no por titulares.",
+            "Queda por conocer la capacidad anual, el porcentaje de suministro comprometido, los precios unitarios, los clientes finales, las métricas de rendimiento y el calendario detallado de cualificación. También habrá que distinguir futuras ampliaciones de esta misma relación contractual de anuncios realmente nuevos. Hasta entonces, la afirmación sólida es el acuerdo y el plan industrial comunicado, no una expansión de oferta de aceleradores ya consumada."
+          ]
+        }
+      ],
+      "executiveSummary": "GlobalFoundries anunció el 8 de octubre de 2026 un acuerdo de fabricación con TSMC para establecer suministro estadounidense de interposers de silicio utilizados en empaquetado avanzado de chips de IA. El valor anunciado es US$2.000 millones y la planta implicada está en Malta, Nueva York. El calendario es de largo plazo: el aumento de producción en volumen está previsto para el primer semestre de 2028. El contrato es una señal de reorganización de capacidad industrial, no un anuncio de un nuevo acelerador ni una cifra equivalente de inversión de capital confirmada.",
+      "finalSummary": "GlobalFoundries y TSMC anunciaron una colaboración industrial de US$2.000 millones para interposers de CoWoS en Estados Unidos. Es un movimiento material de la cadena de suministro de IA, con efectos potenciales a mediano plazo y sin capacidad adicional inmediata demostrada.",
+      "analysis": "Análisis Gazette: la fabricación de interposers es una pieza estratégica de la oferta futura de cómputo de IA, aunque sus efectos sobre disponibilidad y precios aún no son cuantificables.",
+      "watch": "Hitos de cualificación, rampa de producción de 2028, capacidad anual, clientes y precios de suministro.",
+      "technicalDetails": [
+        {
+          "label": "Acuerdo",
+          "value": "US$2.000 millones; plazo inicial de cinco años",
+          "note": "Valor contractual anunciado, no CAPEX confirmado"
+        },
+        {
+          "label": "Producto",
+          "value": "Interposers de silicio para el ecosistema CoWoS de TSMC",
+          "note": "Componente de empaquetado avanzado"
+        },
+        {
+          "label": "Instalación",
+          "value": "Malta, Nueva York, Estados Unidos"
+        },
+        {
+          "label": "Calendario",
+          "value": "Rampa de producción en volumen prevista para el primer semestre de 2028",
+          "note": "Proyección del fabricante"
+        }
+      ],
+      "availability": {
+        "status": "Acuerdo anunciado; producción futura",
+        "platforms": [
+          "Cadena industrial de empaquetado avanzado CoWoS"
+        ],
+        "regions": [
+          "Fabricación prevista en Malta, Nueva York"
+        ],
+        "requirements": [
+          "Cualificación y escalado industrial"
+        ],
+        "notes": [
+          "No implica suministro comercial inmediato",
+          "El calendario es una expectativa de GlobalFoundries"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Valor del acuerdo",
+          "value": "US$2.000 millones",
+          "note": "No representa precio unitario ni inversión total en instalaciones"
+        },
+        {
+          "label": "Precio por interposer",
+          "value": "No divulgado"
+        }
+      ],
+      "limitations": [
+        "No hay capacidad anual publicada ni precios unitarios.",
+        "No se identifican productos finales ni clientes de aceleradores concretos.",
+        "El calendario de 2028 es prospectivo y depende de la ejecución industrial."
+      ],
+      "practicalAdvice": [
+        "No contabilizar el acuerdo como capacidad de GPU disponible en 2026.",
+        "Seguir los hitos de cualificación, rendimiento y ensamblaje final.",
+        "Distinguir valor contractual de inversión de capital al comparar acuerdos."
+      ],
+      "usefulFacts": [
+        "Anuncio fechado el 8 de octubre de 2026.",
+        "Malta, Nueva York, es la instalación mencionada.",
+        "El interposer conecta componentes dentro de un paquete; no ejecuta inferencia."
       ]
     },
     {
@@ -2491,6 +2855,191 @@
       "analysis": "La disponibilidad de una capacidad depende también de quién puede utilizarla y bajo qué condiciones.",
       "watch": "Criterios de admisión y evolución del programa.",
       "announcedAt": "2026-10-06"
+    },
+    {
+      "id": "openai-mathematics-research-2026",
+      "eventKey": "openai-math-research-repository-frontier-model-2026-10-06",
+      "articleVersion": 2,
+      "date": "2026-10-06",
+      "announcedAt": "2026-10-06",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "OpenAI",
+      "product": "Repositorio de investigación matemática openai/math",
+      "title": "OpenAI publica cientos de manuscritos matemáticos de un modelo interno y abre parte de sus pruebas en Lean",
+      "summary": "OpenAI publicó el 6 de octubre una colección de resultados matemáticos generados por un modelo interno no liberado. El repositorio consultado describe 719 manuscritos en 372 familias y formalizaciones parciales en Lean; no todos los resultados están verificados independientemente.",
+      "tags": [
+        "Investigación",
+        "Matemáticas",
+        "Razonamiento",
+        "Open Source",
+        "Verificación"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de investigación en inteligencia artificial; no representa un laboratorio real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 en tinta sepia: autómata matemático ante una pizarra de geometría abstracta, con volúmenes encuadernados y una segunda mesa donde un revisor humano examina demostraciones. Mostrar diferencia entre propuesta y comprobación sin ecuaciones legibles inventadas, sin logotipos falsos y sin aspecto fotográfico.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "OpenAI · Sharing AI progress in mathematics",
+        "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+        "publishedAt": "2026-10-06"
+      },
+      "relatedSources": [
+        {
+          "name": "Repositorio primario · openai/math",
+          "url": "https://github.com/openai/math",
+          "publishedAt": "2026-10-06"
+        }
+      ],
+      "body": [
+        "OpenAI anunció el 6 de octubre de 2026 una colección de resultados matemáticos producidos por un modelo interno de frontera. En lugar de presentar únicamente una puntuación en un benchmark, la empresa puso a disposición manuscritos, materiales de apoyo, instrucciones de citación y formalizaciones parciales en un repositorio público. El comunicado describe consultas con un grupo asesor independiente sobre matemáticas e inteligencia artificial del Institute for Advanced Study para mejorar prácticas de difusión."
+      ],
+      "keyPoints": [
+        "OpenAI publicó resultados de investigación matemática de un modelo frontier interno que no ofrece acceso público.",
+        "El README consultado enumera 719 manuscritos agrupados en 372 familias y estima alrededor del 42% de resultados principales formalizados.",
+        "La publicación distingue resultados formalizados y no formalizados; no debe presentarse el conjunto como cientos de teoremas universalmente demostrados."
+      ],
+      "quickTakeaways": [
+        "OpenAI publicó resultados de investigación matemática de un modelo frontier interno que no ofrece acceso público.",
+        "El README consultado enumera 719 manuscritos agrupados en 372 familias y estima alrededor del 42% de resultados principales formalizados.",
+        "La publicación distingue resultados formalizados y no formalizados; no debe presentarse el conjunto como cientos de teoremas universalmente demostrados."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se publicó realmente",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI anunció el 6 de octubre de 2026 una colección de resultados matemáticos producidos por un modelo interno de frontera. En lugar de presentar únicamente una puntuación en un benchmark, la empresa puso a disposición manuscritos, materiales de apoyo, instrucciones de citación y formalizaciones parciales en un repositorio público. El comunicado describe consultas con un grupo asesor independiente sobre matemáticas e inteligencia artificial del Institute for Advanced Study para mejorar prácticas de difusión.",
+            "El material abarca múltiples disciplinas y problemas de investigación. Su unidad de organización no es un único gran artículo: el catálogo agrupa manuscritos relacionados en familias que pueden contener un resultado principal, argumentos auxiliares o variantes. Esto evita equiparar automáticamente el número de documentos con el número de descubrimientos originales o de teoremas independientes."
+          ]
+        },
+        {
+          "heading": "El catálogo y sus cifras requieren fecha",
+          "kind": "technical",
+          "paragraphs": [
+            "En la consulta realizada al README de openai/math, el catálogo indicaba 719 manuscritos organizados en 372 familias. La documentación también señalaba que aproximadamente el 42% de los resultados principales cuenta con formalización en Lean. Esas cifras son una fotografía de un repositorio que admite correcciones y nuevas versiones; no deben repetirse como valores inmutables ni extrapolarse a la totalidad de cada manuscrito.",
+            "El repositorio incluye un mapa de manuscritos, directorios de preprints y una biblioteca Lean con un catálogo de formalizaciones. También describe resúmenes abreviados del razonamiento para un subconjunto de resultados. La presencia de un archivo Lean es una señal relevante de comprobabilidad, pero el alcance exacto de cada prueba formal debe leerse en su configuración y sus hipótesis, no inferirse de una etiqueta general."
+          ]
+        },
+        {
+          "heading": "Qué significa una prueba formal en Lean",
+          "kind": "technical",
+          "paragraphs": [
+            "Lean es un asistente de demostración que permite expresar en lenguaje formal enunciados y pasos lógicos verificables por un comprobador. Una formalización correctamente elaborada puede reducir ciertos errores de razonamiento o transcripción, siempre dentro de las definiciones, axiomas y supuestos utilizados. No demuestra por sí sola que el resultado sea novedoso, que sus hipótesis modelen correctamente el problema original o que todas las afirmaciones narrativas del manuscrito estén cubiertas.",
+            "Por eso es fundamental distinguir tres niveles: el modelo propone una idea, el manuscrito expone un argumento y una formalización comprueba un enunciado concreto. Aun cuando un resultado principal esté formalizado, un lector especializado puede necesitar revisar la traducción del problema, el significado de sus definiciones y las dependencias utilizadas. Para los resultados sin formalización, el examen matemático convencional sigue siendo especialmente importante."
+          ]
+        },
+        {
+          "heading": "Cómo se generaron los resultados",
+          "kind": "context",
+          "paragraphs": [
+            "El README explica que el modelo interno recibió aproximadamente 4.000 problemas durante la evaluación. Para la gran mayoría de resultados se siguió un procedimiento con una media de tres horas de cómputo de razonamiento de ChatGPT Pro por resultado, según OpenAI. La documentación reconoce excepciones y una edición humana de al menos un texto para mejorar legibilidad. Son detalles metodológicos aportados por la empresa, no una reproducción independiente del proceso.",
+            "El modelo utilizado no está liberado públicamente, por lo que un investigador externo no puede repetir toda la generación con los mismos pesos y condiciones. Sí puede inspeccionar los documentos publicados y, donde existan, ejecutar verificaciones de Lean con las configuraciones especificadas. Esta asimetría entre generación cerrada y comprobación parcialmente abierta es una de las características más importantes del anuncio."
+          ]
+        },
+        {
+          "heading": "Verificación, revisión y límites de las afirmaciones",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI advierte expresamente que algunos resultados no formalizados podrían contener problemas y anuncia un procedimiento de versiones y correcciones. La empresa se compromete a preservar la historia pública de la colección y a mantener instrucciones de cita por manuscrito. Eso permite que una corrección posterior no borre silenciosamente el estado original, una práctica importante cuando muchos lectores y sistemas automáticos pueden reproducir afirmaciones matemáticas antes de su revisión.",
+            "Una publicación en un repositorio no sustituye la revisión por pares, y una gran cantidad de preprints no permite afirmar que todos los problemas abiertos hayan sido resueltos. El artículo no atribuye un premio, aceptación editorial o consenso matemático a la colección. Cada resultado deberá examinarse por especialistas en su disciplina y por revisores capaces de distinguir un teorema nuevo de una reformulación o una consecuencia conocida."
+          ]
+        },
+        {
+          "heading": "Implicaciones para investigación y desarrollo",
+          "kind": "practical",
+          "paragraphs": [
+            "Para matemáticos, el valor potencial está en encontrar candidatos interesantes, reproducir comprobaciones y detectar errores de manera trazable. Para investigadores de IA, la colección ofrece material sobre cómo se puede organizar un proceso de generación, selección y publicación de resultados, aunque el modelo y el procedimiento completo no sean reproducibles desde fuera. Para desarrolladores de herramientas formales, la disponibilidad de archivos Lean abre oportunidades de auditoría técnica y de construcción de flujos de validación.",
+            "Una estrategia de lectura prudente es seleccionar una familia, estudiar el enunciado principal, comprobar si existe formalización y revisar las dependencias antes de compartir conclusiones. Si se cita un manuscrito, conviene registrar su versión y el estado de verificación en la fecha de consulta. Para usos educativos, la colección puede servir para discutir la diferencia entre producir una demostración plausible y verificarla."
+          ]
+        },
+        {
+          "heading": "Contexto competitivo y científico",
+          "kind": "competition",
+          "paragraphs": [
+            "Las evaluaciones de modelos de razonamiento suelen condensarse en porcentajes de problemas resueltos bajo condiciones definidas. Esta publicación cambia el formato: expone una colección amplia de artefactos de investigación que terceros pueden inspeccionar. Eso es relevante para medir utilidad científica, pero no permite comparar directamente el modelo interno con sistemas de otros laboratorios sin una metodología compartida, una selección equivalente de problemas y acceso a resultados reproducibles.",
+            "La capacidad de proponer muchos argumentos tampoco reemplaza el trabajo de comunidad necesario para valorar originalidad y significado. Algunas contribuciones pueden ser interesantes aun cuando requieran correcciones; otras podrían no superar el escrutinio. El avance del conocimiento depende de la calidad de las demostraciones y de su revisión, no de la cifra agregada de documentos publicados."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos hitos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la noticia es material porque desplaza la discusión de si un modelo obtiene una buena nota hacia si puede aportar artefactos científicos auditables. El repositorio público es un paso de transparencia verificable, mientras que el modelo interno y las decisiones de selección siguen siendo cerrados. El verdadero indicador de impacto será cuántos resultados sobreviven a revisión independiente, cuáles se corrigen y qué problemas se resuelven con métodos reutilizables.",
+            "Qué seguir: historial de versiones, nuevos archivos Lean, análisis de matemáticos externos, posibles retractaciones y aclaraciones de alcance, así como información sobre reproducibilidad. La recomendación editorial es evitar titulares que den por probados todos los resultados y consultar cada familia por separado. La prudencia aquí no resta importancia a la investigación; permite que sus contribuciones se evalúen con estándares científicos."
+          ]
+        }
+      ],
+      "executiveSummary": "El 6 de octubre OpenAI publicó una colección extensa de manuscritos matemáticos y materiales de verificación producidos con ayuda de un modelo interno. La empresa busca que investigadores examinen resultados, formalizaciones y revisiones en un repositorio público. El README consultado enumera 719 manuscritos y 372 familias; aproximadamente el 42% de los resultados principales está formalizado, según la propia documentación. Las cifras son un estado del repositorio y pueden cambiar con revisiones. No equivalen a validación académica integral ni a disponibilidad del modelo que generó los trabajos.",
+      "finalSummary": "OpenAI abrió una colección amplia de investigación matemática generada con un modelo interno. La publicación permite inspección y comprobación parcial, no certifica todos los resultados ni libera el sistema generador. El valor científico se determinará con auditoría y revisión independiente.",
+      "analysis": "Análisis Gazette: la colección ofrece artefactos científicos auditables, pero su validación depende de formalizaciones de alcance preciso y revisión matemática independiente.",
+      "watch": "Correcciones del repositorio, formalizaciones nuevas, revisiones externas y posible acceso futuro al modelo.",
+      "technicalDetails": [
+        {
+          "label": "Repositorio",
+          "value": "openai/math",
+          "note": "Documentos y formalizaciones públicas; modelo generador no liberado"
+        },
+        {
+          "label": "Catálogo consultado",
+          "value": "719 manuscritos en 372 familias",
+          "note": "Conteo mutable del README al 8 de octubre de 2026"
+        },
+        {
+          "label": "Formalización",
+          "value": "~42% de resultados principales formalizados",
+          "note": "Porcentaje indicado por el repositorio; alcance variable por familia"
+        },
+        {
+          "label": "Evaluación",
+          "value": "Aproximadamente 4.000 problemas",
+          "note": "Cifra declarada por OpenAI"
+        }
+      ],
+      "availability": {
+        "status": "Repositorio público; modelo interno no disponible",
+        "platforms": [
+          "GitHub, manuscritos y biblioteca Lean"
+        ],
+        "regions": [
+          "Acceso público al repositorio donde GitHub esté disponible"
+        ],
+        "requirements": [
+          "Herramientas y dependencias indicadas para reproducir formalizaciones"
+        ],
+        "notes": [
+          "No se anunció acceso al modelo generador"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Consulta del repositorio",
+          "value": "Pública",
+          "note": "No implica acceso al modelo"
+        },
+        {
+          "label": "Precio del modelo interno",
+          "value": "No anunciado"
+        }
+      ],
+      "limitations": [
+        "No todos los manuscritos tienen formalización.",
+        "Las verificaciones formales tienen alcance específico y no prueban originalidad.",
+        "El modelo generador y el proceso completo no son reproducibles públicamente.",
+        "El conteo del repositorio puede variar con revisiones."
+      ],
+      "practicalAdvice": [
+        "Verificar versión, hipótesis y alcance formal de cada familia antes de citar.",
+        "No equiparar manuscritos publicados con teoremas aceptados por la comunidad.",
+        "Distinguir comprobación formal de revisión de originalidad y relevancia."
+      ],
+      "usefulFacts": [
+        "Anuncio original fechado el 6 de octubre de 2026.",
+        "El repositorio prevé preservar versiones y registrar correcciones.",
+        "Lean se usa para formalizaciones de una parte de los resultados."
+      ]
     },
     {
       "id": "gemini-4-argon",
@@ -8043,7 +8592,7 @@
     {
       "date": "2026-10-06",
       "status": "partial",
-      "verifiedArticles": 5
+      "verifiedArticles": 6
     },
     {
       "date": "2026-10-07",
@@ -8054,7 +8603,7 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 4
     }
   ]
 }
