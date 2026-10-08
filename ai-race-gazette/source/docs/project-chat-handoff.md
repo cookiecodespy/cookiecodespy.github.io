@@ -109,3 +109,19 @@ Si se reanuda el proyecto tras un fallo del chat, **NO** repetir las publicacion
 
 **Pendiente:** reauditoría profunda por fecha (P05–P08), migración 47 legacy y biblioteca visual (P09), publicación desatendida Newsroom y pruebas de colisión/rollback, SEO social/UX/accesibilidad, verificación final (P10). No declarar septiembre completo ni Gazette v1.0.
 
+
+## Checkpoint editorial posterior — 8 oct 2026, segundo chat
+
+**Nuevo punto de continuidad:** trabajar desde `main`; comprobar datos antes de abrir ramas o repetir noticias. Las cifras previas de este documento son fotografías históricas, no el estado vivo.
+
+**Estado verificado tras PR #2 y PR #3:** 74 artículos, 27 Reporter V2, 47 legacy, 38 jornadas (20 partial, 18 pending, 0 completas según Backbone v1); ambos JSON idénticos, ambos RSS idénticos con 74 items y orden cronológico inverso, 0 IDs/eventKeys duplicados, 74 entradas en cola visual sincronizada. El 10 de septiembre contiene 5 noticias, sigue `partial` a falta de segunda auditoría.
+
+**Publicaciones de esta continuación:**
+- Agents API, anuncio y beta pública del 10 Sep; fuente https://openai.com/index/introducing-the-agents-api/ ; merge `8ad0b7107e6c05807b290eebc70a45685d73d44a`, PR https://github.com/cookiecodespy/cookiecodespy.github.io/pull/2 .
+- NASA–IBM Lunar Foundation Model, pesos/código abiertos anunciados el 10 Sep (paper subido el 8): https://science.nasa.gov/science-research/artificial-intelligence-lunar-foundation-model/ ; merge `b4c80ed1a2e9416c51f53a718965a19a47fbfd30`, PR https://github.com/cookiecodespy/cookiecodespy.github.io/pull/3 . No equiparar prospectividad de hielo con detección física.
+- PR #3 agregó test de regresión que exige RSS ordenado según fecha e ID; evita que un backfill histórico aparezca antes de las noticias recientes.
+- CI previo a fusión: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37801874068 y https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37805538700, ambos success. La condición de publicación desatendida por Scheduled Task aún no se ha demostrado end-to-end.
+
+**Siguiente gate:** terminar H-SEP12-13, H-0814-GOOGLE, H-0814-SOURCES; segunda pasada por compañías y categorías, resolver candidatos, documentar descartes y después cerrar P05. Luego P06–P07 (resto de septiembre), P08 (octubre + ejecución horaria real), P09 (legacy+Visual Desk), P10 (QA/SEO/accesibilidad/v1.0). No prometer fechas fijas ni declarar completo sin evidencia.
+
+**Riesgo automatización:** un commit autónomo independiente `87d682f62efaea4a46a968f9eae8d9cba7f542b1` con historia Upscale AI Token Fabric sigue divergente respecto a `main` (no confundir commit preparado con artículo publicado); investigar reconciliación/contenido y probar al menos una ejecución horaria que publique en `main` sin interacción.
