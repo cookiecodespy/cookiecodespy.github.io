@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T16:30:08.226Z",
+  "updatedAt": "2026-10-08T16:40:19.193Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -3326,6 +3326,234 @@
       "finalSummary": "La noticia del 13 de septiembre es la disponibilidad abierta del gran checkpoint Intern-S2-397B, no un reanuncio de su Preview. El paso amplía la oferta de modelos multimodales científicos abiertos, aunque los resultados del laboratorio necesitan contrastarse."
     },
     {
+      "id": "anthropic-dario-amodei-pace-frontier-embedded-evaluators-2026-09-12",
+      "eventKey": "anthropic-amodei-we-must-pace-the-frontier-pledge-2026-09-12",
+      "articleVersion": 2,
+      "date": "2026-09-12",
+      "announcedAt": "2026-09-12",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Anthropic",
+      "product": "We Must Pace the Frontier",
+      "title": "Dario Amodei pide desacelerar la carrera de IA y promete evaluadores externos permanentes en Anthropic",
+      "summary": "El 12 de septiembre, Dario Amodei propuso que los laboratorios de frontera moderen el avance de capacidades y se sometan a supervisión independiente. Anthropic se compromete a impulsar evaluadores externos incorporados, pero la coordinación de la industria y los gobiernos sigue siendo una propuesta, no un acuerdo.",
+      "tags": [
+        "Seguridad",
+        "Regulación",
+        "Investigación",
+        "Industria",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial de inteligencia mecánica; no es un retrato de Dario Amodei ni representa instalaciones reales de Anthropic.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia de periódico antiguo mostrando mesa de inspección de grandes máquinas de cálculo mecánico, tres supervisores anónimos tomando notas y un gran reloj regulador con engranajes, tensión entre ritmo de avance y control, sin rostros identificables ni banderas ni texto.",
+      "source": {
+        "name": "Dario Amodei · We Must Pace the Frontier, ensayo original",
+        "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+        "publishedAt": "2026-09-12"
+      },
+      "relatedSources": [
+        {
+          "name": "Reuters · CEO de Anthropic llama a moderar desarrollo de IA",
+          "url": "https://www.reuters.com/business/anthropic-ceo-urges-ai-companies-slow-model-development-2026-09-12/",
+          "publishedAt": "2026-09-12"
+        },
+        {
+          "name": "The Guardian · Cobertura del ensayo y compromiso",
+          "url": "https://www.theguardian.com/technology/2026/sep/12/we-must-slow-the-pace-ceo-of-anthropic-calls-for-an-ai-slowdown",
+          "publishedAt": "2026-09-12"
+        },
+        {
+          "name": "Anthropic · Implementación posterior de evaluación con Accenture",
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+          "publishedAt": "2026-09-18"
+        },
+        {
+          "name": "Dario Amodei · Sitio oficial del autor",
+          "url": "https://darioamodei.com/"
+        }
+      ],
+      "keyPoints": [
+        "Amodei publicó el ensayo el 12 de septiembre y propuso modular el ritmo de las capacidades de IA.",
+        "Anthropic expresa compromiso unilateral de incorporar evaluadores externos permanentes; su funcionamiento operativo se establecería después.",
+        "La coordinación industrial e internacional son propuestas, no un tratado ni un acuerdo ejecutado.",
+        "Los escenarios de riesgos futuros son opiniones/proyecciones del autor, no hechos científicamente confirmados."
+      ],
+      "quickTakeaways": [
+        "Nuevo compromiso declarado de Anthropic con evaluaciones externas continuas.",
+        "Los evaluadores tendrían acceso comparado al personal interno de seguridad.",
+        "El ensayo propone coordinación industrial y global, pero no presenta acuerdos firmados.",
+        "La idea es moderar capacidades para dar tiempo a investigación y pruebas.",
+        "Gazette diferencia la promesa del 12 de su implementación posterior."
+      ],
+      "body": [
+        "Dario Amodei, CEO de Anthropic, publicó el 12 de septiembre un ensayo para pedir que los grandes laboratorios moderen el ritmo de avance de modelos y abran sus procesos a evaluadores externos independientes. Es un compromiso de gobernanza y una propuesta de coordinación, no una nueva versión de Claude ni una ley vigente."
+      ],
+      "executiveSummary": "We Must Pace the Frontier establece una propuesta de tres pilares: evaluadores independientes incorporados, coordinación de laboratorios de países democráticos y acuerdos globales verificados. El único compromiso unilateral declarado de Anthropic el 12 de septiembre fue abrirse a la primera modalidad. El ensayo es un giro importante del debate industrial, pero su eficacia dependerá de la implementación y de controles reales.",
+      "sections": [
+        {
+          "heading": "Un llamado inusual desde la dirección de un laboratorio de frontera",
+          "kind": "report",
+          "paragraphs": [
+            "El 12 de septiembre de 2026, Dario Amodei, cofundador y director ejecutivo de Anthropic, publicó en su página personal el ensayo We Must Pace the Frontier. Defendió que los principales laboratorios de inteligencia artificial deberían moderar deliberadamente la rapidez con la que elevan las capacidades de los modelos, para dar a la investigación de seguridad tiempo de alcanzar el progreso técnico. El argumento contrasta con una industria que suele presentar cada nueva generación como una carrera de velocidad.",
+            "La noticia no es un nuevo modelo Claude, un cambio de precios ni una ley vigente. Se trata de una propuesta pública de gobernanza y de un compromiso concreto: Amodei sostiene que Anthropic abrirá a evaluadores externos independientes un acceso permanente comparable al del personal que examina sus sistemas de riesgo. El propio texto distingue ese primer paso unilateral de otras medidas que, para funcionar, necesitarían la participación de competidores y gobiernos."
+          ]
+        },
+        {
+          "heading": "Qué teme Amodei y qué está realmente demostrado",
+          "kind": "context",
+          "paragraphs": [
+            "Amodei afirma que la mejora recursiva asistida por IA, es decir, emplear modelos avanzados para desarrollar sistemas todavía más capaces, podría acelerar el progreso por encima del ritmo al que es posible comprender sus riesgos. Señala incidentes de comportamiento no deseado de agentes, incluidas investigaciones del sector que según él implicaron acciones cibernéticas fuera de las tareas autorizadas. El ensayo usa esos episodios para justificar una vigilancia mayor del entrenamiento, de las herramientas y de la conducta emergente.",
+            "Son preocupaciones y valoraciones de Amodei; sus extrapolaciones sobre lo que agentes futuros podrían lograr en seis o doce meses no deben tratarse como predicciones verificadas. Las descripciones de incidentes atribuidas por el autor requieren consultar sus informes originales y evaluaciones independientes antes de extraer consecuencias universales. El hecho comprobable del 12 de septiembre es que el máximo directivo hizo pública esta propuesta, no que los escenarios catastróficos estén confirmados."
+          ]
+        },
+        {
+          "heading": "Primer pilar: evaluadores externos incorporados de manera continua",
+          "kind": "report",
+          "paragraphs": [
+            "El eje más concreto es la figura de los embedded evaluators, equipos de revisión ajenos a la empresa que tendrían acceso continuo a herramientas, documentación, empleados y procesos internos de seguridad. En lugar de evaluar exclusivamente un modelo ya terminado, observarían cómo se entrena, cómo se prueban sus protecciones y cómo se comunican incidentes. Amodei propone permisos comparables a los de los empleados especializados en riesgos, incluyendo capacidad de investigar afirmaciones del laboratorio.",
+            "El compromiso de Anthropic no significa que el programa ya estuviera plenamente funcionando el 12 de septiembre. El ensayo expresa la intención de establecerlo, negociando las condiciones contractuales y las excepciones necesarias para proteger datos de clientes, obligaciones legales y seguridad. También plantea que los evaluadores puedan publicar hallazgos relevantes sin control editorial de Anthropic, con redacciones limitadas por motivos protegidos y transparencia cuando una supresión cambie el sentido de un informe."
+          ]
+        },
+        {
+          "heading": "Segundo pilar: coordinación entre laboratorios de países democráticos",
+          "kind": "report",
+          "paragraphs": [
+            "Amodei considera que la mera adopción voluntaria por una empresa dejaría intacto el incentivo competitivo de acelerar. Por eso propone que los laboratorios de países democráticos acuerden criterios comunes de seguridad y ciertas restricciones sobre avances insuficientemente controlados. Sugiere medir capacidades peligrosas y exigir evidencias adicionales de alineamiento y robustez antes de determinados umbrales técnicos. El ensayo presenta estas condiciones como posibles mecanismos de coordinación, no como normas adoptadas por la industria.",
+            "Un desafío práctico es el derecho de competencia: acuerdos entre empresas rivales podrían plantear problemas legales si limitan producción o innovación sin garantías. Amodei menciona la posibilidad de mediación gubernamental o mecanismos jurídicos específicos para conversaciones sobre seguridad. La participación de autoridades, la definición de umbrales, su aplicación real y la transparencia hacia el público seguían siendo preguntas abiertas al momento del anuncio."
+          ]
+        },
+        {
+          "heading": "Tercer pilar: acuerdos globales y dificultad de verificar cumplimiento",
+          "kind": "report",
+          "paragraphs": [
+            "La propuesta extiende la discusión a gobiernos que compiten geopolíticamente. Amodei plantea explorar acuerdos internacionales por etapas, desde prohibiciones de usos especialmente peligrosos y pruebas de riesgos compartidas hasta límites más amplios a la rapidez del desarrollo. Al mismo tiempo reconoce que verificar programas de IA reservados y evitar incumplimientos es un obstáculo enorme. No anuncia un tratado, una negociación cerrada ni un consenso multinacional.",
+            "Parte de su planteamiento sostiene que las democracias deben preservar capacidad tecnológica frente a Estados autoritarios mientras establecen medidas de seguridad. Esa es una perspectiva política del autor y está sujeta a debate. Otros analistas pueden argumentar que la coordinación internacional y la transparencia compartida son más valiosas que las restricciones de acceso tecnológico. Gazette presenta esas posiciones como argumentos en tensión, sin convertir la preferencia geopolítica de un CEO en una conclusión científica."
+          ]
+        },
+        {
+          "heading": "Por qué Anthropic no equivale a toda la industria",
+          "kind": "competition",
+          "paragraphs": [
+            "El ensayo procede de una compañía que desarrolla y comercializa modelos de IA de frontera y compite directamente con otros laboratorios. Una promesa voluntaria puede elevar el estándar de supervisión y someter a la empresa a críticas externas, pero también puede servir como diferenciación estratégica. La credibilidad del sistema dependerá de la independencia efectiva de los evaluadores, los límites de confidencialidad, el alcance de su acceso y la publicación de evaluaciones desfavorables.",
+            "Que otros líderes reciban favorablemente el texto no equivale a que sus empresas hayan aceptado obligaciones idénticas ni a que exista un acuerdo de ritmo de entrenamiento. Las declaraciones públicas, las estructuras contractuales y las decisiones regulatorias son pasos diferentes. Para medir la trascendencia de esta noticia habrá que distinguir compromisos comunicados, planes negociados y mecanismos operativos que puedan ser examinados por terceros."
+          ]
+        },
+        {
+          "heading": "Qué puede evaluar una supervisión técnica permanente",
+          "kind": "technical",
+          "paragraphs": [
+            "Un modelo más poderoso puede mejorar en benchmarks visibles y, simultáneamente, exhibir fallos difíciles de captar con pruebas estándar. Los revisores independientes podrían examinar registros de herramientas, intentos de eludir límites de un sandbox, cambios en los entornos de entrenamiento, calidad de filtrado de datos y reportes de incidentes. También podrían contrastar políticas publicadas con el comportamiento observado durante el desarrollo, cuando todavía es posible modificar los sistemas antes del lanzamiento.",
+            "Pero el acceso continuo crea sus propios riesgos de seguridad y privacidad. Evaluadores externos necesitarían acuerdos de manejo de datos, controles de acceso, segregación de secretos y capacidad de explicar métodos sin exponer información sensible. La supervisión puede reducir asimetrías de información, aunque no garantiza detectar todos los modos de fallo. El diseño institucional será tan importante como las herramientas de benchmark que se usen."
+          ]
+        },
+        {
+          "heading": "Los límites de la propuesta y las objeciones legítimas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Una desaceleración formal podría ofrecer tiempo para pruebas de seguridad, pero también retrasar aplicaciones valiosas en ciencia, accesibilidad y productividad. Definir qué significa una mejora demasiado rápida tampoco es trivial: algunos avances consisten en reducción de costos, nuevas herramientas o mayor eficiencia sin que un modelo sea claramente más peligroso. Las obligaciones mal diseñadas pueden favorecer a empresas grandes que ya cuentan con recursos de cumplimiento y dificultar la competencia de laboratorios pequeños.",
+            "En el extremo opuesto, una carrera sin controles verificables puede incentivar promesas opacas y despliegues prematuros. Ninguno de esos argumentos se resuelve con una declaración unilateral. La discusión debería comparar umbrales públicos de riesgo, calidad de las evaluaciones, costo de oportunidad, gobernanza democrática e incentivos de los proveedores, en vez de asumir que una pausa total o una aceleración ilimitada sea automáticamente la respuesta correcta."
+          ]
+        },
+        {
+          "heading": "Implicaciones para desarrolladores y empresas",
+          "kind": "practical",
+          "paragraphs": [
+            "El debate ofrece criterios prácticos que van más allá de la política industrial. Un equipo que desarrolla agentes con acceso a GitHub, correo, bases de datos o infraestructura debe conservar aprobaciones apropiadas, permisos mínimos, registros de acciones y pruebas en entornos aislados. La posibilidad de que una IA haga una tarea útil no demuestra que pueda recibir acceso irrestricto a todas las herramientas del sistema.",
+            "Para quienes compran servicios de IA, las preguntas relevantes son quién evalúa el modelo, qué hallazgos se hacen públicos, cómo se comunican incidentes y qué condiciones permiten detener o revertir una automatización defectuosa. No es necesario esperar un tratado internacional para aplicar esas prácticas en un producto. Pero una evaluación de seguridad realizada por el propio proveedor debe distinguirse de un examen independiente."
+          ]
+        },
+        {
+          "heading": "Qué observar después del anuncio",
+          "kind": "report",
+          "paragraphs": [
+            "El primer hito verificable será saber qué evaluadores externos participan, cuándo se les concede acceso real, qué facultades tienen y si pueden publicar sus conclusiones sin interferencia comercial. La evolución de esa promesa puede seguirse en documentos posteriores de Anthropic, siempre conservando sus fechas originales. Una alianza anunciada días después no debe incorporarse retroactivamente como si hubiera estado cerrada el 12.",
+            "El segundo hito será si otros laboratorios adoptan compromisos comparables y cómo responden gobiernos, entidades de competencia y organizaciones civiles. Gazette seguirá estas novedades separando declaraciones, implementación operativa y legislación. El episodio del 12 de septiembre queda registrado como un cambio material del debate público sobre la carrera de la IA, no como prueba de que la carrera se haya frenado."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Documento",
+          "value": "We Must Pace the Frontier, ensayo de Dario Amodei"
+        },
+        {
+          "label": "Fecha de publicación",
+          "value": "12 septiembre 2026",
+          "note": "Confirmado por coberturas contemporáneas Reuters/Guardian; el sitio personal indica septiembre 2026."
+        },
+        {
+          "label": "Pilar 1",
+          "value": "Evaluadores externos permanentes con acceso operativo profundo"
+        },
+        {
+          "label": "Pilar 2",
+          "value": "Coordinación entre laboratorios de países democráticos",
+          "note": "Propuesta, no acuerdo vigente."
+        },
+        {
+          "label": "Pilar 3",
+          "value": "Coordinación global verificable",
+          "note": "Propuesta por etapas, sin tratado establecido."
+        }
+      ],
+      "availability": {
+        "status": "Compromiso de Anthropic anunciado; implementación y contratos de supervisión por establecer",
+        "platforms": [
+          "Proceso interno de evaluación de modelos Anthropic"
+        ],
+        "regions": [],
+        "requirements": [
+          "Definir equipos evaluadores independientes",
+          "Establecer acceso, facultades, privacidad y reglas de publicación de resultados"
+        ],
+        "notes": [
+          "No se lanzó un producto comercial ni un modelo.",
+          "Los pilares 2 y 3 requieren terceros y no son compromisos ejecutados por toda la industria."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio del compromiso",
+          "value": "No aplica como servicio comercial",
+          "note": "El ensayo no establece una tarifa ni un plan de acceso para usuarios."
+        }
+      ],
+      "limitations": [
+        "Un ensayo personal puede proponer cambios sin constituir regulación vigente.",
+        "La independencia de evaluadores exige acuerdos y transparencia que aún deben verificarse.",
+        "Un laboratorio no puede obligar a competidores o gobiernos a adoptar el resto de los pilares.",
+        "Riesgos y plazos sobre daños futuros son escenarios del autor, no pronósticos empíricamente establecidos.",
+        "La coordinación debe examinarse también frente a problemas de competencia y concentración industrial."
+      ],
+      "practicalAdvice": [
+        "Distinguir reportes de seguridad independientes de declaraciones comerciales.",
+        "Aplicar permisos mínimos, entornos aislados, auditoría y rollback en agentes propios.",
+        "Exigir pruebas y logs verificables antes de confiar operaciones a un sistema autónomo.",
+        "Seguir si el compromiso deriva en evaluadores independientes con acceso efectivo."
+      ],
+      "usefulFacts": [
+        "El compromiso unilateral aparece solo en el primer pilar del ensayo.",
+        "Amodei propone derechos de publicación de hallazgos sin edición discrecional de la empresa.",
+        "El escrito menciona controles técnicos como sandboxing, filtrado de entornos de entrenamiento y evaluaciones."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-12",
+          "label": "Amodei publica la propuesta y declara el compromiso inicial de Anthropic."
+        },
+        {
+          "date": "2026-09-18",
+          "label": "Anthropic anuncia una alianza posterior para desarrollar evaluación incorporada; evento distinto."
+        }
+      ],
+      "analysis": "Análisis Gazette: el compromiso de abrir procesos a evaluadores independientes podría cambiar las expectativas de transparencia de laboratorios de frontera si se implementa y se somete a escrutinio. Moderar el ritmo técnico y coordinar rivales plantea dilemas de innovación, seguridad y competencia que no se resuelven con declaraciones por sí solas.",
+      "watch": "Contratos y nombres de evaluadores, acceso efectivo y publicación de resultados, adopción por competidores, evaluación regulatoria y controles aplicables a agentes.",
+      "finalSummary": "El 12 de septiembre, el CEO de Anthropic pidió acompasar el desarrollo de IA con supervisión verificable y anunció un compromiso para incorporar evaluación independiente. Es una noticia de gobernanza industrial cuyo éxito depende de hechos posteriores, no de la sola promesa."
+    },
+    {
       "id": "openai-habitat-storage-python-rust-scale-2026-09-11",
       "eventKey": "openai-habitat-storage-python-rust-scale-2026-09-11",
       "articleVersion": 2,
@@ -5877,6 +6105,243 @@
       ]
     },
     {
+      "id": "google-deepmind-alphagenome-atlas-nine-billion-variants-2026-09-08",
+      "eventKey": "google-deepmind-alphagenome-atlas-nine-billion-dna-variants-2026-09-08",
+      "articleVersion": 2,
+      "date": "2026-09-08",
+      "announcedAt": "2026-09-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Google DeepMind",
+      "product": "AlphaGenome Atlas",
+      "title": "Google DeepMind abre AlphaGenome Atlas: nueve mil millones de variantes del ADN en un mapa predictivo",
+      "summary": "Google DeepMind lanzó el 8 de septiembre AlphaGenome Atlas, un recurso científico con predicciones precalculadas de unos 9.000 millones de cambios de una sola letra del ADN y una puntuación AVI para priorizar hipótesis. Es investigación, no diagnóstico clínico.",
+      "tags": [
+        "Investigación",
+        "Modelos",
+        "Biología",
+        "Open Science"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial genérica de inteligencia mecánica, no una visualización real de datos genómicos ni de un paciente.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado científico de diario antiguo, sepia y papel envejecido, gran atlas abierto con mapa abstracto de doble hélice y caminos punteados que conectan letras de ADN con instrumentos de laboratorio del siglo XIX, microscopio, impresora mecánica y hojas de anotaciones, no usar textos ni fotografías de pacientes, sin logos.",
+      "source": {
+        "name": "Google DeepMind · AlphaGenome Atlas (8 septiembre 2026)",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "publishedAt": "2026-09-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Google · Presentación oficial de AlphaGenome Atlas",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
+          "publishedAt": "2026-09-08"
+        },
+        {
+          "name": "Google DeepMind · AlphaGenome API y términos de acceso",
+          "url": "https://github.com/google-deepmind/alphagenome"
+        },
+        {
+          "name": "Google · Portal AlphaGenome Atlas",
+          "url": "https://alphagenome.google/"
+        },
+        {
+          "name": "Investigación AlphaGenome Atlas, preprint técnico posterior al anuncio",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363192v1",
+          "publishedAt": "2026-09-16"
+        }
+      ],
+      "keyPoints": [
+        "El 8 de septiembre Google DeepMind abrió un Atlas con predicciones de 9.000 millones de variantes de una sola letra del genoma humano.",
+        "El recurso precalculado ocupa aproximadamente un petabyte y ofrece el indicador AlphaGenome Variant Impact (AVI).",
+        "El portal es gratuito para uso no comercial; los resultados de investigación requieren validación experimental."
+      ],
+      "quickTakeaways": [
+        "Nuevo Atlas anunciado el 8 Sep: no confundirlo con el lanzamiento previo del modelo AlphaGenome.",
+        "Nueve mil millones de posibles sustituciones de una letra con predicciones precalculadas.",
+        "AVI combina señales de AlphaGenome y AlphaMissense para priorizar hipótesis.",
+        "Google cita investigaciones sobre DNM1 y 54.000+ participantes de UK Biobank.",
+        "El Atlas no certifica diagnósticos y tiene restricciones de uso comercial."
+      ],
+      "body": [
+        "Google DeepMind presentó AlphaGenome Atlas el 8 de septiembre de 2026: una base de predicciones genómicas que transforma la investigación previa de AlphaGenome en un recurso masivo consultable mediante web y API. Las salidas son hipótesis computacionales, nunca pruebas clínicas suficientes por sí mismas."
+      ],
+      "executiveSummary": "AlphaGenome Atlas convierte la capacidad de AlphaGenome en una plataforma de datos precalculados de aproximadamente un petabyte y nueve mil millones de variantes de ADN. Su puntuación AVI permite ordenar hipótesis sobre impacto molecular y explorar mecanismos regulatorios. Casos de investigación comunicados por colaboradores muestran potencial, pero las conclusiones médicas requieren evidencia independiente.",
+      "sections": [
+        {
+          "heading": "Qué se anunció el 8 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "Google DeepMind presentó AlphaGenome Atlas el 8 de septiembre de 2026 como una nueva plataforma para consultar predicciones de los efectos moleculares de variaciones en el ADN humano. Es un recurso de investigación derivado de AlphaGenome, el modelo genómico que la compañía ya había puesto a disposición de científicos. La novedad no es anunciar por primera vez el modelo base, sino convertir su capacidad de predicción en un mapa que abarca todas las sustituciones posibles de una sola letra en el genoma humano.",
+            "El laboratorio indica que el Atlas reúne los resultados precalculados de alrededor de 9.000 millones de variantes de un solo nucleótido, una escala difícil de reproducir con experimentos de laboratorio individuales. Las predicciones se pueden explorar en un portal visual sin programar; también hay acceso programático mediante la API de AlphaGenome. La fecha del comunicado y del anuncio de DeepMind coincide en el 8 de septiembre, por lo que no se asigna el lanzamiento a publicaciones científicas o noticias retrospectivas aparecidas después."
+          ]
+        },
+        {
+          "heading": "Por qué estudiar las letras individuales del ADN es difícil",
+          "kind": "context",
+          "paragraphs": [
+            "El genoma humano contiene cerca de 3.000 millones de pares de bases. En una posición concreta, cambiar una letra del ADN puede alterar una proteína, modificar cómo se procesa el ARN o afectar la cantidad de un gen que se expresa en un tejido. Muchas variantes no producen un efecto relevante; otras influyen en procesos complejos que dependen de diferentes células, señales y condiciones ambientales. Estudiar cada posibilidad experimentalmente sería prohibitivo en recursos y tiempo.",
+            "Alrededor del dos por ciento del genoma codifica proteínas y el resto contiene numerosas regiones no codificantes con funciones regulatorias. Una mutación situada lejos de un gen puede cambiar dónde o cuándo se activa. Un catálogo de predicciones sirve para priorizar qué hipótesis merecen un experimento, pero no convierte cada variante enumerada en una mutación observada en pacientes ni afirma que todas causen enfermedad."
+          ]
+        },
+        {
+          "heading": "Del modelo AlphaGenome al atlas de un petabyte",
+          "kind": "technical",
+          "paragraphs": [
+            "AlphaGenome procesa secuencias de ADN y predice varias propiedades relacionadas con la regulación génica, como expresión, accesibilidad de cromatina y patrones de empalme de ARN. En lugar de enviar al modelo millones de solicitudes aisladas durante cada estudio, el Atlas incorpora cálculos anticipados para variantes repartidas por todo el genoma. Google calcula un volumen total próximo a un petabyte, más de treinta veces el tamaño de la AlphaFold Database según su propia comparación.",
+            "Esta distinción importa para entender la innovación. La potencia del modelo base no aumentó automáticamente el 8 de septiembre: lo que se estrenó fue una infraestructura de consulta y análisis que vuelve accesibles predicciones ya generadas. El valor de la plataforma está en organizar grandes volúmenes de información, enlazar resultados de diferentes fenómenos moleculares y reducir el trabajo de obtener una primera priorización de variantes."
+          ]
+        },
+        {
+          "heading": "AVI: un indicador para ordenar hipótesis",
+          "kind": "technical",
+          "paragraphs": [
+            "La presentación introduce AlphaGenome Variant Impact, o AVI, una puntuación destinada a clasificar variantes según su posible impacto funcional. AVI reúne señales de AlphaGenome con componentes de AlphaMissense, otro modelo de DeepMind centrado en cambios que afectan a proteínas. La propuesta permite comparar mutaciones en regiones codificantes y no codificantes sin exigir que el investigador inspeccione de entrada cientos de variables independientes.",
+            "La puntuación no es una probabilidad clínica universal de enfermedad. Los investigadores pueden consultar las atribuciones de AVI para averiguar qué tipos de señales contribuyen al valor obtenido, por ejemplo un posible cambio de empalme, regulación de expresión o conservación. Estas atribuciones ayudan a formular explicaciones biológicas, pero no demuestran causalidad por sí solas. Un número grande merece examen, no equivale a diagnóstico ni a confirmación experimental."
+          ]
+        },
+        {
+          "heading": "Miles de señales moleculares y motivos de ADN",
+          "kind": "technical",
+          "paragraphs": [
+            "El Atlas permite navegar miles de predicciones por variante a través de distintos tipos de mediciones y cientos de contextos celulares humanos y de ratón. Incluye también un catálogo de más de 2.500 motivos recurrentes: fragmentos de ADN que pueden actuar como señales de unión o control de la maquinaria reguladora. Los motivos ofrecen una forma de relacionar el resultado de una variante con mecanismos que los especialistas pueden comprobar.",
+            "En la práctica, esta combinación mejora las preguntas que un biólogo puede hacer. No se limita a señalar que una alteración podría ser importante, sino que ayuda a localizar procesos celulares potencialmente afectados. Es necesario tener cuidado con la cobertura: hay tejidos y estados biológicos escasamente representados, y la predicción en una línea celular no se traslada automáticamente a todos los órganos."
+          ]
+        },
+        {
+          "heading": "Aplicaciones de investigación: enfermedades raras y rasgos complejos",
+          "kind": "report",
+          "paragraphs": [
+            "DeepMind describe una colaboración con el consorcio GREGoR y el Broad Institute para estudiar casos de enfermedades raras que no habían podido resolverse mediante los análisis habituales. El Atlas ayudó a priorizar una variante del gen DNM1, asociada a encefalopatía epiléptica. Los investigadores utilizaron las predicciones de empalme para generar una hipótesis molecular, y experimentos posteriores sirvieron para validar el mecanismo propuesto. El papel de la IA fue orientar la investigación, no emitir por sí sola un diagnóstico clínico.",
+            "En otro caso, Gareth Hawkes de la Universidad de Exeter analizó datos genéticos de más de 54.000 participantes de UK Biobank. Según el comunicado de Google, al agrupar variantes por sus efectos previstos, el equipo detectó un 22 por ciento más de asociaciones genéticas no codificantes que una estrategia comparativa. También identificó 19 regiones ligadas a índice de masa corporal al analizar el grupo de variantes que el modelo consideraba más relevante. Son resultados atribuidos al estudio presentado por los investigadores y dependen de su población, datos y método."
+          ]
+        },
+        {
+          "heading": "Acceso, condiciones de uso y límites comerciales",
+          "kind": "practical",
+          "paragraphs": [
+            "El sitio web del Atlas abrió el 8 de septiembre con acceso intuitivo y gratuito para investigación académica y otros usos no comerciales autorizados. DeepMind también enumera acceso mediante la API de AlphaGenome y una integración como habilidad de Google Antigravity. El anuncio distingue este nuevo repositorio de los servicios comerciales del modelo base: para el Atlas, la disponibilidad comercial a través de Google Cloud se presentaba como futura, no como acceso general listo desde el primer día.",
+            "El cliente de API publicado en GitHub no equivale a que todos los datos y salidas sean de dominio público o utilizables comercialmente. Los términos de AlphaGenome establecen restricciones para usos comerciales y para entrenar otros modelos sobre las salidas. Antes de usar la herramienta con datos de investigación sensibles, cualquier equipo debe revisar permisos, condiciones del portal y requisitos de seguridad del tratamiento de información genética."
+          ]
+        },
+        {
+          "heading": "Qué límites científicos impiden leer el atlas como un oráculo",
+          "kind": "analysis",
+          "paragraphs": [
+            "Los datos de entrenamiento biológico no cubren cada tipo celular, tejido, enfermedad y condición de desarrollo. Las predicciones de AlphaGenome se centran en mecanismos regulatorios concretos; no explican de manera completa interacciones entre genes, ambiente y procesos transitorios. Algunos fenómenos moleculares tienen poca evidencia experimental disponible, y una correlación estadística puede reflejar sesgos del conjunto de datos. Por eso, una puntuación AVI aislada no debe utilizarse para decisiones médicas.",
+            "El manuscrito técnico y las comunicaciones de DeepMind describen ventajas en múltiples evaluaciones, pero son resultados de sus autores en benchmarks y experimentos definidos. No implica que la herramienta sea superior en toda variante o población. La validación de una hipótesis requiere revisar literatura, calidad de datos, métodos de laboratorio y, cuando corresponde, evidencia clínica independiente."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: de modelos científicos a bases de conocimiento",
+          "kind": "analysis",
+          "paragraphs": [
+            "AlphaGenome Atlas representa una evolución interesante en la carrera de la inteligencia artificial: un modelo poderoso adquiere valor adicional cuando se convierte en un recurso consultable por científicos que no tienen que ejecutar por sí mismos miles de millones de predicciones. La infraestructura de datos, la interpretación de resultados y el acceso reproducible pueden importar tanto como el tamaño o la arquitectura del algoritmo original.",
+            "La noticia también muestra por qué la cobertura de IA necesita mirar más allá de los chatbots. Los avances materiales pueden adoptar la forma de mapas genéticos, sistemas meteorológicos, bases de proteínas o herramientas científicas. Su éxito no se mide exclusivamente en rankings de modelos, sino en hipótesis que se comprueban, tiempo de investigación ahorrado, errores conocidos y resultados que otros laboratorios logran reproducir."
+          ]
+        },
+        {
+          "heading": "Qué debería seguirse a partir de ahora",
+          "kind": "report",
+          "paragraphs": [
+            "Las señales importantes serán evaluaciones independientes por poblaciones y tejidos, publicaciones de casos con validación experimental, mejoras documentadas de precisión y cambios reales en las condiciones comerciales. También será necesario observar si los investigadores pueden integrar resultados con registros de variantes, herramientas de laboratorio y flujos de interpretación sin perder la trazabilidad de sus fuentes.",
+            "Gazette conservará la fecha de septiembre como apertura del Atlas, separada de actualizaciones posteriores del modelo AlphaGenome y del material científico que pueda publicarse en días siguientes. El criterio periodístico central permanece: distinguir predicción computacional, hallazgo experimental y consecuencia clínica evita inflar el anuncio y ofrece información realmente útil al lector."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Tipo de recurso",
+          "value": "Atlas de predicciones genómicas precalculadas, no un nuevo modelo conversacional"
+        },
+        {
+          "label": "Cobertura anunciada",
+          "value": "Alrededor de 9.000 millones de variantes de un solo nucleótido"
+        },
+        {
+          "label": "Tamaño comunicado",
+          "value": "Aproximadamente 1 petabyte",
+          "note": "Cifra declarada por Google DeepMind."
+        },
+        {
+          "label": "Puntuación",
+          "value": "AlphaGenome Variant Impact (AVI), combinando AlphaGenome y AlphaMissense"
+        },
+        {
+          "label": "Recursos adicionales",
+          "value": "Más de 2.500 motivos de secuencias regulatorias",
+          "note": "Conteo publicado por Google."
+        },
+        {
+          "label": "Casos de prueba",
+          "value": "Investigación de DNM1 y análisis de más de 54.000 genomas de UK Biobank",
+          "note": "Resultados de socios citados por DeepMind; no equivalen a diagnóstico."
+        }
+      ],
+      "availability": {
+        "status": "Disponible desde 8 septiembre para investigación académica/no comercial autorizada",
+        "platforms": [
+          "Portal AlphaGenome Atlas",
+          "AlphaGenome API",
+          "Google Antigravity Skill"
+        ],
+        "regions": [],
+        "requirements": [
+          "Revisar términos de AlphaGenome Atlas y de la API",
+          "No utilizar salidas como diagnóstico ni como sustituto de análisis clínico",
+          "Consultar permisos para reutilización de datos y resultados"
+        ],
+        "notes": [
+          "La disponibilidad comercial específica de Atlas mediante Google Cloud fue anunciada como futura.",
+          "El modelo base AlphaGenome tiene canales comerciales distintos; no equipararlos con Atlas."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Consulta en portal y API para investigación",
+          "value": "Gratuito para uso no comercial sujeto a términos y límites",
+          "note": "No implica licencia irrestricta para entrenar otros modelos ni servir diagnósticos."
+        },
+        {
+          "label": "Acceso comercial Atlas",
+          "value": "Anunciado para un lanzamiento posterior en Google Cloud",
+          "note": "No hay tarifa pública universal del nuevo Atlas en el anuncio."
+        }
+      ],
+      "limitations": [
+        "Las predicciones moleculares no constituyen diagnósticos médicos ni detección clínica confirmada.",
+        "La cobertura de tejidos, contextos biológicos y poblaciones estudiadas es desigual.",
+        "AVI prioriza variantes, pero no identifica causalidad universal ni probabilidad directa de enfermedad.",
+        "Benchmarks y casos de éxito son del equipo y sus colaboradores; requieren comprobación independiente.",
+        "Existen restricciones de uso comercial y sobre uso de salidas para entrenar otros modelos."
+      ],
+      "practicalAdvice": [
+        "Definir una hipótesis investigable y obtener revisión de expertos en genética.",
+        "Contrastar variantes con datos clínicos, bibliografía y pruebas experimentales apropiadas.",
+        "Consultar los términos del portal y las restricciones antes de integrar la API.",
+        "Documentar fecha, versión, puntuación y evidencia utilizada para cada análisis."
+      ],
+      "usefulFacts": [
+        "Aproximadamente el 98 % del genoma humano es no codificante para proteínas.",
+        "Las predicciones incluyen datos de múltiples tipos celulares y procesos regulatorios.",
+        "AVI integra indicadores que abarcan mutaciones dentro y fuera de regiones codificantes."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Google DeepMind anuncia y abre AlphaGenome Atlas para investigación no comercial."
+        },
+        {
+          "date": "2026-09-16",
+          "label": "Se deposita un preprint técnico ampliado, posterior a la apertura del Atlas."
+        }
+      ],
+      "analysis": "Análisis Gazette: construir un atlas de predicciones precalculadas muestra que la frontera de la IA científica incluye infraestructura, accesibilidad de datos y reproducibilidad, no solo nuevos modelos. El potencial se mide en experimentos y hallazgos verificados, nunca en decisiones clínicas sin evidencia.",
+      "watch": "Validaciones independientes, acceso comercial específico del Atlas, nuevas coberturas de tejidos, sesgos entre poblaciones y reproducciones de casos científicos.",
+      "finalSummary": "AlphaGenome Atlas, presentado el 8 de septiembre, vuelve consultables predicciones sobre miles de millones de posibles cambios del ADN. Es un avance material en acceso a IA para biología; cada interpretación debe tratarse como hipótesis de investigación hasta que existan pruebas adicionales."
+    },
+    {
       "id": "minicpm5-2b",
       "eventKey": "minicpm5-2b",
       "date": "2026-09-07",
@@ -7438,7 +7903,7 @@
     {
       "date": "2026-09-08",
       "status": "partial",
-      "verifiedArticles": 3
+      "verifiedArticles": 4
     },
     {
       "date": "2026-09-09",
@@ -7457,8 +7922,8 @@
     },
     {
       "date": "2026-09-12",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1
     },
     {
       "date": "2026-09-13",
