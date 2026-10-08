@@ -1,8 +1,187 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T16:26:45.111Z",
+  "updatedAt": "2026-10-08T16:30:08.226Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "upscale-ai-token-fabric-2026",
+      "eventKey": "upscale-ai-token-fabric-heterogeneous-network-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Upscale AI",
+      "product": "Token Fabric",
+      "title": "Upscale AI presenta Token Fabric: una red para conectar aceleradores de IA de distintos fabricantes",
+      "summary": "Upscale anuncia Token Fabric, una arquitectura que reúne SkyFabriX, redes basadas en NVIDIA Spectrum-X, SkyOS y SkyCMD. Promete interoperabilidad entre aceleradores; el acceso temprano está en marcha y la disponibilidad general se proyecta para 2027.",
+      "tags": [
+        "Infraestructura",
+        "Chips",
+        "Redes",
+        "Startups"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de una red global de infraestructura tecnológica; no muestra instalaciones de Upscale",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 en tinta sepia y papel envejecido: varios racks de aceleradores de diseños diferentes enlazados por fibras ópticas y conmutadores en dos niveles, conexiones dentro de un pod y entre pods. Metáfora de interoperabilidad, sin presentar una instalación real; sin logotipos falsos, pantallas inventadas, cifras impresas ni apariencia fotográfica documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "source": {
+        "name": "Upscale · comunicado oficial Token Fabric",
+        "url": "https://upscale.com/blogs/upscale-introduces-token-fabric-the-industrys-most-comprehensive-standards-based-networking-portfolio-for-ai-factories",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Business Wire · anuncio distribuido por Upscale",
+          "url": "https://www.businesswire.com/news/home/20261008869540/en/",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Reuters · Nvidia-backed Upscale AI launches platform",
+          "url": "https://www.reuters.com/business/nvidia-backed-upscale-ai-launches-platform-connect-chips-rival-suppliers-2026-10-08/",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "Upscale, compañía de infraestructura de redes para inteligencia artificial, presentó Token Fabric el 8 de octubre de 2026. La propuesta reúne componentes de silicio, conmutadores y software de operación para conectar aceleradores dentro de grupos de servidores y entre grupos distribuidos por un centro de datos. No es un modelo generativo, un chip de cómputo para entrenar modelos ni un servicio de chat: es una plataforma de interconexión que busca reducir la fragmentación entre redes y equipos de distintos fabricantes. Su lanzamiento comercial general todavía está previsto para 2027, de modo que el anuncio de hoy no equivale a disponibilidad general inmediata."
+      ],
+      "keyPoints": [
+        "Upscale anunció Token Fabric el 8 de octubre: una plataforma que une redes scale-up, scale-out y operación para aceleradores heterogéneos.",
+        "SkyFabriX anuncia 115,2 Tbps de capacidad de conmutación; es una especificación del fabricante, no un benchmark independiente.",
+        "Acceso anticipado y validación ya están en curso; disponibilidad general prevista para comienzos de 2027, sin precios públicos."
+      ],
+      "quickTakeaways": [
+        "Upscale anunció Token Fabric el 8 de octubre: una plataforma que une redes scale-up, scale-out y operación para aceleradores heterogéneos.",
+        "SkyFabriX anuncia 115,2 Tbps de capacidad de conmutación; es una especificación del fabricante, no un benchmark independiente.",
+        "Acceso anticipado y validación ya están en curso; disponibilidad general prevista para comienzos de 2027, sin precios públicos."
+      ],
+      "sections": [
+        {
+          "heading": "Qué anunció Upscale y cuál es el problema que intenta resolver",
+          "kind": "report",
+          "paragraphs": [
+            "Upscale, compañía de infraestructura de redes para inteligencia artificial, presentó Token Fabric el 8 de octubre de 2026. La propuesta reúne componentes de silicio, conmutadores y software de operación para conectar aceleradores dentro de grupos de servidores y entre grupos distribuidos por un centro de datos. No es un modelo generativo, un chip de cómputo para entrenar modelos ni un servicio de chat: es una plataforma de interconexión que busca reducir la fragmentación entre redes y equipos de distintos fabricantes. Su lanzamiento comercial general todavía está previsto para 2027, de modo que el anuncio de hoy no equivale a disponibilidad general inmediata.",
+            "Cuando miles de aceleradores cooperan en una tarea de entrenamiento o inferencia, intercambian activaciones, parámetros, resultados intermedios y otros datos. Si la red introduce demoras, un procesador costoso puede permanecer inactivo esperando información. Upscale plantea que integrar redes de proximidad, redes entre racks y herramientas de observabilidad en una misma arquitectura ayudará a utilizar mejor esos equipos. Esa mejora es una tesis técnica y comercial del proveedor: el comunicado no aporta una comparación independiente y reproducible de tokens por segundo, coste por token o utilización real frente a otras plataformas."
+          ]
+        },
+        {
+          "heading": "Scale-up y scale-out: dos redes, una operación propuesta",
+          "kind": "technical",
+          "paragraphs": [
+            "En centros de datos de IA se suele distinguir scale-up, la comunicación estrecha entre aceleradores de un mismo dominio o pod, de scale-out, la comunicación entre nodos, racks o grupos mayores. Ambos niveles importan, pero presentan exigencias distintas de latencia, ancho de banda, topología y gestión. Token Fabric pretende unificarlos operacionalmente. En scale-up utiliza SkyFabriX, su silicio y bandejas de conmutación; en scale-out incorpora sistemas diseñados por Upscale y basados en NVIDIA Spectrum-X Ethernet. SkyOS se presenta como sistema operativo común de red y SkyCMD como capa de orquestación y observabilidad.",
+            "El componente SkyFabriX anuncia una capacidad de 115,2 terabits por segundo de conmutación. La cifra es una especificación declarada para el silicio, no una medición independiente de tráfico útil extremo a extremo ni una promesa de rendimiento por acelerador. Upscale habla además de una hoja de ruta de varios petabits por segundo, que debe leerse como objetivo futuro. Para los sistemas scale-out menciona conexiones de 400G y 800G, con evolución hacia 1,6T; no corresponde presentar todos esos niveles como productos ya instalados y validados en producción.",
+            "El comunicado enumera compatibilidad o evolución hacia estándares y protocolos como OCP ESUN, UALoE, SUE-T, Ethernet/IP y UALink. La diferencia entre soportar una especificación, tener un prototipo interoperable y certificar una configuración de producción es decisiva. Por ahora, la compañía describe una arquitectura abierta y trabajos de validación con socios; no publica una matriz completa de aceleradores, tarjetas de red, versiones de firmware y sistemas operativos probados en condiciones equivalentes."
+          ]
+        },
+        {
+          "heading": "SkyOS y SkyCMD: observar antes de automatizar",
+          "kind": "technical",
+          "paragraphs": [
+            "SkyOS pretende ofrecer una base de software común para equipos de scale-up y scale-out. SkyCMD se describe como una consola de gestión y observabilidad con funciones orientadas a agentes, capaz de coordinar miles de elementos de red. El valor potencial está en correlacionar fallos, congestión y capacidad sin obligar a los operadores a manejar herramientas inconexas para cada familia de switches. Sin embargo, el anuncio no demuestra qué decisiones toma SkyCMD de forma autónoma, qué permisos exige, cómo se revierte una acción errónea o qué telemetría puede exportarse a sistemas externos.",
+            "Para una operación empresarial, un panel unificado solo resuelve parte del problema. Importan también los registros de auditoría, la separación de roles, los cambios graduales de configuración, las alertas comprensibles y la recuperación ante incidentes. Son criterios de evaluación editorial, no funciones que Gazette dé por implementadas. Antes de confiar a software con agentes el control de una red de producción, los clientes deberían pedir demostraciones de aislamiento de fallos y de aprobación humana para cambios que puedan afectar trabajos de entrenamiento costosos."
+          ]
+        },
+        {
+          "heading": "Una oferta modular para distintos compradores",
+          "kind": "report",
+          "paragraphs": [
+            "Upscale propone tres formas de adopción. Una organización puede comprar el stack completo con sistemas y gestión integrada; puede elegir equipos y añadir opcionalmente SkyOS y SkyCMD; o puede incorporar silicio y diseños personalizados con SDK y una interfaz SAI abierta, manteniendo su propio sistema operativo de red. Esa flexibilidad está dirigida a compradores muy diferentes: empresas y neoclouds con equipos de operaciones pequeños, fabricantes de aceleradores y grandes proveedores de nube que diseñan infraestructura a medida.",
+            "El término «cualquier GPU, XPU o NIC» aparece como una aspiración de interoperabilidad del fabricante, no como una certificación universal ya conseguida. La compañía menciona apoyo de participantes del ecosistema como NVIDIA, TSMC, d-Matrix y SambaNova. Las declaraciones de colaboración o respaldo no significan que todos sus productos funcionen hoy con todas las variantes de Token Fabric. Para comparar opciones, el comprador necesita un inventario concreto de dispositivos, transceptores, topologías y protocolos validados, no solo la promesa general de estándares abiertos."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, regiones y precio: lo confirmado",
+          "kind": "report",
+          "paragraphs": [
+            "El comunicado oficial sitúa la disponibilidad general a comienzos de 2027 y señala que ya están en marcha programas de acceso anticipado y validación conjunta. Reuters añade que la primera fase, centrada en conectar grupos de chips dentro del centro de datos, se espera para el cuarto trimestre de 2026, mientras el conjunto se desplegaría por etapas durante 2027. Esas fechas son planes sujetos a cambios de ingeniería, fabricación y adopción, no compromisos de entrega universal para cualquier cliente. Upscale anunció una demostración o primer vistazo en OCP 2026, pero no una fecha de distribución global uniforme.",
+            "No se publicó una lista pública de precios por puerto, conmutador, licencia, rack ni paquete de software. Tampoco una tabla definitiva de regiones comerciales o de soporte. Las cifras de ingresos que el director ejecutivo proyectó para 2027, recogidas por Reuters, son expectativas de negocio, no pedidos firmes ni ventas realizadas. La valoración de US$2.000 millones y los US$500 millones de financiación acumulada citados por Reuters corresponden a la etapa de financiación de junio, no a capital captado mediante el lanzamiento de Token Fabric."
+          ]
+        },
+        {
+          "heading": "Competencia y relevancia para la carrera de la IA",
+          "kind": "competition",
+          "paragraphs": [
+            "Los centros de datos ya utilizan soluciones de interconexión de múltiples proveedores, y NVIDIA dispone de tecnologías propias para redes de IA. Upscale no anuncia que haya reemplazado esas plataformas: integra Spectrum-X en una parte de su oferta y añade su propio silicio y software en otras. La apuesta es reducir el esfuerzo de integración cuando una infraestructura combina GPU, aceleradores especializados y equipos de red de orígenes distintos. Si la interoperabilidad funciona a escala, podría facilitar que operadores evalúen alternativas de hardware sin rediseñar cada capa de red desde cero.",
+            "Para desarrolladores de modelos, la novedad no cambia directamente una API ni ofrece más tokens gratis. Puede influir indirectamente en la disponibilidad de cómputo y en la economía de entrenar o servir modelos. Para usuarios finales, cualquier mejora de latencia o coste dependerá de decisiones posteriores de los operadores. Para empresas que compran infraestructura, la cuestión central es el coste total: adquisición, consumo eléctrico, soporte, personal especializado, mantenimiento y riesgo de interrupción. No hay datos públicos suficientes para cuantificar todavía una ventaja de Token Fabric en esos apartados."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: apertura verificable, no solo declarada",
+          "kind": "analysis",
+          "paragraphs": [
+            "La importancia estratégica del anuncio reside en el intento de convertir la red en una capa flexible para un mercado de aceleradores cada vez más diverso. Los grandes laboratorios y neoclouds buscan evitar que una sola elección de hardware determine toda su arquitectura durante años. Una red basada en estándares podría contribuir a esa libertad, pero la palabra «abierta» no sustituye pruebas de interoperabilidad. El reto comercial será demostrar que una solución modular resulta más fácil de operar que una pila integrada de un solo proveedor, sin introducir nuevos puntos de fallo.",
+            "Las próximas señales que Gazette debería seguir son la publicación de hojas técnicas detalladas, configuraciones certificadas, pruebas independientes de latencia y ancho de banda, primeros despliegues verificables, precios y cumplimiento del calendario 2026–2027. Un ensayo útil compararía cargas idénticas sobre configuraciones equivalentes y mediría rendimiento sostenido, fallos, consumo y tiempo de recuperación. Hasta entonces, Token Fabric es un anuncio material de arquitectura y producto con acceso temprano, no una victoria competitiva ya demostrada."
+          ]
+        }
+      ],
+      "executiveSummary": "Upscale AI anunció Token Fabric el 8 de octubre de 2026 para conectar aceleradores heterogéneos mediante una arquitectura que integra silicio SkyFabriX, sistemas scale-out con NVIDIA Spectrum-X y software SkyOS/SkyCMD. El fabricante declara 115,2 Tbps para su silicio de conmutación, pero aún no publica benchmarks independientes ni precios. Hay programas de acceso temprano y la disponibilidad general está prevista para comienzos de 2027.",
+      "finalSummary": "Token Fabric es un nuevo intento de unificar redes de IA heterogéneas sin exigir un único fabricante de aceleradores. El anuncio confirma arquitectura y planes de validación; la interoperabilidad a escala, el ahorro operativo y el rendimiento comparativo deberán demostrarse con despliegues y mediciones independientes.",
+      "analysis": "Análisis Gazette: la interoperabilidad verificable podría convertirse en ventaja estratégica para operadores que combinan GPU y aceleradores especializados. Hoy la propuesta es prometedora, pero sus resultados comerciales y técnicos permanecen por validar.",
+      "watch": "Pruebas independientes, compatibilidad certificada, primeras entregas del cuarto trimestre de 2026, disponibilidad general en 2027, tarifas y despliegues en producción.",
+      "technicalDetails": [
+        {
+          "label": "Silicio scale-up",
+          "value": "SkyFabriX; 115,2 Tbps anunciados",
+          "note": "Especificación de Upscale, no rendimiento independiente extremo a extremo"
+        },
+        {
+          "label": "Scale-out",
+          "value": "Sistemas con NVIDIA Spectrum-X Ethernet",
+          "note": "400G y 800G; evolución anunciada hacia 1,6T"
+        },
+        {
+          "label": "Operación",
+          "value": "SkyOS + SkyCMD",
+          "note": "Sistema operativo y observabilidad/orquestación anunciados"
+        },
+        {
+          "label": "Estándares mencionados",
+          "value": "ESUN, UALoE, SUE-T, Ethernet/IP; UALink en evolución",
+          "note": "La interoperabilidad requiere validación por configuración"
+        }
+      ],
+      "availability": {
+        "status": "Anunciado; acceso anticipado y validación conjunta en curso; disponibilidad general prevista para principios de 2027",
+        "platforms": [
+          "Infraestructura de redes para centros de datos de IA"
+        ],
+        "regions": [
+          "No se publicó cobertura regional completa"
+        ],
+        "requirements": [
+          "Evaluación de compatibilidad de aceleradores, redes y protocolos"
+        ],
+        "notes": [
+          "Reuters sitúa una primera fase en el cuarto trimestre de 2026",
+          "No confundir lanzamiento de arquitectura con disponibilidad general"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Tarifa pública",
+          "value": "No anunciada",
+          "note": "No se publicaron precios por puerto, switch, software ni paquete"
+        }
+      ],
+      "limitations": [
+        "No hay benchmarks independientes públicos de latencia, utilización ni coste por token.",
+        "No existe matriz completa pública de compatibilidad certificada por acelerador y topología.",
+        "Los plazos y las cifras de capacidad futuras son previsiones del proveedor.",
+        "No se publicaron precios ni disponibilidad por región."
+      ],
+      "practicalAdvice": [
+        "Solicitar lista de hardware, firmware y protocolos validados antes de comprar.",
+        "Comparar rendimiento sostenido, recuperación ante fallos y coste total con una topología equivalente.",
+        "Tratar funciones de orquestación autónoma como sujetas a controles y auditoría antes de producción."
+      ],
+      "usefulFacts": [
+        "Scale-up conecta aceleradores dentro de dominios cercanos; scale-out une nodos y racks.",
+        "115,2 Tbps es una capacidad de conmutación anunciada para SkyFabriX, no velocidad por chip de IA.",
+        "OCP 2026 es el escenario anunciado para una primera demostración pública."
+      ]
+    },
     {
       "id": "manus-butterfly-effect-funding-2026",
       "eventKey": "manus-butterfly-effect-over-500m-funding-2026-10-08",
@@ -7410,7 +7589,7 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     }
   ]
 }
