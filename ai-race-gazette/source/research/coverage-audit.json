@@ -274,23 +274,28 @@
     },
     {
       "date": "2026-09-12",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [],
+      "reviewedSourceIds": [
+        "anthropic-news-engineering"
+      ],
+      "reviewedCategories": [
+        "agents",
+        "security"
+      ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": null,
-        "published": 0,
-        "discarded": null,
-        "unresolved": null
+        "found": 1,
+        "published": 1,
+        "discarded": 0,
+        "unresolved": 0
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "12 Sep: Amodei publica propuesta de coordinación y compromiso unilateral inicial de evaluación externa; noticia basada en ensayo original y medios Reuters/Guardian del mismo día. Jornada parcial, revisión completa y pasada inversa pendientes."
     },
     {
       "date": "2026-09-13",
