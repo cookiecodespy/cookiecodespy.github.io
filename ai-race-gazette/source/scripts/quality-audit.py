@@ -8,6 +8,8 @@ from collections import Counter
 ROOT=Path(__file__).resolve().parents[1]
 NEWS=ROOT/'public/data/news.json'
 COVERAGE=ROOT/'docs/history-coverage.json'
+VISUAL_MANIFEST=ROOT/'visual/asset-manifest.json'
+VISUAL_QUEUE=ROOT/'visual/image-queue.json'
 
 def words(article):
     parts=[article.get('title',''),article.get('summary','')]
@@ -38,6 +40,10 @@ states=Counter(row['status'] for row in coverage)
 companies=Counter(a['company'] for a in articles)
 dates=Counter(a['date'] for a in articles)
 v2=[a for a in articles if a.get('articleVersion')==2]
+visual_manifest=json.loads(VISUAL_MANIFEST.read_text(encoding='utf-8')) if VISUAL_MANIFEST.exists() else {'assets':[]}
+visual_queue=json.loads(VISUAL_QUEUE.read_text(encoding='utf-8')) if VISUAL_QUEUE.exists() else {'items':[]}
+image_usage=Counter(a.get('image') for a in articles)
+queue_states=Counter(i.get('productionStatus') for i in visual_queue.get('items',[]))
 
 report={
  'articles':len(articles),
@@ -49,6 +55,13 @@ report={
  'under_900':sum(n<900 for n in counts),
  'reporter_v2':len(v2),
  'with_specific_art':sum(a.get('imageStatus')=='specific' for a in articles),
+ 'registered_visual_assets':len(visual_manifest.get('assets',[])),
+ 'unique_article_images':len(image_usage),
+ 'most_reused_image':image_usage.most_common(1)[0] if image_usage else None,
+ 'articles_using_most_reused_image':image_usage.most_common(1)[0][1] if image_usage else 0,
+ 'visual_queue_states':dict(queue_states),
+ 'visual_queue_p0':sum(i.get('queuePriority')=='P0' for i in visual_queue.get('items',[])),
+ 'visual_queue_p1':sum(i.get('queuePriority')=='P1' for i in visual_queue.get('items',[])),
  'coverage_states':dict(states),
  'shortest':sorted((words(a),a['id']) for a in articles)[:10],
 }
