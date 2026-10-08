@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T15:15:08.518Z",
+  "updatedAt": "2026-10-08T15:30:00.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -3855,6 +3855,232 @@
       ]
     },
     {
+      "id": "openai-agents-api-public-beta-2026-09-10",
+      "eventKey": "openai-agents-api-codex-harness-public-beta-2026-09-10",
+      "articleVersion": 2,
+      "date": "2026-09-10",
+      "announcedAt": "2026-09-10",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "OpenAI",
+      "product": "Agents API",
+      "title": "OpenAI abre Agents API: agentes duraderos, subagentes y sandboxes con el harness de Codex",
+      "summary": "OpenAI lanzó el 10 de septiembre Agents API en beta pública: un harness administrado para agentes con sesiones extensas, herramientas, subagentes y sandboxes elegibles. La API no agrega una tarifa propia, pero modelos, herramientas y contenedores se cobran por separado.",
+      "tags": [
+        "Agentes",
+        "API",
+        "Desarrollo",
+        "Infraestructura"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico de inteligencia mecánica, usado provisionalmente; no documenta Agents API ni instalaciones reales.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico tecnológico de 1890: un director mecánico coordina pequeños operarios autómatas trabajando en escritorios y archivos aislados, unidos por cables de telégrafo. Metáfora de harness, subagentes y sandboxes; sepia y tinta detallada, sin texto, sin marcas o interfaces falsas.",
+      "source": {
+        "name": "OpenAI · Introducing the Agents API",
+        "url": "https://openai.com/index/introducing-the-agents-api/",
+        "publishedAt": "2026-09-10"
+      },
+      "relatedSources": [
+        {
+          "name": "OpenAI Developer Community · Agents API announcement",
+          "url": "https://community.openai.com/t/introducing-the-agents-api-and-hosted-sandboxes/1396481"
+        }
+      ],
+      "keyPoints": [
+        "El evento original es del 10 de septiembre de 2026 y corresponde a la beta pública de Agents API.",
+        "OpenAI administra el harness de Codex, mientras el desarrollador selecciona herramientas y entorno de ejecución.",
+        "El servicio admite context compaction, búsqueda de herramientas, subagentes y sandboxes alojados o externos.",
+        "Tokens, herramientas y contenedores pueden generar cargos separados; no existe coste universal por agente."
+      ],
+      "quickTakeaways": [
+        "Beta pública disponible para desarrolladores desde el 10 de septiembre.",
+        "El harness detrás de Codex llega como componente API gestionado.",
+        "Las sesiones pueden conservar continuidad, llamar herramientas y delegar trabajos.",
+        "El ejecutor puede estar alojado por OpenAI, por terceros o en infraestructura propia.",
+        "Sin tarifa adicional de Agents API; consumo de modelos, herramientas y sandbox se cobra aparte."
+      ],
+      "body": [
+        "OpenAI lanzó Agents API el 10 de septiembre de 2026 para llevar a desarrolladores el sistema de orquestación detrás de Codex. Separa la gestión del agente del entorno donde ejecuta código, permitiendo sesiones extensas y herramientas conectadas. Es una beta de infraestructura: no convierte por sí sola una aplicación en un proceso verificado de extremo a extremo."
+      ],
+      "executiveSummary": "Agents API abre a desarrolladores el harness administrado que coordina herramientas, contexto y subagentes en Codex. El anuncio introduce una nueva pieza para construir agentes duraderos sin mantener todos los bucles de ejecución. Su costo completo depende del modelo, las herramientas y el entorno, y la fiabilidad debe medirse en cada implementación.",
+      "sections": [
+        {
+          "heading": "Una infraestructura para agentes, no otro chatbot",
+          "kind": "report",
+          "paragraphs": [
+            "El 10 de septiembre de 2026, OpenAI presentó Agents API en beta pública para desarrolladores. El anuncio abre una manera de construir agentes que pueden trabajar con herramientas, ejecutar código y conservar una sesión de larga duración sin que cada empresa tenga que crear desde cero su propia capa de orquestación. El componente central es el harness utilizado en Codex, ofrecido como servicio administrado. La noticia debe registrarse como lanzamiento de API y no confundirse con productos de voz, nuevas versiones del modelo o funciones exclusivas de ChatGPT.",
+            "La diferencia práctica es la responsabilidad operativa. Un modelo responde a instrucciones; un agente de trabajo también necesita elegir herramientas, gestionar errores, delegar tareas y conservar el progreso entre etapas. Con esta API, OpenAI asume parte del ciclo del agente, mientras el desarrollador sigue definiendo objetivos, permisos, datos, interfaces y entorno de ejecución. Esa separación puede acortar el tiempo de construcción, pero no convierte cualquier instrucción en un proceso seguro o confiable."
+          ]
+        },
+        {
+          "heading": "Qué se envía en una sesión",
+          "kind": "technical",
+          "paragraphs": [
+            "La documentación de lanzamiento describe la creación de una sesión a partir de una tarea, un modelo, herramientas y un entorno. Su ejemplo incorpora una herramienta de tipo MCP, una configuración de subagentes y un sandbox alojado. Esto importa porque el punto de entrada no se limita a una cadena de texto: el desarrollador declara explícitamente qué recursos puede utilizar el agente y bajo qué condiciones ejecutará su trabajo.",
+            "Las herramientas pueden ser integraciones MCP, funciones propias o capacidades incorporadas. En un sistema empresarial, esa lista debería ser mínima y estar ligada a permisos concretos. La posibilidad técnica de invocar un sistema externo no sustituye las comprobaciones de identidad, autorización, auditoría ni confirmaciones para acciones irreversibles."
+          ]
+        },
+        {
+          "heading": "El entorno puede ser de OpenAI o del cliente",
+          "kind": "technical",
+          "paragraphs": [
+            "La oferta distingue el harness gestionado del lugar donde corre el código. OpenAI presenta sandboxes propios y admite alternativas del desarrollador o proveedores asociados como Cloudflare, Daytona, E2B, Modal, Runloop, Vercel y otros. Algunas integraciones apuntan a entornos administrados y otras permiten desplegar dentro de una VPC. La elección afecta latencia, acceso a archivos, gestión de secretos, configuración de CPU o GPU y obligaciones de protección de información.",
+            "Este detalle evita una lectura equivocada: contratar el harness no obliga por definición a mover todos los sistemas internos a un único sandbox. Aun así, cada arquitectura requiere revisar por separado dónde se guardan archivos, qué credenciales recibe el agente y cuánto tiempo persisten sus resultados. No hay que tratar un entorno aislado como garantía automática frente a instrucciones maliciosas presentes en páginas o documentos."
+          ]
+        },
+        {
+          "heading": "Continuidad entre ventanas de contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "OpenAI afirma que la API incorpora compactación automática del contexto cuando una sesión se acerca al límite del modelo. La idea es conservar la información necesaria para seguir trabajando durante varias ventanas. Para tareas extensas, esto reduce el trabajo de implementar resúmenes manuales cada vez que el agente acumula mensajes y resultados de herramientas.",
+            "Sin embargo, compactar no equivale a recordar perfectamente. Los resúmenes pueden omitir detalles y una aplicación seria debe persistir por fuera del modelo los artefactos, decisiones, entradas importantes, estados de ejecución y resultados verificables. Si un informe quedó escrito en un archivo, conviene leer ese archivo para confirmar su contenido; no basta con que el agente recuerde haberlo generado."
+          ]
+        },
+        {
+          "heading": "Herramientas y subagentes",
+          "kind": "technical",
+          "paragraphs": [
+            "La búsqueda de herramientas permite cargar definiciones pertinentes bajo demanda en lugar de insertar desde el comienzo catálogos enormes de funciones. Las llamadas programáticas pueden encadenar, filtrar o ejecutar operaciones en paralelo. El objetivo, según OpenAI, es evitar gasto innecesario de tokens y mantener el flujo de trabajo más eficiente, aunque el rendimiento real dependerá de la implementación y de las herramientas utilizadas.",
+            "En trabajos divisibles, un agente coordinador puede delegar investigación, inspección de código o análisis independiente a subagentes con contextos separados. La respuesta final debe reunir los resultados y resolver las contradicciones. Paralelizar puede reducir latencia en ciertos casos, pero también multiplica las superficies de acceso, el costo potencial y la necesidad de controlar quién hizo qué."
+          ]
+        },
+        {
+          "heading": "Apertura del harness y dependencia de proveedores",
+          "kind": "context",
+          "paragraphs": [
+            "OpenAI describe el harness subyacente como código abierto y ofrece acceso a una base pública para inspeccionarlo. La versión gestionada sigue siendo un servicio de OpenAI, con infraestructura, mantenimiento y comportamiento versionado a cargo del proveedor. Son dos características distintas: poder leer la lógica básica facilita el aprendizaje y la inspección, pero no elimina la dependencia del servicio alojado.",
+            "Para decidir una arquitectura conviene separar componentes reemplazables: modelo, harness, herramientas, almacenamiento de estado y sandbox. Diseñar límites claros para estas capas facilita probar alternativas y evita que un cambio de modelo obligue a reescribir todo el sistema. La documentación del anuncio no demuestra por sí sola compatibilidad total con cualquier plataforma ni migración automática de sesiones."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, precios y costes ocultos",
+          "kind": "report",
+          "paragraphs": [
+            "La Agents API se anunció en beta pública para desarrolladores el 10 de septiembre, no como disponibilidad general definitiva. OpenAI señala que la API de agentes no tiene un recargo adicional propio; se factura el uso de tokens y herramientas según sus respectivas tarifas. En el foro oficial de desarrolladores, un representante aclara además que los contenedores alojados se cobran de acuerdo con las tarifas estándar de contenedores, separadas del consumo de modelos.",
+            "Por eso, no existe un precio total universal por agente o por tarea. Una gestión compleja puede incluir muchos pasos, subagentes, búsquedas, ejecución de código, almacenamiento y tiempo de infraestructura. Antes de construir un producto comercial hay que estimar coste por trabajo completado, límites presupuestarios, máximos de concurrencia y qué ocurre cuando una sesión queda abierta más de lo previsto."
+          ]
+        },
+        {
+          "heading": "Qué revelan los primeros testimonios",
+          "kind": "context",
+          "paragraphs": [
+            "En el anuncio, distintos clientes reportan mejoras: Ciridae habla de menor latencia en su flujo, SafetyKit comunica una reducción de costo por caso y otras empresas destacan la gestión de sesiones largas o cargas variables. Se trata de testimonios seleccionados y publicados por OpenAI, no de una comparación independiente con metodología común. Cada cifra corresponde a un caso particular y no debería trasladarse automáticamente a otras organizaciones.",
+            "La señal interesante es que los usuarios citados describen problemas operativos —contexto, fallos, latencia, escala— y no solamente calidad de redacción. Para contrastar esas promesas, una empresa debe montar su propia evaluación repetible con escenarios de error, cancelación, recuperación, cambios de credenciales y verificación de resultados finales."
+          ]
+        },
+        {
+          "heading": "Implicaciones para desarrolladores y empresas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para un equipo pequeño, la ventaja potencial está en prototipar un agente con menos servicios propios que mantener. Para una empresa regulada, los requisitos son diferentes: registro de operaciones, aislamiento de datos, gestión de secretos, límites de permisos, revisión humana y continuidad ante fallos. El mismo harness puede formar parte de ambos productos, pero la preparación para producción no se hereda de la API.",
+            "En el mercado de agentes, este anuncio desplaza parte de la competencia desde el modelo hacia la infraestructura que lo mantiene trabajando. El factor decisivo no será solo cuántas tareas inicia un agente, sino cuántas termina correctamente, con coste razonable y evidencia verificable. Esta es una interpretación editorial del Gazette, no una clasificación independiente de proveedores."
+          ]
+        },
+        {
+          "heading": "Pruebas recomendadas antes de adoptar",
+          "kind": "practical",
+          "paragraphs": [
+            "Una evaluación inicial útil puede incluir cinco pruebas: tarea corta con una sola herramienta; trabajo de varias horas con checkpoints; subagentes con resultados contradictorios; pérdida temporal de acceso al sandbox; y una acción externa que debe confirmarse antes de ejecutarse. En cada una, registrar tiempo, costo, estado final en el sistema de destino y posibilidad de reanudar sin duplicar efectos.",
+            "También conviene definir qué datos persisten fuera del contexto del modelo: identificador de ejecución, permisos efectivos, resultados de herramientas, archivos, revisiones y un criterio automático para declarar éxito. Una llamada de API exitosa no garantiza que la acción solicitada esté correcta en el repositorio, CRM o servicio externo. La aceptación debería basarse en una lectura verificable del estado de destino."
+          ]
+        },
+        {
+          "heading": "Qué sigue sin estar resuelto",
+          "kind": "report",
+          "paragraphs": [
+            "El material oficial no permite asegurar que cualquier agente funcionará durante días sin errores, ni que un servicio alojado satisfaga por defecto todas las reglas de cumplimiento. La beta puede evolucionar antes de la disponibilidad general. Las organizaciones deben revisar cambios del SDK, política de datos, precios actualizados y restricciones aplicables a su cuenta antes de asumir una configuración estable.",
+            "Faltan comparaciones externas de fiabilidad, costes integrales bajo carga y recuperación ante errores de larga duración. Esas mediciones serán claves para saber cuánto de la complejidad desaparece realmente y cuánto simplemente pasa a administrarse por otro proveedor."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Lanzamiento",
+          "value": "10 de septiembre de 2026; beta pública",
+          "note": "Comunicado oficial de OpenAI"
+        },
+        {
+          "label": "Orquestación",
+          "value": "Harness gestionado de Codex",
+          "note": "OpenAI publica la base open-source"
+        },
+        {
+          "label": "Ejecución",
+          "value": "Sandbox de OpenAI, propio o de proveedores asociados"
+        },
+        {
+          "label": "Herramientas",
+          "value": "MCP, funciones propias y herramientas integradas"
+        },
+        {
+          "label": "Paralelismo",
+          "value": "Subagentes coordinados con contextos independientes"
+        },
+        {
+          "label": "Memoria operativa",
+          "value": "Compactación automática de contexto en sesiones largas"
+        }
+      ],
+      "availability": {
+        "status": "Beta pública para desarrolladores según anuncio oficial del 10 Sep",
+        "platforms": [
+          "OpenAI Agents API",
+          "OpenAI-hosted sandboxes",
+          "Entornos propios y socios integrados"
+        ],
+        "regions": [],
+        "requirements": [
+          "Cuenta y condiciones de la API aplicables",
+          "Elegir modelos, herramientas, permisos y entorno",
+          "Configurar autenticación y controles de datos"
+        ],
+        "notes": [
+          "Beta pública no equivale a disponibilidad general.",
+          "Comprobar restricciones y tarifas vigentes antes de desplegar."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Uso de Agents API",
+          "value": "Sin recargo adicional propio",
+          "note": "Se cobran tokens y herramientas según tarifas respectivas."
+        },
+        {
+          "label": "Sandboxes de OpenAI",
+          "value": "Tarifa estándar de contenedores",
+          "note": "Cargo separado del modelo según comunicación oficial del foro de desarrolladores."
+        }
+      ],
+      "limitations": [
+        "Testimonios de clientes no constituyen benchmarks independientes.",
+        "Compaction no sustituye un registro externo duradero.",
+        "Beta sujeta a evolución y cambios operativos.",
+        "La API no aporta por sí sola aprobación humana ni verificación final en el sistema de destino."
+      ],
+      "practicalAdvice": [
+        "Separar harness, modelo, herramientas, sandbox y almacenamiento de estado.",
+        "Probar fallos, cancelaciones y recuperación antes de permitir acciones sensibles.",
+        "Medir costo por tarea completada, no solo tokens por respuesta.",
+        "Verificar cambios externos mediante lectura independiente del estado final."
+      ],
+      "usefulFacts": [
+        "La configuración oficial de ejemplo usa una sesión que declara modelo, herramientas, subagentes, entorno y tarea.",
+        "La lista de integraciones anunciadas incluye proveedores de sandboxes y VPC.",
+        "La base pública del harness permite inspeccionar su lógica, pero la API es administrada."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "label": "OpenAI presenta Agents API en beta pública y sandboxes alojados."
+        }
+      ],
+      "analysis": "Análisis Gazette: la carrera de la IA incorpora el harness como capa competitiva autónoma. Externalizar orquestación acelera prototipos, pero éxito técnico de una llamada no prueba que la tarea haya quedado realizada en el sistema final.",
+      "watch": "Evidencia independiente de fiabilidad, costos por tarea, comportamiento de context compaction, estabilidad de la beta y compatibilidad al sustituir modelos o sandboxes.",
+      "finalSummary": "El 10 de septiembre, OpenAI convirtió una capa operativa crucial de Codex en una API para desarrolladores. Abre una opción más rápida para desplegar agentes con herramientas y sesiones duraderas, pero la calidad de producto dependerá de permisos, observabilidad, costos totales y verificación real de resultados."
+    },
+    {
       "id": "mistral-fortran-agent-modernization-2026-09-09",
       "eventKey": "mistral-fortran-agent-modernization-2026-09-09",
       "articleVersion": 2,
@@ -6152,7 +6378,7 @@
     {
       "date": "2026-09-10",
       "status": "partial",
-      "verifiedArticles": 3
+      "verifiedArticles": 4
     },
     {
       "date": "2026-09-11",
