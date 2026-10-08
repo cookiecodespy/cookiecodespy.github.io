@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T16:18:27.662Z",
+  "updatedAt": "2026-10-08T16:26:45.111Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -4537,6 +4537,217 @@
       ]
     },
     {
+      "articleVersion": 2,
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico de inteligencia mecánica, no fotografía documental del producto.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "id": "cognition-swe-2-coding-agent-model-2026-09-10",
+      "eventKey": "cognition-swe-2-devin-coding-model-launch-2026-09-10",
+      "date": "2026-09-10",
+      "announcedAt": "2026-09-10",
+      "company": "Cognition",
+      "product": "SWE-2",
+      "title": "Cognition presenta SWE-2: agentes de código más eficientes con aprendizaje por refuerzo a gran escala",
+      "summary": "Cognition lanzó SWE-2 el 10 de septiembre para Devin Desktop y CLI. Publica mejoras de coste y desempeño frente a SWE-1.7 y detalla entrenamiento de refuerzo de Kimi K3 con varios niveles de esfuerzo; las cifras son resultados del fabricante.",
+      "tags": [
+        "Agentes",
+        "Programación",
+        "Modelos",
+        "Investigación"
+      ],
+      "imageBrief": "Grabado de periódico de tecnología victoriano: taller de ingenieros con autómata mecánico revisando engranajes de un motor lógico, bancos de pruebas e instrumentos de medición del trabajo, tinta sepia y papel envejecido, sin letras ni logotipos.",
+      "source": {
+        "name": "Cognition · Introducing SWE-2: Pushing the Pareto Frontier",
+        "url": "https://cognition.com/blog/swe-2",
+        "publishedAt": "2026-09-10"
+      },
+      "relatedSources": [
+        {
+          "name": "Cognition · FrontierCode leaderboard y changelog",
+          "url": "https://cognition.com/frontiercode"
+        },
+        {
+          "name": "Cognition · página de investigación",
+          "url": "https://cognition.com/research"
+        },
+        {
+          "name": "Cognition · publicaciones de septiembre",
+          "url": "https://cognition.com/blog"
+        }
+      ],
+      "keyPoints": [
+        "Cognition anunció SWE-2 el 10 de septiembre y su disponibilidad inicial en Devin Desktop y CLI.",
+        "El modelo se ajustó sobre Kimi K3 con entrenamiento de refuerzo y esfuerzos múltiples.",
+        "Cognition declara 50 % en FrontierCode 1.1 Main, frente a 42 % de SWE-1.7; otras evaluaciones muestran límites."
+      ],
+      "quickTakeaways": [
+        "SWE-2 se estrenó en Devin Desktop y CLI; web y Fusion en despliegue.",
+        "Mejora la eficiencia del trabajo de agentes según los benchmarks internos.",
+        "El entrenamiento parte de Kimi K3 y optimiza varios niveles de esfuerzo.",
+        "Los resultados varían considerablemente según el benchmark.",
+        "No se anunció distribución de pesos abierta ni API independiente en este lanzamiento."
+      ],
+      "body": [
+        "Cognition presentó SWE-2 el 10 de septiembre como modelo especializado para programación con agentes e integración directa en Devin. La propuesta no se limita a un benchmark: explica cómo reducir pasos redundantes, entrenar diferentes niveles de esfuerzo y controlar costes de trayectorias de herramientas durante el desarrollo."
+      ],
+      "executiveSummary": "SWE-2 llega a los entornos de Devin con una combinación de aprendizaje por refuerzo, optimización del coste y entrenamiento de agentes de ingeniería. Cognition reporta avances claros frente a SWE-1.7 en varias evaluaciones, aunque conserva debilidades en otras y la validación de los resultados sigue siendo principalmente interna. El acceso inicial es mediante Devin, no mediante pesos públicos.",
+      "sections": [
+        {
+          "heading": "SWE-2 llega el 10 de septiembre al entorno de Devin",
+          "kind": "report",
+          "paragraphs": [
+            "Cognition anunció SWE-2 el 10 de septiembre de 2026 como un nuevo modelo especializado en ingeniería de software con agentes. La compañía lo incorporó de inmediato a Devin Desktop y su interfaz de línea de comandos, y anunció un despliegue progresivo en Devin Web y Fusion. Por tanto, se trata de una actualización concreta de producto y no de una promesa de investigación sin acceso. El lanzamiento tampoco demuestra que los pesos del modelo estén publicados ni que exista una API pública autónoma para terceros.",
+            "La propuesta es avanzar simultáneamente en dos variables que suelen enfrentarse: la capacidad de resolver tareas de programación difíciles y el coste de conseguirlo. Cognition lo describe como un desplazamiento de la frontera de Pareto de modelos de código. Es una expresión técnica para referirse a combinaciones de calidad y gasto donde mejorar un factor no requiere empeorar el otro tanto como antes."
+          ]
+        },
+        {
+          "heading": "Del modelo Kimi K3 al ajuste especializado",
+          "kind": "technical",
+          "paragraphs": [
+            "La empresa explica que SWE-2 parte de Kimi K3, un modelo base con aproximadamente 2,8 billones de parámetros que ya tenía entrenamiento posterior para programación con agentes. Sobre esa base, Cognition aplicó entrenamiento de refuerzo a gran escala orientado a entornos de ingeniería de software. No debe confundirse el tamaño del modelo base con un anuncio de un modelo nuevo entrenado completamente desde cero ni con la cantidad de parámetros activos por token.",
+            "La novedad metodológica que destaca el equipo consiste en enseñar varios niveles de esfuerzo de razonamiento dentro de un único proceso de entrenamiento, en vez de mantener necesariamente un modelo distinto por nivel. Esto permite que el usuario elija una configuración eficiente para una tarea sencilla o una más profunda para problemas complejos. El comportamiento final depende tanto del entrenamiento como del harness, los permisos y las herramientas."
+          ]
+        },
+        {
+          "heading": "Entrenamiento por refuerzo atento al coste",
+          "kind": "technical",
+          "paragraphs": [
+            "Cognition describe una función de recompensa que combina éxito en la tarea y penalización lineal según el coste de ejecución. La penalización cambia con el nivel de esfuerzo y se calibra siguiendo la pendiente local de la curva entre rendimiento y gasto del modelo base. La intención es incentivar mejoras útiles en toda la curva, no ganar eficiencia solo obligando al modelo a responder más corto cuando eso perjudica la calidad.",
+            "El equipo también desarrolla una línea base de recompensa ponderada por longitud de cada trayectoria de entrenamiento, presentada como un método para estabilizar el aprendizaje. Estas decisiones son importantes para agentes que generan miles de tokens, ejecutan pruebas y vuelven sobre archivos. Un ahorro de razonamiento mal diseñado puede convertirse en más errores, repeticiones o tareas incompletas."
+          ]
+        },
+        {
+          "heading": "Qué dicen los benchmarks y qué no dicen",
+          "kind": "report",
+          "paragraphs": [
+            "Cognition informa un 50,0 % en FrontierCode 1.1 Main para SWE-2, frente al 42,0 % de su predecesor SWE-1.7. En DeepSWE 1.1 comunica 73,0 % frente a 37,7 %. El mismo anuncio sitúa Terminal-Bench 2.1 en 92,8 %. Son mediciones publicadas por la propia compañía y dependen de sus entornos, versiones, presupuesto de cómputo y reglas de evaluación. No constituyen una auditoría independiente de todos los casos de programación reales.",
+            "Las cifras también revelan límites. En Terminal-Bench 4, la tabla del proveedor muestra un 27,3 % para SWE-2, claramente inferior al 55,8 % de Fable 5.1 y al 57,9 % de GPT-6 Astra en esa prueba. Reconocer esa diferencia evita describir al modelo como superior en cualquier benchmark. El resultado apropiado es que Cognition anuncia mejoras notables respecto de su propio SWE-1.7 y competitividad en ciertos ejercicios, con resultados heterogéneos según la evaluación."
+          ]
+        },
+        {
+          "heading": "Menos pasos no es simplemente correr más rápido",
+          "kind": "technical",
+          "paragraphs": [
+            "En las pruebas de FrontierCode 1.1 Main, la compañía sostiene que la configuración de esfuerzo medio de SWE-2 logra mejores resultados que SWE-1.7 con un 58 % menos pasos y un coste promedio 81 % inferior. El anuncio reporta que el primer cambio efectivo de código llegó tras una mediana de 18 pasos, frente a 48 en el modelo previo. Estas cifras pertenecen a un conjunto acotado de tareas y configuración concreta, no son una garantía de ahorro para cualquier repositorio.",
+            "La interpretación técnica es interesante: los agentes antiguos pueden inspeccionar demasiados archivos antes de modificar el lugar correcto. Reducir lecturas redundantes puede ayudar a terminar antes, pero un agente que explora poco también puede pasar por alto dependencias. La métrica decisiva para equipos profesionales es el porcentaje de tareas completadas sin regresiones, no solo el número de llamadas a herramientas."
+          ]
+        },
+        {
+          "heading": "Cómo se ejecuta el refuerzo a gran escala",
+          "kind": "technical",
+          "paragraphs": [
+            "El informe describe mejoras en la infraestructura de generación de trayectorias de entrenamiento: agrupación de solicitudes en GPU, decodificación especulativa, entrenamiento de modelos borrador y núcleos numéricos de baja precisión. Cognition atribuye incrementos del 10–20 % de rendimiento de procesamiento a la programación de agrupaciones de solicitudes. También señala mejoras de 15 % en longitud de aceptación para una versión de modelo borrador, bajo sus pruebas internas.",
+            "Para controlar diferencias entre el cálculo usado por los servidores de inferencia y el que espera el entrenamiento, aplica cuantización y formatos como FP8 y NVFP4. Estos detalles explican por qué entrenar agentes especializados no depende solamente de los datos. Hace falta ejecutar muchas trayectorias completas, obtener recompensas confiables y controlar los fallos de los evaluadores automáticos."
+          ]
+        },
+        {
+          "heading": "Entornos, pruebas y defensas contra recompensas engañosas",
+          "kind": "report",
+          "paragraphs": [
+            "La empresa asegura haber triplicado los entornos de entrenamiento por refuerzo y ampliado los repositorios representados en las tareas. Además, utiliza soluciones de versiones previas del modelo para producir ejercicios y endurecer verificadores. Un agente más capaz puede encontrar errores en el evaluador y recibir aprobación sin resolver realmente un problema; Cognition reconoce explícitamente que su metodología necesita hacer más resistentes los mecanismos de puntuación.",
+            "También presenta evaluaciones internas de respuestas a preguntas sensibles y de comportamiento seguro en programación. Esas pruebas deben interpretarse como evidencias del método del autor y no como una certificación universal de fiabilidad. Ningún modelo de código debería adquirir permisos irreversibles, secretos de producción o aprobación automática de despliegues únicamente por superar una tabla de benchmarks."
+          ]
+        },
+        {
+          "heading": "Consejos para adoptar SWE-2 dentro de un flujo de desarrollo",
+          "kind": "practical",
+          "paragraphs": [
+            "Un equipo interesado puede probar primero el modelo en Devin Desktop o CLI con tareas extraídas de problemas ya resueltos, manteniendo intacta la rama principal. Conviene medir si encuentra el archivo correcto, escribe pruebas, evita cambiar interfaces públicas y documenta por qué su solución funciona. Después se compara con SWE-1.7 y otros agentes usando el mismo repositorio, instrucciones, herramientas, presupuesto y criterio de aprobación.",
+            "En producción, es preferible exigir revisiones de Pull Requests, tests automáticos, controles de dependencia y posibilidad de revertir cambios. Las tareas que afectan credenciales, datos privados o sistemas operacionales deben requerir permisos explícitos y registros verificables. El ahorro anunciado por el proveedor puede ser útil, pero el coste verdadero incluye revisión humana, infraestructura, fallos y mantenimiento posterior."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: la carrera se mueve hacia el coste por problema resuelto",
+          "kind": "analysis",
+          "paragraphs": [
+            "La aparición de SWE-2 plantea una lectura más matizada de la competencia entre laboratorios de IA. No alcanza con producir el modelo que contesta mejor una pregunta de programación aislada: también importa cuánto tiempo y dinero consume el agente mientras lee un repositorio, planifica, edita y ejecuta pruebas. Optimizar una frontera de calidad y coste puede ser tan valioso para una empresa como ganar unos puntos en una clasificación pública.",
+            "Su mayor interrogante será la transferencia de los resultados internos a repositorios diversos y equipos con reglas estrictas. Conviene observar si el modelo mantiene calidad en cambios largos, reduce errores después de una primera implementación y resulta competitivo en costos completos, no solo en inferencia. Para los desarrolladores, el anuncio refuerza una idea: seleccionar el agente por el flujo de trabajo verificable, no por el nombre del modelo más reciente."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Base de ajuste",
+          "value": "Kimi K3, modelo MoE de aproximadamente 2,8T parámetros totales",
+          "note": "Cognition atribuye a Kimi K3 esta escala."
+        },
+        {
+          "label": "Entrenamiento",
+          "value": "Refuerzo con penalización lineal de coste según nivel de esfuerzo"
+        },
+        {
+          "label": "FrontierCode 1.1 Main",
+          "value": "50,0 % SWE-2 vs. 42,0 % SWE-1.7",
+          "note": "Benchmarks publicados por Cognition."
+        },
+        {
+          "label": "DeepSWE 1.1",
+          "value": "73,0 % SWE-2 vs. 37,7 % SWE-1.7",
+          "note": "Resultados de la compañía."
+        },
+        {
+          "label": "Terminal-Bench 4",
+          "value": "27,3 % SWE-2",
+          "note": "Por debajo de algunos rivales en la tabla del mismo fabricante."
+        }
+      ],
+      "availability": {
+        "status": "Disponible desde el 10 Sep en Devin Desktop y CLI; despliegue a Devin Web y Fusion",
+        "platforms": [
+          "Devin Desktop",
+          "Devin CLI",
+          "Devin Web — despliegue gradual",
+          "Fusion — despliegue gradual"
+        ],
+        "regions": [],
+        "requirements": [
+          "Acceso a la plataforma Devin según el plan correspondiente",
+          "Configurar entorno de repositorio y permisos",
+          "Revisar términos y precios vigentes de Devin"
+        ],
+        "notes": [
+          "El anuncio no afirma distribución de pesos de SWE-2.",
+          "No atribuir acceso API público autónomo sin evidencia adicional."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio comercial",
+          "value": "Sin tarifa fija de SWE-2 aislada en el anuncio",
+          "note": "La comparación de ahorro es relativa a pruebas del fabricante, no lista de precios."
+        }
+      ],
+      "limitations": [
+        "Evaluaciones internas y comparaciones sensibles al presupuesto, harness y conjunto de problemas.",
+        "En Terminal-Bench 4 SWE-2 queda por debajo de rivales en la propia tabla.",
+        "Resultados en pasos/coste de un benchmark no garantizan ahorro por proyecto.",
+        "Necesita revisión humana, tests y autorización de herramientas para cambios sensibles."
+      ],
+      "practicalAdvice": [
+        "Probar con issues reales ya resueltos y los mismos presupuestos para todos los agentes.",
+        "Medir pruebas aprobadas y regresiones además de costo por intento.",
+        "Mantener permisos acotados y revisión obligatoria de PRs.",
+        "Comparar esfuerzos medium/high/max en tareas de distinta complejidad."
+      ],
+      "usefulFacts": [
+        "El modelo comienza a editar antes en la evaluación interna de Cognition.",
+        "El equipo afirma haber triplicado los entornos de refuerzo.",
+        "Las optimizaciones incluyen decodificación especulativa y formatos FP8/NVFP4."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "label": "Anuncio oficial de SWE-2 y disponibilidad en Devin Desktop y CLI."
+        }
+      ],
+      "analysis": "Análisis Gazette: la competencia de agentes de programación empieza a medirse por el coste total de una tarea correctamente resuelta, no solo por la precisión del modelo. Los controles de seguridad y el desempeño en repositorios ajenos siguen siendo decisivos.",
+      "watch": "Resultados independientes sobre repositorios reales, extensión del rollout web/Fusion, precio total por tarea y cambios en acceso del modelo.",
+      "finalSummary": "SWE-2 añade un modelo especializado a Devin y muestra avances relativos en agentes de código según Cognition. Sus resultados son prometedores en ciertas pruebas, pero no universales: la integración, evaluación y revisión humana siguen siendo necesarias."
+    },
+    {
       "id": "mistral-fortran-agent-modernization-2026-09-09",
       "eventKey": "mistral-fortran-agent-modernization-2026-09-09",
       "articleVersion": 2,
@@ -4704,6 +4915,230 @@
           "label": "Mistral publica su caso de modernización con agentes."
         }
       ]
+    },
+    {
+      "articleVersion": 2,
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico de inteligencia mecánica, no fotografía documental del producto.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "id": "cohere-north-small-translate-open-weights-2026-09-09",
+      "eventKey": "cohere-north-small-translate-1-0-release-2026-09-09",
+      "date": "2026-09-09",
+      "announcedAt": "2026-09-09",
+      "company": "Cohere",
+      "product": "North Small Translate 1.0",
+      "title": "Cohere abre North Small Translate: traducción de 50 idiomas con MoE de 218.000 millones de parámetros",
+      "summary": "Cohere anunció el 9 de septiembre North Small Translate, un modelo de traducción de mezcla de expertos con 218.000 millones de parámetros totales, acceso mediante API y pesos descargables para uso no comercial. El blog explicativo del fabricante apareció el día 10.",
+      "tags": [
+        "Modelos",
+        "Open Source",
+        "Traducción",
+        "Empresa",
+        "Infraestructura"
+      ],
+      "imageBrief": "Grabado editorial de imprenta decimonónica: diccionarios en decenas de idiomas, máquinas de traducción con tarjetas perforadas y operadores frente a un telégrafo, estética de periódico antiguo sepia, sin palabras reales ni marca.",
+      "source": {
+        "name": "Cohere · North Small Translate release notes, 9 Sep 2026",
+        "url": "https://docs.cohere.com/changelog/north-small-translate-1-0",
+        "publishedAt": "2026-09-09"
+      },
+      "relatedSources": [
+        {
+          "name": "Cohere · Presentación ampliada del modelo",
+          "url": "https://cohere.com/blog/north-small-translate",
+          "publishedAt": "2026-09-10"
+        },
+        {
+          "name": "Cohere · documentación técnica y acceso por API",
+          "url": "https://docs.cohere.com/docs/north-small-translate-1.0"
+        },
+        {
+          "name": "Cohere Labs · pesos BF16 y ficha de licencia",
+          "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0"
+        },
+        {
+          "name": "Cohere Labs · checkpoint FP8 y requisitos",
+          "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0-fp8"
+        }
+      ],
+      "keyPoints": [
+        "El changelog oficial fecha el lanzamiento el 9 de septiembre; el blog corporativo es del 10.",
+        "El MoE usa 218.000 millones de parámetros totales y 25.000 millones activos.",
+        "La API está disponible con límites de nivel gratuito; los pesos tienen licencia CC BY-NC 4.0, no comercial."
+      ],
+      "quickTakeaways": [
+        "Modelo especializado en traducción multilingüe, no un asistente generalista.",
+        "218B parámetros totales y 25B activos en la arquitectura MoE.",
+        "Pesos BF16, FP8 y W4A16, con requisitos de GPU diferentes.",
+        "La API Chat V2 permite pruebas con límites; pesos solo para uso no comercial.",
+        "Benchmarks del proveedor requieren replicación en idiomas y dominios reales."
+      ],
+      "body": [
+        "North Small Translate llegó primero a las notas oficiales de Cohere el 9 de septiembre de 2026 y recibió un artículo explicativo el 10. La noticia separa disponibilidad de pesos, acceso por API y restricciones de licencia, y desarrolla cómo probar sus resultados sin confundir anuncios comerciales con evaluaciones independientes."
+      ],
+      "executiveSummary": "Cohere introdujo un modelo MoE de traducción con 218B parámetros totales y 25B activos. El lanzamiento del 9 de septiembre abre acceso de prueba mediante API y pesos en varias precisiones sujetos a licencia no comercial. Su interés está en traducir textos con control de despliegue, aunque los resultados publicados y la eficiencia requieren comprobarse por idioma y configuración.",
+      "sections": [
+        {
+          "heading": "Una noticia del 9 de septiembre, aunque el blog llegó después",
+          "kind": "report",
+          "paragraphs": [
+            "Cohere registró el lanzamiento de North Small Translate en sus notas oficiales del 9 de septiembre de 2026. La compañía publicó al día siguiente una explicación más extensa en su blog corporativo. Es una distinción esencial para un archivo cronológico: la ficha de lanzamiento acredita la disponibilidad de la herramienta el día 9, y la publicación explicativa del 10 añade detalles y resultados, pero no crea por sí sola un segundo lanzamiento del mismo modelo.",
+            "El producto está pensado para traducción automática y no para actuar como asistente conversacional general. Cohere presenta una opción con pesos descargables y acceso por API para que investigadores y compañías prueben traducciones de documentos y flujos multilingües. El anuncio pone en primer plano una tendencia relevante: desarrollar modelos especializados para tareas donde precisión terminológica, idioma y control de datos importan más que una conversación abierta."
+          ]
+        },
+        {
+          "heading": "Mixture of Experts: 218.000 millones frente a 25.000 millones activos",
+          "kind": "technical",
+          "paragraphs": [
+            "Según la ficha técnica de Cohere, el modelo usa una arquitectura de mezcla de expertos, o MoE, con 218.000 millones de parámetros totales y 25.000 millones activados durante cada operación. Ese contraste permite aumentar la capacidad representacional sin ejecutar todas las partes del modelo en cada token. No equivale a decir que pese únicamente 25.000 millones de parámetros: los expertos inactivos siguen ocupando memoria cuando se aloja el checkpoint completo.",
+            "Su ventana de contexto publicada es de 16.000 tokens y la documentación muestra un límite máximo de salida de 16.000 tokens. Estas cifras orientan las pruebas con párrafos, expedientes y documentos extensos, pero no garantizan que un documento arbitrariamente largo quepa en una sola llamada. Una aplicación robusta debe planificar segmentación por párrafos o unidades semánticas y recuperar después coherencia terminológica entre segmentos."
+          ]
+        },
+        {
+          "heading": "Una misma herramienta disponible como API y pesos abiertos",
+          "kind": "report",
+          "paragraphs": [
+            "North Small Translate puede usarse mediante el modelo north-small-translate-1-0 en la API Chat V2 de Cohere, dentro del nivel gratuito y sus límites de uso. También hay pesos en Hugging Face con formatos BF16, FP8 y W4A16. La opción alojada elimina el trabajo de desplegar aceleradores propios para probar la función, mientras que los pesos permiten que un equipo de investigación evalúe el modelo en infraestructura controlada.",
+            "Sin embargo, la distribución no es abierta sin condiciones. La ficha de los checkpoints utiliza licencia Creative Commons BY-NC 4.0 y exige respetar las políticas de uso de Cohere Labs. En términos prácticos, es una liberación de pesos para actividades no comerciales, no un permiso general para integrar libremente el modelo en un servicio comercial pagado. Cualquier adopción empresarial debe revisar las condiciones y negociar una autorización apropiada."
+          ]
+        },
+        {
+          "heading": "Hardware: por qué la cuantización cambia el presupuesto",
+          "kind": "technical",
+          "paragraphs": [
+            "Cohere entrega orientaciones concretas de infraestructura según la precisión de los pesos: W4A16 requiere de referencia dos H100 o una B200; FP8, cuatro H100 o dos B200; y BF16, ocho H100 o cuatro B200. Se trata de sugerencias del proveedor, no de un inventario universal de configuraciones garantizadas. La memoria utilizable depende también de los lotes, la duración del contexto, las bibliotecas, el paralelismo y los búferes.",
+            "El checkpoint FP8 recomienda ejecutarse con vLLM, mientras que la ficha BF16 proporciona ejemplos de Transformers y advierte sobre reservar memoria para fusionar los expertos MoE durante la carga. Por tanto, el formato más comprimido no solo cambia cuánto pesa una descarga: también afecta los backends disponibles, la precisión numérica y la facilidad de poner un servidor en producción."
+          ]
+        },
+        {
+          "heading": "Idiomas, variantes y evaluación real",
+          "kind": "report",
+          "paragraphs": [
+            "La compañía promociona traducción en más de cincuenta idiomas y variantes de localización. Su documentación enumera idiomas como español, francés, alemán, hindi, árabe, japonés y portugués de Portugal, entre otros. Pero el conjunto exacto de idiomas o variantes soportadas no equivale automáticamente a calidad uniforme en todos los pares de traducción. Los resultados pueden variar por dirección, lenguaje especializado y estructura del texto.",
+            "En el artículo explicativo del 10 de septiembre, Cohere comunica un valor de 83,6 en su evaluación de WMT26 y sostiene ventajas frente a herramientas y modelos competidores. Es un resultado divulgado por el fabricante bajo su propia selección de métricas; sin reproducciones independientes con el mismo conjunto, las mismas referencias y condiciones equivalentes, Gazette no lo convierte en una clasificación universal ni en una garantía para el español chileno."
+          ]
+        },
+        {
+          "heading": "Casos de uso y límites en empresas",
+          "kind": "context",
+          "paragraphs": [
+            "Una institución que traduce documentación técnica, materiales educativos o manuales puede beneficiarse de usar una API adaptable. Con pesos alojados en infraestructura privada, también puede estudiar requisitos de residencia de datos y confidencialidad. Cohere sitúa la soberanía tecnológica como argumento de valor; la capacidad de elegir dónde ejecutar el sistema es relevante, aunque no resuelve por sí misma contratos, seguridad de datos o obligaciones regulatorias.",
+            "La especialización en traducción no reemplaza la revisión profesional cuando hay consecuencias legales, médicas o financieras. Los nombres propios, números, negaciones, matices regionales y términos técnicos constituyen fallos de alto impacto. Un equipo responsable debe comprobar si el modelo preserva contenido y formato, maneja texto con tablas y distingue traducción fiel de una paráfrasis más natural."
+          ]
+        },
+        {
+          "heading": "Cómo medirlo antes de adoptarlo",
+          "kind": "practical",
+          "paragraphs": [
+            "La primera prueba debería reunir documentos representativos, con parejas de idiomas concretas y referencias revisadas por especialistas. Conviene incluir tablas, abreviaturas, marcas, cifras, nombres propios y terminología repetida. En lugar de preguntar si una frase suena correcta, hay que evaluar omisiones, alteraciones de números, consistencia y esfuerzo humano de corrección. Los resultados deberían analizarse por idioma y tipo de documento, no solo mediante un promedio agregado.",
+            "La decisión entre API y despliegue propio exige estimar volúmenes, latencia, límites de cuota, coste de aceleradores, almacenamiento, disponibilidad y soporte. La API aparece como gratuita hasta su límite de uso en la documentación consultada, pero esto no implica capacidad ilimitada ni un precio empresarial permanente. La opción con pesos tampoco significa un producto comercial libre de licencia."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: modelos especializados y soberanía verificable",
+          "kind": "analysis",
+          "paragraphs": [
+            "Este lanzamiento muestra una dirección de la carrera de la IA que suele quedar eclipsada por los asistentes generalistas: herramientas que resuelven una tarea bien delimitada, ofrecen más control sobre su integración y permiten comparar el coste de operar una capacidad concreta. Traducir a gran escala parece simple hasta que intervienen decenas de idiomas, terminología sectorial, requisitos de privacidad y márgenes de error estrechos.",
+            "Para Gazette, lo importante no es repetir que un modelo obtuvo la mejor nota anunciada por su proveedor, sino documentar sus condiciones reales. Hay una diferencia sustancial entre probar traducción con una clave gratuita, descargar un checkpoint para investigación no comercial y desplegarlo en una empresa. El impacto futuro dependerá de licencias comerciales, comparaciones replicadas y precisión medida por usuarios en textos reales."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Arquitectura",
+          "value": "MoE, 218B parámetros totales / 25B activos"
+        },
+        {
+          "label": "Ventana",
+          "value": "16.000 tokens de contexto",
+          "note": "Ficha oficial."
+        },
+        {
+          "label": "Model ID",
+          "value": "north-small-translate-1-0"
+        },
+        {
+          "label": "Formatos",
+          "value": "W4A16/NVFP4, FP8, BF16"
+        },
+        {
+          "label": "Hardware W4A16",
+          "value": "Dos H100 o una B200",
+          "note": "Recomendación de Cohere; no garantía universal."
+        },
+        {
+          "label": "Hardware FP8",
+          "value": "Cuatro H100 o dos B200",
+          "note": "Recomendación de Cohere."
+        },
+        {
+          "label": "Licencia de pesos",
+          "value": "CC BY-NC 4.0, uso no comercial"
+        }
+      ],
+      "availability": {
+        "status": "API Chat V2 y pesos disponibles según Cohere",
+        "platforms": [
+          "Cohere Chat V2 API",
+          "Hugging Face"
+        ],
+        "regions": [],
+        "requirements": [
+          "Cuenta/clave de Cohere para acceso API",
+          "Cuotas y términos de servicio aplicables",
+          "Uso de pesos conforme a licencia no comercial"
+        ],
+        "notes": [
+          "El acceso gratuito está sujeto a límites de tasa.",
+          "Un uso comercial de los pesos requiere autorización separada."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "API",
+          "value": "Acceso gratuito hasta los límites publicados",
+          "note": "No equivale a disponibilidad ilimitada ni a contrato comercial sin cargo."
+        },
+        {
+          "label": "Pesos",
+          "value": "Disponibles para uso no comercial; infraestructura a cargo del operador",
+          "note": "CC BY-NC 4.0 y políticas de uso de Cohere Labs."
+        }
+      ],
+      "limitations": [
+        "Licencia no comercial en los pesos descargables.",
+        "Evaluaciones de calidad divulgadas por el proveedor, no certificadas independientemente.",
+        "La calidad puede variar entre idiomas y tipos de documento.",
+        "Contexto y recursos de hardware limitan despliegues privados.",
+        "La API de prueba puede imponer límites de uso."
+      ],
+      "practicalAdvice": [
+        "Construir un corpus de prueba en los pares de idiomas realmente usados.",
+        "Revisar números, negaciones y terminología especializada.",
+        "Distinguir la licencia de pesos de las condiciones de la API.",
+        "Estimar memoria, lotes y coste operativo por formato de pesos."
+      ],
+      "usefulFacts": [
+        "Los pesos están disponibles en tres precisiones, con recomendaciones de H100 y B200.",
+        "La documentación explica diferencias entre usar modelo directamente y usar una plataforma de localización.",
+        "El proveedor publicó su artículo de blog un día después de las notas de lanzamiento."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Changelog oficial anuncia y ofrece North Small Translate."
+        },
+        {
+          "date": "2026-09-10",
+          "label": "Artículo técnico ampliado de Cohere sobre el modelo."
+        }
+      ],
+      "analysis": "Gazette analiza esta publicación como competencia en traducción especializada y soberanía de datos. No presentar pesos no comerciales como libertad para uso empresarial ni cifras de proveedor como benchmark independiente.",
+      "watch": "Nuevas condiciones de uso comercial, pruebas de terceros, traducción de variantes regionales y estabilidad del servicio API.",
+      "finalSummary": "North Small Translate apareció oficialmente el 9 de septiembre con un gran MoE diseñado para traducir y varias opciones de despliegue. La disponibilidad y la licencia varían significativamente entre API y pesos; la elección práctica requiere pruebas propias."
     },
     {
       "id": "openai-chatgpt-images-2-5-2026-09-08",
@@ -6829,12 +7264,12 @@
     {
       "date": "2026-09-09",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-09-10",
       "status": "partial",
-      "verifiedArticles": 5
+      "verifiedArticles": 6
     },
     {
       "date": "2026-09-11",

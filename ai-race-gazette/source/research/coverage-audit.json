@@ -191,11 +191,12 @@
     {
       "date": "2026-09-09",
       "archiveStatus": "partial",
-      "verifiedArticles": 1,
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "mistral-news",
-        "google-ai-cloud"
+        "google-ai-cloud",
+        "cohere-blog"
       ],
       "reviewedCategories": [
         "agents",
@@ -205,19 +206,19 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": 3,
-        "published": 1,
+        "published": 2,
         "discarded": 1,
         "unresolved": 1
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Primera revisión Mistral y Google: caso Fortran publicado, Google AI plans aún en cola. Comunicado Gartner descartado como titular independiente por falta de nueva capacidad material. Falta DeepMind y pasada inversa."
+      "notes": "Primera revisión Mistral y Google: caso Fortran publicado, Google AI plans aún en cola. Comunicado Gartner descartado como titular independiente por falta de nueva capacidad material. Falta DeepMind y pasada inversa. Cohere North Small Translate fecha primaria de changelog 9 Sep, blog ampliado 10 Sep; dato no duplicado. Cobertura sigue partial por fuentes y segunda pasada."
     },
     {
       "date": "2026-09-10",
       "archiveStatus": "partial",
-      "verifiedArticles": 5,
+      "verifiedArticles": 6,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "openai-research",
@@ -233,15 +234,15 @@
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": null,
-        "published": 5,
+        "found": 6,
+        "published": 6,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Gemini Windows, GPT‑Live‑1 y alianza Cloudera publicados. Jornada parcial a falta de auditoría inversa y fuentes restantes. Agents API del 10 Sep publicada con fuente primaria; cierre diario sigue partial por falta de segunda pasada. NASA-IBM Lunar Foundation Model publicado: apertura 10 Sep; paper 8 Sep. Jornada sigue partial."
+      "notes": "Gemini Windows, GPT‑Live‑1 y alianza Cloudera publicados. Jornada parcial a falta de auditoría inversa y fuentes restantes. Agents API del 10 Sep publicada con fuente primaria; cierre diario sigue partial por falta de segunda pasada. NASA-IBM Lunar Foundation Model publicado: apertura 10 Sep; paper 8 Sep. Jornada sigue partial. Cognition SWE-2 anunciado 10 Sep para Devin Desktop/CLI; resultados de fabricante atribuidos. Cobertura sigue partial por fuentes y segunda pasada."
     },
     {
       "date": "2026-09-11",
