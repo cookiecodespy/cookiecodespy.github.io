@@ -114,3 +114,14 @@ El helper valida firma WebP, conserva id/eventKey, copia el binario a `source/pu
 La primera prueba de generación visual se mantuvo fuera del sitio porque no alcanzó el brief story-specific. Eso se considera un resultado correcto del QA: Visual Desk debe rechazar arte atractivo pero editorialmente equivocado en vez de publicarlo por cumplir una cuota.
 
 El siguiente gate es publicar una primera ilustración específica que sí pase QA de contenido, crop, créditos y estilo.
+
+
+## Cierre E2E del 8 de octubre de 2026
+
+- Primer archivo story-specific publicado: `source/public/assets/news/2026-10-07/claude-haiku-5-5.webp`.
+- Arte: grabado vectorial editorial conceptual original; no imagen oficial, captura real ni representación de instalaciones de Anthropic.
+- Artículo, manifest y queue ahora están sincronizados con 52 noticias, cinco assets y una historia con `imageStatus: specific`.
+- Se corrigieron los validadores para Reporter V2 (`sections[]` desarrolladas aunque `body[]` legacy tenga un solo párrafo) y para el crecimiento legítimo de jornadas `partial` mientras el Research Desk conserva una instantánea histórica.
+- Se corrigió GitHub Actions: primero `git add -A`, después `git diff --cached`, para no ignorar los WebP nuevos que eran archivos sin seguimiento.
+- Pipeline Build AI Race Gazette: SUCCESS; Pages deployment del commit compilado: SUCCESS; HTTP del WebP público: 200, `image/webp`, 89.248 bytes.
+- QA visual del primer piloto: cumple la identidad conceptual y evita falsas fotografías/logos, pero su estética vectorial es relativamente sencilla; el próximo lote debe aspirar a grabados más detallados. Este hito cierra la **integración E2E**, no la deuda de arte premium.
