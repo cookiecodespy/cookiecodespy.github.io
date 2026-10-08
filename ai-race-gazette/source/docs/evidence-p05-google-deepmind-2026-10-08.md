@@ -29,3 +29,13 @@
 ## Próximo gate
 
 Ampliar el barrido del source registry a Anthropic, Meta, Microsoft, NVIDIA, Mistral, AWS y startups; revisar por categorías `models`, `agents`, `voice-audio`, `robotics-autonomy`, `chips-accelerators`, `open-source`, `research`; resolver candidatos; documentar segunda pasada inversa. **No cambiar** `openDiscoveryPerformed`, `reversePassPerformed`, `auditMode` ni `status` a complete con esta nota.
+
+## 12 septiembre — candidata original de gobernanza AI
+
+**Fuente original del autor:** https://darioamodei.com/post/we-must-pace-the-frontier . El sitio personal registra septiembre de 2026; las crónicas originales confirman el **12 de septiembre**: https://www.theguardian.com/technology/2026/sep/12/we-must-slow-the-pace-ceo-of-anthropic-calls-for-an-ai-slowdown y https://www.reuters.com/business/anthropic-ceo-urges-ai-companies-slow-model-development-2026-09-12/ .
+
+Dario Amodei, CEO de Anthropic, publicó una propuesta para adaptar el ritmo de desarrollo de sistemas avanzados a la capacidad de evaluarlos, con tres pilares: supervisores externos continuos (compromiso unilateral declarado para Anthropic), coordinación voluntaria entre laboratorios y cooperación internacional. **No** confundir una propuesta con normas vigentes, compromisos del resto de empresas ni una supervisión ya implementada el 12.
+
+**Seguimiento de implementación:** https://www.anthropic.com/news/accenture-embedded-evaluation , fecha 18 Sep, hecho posterior e independiente. **Riesgos descritos en el ensayo:** opiniones y escenarios atribuidos al autor; sin convertir proyecciones en acontecimientos confirmados.
+
+**Estado:** noticia original material del 12 Sep, sujeto a Reporter V2, QA y sincronización de calendarios. No cerrar 12 ni 13 con la primera fuente validada: continúan pendientes de revisión transversal y segunda pasada.
