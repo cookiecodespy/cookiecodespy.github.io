@@ -46,6 +46,11 @@ def validate(news_text,mirror_text,rss_text,rss_mirror,history_text):
     rss_urls=[i.findtext('link') for i in items]
     assert len(set(rss_urls))==len(rss_urls), 'RSS duplicate links'
     assert set(rss_urls)==urls, 'RSS missing or unknown article links'
+    expected_urls=[
+        f'https://cookiecodespy.github.io/ai-race-gazette/#articulo/{a["id"]}'
+        for a in sorted(articles,key=lambda a:(a['date'],a['id']),reverse=True)
+    ]
+    assert rss_urls==expected_urls, 'RSS items not in reverse chronological order'
     articles_by_url={
         f'https://cookiecodespy.github.io/ai-race-gazette/#articulo/{article["id"]}':article
         for article in articles

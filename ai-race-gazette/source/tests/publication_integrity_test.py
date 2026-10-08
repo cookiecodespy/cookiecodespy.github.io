@@ -27,6 +27,19 @@ class PublicationIntegrityTests(unittest.TestCase):
         tree.find('./channel/item/description').text='Stale cached summary'
         with self.assertRaisesRegex(AssertionError,'Stale RSS summary'):
             self.check(ET.tostring(tree,encoding='unicode'))
+    def test_rss_requires_reverse_chronological_order(self):
+        tree=ET.fromstring(self.rss)
+        channel=tree.find('./channel')
+        items=channel.findall('item')
+        self.assertGreater(len(items),2)
+        first,last=items[0],items[-1]
+        ix,iy=list(channel).index(first),list(channel).index(last)
+        channel.remove(first)
+        channel.remove(last)
+        channel.insert(ix,last)
+        channel.insert(iy,first)
+        with self.assertRaisesRegex(AssertionError,'RSS items not in reverse chronological order'):
+            self.check(ET.tostring(tree,encoding='unicode'))
     def test_rss_date_must_match_article(self):
         tree=ET.fromstring(self.rss)
         tree.find('./channel/item/pubDate').text='Wed, 01 Jan 2020 12:00:00 +0000'
