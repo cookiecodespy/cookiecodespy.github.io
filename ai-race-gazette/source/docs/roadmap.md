@@ -5,6 +5,7 @@ Fecha de corte: 2026-10-07.
 ## Estado general
 
 ### Terminado
+- Publicador E2E de arte específico: helper transaccional, runbook, tests y CI para llevar un WebP aprobado a source/public + manifest + mirrors + queue.
 - Visual Desk v1: manifest de assets, cola por artículo, prioridades P0–P3, refresco, validación CI y auditoría inicial.
 - Primer lote Visual Desk art-directed: 12 briefs visuales específicos listos para producción.
 - Calendario mensual auditable en la web, incluyendo días sin artículos y navegación a ediciones vacías/pending.
@@ -36,6 +37,7 @@ Fecha de corte: 2026-10-07.
 - Algunas fechas de la maqueta antigua solo son pistas de investigación y no pueden publicarse sin volver a verificarlas.
 
 ### Falta
+- Completar la primera publicación binaria real con un arte story-specific aprobado por QA; los primeros intentos de generación que no cumplen el brief deben rechazarse, no publicarse.
 - Producir primer lote visual específico y reducir la reutilización de `hero.webp` (34 usos en la auditoría inicial).
 - Reauditar 1–7 Sep con el checklist Research Backbone v1 durante la pasada inversa final (sin degradar su cierre legacy).
 - Completar la cobertura real y verificable del 8–30 de septiembre de 2026.
