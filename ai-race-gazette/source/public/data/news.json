@@ -1,8 +1,164 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T08:22:28.856Z",
+  "updatedAt": "2026-10-08T09:22:00.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "manus-butterfly-effect-funding-2026",
+      "eventKey": "manus-butterfly-effect-over-500m-funding-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Manus",
+      "product": "Manus / Butterfly Effect",
+      "title": "Manus obtiene más de US$500 millones tras recuperar su independencia de Meta",
+      "summary": "Butterfly Effect anunció una ronda superior a US$500 millones liderada por Boyu Capital e IDG Capital. El financiamiento llega después de la reversión de la adquisición de Manus por Meta; no se informó una valoración nueva verificable.",
+      "tags": [
+        "Financiación",
+        "Agentes",
+        "Startups",
+        "Empresas"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de sistemas de inteligencia artificial; no es una fotografía del anuncio",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración horizontal 3:2, grabado de periódico sepia: mariposa mecánica que sale de una estructura corporativa y se dirige a un taller de agentes autónomos, documentos de inversión sin cifras dibujadas. No logotipos inventados, no fotografía simulada.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Reuters · Manus raises more than $500 million after Meta exit",
+        "url": "https://www.reuters.com/world/china/manus-raises-more-than-500-million-after-meta-exit-2026-10-08/",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Manus · Manus Resumes Independent Operations",
+          "url": "https://manus.im/blog/manus-resumes-independent-operations",
+          "publishedAt": "2026-09-01"
+        },
+        {
+          "name": "Manus · A Note to Our Users",
+          "url": "https://manus.im/blog/a-note-to-our-users",
+          "publishedAt": "2026-08-11"
+        },
+        {
+          "name": "Manus · Introducing Manus 2.0",
+          "url": "https://manus.im/blog/introducing-manus-2-0",
+          "publishedAt": "2026-09-28"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, Reuters informó que Butterfly Effect, matriz del agente de inteligencia artificial Manus, comunicó el cierre de una ronda de financiación superior a US$500 millones. La operación fue codirigida por Boyu Capital e IDG Capital y contó con Tencent, Sequoia China y ZhenFund, según la información atribuida a la empresa. Es un evento corporativo nuevo: no equivale a la presentación de otro modelo ni a la compra de Manus por un tercero. Llega después de una separación compleja de Meta y devuelve capital de expansión a una compañía que ha retomado su independencia."
+      ],
+      "keyPoints": [
+        "La ronda supera US$500 millones, pero no se publicó un monto exacto ni una valoración confirmada.",
+        "Boyu Capital e IDG Capital codirigieron la operación; participaron inversores existentes.",
+        "El cierre es distinto de la antigua compra por Meta, que fue revertida tras objeciones regulatorias."
+      ],
+      "quickTakeaways": [
+        "La ronda supera US$500 millones, pero no se publicó un monto exacto ni una valoración confirmada.",
+        "Boyu Capital e IDG Capital codirigieron la operación; participaron inversores existentes.",
+        "El cierre es distinto de la antigua compra por Meta, que fue revertida tras objeciones regulatorias."
+      ],
+      "sections": [
+        {
+          "heading": "Qué ocurrió y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio de financiación confirma una vía de crecimiento independiente para Manus. Una ronda de capital aporta recursos a la empresa; no significa que los agentes hayan alcanzado autonomía general ni que sus operaciones actuales sean rentables. La distinción es importante porque las valoraciones de startups, los ingresos recurrentes y la calidad de ejecución de un agente miden cosas distintas. En este caso, el hecho verificado es el cierre de la ronda por más de US$500 millones y la identidad de los inversores señalados en la cobertura de Reuters.",
+            "La compañía desarrolla agentes de propósito general para investigación, automatización y trabajo en varias etapas. En lugar de responder únicamente una pregunta, estos sistemas pueden utilizar herramientas y entornos de ejecución para completar encargos más amplios. Su capacidad práctica depende de permisos, integraciones, límites de gasto y supervisión humana. La nueva financiación podría permitir invertir en esos elementos, pero la empresa no presentó en el anuncio un calendario verificable de productos financiados con la ronda."
+          ]
+        },
+        {
+          "heading": "El antecedente: compra, ruptura y continuidad",
+          "kind": "context",
+          "paragraphs": [
+            "Manus había anunciado su incorporación a Meta en diciembre de 2025. La operación, valorada por Reuters en más de US$2.000 millones, fue revertida después de la intervención de las autoridades chinas en abril de 2026. Manus explicó en agosto que la separación obligaría a determinados usuarios a respaldar y restaurar datos, con una ventana específica de borrado para información generada después de la adquisición en jurisdicciones afectadas. No fue presentada como una filtración de seguridad.",
+            "El 1 de septiembre, Manus publicó su regreso formal a operaciones independientes y afirmó que el equipo fundador continuaría dirigiendo el proyecto. Por eso la financiación del 8 de octubre no debe confundirse con el momento de separación ni fecharse retrospectivamente en agosto o septiembre. Es una nueva etapa de capitalización tras una reestructuración de propiedad y datos. Los detalles jurídicos y geográficos de aquella separación siguen siendo relevantes para clientes que manejan información sensible."
+          ]
+        },
+        {
+          "heading": "Financiación y cifras: qué sabemos y qué no",
+          "kind": "report",
+          "paragraphs": [
+            "Boyu Capital e IDG Capital aparecen como codirectores de la ronda; Tencent, Sequoia China y ZhenFund figuran entre los inversores existentes participantes. Reuters no ofrece una valoración posterior confirmada ni desglosa cuánto aportó cada entidad. Tampoco establece que todo el dinero se haya desembolsado de inmediato o que se destine exclusivamente a infraestructura de cómputo. Presentar cualquiera de esas hipótesis como un hecho convertiría una noticia de financiación en una proyección sin base.",
+            "Reuters menciona, atribuyéndolo a un reporte anterior de The Information, que la tasa de ingresos anualizada de Manus habría aumentado hasta aproximadamente US$500 millones. Esa cifra es un reporte secundario sobre ritmo anualizado, no ingresos anuales auditados ni beneficio. Debe leerse con cautela y por separado de los US$500 millones captados: son métricas de naturaleza completamente distinta aunque sus magnitudes se parezcan."
+          ]
+        },
+        {
+          "heading": "Qué cambia para clientes, desarrolladores y competidores",
+          "kind": "competition",
+          "paragraphs": [
+            "El mercado de agentes incluye asistentes cerrados, herramientas de automatización empresarial y sistemas abiertos que los desarrolladores pueden alojar por su cuenta. Manus compite en la capacidad de ejecutar tareas completas y ofrecer entornos donde esas tareas puedan desarrollarse. El capital adicional puede fortalecer producto, soporte y distribución, pero no demuestra por sí solo superioridad técnica sobre alternativas como OpenClaw, Hermes o plataformas corporativas. Para evaluarlas conviene usar tareas equivalentes y observar resultados, costes y fallos.",
+            "Para una empresa usuaria, la pregunta inmediata no es quién levantó más dinero, sino si el proveedor garantiza continuidad del servicio, control de datos y trazabilidad de acciones. La separación de Meta convierte esas preguntas en requisitos concretos de compra. Los desarrolladores deberían verificar qué conectores están disponibles, cómo se autorizan acciones de riesgo, qué registros quedan de cada ejecución y si existen mecanismos de recuperación cuando una tarea falla o se interrumpe."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, precios y evaluación práctica",
+          "kind": "practical",
+          "paragraphs": [
+            "La ronda no crea un plan de suscripción nuevo ni modifica automáticamente las tarifas existentes de Manus. Los precios, créditos y límites de cada producto deben consultarse en la oferta vigente, porque Reuters no anunció cambios comerciales ligados a la financiación. El anuncio tampoco identifica restricciones regionales nuevas. Manus sigue describiéndose como un servicio de agentes de uso general, pero la disponibilidad de funciones particulares varía con el producto y la cuenta.",
+            "Antes de delegar tareas empresariales, es recomendable ensayar con información no sensible, establecer un presupuesto por ejecución y comprobar cómo se recuperan documentos y resultados. Si una organización utilizó Manus durante la transición de propiedad, debería confirmar que completó cualquier restauración de datos requerida. La promesa de autonomía solo tiene valor operacional cuando el usuario entiende qué hizo el agente, qué permisos utilizó y qué resultado verificable produjo."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos hitos",
+          "kind": "analysis",
+          "paragraphs": [
+            "La historia refleja una segunda carrera dentro de la IA: además de competir por modelos, las compañías de agentes necesitan capital, confianza contractual y una infraestructura capaz de ejecutar trabajo real. El hecho de que Manus vuelva a captar una ronda grande después de una operación corporativa fallida es material para ese mercado. Sin embargo, una ronda exitosa no resuelve automáticamente el riesgo regulatorio ni demuestra adopción sostenible.",
+            "Lo que conviene seguir es la publicación de una valoración verificable, nuevas condiciones de producto, métricas auditadas de adopción y detalles de cómo se gobiernan los agentes. También será relevante comprobar si aparecen restricciones de acceso por jurisdicción o cambios de tratamiento de datos. Por ahora, el evento confirmado es financiero y corporativo, no un nuevo benchmark técnico."
+          ]
+        }
+      ],
+      "executiveSummary": "Manus aseguró más de US$500 millones en una ronda anunciada el 8 de octubre, después de regresar a operaciones independientes tras la reversión de su compra por Meta. Reuters identifica a Boyu Capital e IDG Capital como codirectores. No hay una valoración posterior confirmada ni un precio nuevo para el servicio.",
+      "finalSummary": "La nueva financiación fortalece la posición de Manus en el mercado de agentes autónomos, pero la evolución real se medirá por fiabilidad, controles de datos y resultados comerciales verificables. La ronda es un hecho; las expectativas de producto y de ingresos futuros siguen siendo hipótesis.",
+      "analysis": "Análisis Gazette: la independencia y la financiación reducen incertidumbre de capital, pero no reemplazan auditorías de fiabilidad y gobernanza.",
+      "watch": "Valoración de la ronda, planes de expansión concretos, cambios de tarifas, condiciones regionales y métricas de uso verificadas.",
+      "technicalDetails": [
+        {
+          "label": "Ronda",
+          "value": "Más de US$500 millones",
+          "note": "Monto anunciado, sin cifra exacta divulgada"
+        },
+        {
+          "label": "Líderes",
+          "value": "Boyu Capital e IDG Capital"
+        },
+        {
+          "label": "Situación",
+          "value": "Operaciones independientes tras separación de Meta"
+        }
+      ],
+      "availability": {
+        "status": "Manus sigue operando; la ronda no constituye un nuevo lanzamiento de software",
+        "platforms": [
+          "Servicio Manus"
+        ],
+        "regions": [
+          "No se anunciaron regiones nuevas en la ronda"
+        ],
+        "notes": [
+          "No se comunicó una tarifa nueva ni valoración confirmada"
+        ]
+      },
+      "limitations": [
+        "Valoración y desembolso exacto no publicados.",
+        "Ingresos anualizados citados por Reuters proceden de un reporte anterior y no equivalen a resultados auditados.",
+        "No hay calendario de nuevos productos ligado explícitamente a la ronda."
+      ],
+      "practicalAdvice": [
+        "Verificar términos de tratamiento de datos y continuidad del servicio antes de desplegar agentes con información empresarial.",
+        "Distinguir gasto en suscripciones de financiación recibida por el proveedor.",
+        "Evaluar agentes con tareas repetibles y revisión humana de resultados."
+      ],
+      "usefulFacts": [
+        "Manus comunicó su independencia el 1 de septiembre de 2026.",
+        "La financiación se anunció el 8 de octubre de 2026.",
+        "El monto captado y los ingresos anualizados reportados son magnitudes distintas."
+      ]
+    },
     {
       "id": "microsoft-execution-containers-ga",
       "eventKey": "microsoft-execution-containers-ga-2026-10-07",
@@ -1331,6 +1487,487 @@
         }
       ],
       "visualAssetId": "story-claude-haiku-5-5-engraving-v1"
+    },
+    {
+      "id": "nous-hermes-series-b-business-2026",
+      "eventKey": "nous-research-hermes-series-b-business-2026-10-07",
+      "articleVersion": 2,
+      "date": "2026-10-07",
+      "announcedAt": "2026-10-07",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Nous Research",
+      "product": "Hermes Agent / Hermes for Businesses",
+      "title": "Nous Research recauda US$90 millones y prepara Hermes para empresas",
+      "summary": "Nous Research confirma US$90 millones de financiación y una valoración reportada de US$1.500 millones. La firma plantea llevar Hermes Agent al uso empresarial con control de modelos, memoria y despliegues propios; muchas promesas comerciales aún deben materializarse.",
+      "tags": [
+        "Financiación",
+        "Agentes",
+        "Open source",
+        "Empresas"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de sistemas de inteligencia artificial; no es una fotografía del anuncio",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado horizontal 3:2 de imprenta antigua: un taller de agentes mecánicos conectados a una biblioteca de conocimiento corporativo, cada uno con una llave propia y herramientas; tinta sepia. Evitar pantallas ficticias, logos y fotografías simuladas.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Nous Research · A Note on Our Fundraise",
+        "url": "https://nousresearch.com/a-note-on-our-fundraise",
+        "publishedAt": "2026-10-07"
+      },
+      "relatedSources": [
+        {
+          "name": "TechCrunch · Nous Research confirms valuation and business agents",
+          "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Wall Street Journal · Maker of Hermes secures $90 million",
+          "url": "https://www.wsj.com/pro/venture-capital/maker-of-open-source-ai-assistant-hermes-secures-90-million-a061c1d7",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Nous Research · Hermes Agent",
+          "url": "https://hermes-agent.nousresearch.com/"
+        }
+      ],
+      "body": [
+        "El 7 de octubre de 2026, Nous Research confirmó una financiación de US$90 millones y expuso su intención de llevar Hermes Agent a organizaciones mediante Hermes for Businesses. La noticia une un hecho financiero verificable con una dirección de producto: la empresa quiere que las compañías controlen sus agentes, sus modelos y el conocimiento que acumulan. No debe confundirse una ronda completada con la disponibilidad general de todas las funciones empresariales descritas en el comunicado."
+      ],
+      "keyPoints": [
+        "Nous Research confirmó una ronda de US$90 millones; medios reputados sitúan la valoración en US$1.500 millones.",
+        "Hermes Agent es software abierto con licencia MIT; la oferta empresarial se presenta como una expansión en construcción.",
+        "Las cifras de 24 millones de clonaciones y 2,5% del tráfico mundial de tokens son estimaciones internas de Nous."
+      ],
+      "quickTakeaways": [
+        "Nous Research confirmó una ronda de US$90 millones; medios reputados sitúan la valoración en US$1.500 millones.",
+        "Hermes Agent es software abierto con licencia MIT; la oferta empresarial se presenta como una expansión en construcción.",
+        "Las cifras de 24 millones de clonaciones y 2,5% del tráfico mundial de tokens son estimaciones internas de Nous."
+      ],
+      "sections": [
+        {
+          "heading": "Qué anunció Nous Research",
+          "kind": "report",
+          "paragraphs": [
+            "La compañía presentó la ronda como financiación para expandir una alternativa abierta a los asistentes y agentes de proveedores cerrados. En su comunicación oficial menciona a NVIDIA, M12 de Microsoft, Samsung, Robot Ventures, Union Square Ventures, Y Combinator y Menlo Ventures, entre otros participantes. TechCrunch y The Wall Street Journal informan una valoración de US$1.500 millones; el texto oficial consultado confirma el importe captado, pero no ofrece por sí solo esa valoración.",
+            "La tesis de producto es que una empresa debería poder elegir dónde se ejecuta el agente, qué modelo usa y qué memoria conserva. Es una propuesta relevante porque los asistentes empresariales no solo contestan consultas: pueden conectarse a herramientas, producir archivos y operar sobre procesos. Esas acciones requieren permisos y supervisión. El anuncio de financiación no certifica que cada empresa pueda activar hoy todas las capacidades previstas para Hermes for Businesses."
+          ]
+        },
+        {
+          "heading": "Cómo funciona la propuesta abierta",
+          "kind": "technical",
+          "paragraphs": [
+            "Hermes Agent es el sistema de agentes desarrollado por Nous Research. Según la empresa, recuerda proyectos, crea habilidades reutilizables y transporta ese conocimiento entre sesiones. Puede funcionar con diferentes modelos y entornos, lo que evita que el diseño del agente dependa necesariamente de un único proveedor de inferencia. Nous afirma haber liberado Hermes Agent con licencia MIT en febrero de 2026, lo que permite examinar el código y adaptarlo sujeto a sus términos.",
+            "La memoria persistente y las habilidades son importantes para tareas recurrentes: un agente que trabaja en un repositorio o flujo empresarial puede reutilizar procedimientos, siempre que estos se mantengan correctos y autorizados. Pero memoria no significa conocimiento infalible. Los documentos pueden cambiar, los permisos pueden caducar y una habilidad puede ejecutar acciones indebidas si se acepta sin revisión. La observabilidad, la trazabilidad y los límites de acceso deben acompañar cualquier automatización empresarial."
+          ]
+        },
+        {
+          "heading": "Qué significa Hermes for Businesses",
+          "kind": "report",
+          "paragraphs": [
+            "Nous describe una oferta para organizaciones que aspira a combinar control sobre el stack de inteligencia, selección de modelos según coste y capacidad, y uso privado de información institucional. La empresa plantea que los trabajadores contribuyan a construir un repositorio de conocimiento desde sus tareas. Son objetivos y promesas del proveedor; el comunicado no presenta una matriz exhaustiva de funcionalidades generalmente disponibles, acuerdos de nivel de servicio, regiones de alojamiento ni tarifas empresariales públicas comparables.",
+            "Para los equipos de TI, una oferta de este tipo deberá resolver identidad de usuarios, segregación de permisos, auditoría de acciones, retención de memoria y recuperación de fallos. Para desarrolladores, la apertura del agente permite inspeccionar extensiones y experimentar con modelos distintos. Para compradores, esa libertad puede reducir dependencia contractual, aunque también traslada responsabilidad de integración, seguridad y mantenimiento al cliente o al operador que aloja el sistema."
+          ]
+        },
+        {
+          "heading": "Cifras, adopción y atribución",
+          "kind": "context",
+          "paragraphs": [
+            "Nous afirma que Hermes Agent ha sido clonado más de 24 millones de veces y estima que representa aproximadamente 2,5% del uso global de tokens de IA. Son métricas internas declaradas por la empresa, no mediciones independientes auditadas. Una clonación de repositorio o descarga no equivale necesariamente a un usuario activo, a un despliegue productivo ni a ingresos. La empresa también presenta su trabajo previo en ajuste fino y ampliación de contexto como antecedentes de la estrategia de agentes.",
+            "TechCrunch informa que la ronda eleva la financiación acumulada de Nous a US$158 millones. La cifra de valoración procede de la cobertura financiera, no de un precio de mercado líquido. Ninguna de estas métricas mide por sí sola si Hermes completa tareas mejor que otros agentes. Una comparación técnica responsable exigiría conjuntos de tareas, presupuestos y condiciones de seguridad iguales para todos los participantes."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, precio y competencia",
+          "kind": "competition",
+          "paragraphs": [
+            "Hermes Agent mantiene su naturaleza abierta, y el sitio de Nous ofrece acceso a productos y opciones alojadas. No se debe inferir que la ronda de financiación convierte automáticamente todas las funciones empresariales en un servicio disponible sin lista de espera o contrato. La empresa no publica en el anuncio una tarifa universal para Hermes for Businesses. Los precios de inferencia dependerán además del modelo y del proveedor elegido, del volumen de tokens y de la infraestructura usada.",
+            "La competencia incluye agentes alojados en la nube, asistentes integrados en sistemas empresariales y proyectos abiertos que los equipos pueden operar en sus propios servidores. La diferencia buscada por Nous está en la portabilidad y en el control del sistema de agentes, no en anunciar un nuevo modelo frontier en esta fecha. La capacidad de exportar conocimiento, inspeccionar herramientas y cambiar modelos es valiosa solo si el producto ofrece interfaces claras y pruebas de compatibilidad reales."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: apertura con responsabilidad",
+          "kind": "analysis",
+          "paragraphs": [
+            "La financiación convierte a Nous en un actor material de la carrera por la capa de agentes. Mientras los laboratorios compiten por capacidad de modelos, Hermes apuesta por el software que organiza tareas, memoria y herramientas. El enfoque puede resultar atractivo a organizaciones preocupadas por dependencia de proveedores. Sin embargo, un agente abierto no es automáticamente seguro: el código inspeccionable facilita auditorías, pero también exige configuración, actualización y gobierno continuo.",
+            "Una adopción responsable comienza con una tarea acotada, permisos mínimos y registro comprensible de resultados. Antes de dar acceso a correo, repositorios o documentos, conviene comprobar quién puede leer la memoria y cómo se revocan credenciales. Las próximas señales relevantes serán una documentación empresarial completa, contratos y precios públicos, pruebas independientes de fiabilidad y casos verificables de despliegue en producción."
+          ]
+        }
+      ],
+      "executiveSummary": "Nous Research anunció US$90 millones para expandir Hermes Agent hacia empresas. La valoración de US$1.500 millones procede de cobertura financiera; la compañía afirma una adopción muy amplia, pero sus métricas son estimaciones internas. Hermes for Businesses representa una dirección comercial cuya disponibilidad y precio deben verificarse por separado.",
+      "finalSummary": "El hecho nuevo es doble: capital para Nous y una apuesta explícita por agentes empresariales controlables y abiertos. La promesa de autonomía corporativa todavía debe traducirse en funciones, garantías y experiencias auditables para clientes reales.",
+      "analysis": "Análisis Gazette: el control del agente y de su memoria se perfila como un terreno competitivo distinto del rendimiento bruto de los modelos.",
+      "watch": "Disponibilidad efectiva de Hermes for Businesses, tarifas, regiones, auditorías de seguridad y métricas independientes de adopción.",
+      "technicalDetails": [
+        {
+          "label": "Financiación",
+          "value": "US$90 millones",
+          "note": "Confirmación oficial de Nous Research"
+        },
+        {
+          "label": "Valoración",
+          "value": "US$1.500 millones",
+          "note": "Reportada por WSJ y TechCrunch"
+        },
+        {
+          "label": "Licencia de Hermes Agent",
+          "value": "MIT",
+          "note": "Declarada por Nous Research"
+        }
+      ],
+      "availability": {
+        "status": "Hermes Agent abierto; oferta Hermes for Businesses anunciada en expansión",
+        "platforms": [
+          "Hermes Agent",
+          "Portal de Nous"
+        ],
+        "regions": [
+          "No se especifica cobertura empresarial completa por región"
+        ],
+        "notes": [
+          "Precio empresarial universal no publicado en el anuncio"
+        ]
+      },
+      "limitations": [
+        "No se confirmó una matriz completa de funciones empresariales ya disponibles.",
+        "Las cifras de clonaciones y tokens son estimaciones de Nous.",
+        "La valoración procede de cobertura financiera y no de una transacción pública de acciones."
+      ],
+      "practicalAdvice": [
+        "Verificar licencias y costes de cada modelo que se conecte a Hermes.",
+        "Auditar memoria, credenciales y permisos antes de desplegar agentes empresariales.",
+        "Separar disponibilidad del agente abierto de la oferta comercial para empresas."
+      ],
+      "usefulFacts": [
+        "Nous afirma que Hermes Agent se liberó bajo licencia MIT en febrero de 2026.",
+        "Nous cita a NVIDIA, M12, Samsung y varios fondos como inversores.",
+        "La compañía nació en 2023, según su comunicado."
+      ]
+    },
+    {
+      "id": "microsoft-windows-hybrid-local-coding-2026",
+      "eventKey": "microsoft-windows-mai-code-local-hydrafusion-2026-10-07",
+      "articleVersion": 2,
+      "date": "2026-10-07",
+      "announcedAt": "2026-10-07",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Microsoft",
+      "product": "Windows Hybrid Intelligence / MAI Code 1.1 Flash / GitHub HydraFusion",
+      "title": "Windows prepara código con IA local: MAI Code 1.1 Flash y rutas híbridas con HydraFusion",
+      "summary": "Microsoft anuncia una versión local cuantizada de MAI Code 1.1 Flash y enrutamiento híbrido de GitHub HydraFusion para usar modelos en el PC o en la nube. La integración con Copilot y VS Code llegará como preview experimental más adelante en octubre.",
+      "tags": [
+        "Modelos",
+        "Desarrollo",
+        "Agentes",
+        "Infraestructura"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de sistemas de inteligencia artificial; no es una fotografía del anuncio",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado horizontal 3:2 de un ordenador de sobremesa y una nube conectados por un conmutador ferroviario de tinta sepia; líneas de código abstractas, sin texto incrustado, logotipos falsos ni interfaz simulada.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Microsoft · Building Windows for hybrid intelligence",
+        "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+        "publishedAt": "2026-10-07"
+      },
+      "relatedSources": [
+        {
+          "name": "Microsoft · AI development on Windows",
+          "url": "https://devblogs.microsoft.com/"
+        },
+        {
+          "name": "Reuters · Microsoft brings more AI to PCs",
+          "url": "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/",
+          "publishedAt": "2026-10-07"
+        }
+      ],
+      "body": [
+        "Microsoft presentó el 7 de octubre de 2026 una ampliación de su estrategia de inteligencia híbrida en Windows: ejecutar parte del trabajo de IA en el propio ordenador y enviar otras tareas a la nube. Entre los anuncios diferenciados figuran una versión local de MAI Code 1.1 Flash y una extensión de GitHub HydraFusion que podrá elegir modelos locales para tareas de programación. Esta noticia se refiere al software de modelos y enrutamiento; es distinta de Microsoft Execution Containers, que se ocupa de los permisos, y de los equipos RTX Spark, que proporcionan el hardware."
+      ],
+      "keyPoints": [
+        "MAI Code 1.1 Flash tiene 137.000 millones de parámetros totales y 6.800 millones activos, según Microsoft.",
+        "Microsoft anuncia cuantización a 3 bits y contexto local de 256K; no publica una comparación independiente de calidad.",
+        "HydraFusion local llegará a GitHub Copilot, Copilot CLI y VS Code en preview experimental más adelante en octubre."
+      ],
+      "quickTakeaways": [
+        "MAI Code 1.1 Flash tiene 137.000 millones de parámetros totales y 6.800 millones activos, según Microsoft.",
+        "Microsoft anuncia cuantización a 3 bits y contexto local de 256K; no publica una comparación independiente de calidad.",
+        "HydraFusion local llegará a GitHub Copilot, Copilot CLI y VS Code en preview experimental más adelante en octubre."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció y qué no",
+          "kind": "report",
+          "paragraphs": [
+            "El punto central no es que todo Copilot funcione ya sin internet. Microsoft describe un sistema que selecciona dónde procesar cada tarea, considerando coste, privacidad, recursos del equipo y complejidad. En esa arquitectura, una solicitud simple podría resolverse con un modelo local mientras otra más exigente necesitaría la nube. La compañía habla de disponibilidad futura de varias funciones, por lo que debe distinguirse el anuncio técnico del acceso real para todos los usuarios.",
+            "En su comunicación de Windows, Microsoft separa las capacidades de ejecución de modelos, la orquestación y la contención de agentes. MAI Code 1.1 Flash aporta una opción de modelo especializado en programación. HydraFusion representa el mecanismo de selección. MXC limita lo que un agente puede hacer al ejecutar herramientas. Confundir las tres piezas llevaría a creer que un modelo cuantizado, por sí solo, garantiza seguridad o que instalar un PC nuevo activa automáticamente todas las experiencias prometidas."
+          ]
+        },
+        {
+          "heading": "Detalles de MAI Code 1.1 Flash",
+          "kind": "technical",
+          "paragraphs": [
+            "Microsoft afirma que MAI Code 1.1 Flash dispone de 137.000 millones de parámetros totales y 6.800 millones activos. La diferencia sugiere una arquitectura en la que no todos los parámetros intervienen en cada paso de inferencia. La empresa anuncia una variante a precisión de 3 bits que reduce el tamaño del modelo casi un 80% respecto de su representación de referencia y mantiene una ventana de contexto de 256.000 tokens en la configuración local descrita.",
+            "La cuantización reduce requisitos de memoria y puede permitir ejecutar modelos más grandes en hardware personal, pero no elimina todos los costes. También se necesitan memoria para contexto, ejecución de herramientas y procesos del sistema. Microsoft afirma preservar calidad de programación con la optimización; esa afirmación no equivale a una batería de pruebas independientes ni garantiza idénticos resultados en cualquier equipo. No se publicó un precio separado de la variante local ni una licencia abierta universal para los pesos."
+          ]
+        },
+        {
+          "heading": "Otros modelos y el runtime de Windows",
+          "kind": "technical",
+          "paragraphs": [
+            "Microsoft menciona planes para ejecutar en RTX Spark una variante futura de Nemotron de NVIDIA, con más de 70.000 millones de parámetros y cuantización de 2 bits que utilizaría algo más de 20 GB de memoria, así como DeepSeek V4 Flash de 284.000 millones de parámetros. Es importante no presentar esas cifras como configuraciones listas para descargar por cualquier usuario hoy: algunas se describen expresamente como próximas y dependen de optimizaciones y hardware.",
+            "Windows ML también incorpora soporte anunciado para llama.cpp, un componente utilizado ampliamente para ejecutar modelos abiertos de forma local. Microsoft plantea que Windows ML pueda aprovechar GPU, NPU y CPU. Esto amplía opciones de experimentación para desarrolladores, pero no implica que todos los modelos tengan aceleración equivalente ni que sus licencias permitan los mismos usos. La compatibilidad práctica dependerá del formato del modelo, del backend, de los controladores y de la memoria disponible."
+          ]
+        },
+        {
+          "heading": "HydraFusion: elegir modelo según la tarea",
+          "kind": "report",
+          "paragraphs": [
+            "GitHub HydraFusion ya se utilizaba para enrutar tareas entre modelos en la nube. Microsoft anuncia su extensión a Windows para incluir modelos ejecutados en el dispositivo. La preview experimental está prevista más adelante en octubre de 2026 para GitHub Copilot, GitHub Copilot CLI y Visual Studio Code. La expresión preview es clave: no equivale a disponibilidad general, ni demuestra que todas las solicitudes de esos productos se ejecutarán localmente.",
+            "El valor potencial es operacional. Un desarrollador podría reservar la nube para problemas complejos y usar modelos locales cuando convenga reducir latencia, tráfico de datos o consumo de tokens facturados. Pero el ahorro real depende de la carga de trabajo y del coste del hardware. Ejecutar un modelo local consume electricidad, memoria y tiempo de mantenimiento. Además, enviar una tarea al equipo no asegura privacidad si las herramientas del agente siguen accediendo a servicios externos."
+          ]
+        },
+        {
+          "heading": "Copilot híbrido y límites de disponibilidad",
+          "kind": "context",
+          "paragraphs": [
+            "Microsoft también anticipa que Copilot en equipos Copilot+ podrá utilizar contexto local, realizar acciones con permiso del usuario y combinar modelos locales con modelos remotos. Estas experiencias se desplegarían durante los próximos meses, no necesariamente el día del anuncio. La empresa menciona asimismo un gateway nativo de Windows para facilitar la configuración de OpenClaw en miniordenadores, acompañado de integración con MXC. Son piezas del ecosistema, no evidencia de que todas las instalaciones actuales las tengan activadas.",
+            "Para empresas, el anuncio abre la posibilidad de políticas que determinen qué tareas deben permanecer en el dispositivo y cuáles pueden ir a servicios remotos. Sin embargo, el texto público no define un precio universal ni requisitos mínimos homogéneos para todo el conjunto. Cada aplicación y modelo necesitará su propia comprobación de disponibilidad, consumo y seguridad antes de tomar decisiones de despliegue."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y recomendaciones",
+          "kind": "analysis",
+          "paragraphs": [
+            "La competencia se desplaza desde quién posee el modelo más capaz hacia quién decide inteligentemente qué modelo usar y dónde ejecutarlo. Microsoft dispone de Windows, GitHub, Copilot y alianzas de hardware para unir esas capas. Es una ventaja de distribución, no una prueba automática de que su enrutamiento sea mejor que el de otros sistemas. Una evaluación independiente debería medir calidad, coste total, latencia, exposición de datos y recuperación ante fallos con tareas equivalentes.",
+            "Los desarrolladores interesados deberían preparar un conjunto pequeño de pruebas repetibles: revisión de código, cambios acotados y generación de tests, con resultados esperados. Cuando llegue la preview, conviene comparar ejecución local y remota, verificar el consumo de memoria y confirmar qué datos abandonan el equipo. También será necesario comprobar permisos de herramientas por separado, porque elegir un modelo local no sustituye el aislamiento de ejecución."
+          ]
+        }
+      ],
+      "executiveSummary": "Microsoft anunció el 7 de octubre una versión cuantizada local de MAI Code 1.1 Flash y planes para incorporar modelos del PC al enrutamiento de GitHub HydraFusion. La preview de integración está prevista para más adelante en octubre; las funciones de Copilot híbrido llegarían en los próximos meses. No es una disponibilidad general inmediata de todas las capacidades.",
+      "finalSummary": "El cambio relevante es la integración de inferencia local, selección de modelos y herramientas de programación en Windows. Su impacto dependerá de pruebas reales de coste, calidad y seguridad cuando las previews lleguen a usuarios y desarrolladores.",
+      "analysis": "Análisis Gazette: la capa de orquestación puede importar tanto como el modelo individual; el beneficio solo será demostrable con costes y resultados comparables.",
+      "watch": "Fecha de la preview HydraFusion, hardware mínimo, licencias de pesos, métricas independientes y despliegue de Copilot híbrido.",
+      "technicalDetails": [
+        {
+          "label": "MAI Code 1.1 Flash",
+          "value": "137B parámetros totales / 6,8B activos",
+          "note": "Cifras de Microsoft"
+        },
+        {
+          "label": "Cuantización",
+          "value": "3 bits",
+          "note": "Reducción de tamaño cercana a 80% declarada"
+        },
+        {
+          "label": "Contexto",
+          "value": "256K tokens",
+          "note": "Configuración local anunciada"
+        },
+        {
+          "label": "HydraFusion local",
+          "value": "Preview experimental prevista para octubre de 2026"
+        }
+      ],
+      "availability": {
+        "status": "Capacidades anunciadas; HydraFusion local en preview experimental futura",
+        "platforms": [
+          "Windows",
+          "GitHub Copilot",
+          "GitHub Copilot CLI",
+          "Visual Studio Code"
+        ],
+        "regions": [
+          "Sin detalle regional universal confirmado"
+        ],
+        "requirements": [
+          "Hardware local compatible; memoria y aceleración dependen del modelo"
+        ],
+        "notes": [
+          "Copilot híbrido se desplegaría durante los próximos meses"
+        ]
+      },
+      "limitations": [
+        "No se confirmó distribución general inmediata de los pesos MAI Code locales.",
+        "Los claims de preservación de calidad y reducción de tamaño proceden de Microsoft.",
+        "El ahorro total frente a la nube depende de hardware y uso."
+      ],
+      "practicalAdvice": [
+        "No asumir que la preview está activa hasta que aparezca en el producto.",
+        "Medir consumo y calidad con tareas propias antes de sustituir modelos remotos.",
+        "Separar permisos de herramientas de la elección del modelo."
+      ],
+      "usefulFacts": [
+        "HydraFusion ya se utilizaba para enrutamiento en la nube.",
+        "Windows ML anunció soporte para llama.cpp.",
+        "MAI Code 1.1 Flash se había presentado previamente; la novedad es su versión local."
+      ]
+    },
+    {
+      "id": "microsoft-surface-laptop-ultra-2026",
+      "eventKey": "microsoft-surface-laptop-ultra-dev-box-preorders-2026-10-07",
+      "articleVersion": 2,
+      "date": "2026-10-07",
+      "announcedAt": "2026-10-07",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Microsoft",
+      "product": "Surface Laptop Ultra / Surface RTX Spark Dev Box",
+      "title": "Surface Laptop Ultra parte en US$2.599 y Microsoft abre reservas de su Dev Box para IA local",
+      "summary": "Microsoft abre reservas de Surface Laptop Ultra desde US$2.599 y Surface RTX Spark Dev Box por US$5.999 en EE. UU. Ambos usan NVIDIA RTX Spark y hasta 128 GB de memoria unificada; entregas previstas para octubre y noviembre respectivamente.",
+      "tags": [
+        "Hardware",
+        "Chips",
+        "Infraestructura",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de sistemas de inteligencia artificial; no es una fotografía del anuncio",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado técnico de periódico sepia horizontal 3:2 de un portátil abierto y una caja de desarrollo compacta conectados a un diagrama abstracto de circuitos, sin logos inventados, cifras impresas ni pretensión de fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Microsoft Devices Blog · Pre-order our most powerful Surface devices ever",
+        "url": "https://blogs.windows.com/devices/2026/10/07/pre-order-our-most-powerful-surface-devices-ever/",
+        "publishedAt": "2026-10-07"
+      },
+      "relatedSources": [
+        {
+          "name": "Microsoft · Building Windows for hybrid intelligence",
+          "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Reuters · Microsoft brings more AI to PCs",
+          "url": "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/",
+          "publishedAt": "2026-10-07"
+        }
+      ],
+      "body": [
+        "Microsoft abrió el 7 de octubre de 2026 las reservas de dos productos Surface orientados a ejecutar inteligencia artificial local: Surface Laptop Ultra y Surface RTX Spark Dev Box. El primero es un portátil para creadores y desarrolladores, con precio inicial anunciado de US$2.599 y disponibilidad prevista para el 16 de octubre. El segundo es un equipo compacto de escritorio para experimentación y trabajo con modelos, con precio anunciado de US$5.999 y envíos en Estados Unidos durante noviembre. Es una noticia de productos, precios y acceso distinta del anuncio general de NVIDIA sobre el ecosistema RTX Spark."
+      ],
+      "keyPoints": [
+        "Surface Laptop Ultra parte en US$2.599 y Microsoft prevé disponibilidad desde el 16 de octubre.",
+        "Surface RTX Spark Dev Box cuesta US$5.999, se reserva exclusivamente en Microsoft.com para Estados Unidos y se enviaría en noviembre.",
+        "Los 128 GB de memoria unificada y el petaFLOP FP4 son máximos y especificaciones condicionadas, no resultados independientes."
+      ],
+      "quickTakeaways": [
+        "Surface Laptop Ultra parte en US$2.599 y Microsoft prevé disponibilidad desde el 16 de octubre.",
+        "Surface RTX Spark Dev Box cuesta US$5.999, se reserva exclusivamente en Microsoft.com para Estados Unidos y se enviaría en noviembre.",
+        "Los 128 GB de memoria unificada y el petaFLOP FP4 son máximos y especificaciones condicionadas, no resultados independientes."
+      ],
+      "sections": [
+        {
+          "heading": "Dos dispositivos, dos usos diferentes",
+          "kind": "report",
+          "paragraphs": [
+            "Surface Laptop Ultra busca combinar portabilidad con memoria y aceleración suficientes para cargas creativas y modelos locales. Microsoft destaca pantalla táctil de 15 pulgadas, nuevas soluciones térmicas y conectividad amplia. Dev Box está pensado para mantenerse en un escritorio y servir como estación de experimentación, evaluación y ejecución de agentes. Aunque comparten plataforma de silicio, sus usos y calendarios comerciales no son idénticos.",
+            "La diferencia importa para compradores: un portátil necesita equilibrar peso, autonomía, refrigeración y compatibilidad de aplicaciones; un equipo compacto prioriza disponibilidad de cómputo en un lugar fijo. La empresa anuncia ambas reservas el mismo día, pero no demuestra que tengan el mismo rendimiento sostenido ni el mismo coste total de propiedad. Un laboratorio que necesita varias sesiones simultáneas debería comparar memoria efectiva, almacenamiento, red y gestión remota antes de elegir."
+          ]
+        },
+        {
+          "heading": "Procesador, memoria y cifras de rendimiento",
+          "kind": "technical",
+          "paragraphs": [
+            "Los dispositivos utilizan la plataforma NVIDIA RTX Spark, que combina una GPU Blackwell RTX con hasta 6.144 núcleos CUDA y una CPU NVIDIA Grace de hasta 20 núcleos, según Microsoft. Las configuraciones superiores alcanzan 128 GB de memoria unificada compartida entre CPU y GPU. Microsoft habla de ejecutar modelos que superan 120.000 millones de parámetros localmente y de hasta un petaFLOP de rendimiento de IA en FP4. Son límites de configuración y cifras teóricas del proveedor, no garantía para todos los modelos o cargas.",
+            "El pie técnico del anuncio precisa que el petaFLOP se calcula con precisión FP4 y dispersidad; la memoria direccionable por la GPU es menor que el total del sistema y depende de la carga. La cuantización, el tamaño de contexto y la reserva de memoria del sistema determinan si un modelo concreto cabe realmente. Un modelo de 120B parámetros no tiene un requisito universal de RAM, porque ese requisito varía con su representación, arquitectura y entorno de inferencia."
+          ]
+        },
+        {
+          "heading": "Diseño del portátil y compatibilidad",
+          "kind": "technical",
+          "paragraphs": [
+            "Microsoft describe una carcasa de menos de 18 milímetros de grosor y menos de 4,5 libras, además de una arquitectura térmica con capacidad declarada de hasta 2,5 veces la de Surface Laptop anteriores. La pantalla PixelSense Ultra es táctil, pero el propio fabricante aclara que no admite entrada con Surface Pen. El equipo incluye almacenamiento reemplazable por el usuario bajo condiciones de servicio y una conexión Magnetic Connect que aprovecha un puerto USB-C.",
+            "La selección de puertos incluye dos USB-C adicionales, HDMI, USB-A, lector SD y audio de 3,5 milímetros. Microsoft afirma compatibilidad con hasta tres monitores 4K externos usando accesorios adecuados. También destaca juegos y aplicaciones en Windows sobre Arm. Esa arquitectura exige comprobar compatibilidad de herramientas, controladores y software profesional: disponer de GPU NVIDIA no implica que cualquier binario tradicional de Windows o cualquier extensión funcione sin ajustes."
+          ]
+        },
+        {
+          "heading": "Precio, regiones y fechas comprobadas",
+          "kind": "report",
+          "paragraphs": [
+            "Las reservas de Surface Laptop Ultra comenzaron el 7 de octubre con precio de lista desde US$2.599 y disponibilidad prevista a partir del 16 de octubre, a través de Microsoft y distribuidores seleccionados. El anuncio menciona venta en mercados internacionales, pero las configuraciones y los precios pueden variar según país. No debe convertirse el precio estadounidense en una cifra final para Chile u otras regiones sin impuestos, tipo de cambio y disponibilidad local verificados.",
+            "Surface RTX Spark Dev Box se ofrece a US$5.999 de precio de lista, con reservas exclusivamente a través de Microsoft.com en Estados Unidos y entregas previstas en noviembre. No se confirmó en el anuncio disponibilidad global del Dev Box. Microsoft también anuncia una promoción de canje para determinados MacBook Pro en Estados Unidos y Canadá, con condiciones y plazos específicos; no es un descuento universal ni debe restarse automáticamente del precio publicado."
+          ]
+        },
+        {
+          "heading": "Herramientas y límites para desarrolladores",
+          "kind": "practical",
+          "paragraphs": [
+            "Microsoft indica que Dev Box llega preparado con herramientas como Visual Studio Code, Git, GitHub CLI, GitHub Copilot, WSL, Python y Node. Esa configuración reduce trabajo inicial, pero no elimina la necesidad de mantener dependencias, gestionar claves y configurar permisos. Para agentes que ejecutan comandos, Microsoft menciona Execution Containers como mecanismo de contención. Las funciones futuras de identidad mediante Entra y administración adicional no deben tratarse como capacidades plenamente disponibles hoy.",
+            "Un equipo local puede ahorrar gasto variable de inferencia en la nube cuando se usa intensivamente, pero exige inversión inicial, electricidad y mantenimiento. Un cálculo responsable compara coste total por tarea resuelta y no solo capacidad de memoria. También hay que medir temperatura, ruido, rendimiento sostenido y compatibilidad del software propio. La información publicada aún no permite una comparación independiente completa de esos factores frente a estaciones existentes."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y qué observar",
+          "kind": "analysis",
+          "paragraphs": [
+            "La estrategia de Microsoft une hardware, sistema operativo, herramientas de desarrollo y agentes. Es una apuesta por hacer de Windows un entorno de inferencia y automatización local, no simplemente por vender otro portátil caro. Frente a opciones de Apple o equipos Linux, el atractivo dependerá de ecosistema, eficiencia, capacidad efectiva y experiencia de configuración. Los benchmarks promocionales de fabricantes no sustituyen pruebas con las mismas tareas y presupuestos.",
+            "Antes de reservar, conviene identificar el modelo concreto que se pretende ejecutar, su licencia, tamaño cuantizado y necesidades de contexto. Después hay que comprobar precio local, garantía, compatibilidad y plazos de entrega reales. Las primeras evaluaciones independientes de rendimiento sostenido y consumo serán más útiles que el máximo teórico FP4 para decidir si estos productos representan una mejora operativa."
+          ]
+        }
+      ],
+      "executiveSummary": "Microsoft abrió reservas de Surface Laptop Ultra desde US$2.599 y Surface RTX Spark Dev Box por US$5.999. Ambos incorporan RTX Spark y hasta 128 GB de memoria unificada, pero sus mercados y fechas de entrega difieren. Las cifras de rendimiento son especificaciones del fabricante y no sustituyen pruebas independientes.",
+      "finalSummary": "La novedad convierte la plataforma RTX Spark en productos Surface concretos, con precios y fechas verificables. Para desarrolladores, la decisión dependerá de la compatibilidad real, el coste total y la ejecución sostenida de modelos y agentes, no solo de la memoria máxima.",
+      "analysis": "Análisis Gazette: el hardware local empieza a ofrecer una alternativa tangible al consumo permanente de tokens en la nube, pero su precio inicial limita la adopción.",
+      "watch": "Reseñas independientes, disponibilidad por región, configuraciones comerciales, compatibilidad de Windows sobre Arm y consumo energético.",
+      "technicalDetails": [
+        {
+          "label": "Surface Laptop Ultra",
+          "value": "Desde US$2.599; disponibilidad prevista 16 de octubre"
+        },
+        {
+          "label": "Surface RTX Spark Dev Box",
+          "value": "US$5.999; envíos previstos en noviembre en EE. UU."
+        },
+        {
+          "label": "Memoria máxima",
+          "value": "128 GB unificados",
+          "note": "No toda la memoria es direccionable por GPU"
+        },
+        {
+          "label": "Rendimiento anunciado",
+          "value": "Hasta 1 petaFLOP FP4 con dispersidad",
+          "note": "Máximo teórico de Microsoft/NVIDIA"
+        }
+      ],
+      "availability": {
+        "status": "Reservas abiertas; entregas futuras",
+        "platforms": [
+          "Surface Laptop Ultra",
+          "Surface RTX Spark Dev Box"
+        ],
+        "regions": [
+          "Laptop: mercados seleccionados; disponibilidad varía",
+          "Dev Box: reservas en Estados Unidos"
+        ],
+        "requirements": [
+          "Verificar configuración y compatibilidad de aplicaciones Windows sobre Arm"
+        ],
+        "notes": [
+          "Laptop desde 16 de octubre; Dev Box en noviembre"
+        ]
+      },
+      "limitations": [
+        "El petaFLOP FP4 es un máximo teórico condicionado.",
+        "El precio estadounidense no determina precio final en otros mercados.",
+        "La memoria efectiva de GPU es menor que los 128 GB totales."
+      ],
+      "practicalAdvice": [
+        "Comprobar compatibilidad de herramientas Windows sobre Arm antes de reservar.",
+        "Comparar coste total por tarea con la nube y equipos existentes.",
+        "Esperar pruebas de rendimiento sostenido para decisiones de infraestructura."
+      ],
+      "usefulFacts": [
+        "El portátil ofrece puerto USB-C con conexión magnética.",
+        "Microsoft especifica que su pantalla táctil no admite Surface Pen.",
+        "El Dev Box llega con herramientas de desarrollo preinstaladas."
+      ]
     },
     {
       "id": "nano-banana-2-1",
@@ -4552,8 +5189,13 @@
     {
       "date": "2026-10-07",
       "status": "partial",
-      "verifiedArticles": 8,
+      "verifiedArticles": 11,
       "reviewedAt": "2026-10-07"
+    },
+    {
+      "date": "2026-10-08",
+      "status": "partial",
+      "verifiedArticles": 1
     }
   ]
 }

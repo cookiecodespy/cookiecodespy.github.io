@@ -196,7 +196,12 @@
   {
     "date": "2026-10-07",
     "status": "partial",
-    "verifiedArticles": 8,
+    "verifiedArticles": 11,
     "reviewedAt": "2026-10-07"
+  },
+  {
+    "date": "2026-10-08",
+    "status": "partial",
+    "verifiedArticles": 1
   }
 ]
