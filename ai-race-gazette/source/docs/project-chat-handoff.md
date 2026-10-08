@@ -125,3 +125,14 @@ Si se reanuda el proyecto tras un fallo del chat, **NO** repetir las publicacion
 **Siguiente gate:** terminar H-SEP12-13, H-0814-GOOGLE, H-0814-SOURCES; segunda pasada por compañías y categorías, resolver candidatos, documentar descartes y después cerrar P05. Luego P06–P07 (resto de septiembre), P08 (octubre + ejecución horaria real), P09 (legacy+Visual Desk), P10 (QA/SEO/accesibilidad/v1.0). No prometer fechas fijas ni declarar completo sin evidencia.
 
 **Riesgo automatización:** un commit autónomo independiente `87d682f62efaea4a46a968f9eae8d9cba7f542b1` con historia Upscale AI Token Fabric sigue divergente respecto a `main` (no confundir commit preparado con artículo publicado); investigar reconciliación/contenido y probar al menos una ejecución horaria que publique en `main` sin interacción.
+
+## Ronda adicional fase 5 — 8 octubre 2026 (13 septiembre)
+
+- Historial real verificado con fuente primaria: `https://huggingface.co/internlm/Intern-S2-397B`, `https://huggingface.co/internlm/Intern-S2-397B/commits/main` y `https://github.com/InternLM/Intern-S1`. La noticia registra disponibilidad de **pesos del checkpoint completo el 13 Sep**, no la preview de la familia.
+- Reporter V2 publicado con 1.343 palabras de secciones en `internlm-intern-s2-397b-open-weights-2026-09-13`; PR #4 https://github.com/cookiecodespy/cookiecodespy.github.io/pull/4 ; merge `24f43300323f677e8cd979a4c8a1e0072532f462`.
+- Evidencia de candidatos mal fechados y de la primera auditoría del 12–13: `source/docs/evidence-2026-09-12-13-round2.md`. No trasladar anuncios de 7, 9, 10, 11 septiembre o 1 octubre al 12/13 por notas secundarias. Iris-mini/pro sigue candidato pendiente de verificar primera fecha de pesos.
+- Validación de PR #4: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37807910802 — success.
+- Estado al merge: **75 noticias, 28 Reporter V2, 47 legacy**. 38 fechas: 21 partial, 17 pending, **0 jornadas cerradas**. El 13 Sep tiene 1 noticia y queda partial; el 12 Sep sigue pending.
+- Al cerrar ronda, comprobar que Visual Desk actualice la cola del nuevo artículo (puede tardar en reflejarse después del merge) y no confundir sync de imágenes con automatización horaria autónoma.
+- **Automation:** una sola tarea horaria AI Race Gazette Newsroom habilitada. La prueba de una publicación 100 % autónoma en main continúa pendiente; un commit divergente de Upscale AI Token Fabric necesita reconciliación segura. No declarar automatización end-to-end hasta observar publicación desatendida, 3 corridas, colisión y rollback.
+- **Siguiente prioridad:** reabrir 12 Sep por fuente/categoría, verificar primer release de pesos AllSpark Iris del 13, completar Google/DeepMind 8–14 y pasar auditoría inversa de todo P05. Seguir con P06 15–21, P07 22–30, P08 octubre/automation, P09 legacy/visual, P10 QA/v1.0. Las cifras son snapshot; siempre releer main.
