@@ -59,12 +59,17 @@ def check(news,coverage,audit,registry):
             # Complete means immutable evidence; additions require reauditing, not silence.
             assert row['status']==ar['archiveStatus'],f'{day}: closed audit status changed'
             assert ar['verifiedArticles']==actual,f'{day}: closed audit count changed; re-audit required'
-            if ar['auditMode']=='backbone-v1':
-                assert checked_sources, f'{day}: completed audit needs sources'
-                assert checked_categories, f'{day}: completed audit needs categories'
-                assert ar['openDiscoveryPerformed'] is True
-                assert ar['reversePassPerformed'] is True
-                assert ar['backboneReauditRequired'] is False
+            assert ar['auditMode']=='backbone-v1',f'{day}: closing requires backbone-v1 research audit'
+            assert checked_sources, f'{day}: completed audit needs sources'
+            assert checked_categories, f'{day}: completed audit needs categories'
+            assert ar['openDiscoveryPerformed'] is True,f'{day}: open discovery required'
+            assert ar['reversePassPerformed'] is True,f'{day}: second research pass required'
+            assert ar['backboneReauditRequired'] is False,f'{day}: re-audit remains pending'
+            assert isinstance(stats.get('unresolved'),int) and stats['unresolved']==0,f'{day}: unresolved candidates prevent closure'
+            assert ar.get('reviewedAt'),f'{day}: no review date'
+            evidence=ar.get('auditDocument')
+            assert evidence and isinstance(evidence,str),f'{day}: no supporting research document'
+            assert (ROOT/evidence).is_file(),f'{day}: missing supporting research document'
             closed+=1
         else:
             # Open dates are intentionally not exhaustive; Newsroom can add later.

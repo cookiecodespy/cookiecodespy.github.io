@@ -59,6 +59,28 @@ class CoverageAuditTests(unittest.TestCase):
   self.coverage.append({'date':day,'status':'partial','verifiedArticles':1})
   self.assertGreaterEqual(self.verify()[3],1)
 
+ def test_legacy_closed_without_backbone_is_rejected(self):
+  row=next(r for r in self.coverage if r['date'] in {a['date'] for a in self.audit['days']})
+  row['status']='complete'
+  ar=next(a for a in self.audit['days'] if a['date']==row['date'])
+  ar['archiveStatus']='complete'
+  ar['verifiedArticles']=row['verifiedArticles']
+  with self.assertRaisesRegex(AssertionError,'closing requires backbone-v1'):
+   self.verify()
+
+ def test_backbone_closure_needs_written_evidence(self):
+  row=next(r for r in self.coverage if r['date'] in {a['date'] for a in self.audit['days']})
+  row['status']='complete'
+  ar=next(a for a in self.audit['days'] if a['date']==row['date'])
+  ar.update(archiveStatus='complete',auditMode='backbone-v1',openDiscoveryPerformed=True,
+    reversePassPerformed=True,backboneReauditRequired=False,reviewedAt='2026-10-08',
+    reviewedSourceIds=[self.registry['sources'][0]['id']],
+    reviewedCategories=[self.audit['categories'][0]],auditDocument=None)
+  ar['candidateStats']['unresolved']=0
+  ar['verifiedArticles']=row['verifiedArticles']
+  with self.assertRaisesRegex(AssertionError,'no supporting research document'):
+   self.verify()
+
  def test_unrecorded_historical_date_fails(self):
   day=self.audit['days'][0]['date']
   self.audit['days']=[a for a in self.audit['days'] if a['date']!=day]
