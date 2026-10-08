@@ -41,3 +41,12 @@ GitHub soporta blobs Base64 + trees + commits. Cuando el runtime de ChatGPT teng
 ## Rollback
 
 Si el arte falla QA, restaurar el fallback registrado, devolver imageStatus a needs-specific-art, conservar id/eventKey y eliminar el asset específico solo si ya no tiene referencias.
+
+
+## Incidencia corregida en Pasada 4
+
+- Visual Desk no corre dentro de Newsroom. Si Newsroom publica mientras tanto, la cola puede ser temporalmente más antigua que el archivo.
+- `validate_visual_desk.py` distingue un snapshot antiguo (aviso) de uno actualizado (controles estrictos). Ejecutar `--strict` después de refrescar o publicar arte.
+- Antes de ejecutar `publish_visual_asset.py` en un checkout, correr `python3 scripts/refresh_visual_queue.py` para incorporar noticias nuevas. El publicador ahora valida existencia del item antes de copiar el WebP.
+- La publicación GitHub ideal es un solo commit que contenga binario, manifest, ambos mirrors de noticias y cola, con control de concurrencia sobre main.
+- Primer asset aprobado: `assets/news/2026-10-07/claude-haiku-5-5.webp`; autoría: grabado vectorial original del Visual Desk, no fotografía ni imagen oficial de Anthropic.

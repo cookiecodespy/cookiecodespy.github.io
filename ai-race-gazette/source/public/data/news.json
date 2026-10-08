@@ -359,10 +359,10 @@
         "Agentes",
         "Desarrollo"
       ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo, usado como ilustración temporal para Claude Haiku 5.5",
-      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía del lanzamiento.",
-      "imageStatus": "needs-specific-art",
+      "image": "assets/news/2026-10-07/claude-haiku-5-5.webp",
+      "imageAlt": "Grabado en tinta sepia: un veloz mensajero mecánico coordina ayudantes entre máquinas de cálculo antiguas, metáfora de la delegación de tareas en Claude Haiku 5.5.",
+      "imageCredit": "Grabado editorial vectorial original · AI Race Gazette; ilustración conceptual, no fotografía documental.",
+      "imageStatus": "specific",
       "imageBrief": "Ilustración editorial estilo grabado antiguo para Claude Haiku 5.5: un pequeño mensajero mecánico extremadamente veloz coordinando varias tareas entre estaciones de trabajo y servidores, sensación de escala y eficiencia, tinta/sepia sobre papel envejecido, sin interfaces falsas ni escena presentada como fotografía real.",
       "source": {
         "name": "Anthropic · Claude Haiku 5.5",
@@ -554,7 +554,8 @@
             "Dentro de la carrera de la IA, el lanzamiento refuerza una tendencia: los laboratorios ya no compiten únicamente por el modelo de mayor puntuación, sino por construir una familia completa capaz de asignar cada tarea al nivel correcto de costo, velocidad y capacidad. Si los modelos pequeños se vuelven suficientemente buenos para actuar como trabajadores especializados, la economía de los agentes cambia. Un sistema puede multiplicar el número de subtareas sin multiplicar de la misma forma su factura. Para desarrolladores y empresas, la decisión razonable no es migrar automáticamente por el titular de precio, sino ejecutar un benchmark propio con tareas representativas, medir costo por resultado correcto y decidir en qué puntos Haiku sustituye o complementa a Sonnet, Opus u otros proveedores."
           ]
         }
-      ]
+      ],
+      "visualAssetId": "story-claude-haiku-5-5-engraving-v1"
     },
     {
       "id": "google-embeddinggemma-2",

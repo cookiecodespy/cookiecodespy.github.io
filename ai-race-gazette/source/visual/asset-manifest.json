@@ -40,7 +40,7 @@
         "Ilustración editorial generada con IA.",
         "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía del lanzamiento."
       ],
-      "currentUsage": 34,
+      "currentUsage": 36,
       "notes": "Fallback general. Su alta reutilización es deuda visual prioritaria."
     },
     {
@@ -106,6 +106,30 @@
       ],
       "currentUsage": 2,
       "notes": "Fallback para infraestructura y expansión geográfica."
+    },
+    {
+      "id": "story-claude-haiku-5-5-engraving-v1",
+      "src": "assets/news/2026-10-07/claude-haiku-5-5.webp",
+      "kind": "editorial-illustration",
+      "origin": "editorial-original",
+      "reusable": false,
+      "specificity": "story-specific",
+      "tags": [
+        "anthropic",
+        "claude",
+        "haiku",
+        "agents",
+        "orchestration",
+        "mechanical-courier"
+      ],
+      "canonicalCredit": "Grabado editorial vectorial original · AI Race Gazette; ilustración conceptual, no fotografía documental.",
+      "legacyCredits": [],
+      "currentUsage": 1,
+      "articleIds": [
+        "claude-haiku-5-5"
+      ],
+      "notes": "Grabado vectorial editorial conceptual diseñado y convertido a WebP; ninguna instalación, producto físico o interfaz se presenta como documentación real.",
+      "caption": "La velocidad y delegación de tareas representadas mediante un mensajero mecánico; ilustración conceptual."
     }
   ]
 }

@@ -70,8 +70,12 @@ def main():
     rel=f"assets/news/{article['date']}/{args.article_id}.webp"
     assert not any(a['src']==rel for a in manifest['assets']), f'Asset path exists: {rel}'
     dest=PUBLIC/rel
-    dest.parent.mkdir(parents=True,exist_ok=True)
     assert not dest.exists(), f'Destination already exists: {dest}'
+    # Validate the queue BEFORE writing a binary or mutating any JSON.
+    qmatch=[i for i in queue.get('items',[]) if i['articleId']==article['id']]
+    assert len(qmatch)==1, f"Visual queue item missing/duplicated: {article['id']}; refresh first"
+    assert len(args.input.read_bytes())>=2048, 'Image too small: rejected before mutation'
+    dest.parent.mkdir(parents=True,exist_ok=True)
     shutil.copyfile(args.input,dest)
 
     article['image']=rel
