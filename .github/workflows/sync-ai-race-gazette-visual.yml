@@ -6,6 +6,7 @@ on:
     paths:
       - 'ai-race-gazette/data/news.json'
       - 'ai-race-gazette/source/public/data/news.json'
+      - '.github/workflows/sync-ai-race-gazette-visual.yml'
   workflow_dispatch:
 
 permissions:
