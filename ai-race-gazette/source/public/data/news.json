@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T12:57:50.288Z",
+  "updatedAt": "2026-10-08T13:01:20.524Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -2924,6 +2924,193 @@
       ]
     },
     {
+      "id": "openai-habitat-storage-python-rust-scale-2026-09-11",
+      "eventKey": "openai-habitat-storage-python-rust-scale-2026-09-11",
+      "articleVersion": 2,
+      "date": "2026-09-11",
+      "announcedAt": "2026-09-11",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "OpenAI",
+      "product": "Habitat / infraestructura Python-Rust",
+      "title": "OpenAI explica Habitat: 70 millones de solicitudes por segundo y una migración asistida por IA de Python a Rust",
+      "summary": "OpenAI publicó un informe técnico sobre Habitat, su plataforma de almacenamiento para ChatGPT, Codex y otros productos. Describe latencias de asyncio, problemas de conexiones y una migración a Rust con Codex y GPT‑5.5; las cifras son del proveedor.",
+      "tags": [
+        "Infraestructura",
+        "Ingeniería",
+        "Agentes",
+        "Escalabilidad"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual sobre infraestructuras de datos; no muestra centros de OpenAI reales.",
+      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico industrial: red de archivos de datos gigantescos conectados mediante telégrafos y engranajes alrededor del globo, al fondo dos motores analíticos de distintas generaciones; sepia, sin marcas ni interfaces falsas.",
+      "source": {
+        "name": "OpenAI Engineering · Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+        "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one/",
+        "publishedAt": "2026-09-11"
+      },
+      "keyPoints": [
+        "Habitat supera 70 millones de solicitudes por segundo y 500 PB, según OpenAI.",
+        "El servicio evolucionó de biblioteca a plataforma independiente para simplificar despliegues y controles.",
+        "En Q2 2026 fue reescrito en Rust con Codex/GPT‑5.5, según la empresa."
+      ],
+      "quickTakeaways": [
+        "El artículo de ingeniería apareció el 11 de septiembre.",
+        "OpenAI declara más de 1.000 millones de personas por semana entre productos.",
+        "Las latencias del event loop y el reuso LIFO de conexiones causaron problemas operativos.",
+        "La versión Rust ofrece eficiencias 6× CPU y 15× memoria medidas internamente.",
+        "No es un nuevo servicio público de almacenamiento ni un modelo comercial."
+      ],
+      "body": [
+        "Un modelo de IA puede ser brillante y aun así fallar si sus productos no pueden acceder de manera confiable a cuentas, configuraciones y datos. OpenAI documentó cómo evolucionó su plataforma Habitat al ritmo del crecimiento de ChatGPT."
+      ],
+      "sections": [
+        {
+          "heading": "La infraestructura detrás de los asistentes",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI publicó el 11 de septiembre de 2026 un informe de ingeniería sobre Habitat, la plataforma que conecta sus productos con recursos de almacenamiento en línea. Aunque una persona utiliza ChatGPT o Codex mediante interfaces simples, cada sesión puede requerir numerosas consultas a cuentas, ajustes, permisos y otros datos. La latencia de cualquiera de esas operaciones puede perjudicar la experiencia, por lo que el almacenamiento no es un componente secundario de la carrera de inteligencia artificial.",
+            "La compañía comunicó que Habitat atiende más de 70 millones de solicitudes por segundo, respalda productos utilizados por más de mil millones de personas cada semana, opera en cerca de 40 regiones y sirve más de 500 petabytes de información. Son cifras publicadas por OpenAI sobre su propio sistema, no una auditoría independiente ni un conteo de usuarios únicos de una sola aplicación."
+          ]
+        },
+        {
+          "heading": "De biblioteca en Python a servicio compartido",
+          "kind": "report",
+          "paragraphs": [
+            "Habitat nació en 2023 como una pequeña biblioteca de Python conectada a Azure Cosmos DB para respaldar GPTs. La idea consistía en que cada equipo de producto pudiera almacenar y recuperar información sin administrar por su cuenta esquemas, rutas, autenticación o detalles de bases de datos. Con el crecimiento, la biblioteca incorporó cachés, compresión y cifrado, aumentando el número de responsabilidades que los servicios clientes debían desplegar.",
+            "OpenAI describe un problema de coordinación: para agregar una regla de enrutamiento entre regiones o aplicar una corrección, muchos equipos tenían que actualizar versiones de la biblioteca. Un servicio cliente podía volver a una versión antigua e introducir de nuevo un comportamiento defectuoso. Centralizar Habitat como servicio permitió cambiar rutas, aplicar auditorías, observar rendimiento y gestionar controles de seguridad en un punto común."
+          ]
+        },
+        {
+          "heading": "La apuesta temporal por Python",
+          "kind": "technical",
+          "paragraphs": [
+            "El equipo decidió que mover la lógica a un servicio Python era útil para estabilizar la plataforma, incluso aceptando un gasto superior de CPU y memoria frente a una solución más eficiente. Fue una decisión explícita de deuda técnica: ganar tiempo para unificar APIs y mejorar operaciones antes de reescribir el sistema. No demuestra que Python sea una buena elección universal para cualquier servicio de almacenamiento masivo.",
+            "OpenAI señala que cada solicitud de usuario puede generar cientos de consultas a sistemas de datos. En ese escenario, los valores promedio pueden parecer adecuados mientras las solicitudes más lentas, conocidas como latencia de cola, afectan la respuesta visible. La ingeniería se concentró en comprender dónde se acumulaba el tiempo perdido, incluida la programación de tareas de asyncio."
+          ]
+        },
+        {
+          "heading": "Por qué asyncio no equivale a paralelismo de CPU",
+          "kind": "technical",
+          "paragraphs": [
+            "Asyncio puede solapar operaciones que esperan una red, pero no permite que una única hebra de Python ejecute simultáneamente todas las tareas intensivas en CPU. Habitat realizaba operaciones adicionales como enrutamiento, cifrado, compresión y comprobaciones, de modo que el event loop podía retrasar la atención a respuestas que ya habían llegado desde la base de datos. En los casos observados por el equipo, esas demoras alcanzaban cientos de milisegundos o más.",
+            "Para reducir la latencia de cola, OpenAI instrumentó la demora del event loop y limitó el número de solicitudes simultáneas por proceso. La solución exigió aumentar el número de workers, lo que trajo nuevos desafíos de conexiones y recursos. El aprendizaje no es que toda aplicación deba usar más procesos, sino que una métrica de CPU aislada puede ocultar retrasos en planificación y saturación."
+          ]
+        },
+        {
+          "heading": "Un problema inesperado en los feature flags",
+          "kind": "technical",
+          "paragraphs": [
+            "Los ingenieros encontraron que una herramienta de configuración de características descargaba y procesaba un archivo grande de reglas con un intervalo sincronizado. Varios procesos de un mismo pod podían detenerse casi a la vez para analizar JSON, generando picos de latencia. El fallo no estaba directamente en la base de datos: era trabajo auxiliar que competía por recursos con las solicitudes críticas de usuarios.",
+            "El equipo redujo el tamaño de la configuración utilizada, espació actualizaciones y añadió variación al momento en que cada tarea se ejecutaba. Es un caso especialmente útil de ingeniería real: una operación aparentemente menor, repetida en todos los procesos a la misma hora, puede convertirse en una fuente de errores visible a gran escala."
+          ]
+        },
+        {
+          "heading": "El bucle de conexiones LIFO que agravaba fallos",
+          "kind": "technical",
+          "paragraphs": [
+            "Habitat también sufrió una distribución desigual de tráfico entre procesos. OpenAI investigó cómo el reuso de conexiones en aiohttp podía concentrar nuevas solicitudes en servidores ya sobrecargados: las conexiones devueltas recientemente se reutilizaban antes, y un proceso lento podía recibir aún más trabajo. Este tipo de realimentación puede mantener degradado un servicio incluso después de que termine el pico inicial.",
+            "Cambiar temporalmente la política de reutilización de LIFO a FIFO rompió el ciclo descrito y mejoró el reparto. Posteriormente, la compañía reforzó estrategias de balanceo con Istio y Envoy. El ejemplo demuestra por qué un fallo distribuido no siempre se resuelve escalando máquinas: si la lógica de asignación empeora la distribución, añadir capacidad puede dejar intacto el mecanismo del problema."
+          ]
+        },
+        {
+          "heading": "Los límites deliberados de la API de datos",
+          "kind": "technical",
+          "paragraphs": [
+            "OpenAI explica que Habitat ofrece una API NoSQL de objetos y relaciones directas, en lugar de permitir consultas SQL arbitrarias y costosas sobre el servicio de uso cotidiano. Esta restricción vuelve más predecible el trabajo que cada solicitud puede provocar. El diseño sacrifica expresividad a cambio de límites operativos claros, lo que puede ser conveniente cuando hay millones de usuarios accediendo a datos críticos.",
+            "Las consultas analíticas complejas se sirven mediante vistas secundarias aisladas, usando captura de cambios hacia sistemas como Rockset. Así, las búsquedas y exploraciones que consumen muchos recursos no compiten directamente con los accesos en línea. La arquitectura no es una receta universal; expresa una decisión de separar necesidades de baja latencia de trabajos intensivos en lectura."
+          ]
+        },
+        {
+          "heading": "Reescribir en Rust y utilizar IA para programar",
+          "kind": "technical",
+          "paragraphs": [
+            "El informe indica que, en el segundo trimestre de 2026, dos ingenieros utilizaron Codex y GPT‑5.5 para reescribir el servicio en Rust. OpenAI afirma que la nueva implementación ya procesaba el 95 % del tráfico de producción en el momento de la publicación, con eficiencia de CPU seis veces mayor y de memoria quince veces mayor que la versión Python. Son mediciones internas del proveedor, no pruebas externas en hardware y cargas equivalentes.",
+            "La migración fue posible después de estabilizar el contrato de servicio. La lección de ingeniería más general es que la automatización de programación puede ayudar cuando existe una especificación funcional, telemetría y un sistema real para comparar comportamiento. No basta con traducir archivos: hay que verificar compatibilidad, permisos, tolerancia a errores y latencias bajo tráfico."
+          ]
+        },
+        {
+          "heading": "Seguridad de datos y confiabilidad global",
+          "kind": "practical",
+          "paragraphs": [
+            "Habitat centraliza control de acceso, auditoría, cifrado, limitación de velocidad y enrutamiento. El documento menciona Cosmos DB, cachés, almacenamiento de blobs y servicios de captura de cambios como parte de su infraestructura. La existencia de estos componentes no prueba que cualquier dato se almacene siempre en la misma región ni autoriza inferir políticas individuales de privacidad. Es necesario distinguir la arquitectura comunicada de los compromisos contractuales aplicables a cada producto.",
+            "Para ingenieros de productos empresariales, el caso deja recomendaciones prácticas: instrumentar p95/p99 y colas de eventos, evitar configuraciones masivas sincronizadas, revisar políticas de reuso de conexiones y aislar consultas caras. Los permisos y límites de carga deben formar parte del contrato de una plataforma, no añadirse después de observar una saturación."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y seguimiento",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la competencia de IA exige plataformas capaces de servir un volumen enorme de operaciones rutinarias con latencia confiable. Los modelos inteligentes son solo una parte del producto; en la práctica la experiencia depende de almacenamiento, controles de acceso, balanceo y recuperación ante errores. La historia de Habitat importa porque documenta decisiones y fallas concretas, incluida la elección de deuda técnica temporal y su posterior sustitución.",
+            "Queda pendiente el segundo artículo de la serie anunciado por OpenAI, con más información sobre multi-tenancy y optimización de lecturas. También faltan verificaciones externas de las ganancias de eficiencia y de sus condiciones de medida. Este evento del 11 de septiembre es una publicación de ingeniería sobre una transformación operacional, no el anuncio de un nuevo modelo público ni una cifra garantizada para sistemas ajenos."
+          ]
+        }
+      ],
+      "executiveSummary": "Habitat es el servicio de datos que OpenAI utiliza para sus productos. La compañía describe escalas superiores a 70 millones de solicitudes por segundo, retos de latencia y una migración de Python a Rust asistida por IA. Sus números requieren atribución y contexto.",
+      "finalSummary": "El 11 de septiembre OpenAI aportó detalles útiles sobre la infraestructura oculta detrás de productos de IA masivos. La historia es una lección sobre observabilidad, controles y migración gradual, más que sobre nuevos benchmarks de modelos.",
+      "analysis": "Análisis Gazette: las capacidades de un modelo necesitan infraestructura segura y predecible para funcionar a escala. Habitat demuestra la relevancia de medir cada componente y limitar el trabajo de las operaciones críticas.",
+      "watch": "Parte II del artículo, validación independiente de rendimiento, evolución de infraestructura y arquitectura de multi-tenancy.",
+      "technicalDetails": [
+        {
+          "label": "Solicitudes",
+          "value": "70 millones+ por segundo, según OpenAI"
+        },
+        {
+          "label": "Datos",
+          "value": "500 PB+ anunciados"
+        },
+        {
+          "label": "Migración Rust",
+          "value": "95% del tráfico al publicarse"
+        },
+        {
+          "label": "Eficiencia declarada",
+          "value": "6× CPU; 15× memoria"
+        }
+      ],
+      "availability": {
+        "status": "Informe de arquitectura interna, no API pública nueva",
+        "platforms": [
+          "Infraestructura de ChatGPT, Codex y servicios de OpenAI"
+        ],
+        "regions": [
+          "Cerca de 40 regiones, según OpenAI"
+        ],
+        "requirements": [],
+        "notes": [
+          "No se ofrece Habitat como servicio público independiente en este anuncio."
+        ]
+      },
+      "limitations": [
+        "Datos de carga y eficiencia divulgados por la propia compañía.",
+        "La infraestructura descrita no determina por sí sola las políticas individuales de privacidad.",
+        "Las optimizaciones dependen de carga y arquitectura concreta."
+      ],
+      "practicalAdvice": [
+        "Medir retraso de event loop y p99 en servicios críticos.",
+        "Evitar actualizaciones de configuración sincronizadas.",
+        "Revisar balanceo y reutilización de conexiones.",
+        "Aislar consultas analíticas caras de tráfico de baja latencia."
+      ],
+      "usefulFacts": [
+        "Habitat comenzó como biblioteca en 2023.",
+        "OpenAI decidió centralizar el servicio para simplificar cambios.",
+        "La versión Rust surgió después de estabilizar el contrato de almacenamiento."
+      ],
+      "curiosities": [
+        "Un problema de reutilización LIFO de conexiones concentraba tráfico en procesos lentos.",
+        "El documento explica cómo una configuración JSON de feature flags afectaba latencias."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Publicación del informe de ingeniería de Habitat."
+        }
+      ]
+    },
+    {
       "id": "openai-gpt-live-1-api-2026-09-10",
       "eventKey": "openai-gpt-live-1-api-2026-09-10",
       "articleVersion": 2,
@@ -5759,8 +5946,8 @@
     },
     {
       "date": "2026-09-11",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1
     },
     {
       "date": "2026-09-12",

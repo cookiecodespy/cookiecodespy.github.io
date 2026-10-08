@@ -432,6 +432,49 @@
         "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/"
       ],
       "date": "2026-09-01"
+    },
+    {
+      "id": "H-OPENAI-SEP11-HABITAT",
+      "phase": "P05",
+      "title": "OpenAI Habitat: escalado y migración Python-Rust",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "date": "2026-09-11",
+      "acceptance": "Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.",
+      "evidence": [
+        "https://openai.com/index/scaling-storage-one-billion-users-part-one/"
+      ],
+      "verifiedEvidence": [
+        "https://openai.com/index/scaling-storage-one-billion-users-part-one/",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-habitat-storage-python-rust-scale-2026-09-11"
+      ]
+    },
+    {
+      "id": "H-OPENAI-SEP11-ROSALIND",
+      "phase": "P05",
+      "title": "GPT‑Rosalind sale de preview para organizaciones elegibles",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "date": "2026-09-11",
+      "acceptance": "Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.",
+      "evidence": [
+        "https://openai.com/index/introducing-gpt-rosalind/"
+      ]
+    },
+    {
+      "id": "H-OPENAI-SEP11-GPT-MIGRATION",
+      "phase": "P05",
+      "title": "ChatGPT anuncia retiro futuro de custom GPTs y migración a plugins",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "date": "2026-09-11",
+      "acceptance": "Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.",
+      "evidence": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ]
     }
   ]
 }

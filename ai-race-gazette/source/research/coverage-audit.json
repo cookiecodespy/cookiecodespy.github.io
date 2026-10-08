@@ -245,23 +245,28 @@
     },
     {
       "date": "2026-09-11",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [],
+      "reviewedSourceIds": [
+        "openai-research"
+      ],
+      "reviewedCategories": [
+        "datacenters-infrastructure",
+        "developer-tools"
+      ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": null,
-        "published": 0,
-        "discarded": null,
-        "unresolved": null
+        "found": 3,
+        "published": 1,
+        "discarded": 0,
+        "unresolved": 2
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Primer barrido Sep11: OpenAI Habitat publicado; acceso GPT‑Rosalind y retiro planificado de custom GPTs pendientes. Otras compañías y revisión inversa pendientes."
     },
     {
       "date": "2026-09-12",

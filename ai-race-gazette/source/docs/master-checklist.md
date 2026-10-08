@@ -100,6 +100,10 @@
 
 - [ ] **QA-SEP01-REOPEN** (P0, queued): Reauditar 1 Sep por omisión de MAPL‑EMIT; cierre previo reabierto.
 
+- [x] **H-OPENAI-SEP11-HABITAT** (P0, done): OpenAI Habitat: escalado y migración Python-Rust. Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso..
+- [ ] **H-OPENAI-SEP11-ROSALIND** (P0, queued): GPT‑Rosalind sale de preview para organizaciones elegibles. Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso..
+- [ ] **H-OPENAI-SEP11-GPT-MIGRATION** (P0, queued): ChatGPT anuncia retiro futuro de custom GPTs y migración a plugins. Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso..
+
 ## Regla de cola
 
 Registrar todo descubrimiento nuevo en el JSON con identificador estable, fuente, estado, prioridad, responsable y aceptación. No eliminar pendientes ni marcar días completos por tener un titular. Las tareas no se cierran sin evidencia; las descartadas mantienen explicación.
