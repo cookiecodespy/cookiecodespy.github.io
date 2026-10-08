@@ -2,7 +2,7 @@
 
 ## Estándar maestro
 
-Leer primero `docs/gazette-v1-standard.md`, `docs/research-backbone.md`, `research/source-registry.json`, `docs/article-v2-schema.md`, `docs/image-policy.md` y `docs/automation-operations.md`. Si esta guía entra en conflicto con el estándar maestro, prevalece el estándar maestro.
+Leer primero `docs/gazette-v1-standard.md`, `docs/research-backbone.md`, `research/source-registry.json`, `docs/article-v2-schema.md`, `docs/image-policy.md`, `docs/visual-desk.md`, `visual/asset-manifest.json` y `docs/automation-operations.md`. Si esta guía entra en conflicto con el estándar maestro, prevalece el estándar maestro.
 
 Estado: activada el 7 de octubre de 2026 como tarea horaria de ChatGPT con conexión GitHub. La actualización de noticias no depende del PC local: el sitio publicado carga `data/news.json` en tiempo de lectura, por lo que una tarea conectada a GitHub puede incorporar noticias sin recompilar el frontend.
 
@@ -172,3 +172,10 @@ Cada run:
 - conserva source/relatedSources suficientes para reconstruir la evidencia.
 
 No dependas de SQLite, caches locales ni evidence bundles para el run horario actual.
+
+
+## Selección visual registrada
+
+Cuando Newsroom use un fallback existente, elige únicamente un asset registrado en `visual/asset-manifest.json` y usa un crédito permitido por ese manifest.
+
+La tarea no modifica `visual/image-queue.json`; Visual Desk la refresca por separado. Si el artículo merece arte específico, basta con `imageBrief` + `imageStatus: needs-specific-art`.
