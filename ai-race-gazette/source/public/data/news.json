@@ -1,8 +1,853 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T18:21:50.000Z",
+  "updatedAt": "2026-10-08T19:22:34.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "anthropic-oss-scanner-2026",
+      "eventKey": "anthropic-oss-scanner-opt-in-free-security-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Anthropic",
+      "product": "OSS Scanner",
+      "title": "Anthropic lanza OSS Scanner: auditorías gratuitas de seguridad para proyectos open source",
+      "summary": "Anthropic abre un servicio voluntario que analiza periódicamente repositorios abiertos con modelos Claude avanzados y envía hallazgos sin revisión humana. Los mantenedores deben inscribirse, preparar un entorno reproducible y asumir la validación de falsos positivos.",
+      "tags": [
+        "Seguridad",
+        "Open source",
+        "Agentes",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual sobre investigación de código abierto; no muestra un producto real de Anthropic.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico antiguo horizontal 3:2, tinta sepia: un equipo de inspectores mecánicos examina una biblioteca de código abierto y señala fallas en engranajes, mientras mantenedores humanos revisan hallazgos. Evitar pantallas ficticias presentadas como reales, logos falsos y cifras impresas.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Anthropic Frontier Red Team · OSS Scanner",
+        "url": "https://red.anthropic.com/oss-scanner/",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Anthropic · Introducing the Anthropic Cyber Mission",
+          "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "GitHub · repositorio de inscripción OSS Scanner",
+          "url": "https://github.com/anthropics/oss-scanner",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, Anthropic presentó OSS Scanner como una vía voluntaria para que mantenedores de proyectos open source reciban análisis de seguridad periódicos realizados por sus modelos más capaces. El servicio no sustituye al trabajo de quienes mantienen el código ni representa una auditoría certificada. Su novedad está en ofrecer exploración profunda de repositorios y entregar rápidamente hipótesis de vulnerabilidad, explicaciones y, cuando el sistema puede producirlas, propuestas de corrección. La empresa asume el costo del cómputo para los proyectos admitidos.",
+        "El programa nace de una tensión operativa que Anthropic observó en Project Glasswing: encontrar posibles fallos se ha vuelto más rápido que verificarlos, priorizarlos y corregirlos. En su proceso tradicional de divulgación coordinada, la empresa realiza revisión humana antes de informar. OSS Scanner crea un canal distinto, explícitamente optativo, para equipos que prefieren recibir antes los resultados aunque algunos sean falsos positivos. No se debe confundir una alerta generada por un modelo con una vulnerabilidad confirmada.",
+        "Según la documentación del servicio, un mantenedor principal debe proponer un archivo projects/<proyecto>/project.yaml mediante un pull request al repositorio público de inscripción. La configuración identifica el repositorio, un contacto principal y un Dockerfile que prepara las dependencias y compila el proyecto. El contenedor se construye con conectividad, pero los agentes ejecutan su auditoría sin acceso posterior a Internet. Anthropic valida manualmente la condición de mantenedor antes de aceptar cada proyecto, y recomienda que sus pruebas funcionen dentro del entorno declarado.",
+        "El archivo puede incluir un modelo de amenazas, contactos adicionales y una clave PGP para cifrar informes. El modelo de amenazas permite explicar qué entradas son adversariales, qué partes quedan fuera del alcance y cómo clasificar severidades. Tras la admisión se realiza una primera exploración y luego revisiones periódicas, cuya frecuencia puede variar con la capacidad del programa. Los reportes llegan por correo y pueden incorporar análisis de causa raíz, pruebas de concepto y parches propuestos. La inscripción no concede automáticamente acceso general a un modelo privado.",
+        "El acceso está abierto a solicitudes de proyectos establecidos con impacto relevante en infraestructura o seguridad de usuarios; Anthropic evalúa casos individualmente y puede ajustar criterios. No hay precio por repositorio ni por token para los mantenedores aceptados: la compañía declara que cubre los costos. Tampoco publica un compromiso de frecuencia fija, cobertura universal por lenguaje o un plazo garantizado de entrega. El servicio es una oferta de inscripción y selección, no disponibilidad general inmediata para cualquier desarrollador.",
+        "Un detalle crítico es la divulgación. Los hallazgos automáticos no revisados no activan por sí solos una cuenta regresiva pública de 90 días. Si Anthropic valida posteriormente un problema mediante su proceso humano, puede aplicarse el procedimiento ordinario de divulgación coordinada. Los mantenedores pueden pausar los reportes con disabled: true o retirarse mediante otro PR. Esta distinción evita que un informe todavía incierto se convierta automáticamente en una presión pública para publicar un parche apresurado.",
+        "Para los mantenedores, la ventaja potencial es encontrar fallos que una revisión convencional no detectó y recibir sugerencias concretas para reproducirlos. El costo oculto está en el triage: revisar pruebas, determinar impacto, evitar duplicados y comprobar que un parche no rompe funcionalidades. Para empresas que dependen de bibliotecas abiertas, un ecosistema con más correcciones puede mejorar la seguridad de la cadena de suministro, pero solo cuando los proyectos afectados disponen de tiempo y personal para responder.",
+        "Anthropic afirma haber revisado más de seis mil reportes en su programa de divulgación antes de este lanzamiento y espera una tasa de verdaderos positivos superior al 90 % para el nuevo servicio. Son cifras y expectativas propias, no una auditoría independiente de OSS Scanner. Además, las condiciones del servicio, el proceso de aceptación y el alcance efectivo por lenguaje pueden evolucionar. Un equipo prudente debe mantener pruebas de regresión, revisión de expertos y su propio programa de divulgación, incluso cuando un modelo sugiera un arreglo plausible.",
+        "Análisis Gazette: este anuncio cambia la economía de la búsqueda de fallos, pero no elimina el cuello de botella humano. La pregunta relevante no es cuántos errores puede señalar un modelo en una tarde, sino cuántos problemas reales llegan a corregirse sin sobrecargar a quienes mantienen infraestructura crítica. Separar el canal rápido sin revisión del canal tradicional con revisión humana es una decisión editorialmente importante porque evita confundir velocidad con certeza.",
+        "Para participar, el paso práctico es verificar que el proyecto tenga responsables de seguridad, compilar un Dockerfile reproducible y redactar un modelo de amenazas útil antes de solicitar ingreso. Después conviene registrar tasa de falsos positivos, tiempo de respuesta y calidad de parches. Habrá que seguir el número de proyectos admitidos, la frecuencia de exploración, las tasas de confirmación independientes y las mejoras de triage y remediación que Anthropic prometa implementar."
+      ],
+      "keyPoints": [
+        "El programa es opt-in y gratuito para proyectos open source aceptados; no es un escáner universal abierto a cualquier repositorio.",
+        "Los informes se envían sin validación humana previa, por lo que cada hallazgo necesita triage antes de anunciar una vulnerabilidad.",
+        "La inscripción exige PR de configuración, contacto y Dockerfile para reproducir un entorno de análisis sin Internet."
+      ],
+      "quickTakeaways": [
+        "El programa es opt-in y gratuito para proyectos open source aceptados; no es un escáner universal abierto a cualquier repositorio.",
+        "Los informes se envían sin validación humana previa, por lo que cada hallazgo necesita triage antes de anunciar una vulnerabilidad.",
+        "La inscripción exige PR de configuración, contacto y Dockerfile para reproducir un entorno de análisis sin Internet.",
+        "Anthropic prevé una tasa de verdaderos positivos superior al 90 %, pero es una expectativa del proveedor, no una evaluación independiente."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se lanzó y para quién",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, Anthropic presentó OSS Scanner como una vía voluntaria para que mantenedores de proyectos open source reciban análisis de seguridad periódicos realizados por sus modelos más capaces. El servicio no sustituye al trabajo de quienes mantienen el código ni representa una auditoría certificada. Su novedad está en ofrecer exploración profunda de repositorios y entregar rápidamente hipótesis de vulnerabilidad, explicaciones y, cuando el sistema puede producirlas, propuestas de corrección. La empresa asume el costo del cómputo para los proyectos admitidos.",
+            "El programa nace de una tensión operativa que Anthropic observó en Project Glasswing: encontrar posibles fallos se ha vuelto más rápido que verificarlos, priorizarlos y corregirlos. En su proceso tradicional de divulgación coordinada, la empresa realiza revisión humana antes de informar. OSS Scanner crea un canal distinto, explícitamente optativo, para equipos que prefieren recibir antes los resultados aunque algunos sean falsos positivos. No se debe confundir una alerta generada por un modelo con una vulnerabilidad confirmada."
+          ]
+        },
+        {
+          "heading": "Inscripción, requisitos y operación técnica",
+          "kind": "technical",
+          "paragraphs": [
+            "Según la documentación del servicio, un mantenedor principal debe proponer un archivo projects/<proyecto>/project.yaml mediante un pull request al repositorio público de inscripción. La configuración identifica el repositorio, un contacto principal y un Dockerfile que prepara las dependencias y compila el proyecto. El contenedor se construye con conectividad, pero los agentes ejecutan su auditoría sin acceso posterior a Internet. Anthropic valida manualmente la condición de mantenedor antes de aceptar cada proyecto, y recomienda que sus pruebas funcionen dentro del entorno declarado.",
+            "El archivo puede incluir un modelo de amenazas, contactos adicionales y una clave PGP para cifrar informes. El modelo de amenazas permite explicar qué entradas son adversariales, qué partes quedan fuera del alcance y cómo clasificar severidades. Tras la admisión se realiza una primera exploración y luego revisiones periódicas, cuya frecuencia puede variar con la capacidad del programa. Los reportes llegan por correo y pueden incorporar análisis de causa raíz, pruebas de concepto y parches propuestos. La inscripción no concede automáticamente acceso general a un modelo privado."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, coste y política de divulgación",
+          "kind": "context",
+          "paragraphs": [
+            "El acceso está abierto a solicitudes de proyectos establecidos con impacto relevante en infraestructura o seguridad de usuarios; Anthropic evalúa casos individualmente y puede ajustar criterios. No hay precio por repositorio ni por token para los mantenedores aceptados: la compañía declara que cubre los costos. Tampoco publica un compromiso de frecuencia fija, cobertura universal por lenguaje o un plazo garantizado de entrega. El servicio es una oferta de inscripción y selección, no disponibilidad general inmediata para cualquier desarrollador.",
+            "Un detalle crítico es la divulgación. Los hallazgos automáticos no revisados no activan por sí solos una cuenta regresiva pública de 90 días. Si Anthropic valida posteriormente un problema mediante su proceso humano, puede aplicarse el procedimiento ordinario de divulgación coordinada. Los mantenedores pueden pausar los reportes con disabled: true o retirarse mediante otro PR. Esta distinción evita que un informe todavía incierto se convierta automáticamente en una presión pública para publicar un parche apresurado."
+          ]
+        },
+        {
+          "heading": "Impacto y límites para equipos de software",
+          "kind": "report",
+          "paragraphs": [
+            "Para los mantenedores, la ventaja potencial es encontrar fallos que una revisión convencional no detectó y recibir sugerencias concretas para reproducirlos. El costo oculto está en el triage: revisar pruebas, determinar impacto, evitar duplicados y comprobar que un parche no rompe funcionalidades. Para empresas que dependen de bibliotecas abiertas, un ecosistema con más correcciones puede mejorar la seguridad de la cadena de suministro, pero solo cuando los proyectos afectados disponen de tiempo y personal para responder.",
+            "Anthropic afirma haber revisado más de seis mil reportes en su programa de divulgación antes de este lanzamiento y espera una tasa de verdaderos positivos superior al 90 % para el nuevo servicio. Son cifras y expectativas propias, no una auditoría independiente de OSS Scanner. Además, las condiciones del servicio, el proceso de aceptación y el alcance efectivo por lenguaje pueden evolucionar. Un equipo prudente debe mantener pruebas de regresión, revisión de expertos y su propio programa de divulgación, incluso cuando un modelo sugiera un arreglo plausible."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y qué seguir",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: este anuncio cambia la economía de la búsqueda de fallos, pero no elimina el cuello de botella humano. La pregunta relevante no es cuántos errores puede señalar un modelo en una tarde, sino cuántos problemas reales llegan a corregirse sin sobrecargar a quienes mantienen infraestructura crítica. Separar el canal rápido sin revisión del canal tradicional con revisión humana es una decisión editorialmente importante porque evita confundir velocidad con certeza.",
+            "Para participar, el paso práctico es verificar que el proyecto tenga responsables de seguridad, compilar un Dockerfile reproducible y redactar un modelo de amenazas útil antes de solicitar ingreso. Después conviene registrar tasa de falsos positivos, tiempo de respuesta y calidad de parches. Habrá que seguir el número de proyectos admitidos, la frecuencia de exploración, las tasas de confirmación independientes y las mejoras de triage y remediación que Anthropic prometa implementar."
+          ]
+        }
+      ],
+      "executiveSummary": "Anthropic abre un servicio voluntario que analiza periódicamente repositorios abiertos con modelos Claude avanzados y envía hallazgos sin revisión humana. Los mantenedores deben inscribirse, preparar un entorno reproducible y asumir la validación de falsos positivos. El informe distingue lo anunciado de lo ya disponible, explica las condiciones de acceso y señala las pruebas todavía necesarias para evaluar el impacto real.",
+      "finalSummary": "La noticia registra un cambio verificable en la cronología de la IA, pero su impacto dependerá de implementación, acceso y resultados posteriores. Los compromisos, previsiones y estimaciones del proveedor se presentan como tales; los datos faltantes quedan explícitos.",
+      "analysis": "Análisis Gazette: el desafío pasa de encontrar posibles vulnerabilidades a validarlas y corregirlas de forma responsable. Una alerta automática no equivale a una vulnerabilidad confirmada.",
+      "watch": "Admisiones, cobertura real de lenguajes, frecuencia de escaneo, falsos positivos, parches integrados y evolución de la política de divulgación.",
+      "technicalDetails": [
+        {
+          "label": "Ingreso",
+          "value": "PR a anthropics/oss-scanner con project.yaml y Dockerfile"
+        },
+        {
+          "label": "Ejecución",
+          "value": "Agentes en entornos aislados sin Internet durante el escaneo"
+        },
+        {
+          "label": "Entrega",
+          "value": "Reportes por correo sin revisión humana previa"
+        },
+        {
+          "label": "Tasa de acierto",
+          "value": ">90 % esperada",
+          "note": "Expectativa de Anthropic; no benchmark independiente"
+        }
+      ],
+      "availability": {
+        "status": "Inscripción opt-in y aceptación individual; programa lanzado el 8 de octubre",
+        "platforms": [
+          "Repositorios open source aceptados"
+        ],
+        "regions": [
+          "No se publica una lista cerrada de regiones"
+        ],
+        "requirements": [
+          "Ser mantenedor principal",
+          "Configurar project.yaml, contacto y Dockerfile reproducible"
+        ],
+        "notes": [
+          "No hay acceso automático para todo proyecto",
+          "Frecuencia variable según capacidad"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Proyectos admitidos",
+          "value": "Gratuito",
+          "note": "Anthropic declara que cubre el costo del escaneo"
+        }
+      ],
+      "limitations": [
+        "Informes no revisados por personas; posibles falsos positivos.",
+        "No hay SLA ni calendario fijo de escaneos.",
+        "La tasa de acierto anunciada es una expectativa interna.",
+        "La elegibilidad se evalúa caso por caso."
+      ],
+      "practicalAdvice": [
+        "Preparar un modelo de amenazas y entorno reproducible antes de inscribirse.",
+        "Validar cada hallazgo con pruebas propias antes de publicar avisos de seguridad.",
+        "Medir carga de triage y calidad de parches, no solo cantidad de alertas."
+      ],
+      "usefulFacts": [
+        "Inscripción: repositorio anthropics/oss-scanner.",
+        "El programa admite cifrado PGP para informes por correo.",
+        "La opción disabled: true permite pausar escaneos."
+      ]
+    },
+    {
+      "id": "anthropic-critical-infrastructure-defense-2026",
+      "eventKey": "anthropic-cyber-mission-critical-infrastructure-defense-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Anthropic",
+      "product": "Critical Infrastructure Defense Program",
+      "title": "Anthropic crea un programa de defensa de infraestructura crítica con Claude y once socios",
+      "summary": "La nueva Cyber Mission inicia un programa especializado en redes industriales, energía, agua y transporte. Claude, ingenieros y socios de ciberseguridad colaborarán en una primera cohorte; no es un servicio abierto de seguridad industrial.",
+      "tags": [
+        "Seguridad",
+        "Infraestructura",
+        "Agentes",
+        "Alianzas"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de redes e infraestructura global; no representa instalaciones reales de los socios.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia horizontal 3:2 de estaciones de energía, tratamiento de agua y trenes unidos por un mapa de defensa; inspectores humanos y máquinas revisan válvulas y controladores industriales. Sin fotografías falsas, pantallas inventadas ni logotipos falsos.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "source": {
+        "name": "Anthropic · Introducing the Anthropic Cyber Mission",
+        "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Anthropic · Project Glasswing",
+          "url": "https://www.anthropic.com/glasswing"
+        },
+        {
+          "name": "Anthropic · Cyber Verification Program",
+          "url": "https://www.anthropic.com/news/cyber-verification-program"
+        }
+      ],
+      "body": [
+        "Anthropic anunció el 8 de octubre su Cyber Mission, una estrategia de largo plazo para apoyar la defensa de software e infraestructura crítica. Uno de sus primeros componentes es el Critical Infrastructure Defense Program, o CIDP. El programa se dirige a proveedores de seguridad y fabricantes que protegen tecnología operativa: controladores, redes industriales y sistemas que mantienen servicios de energía, agua y transporte. No se trata de un nuevo modelo público ni de una herramienta que permita a Claude operar libremente una central eléctrica.",
+        "El anuncio describe una combinación de modelos frontier, ingenieros de Anthropic que trabajan con socios y resultados de investigación sobre amenazas. La prioridad inicial es aprender cómo identificar y reparar exposiciones en entornos donde detener una máquina para aplicar un parche puede ser costoso o peligroso. La compañía dice que el trabajo ya comenzó con algunos participantes. Esa formulación corresponde a un programa activo de colaboración temprana, no a una certificación de seguridad para instalaciones.",
+        "Los once socios fundadores identificados son Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Insane Cyber, Nozomi Networks, Palo Alto Networks, PwC y Rockwell Automation. El conjunto combina consultoras, especialistas de ciberseguridad, fabricantes de equipos y proveedores con experiencia directa en redes industriales. Anthropic afirma que varios ya utilizan Claude para investigar vulnerabilidades y apoyar correcciones; no publicó una matriz que permita atribuir resultados cuantificados a cada participante.",
+        "En una red empresarial convencional, los administradores pueden aislar un servicio o actualizarlo con relativa rapidez. En una planta industrial, un controlador puede llevar años operando y tener dependencias difíciles de reproducir. Un análisis automatizado que recomiende reiniciarlo sin comprender el proceso físico puede empeorar la situación. Por eso la intervención de especialistas de tecnología operativa es parte esencial del programa: el modelo propone y analiza, mientras operadores autorizados validan riesgos, tiempos de mantenimiento y cambios.",
+        "El CIDP comenzó con una cohorte pequeña de proveedores de confianza. Anthropic ofrece un formulario de interés a empresas que construyen productos o servicios de seguridad para infraestructura crítica, pero eso no equivale a inscripción aprobada ni a una suscripción de acceso universal. No hay una tarifa pública, fecha de disponibilidad general ni lista completa de países admitidos. Tampoco se anunció una API separada del programa ni un catálogo de hardware compatible.",
+        "La compañía distingue esta colaboración de su Cyber Verification Program, que permite a equipos de defensa elegibles solicitar acceso ampliado a capacidades de modelos. También la separa de OSS Scanner, el servicio optativo para proyectos open source. Aunque forman parte de una estrategia común, las tres vías tienen usuarios y mecanismos de acceso diferentes. No se debe describir el anuncio como si todas las instalaciones industriales pudieran contratar hoy un sistema automático listo para producción.",
+        "Para una empresa eléctrica, sanitaria o de transporte, la oportunidad potencial es disponer de herramientas más rápidas para revisar código, configuraciones y reportes de amenazas. El beneficio real depende de que los hallazgos sean reproducibles, se prioricen correctamente y se apliquen sin interrumpir servicios esenciales. En instalaciones antiguas, incluso un parche correcto puede exigir semanas de validación y ventanas de mantenimiento cuidadosamente planificadas. Un modelo generativo no elimina esos procesos de seguridad operacional.",
+        "Los integradores y fabricantes pueden usar la experiencia para diseñar procedimientos de evaluación, pruebas de laboratorio y propuestas de mitigación con supervisión humana. Para desarrolladores de herramientas industriales, la lección es documentar límites de autoridad, registrar decisiones y distinguir hallazgos sugeridos de cambios ejecutados. La publicación de Anthropic no incluye cifras de reducción de ataques, tiempos de reparación, precisión de detección ni incidentes evitados; cualquier promesa de mejora cuantitativa sería prematura.",
+        "Anthropic vincula la iniciativa con Project Glasswing, donde modelos avanzados identificaron problemas en software ampliamente utilizado. Según la compañía, el descubrimiento de vulnerabilidades avanza más rápido que su verificación y corrección. El CIDP intenta llevar esa capacidad a un entorno de mayor impacto físico, donde una equivocación puede afectar agua, energía o movilidad. La compañía también informa que programas anteriores de apoyo llegaron a entidades públicas de numerosos estados estadounidenses, pero esos antecedentes no prueban por sí solos eficacia del CIDP.",
+        "Análisis Gazette: el rasgo distintivo es la alianza con expertos del dominio, no la idea de que un modelo reemplazará al ingeniero industrial. Para evaluar resultados, habrá que seguir pilotos con métricas verificables, procedimientos de aprobación humana, incidentes detectados y la capacidad de aplicar correcciones sin cortes. Los operadores deberían exigir trazabilidad, pruebas en laboratorio y una ruta de reversión antes de conectar cualquier agente a redes con consecuencias físicas."
+      ],
+      "keyPoints": [
+        "El programa CIDP se concentra inicialmente en tecnología operativa que controla redes eléctricas, agua, transporte y otras instalaciones críticas.",
+        "Anthropic anunció once socios fundadores y un primer grupo pequeño de proveedores; no existe acceso general a un producto industrial autónomo.",
+        "La oferta combina modelos Claude, ingenieros presenciales y conocimiento de amenazas, no solo una API."
+      ],
+      "quickTakeaways": [
+        "El programa CIDP se concentra inicialmente en tecnología operativa que controla redes eléctricas, agua, transporte y otras instalaciones críticas.",
+        "Anthropic anunció once socios fundadores y un primer grupo pequeño de proveedores; no existe acceso general a un producto industrial autónomo.",
+        "La oferta combina modelos Claude, ingenieros presenciales y conocimiento de amenazas, no solo una API.",
+        "Los resultados de seguridad y reducción de incidentes todavía no cuentan con evaluación independiente publicada."
+      ],
+      "sections": [
+        {
+          "heading": "Una iniciativa distinta de los chatbots",
+          "kind": "report",
+          "paragraphs": [
+            "Anthropic anunció el 8 de octubre su Cyber Mission, una estrategia de largo plazo para apoyar la defensa de software e infraestructura crítica. Uno de sus primeros componentes es el Critical Infrastructure Defense Program, o CIDP. El programa se dirige a proveedores de seguridad y fabricantes que protegen tecnología operativa: controladores, redes industriales y sistemas que mantienen servicios de energía, agua y transporte. No se trata de un nuevo modelo público ni de una herramienta que permita a Claude operar libremente una central eléctrica.",
+            "El anuncio describe una combinación de modelos frontier, ingenieros de Anthropic que trabajan con socios y resultados de investigación sobre amenazas. La prioridad inicial es aprender cómo identificar y reparar exposiciones en entornos donde detener una máquina para aplicar un parche puede ser costoso o peligroso. La compañía dice que el trabajo ya comenzó con algunos participantes. Esa formulación corresponde a un programa activo de colaboración temprana, no a una certificación de seguridad para instalaciones."
+          ]
+        },
+        {
+          "heading": "Quiénes participan y cómo funciona",
+          "kind": "technical",
+          "paragraphs": [
+            "Los once socios fundadores identificados son Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Insane Cyber, Nozomi Networks, Palo Alto Networks, PwC y Rockwell Automation. El conjunto combina consultoras, especialistas de ciberseguridad, fabricantes de equipos y proveedores con experiencia directa en redes industriales. Anthropic afirma que varios ya utilizan Claude para investigar vulnerabilidades y apoyar correcciones; no publicó una matriz que permita atribuir resultados cuantificados a cada participante.",
+            "En una red empresarial convencional, los administradores pueden aislar un servicio o actualizarlo con relativa rapidez. En una planta industrial, un controlador puede llevar años operando y tener dependencias difíciles de reproducir. Un análisis automatizado que recomiende reiniciarlo sin comprender el proceso físico puede empeorar la situación. Por eso la intervención de especialistas de tecnología operativa es parte esencial del programa: el modelo propone y analiza, mientras operadores autorizados validan riesgos, tiempos de mantenimiento y cambios."
+          ]
+        },
+        {
+          "heading": "Estado comercial, acceso y límites",
+          "kind": "context",
+          "paragraphs": [
+            "El CIDP comenzó con una cohorte pequeña de proveedores de confianza. Anthropic ofrece un formulario de interés a empresas que construyen productos o servicios de seguridad para infraestructura crítica, pero eso no equivale a inscripción aprobada ni a una suscripción de acceso universal. No hay una tarifa pública, fecha de disponibilidad general ni lista completa de países admitidos. Tampoco se anunció una API separada del programa ni un catálogo de hardware compatible.",
+            "La compañía distingue esta colaboración de su Cyber Verification Program, que permite a equipos de defensa elegibles solicitar acceso ampliado a capacidades de modelos. También la separa de OSS Scanner, el servicio optativo para proyectos open source. Aunque forman parte de una estrategia común, las tres vías tienen usuarios y mecanismos de acceso diferentes. No se debe describir el anuncio como si todas las instalaciones industriales pudieran contratar hoy un sistema automático listo para producción."
+          ]
+        },
+        {
+          "heading": "Qué significa para empresas y operadores",
+          "kind": "report",
+          "paragraphs": [
+            "Para una empresa eléctrica, sanitaria o de transporte, la oportunidad potencial es disponer de herramientas más rápidas para revisar código, configuraciones y reportes de amenazas. El beneficio real depende de que los hallazgos sean reproducibles, se prioricen correctamente y se apliquen sin interrumpir servicios esenciales. En instalaciones antiguas, incluso un parche correcto puede exigir semanas de validación y ventanas de mantenimiento cuidadosamente planificadas. Un modelo generativo no elimina esos procesos de seguridad operacional.",
+            "Los integradores y fabricantes pueden usar la experiencia para diseñar procedimientos de evaluación, pruebas de laboratorio y propuestas de mitigación con supervisión humana. Para desarrolladores de herramientas industriales, la lección es documentar límites de autoridad, registrar decisiones y distinguir hallazgos sugeridos de cambios ejecutados. La publicación de Anthropic no incluye cifras de reducción de ataques, tiempos de reparación, precisión de detección ni incidentes evitados; cualquier promesa de mejora cuantitativa sería prematura."
+          ]
+        },
+        {
+          "heading": "Contexto competitivo y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Anthropic vincula la iniciativa con Project Glasswing, donde modelos avanzados identificaron problemas en software ampliamente utilizado. Según la compañía, el descubrimiento de vulnerabilidades avanza más rápido que su verificación y corrección. El CIDP intenta llevar esa capacidad a un entorno de mayor impacto físico, donde una equivocación puede afectar agua, energía o movilidad. La compañía también informa que programas anteriores de apoyo llegaron a entidades públicas de numerosos estados estadounidenses, pero esos antecedentes no prueban por sí solos eficacia del CIDP.",
+            "Análisis Gazette: el rasgo distintivo es la alianza con expertos del dominio, no la idea de que un modelo reemplazará al ingeniero industrial. Para evaluar resultados, habrá que seguir pilotos con métricas verificables, procedimientos de aprobación humana, incidentes detectados y la capacidad de aplicar correcciones sin cortes. Los operadores deberían exigir trazabilidad, pruebas en laboratorio y una ruta de reversión antes de conectar cualquier agente a redes con consecuencias físicas."
+          ]
+        }
+      ],
+      "executiveSummary": "La nueva Cyber Mission inicia un programa especializado en redes industriales, energía, agua y transporte. Claude, ingenieros y socios de ciberseguridad colaborarán en una primera cohorte; no es un servicio abierto de seguridad industrial. El informe distingue lo anunciado de lo ya disponible, explica las condiciones de acceso y señala las pruebas todavía necesarias para evaluar el impacto real.",
+      "finalSummary": "La noticia registra un cambio verificable en la cronología de la IA, pero su impacto dependerá de implementación, acceso y resultados posteriores. Los compromisos, previsiones y estimaciones del proveedor se presentan como tales; los datos faltantes quedan explícitos.",
+      "analysis": "Análisis Gazette: el valor del CIDP dependerá de validar hallazgos con operadores especializados y reducir riesgos sin convertir a la IA en controlador autónomo de sistemas críticos.",
+      "watch": "Resultados de pilotos, socios nuevos, métricas auditables, regiones admitidas, requisitos de supervisión y cualquier oferta comercial futura.",
+      "technicalDetails": [
+        {
+          "label": "Ámbito inicial",
+          "value": "Tecnología operativa de energía, agua, transporte y redes industriales"
+        },
+        {
+          "label": "Socios fundadores",
+          "value": "11 organizaciones anunciadas"
+        },
+        {
+          "label": "Componentes",
+          "value": "Modelos Claude, ingenieros presenciales e investigación de amenazas"
+        }
+      ],
+      "availability": {
+        "status": "Programa activo con primera cohorte limitada y formulario de interés",
+        "platforms": [
+          "Proveedores de ciberseguridad y tecnología operativa"
+        ],
+        "regions": [
+          "Sin cobertura geográfica general publicada"
+        ],
+        "requirements": [
+          "Ser proveedor o fabricante relevante y pasar selección del programa"
+        ],
+        "notes": [
+          "No es acceso general ni despliegue autónomo de Claude en plantas"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Condiciones comerciales",
+          "value": "No anunciadas públicamente"
+        }
+      ],
+      "limitations": [
+        "Sin métricas públicas independientes de reducción de incidentes.",
+        "Sin fecha de acceso general ni tarifas.",
+        "Entornos industriales requieren revisión humana y validación operacional.",
+        "No se documenta compatibilidad completa con equipos o protocolos específicos."
+      ],
+      "practicalAdvice": [
+        "Exigir pruebas en entorno aislado antes de cambiar equipos industriales.",
+        "Mantener autorización humana, registros y planes de reversión.",
+        "Separar los hallazgos de IA de las órdenes de ejecución sobre hardware."
+      ],
+      "usefulFacts": [
+        "El programa es una de las dos primeras líneas de Anthropic Cyber Mission.",
+        "Los once socios incluyen especialistas de redes industriales y fabricantes.",
+        "OSS Scanner y Cyber Verification Program tienen mecanismos de acceso distintos."
+      ]
+    },
+    {
+      "id": "anthropic-usage-policy-2026",
+      "eventKey": "anthropic-usage-policy-update-november-2026-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Anthropic",
+      "product": "Usage Policy",
+      "title": "Anthropic actualiza las reglas de Claude: agentes físicos, campañas engañosas y supervisión humana",
+      "summary": "La nueva política publicada el 8 de octubre entrará en vigor el 12 de noviembre. Clarifica restricciones para agentes conectados a hardware, vigilancia y campañas engañosas, y añade una prohibición limitada de maltrato reiterado a sus modelos.",
+      "tags": [
+        "Seguridad",
+        "Políticas",
+        "Agentes",
+        "Gobernanza"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de normas y máquinas; no representa un documento físico real de Anthropic.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración editorial sepia 3:2: un libro de normas abierto frente a un brazo robótico con interruptor de emergencia y una mesa de revisión humana; composición de periódico antiguo, sin texto legible falso ni logos inventados.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Anthropic · 2026 Usage Policy update",
+        "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Anthropic · Usage Policy, vigente desde 12 de noviembre",
+          "url": "https://www.anthropic.com/legal/aup"
+        },
+        {
+          "name": "TechCrunch · contexto de la actualización",
+          "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "Anthropic publicó el 8 de octubre de 2026 una revisión de su Usage Policy para adaptarla al uso de Claude en agentes más autónomos y sistemas con consecuencias reales. La empresa fijó el 12 de noviembre de 2026 como fecha de entrada en vigor. Esa diferencia temporal importa: una norma anunciada hoy no debe describirse como si ya hubiera comenzado a aplicarse en todos los contratos. El texto completo está disponible en la página legal del proveedor y cubre aplicaciones, Claude Code, API, acceso mediante socios y productos que integran sus modelos.",
+        "Anthropic sostiene que gran parte de la revisión aclara reglas existentes, no que todos los comportamientos enumerados sean nuevas prohibiciones. En concreto, reorganiza restricciones dispersas sobre campañas engañosas, vigilancia, armas y decisiones sensibles. El anuncio también reconoce que las capacidades agentivas han cambiado los riesgos: una respuesta de texto y una acción ejecutada por una máquina física no requieren el mismo nivel de control. La lectura correcta es contractual y operativa, no un lanzamiento de un nuevo modelo.",
+        "La novedad técnica más relevante para desarrolladores de robótica y automatización es una exigencia explícita para sistemas conectados a hardware capaz de provocar lesiones. Debe existir un operador cualificado que observe el equipo y pueda detenerlo cuando sea necesario. Además, el equipo debe conservar un estado seguro si Claude pierde la conexión. La condición apunta a riesgos concretos de actuadores, robots y máquinas, no a una afirmación de que el modelo pueda garantizar seguridad funcional por sí solo.",
+        "En ámbitos como salud, derechos legales, finanzas, empleo y acceso a servicios esenciales, Anthropic reafirma requisitos de revisión por una persona con autoridad real para cambiar recomendaciones y de información a las personas afectadas sobre el uso de IA. El comunicado aclara que esas obligaciones ya existían, pero que se han redactado ejemplos más precisos. Para un equipo de producto, el trabajo inmediato es mapear decisiones automatizadas, comprobar dónde existe aprobación humana efectiva y registrar cómo se informa a usuarios.",
+        "La revisión reúne bajo una sección específica las campañas que ocultan su patrocinio o simulan apoyo independiente mediante cuentas falsas y medios fabricados. La prohibición cubre tanto fines políticos como comerciales, y también la infraestructura diseñada para operar esas redes. Anthropic precisa además que el uso electoral prohibido se concentra en engañar a votantes, suprimir participación, suplantar autoridades o alterar procesos democráticos. Al mismo tiempo, retira una prohibición general de segmentación personalizada que también afectaba tareas cívicas legítimas.",
+        "En vigilancia y justicia penal, la empresa especifica que no se puede usar Claude para decidir o recomendar a quién investigar, detener o acusar. También prohíbe desarrollar herramientas orientadas a vigilancia no consentida, incluso si analizan datos previamente recolectados. La actualización detalla restricciones para software y componentes de armas, incluidos sistemas de guía y control. Anthropic afirma que estas formulaciones reflejan cómo ya aplicaba sus reglas; por tanto, sería inexacto presentar cada ejemplo como una prohibición totalmente nueva.",
+        "Una incorporación singular prohíbe conductas crueles o abusivas sostenidas e innecesarias dirigidas a los modelos. Anthropic dice que se refiere a casos extremos de abuso reiterado sin propósito discernible, no a frustración habitual, críticas, pruebas de seguridad, temas creativos oscuros o investigación. El mecanismo principal que describe es la capacidad de Claude para terminar ciertas conversaciones raras de abuso persistente, algo que ya se había introducido previamente en productos de la empresa.",
+        "El cambio no demuestra que Claude tenga conciencia ni que la política otorgue personalidad jurídica a un modelo. Es una decisión de condiciones de uso adoptada por el proveedor en un contexto de investigación sobre bienestar de sistemas avanzados. También hay matices contractuales: Anthropic contempla excepciones negociadas para algunos clientes gubernamentales bajo condiciones específicas. No hay nuevo precio, suscripción o región anunciada como consecuencia de esta revisión, aunque la política de regiones compatibles se aclara en paralelo.",
+        "Los equipos que despliegan agentes deberían identificar funciones con efectos externos, especialmente acciones físicas, decisiones de alto riesgo, recolección de datos personales y generación automatizada de comunicaciones. Un checklist útil incluye responsable humano, mecanismo de parada, modo seguro ante fallo de red, registro de decisiones y avisos al usuario. Los desarrolladores deben leer el texto legal completo y comprobar las condiciones de sus contratos, en lugar de basarse únicamente en titulares sobre la cláusula de trato hacia Claude.",
+        "Análisis Gazette: el cambio de fondo es que la gobernanza empieza a seguir el alcance real de los agentes. Cuando un sistema puede interactuar con aplicaciones, influir en decisiones o mover hardware, las reglas deben especificar autoridad, supervisión y límites de uso. La discusión sobre trato a modelos atraerá atención, pero el requisito de parada segura y las restricciones de campañas automatizadas tienen consecuencias prácticas más inmediatas. Habrá que observar aclaraciones de implementación y cómo se aplican las normas desde el 12 de noviembre."
+      ],
+      "keyPoints": [
+        "La política se publicó el 8 de octubre, pero su fecha de entrada en vigor es el 12 de noviembre de 2026.",
+        "Para hardware autónomo con riesgo físico, exige operador cualificado capaz de observar y detener el sistema y un estado seguro ante desconexión.",
+        "Consolida restricciones a campañas engañosas y precisa reglas de vigilancia y decisiones de justicia penal."
+      ],
+      "quickTakeaways": [
+        "La política se publicó el 8 de octubre, pero su fecha de entrada en vigor es el 12 de noviembre de 2026.",
+        "Para hardware autónomo con riesgo físico, exige operador cualificado capaz de observar y detener el sistema y un estado seguro ante desconexión.",
+        "Consolida restricciones a campañas engañosas y precisa reglas de vigilancia y decisiones de justicia penal.",
+        "La nueva prohibición de maltrato reiterado a Claude se limita, según Anthropic, a casos extremos; no abarca críticas ni pruebas legítimas."
+      ],
+      "sections": [
+        {
+          "heading": "Anuncio frente a vigencia real",
+          "kind": "report",
+          "paragraphs": [
+            "Anthropic publicó el 8 de octubre de 2026 una revisión de su Usage Policy para adaptarla al uso de Claude en agentes más autónomos y sistemas con consecuencias reales. La empresa fijó el 12 de noviembre de 2026 como fecha de entrada en vigor. Esa diferencia temporal importa: una norma anunciada hoy no debe describirse como si ya hubiera comenzado a aplicarse en todos los contratos. El texto completo está disponible en la página legal del proveedor y cubre aplicaciones, Claude Code, API, acceso mediante socios y productos que integran sus modelos.",
+            "Anthropic sostiene que gran parte de la revisión aclara reglas existentes, no que todos los comportamientos enumerados sean nuevas prohibiciones. En concreto, reorganiza restricciones dispersas sobre campañas engañosas, vigilancia, armas y decisiones sensibles. El anuncio también reconoce que las capacidades agentivas han cambiado los riesgos: una respuesta de texto y una acción ejecutada por una máquina física no requieren el mismo nivel de control. La lectura correcta es contractual y operativa, no un lanzamiento de un nuevo modelo."
+          ]
+        },
+        {
+          "heading": "Autonomía física y supervisión de alto riesgo",
+          "kind": "technical",
+          "paragraphs": [
+            "La novedad técnica más relevante para desarrolladores de robótica y automatización es una exigencia explícita para sistemas conectados a hardware capaz de provocar lesiones. Debe existir un operador cualificado que observe el equipo y pueda detenerlo cuando sea necesario. Además, el equipo debe conservar un estado seguro si Claude pierde la conexión. La condición apunta a riesgos concretos de actuadores, robots y máquinas, no a una afirmación de que el modelo pueda garantizar seguridad funcional por sí solo.",
+            "En ámbitos como salud, derechos legales, finanzas, empleo y acceso a servicios esenciales, Anthropic reafirma requisitos de revisión por una persona con autoridad real para cambiar recomendaciones y de información a las personas afectadas sobre el uso de IA. El comunicado aclara que esas obligaciones ya existían, pero que se han redactado ejemplos más precisos. Para un equipo de producto, el trabajo inmediato es mapear decisiones automatizadas, comprobar dónde existe aprobación humana efectiva y registrar cómo se informa a usuarios."
+          ]
+        },
+        {
+          "heading": "Campañas engañosas, elecciones y vigilancia",
+          "kind": "context",
+          "paragraphs": [
+            "La revisión reúne bajo una sección específica las campañas que ocultan su patrocinio o simulan apoyo independiente mediante cuentas falsas y medios fabricados. La prohibición cubre tanto fines políticos como comerciales, y también la infraestructura diseñada para operar esas redes. Anthropic precisa además que el uso electoral prohibido se concentra en engañar a votantes, suprimir participación, suplantar autoridades o alterar procesos democráticos. Al mismo tiempo, retira una prohibición general de segmentación personalizada que también afectaba tareas cívicas legítimas.",
+            "En vigilancia y justicia penal, la empresa especifica que no se puede usar Claude para decidir o recomendar a quién investigar, detener o acusar. También prohíbe desarrollar herramientas orientadas a vigilancia no consentida, incluso si analizan datos previamente recolectados. La actualización detalla restricciones para software y componentes de armas, incluidos sistemas de guía y control. Anthropic afirma que estas formulaciones reflejan cómo ya aplicaba sus reglas; por tanto, sería inexacto presentar cada ejemplo como una prohibición totalmente nueva."
+          ]
+        },
+        {
+          "heading": "Conducta hacia los modelos y alcance",
+          "kind": "report",
+          "paragraphs": [
+            "Una incorporación singular prohíbe conductas crueles o abusivas sostenidas e innecesarias dirigidas a los modelos. Anthropic dice que se refiere a casos extremos de abuso reiterado sin propósito discernible, no a frustración habitual, críticas, pruebas de seguridad, temas creativos oscuros o investigación. El mecanismo principal que describe es la capacidad de Claude para terminar ciertas conversaciones raras de abuso persistente, algo que ya se había introducido previamente en productos de la empresa.",
+            "El cambio no demuestra que Claude tenga conciencia ni que la política otorgue personalidad jurídica a un modelo. Es una decisión de condiciones de uso adoptada por el proveedor en un contexto de investigación sobre bienestar de sistemas avanzados. También hay matices contractuales: Anthropic contempla excepciones negociadas para algunos clientes gubernamentales bajo condiciones específicas. No hay nuevo precio, suscripción o región anunciada como consecuencia de esta revisión, aunque la política de regiones compatibles se aclara en paralelo."
+          ]
+        },
+        {
+          "heading": "Qué hacer antes de noviembre y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Los equipos que despliegan agentes deberían identificar funciones con efectos externos, especialmente acciones físicas, decisiones de alto riesgo, recolección de datos personales y generación automatizada de comunicaciones. Un checklist útil incluye responsable humano, mecanismo de parada, modo seguro ante fallo de red, registro de decisiones y avisos al usuario. Los desarrolladores deben leer el texto legal completo y comprobar las condiciones de sus contratos, en lugar de basarse únicamente en titulares sobre la cláusula de trato hacia Claude.",
+            "Análisis Gazette: el cambio de fondo es que la gobernanza empieza a seguir el alcance real de los agentes. Cuando un sistema puede interactuar con aplicaciones, influir en decisiones o mover hardware, las reglas deben especificar autoridad, supervisión y límites de uso. La discusión sobre trato a modelos atraerá atención, pero el requisito de parada segura y las restricciones de campañas automatizadas tienen consecuencias prácticas más inmediatas. Habrá que observar aclaraciones de implementación y cómo se aplican las normas desde el 12 de noviembre."
+          ]
+        }
+      ],
+      "executiveSummary": "La nueva política publicada el 8 de octubre entrará en vigor el 12 de noviembre. Clarifica restricciones para agentes conectados a hardware, vigilancia y campañas engañosas, y añade una prohibición limitada de maltrato reiterado a sus modelos. El informe distingue lo anunciado de lo ya disponible, explica las condiciones de acceso y señala las pruebas todavía necesarias para evaluar el impacto real.",
+      "finalSummary": "La noticia registra un cambio verificable en la cronología de la IA, pero su impacto dependerá de implementación, acceso y resultados posteriores. Los compromisos, previsiones y estimaciones del proveedor se presentan como tales; los datos faltantes quedan explícitos.",
+      "analysis": "Análisis Gazette: las reglas de autonomía física y supervisión humana son más relevantes para el despliegue de agentes que los titulares sobre trato a modelos; ninguna de las dos sustituye evaluación de riesgos.",
+      "watch": "Entrada en vigor el 12 de noviembre, aclaraciones contractuales, guías para hardware y ejemplos de aplicación en sistemas agentivos.",
+      "technicalDetails": [
+        {
+          "label": "Publicación",
+          "value": "8 de octubre de 2026"
+        },
+        {
+          "label": "Vigencia",
+          "value": "12 de noviembre de 2026"
+        },
+        {
+          "label": "Hardware autónomo",
+          "value": "Observación y parada por operador cualificado; estado seguro sin conexión"
+        }
+      ],
+      "availability": {
+        "status": "Texto anunciado; entra en vigor el 12 de noviembre de 2026",
+        "platforms": [
+          "Claude.ai",
+          "Claude Code",
+          "API",
+          "Proveedores y productos integrados"
+        ],
+        "regions": [
+          "Sujeto a Supported Regions Policy y contratos aplicables"
+        ],
+        "requirements": [
+          "Revisar casos de uso y medidas de supervisión"
+        ],
+        "notes": [
+          "No es un cambio de precio ni lanzamiento de modelo"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Cambio de tarifas",
+          "value": "No anunciado"
+        }
+      ],
+      "limitations": [
+        "La aplicación práctica puede variar según contrato y contexto.",
+        "La revisión combina aclaraciones de normas existentes con disposiciones nuevas.",
+        "No constituye evidencia sobre conciencia de modelos.",
+        "La vigencia comienza el 12 de noviembre, no el día del anuncio."
+      ],
+      "practicalAdvice": [
+        "Auditar flujos que actúan sobre hardware o decisiones sensibles.",
+        "Documentar parada de emergencia y estado seguro ante pérdida de conexión.",
+        "Revisar texto legal y contratos antes de modificar políticas internas."
+      ],
+      "usefulFacts": [
+        "La nueva sección de campañas engañosas cubre usos comerciales y políticos.",
+        "Se elimina una prohibición general de segmentación electoral, conservando restricciones contra engaño.",
+        "La prohibición de abuso al modelo excluye expresamente pruebas y crítica ordinaria."
+      ]
+    },
+    {
+      "id": "genesis-mission-industry-compute-2026",
+      "eventKey": "us-genesis-mission-2point4b-industry-compute-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "U.S. Department of Energy",
+      "product": "Genesis Mission Consortium",
+      "title": "Genesis Mission suma US$2.400 millones en herramientas y créditos de cómputo de once empresas",
+      "summary": "La Casa Blanca anunció compromisos industriales por US$2.400 millones para ciencia asistida por IA, encabezados por NVIDIA, AMD y OpenAI. La cifra reúne herramientas y créditos de cómputo, no una transferencia inmediata de efectivo ni inversión de capital homogénea.",
+      "tags": [
+        "Investigación",
+        "Infraestructura",
+        "Financiación",
+        "Ciencia"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial de infraestructura científica interconectada; no muestra laboratorios federales reales.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado horizontal 3:2 de una red de laboratorios, supercomputadores y telescopios conectados por una constelación de líneas, tinta sepia sobre papel de periódico antiguo. No inventar marcas, cifras en el arte ni presentar instalaciones como fotografías.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "source": {
+        "name": "The White House · Fact Sheet, Science: A New Golden Age",
+        "url": "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-trump-administration-announces-the-most-ambitious-set-of-science-initiatives-this-century/",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "NVIDIA · US$1.000 millones en cinco años",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Anthropic · compromiso de US$150 millones en tres años",
+          "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "DOE · Genesis Mission",
+          "url": "https://www.energy.gov/genesis"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, durante la cumbre Science: A New Golden Age, la Casa Blanca anunció compromisos industriales valorados en US$2.400 millones para el Genesis Mission Consortium. La contribución está descrita como herramientas de inteligencia artificial y créditos de cómputo destinados a investigación científica en más de quince agencias federales. Es importante leer con precisión la unidad: no se presentó como una transferencia de US$2.400 millones en efectivo al Tesoro ni como una única obra de infraestructura. Son aportes anunciados por compañías con modalidades, calendarios y condiciones que no son necesariamente equivalentes.",
+        "La Genesis Mission se inició en noviembre de 2025 como esfuerzo federal para conectar supercomputación, conjuntos de datos e instrumentos científicos. En julio de 2026 se anunció una ampliación con compromisos federales superiores a US$5.000 millones. La noticia de octubre agrega participación industrial y no debe sumarse mecánicamente a otras cifras del mismo día para construir un total de dinero ya gastado. El objetivo declarado es acelerar investigación en energía, medicina, materiales, computación y otras disciplinas mediante IA y recursos compartidos.",
+        "La hoja informativa de la Casa Blanca identifica once socios y sus montos: NVIDIA US$1.000 millones; AMD US$500 millones; OpenAI US$200 millones; Anthropic y Google US$150 millones cada una; AMP y Emerald AI US$100 millones cada una; AWS, Armada, Crusoe y Micron US$50 millones cada una. Las cifras proceden del anuncio gubernamental y no constituyen auditoría de desembolsos ejecutados. La composición muestra una mezcla de proveedores de chips, nube, modelos y servicios, lo que sugiere que el programa depende de varias capas del ecosistema.",
+        "NVIDIA publicó además un comunicado propio que sitúa su compromiso de US$1.000 millones en un horizonte de cinco años y menciona apoyo a instituciones de investigación, computación cuántica y proveedores de nube que atienden necesidades federales. Anthropic especificó que su compromiso de US$150 millones se distribuirá en tres años e incluirá Claude, Claude Code, créditos de API, capacitación y asistencia técnica para proyectos de la misión. Esas precisiones confirman que el valor anunciado mezcla acceso a tecnología y apoyo operativo, no solo infraestructura física.",
+        "La propuesta federal pretende que científicos puedan combinar datos experimentales, modelos avanzados y computación de alto rendimiento sin reconstruir cada componente desde cero. Entre las líneas de investigación descritas oficialmente aparecen fusión, computación cuántica, descubrimiento de materiales, biología y aplicaciones de supercomputación. Anthropic afirma que sus herramientas apoyarán a varios cientos de proyectos y que trabajará con laboratorios nacionales en incorporación y capacitación. NVIDIA se presenta como colaborador de proyectos de fusión, aceleradores y microelectrónica.",
+        "Para desarrolladores científicos, el valor potencial sería obtener acceso a modelos y recursos que normalmente requieren presupuestos elevados, siempre que el proyecto cumpla requisitos de selección. Para universidades y laboratorios, los créditos pueden facilitar prototipos y evaluaciones; no garantizan continuidad de servicio después de agotarse. La noticia no publica una API federal abierta, un portal universal para pedir créditos ni precios de mercado nuevos. Los mecanismos de acceso dependerán de agencias, consorcios y acuerdos específicos.",
+        "El comunicado gubernamental utiliza el término superinteligencia para describir su agenda científica. Ese lenguaje es institucional y no demuestra que los sistemas entregados tengan capacidades superiores a todas las personas ni que los resultados científicos ya estén validados. Tampoco hay un benchmark común que compare las contribuciones de los socios. Una cifra agregada de créditos no permite calcular cuántas horas de GPU o cuántos experimentos se realizarán sin conocer precios internos, disponibilidad, restricciones de uso y horizonte de cada compromiso.",
+        "El anuncio es relevante para la competencia de IA porque vincula a proveedores rivales en una infraestructura pública de investigación. NVIDIA, AMD, OpenAI, Google y Anthropic participan desde posiciones comerciales diferentes, mientras los laboratorios federales deben coordinar datos, modelos y necesidades de seguridad. La oportunidad es reducir barreras de acceso para proyectos científicos; el riesgo es que una arquitectura fragmentada y créditos condicionados produzcan más anuncios que capacidad efectivamente utilizada.",
+        "Análisis Gazette: la noticia debe medirse por recursos entregados y descubrimientos reproducibles, no por el tamaño nominal del compromiso. Para evaluar avance habrá que seguir la asignación efectiva de créditos, la disponibilidad de hardware, la diversidad de instituciones beneficiarias y la publicación de resultados sometidos a revisión. Los proyectos científicos también necesitarán criterios claros sobre propiedad intelectual, protección de datos, seguridad y continuidad de cómputo cuando expire una contribución.",
+        "En paralelo, el Departamento de Energía anunció nuevos premios de investigación y una beca doctoral bajo la misma misión. Son instrumentos diferentes: un premio federal para un proyecto, una beca y un crédito privado de cómputo no son categorías intercambiables. Mantener esa distinción permite comprender qué parte del impulso científico depende de fondos públicos, cuál de aportes privados y cuál de la capacidad de los equipos para transformar recursos en resultados comprobables."
+      ],
+      "keyPoints": [
+        "La Casa Blanca anunció US$2.400 millones en compromisos de herramientas y créditos de cómputo de once socios industriales.",
+        "NVIDIA figura con US$1.000 millones, AMD con US$500 millones, OpenAI con US$200 millones y Anthropic y Google con US$150 millones cada una.",
+        "La cifra no equivale necesariamente a efectivo desembolsado ni a equipos ya instalados; los compromisos tienen formas y plazos distintos."
+      ],
+      "quickTakeaways": [
+        "La Casa Blanca anunció US$2.400 millones en compromisos de herramientas y créditos de cómputo de once socios industriales.",
+        "NVIDIA figura con US$1.000 millones, AMD con US$500 millones, OpenAI con US$200 millones y Anthropic y Google con US$150 millones cada una.",
+        "La cifra no equivale necesariamente a efectivo desembolsado ni a equipos ya instalados; los compromisos tienen formas y plazos distintos.",
+        "El consorcio busca apoyar desafíos científicos de más de quince agencias federales, con disponibilidad sujeta a programas y acuerdos."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció realmente",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, durante la cumbre Science: A New Golden Age, la Casa Blanca anunció compromisos industriales valorados en US$2.400 millones para el Genesis Mission Consortium. La contribución está descrita como herramientas de inteligencia artificial y créditos de cómputo destinados a investigación científica en más de quince agencias federales. Es importante leer con precisión la unidad: no se presentó como una transferencia de US$2.400 millones en efectivo al Tesoro ni como una única obra de infraestructura. Son aportes anunciados por compañías con modalidades, calendarios y condiciones que no son necesariamente equivalentes.",
+            "La Genesis Mission se inició en noviembre de 2025 como esfuerzo federal para conectar supercomputación, conjuntos de datos e instrumentos científicos. En julio de 2026 se anunció una ampliación con compromisos federales superiores a US$5.000 millones. La noticia de octubre agrega participación industrial y no debe sumarse mecánicamente a otras cifras del mismo día para construir un total de dinero ya gastado. El objetivo declarado es acelerar investigación en energía, medicina, materiales, computación y otras disciplinas mediante IA y recursos compartidos."
+          ]
+        },
+        {
+          "heading": "Empresas y magnitudes confirmadas",
+          "kind": "technical",
+          "paragraphs": [
+            "La hoja informativa de la Casa Blanca identifica once socios y sus montos: NVIDIA US$1.000 millones; AMD US$500 millones; OpenAI US$200 millones; Anthropic y Google US$150 millones cada una; AMP y Emerald AI US$100 millones cada una; AWS, Armada, Crusoe y Micron US$50 millones cada una. Las cifras proceden del anuncio gubernamental y no constituyen auditoría de desembolsos ejecutados. La composición muestra una mezcla de proveedores de chips, nube, modelos y servicios, lo que sugiere que el programa depende de varias capas del ecosistema.",
+            "NVIDIA publicó además un comunicado propio que sitúa su compromiso de US$1.000 millones en un horizonte de cinco años y menciona apoyo a instituciones de investigación, computación cuántica y proveedores de nube que atienden necesidades federales. Anthropic especificó que su compromiso de US$150 millones se distribuirá en tres años e incluirá Claude, Claude Code, créditos de API, capacitación y asistencia técnica para proyectos de la misión. Esas precisiones confirman que el valor anunciado mezcla acceso a tecnología y apoyo operativo, no solo infraestructura física."
+          ]
+        },
+        {
+          "heading": "Cómo podría usarse la capacidad",
+          "kind": "context",
+          "paragraphs": [
+            "La propuesta federal pretende que científicos puedan combinar datos experimentales, modelos avanzados y computación de alto rendimiento sin reconstruir cada componente desde cero. Entre las líneas de investigación descritas oficialmente aparecen fusión, computación cuántica, descubrimiento de materiales, biología y aplicaciones de supercomputación. Anthropic afirma que sus herramientas apoyarán a varios cientos de proyectos y que trabajará con laboratorios nacionales en incorporación y capacitación. NVIDIA se presenta como colaborador de proyectos de fusión, aceleradores y microelectrónica.",
+            "Para desarrolladores científicos, el valor potencial sería obtener acceso a modelos y recursos que normalmente requieren presupuestos elevados, siempre que el proyecto cumpla requisitos de selección. Para universidades y laboratorios, los créditos pueden facilitar prototipos y evaluaciones; no garantizan continuidad de servicio después de agotarse. La noticia no publica una API federal abierta, un portal universal para pedir créditos ni precios de mercado nuevos. Los mecanismos de acceso dependerán de agencias, consorcios y acuerdos específicos."
+          ]
+        },
+        {
+          "heading": "Límites, competencia y lectura económica",
+          "kind": "report",
+          "paragraphs": [
+            "El comunicado gubernamental utiliza el término superinteligencia para describir su agenda científica. Ese lenguaje es institucional y no demuestra que los sistemas entregados tengan capacidades superiores a todas las personas ni que los resultados científicos ya estén validados. Tampoco hay un benchmark común que compare las contribuciones de los socios. Una cifra agregada de créditos no permite calcular cuántas horas de GPU o cuántos experimentos se realizarán sin conocer precios internos, disponibilidad, restricciones de uso y horizonte de cada compromiso.",
+            "El anuncio es relevante para la competencia de IA porque vincula a proveedores rivales en una infraestructura pública de investigación. NVIDIA, AMD, OpenAI, Google y Anthropic participan desde posiciones comerciales diferentes, mientras los laboratorios federales deben coordinar datos, modelos y necesidades de seguridad. La oportunidad es reducir barreras de acceso para proyectos científicos; el riesgo es que una arquitectura fragmentada y créditos condicionados produzcan más anuncios que capacidad efectivamente utilizada."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos hitos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la noticia debe medirse por recursos entregados y descubrimientos reproducibles, no por el tamaño nominal del compromiso. Para evaluar avance habrá que seguir la asignación efectiva de créditos, la disponibilidad de hardware, la diversidad de instituciones beneficiarias y la publicación de resultados sometidos a revisión. Los proyectos científicos también necesitarán criterios claros sobre propiedad intelectual, protección de datos, seguridad y continuidad de cómputo cuando expire una contribución.",
+            "En paralelo, el Departamento de Energía anunció nuevos premios de investigación y una beca doctoral bajo la misma misión. Son instrumentos diferentes: un premio federal para un proyecto, una beca y un crédito privado de cómputo no son categorías intercambiables. Mantener esa distinción permite comprender qué parte del impulso científico depende de fondos públicos, cuál de aportes privados y cuál de la capacidad de los equipos para transformar recursos en resultados comprobables."
+          ]
+        }
+      ],
+      "executiveSummary": "La Casa Blanca anunció compromisos industriales por US$2.400 millones para ciencia asistida por IA, encabezados por NVIDIA, AMD y OpenAI. La cifra reúne herramientas y créditos de cómputo, no una transferencia inmediata de efectivo ni inversión de capital homogénea. El informe distingue lo anunciado de lo ya disponible, explica las condiciones de acceso y señala las pruebas todavía necesarias para evaluar el impacto real.",
+      "finalSummary": "La noticia registra un cambio verificable en la cronología de la IA, pero su impacto dependerá de implementación, acceso y resultados posteriores. Los compromisos, previsiones y estimaciones del proveedor se presentan como tales; los datos faltantes quedan explícitos.",
+      "analysis": "Análisis Gazette: la prueba de impacto será la capacidad científica realmente utilizada y los resultados reproducibles, no sumar compromisos heterogéneos como si fueran efectivo desembolsado.",
+      "watch": "Distribución de créditos, acceso para investigadores, plazos de entrega, utilización, resultados científicos publicados y auditorías de compromisos.",
+      "technicalDetails": [
+        {
+          "label": "Compromisos industriales",
+          "value": "US$2.400 millones en herramientas y créditos de cómputo",
+          "note": "Valor anunciado; no efectivo necesariamente desembolsado"
+        },
+        {
+          "label": "Socios",
+          "value": "11 empresas"
+        },
+        {
+          "label": "Agencias",
+          "value": "Más de 15 agencias federales según la Casa Blanca"
+        },
+        {
+          "label": "NVIDIA",
+          "value": "US$1.000 millones a cinco años",
+          "note": "Comunicado propio de NVIDIA"
+        },
+        {
+          "label": "Anthropic",
+          "value": "US$150 millones a tres años",
+          "note": "Comunicado propio de Anthropic"
+        }
+      ],
+      "availability": {
+        "status": "Compromisos anunciados; acceso mediante programas y agencias, no oferta pública general",
+        "platforms": [
+          "Genesis Mission Consortium",
+          "Agencias federales y laboratorios participantes"
+        ],
+        "regions": [
+          "Estados Unidos; sin apertura global anunciada"
+        ],
+        "requirements": [
+          "Participación en programas y proyectos seleccionados"
+        ],
+        "notes": [
+          "No se detalló un mecanismo universal de solicitud",
+          "Los plazos varían entre socios"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio para investigadores",
+          "value": "No existe una tarifa universal publicada"
+        },
+        {
+          "label": "Valor de compromisos",
+          "value": "US$2.400 millones",
+          "note": "Incluye herramientas y créditos; no es precio de producto"
+        }
+      ],
+      "limitations": [
+        "No se publicó desglose auditado de recursos entregados.",
+        "Los aportes tienen modalidades y horizontes diferentes.",
+        "No hay benchmarks de resultados científicos asociados a estos compromisos.",
+        "La participación no implica acceso abierto para cualquier investigador."
+      ],
+      "practicalAdvice": [
+        "Distinguir créditos de cómputo de financiación líquida al evaluar el anuncio.",
+        "Buscar convocatorias oficiales de cada agencia antes de planificar un proyecto.",
+        "Medir recursos realmente disponibles, restricciones y plazos de uso."
+      ],
+      "usefulFacts": [
+        "NVIDIA detalla un horizonte de cinco años para su contribución.",
+        "Anthropic describe un horizonte de tres años y apoyo con Claude, Claude Code y API.",
+        "La misión se lanzó en noviembre de 2025 y se amplió en julio de 2026."
+      ]
+    },
+    {
+      "id": "doe-genesis-phase2-awards-2026",
+      "eventKey": "doe-genesis-phase-two-159m-12-projects-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "U.S. Department of Energy",
+      "product": "Genesis Mission Phase II",
+      "title": "El Departamento de Energía adjudica US$159 millones a doce proyectos de IA para ciencia",
+      "summary": "El DOE anunció doce nuevas adjudicaciones Phase II por US$159 millones, además de seis Phase I, para proyectos que aplican IA a fusión, biología, física, microchips, aceleradores y computación cuántica. Son premios de investigación, no un producto disponible al público.",
+      "tags": [
+        "Investigación",
+        "Ciencia",
+        "Financiación",
+        "Infraestructura"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial de laboratorios y redes de investigación; no muestra instalaciones reales del DOE.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de prensa antigua 3:2, tinta sepia: doce mesas de investigación conectadas por un núcleo de cómputo, símbolos abstractos de fusión, moléculas, chips y aceleradores. Sin cifras o etiquetas inventadas ni fotografías simuladas.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "source": {
+        "name": "U.S. Department of Energy · Genesis Mission Phase II awards",
+        "url": "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "The White House · Science initiatives fact sheet",
+          "url": "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-trump-administration-announces-the-most-ambitious-set-of-science-initiatives-this-century/",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "DOE · Graduate Fellowship Pilot",
+          "url": "https://www.energy.gov/articles/energy-department-launches-genesis-mission-graduate-fellowship-advance-american-scientific",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "El Departamento de Energía de Estados Unidos anunció el 8 de octubre de 2026 doce nuevas adjudicaciones Phase II de la Genesis Mission por un total de US$159 millones. Las instituciones seleccionadas trabajarán en aplicaciones de inteligencia artificial para investigación científica, combinando modelos, supercomputación, datos e instrumentación. El anuncio confirma la selección y la magnitud conjunta de los premios; no informa que los proyectos hayan terminado ni que sus metas técnicas se hayan cumplido. La distinción entre adjudicación y resultado es fundamental para evaluar una iniciativa científica.",
+        "El DOE indicó que las nuevas selecciones elevan a catorce el número de proyectos Phase II al contar otros dos anunciados previamente, y que además está emitiendo seis premios Phase I. La agencia sitúa el conjunto de la Genesis Mission en una primera cohorte de 297 proyectos. No se publica en este comunicado un reparto individual de los US$159 millones por cada uno de los doce nuevos equipos, por lo que no sería correcto asignarles cantidades idénticas o inferir presupuestos específicos.",
+        "Entre los seleccionados figura Commonwealth Fusion Systems, con una plataforma de gemelo digital para simular y optimizar operaciones de SPARC, un dispositivo de demostración de fusión. La Universidad de California en San Diego busca ampliar cinco veces una base de datos de estructuras de RNA para apoyar modelos científicos. La Universidad de California en Irvine lidera MAESTRO, una propuesta multiagente de razonamiento y optimización de reservorios subterráneos orientada a energía geotérmica. La Universidad de Illinois Urbana-Champaign trabaja en separaciones electroquímicas de tierras raras.",
+        "También aparece un proyecto de la Universidad de Washington en diseño computacional de enzimas. Todos representan líneas de investigación con objetivos distintos: modelar instalaciones físicas, mejorar datos estructurales, explorar recursos y diseñar procesos químicos. Ninguno de estos anuncios equivale a una demostración industrial validada ni a disponibilidad comercial inmediata. Las metas publicadas describen lo que los equipos planean construir y estudiar, no resultados revisados por terceros. El valor real se medirá por publicaciones, prototipos, reproducibilidad y transferencia tecnológica.",
+        "El laboratorio Fermilab lidera AXESS, que propone acelerar el diseño de microchips para ambientes extremos como radiación, frío intenso o espacio. Lawrence Berkeley National Laboratory desarrolla MOAT-Core, una plataforma compartida para automatizar tareas de diseño y operación de aceleradores de partículas. Argonne National Laboratory trabaja en AI4HPC, con herramientas para modernizar, optimizar y verificar software de supercomputación. Northeastern University plantea asistencia agentiva para operar y ajustar separadores de isótopos en instalaciones de investigación.",
+        "En física y cuántica, MIT propone integrar modelos con cálculos de cromodinámica cuántica en retícula; Harvard trabaja en codiseño de corrección de errores para computación cuántica; Oak Ridge National Laboratory explora materiales magnéticos cuánticos con métodos informados por física. Son usos de IA muy diferentes de un asistente conversacional de consumo. Requieren validación contra simulaciones, mediciones y métodos científicos específicos, y no pueden juzgarse con un benchmark genérico de preguntas y respuestas.",
+        "Estos US$159 millones corresponden a adjudicaciones de investigación Phase II del DOE. No son los mismos US$2.400 millones en herramientas y créditos privados anunciados por la Casa Blanca para el Genesis Mission Consortium, ni los hasta US$100 millones del programa de becas doctorales comunicado también el 8 de octubre. Esos instrumentos tienen destinatarios, condiciones y plazos diferentes. Agruparlos bajo una sola cifra de inversión ejecutada borraría distinciones necesarias para entender qué recursos existen y cómo se distribuyen.",
+        "Para investigadores, el anuncio identifica instituciones y líneas de trabajo concretas, pero no constituye una convocatoria abierta a cualquier laboratorio ni un acceso gratuito universal a cómputo. No hay precios de productos, regiones comerciales o licencias de modelos anunciadas. Los resultados de los proyectos y sus posibles publicaciones dependerán de la ejecución posterior. El comunicado tampoco establece un calendario único de entrega de todos los sistemas, lo que exige seguir cada proyecto por separado.",
+        "Análisis Gazette: el interés de estas adjudicaciones está en probar si la IA puede integrarse con instrumentos y modelos científicos especializados, no en producir una nueva clasificación de chatbots. La variedad de proyectos muestra una apuesta por aplicar modelos a problemas donde existen restricciones físicas, datos experimentales y formas de contrastar predicciones. La ambición es considerable, pero el avance deberá verificarse con hitos medibles: tiempo de simulación, precisión de predicciones, nuevas mediciones y código o métodos reproducibles.",
+        "Para equipos universitarios y empresas tecnológicas, conviene seguir a las instituciones seleccionadas, identificar publicaciones y repositorios futuros y distinguir prototipos de herramientas disponibles. Una comparación rigurosa debería evaluar si la IA mejora resultados respecto de métodos anteriores bajo condiciones equivalentes. El Gazette seguirá los informes técnicos y los posibles desarrollos de acceso público, sin atribuir desde ahora descubrimientos que todavía forman parte de planes financiados."
+      ],
+      "keyPoints": [
+        "El DOE anunció doce nuevas adjudicaciones Phase II por un total de US$159 millones el 8 de octubre.",
+        "Los proyectos cubren fusión, RNA, física fundamental, geotermia, materiales, chips, software científico y aceleradores.",
+        "El DOE anunció también seis nuevas Phase I; no deben confundirse con las doce Phase II ni sumarse sin desglose."
+      ],
+      "quickTakeaways": [
+        "El DOE anunció doce nuevas adjudicaciones Phase II por un total de US$159 millones el 8 de octubre.",
+        "Los proyectos cubren fusión, RNA, física fundamental, geotermia, materiales, chips, software científico y aceleradores.",
+        "El DOE anunció también seis nuevas Phase I; no deben confundirse con las doce Phase II ni sumarse sin desglose.",
+        "Las adjudicaciones financian trabajo futuro; no prueban que los resultados científicos ya se hayan alcanzado."
+      ],
+      "sections": [
+        {
+          "heading": "Doce premios, no doce descubrimientos terminados",
+          "kind": "report",
+          "paragraphs": [
+            "El Departamento de Energía de Estados Unidos anunció el 8 de octubre de 2026 doce nuevas adjudicaciones Phase II de la Genesis Mission por un total de US$159 millones. Las instituciones seleccionadas trabajarán en aplicaciones de inteligencia artificial para investigación científica, combinando modelos, supercomputación, datos e instrumentación. El anuncio confirma la selección y la magnitud conjunta de los premios; no informa que los proyectos hayan terminado ni que sus metas técnicas se hayan cumplido. La distinción entre adjudicación y resultado es fundamental para evaluar una iniciativa científica.",
+            "El DOE indicó que las nuevas selecciones elevan a catorce el número de proyectos Phase II al contar otros dos anunciados previamente, y que además está emitiendo seis premios Phase I. La agencia sitúa el conjunto de la Genesis Mission en una primera cohorte de 297 proyectos. No se publica en este comunicado un reparto individual de los US$159 millones por cada uno de los doce nuevos equipos, por lo que no sería correcto asignarles cantidades idénticas o inferir presupuestos específicos."
+          ]
+        },
+        {
+          "heading": "Fusión, biología y recursos naturales",
+          "kind": "technical",
+          "paragraphs": [
+            "Entre los seleccionados figura Commonwealth Fusion Systems, con una plataforma de gemelo digital para simular y optimizar operaciones de SPARC, un dispositivo de demostración de fusión. La Universidad de California en San Diego busca ampliar cinco veces una base de datos de estructuras de RNA para apoyar modelos científicos. La Universidad de California en Irvine lidera MAESTRO, una propuesta multiagente de razonamiento y optimización de reservorios subterráneos orientada a energía geotérmica. La Universidad de Illinois Urbana-Champaign trabaja en separaciones electroquímicas de tierras raras.",
+            "También aparece un proyecto de la Universidad de Washington en diseño computacional de enzimas. Todos representan líneas de investigación con objetivos distintos: modelar instalaciones físicas, mejorar datos estructurales, explorar recursos y diseñar procesos químicos. Ninguno de estos anuncios equivale a una demostración industrial validada ni a disponibilidad comercial inmediata. Las metas publicadas describen lo que los equipos planean construir y estudiar, no resultados revisados por terceros. El valor real se medirá por publicaciones, prototipos, reproducibilidad y transferencia tecnológica."
+          ]
+        },
+        {
+          "heading": "Chips, aceleradores y computación cuántica",
+          "kind": "context",
+          "paragraphs": [
+            "El laboratorio Fermilab lidera AXESS, que propone acelerar el diseño de microchips para ambientes extremos como radiación, frío intenso o espacio. Lawrence Berkeley National Laboratory desarrolla MOAT-Core, una plataforma compartida para automatizar tareas de diseño y operación de aceleradores de partículas. Argonne National Laboratory trabaja en AI4HPC, con herramientas para modernizar, optimizar y verificar software de supercomputación. Northeastern University plantea asistencia agentiva para operar y ajustar separadores de isótopos en instalaciones de investigación.",
+            "En física y cuántica, MIT propone integrar modelos con cálculos de cromodinámica cuántica en retícula; Harvard trabaja en codiseño de corrección de errores para computación cuántica; Oak Ridge National Laboratory explora materiales magnéticos cuánticos con métodos informados por física. Son usos de IA muy diferentes de un asistente conversacional de consumo. Requieren validación contra simulaciones, mediciones y métodos científicos específicos, y no pueden juzgarse con un benchmark genérico de preguntas y respuestas."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y relación con otras cifras",
+          "kind": "report",
+          "paragraphs": [
+            "Estos US$159 millones corresponden a adjudicaciones de investigación Phase II del DOE. No son los mismos US$2.400 millones en herramientas y créditos privados anunciados por la Casa Blanca para el Genesis Mission Consortium, ni los hasta US$100 millones del programa de becas doctorales comunicado también el 8 de octubre. Esos instrumentos tienen destinatarios, condiciones y plazos diferentes. Agruparlos bajo una sola cifra de inversión ejecutada borraría distinciones necesarias para entender qué recursos existen y cómo se distribuyen.",
+            "Para investigadores, el anuncio identifica instituciones y líneas de trabajo concretas, pero no constituye una convocatoria abierta a cualquier laboratorio ni un acceso gratuito universal a cómputo. No hay precios de productos, regiones comerciales o licencias de modelos anunciadas. Los resultados de los proyectos y sus posibles publicaciones dependerán de la ejecución posterior. El comunicado tampoco establece un calendario único de entrega de todos los sistemas, lo que exige seguir cada proyecto por separado."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos indicadores",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el interés de estas adjudicaciones está en probar si la IA puede integrarse con instrumentos y modelos científicos especializados, no en producir una nueva clasificación de chatbots. La variedad de proyectos muestra una apuesta por aplicar modelos a problemas donde existen restricciones físicas, datos experimentales y formas de contrastar predicciones. La ambición es considerable, pero el avance deberá verificarse con hitos medibles: tiempo de simulación, precisión de predicciones, nuevas mediciones y código o métodos reproducibles.",
+            "Para equipos universitarios y empresas tecnológicas, conviene seguir a las instituciones seleccionadas, identificar publicaciones y repositorios futuros y distinguir prototipos de herramientas disponibles. Una comparación rigurosa debería evaluar si la IA mejora resultados respecto de métodos anteriores bajo condiciones equivalentes. El Gazette seguirá los informes técnicos y los posibles desarrollos de acceso público, sin atribuir desde ahora descubrimientos que todavía forman parte de planes financiados."
+          ]
+        }
+      ],
+      "executiveSummary": "El DOE anunció doce nuevas adjudicaciones Phase II por US$159 millones, además de seis Phase I, para proyectos que aplican IA a fusión, biología, física, microchips, aceleradores y computación cuántica. Son premios de investigación, no un producto disponible al público. El informe distingue lo anunciado de lo ya disponible, explica las condiciones de acceso y señala las pruebas todavía necesarias para evaluar el impacto real.",
+      "finalSummary": "La noticia registra un cambio verificable en la cronología de la IA, pero su impacto dependerá de implementación, acceso y resultados posteriores. Los compromisos, previsiones y estimaciones del proveedor se presentan como tales; los datos faltantes quedan explícitos.",
+      "analysis": "Análisis Gazette: las adjudicaciones muestran aplicaciones científicas diversas de IA; la evidencia decisiva vendrá de resultados reproducibles, no del anuncio de financiación.",
+      "watch": "Hitos técnicos, informes de cada institución, código y datasets abiertos, resultados revisados y distribución individual de fondos.",
+      "technicalDetails": [
+        {
+          "label": "Adjudicaciones nuevas",
+          "value": "12 proyectos Phase II"
+        },
+        {
+          "label": "Financiación conjunta",
+          "value": "US$159 millones"
+        },
+        {
+          "label": "Otras selecciones",
+          "value": "6 Phase I anunciadas"
+        },
+        {
+          "label": "Cohorte Genesis Mission",
+          "value": "297 proyectos según DOE"
+        }
+      ],
+      "availability": {
+        "status": "Proyectos seleccionados para investigación; no hay producto comercial general",
+        "platforms": [
+          "Laboratorios nacionales y universidades adjudicatarias"
+        ],
+        "regions": [
+          "Estados Unidos"
+        ],
+        "requirements": [
+          "Participación de instituciones seleccionadas"
+        ],
+        "notes": [
+          "No hay precio de producto ni acceso abierto general"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Monto total de adjudicaciones",
+          "value": "US$159 millones",
+          "note": "Financiación de investigación, no precio comercial"
+        }
+      ],
+      "limitations": [
+        "No hay distribución de montos por cada uno de los doce proyectos en el comunicado.",
+        "Los objetivos no son resultados científicos confirmados.",
+        "Sin calendario único de entregas o acceso público a herramientas.",
+        "Los US$159 millones son distintos de créditos privados y becas."
+      ],
+      "practicalAdvice": [
+        "Seguir publicaciones y repositorios de las instituciones antes de atribuir impacto.",
+        "Comparar métodos con baselines científicos y resultados replicables.",
+        "No sumar cifras de subvenciones y créditos privados como si fueran una misma categoría."
+      ],
+      "usefulFacts": [
+        "Los proyectos abarcan desde fusión SPARC hasta diseño de chips para ambientes extremos.",
+        "La nueva selección lleva a catorce el total de proyectos Phase II mencionado por DOE.",
+        "Seis nuevas Phase I fueron anunciadas separadamente."
+      ]
+    },
     {
       "id": "upscale-ai-token-fabric-2026",
       "eventKey": "upscale-ai-token-fabric-heterogeneous-network-2026-10-08",
@@ -8603,7 +9448,7 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 4
+      "verifiedArticles": 9
     }
   ]
 }
