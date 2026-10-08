@@ -35,8 +35,13 @@ class CoverageAuditTests(unittest.TestCase):
 
  def test_audited_complete_day_cannot_silently_grow(self):
   rows=[r for r in self.coverage if r['status']=='complete']
-  if not rows: self.skipTest('No completed historical days')
-  row=rows[0]
+  if rows:
+   row=rows[0]
+  else:
+   row=next(r for r in self.coverage if r['date'] in {a['date'] for a in self.audit['days']})
+   row['status']='complete'
+   ar=next(a for a in self.audit['days'] if a['date']==row['date'])
+   ar['archiveStatus']='complete'
   clone=copy.deepcopy(self.news['articles'][0])
   clone.update(id='test-new-audited-story',eventKey='test-new-audited-story',date=row['date'])
   self.news['articles'].append(clone)

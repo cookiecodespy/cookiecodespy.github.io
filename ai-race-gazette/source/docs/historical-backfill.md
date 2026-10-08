@@ -23,7 +23,7 @@ Leer primero:
 
 ## Orden de lotes
 
-- 1–7 Sep: investigación factual cerrada; pendiente migración editorial completa Reporter V2.
+- 1–7 Sep: investigación previa archivada; **1–7 están parciales** mientras se completa reauditoría Research Backbone y Reporter V2.
 - 8–14 Sep: siguiente bloque.
 - 15–21 Sep.
 - 22–30 Sep.
@@ -163,3 +163,7 @@ La cola visual se mantiene aparte en `../visual/image-queue.json`.
 ## Cola y checklist maestro
 
 Antes de abrir o cerrar un lote, leer `master-checklist.md` y `../ops/backlog.json`. Registrar todos los hallazgos nuevos, comprobaciones, candidatos y descartes en la cola, manteniendo los IDs y criterios de aceptación. El estado `complete` solo se permite después de la doble pasada documentada.
+
+
+## Auditoría de finalización (2026-10-08)
+Ver `finalization-audit-2026-10-08.md`. La revisión histórica 2–7 Sep quedó provisional hasta pasar source registry + discovery + auditoría inversa. No restituir `complete` por conveniencia visual.

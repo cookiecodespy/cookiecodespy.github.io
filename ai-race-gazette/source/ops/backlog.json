@@ -54,19 +54,19 @@
       "id": "P08",
       "title": "Octubre hasta la fecha y Newsroom continua",
       "status": "queued",
-      "gate": "Octubre al día, fechas sin huecos y publicación horaria realmente operativa"
+      "gate": "Octubre al día; publicación programada verificada; controles editoriales automáticos, concurrencia y rollback probados."
     },
     {
       "id": "P09",
       "title": "Enriquecimiento de legacy y Visual Desk",
       "status": "queued",
-      "gate": "48 piezas legacy ampliadas o excepcionadas y arte editorial con QA"
+      "gate": "Artículos legacy enriquecidos o exceptuados con evidencia; ilustraciones específicas de titulares importantes y estándares visuales."
     },
     {
       "id": "P10",
       "title": "Segunda auditoría y lanzamiento v1.0",
       "status": "queued",
-      "gate": "Cobertura inversa, fuentes, fechas, diseño, SEO, accesibilidad, CI y automatización revisados"
+      "gate": "Segunda auditoría histórica por fecha y empresa, QA factual, social/SEO, accesibilidad y release gate sin tareas P0 pendientes."
     }
   ],
   "items": [
@@ -252,11 +252,11 @@
     {
       "id": "ED-LEGACY48",
       "phase": "P09",
-      "title": "Enriquecer 48 artículos legacy",
+      "title": "Migrar todos los artículos legacy restantes a Reporter V2",
       "priority": "P0",
       "status": "queued",
       "lane": "Editor-in-Chief / Historical Backfill",
-      "acceptance": "V2 verificado sin relleno, id/eventKey estables y fuentes"
+      "acceptance": "Cero artículos legacy sin excepción editorial documentada; la línea base tenía 48, ahora quedan 47. Preservar ids y verificar fuentes."
     },
     {
       "id": "VIS-PREMIUM",
@@ -475,6 +475,174 @@
       "evidence": [
         "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
       ]
+    },
+    {
+      "id": "OPS-CONTENT-CI",
+      "phase": "P08",
+      "title": "Validación CI de cambios solo editoriales",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Architecture / QA",
+      "acceptance": "Workflow separado verifica ambos JSON, ambos RSS, fechas, eventKeys, conteos y reglas editoriales con ejecución real.",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37795004760"
+      ]
+    },
+    {
+      "id": "OPS-LIVE-CHECKLIST",
+      "phase": "P08",
+      "title": "Generar y verificar checklist desde JSON",
+      "priority": "P0",
+      "status": "in_progress",
+      "lane": "Architecture / QA",
+      "acceptance": "Un solo JSON gobierna casillas, estados, razones y progreso; script determinista y comprobación --check en CI."
+    },
+    {
+      "id": "OPS-RUN-PROOF",
+      "phase": "P08",
+      "title": "Demostrar tres ejecuciones reales de Newsroom horario",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Automation & Newsroom",
+      "acceptance": "Verificar al menos tres ejecuciones consecutivas, no-op silencioso y publicación autorizada cuando aparezca un evento."
+    },
+    {
+      "id": "OPS-CONCURRENCY-TEST",
+      "phase": "P08",
+      "title": "Prueba de colisión Newsroom y Backfill",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Architecture / QA",
+      "acceptance": "Simular dos writers, comprobar SHA conflict/rebase y ausencia de pérdida o duplicación en JSON/RSS."
+    },
+    {
+      "id": "OPS-ROLLBACK-DRILL",
+      "phase": "P08",
+      "title": "Ensayar rollback y restauración de datos/arte",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Architecture / QA",
+      "acceptance": "Documentar y ensayar restauración desde Git con evidencia, sin afectar la raíz de cookiecodespy.github.io."
+    },
+    {
+      "id": "H-SEP12-13",
+      "phase": "P05",
+      "title": "Cobertura exhaustiva del 12 y 13 de septiembre",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Fuentes por día, discovery abierto y pasada inversa; publicar V2 o registrar sin novedades con evidencia."
+    },
+    {
+      "id": "H-SEP08-11-REVERSE",
+      "phase": "P05",
+      "title": "Segunda pasada por compañías del 8 al 11 septiembre",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Revisar laboratorios, startups, open source, chips, modelos, seguridad y producto; resolver pendientes."
+    },
+    {
+      "id": "H-SEP14-REVERSE",
+      "phase": "P05",
+      "title": "Segunda pasada del 14 septiembre después de BigQuery y Dataflow",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Confirmar otros anuncios relevantes del día y registrar revisados/descartes antes de cerrar."
+    },
+    {
+      "id": "QA-SEP02-07-REOPEN",
+      "phase": "P10",
+      "title": "Volver a auditar del 2 al 7 de septiembre",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Historical Backfill / QA",
+      "acceptance": "Registrar fuentes, categorías, discovery y pasada inversa por fecha; cerrar solo con evidencias verificadas."
+    },
+    {
+      "id": "QA-CLAIMS-SAMPLING",
+      "phase": "P10",
+      "title": "Auditoría cruzada de fechas, precios, disponibilidad y fuentes",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Editor-in-Chief",
+      "acceptance": "Reabrir las fuentes del archivo completo, contrastar claims del proveedor, registrar errores y correcciones."
+    },
+    {
+      "id": "QA-EVENT-DEDUP",
+      "phase": "P10",
+      "title": "Revisar eventos distintos con una misma URL",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Editor-in-Chief",
+      "acceptance": "Evaluar duplicados semánticos en historias con fuente principal común sin fusionar eventos verdaderamente independientes."
+    },
+    {
+      "id": "QA-HTTP-SMOKE",
+      "phase": "P10",
+      "title": "Smoke tests públicos de artículos, RSS e imágenes",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Product / QA",
+      "acceptance": "Comprobar HTTP 200, assets, navegación móvil y RSS desplegado tras publicación; incluir URLs concretas."
+    },
+    {
+      "id": "QA-SEO-PREVIEW",
+      "phase": "P10",
+      "title": "Auditar SEO y tarjetas al compartir artículos",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Product / QA",
+      "acceptance": "Revisar metadatos disponibles a crawlers sin JavaScript, canonical, sitemap, OG y previews por artículo."
+    },
+    {
+      "id": "QA-A11Y",
+      "phase": "P10",
+      "title": "Auditar contraste, teclado, lectores de pantalla y responsive",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Product / QA",
+      "acceptance": "Pruebas de focus, landmarks, alt, tamaños móviles y correcciones de accesibilidad comprobadas."
+    },
+    {
+      "id": "QA-RELEASE-GATE",
+      "phase": "P10",
+      "title": "Validación final de release v1.0 sin P0 abiertos",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Product / QA",
+      "acceptance": "Firmar criterios editorial, histórico, visual, SEO, automatización y CI antes de declarar producto acabado.",
+      "dependsOn": [
+        "QA-LAUNCH"
+      ]
+    },
+    {
+      "id": "VIS-P0-ORIGINALS",
+      "phase": "P09",
+      "title": "Lote de grabados específicos para reportajes prioritarios",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Visual Desk",
+      "acceptance": "Resolver briefs P0 con WebP originales, credit/alt y prueba visual; reducir las 46 reutilizaciones hero."
+    },
+    {
+      "id": "VIS-REUSE-RULES",
+      "phase": "P09",
+      "title": "Política cuantificada de reutilización visual",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Visual Desk",
+      "acceptance": "Definir presupuesto visual, tipos de grabado, niveles de especificidad y umbral de repetición con QA."
+    },
+    {
+      "id": "ED-LEGACY-BATCH",
+      "phase": "P09",
+      "title": "Migración Reporter V2 por lotes de artículos antiguos",
+      "priority": "P0",
+      "status": "queued",
+      "lane": "Editorial / Historical Backfill",
+      "acceptance": "Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido."
     }
   ]
 }

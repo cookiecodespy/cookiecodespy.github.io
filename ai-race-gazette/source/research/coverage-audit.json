@@ -41,7 +41,7 @@
     },
     {
       "date": "2026-09-02",
-      "archiveStatus": "complete",
+      "archiveStatus": "partial",
       "verifiedArticles": 8,
       "auditMode": "legacy-block-audit",
       "reviewedSourceIds": [],
@@ -57,11 +57,11 @@
       "auditDocument": "history-audit-2026-09-01-07.md",
       "reviewedAt": "2026-10-07",
       "backboneReauditRequired": true,
-      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final.\n2026-10-08: clasificación provisional hasta nueva auditoría Research Backbone (source registry, open discovery y pasada inversa). Los artículos existentes se preservan."
     },
     {
       "date": "2026-09-03",
-      "archiveStatus": "complete",
+      "archiveStatus": "partial",
       "verifiedArticles": 6,
       "auditMode": "legacy-block-audit",
       "reviewedSourceIds": [],
@@ -77,11 +77,11 @@
       "auditDocument": "history-audit-2026-09-01-07.md",
       "reviewedAt": "2026-10-07",
       "backboneReauditRequired": true,
-      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final.\n2026-10-08: clasificación provisional hasta nueva auditoría Research Backbone (source registry, open discovery y pasada inversa). Los artículos existentes se preservan."
     },
     {
       "date": "2026-09-04",
-      "archiveStatus": "complete",
+      "archiveStatus": "partial",
       "verifiedArticles": 4,
       "auditMode": "legacy-block-audit",
       "reviewedSourceIds": [],
@@ -97,11 +97,11 @@
       "auditDocument": "history-audit-2026-09-01-07.md",
       "reviewedAt": "2026-10-07",
       "backboneReauditRequired": true,
-      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final.\n2026-10-08: clasificación provisional hasta nueva auditoría Research Backbone (source registry, open discovery y pasada inversa). Los artículos existentes se preservan."
     },
     {
       "date": "2026-09-05",
-      "archiveStatus": "complete",
+      "archiveStatus": "partial",
       "verifiedArticles": 2,
       "auditMode": "legacy-block-audit",
       "reviewedSourceIds": [],
@@ -117,11 +117,11 @@
       "auditDocument": "history-audit-2026-09-01-07.md",
       "reviewedAt": "2026-10-07",
       "backboneReauditRequired": true,
-      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final.\n2026-10-08: clasificación provisional hasta nueva auditoría Research Backbone (source registry, open discovery y pasada inversa). Los artículos existentes se preservan."
     },
     {
       "date": "2026-09-06",
-      "archiveStatus": "complete",
+      "archiveStatus": "partial",
       "verifiedArticles": 2,
       "auditMode": "legacy-block-audit",
       "reviewedSourceIds": [],
@@ -137,11 +137,11 @@
       "auditDocument": "history-audit-2026-09-01-07.md",
       "reviewedAt": "2026-10-07",
       "backboneReauditRequired": true,
-      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final.\n2026-10-08: clasificación provisional hasta nueva auditoría Research Backbone (source registry, open discovery y pasada inversa). Los artículos existentes se preservan."
     },
     {
       "date": "2026-09-07",
-      "archiveStatus": "complete",
+      "archiveStatus": "partial",
       "verifiedArticles": 2,
       "auditMode": "legacy-block-audit",
       "reviewedSourceIds": [],
@@ -157,7 +157,7 @@
       "auditDocument": "history-audit-2026-09-01-07.md",
       "reviewedAt": "2026-10-07",
       "backboneReauditRequired": true,
-      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final."
+      "notes": "Fecha cerrada antes de Research Backbone v1. Mantiene estado complete, pero requiere replay del checklist v1 durante la auditoría inversa final.\n2026-10-08: clasificación provisional hasta nueva auditoría Research Backbone (source registry, open discovery y pasada inversa). Los artículos existentes se preservan."
     },
     {
       "date": "2026-09-08",
