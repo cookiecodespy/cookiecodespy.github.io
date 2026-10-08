@@ -99,3 +99,18 @@ Se prepararon briefs específicos, no prompts genéricos por título, para 12 hi
 - infraestructura de datacenter TCS.
 
 Esto crea un lote equilibrado entre modelos, agentes, seguridad, infraestructura y robótica para probar el lenguaje visual antes de producir decenas de imágenes.
+
+
+## Pasada E2E
+
+Se añadió el tramo de publicación reproducible:
+- `scripts/publish_visual_asset.py`;
+- `tests/visual_publish_test.py`;
+- `docs/visual-production-runbook.md`;
+- ejecución del test en CI.
+
+El helper valida firma WebP, conserva id/eventKey, copia el binario a `source/public/assets/news/YYYY-MM-DD/<article-id>.webp`, actualiza ambos mirrors de noticias, registra el asset y completa la fila de queue.
+
+La primera prueba de generación visual se mantuvo fuera del sitio porque no alcanzó el brief story-specific. Eso se considera un resultado correcto del QA: Visual Desk debe rechazar arte atractivo pero editorialmente equivocado en vez de publicarlo por cumplir una cuota.
+
+El siguiente gate es publicar una primera ilustración específica que sí pase QA de contenido, crop, créditos y estilo.
