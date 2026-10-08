@@ -643,6 +643,61 @@
       "status": "queued",
       "lane": "Editorial / Historical Backfill",
       "acceptance": "Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido."
+    },
+    {
+      "id": "QA-READTIME-REGRESSION",
+      "phase": "P10",
+      "title": "Reparar tiempo de lectura real en Reporter V2",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Product & QA",
+      "acceptance": "Cómputo correcto de palabras con secciones V2, más dos pruebas y CI verde sin alterar el estilo.",
+      "evidenceCommit": "85e4144be915c44138a6dda572bc22176c42948d",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37795939872"
+      ]
+    },
+    {
+      "id": "QA-COVERAGE-HARDGATE",
+      "phase": "P10",
+      "title": "Impedir cierres diarios sin auditoría Backbone v1",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Editorial QA",
+      "acceptance": "Bloquear cierre sin doble pasada, cero candidatos abiertos, fuentes/categorías revisadas y documento verificable; CI verde.",
+      "evidenceCommit": "d16846fd56558b8bb29be5191f968ff0316ddc80",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37796206364"
+      ]
+    },
+    {
+      "id": "VIS-AUTO-QUEUE-REFRESH",
+      "phase": "P09",
+      "title": "Sincronizar cola visual tras publicaciones Newsroom",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Visual Desk / CI",
+      "acceptance": "Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.",
+      "notes": "Actualmente la cola se actualiza en pasada manual, no con cada run horario."
+    },
+    {
+      "id": "QA-MAJOR-STORY-CORROBORATION",
+      "phase": "P10",
+      "title": "Revisar reportajes mayores que citan una sola fuente",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Editorial QA",
+      "acceptance": "Reabrir fuentes primarias, validar claims y usar documentación o corroboración externa donde exista; no fabricar una segunda fuente.",
+      "notes": "11 Reporter V2 citan una sola fuente; señal de revisión, no prueba de error."
+    },
+    {
+      "id": "QA-EDITORIAL-METRICS-LIVE",
+      "phase": "P10",
+      "title": "Panel interno verificable de avance y frescura",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Product & QA",
+      "acceptance": "Generar métricas verificables de artículos, legacy, días registrados/auditados, última publicación y trabajo pendiente desde JSON de main."
     }
   ]
 }

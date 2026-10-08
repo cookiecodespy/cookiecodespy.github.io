@@ -120,6 +120,10 @@
 - [ ] **ED-LEGACY-BATCH** (P0, queued): Migración Reporter V2 por lotes de artículos antiguos.
   - Aceptación: Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido.
 
+- [ ] **VIS-AUTO-QUEUE-REFRESH** (P1, queued): Sincronizar cola visual tras publicaciones Newsroom.
+  - Aceptación: Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.
+  - Nota: Actualmente la cola se actualiza en pasada manual, no con cada run horario.
+
 ### P10 — Segunda auditoría y lanzamiento v1.0 (queued)
 
 **Criterio de cierre:** Segunda auditoría histórica por fecha y empresa, QA factual, social/SEO, accesibilidad y release gate sin tareas P0 pendientes.
@@ -149,15 +153,30 @@
   - Aceptación: Firmar criterios editorial, histórico, visual, SEO, automatización y CI antes de declarar producto acabado.
   - Depende de: QA-LAUNCH
 
+- [x] **QA-READTIME-REGRESSION** (P1, done): Reparar tiempo de lectura real en Reporter V2.
+  - Aceptación: Cómputo correcto de palabras con secciones V2, más dos pruebas y CI verde sin alterar el estilo.
+  - Commit: 85e4144be915c44138a6dda572bc22176c42948d
+
+- [x] **QA-COVERAGE-HARDGATE** (P0, done): Impedir cierres diarios sin auditoría Backbone v1.
+  - Aceptación: Bloquear cierre sin doble pasada, cero candidatos abiertos, fuentes/categorías revisadas y documento verificable; CI verde.
+  - Commit: d16846fd56558b8bb29be5191f968ff0316ddc80
+
+- [ ] **QA-MAJOR-STORY-CORROBORATION** (P1, queued): Revisar reportajes mayores que citan una sola fuente.
+  - Aceptación: Reabrir fuentes primarias, validar claims y usar documentación o corroboración externa donde exista; no fabricar una segunda fuente.
+  - Nota: 11 Reporter V2 citan una sola fuente; señal de revisión, no prueba de error.
+
+- [ ] **QA-EDITORIAL-METRICS-LIVE** (P1, queued): Panel interno verificable de avance y frescura.
+  - Aceptación: Generar métricas verificables de artículos, legacy, días registrados/auditados, última publicación y trabajo pendiente desde JSON de main.
+
 ## Reglas de edición
 
 El JSON es la fuente de verdad. Todo nuevo hallazgo lleva ID inmutable, fase, prioridad, responsable, evidencia y criterio de aceptación. No declarar completa una fecha con auditoría pendiente. No marcar done sin prueba.
 
 ## Estado de la cola
 
-- Tareas totales: 49.
-- Done: 12.
+- Tareas totales: 54.
+- Done: 14.
 - En curso: 3.
-- Pendientes: 31.
+- Pendientes: 34.
 - Bloqueadas: 2.
 - Descartadas con motivo: 1.
