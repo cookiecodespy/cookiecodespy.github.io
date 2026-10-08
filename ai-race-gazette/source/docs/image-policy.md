@@ -54,3 +54,30 @@ Incluir:
 - formato/orientación;
 - estilo Gazette: grabado editorial, tinta/sepia, prensa antigua, textura de papel;
 - prohibición de logotipos falsos, interfaces inventadas presentadas como reales o escenas engañosamente documentales.
+
+
+## Registro canónico
+
+El sistema operativo del Visual Desk está documentado en `visual-desk.md`.
+
+Archivos:
+- `../visual/asset-manifest.json`: registro de cada imagen editorial;
+- `../visual/image-queue.json`: backlog visual por artículo;
+- `../scripts/refresh_visual_queue.py`: refresca uso/prioridades sin tocar noticias;
+- `../scripts/validate_visual_desk.py`: valida manifest, créditos, rutas y queue.
+
+Toda imagen hero/media editorial nueva debe registrarse antes de considerarse lista.
+
+## Deuda visual
+
+No confundir “tiene una imagen” con “tiene una imagen específica”. Un fallback altamente repetido se considera deuda visual.
+
+Meta v1.0:
+- vaciar P0;
+- reducir de forma fuerte la dependencia del hero genérico;
+- arte específico para historias mayores y Reporter V2 estándar cuando aporte valor;
+- fallback de biblioteca explícito para breaking/minor.
+
+## Producción
+
+El formato recomendado para arte específico es WebP, ~1600 px de ancho, 3:2 con composición segura para recorte central. El hero interno puede recortar más panorámico y la portada ~3:2, por lo que los sujetos clave deben permanecer en la zona central.
