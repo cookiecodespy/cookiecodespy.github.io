@@ -148,3 +148,7 @@ Antes de declarar v1.0:
 - la cola P0 está vacía;
 - la reutilización del hero genérico deja de dominar el archivo;
 - créditos y alt text pasan QA.
+
+## Publicación E2E
+
+El procedimiento operativo para llevar un arte aprobado desde archivo WebP hasta el sitio está en `visual-production-runbook.md`. La herramienta `scripts/publish_visual_asset.py` actualiza de forma coordinada el binario fuente, manifest, mirrors de noticias y cola visual.
