@@ -164,12 +164,16 @@
       "phase": "P05",
       "title": "Revisar Google/DeepMind día a día 8–14",
       "priority": "P0",
-      "status": "queued",
+      "status": "in_progress",
       "lane": "Historical Backfill",
       "acceptance": "Comprobar novedades relevantes, fechas y completar matriz",
       "evidence": [
         "https://blog.google/products-and-platforms/products/gemini/"
-      ]
+      ],
+      "verifiedEvidence": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai"
+      ],
+      "notes": "Primera revisión: GTIG Threat Tracker publicado. Requieren evaluación Google AI plans del 9 Sep y Dataflow AI/GPU del 14 Sep. No se ha completado revisión diaria ni DeepMind."
     },
     {
       "id": "H-SEP10-LEGACY",
@@ -302,6 +306,48 @@
         "ED-LEGACY48",
         "QA-REVERSE"
       ]
+    },
+    {
+      "id": "H-GOOGLE-SEP09-AIPLANS",
+      "phase": "P05",
+      "title": "Evaluar Google AI plans: nuevas herramientas y acceso",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.",
+      "evidence": [
+        "https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/"
+      ],
+      "date": "2026-09-09",
+      "notes": "Cambios de acceso a IA en apps y suscripciones; verificar si novedades son suficientemente materiales."
+    },
+    {
+      "id": "H-GOOGLE-SEP14-DATAFLOW",
+      "phase": "P05",
+      "title": "Evaluar Google Cloud Dataflow con GPU Blackwell",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.",
+      "evidence": [
+        "https://cloud.google.com/blog/products/data-analytics/new-dataflow-features-to-enable-large-scale-ai-workloads/"
+      ],
+      "date": "2026-09-14",
+      "notes": "GA Pause/Resume y soporte de GPU para IA; revisar novedad material y antecedentes."
+    },
+    {
+      "id": "H-GOOGLE-SEP09-GARTNER",
+      "phase": "P05",
+      "title": "Evaluar reconocimiento Gartner Google Gemini Enterprise",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "acceptance": "Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.",
+      "evidence": [
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-is-a-leader-in-2026-gartner-magic-quadrant-for-enterprise-ai-assistants"
+      ],
+      "date": "2026-09-09",
+      "notes": "Nota de marketing basada en evaluación externa; publicar solo si hay hecho nuevo relevante más allá del reconocimiento."
     }
   ]
 }

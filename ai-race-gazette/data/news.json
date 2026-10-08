@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T04:26:53.246Z",
+  "updatedAt": "2026-10-08T04:27:59.264Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -2103,6 +2103,176 @@
       ]
     },
     {
+      "id": "google-gtig-ai-threat-tracker-agents-2026-09-08",
+      "eventKey": "google-gtig-ai-threat-tracker-agents-2026-09-08",
+      "articleVersion": 2,
+      "date": "2026-09-08",
+      "announcedAt": "2026-09-08",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Google",
+      "product": "Google Threat Intelligence Group AI Threat Tracker",
+      "title": "Google advierte del salto a ataques con agentes de IA: campañas automatizadas y riesgo para desarrolladores",
+      "summary": "El informe de amenazas de GTIG del 8 de septiembre analiza el uso de flujos agénticos por atacantes y los riesgos para repositorios, asistentes de programación, modelos y credenciales. Google comunicó un incidente con una campaña preparada en menos de seis horas.",
+      "tags": [
+        "Seguridad",
+        "Agentes",
+        "Investigación",
+        "Desarrolladores"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado conceptual sobre redes informáticas y seguridad, no imagen documental del incidente.",
+      "imageCredit": "Ilustración editorial generada con IA.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado en prensa antigua de guardianes mecánicos protegiendo archivos, cables y servidores frente a sombras de autómatas. Representar seguridad de agentes sin elementos de ataque reproducibles, sin marcas ni texto.",
+      "source": {
+        "name": "Google Cloud / GTIG · From Prompting to Autonomy, the Evolution of Adversarial AI",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
+        "publishedAt": "2026-09-08"
+      },
+      "keyPoints": [
+        "Google describe transición de usos aislados de IA hacia flujos maliciosos automatizados.",
+        "El informe relata una campaña habilitada por agentes en menos de seis horas tras una intrusión.",
+        "Las cadenas de suministro, credenciales e infraestructura de IA son blancos relevantes."
+      ],
+      "quickTakeaways": [
+        "El artículo es un informe publicado el 8 de septiembre, no una brecha ocurrida ese día.",
+        "GTIG observó ataques que combinan agentes y automatización.",
+        "La cadena de suministro de software es especialmente delicada cuando los asistentes ejecutan acciones.",
+        "La defensa debe limitar permisos, revisar dependencias y separar datos externos de instrucciones."
+      ],
+      "body": [
+        "GTIG documentó tendencias de seguridad que afectan directamente a la adopción empresarial de agentes de IA y herramientas autónomas de programación."
+      ],
+      "sections": [
+        {
+          "heading": "El nuevo informe de Google",
+          "kind": "report",
+          "paragraphs": [
+            "El Grupo de Inteligencia de Amenazas de Google, GTIG, publicó el 8 de septiembre de 2026 un seguimiento del uso malicioso de inteligencia artificial. La investigación describe cómo ciertos atacantes han pasado de solicitar contenidos aislados a coordinar tareas mediante agentes y automatización. La fecha corresponde al informe publicado por Google, mientras algunos incidentes analizados ocurrieron durante el segundo trimestre del año. Distinguir el periodo observado de la fecha de publicación evita convertir eventos antiguos en ataques supuestamente ocurridos el mismo día."
+          ]
+        },
+        {
+          "heading": "Automatización de ataques y tiempos de respuesta",
+          "kind": "report",
+          "paragraphs": [
+            "Según GTIG, en un incidente del segundo trimestre de 2026 los atacantes comprometieron recursos de nube y prepararon una campaña automatizada de robo de credenciales en menos de seis horas. La cifra es una observación comunicada por el equipo de inteligencia, no una medición universal de todas las operaciones maliciosas. Es relevante porque reduce el tiempo disponible para detectar actividades anómalas. En redes corporativas, una reacción preparada para jornadas completas puede resultar tardía cuando la automatización coordina múltiples pasos en horas."
+          ]
+        },
+        {
+          "heading": "El ecosistema de programación también es un objetivo",
+          "kind": "report",
+          "paragraphs": [
+            "El informe destaca ataques contra proyectos y dependencias de software de código abierto, asistentes de programación y herramientas de seguridad basadas en modelos. GTIG vincula algunas campañas a grupos concretos que intentaron introducir paquetes o configuraciones maliciosas en flujos de desarrollo. La cadena de suministro se vuelve un punto crítico cuando equipos y agentes descargan bibliotecas, aceptan cambios automáticos o ejecutan tareas con privilegios elevados. El riesgo existe incluso si el código final parece respaldado por un flujo de integración aparentemente formal."
+          ]
+        },
+        {
+          "heading": "La diferencia entre contenido y autoridad",
+          "kind": "technical",
+          "paragraphs": [
+            "Una de las técnicas que analiza Google es el intento de colocar instrucciones engañosas dentro de archivos, comentarios o dependencias que asistentes de IA puedan leer. El problema de seguridad consiste en que información externa y no confiable pretende convertirse en órdenes para una herramienta con permisos sobre repositorios o sistemas. La defensa exige separar datos e instrucciones, limitar los permisos disponibles y exigir revisión de cambios sensibles. No basta con pedir al asistente que sea cuidadoso cuando puede encontrarse con contenido hostil durante la ejecución."
+          ]
+        },
+        {
+          "heading": "Activos de IA como blanco empresarial",
+          "kind": "technical",
+          "paragraphs": [
+            "Google también observó campañas dirigidas a modelos propietarios, código, credenciales de API y recursos de cómputo. Las organizaciones deben tratar esos elementos como activos sensibles con controles de identidad, monitoreo y segregación, no como accesorios de una demostración. El robo de una clave de proveedor puede permitir gastos no autorizados o acceso a proyectos; la filtración de modelos y datos de entrenamiento puede revelar trabajo de investigación cuya exposición no es reversible. GTIG distingue estos riesgos de la explotación de vulnerabilidades tradicionales."
+          ]
+        },
+        {
+          "heading": "La atribución requiere cautela",
+          "kind": "report",
+          "paragraphs": [
+            "Los hallazgos proceden de telemetría, seguimiento de actores y trabajos de respuesta a incidentes descritos por GTIG y Mandiant. Son observaciones relevantes de un proveedor con visibilidad amplia, pero no suponen que cada empresa del mundo haya sufrido el mismo patrón. Una campaña atribuida a un grupo concreto tampoco demuestra que el uso de agentes fuese decisivo en todos sus incidentes. En un reportaje periodístico conviene conservar los límites del conjunto observado y atribuir con precisión cada cifra y conclusión."
+          ]
+        },
+        {
+          "heading": "Qué medidas defensivas resultan prácticas",
+          "kind": "practical",
+          "paragraphs": [
+            "Para equipos de desarrollo, la primera medida es reducir privilegios de agentes y sistemas de CI. Conviene revisar dependencias antes de instalarlas, comprobar autores y cambios inesperados, separar credenciales por entorno y registrar qué acciones ejecutan los asistentes. También es recomendable impedir que un archivo de terceros pueda modificar sin revisión la configuración persistente del entorno de trabajo. Estas medidas limitan las consecuencias de una instrucción o paquete malicioso aunque el asistente llegue a procesarlo.",
+            "Una segunda línea consiste en disponer de alertas sobre uso anómalo de claves, descargas de dependencias y cambios de configuración. No todos los indicadores son ataques, por lo que se requieren umbrales y comprobaciones humanas. Las organizaciones que utilizan agentes autónomos deberían probar escenarios de contaminación del contexto y recuperar evidencias para investigar incidentes sin depender exclusivamente del relato final generado por el propio agente."
+          ]
+        },
+        {
+          "heading": "Implicaciones para la carrera de agentes",
+          "kind": "report",
+          "paragraphs": [
+            "El avance de sistemas capaces de trabajar durante largos periodos crea beneficios reales para programación, administración y atención. El mismo patrón reduce el costo de coordinar tareas maliciosas. La competencia entre proveedores tendrá que medirse no solo por autonomía y velocidad, sino por la facilidad de restringir herramientas, verificar resultados y auditar acciones. Las compañías que demuestren controles útiles en producción pueden ofrecer una ventaja importante frente a soluciones muy capaces pero difíciles de gobernar."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: seguridad como requisito de productividad",
+          "kind": "analysis",
+          "paragraphs": [
+            "El mensaje central no es que la automatización de IA deba abandonarse. Es que una mayor capacidad de acción amplía los efectos de una mala autorización. Un agente con acceso a secretos y posibilidad de modificar configuraciones debe evaluarse más como un operador privilegiado que como un chat inocuo. Las empresas necesitan controles de seguridad adaptados al trabajo real de agentes y no solo a la exactitud de sus respuestas escritas."
+          ]
+        },
+        {
+          "heading": "Qué sigue pendiente de comprobar",
+          "kind": "report",
+          "paragraphs": [
+            "El informe de Google describe casos y tendencias, pero no es una encuesta representativa de todos los ataques de 2026 ni publica estadísticas universales sobre la tasa de éxito de agentes maliciosos. Faltan comparaciones independientes del impacto de distintas defensas, información longitudinal de incidentes y evaluaciones de nuevas prácticas de seguridad. La utilidad de este hito histórico está en reconocer una transición observada: de ataques apoyados puntualmente por IA a operaciones que empiezan a incorporar flujos más autónomos."
+          ]
+        }
+      ],
+      "executiveSummary": "Google publicó evidencia de que algunos atacantes están usando automatización y agentes para acelerar campañas y atacar herramientas de desarrollo e infraestructura de IA. La empresa no sostiene que todos los incidentes sigan este patrón; la investigación refuerza la necesidad de controles sobre dependencias, permisos y credenciales.",
+      "finalSummary": "El 8 de septiembre ofrece un hito de seguridad en la cronología de IA: más autonomía no siempre significa más confianza. La misma capacidad de actuar sin intervención continua puede beneficiar a equipos legítimos y aumentar el alcance de una intrusión.",
+      "analysis": "Análisis Gazette: seguridad y trazabilidad deben evolucionar junto con la capacidad de los agentes; sin permisos restringidos y pruebas, la productividad automatizada amplifica riesgos.",
+      "watch": "Evidencia independiente de campañas, mejoras de defensas agénticas, seguridad de repositorios y controles para herramientas autónomas.",
+      "technicalDetails": [
+        {
+          "label": "Publicación",
+          "value": "8 septiembre 2026"
+        },
+        {
+          "label": "Ventana de incidente destacado",
+          "value": "Menos de seis horas",
+          "note": "Según GTIG, en un caso observado en Q2."
+        }
+      ],
+      "availability": {
+        "status": "Informe técnico de seguridad publicado",
+        "platforms": [
+          "Google Cloud / GTIG"
+        ],
+        "regions": [
+          "Hallazgos de operaciones investigadas"
+        ],
+        "requirements": [],
+        "notes": [
+          "No es un lanzamiento de producto ni una alerta de que todas las organizaciones hayan sido comprometidas."
+        ]
+      },
+      "limitations": [
+        "Resultados basados en telemetría e investigaciones de GTIG.",
+        "No representan una estadística universal de ataques.",
+        "La fecha del informe difiere de las fechas de incidentes estudiados."
+      ],
+      "practicalAdvice": [
+        "Aplicar mínimo privilegio a agentes y credenciales.",
+        "Revisar dependencias y cambios de CI antes de aceptarlos.",
+        "Separar instrucciones de usuario de contenido externo no confiable.",
+        "Monitorear accesos, cambios y consumo anómalo de recursos."
+      ],
+      "usefulFacts": [
+        "GTIG vincula campañas a abuso de asistentes y repositorios de código.",
+        "La investigación destaca intentos de robo de propiedad intelectual de IA.",
+        "El informe comprende actividades observadas durante Q2 de 2026."
+      ],
+      "curiosities": [
+        "Algunos atacantes intentaron camuflar instrucciones dentro de archivos que procesan asistentes.",
+        "El informe asocia la presión sobre cadenas de suministro con un ecosistema de desarrollo cada vez más automatizado."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Publicación del informe GTIG AI Threat Tracker."
+        }
+      ]
+    },
+    {
       "id": "minicpm5-2b",
       "eventKey": "minicpm5-2b",
       "date": "2026-09-07",
@@ -3462,7 +3632,7 @@
     {
       "date": "2026-09-08",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 3
     },
     {
       "date": "2026-09-09",

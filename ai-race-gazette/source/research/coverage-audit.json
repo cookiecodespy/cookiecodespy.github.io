@@ -162,28 +162,31 @@
     {
       "date": "2026-09-08",
       "archiveStatus": "partial",
-      "verifiedArticles": 2,
+      "verifiedArticles": 3,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "openai-research",
-        "mistral-news"
+        "mistral-news",
+        "google-ai-cloud"
       ],
       "reviewedCategories": [
         "image-video",
-        "deals-financing"
+        "deals-financing",
+        "security",
+        "agents"
       ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
         "found": 2,
-        "published": 2,
+        "published": 3,
         "discarded": 0,
         "unresolved": 0
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Se publicaron dos anuncios confirmados del 8 Sep. Falta discovery abierto y revisión inversa; día partial."
+      "notes": "OpenAI Images, Mistral financiación y GTIG Threat Tracker publicados para 8 Sep. No se cierra: faltan Google y resto de actores por día."
     },
     {
       "date": "2026-09-09",
