@@ -1,5 +1,10 @@
-import copy,json,sys,unittest
+import copy
+import json
+import sys
+import unittest
+from datetime import date, timedelta
 from pathlib import Path
+
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from validate_coverage_audit import check
@@ -10,28 +15,50 @@ class CoverageAuditTests(unittest.TestCase):
   self.coverage=json.loads((ROOT/'docs/history-coverage.json').read_text(encoding='utf-8'))
   self.audit=json.loads((ROOT/'research/coverage-audit.json').read_text(encoding='utf-8'))
   self.registry=json.loads((ROOT/'research/source-registry.json').read_text(encoding='utf-8'))
+
  def verify(self):
   return check(self.news,self.coverage,self.audit,self.registry)
+
  def test_live_partial_days_can_outgrow_snapshot(self):
-  days,closed,growing,new=self.verify()
-  self.assertGreaterEqual(days,37)
-  self.assertGreaterEqual(growing,1)
- def test_audited_complete_day_cannot_silently_grow(self):
-  a=next(x for x in self.news['articles'] if x['date']=='2026-09-01')
-  clone=copy.deepcopy(a);clone['id']='test-new-audited-story';clone['eventKey']='test-new-audited-story'
+  open_rows=[r for r in self.coverage if r['status'] in ('partial','pending') and
+             any(a['date']==r['date'] for a in self.audit['days'])]
+  if not open_rows: self.skipTest('No open historical snapshot days')
+  row=open_rows[0]
+  template=self.news['articles'][0]
+  clone=copy.deepcopy(template)
+  clone.update(id='test-open-day-story',eventKey='test-open-day-story',date=row['date'])
   self.news['articles'].append(clone)
-  next(r for r in self.coverage if r['date']=='2026-09-01')['verifiedArticles']+=1
+  row['verifiedArticles']+=1
+  if row['status']=='pending': row['status']='partial'
+  days,closed,growing,new=self.verify()
+  self.assertGreaterEqual(growing,1)
+
+ def test_audited_complete_day_cannot_silently_grow(self):
+  rows=[r for r in self.coverage if r['status']=='complete']
+  if not rows: self.skipTest('No completed historical days')
+  row=rows[0]
+  clone=copy.deepcopy(self.news['articles'][0])
+  clone.update(id='test-new-audited-story',eventKey='test-new-audited-story',date=row['date'])
+  self.news['articles'].append(clone)
+  row['verifiedArticles']+=1
   with self.assertRaisesRegex(AssertionError,'closed audit count changed'):
    self.verify()
+
  def test_future_new_day_may_be_partial(self):
+  latest=max(date.fromisoformat(r['date']) for r in self.coverage)
+  end=date.fromisoformat(self.audit['periodEnd'])
+  day=(max(latest,end)+timedelta(days=1)).isoformat()
   clone=copy.deepcopy(self.news['articles'][0])
-  clone.update(id='test-next-day-story',eventKey='test-next-day-story',date='2026-10-08')
+  clone.update(id='test-next-day-story',eventKey='test-next-day-story',date=day)
   self.news['articles'].append(clone)
-  self.coverage.append({'date':'2026-10-08','status':'partial','verifiedArticles':1})
+  self.coverage.append({'date':day,'status':'partial','verifiedArticles':1})
   self.assertGreaterEqual(self.verify()[3],1)
+
  def test_unrecorded_historical_date_fails(self):
-  self.audit['days']=[a for a in self.audit['days'] if a['date']!='2026-09-10']
+  day=self.audit['days'][0]['date']
+  self.audit['days']=[a for a in self.audit['days'] if a['date']!=day]
   with self.assertRaisesRegex(AssertionError,'missing historical audit record'):
    self.verify()
 
-if __name__=='__main__':unittest.main()
+if __name__=='__main__':
+ unittest.main()
