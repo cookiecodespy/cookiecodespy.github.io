@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T04:22:40.054Z",
+  "updatedAt": "2026-10-08T04:23:37.795Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -1158,6 +1158,183 @@
       "analysis": "El costo de una tarea incluye reintentos y revisión, además de tokens. Una evaluación útil mide el trabajo terminado.",
       "watch": "Pruebas comparables y documentación de migración.",
       "announcedAt": "2026-09-22"
+    },
+    {
+      "id": "openai-gpt-live-1-api-2026-09-10",
+      "eventKey": "openai-gpt-live-1-api-2026-09-10",
+      "articleVersion": 2,
+      "date": "2026-09-10",
+      "announcedAt": "2026-09-10",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "OpenAI",
+      "product": "GPT-Live-1 API",
+      "title": "GPT‑Live‑1 abre su API: voz full dúplex, agentes que aceptan interrupciones y precio por minuto",
+      "summary": "OpenAI lanzó GPT‑Live‑1 en API el 10 de septiembre. El modelo puede escuchar y hablar a la vez, delegar razonamiento a otro backend y servir de capa vocal para aplicaciones, con una tarifa de lanzamiento de US$0,05/minuto.",
+      "tags": [
+        "Voz",
+        "API",
+        "Agentes",
+        "Modelos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado genérico de inteligencia mecánica, no fotografía documental de GPT‑Live‑1.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de prensa científica antigua: dos fonógrafos escuchan y hablan al mismo tiempo mientras un telégrafo transmite consultas a calculadoras mecánicas. Representar voz full dúplex y delegación, sepia, sin texto ni interfaces ficticias.",
+      "source": {
+        "name": "OpenAI · Build more natural voice experiences with GPT-Live-1 in the API",
+        "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+        "publishedAt": "2026-09-10"
+      },
+      "keyPoints": [
+        "La disponibilidad para API es el anuncio del 10 de septiembre.",
+        "La voz full dúplex mejora la gestión de interrupciones y pausas según OpenAI.",
+        "Tarifa publicada: US$0,05/minuto para la capa vocal, sin otros costes del backend."
+      ],
+      "quickTakeaways": [
+        "GPT‑Live‑1 ya existía en ChatGPT; ahora es integrable en la API.",
+        "Un único modelo vocal puede escuchar y hablar simultáneamente.",
+        "Admite delegar tareas y razonamiento a sistemas de backend.",
+        "El precio declarado se limita a la capa frontal de voz."
+      ],
+      "body": [
+        "El lanzamiento de GPT‑Live‑1 para API transforma una experiencia de voz de ChatGPT en un componente que desarrolladores pueden integrar en sistemas de atención, aprendizaje, soporte y otros flujos con herramientas."
+      ],
+      "sections": [
+        {
+          "heading": "Por qué esta es una noticia propia",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI anunció el 10 de septiembre la disponibilidad de GPT‑Live‑1 para desarrolladores a través de su API. Había presentado anteriormente esta experiencia de voz en ChatGPT; la novedad es que ahora equipos externos pueden construir aplicaciones, agentes de atención y sistemas telefónicos sobre su capa vocal. Conviene separar ambas fechas para que la cronología no confunda una demostración al consumidor con una distribución para desarrolladores.",
+            "El modelo está concebido para gestionar conversación continua y permitir que un interlocutor interrumpa, vacile o modifique la instrucción sin forzar un ciclo rígido de turnos. OpenAI también facilita configurar tono y estilo. Esta disponibilidad es una pieza de infraestructura para crear productos, no un agente empresarial terminado por sí mismo."
+          ]
+        },
+        {
+          "heading": "La conversación full dúplex",
+          "kind": "technical",
+          "paragraphs": [
+            "Un sistema vocal clásico suele combinar reconocimiento de voz, un modelo de texto y síntesis de habla. Cuando esos componentes se encadenan por turnos, cada transferencia puede añadir latencia y romper la fluidez. GPT‑Live‑1 escucha y produce voz de forma simultánea, por lo que puede detectar interrupciones y pequeños comentarios mientras está hablando.",
+            "El valor no se mide únicamente por la naturalidad de la voz. Un agente debe decidir si una pausa es reflexión o final de turno, si el usuario se dirige a otra persona y cómo retomar el hilo después de una interrupción. Estos detalles determinan si puede participar en una llamada útil o si se vuelve molesto en un entorno real."
+          ]
+        },
+        {
+          "heading": "Arquitectura: delegar el razonamiento",
+          "kind": "technical",
+          "paragraphs": [
+            "OpenAI explica que GPT‑Live‑1 puede delegar razonamiento y llamadas a herramientas a un backend de texto, incluido un modelo de terceros. La voz sirve así de interfaz mientras otros sistemas consultan datos, razonan o ejecutan acciones. Separar responsabilidades permite diseñar rutas diferentes para una pregunta sencilla y una gestión compleja.",
+            "El modelo también entrega transcripciones de reconocimiento ASR y texto de respuesta, admite sesgos para palabras clave y ofrece detección de turnos. Estas funciones ayudan a inspeccionar qué entendió el sistema. Si escucha un número o una fecha equivocada, una aplicación responsable debería mostrar o confirmar la interpretación antes de registrar un cambio."
+          ]
+        },
+        {
+          "heading": "Benchmarks y testimonios: cómo leerlos",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI atribuye a GPT‑Live‑1 una mejora de 30 puntos porcentuales frente a GPT‑Realtime‑2.1 en Full Duplex Bench. También describe un resultado destacado en Tau3 al combinarlo con GPT‑6 Astra, bajo una configuración concreta de esfuerzo de razonamiento. Son resultados comunicados por la propia compañía, y la combinación exacta de modelos importa para interpretar la comparación.",
+            "En testimonios del lanzamiento, Speak informó de casi un 80 % menos interrupciones durante las pausas de estudiantes frente a un sistema anterior basado en turnos. Esta experiencia ilustra una utilidad concreta, pero no equivale a garantizar ese porcentaje en otros idiomas, servicios o audiencias. Los casos de clientes tienen valor orientativo, no sustituyen evaluaciones independientes."
+          ]
+        },
+        {
+          "heading": "Voces, idiomas y llamadas telefónicas",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio amplía las voces disponibles, con distintas opciones de acento y estilo. También señala mejoras para sesiones largas, ruido de fondo y silencio. OpenAI presenta casos de telefonía para gestiones como reservas y soporte, aunque desarrollar uno de esos servicios requiere integrar componentes externos, definir permisos y asegurar mecanismos de recuperación.",
+            "Para una organización de habla hispana es imprescindible ensayar nombres propios, acentos locales, direcciones, ruido de calle y cambios bruscos de intención. Una conversación fluida en una demostración breve puede comportarse de otra forma al transcribir una dirección difícil o al interpretar instrucciones relacionadas con dinero o datos privados."
+          ]
+        },
+        {
+          "heading": "Precio: cinco centavos por minuto no son el presupuesto total",
+          "kind": "practical",
+          "paragraphs": [
+            "OpenAI publicó una tarifa de US$0,05 por minuto para la capa frontal de voz GPT‑Live‑1. Esa cifra sirve para preparar una estimación inicial, pero no incluye necesariamente el coste del modelo de backend que resuelve tareas complejas ni herramientas, telefonía, almacenamiento, infraestructura de aplicación o supervisión.",
+            "Para comparar proveedores conviene medir minutos facturados, coste por gestión resuelta, tasa de transferencias humanas y errores que obligan a llamar de nuevo. Una arquitectura aparentemente más barata por minuto puede resultar más cara si no logra completar trámites. También corresponde verificar las tarifas vigentes antes de lanzar un producto, pues pueden cambiar."
+          ]
+        },
+        {
+          "heading": "Qué deberían hacer los desarrolladores",
+          "kind": "practical",
+          "paragraphs": [
+            "Un prototipo serio puede comenzar con cinco situaciones: pregunta sencilla, pausa larga, interrupción, ruido externo y cambio de intención en medio de una solicitud. Conviene medir tiempo de respuesta, tasa de interrupciones no deseadas, transcripciones y exactitud de herramientas. Es más útil conservar estas evidencias que evaluar solamente cuánto se parece la voz a una conversación humana.",
+            "Las acciones sensibles necesitan confirmación y registros. Un asistente no debería modificar reservas, divulgar datos personales ni procesar pagos por interpretar una frase ambigua. También se deben revisar obligaciones de aviso y consentimiento si se graba una llamada, así como retención de audios y accesibilidad para usuarios que prefieran texto."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y asuntos por comprobar",
+          "kind": "analysis",
+          "paragraphs": [
+            "Esta noticia muestra que la carrera de la IA no compite solo en razonamiento. También importa cuánto esfuerzo exige al usuario la interfaz y qué tan resistente es la conversación a interrupciones reales. La posibilidad de combinar una capa vocal ágil con modelos especializados permite que la experiencia y la capacidad intelectual evolucionen de manera parcialmente independiente.",
+            "La prueba decisiva será la resolución fiable de tareas completas y no únicamente los segundos hasta la primera palabra. Faltan comparaciones externas entre acentos, escenarios de telefonía y arquitecturas completas; también queda por comprobar el coste real por interacción resuelta y la estabilidad de sesiones largas en producción."
+          ]
+        }
+      ],
+      "executiveSummary": "GPT‑Live‑1 se abre a desarrolladores con audio full dúplex y delegación de tareas. OpenAI anuncia US$0,05/minuto para voz y mejoras de interrupción bajo sus evaluaciones. Un agente completo necesita backend, herramientas y controles adicionales.",
+      "finalSummary": "El 10 de septiembre marca un nuevo paso de la IA conversacional hacia productos de voz utilizables fuera de ChatGPT. El impacto competitivo dependerá de latencia real, fiabilidad de herramientas, costes completos y calidad con usuarios diversos.",
+      "analysis": "Análisis Gazette: la gestión natural de turnos es una capacidad diferenciada del razonamiento. Puede acelerar la adopción de asistentes telefónicos, pero no justifica sacrificar verificación de acciones y privacidad.",
+      "watch": "Resultados externos en español, coste por caso resuelto, latencia completa, estabilidad de llamadas largas y auditoría de acciones.",
+      "technicalDetails": [
+        {
+          "label": "Disponibilidad",
+          "value": "API desde 10 de septiembre de 2026"
+        },
+        {
+          "label": "Tarifa de voz",
+          "value": "US$0,05 por minuto"
+        },
+        {
+          "label": "Benchmark del proveedor",
+          "value": "+30 puntos en Full Duplex Bench vs GPT‑Realtime‑2.1",
+          "note": "Según OpenAI."
+        }
+      ],
+      "pricing": [
+        {
+          "label": "Capa vocal GPT‑Live‑1",
+          "value": "US$0,05/minuto",
+          "note": "No incluye necesariamente backend, herramientas ni telefonía."
+        }
+      ],
+      "availability": {
+        "status": "Disponible en API según OpenAI",
+        "platforms": [
+          "API de OpenAI",
+          "Integraciones de voz y telefonía"
+        ],
+        "regions": [
+          "Según condiciones de acceso del desarrollador"
+        ],
+        "requirements": [
+          "Integrar modelo de backend y herramientas si corresponde",
+          "Definir confirmaciones, permisos y protección de datos"
+        ],
+        "notes": [
+          "El anuncio no reemplaza ni reanuncia la primera llegada del modelo a ChatGPT."
+        ]
+      },
+      "limitations": [
+        "La evaluación comparativa procede de OpenAI.",
+        "La tarifa vocal no representa el coste de un servicio completo.",
+        "Hay que comprobar latencia y reconocimiento en otros idiomas y ambientes."
+      ],
+      "practicalAdvice": [
+        "Probar pausas, interrupciones, ruido y cambios de intención.",
+        "Registrar transcripciones y validar antes de ejecutar acciones sensibles.",
+        "Medir costes por caso completado, no solo por minuto."
+      ],
+      "usefulFacts": [
+        "GPT‑Live‑1 ofrece transcripción ASR y texto de respuesta.",
+        "Separa interacción vocal y razonamiento delegado.",
+        "OpenAI cita un precio de US$0,05 por minuto de voz."
+      ],
+      "curiosities": [
+        "Speak comunicó una reducción próxima al 80 % en interrupciones durante pausas reflexivas de estudiantes.",
+        "El lanzamiento incluye más voces y opciones de estilo y ritmo."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "label": "OpenAI anuncia GPT‑Live‑1 en API."
+        }
+      ]
     },
     {
       "id": "gemini-windows",
@@ -2951,7 +3128,7 @@
     {
       "date": "2026-09-10",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-09-11",

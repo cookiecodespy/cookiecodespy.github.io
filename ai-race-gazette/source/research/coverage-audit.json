@@ -208,22 +208,28 @@
     {
       "date": "2026-09-10",
       "archiveStatus": "partial",
-      "verifiedArticles": 1,
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [],
+      "reviewedSourceIds": [
+        "openai-research",
+        "google-ai-cloud"
+      ],
+      "reviewedCategories": [
+        "voice-audio",
+        "models"
+      ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 1,
+        "published": 2,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "GPT‑Live‑1 API y Gemini Windows publicados. Falta revisión completa de otras fuentes y segunda pasada; día parcial."
     },
     {
       "date": "2026-09-11",

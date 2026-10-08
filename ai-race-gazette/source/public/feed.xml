@@ -126,6 +126,14 @@
       <source url="https://www.anthropic.com/claude-opus-5-5">Anthropic · anuncio oficial</source>
     </item>
     <item>
+      <title>GPT‑Live‑1 abre su API: voz full dúplex, agentes que aceptan interrupciones y precio por minuto</title>
+      <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-gpt-live-1-api-2026-09-10</link>
+      <description>OpenAI lanzó GPT‑Live‑1 en API el 10 de septiembre. El modelo puede escuchar y hablar a la vez, delegar razonamiento a otro backend y servir de capa vocal para aplicaciones, con una tarifa de lanzamiento de US$0,05/minuto.</description>
+      <guid>https://cookiecodespy.github.io/ai-race-gazette/#articulo/openai-gpt-live-1-api-2026-09-10</guid>
+      <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
+      <source url="https://openai.com/index/introducing-gpt-live-1-in-the-api/">OpenAI · Build more natural voice experiences with GPT-Live-1 in the API</source>
+    </item>
+    <item>
       <title>Gemini llega al escritorio de Windows</title>
       <link>https://cookiecodespy.github.io/ai-race-gazette/#articulo/gemini-windows</link>
       <description>La nueva aplicación permite abrir el asistente sobre el trabajo activo con Alt + Espacio.</description>
