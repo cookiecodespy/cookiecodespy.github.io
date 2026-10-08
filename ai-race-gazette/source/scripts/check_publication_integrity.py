@@ -3,6 +3,7 @@ import json
 import xml.etree.ElementTree as ET
 from collections import Counter
 from datetime import date,timedelta
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 SOURCE=Path(__file__).resolve().parents[1]
 PROJECT=SOURCE.parent
@@ -45,9 +46,21 @@ def validate(news_text,mirror_text,rss_text,rss_mirror,history_text):
     rss_urls=[i.findtext('link') for i in items]
     assert len(set(rss_urls))==len(rss_urls), 'RSS duplicate links'
     assert set(rss_urls)==urls, 'RSS missing or unknown article links'
-    for i in items:
-        assert i.findtext('guid')==i.findtext('link'), 'RSS GUID mismatch'
-        assert i.findtext('title') and i.findtext('description'), 'Missing RSS title/description'
+    articles_by_url={
+        f'https://cookiecodespy.github.io/ai-race-gazette/#articulo/{article["id"]}':article
+        for article in articles
+    }
+    for item in items:
+        link=item.findtext('link')
+        article=articles_by_url[link]
+        assert item.findtext('guid')==link, 'RSS GUID mismatch'
+        assert item.findtext('title')==article['title'], f"Stale RSS title for {article['id']}"
+        assert item.findtext('description')==article['summary'], f"Stale RSS summary for {article['id']}"
+        source=item.find('source')
+        assert source is not None and source.text==article['source']['name'],f"Stale RSS source name for {article['id']}"
+        assert source.get('url')==article['source']['url'],f"Stale RSS source URL for {article['id']}"
+        published=parsedate_to_datetime(item.findtext('pubDate')).date().isoformat()
+        assert published==article['date'],f"Stale RSS date for {article['id']}"
     return len(articles),len(pc)
 
 if __name__=='__main__':

@@ -51,6 +51,7 @@ jobs:
         run: |
           python3 -m unittest tests/editorial_test.py
           python3 -m unittest tests/coverage_audit_test.py
+          python3 -m unittest tests/publication_integrity_test.py
           python3 -m unittest tests/visual_publish_test.py
           python3 -m unittest tests/visual_queue_test.py
           python3 scripts/editorial.py --validate-only

@@ -30,6 +30,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Public mirrors, RSS and calendar
         run: python3 scripts/check_publication_integrity.py
+      - name: Test RSS article semantics
+        run: python3 -m unittest tests/publication_integrity_test.py
       - name: Structured editorial validation
         run: |
           python3 scripts/editorial.py --validate-only
