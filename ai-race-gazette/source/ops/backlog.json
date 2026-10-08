@@ -139,11 +139,15 @@
       "phase": "P05",
       "title": "Investigar alianza Mistral–Cloudera",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "acceptance": "Confirmar efectos técnicos y fecha, publicar V2 o descartar con motivo",
       "evidence": [
         "https://mistral.ai/news/"
+      ],
+      "verifiedEvidence": [
+        "https://mistral.ai/news/mistral-x-cloudera/",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/mistral-cloudera-sovereign-ai-2026-09-10"
       ]
     },
     {

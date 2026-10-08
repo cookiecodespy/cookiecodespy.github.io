@@ -213,28 +213,31 @@
     {
       "date": "2026-09-10",
       "archiveStatus": "partial",
-      "verifiedArticles": 2,
+      "verifiedArticles": 3,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "openai-research",
-        "google-ai-cloud"
+        "google-ai-cloud",
+        "mistral-news"
       ],
       "reviewedCategories": [
         "voice-audio",
-        "models"
+        "models",
+        "agents",
+        "datacenters-infrastructure"
       ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 2,
+        "published": 3,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "GPT‑Live‑1 API y Gemini Windows publicados. Falta revisión completa de otras fuentes y segunda pasada; día parcial."
+      "notes": "Gemini Windows, GPT‑Live‑1 y alianza Cloudera publicados. Jornada parcial a falta de auditoría inversa y fuentes restantes."
     },
     {
       "date": "2026-09-11",
