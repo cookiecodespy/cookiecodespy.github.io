@@ -493,9 +493,12 @@
       "phase": "P08",
       "title": "Generar y verificar checklist desde JSON",
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "lane": "Architecture / QA",
-      "acceptance": "Un solo JSON gobierna casillas, estados, razones y progreso; script determinista y comprobación --check en CI."
+      "acceptance": "Un solo JSON gobierna casillas, estados, razones y progreso; script determinista y comprobación --check en CI.",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37797427043"
+      ]
     },
     {
       "id": "OPS-RUN-PROOF",
@@ -583,9 +586,10 @@
       "phase": "P10",
       "title": "Smoke tests públicos de artículos, RSS e imágenes",
       "priority": "P0",
-      "status": "queued",
+      "status": "in_progress",
       "lane": "Product / QA",
-      "acceptance": "Comprobar HTTP 200, assets, navegación móvil y RSS desplegado tras publicación; incluir URLs concretas."
+      "acceptance": "Comprobar HTTP 200, assets, navegación móvil y RSS desplegado tras publicación; incluir URLs concretas.",
+      "notes": "Dynamic live browser smoke workflow created; must pass against actual GitHub Pages before completion."
     },
     {
       "id": "QA-SEO-PREVIEW",
@@ -675,10 +679,10 @@
       "phase": "P09",
       "title": "Sincronizar cola visual tras publicaciones Newsroom",
       "priority": "P1",
-      "status": "queued",
+      "status": "in_progress",
       "lane": "Visual Desk / CI",
       "acceptance": "Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.",
-      "notes": "Actualmente la cola se actualiza en pasada manual, no con cada run horario."
+      "notes": "Workflow push-triggered and unit-tested; end-to-end unattended push still needs a live publication event and successful sync run."
     },
     {
       "id": "QA-MAJOR-STORY-CORROBORATION",
@@ -698,6 +702,36 @@
       "status": "queued",
       "lane": "Product & QA",
       "acceptance": "Generar métricas verificables de artículos, legacy, días registrados/auditados, última publicación y trabajo pendiente desde JSON de main."
+    },
+    {
+      "id": "OPS-RESUME-SAFE",
+      "phase": "P08",
+      "title": "Recuperación verificable después de interrupciones de chat",
+      "priority": "P0",
+      "status": "in_progress",
+      "lane": "Product & QA",
+      "acceptance": "Documentar y probar recuperación desde commits, GitHub Actions y backlog sin duplicar publicaciones.",
+      "notes": "Procedimiento añadido; pasar a done tras CI y verificación documental."
+    },
+    {
+      "id": "OPS-STALE-BUILD-GUARD",
+      "phase": "P08",
+      "title": "Evitar despliegues de bundles obsoletos por carreras de GitHub",
+      "priority": "P0",
+      "status": "in_progress",
+      "lane": "Product & QA",
+      "acceptance": "CI impide publicar dist si fuentes React, scripts de compilación o assets cambiaron desde checkout.",
+      "notes": "Guardia añadida a build; validar con CI y prueba de concurrencia."
+    },
+    {
+      "id": "QA-PUBLIC-MOBILE-LIVE",
+      "phase": "P10",
+      "title": "Prueba diaria del sitio público en móvil y escritorio",
+      "priority": "P1",
+      "status": "in_progress",
+      "lane": "Product & QA",
+      "acceptance": "Smoke automatizado comprueba JSON/RSS, navegación, imágenes, ausencia de errores JS y desbordamiento horizontal móvil.",
+      "notes": "Esperando primera ejecución real de smoke."
     }
   ]
 }

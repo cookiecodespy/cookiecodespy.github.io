@@ -77,3 +77,6 @@ Esto es especialmente importante porque el backfill puede durar bastante mientra
 - `reviewed-no-material-news`: día revisado con evidencia suficiente y sin novedades materiales encontradas.
 
 No marcar `complete` únicamente porque exista al menos una noticia.
+
+### Recuperación de trabajo interrumpido
+El protocolo `recovery-after-interruption.md` es obligatorio al retomar una conversación o job que terminó sin informe final. Solo GitHub main y los gates CI prueban el estado real.

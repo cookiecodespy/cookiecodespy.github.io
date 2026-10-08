@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 54 tareas; 14 completadas; 3 en curso; 36 pendientes o bloqueadas; 1 descartadas con razón.
+- 6 fases; 57 tareas; 15 completadas; 7 en curso; 34 pendientes o bloqueadas; 1 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -111,14 +111,19 @@
 - [x] **OPS-CONTENT-CI** · P0 · done — Validación CI de cambios solo editoriales
   - Criterio: Workflow separado verifica ambos JSON, ambos RSS, fechas, eventKeys, conteos y reglas editoriales con ejecución real.
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37795004760
-- [ ] **OPS-LIVE-CHECKLIST** · P0 · in_progress — Generar y verificar checklist desde JSON
+- [x] **OPS-LIVE-CHECKLIST** · P0 · done — Generar y verificar checklist desde JSON
   - Criterio: Un solo JSON gobierna casillas, estados, razones y progreso; script determinista y comprobación --check en CI.
+  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37797427043
 - [ ] **OPS-RUN-PROOF** · P0 · queued — Demostrar tres ejecuciones reales de Newsroom horario
   - Criterio: Verificar al menos tres ejecuciones consecutivas, no-op silencioso y publicación autorizada cuando aparezca un evento.
 - [ ] **OPS-CONCURRENCY-TEST** · P0 · queued — Prueba de colisión Newsroom y Backfill
   - Criterio: Simular dos writers, comprobar SHA conflict/rebase y ausencia de pérdida o duplicación en JSON/RSS.
 - [ ] **OPS-ROLLBACK-DRILL** · P1 · queued — Ensayar rollback y restauración de datos/arte
   - Criterio: Documentar y ensayar restauración desde Git con evidencia, sin afectar la raíz de cookiecodespy.github.io.
+- [ ] **OPS-RESUME-SAFE** · P0 · in_progress — Recuperación verificable después de interrupciones de chat
+  - Criterio: Documentar y probar recuperación desde commits, GitHub Actions y backlog sin duplicar publicaciones.
+- [ ] **OPS-STALE-BUILD-GUARD** · P0 · in_progress — Evitar despliegues de bundles obsoletos por carreras de GitHub
+  - Criterio: CI impide publicar dist si fuentes React, scripts de compilación o assets cambiaron desde checkout.
 
 ## P09 — Enriquecimiento de legacy y Visual Desk
 
@@ -136,7 +141,7 @@
   - Criterio: Definir presupuesto visual, tipos de grabado, niveles de especificidad y umbral de repetición con QA.
 - [ ] **ED-LEGACY-BATCH** · P0 · queued — Migración Reporter V2 por lotes de artículos antiguos
   - Criterio: Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido.
-- [ ] **VIS-AUTO-QUEUE-REFRESH** · P1 · queued — Sincronizar cola visual tras publicaciones Newsroom
+- [ ] **VIS-AUTO-QUEUE-REFRESH** · P1 · in_progress — Sincronizar cola visual tras publicaciones Newsroom
   - Criterio: Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.
 
 ## P10 — Segunda auditoría y lanzamiento v1.0
@@ -159,7 +164,7 @@
   - Criterio: Reabrir las fuentes del archivo completo, contrastar claims del proveedor, registrar errores y correcciones.
 - [ ] **QA-EVENT-DEDUP** · P1 · queued — Revisar eventos distintos con una misma URL
   - Criterio: Evaluar duplicados semánticos en historias con fuente principal común sin fusionar eventos verdaderamente independientes.
-- [ ] **QA-HTTP-SMOKE** · P0 · queued — Smoke tests públicos de artículos, RSS e imágenes
+- [ ] **QA-HTTP-SMOKE** · P0 · in_progress — Smoke tests públicos de artículos, RSS e imágenes
   - Criterio: Comprobar HTTP 200, assets, navegación móvil y RSS desplegado tras publicación; incluir URLs concretas.
 - [ ] **QA-SEO-PREVIEW** · P1 · queued — Auditar SEO y tarjetas al compartir artículos
   - Criterio: Revisar metadatos disponibles a crawlers sin JavaScript, canonical, sitemap, OG y previews por artículo.
@@ -180,6 +185,8 @@
   - Criterio: Reabrir fuentes primarias, validar claims y usar documentación o corroboración externa donde exista; no fabricar una segunda fuente.
 - [ ] **QA-EDITORIAL-METRICS-LIVE** · P1 · queued — Panel interno verificable de avance y frescura
   - Criterio: Generar métricas verificables de artículos, legacy, días registrados/auditados, última publicación y trabajo pendiente desde JSON de main.
+- [ ] **QA-PUBLIC-MOBILE-LIVE** · P1 · in_progress — Prueba diaria del sitio público en móvil y escritorio
+  - Criterio: Smoke automatizado comprueba JSON/RSS, navegación, imágenes, ausencia de errores JS y desbordamiento horizontal móvil.
 
 ## Reglas para nuevas tareas
 

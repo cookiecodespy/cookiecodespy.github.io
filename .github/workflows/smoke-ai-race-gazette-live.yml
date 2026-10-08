@@ -1,6 +1,11 @@
 name: Smoke Test AI Race Gazette Live
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/smoke-ai-race-gazette-live.yml'
+      - 'ai-race-gazette/source/scripts/live-qa.mjs'
   workflow_dispatch:
   schedule:
     - cron: '25 13 * * *'
