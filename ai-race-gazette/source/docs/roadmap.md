@@ -6,6 +6,7 @@ Fecha de corte: 2026-10-07.
 
 ### Terminado
 - Visual Desk v1: manifest de assets, cola por artículo, prioridades P0–P3, refresco, validación CI y auditoría inicial.
+- Primer lote Visual Desk art-directed: 12 briefs visuales específicos listos para producción.
 - Calendario mensual auditable en la web, incluyendo días sin artículos y navegación a ediciones vacías/pending.
 - Coverage Audit Ledger machine-readable enlazado a history-coverage y dailyCoverage.
 - Source Registry ampliado a actores core/radar con discovery abierto obligatorio.
