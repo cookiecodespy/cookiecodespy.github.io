@@ -207,3 +207,19 @@ La web debe representar todas las fechas del ledger, incluidas fechas sin artíc
 - reviewed-no-material-news.
 
 Una edición diaria vacía debe explicar su estado; nunca usar un hueco visual como prueba de que no hubo noticias.
+
+
+## 15. Visual Desk
+
+La operación visual se rige por `docs/visual-desk.md`, `visual/asset-manifest.json` y `visual/image-queue.json`.
+
+Reglas:
+- una imagen editorial usada por un artículo debe estar registrada;
+- breaking news puede publicar con fallback de biblioteca;
+- Reporter V2 mayor debe aspirar a arte específico;
+- un fallback altamente repetido cuenta como deuda visual;
+- arte generado se rotula como ilustración y no como fotografía documental;
+- Visual Desk puede trabajar de forma asíncrona sin bloquear Newsroom;
+- sustituir una imagen no cambia id/eventKey del artículo.
+
+Meta visual v1.0: P0 vacío, grandes historias con arte específico o excepción documentada, créditos/alt text validados y dependencia del hero genérico fuertemente reducida.
