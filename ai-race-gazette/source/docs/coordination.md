@@ -35,6 +35,16 @@ Responsable de:
 - rendimiento, SEO y calidad general;
 - cambios de código deliberados fuera del ciclo editorial rutinario.
 
+### 4. Visual Desk
+Responsable de:
+- asset manifest;
+- cola de ilustraciones;
+- generación/selección y QA del arte;
+- créditos y alt text;
+- sustitución de fallbacks por arte específico.
+
+Visual Desk no cambia hechos, fuentes, ids o eventKeys. Antes de actualizar un artículo para sustituir su imagen, vuelve a leer `main` y modifica únicamente los campos visuales necesarios.
+
 ## Protocolo de escritura segura
 
 Toda operación que vaya a modificar `news.json` debe:
