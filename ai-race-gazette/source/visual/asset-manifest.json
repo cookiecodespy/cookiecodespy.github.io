@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Registro de procedencia, uso y reglas del arte editorial de AI Race Gazette.",
+  "visualStyle": "Grabado editorial de prensa antigua, tinta/sepia, textura de papel envejecido, composición tecnológica legible, sin fingir documentación fotográfica.",
+  "canonicalGeneratedCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+  "targetPolicy": {
+    "majorStories": "specific",
+    "standardReporterV2": "specific-preferred",
+    "breakingStories": "library-fallback-allowed",
+    "minorUpdates": "library-allowed",
+    "eventualArchiveGoal": "story-specific hero for every Reporter V2 article where useful"
+  },
+  "outputSpec": {
+    "format": "webp",
+    "preferredWidth": 1600,
+    "preferredAspectRatio": "3:2",
+    "safeCenterCrop": true,
+    "noEmbeddedText": true,
+    "noFakeLogos": true,
+    "noFakeInterfacesPresentedAsReal": true
+  },
+  "assets": [
+    {
+      "id": "gazette-generic-ai-hero-v1",
+      "src": "assets/hero.webp",
+      "kind": "editorial-illustration",
+      "origin": "generated-ai",
+      "reusable": true,
+      "specificity": "generic",
+      "tags": [
+        "generic",
+        "models",
+        "agents",
+        "global-ai",
+        "research"
+      ],
+      "canonicalCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "legacyCredits": [
+        "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
+        "Ilustración editorial generada con IA.",
+        "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía del lanzamiento."
+      ],
+      "currentUsage": 34,
+      "notes": "Fallback general. Su alta reutilización es deuda visual prioritaria."
+    },
+    {
+      "id": "gazette-google-architecture-v1",
+      "src": "assets/google.webp",
+      "kind": "editorial-illustration",
+      "origin": "generated-ai",
+      "reusable": true,
+      "specificity": "company-family",
+      "tags": [
+        "google",
+        "gemini",
+        "architecture",
+        "models",
+        "research"
+      ],
+      "canonicalCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "legacyCredits": [
+        "Ilustración editorial generada con IA.",
+        "Ilustración editorial generada con IA; no es una fotografía de Google.",
+        "Ilustración editorial generada con IA; no es una fotografía del anuncio."
+      ],
+      "currentUsage": 12,
+      "notes": "Fallback orientado a Google/arquitectura tecnológica; no asumir que representa instalaciones reales."
+    },
+    {
+      "id": "gazette-mistral-lab-v1",
+      "src": "assets/mistral.webp",
+      "kind": "editorial-illustration",
+      "origin": "generated-ai",
+      "reusable": true,
+      "specificity": "company-family",
+      "tags": [
+        "mistral",
+        "europe",
+        "models",
+        "laboratory"
+      ],
+      "canonicalCredit": "Ilustración editorial generada con IA · AI Race Gazette; no representa instalaciones reales.",
+      "legacyCredits": [
+        "Ilustración editorial generada con IA; no representa instalaciones reales."
+      ],
+      "currentUsage": 1,
+      "notes": "Arte editorial reutilizable para Mistral y laboratorios europeos cuando no exista pieza específica."
+    },
+    {
+      "id": "gazette-global-infrastructure-v1",
+      "src": "assets/globe.webp",
+      "kind": "editorial-illustration",
+      "origin": "generated-ai",
+      "reusable": true,
+      "specificity": "category",
+      "tags": [
+        "infrastructure",
+        "global",
+        "datacenters",
+        "mobility",
+        "networks"
+      ],
+      "canonicalCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "legacyCredits": [
+        "Ilustración editorial generada con IA; no es una fotografía del anuncio."
+      ],
+      "currentUsage": 2,
+      "notes": "Fallback para infraestructura y expansión geográfica."
+    }
+  ]
+}
