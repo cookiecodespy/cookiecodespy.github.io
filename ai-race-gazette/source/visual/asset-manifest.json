@@ -40,7 +40,7 @@
         "Ilustración editorial generada con IA.",
         "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía del lanzamiento."
       ],
-      "currentUsage": 36,
+      "currentUsage": 46,
       "notes": "Fallback general. Su alta reutilización es deuda visual prioritaria."
     },
     {
@@ -63,7 +63,7 @@
         "Ilustración editorial generada con IA; no es una fotografía de Google.",
         "Ilustración editorial generada con IA; no es una fotografía del anuncio."
       ],
-      "currentUsage": 12,
+      "currentUsage": 17,
       "notes": "Fallback orientado a Google/arquitectura tecnológica; no asumir que representa instalaciones reales."
     },
     {
@@ -83,7 +83,7 @@
       "legacyCredits": [
         "Ilustración editorial generada con IA; no representa instalaciones reales."
       ],
-      "currentUsage": 1,
+      "currentUsage": 4,
       "notes": "Arte editorial reutilizable para Mistral y laboratorios europeos cuando no exista pieza específica."
     },
     {
