@@ -123,11 +123,15 @@
       "phase": "P05",
       "title": "Investigar Mistral: agentes para Fortran",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "acceptance": "Evaluar materialidad, fecha y fuentes; publicar V2 o descartar con motivo",
       "evidence": [
         "https://mistral.ai/news/"
+      ],
+      "verifiedEvidence": [
+        "https://mistral.ai/news/legacy-code-modernization/",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/mistral-fortran-agent-modernization-2026-09-09"
       ]
     },
     {

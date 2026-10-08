@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T04:23:37.795Z",
+  "updatedAt": "2026-10-08T04:25:58.641Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -1370,6 +1370,175 @@
       "analysis": "Acercar el asistente al escritorio puede reducir pasos, pero el control del contexto y de los permisos sigue siendo esencial.",
       "watch": "Integración con herramientas habituales y disponibilidad por cuenta.",
       "announcedAt": "2026-09-10"
+    },
+    {
+      "id": "mistral-fortran-agent-modernization-2026-09-09",
+      "eventKey": "mistral-fortran-agent-modernization-2026-09-09",
+      "articleVersion": 2,
+      "date": "2026-09-09",
+      "announcedAt": "2026-09-09",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Mistral",
+      "product": "Modernización de Fortran con agentes",
+      "title": "Mistral migra 40.000 líneas de Fortran: cien agentes, paridad numérica y revisión humana",
+      "summary": "Un caso técnico publicado por Mistral muestra cómo el equipo modernizó parte de un simulador científico escrito en Fortran 77. La documentación con agentes, las pruebas de equivalencia y la supervisión humana resultaron esenciales.",
+      "tags": [
+        "Agentes",
+        "Programación",
+        "Ingeniería"
+      ],
+      "image": "assets/mistral.webp",
+      "imageAlt": "Grabado conceptual de un laboratorio mecánico de cálculo, no instalaciones reales.",
+      "imageCredit": "Ilustración editorial generada con IA; no representa instalaciones reales.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración grabada en tinta sepia: una máquina de cálculo científica antigua es inspeccionada por pequeños agentes mecánicos y un ingeniero con instrumentos de medición, sin letras, marcas ni equipamiento ficticio presentado como real.",
+      "source": {
+        "name": "Mistral · Modernizing complex legacy code with AI agents",
+        "url": "https://mistral.ai/news/legacy-code-modernization/",
+        "publishedAt": "2026-09-09"
+      },
+      "keyPoints": [
+        "40.000 líneas del primer sprint, frente a unas 300.000 totales.",
+        "Más de cien agentes documentaron el sistema.",
+        "La paridad numérica y la revisión humana guiaron la modernización."
+      ],
+      "quickTakeaways": [
+        "No se migró toda la base de 300.000 líneas.",
+        "Traducir sintaxis no equivale a modernizar arquitectura.",
+        "Las pruebas de paridad deben preceder a la automatización.",
+        "Los equipos aprendieron de dos estrategias iniciales insuficientes."
+      ],
+      "body": [
+        "El caso de Mistral muestra una ingeniería de agentes centrada en comprender y verificar software legado, no en reescribir indiscriminadamente todo un repositorio."
+      ],
+      "sections": [
+        {
+          "heading": "La investigación de Mistral",
+          "kind": "technical",
+          "paragraphs": [
+            "Mistral publicó el 9 de septiembre de 2026 un caso de modernización de software científico escrito en Fortran 77. Un operador energético europeo necesitaba migrar un simulador de yacimientos a C++ más mantenible. El primer sprint descrito abarcó alrededor de 40.000 de las 300.000 líneas del programa original. No se informó que todas las líneas se hubieran convertido ni que existiera una herramienta universal que pueda completar proyectos equivalentes sin ayuda. La distinción entre una primera etapa y todo el sistema es esencial para valorar el caso."
+          ]
+        },
+        {
+          "heading": "El problema de traducir sin entender",
+          "kind": "technical",
+          "paragraphs": [
+            "Fortran 77 usa estados compartidos a través de COMMON, tipado implícito y estructuras de control que pueden ser difíciles de revisar. Traducir literalmente cada subrutina a C++ es posible, pero puede conservar estados globales y errores de organización. Modernizar exige decidir cómo separar estructuras de datos, responsabilidades y cálculos para hacer el resultado mantenible. Los cambios necesarios impiden demostrar equivalencia simplemente comparando líneas. Por eso un programa que compila y muestra resultados plausibles no es suficiente para certificar la migración de un simulador físico."
+          ]
+        },
+        {
+          "heading": "Paridad numérica antes de los agentes",
+          "kind": "technical",
+          "paragraphs": [
+            "El equipo creó un arnés de paridad que permitía exportar estados del programa antiguo y comparar tanto resultados finales como estados intermedios considerados críticos por los ingenieros. Ese sistema ofrecía evidencias más fuertes que la inspección visual del código. Mistral explica que se documentaron instrucciones para guiar a los agentes en el uso de las pruebas. La paridad numérica no garantiza la seguridad ni la mantenibilidad general, pero constituye una base esencial cuando los cálculos representan un fenómeno físico cuya desviación puede ser difícil de detectar."
+          ]
+        },
+        {
+          "heading": "La documentación precedió a la traducción",
+          "kind": "report",
+          "paragraphs": [
+            "Parte del conocimiento estaba repartido entre viejos archivos PDF y comentarios en el código. Mistral generó un árbol de llamadas y lanzó más de un centenar de agentes con Vibe CLI para documentar dependencias. Los agentes recorrieron el árbol desde subrutinas terminales hacia componentes mayores y se apoyaron en documentos y OCR. También intervino un revisor que analizaba solicitudes de cambio y programaba tareas de corrección. Este trabajo preparatorio hizo más accesible un sistema cuyo funcionamiento estaba repartido entre miles de subrutinas y materiales históricos."
+          ]
+        },
+        {
+          "heading": "El primer intento de autonomía no bastó",
+          "kind": "report",
+          "paragraphs": [
+            "La primera estrategia dio a cada agente la tarea de traducir una subrutina por su cuenta. El resultado podía ejecutarse, pero mantenía problemas de diseño del Fortran original: estructuras globales y saltos de control sobrevivían dentro del C++. El sistema parecía traducido de sintaxis más que modernizado. Esa diferencia es importante: la productividad aparente puede ser alta aunque el resultado aumente la carga futura de mantenimiento. Un repositorio lleno de cambios aceptados no demuestra por sí solo una arquitectura sana ni una migración terminada."
+          ]
+        },
+        {
+          "heading": "Una segunda estrategia y sus límites",
+          "kind": "report",
+          "paragraphs": [
+            "Después, los agentes asumieron papeles diferenciados de planificador, programador, probador y revisor de calidad. La organización mejoró la calidad de las entregas, según el informe, pero los flujos todavía se atascaron en problemas que requerían intervención experta. Mistral no presenta esos obstáculos como anomalías irrelevantes: los utiliza para justificar una solución intermedia. La enseñanza es que un agente puede automatizar pasos de investigación y programación, mientras una persona conserva autoridad para desbloquear errores complejos y aceptar cambios estructurales."
+          ]
+        },
+        {
+          "heading": "Flujos estructurados con revisión",
+          "kind": "report",
+          "paragraphs": [
+            "El procedimiento final empezaba por diseñar la arquitectura objetivo de cada módulo y discutirla con ingenieros. Tras aprobarla, el trabajo se dividía en una cola de tareas y cada una pasaba por implementación, pruebas y revisión de pull requests. La escala se controlaba seleccionando subárboles relativamente independientes. Los principios divulgados son claros: crear pruebas de equivalencia antes de programar, organizar documentación y establecer puertas de revisión. No son simples recomendaciones de prompting; implican cambios reales en la organización del proyecto."
+          ]
+        },
+        {
+          "heading": "Consejos para una migración empresarial",
+          "kind": "practical",
+          "paragraphs": [
+            "Quien quiera replicar el enfoque debe empezar con un módulo ejecutable, identificar entradas y salidas de referencia y pedir a expertos que señalen puntos críticos. Después conviene capturar estados intermedios, mapear dependencias y definir pruebas automáticas que permitan reconocer errores. Solo entonces tiene sentido asignar tareas a agentes. Si no existe una versión funcional del programa, si desaparecieron servicios externos o si nadie entiende las reglas físicas, la prioridad debe ser reconstruir la evidencia y no generar código nuevo a gran velocidad."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: agentes bajo control de calidad",
+          "kind": "analysis",
+          "paragraphs": [
+            "Este caso recuerda que la carrera de agentes de programación no se limita a producir más código por minuto. Se disputa quién es capaz de planificar, probar, mantener contexto y entregar modificaciones revisables de sistemas difíciles. La participación humana no desacredita el uso de agentes; puede ser precisamente lo que permite utilizarlos con seguridad. El resultado pertenece a un caso comunicado por Mistral, por lo que no debe convertirse en una promesa de ahorro universal ni extrapolarse a todas las organizaciones."
+          ]
+        },
+        {
+          "heading": "Qué no demuestra el caso",
+          "kind": "report",
+          "paragraphs": [
+            "La publicación describe la primera etapa de un sistema mayor y no documenta una reproducción independiente, un presupuesto total verificable ni una comparación exhaustiva con equipos tradicionales. La paridad numérica en módulos ensayados tampoco certifica automáticamente el funcionamiento de todas las rutas no cubiertas por las pruebas. Las próximas investigaciones deberían comprobar mantenibilidad a largo plazo, rendimiento, costos, tasa de errores y resultados en proyectos que carecen de una base original ejecutable. Esa transparencia sobre los límites vuelve más útil el caso técnico."
+          ]
+        }
+      ],
+      "executiveSummary": "Mistral describió un proyecto con agentes de IA que documentaron y ayudaron a modernizar la primera parte de un simulador científico de Fortran a C++. El valor estuvo en comprobar paridad, dividir trabajo y revisar el resultado.",
+      "finalSummary": "El 9 de septiembre es un hito sobre la utilidad de agentes en ingeniería heredada: no basta con escribir código, hay que demostrar que los cálculos siguen funcionando y que la nueva estructura es mantenible.",
+      "analysis": "Análisis Gazette: las pruebas y el control humano son mecanismos que convierten capacidad del modelo en resultados evaluables.",
+      "watch": "Publicación de nuevas etapas, costos y métricas de paridad independientes.",
+      "technicalDetails": [
+        {
+          "label": "Origen",
+          "value": "Fortran 77"
+        },
+        {
+          "label": "Destino",
+          "value": "C++"
+        },
+        {
+          "label": "Escala inicial",
+          "value": "40.000 de unas 300.000 líneas"
+        }
+      ],
+      "availability": {
+        "status": "Caso técnico documentado, sin nueva API",
+        "platforms": [
+          "Herramientas y flujos de agentes descritos por Mistral"
+        ],
+        "regions": [],
+        "requirements": [
+          "Programa original ejecutable",
+          "Ingenieros y pruebas"
+        ],
+        "notes": []
+      },
+      "limitations": [
+        "Proyecto no completado en el momento descrito.",
+        "Resultados basados en relato técnico del proveedor.",
+        "La paridad se aplica a los casos cubiertos por el arnés."
+      ],
+      "practicalAdvice": [
+        "Construir arnés de equivalencia numérica antes de migrar.",
+        "Documentar dependencias y reglas del dominio.",
+        "Revisar cada módulo y conservar una persona responsable."
+      ],
+      "usefulFacts": [
+        "Se reportaron más de cien agentes para documentación.",
+        "El original compartía estado por bloques COMMON.",
+        "La primera migración autónoma conservó problemas de estructura."
+      ],
+      "curiosities": [
+        "Un agente revisor inspeccionaba PR y abría trabajos posteriores.",
+        "La primera conversión generó código funcional pero no una arquitectura modernizada."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Mistral publica su caso de modernización con agentes."
+        }
+      ]
     },
     {
       "id": "openai-chatgpt-images-2-5-2026-09-08",
@@ -3122,8 +3291,8 @@
     },
     {
       "date": "2026-09-09",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1
     },
     {
       "date": "2026-09-10",
