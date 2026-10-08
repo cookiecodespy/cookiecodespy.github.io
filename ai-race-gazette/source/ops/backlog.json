@@ -89,12 +89,16 @@
       "phase": "P05",
       "title": "Mistral: ronda Serie D por €3.000 millones",
       "priority": "P0",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "acceptance": "Publicar V2 con términos atribuidos, fuentes oficiales y contexto competitivo",
       "eventKey": "mistral-series-d-3b-eur-2026-09-08",
       "evidence": [
         "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+      ],
+      "verifiedEvidence": [
+        "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+        "https://cookiecodespy.github.io/ai-race-gazette/#articulo/mistral-series-d-3b-eur-2026-09-08"
       ]
     },
     {
