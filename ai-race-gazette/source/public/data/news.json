@@ -1,8 +1,755 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T21:38:58.905Z",
+  "updatedAt": "2026-10-08T01:24:35.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "openai-gpt6-intelligent-ui-global",
+      "eventKey": "openai-gpt6-intelligent-ui-global-rollout-2026-10-07",
+      "articleVersion": 2,
+      "date": "2026-10-07",
+      "announcedAt": "2026-10-07",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "OpenAI",
+      "product": "GPT-6 / Intelligent UI",
+      "title": "GPT-6 llega a todo ChatGPT con Intelligent UI: respuestas que también son interfaces",
+      "summary": "OpenAI inicia el despliegue global de GPT-6 en ChatGPT con respuestas visuales e interactivas, pensamiento progresivo y acceso escalonado entre planes. La novedad no modifica los modelos de Codex ni Work.",
+      "tags": [
+        "Modelos",
+        "Productos",
+        "Interfaz",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico y un globo, ilustración conceptual de GPT-6",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "OpenAI GPT-6 e Intelligent UI: grabado de imprenta antigua donde una conversación escrita se despliega en mapas, gráficas, botones y herramientas interactivas; tinta sepia y papel envejecido, composición horizontal; sin logos falsos ni interfaces presentadas como capturas auténticas.",
+      "source": {
+        "name": "OpenAI · GPT-6 and Intelligent UI for everyone",
+        "url": "https://openai.com/index/gpt-6-for-everyone/",
+        "publishedAt": "2026-10-07"
+      },
+      "relatedSources": [
+        {
+          "name": "OpenAI · GPT-6 Sol y Luna, actualización de seguridad de octubre",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october/broken-search-tool",
+          "publishedAt": "2026-10-07"
+        }
+      ],
+      "keyPoints": [
+        "Intelligent UI incorpora elementos interactivos nativos a las respuestas de ChatGPT.",
+        "El despliegue global comienza el 7 de octubre en planes de pago y se amplía el 8 a Free y Go.",
+        "GPT-6 Sol y Luna alimentan la experiencia de Chat; Work y Codex no cambian con este anuncio."
+      ],
+      "quickTakeaways": [
+        "La noticia no es la primera aparición de GPT-6: es su expansión al uso cotidiano con una interfaz nueva.",
+        "Los componentes visuales pueden incluir mapas, formularios, gráficos y pequeñas herramientas generadas para la pregunta.",
+        "El despliegue es gradual; la disponibilidad efectiva puede variar por plan y configuración empresarial.",
+        "Los datos de velocidad y seguridad publicados inicialmente proceden de evaluaciones de OpenAI."
+      ],
+      "body": [
+        "OpenAI anunció el 7 de octubre de 2026 la llegada de GPT-6 con Intelligent UI a la experiencia habitual de ChatGPT. El cambio combina una ampliación de acceso con una forma distinta de presentar respuestas: además de texto, el asistente puede construir elementos visuales e interactivos ajustados a la tarea. Es una fase nueva de distribución, no la primera presentación de la familia GPT-6, cuyos modelos habían sido introducidos en septiembre."
+      ],
+      "sections": [
+        {
+          "heading": "Qué anunció OpenAI y qué cambia",
+          "kind": "report",
+          "paragraphs": [
+            "El lanzamiento lleva GPT-6 a la pestaña Chat de ChatGPT y estrena Intelligent UI, un sistema que permite elegir entre texto, gráficos, controles pulsables, formularios y pequeñas experiencias interactivas. OpenAI ejemplifica el enfoque con planes que se pueden explorar, explicaciones que cambian al manipular parámetros y herramientas puntuales como calculadoras o juegos. La intención es que la respuesta adopte el formato más útil en cada situación, en vez de obligar al lector a interpretar siempre un bloque de prosa. Esto no implica que toda respuesta vaya a tener botones: la compañía dice que el modelo también debe reconocer cuándo basta con texto claro."
+          ]
+        },
+        {
+          "heading": "Cómo funciona Intelligent UI",
+          "kind": "technical",
+          "paragraphs": [
+            "Según la explicación técnica de OpenAI, la experiencia utiliza una biblioteca de componentes nativos que pueden transmitirse progresivamente, junto con un compilador que procesa la interfaz mientras el modelo la produce. Ese diseño busca evitar que el usuario tenga que esperar a que termine toda la respuesta para empezar a ver y utilizar los elementos. La empresa también entrenó al modelo para decidir cuándo conviene una comparación lado a lado, un diagrama interactivo o una herramienta temporal. Es una descripción de la arquitectura de producto proporcionada por OpenAI; no equivale a que se hayan publicado todos los detalles internos del compilador o del entrenamiento."
+          ]
+        },
+        {
+          "heading": "Una respuesta que puede empezar antes de terminar de pensar",
+          "kind": "technical",
+          "paragraphs": [
+            "GPT-6 incorpora una estrategia de respuesta progresiva: puede comenzar a contestar y continuar razonando para añadir información pertinente después. La empresa sostiene que esto reduce el tiempo de espera sin sacrificar coherencia en el resultado completo. En una evaluación interna, OpenAI afirma que GPT-6 Instant comienza las respuestas con búsqueda web un 44% antes, en promedio, que GPT-5.6 Instant. También señala que GPT-6 Extra High puede iniciar la respuesta en un tiempo comparable al de GPT-5.6 Medium mientras obtiene una puntuación global superior a GPT-5.6 Extra High en su prueba interna de tareas agénticas cotidianas. Son comparaciones del proveedor, no una auditoría independiente."
+          ]
+        },
+        {
+          "heading": "Disponibilidad: qué planes reciben el cambio y cuándo",
+          "kind": "report",
+          "paragraphs": [
+            "El despliegue global empezó el 7 de octubre para Plus, Pro, Business y Enterprise en la pestaña Chat; la ampliación a Free y Go comienza el 8 de octubre. En entornos Enterprise la disponibilidad depende también de la configuración de los administradores. OpenAI indica que GPT-6 Sol impulsa la experiencia para Plus, Pro, Business y Enterprise, mientras GPT-6 Luna lo hace para Free y Go. Ambos están ajustados para conversación cotidiana. Es importante distinguir el anuncio de disponibilidad global del acceso instantáneo de todas las cuentas: la palabra despliegue implica que usuarios distintos pueden recibir la actualización en momentos diferentes."
+          ]
+        },
+        {
+          "heading": "Lo que no cambia: API, Codex y Work",
+          "kind": "context",
+          "paragraphs": [
+            "El anuncio delimita expresamente su alcance a la experiencia Chat. Los modelos que impulsan Codex y ChatGPT Work no cambian como consecuencia de esta publicación. Tampoco se anuncia aquí una tarifa nueva de API asociada a Intelligent UI, ni se afirma que las interfaces generadas sean un SDK general para que cualquier desarrollador las incorpore sin restricciones a sus aplicaciones. Quien compare planes o quiera integrar GPT-6 en un producto debe separar el lanzamiento de interfaz al consumidor de las ofertas de modelos y herramientas para desarrolladores. Mezclar ambas categorías podría conducir a decisiones de compra o arquitectura basadas en prestaciones no confirmadas."
+          ]
+        },
+        {
+          "heading": "Seguridad y límites declarados",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI publicó una actualización de seguridad para las versiones de octubre de GPT-6 Sol y Luna. La empresa dice haber reforzado la resistencia a intentos de eludir salvaguardas, incluidos ataques adaptativos de varios turnos, y haber reducido rechazos innecesarios de solicitudes legítimas. Su documentación también clasifica ciertas capacidades biológicas y de ciberseguridad como altas pero por debajo del umbral crítico de su marco de preparación. Estos son resultados y clasificaciones según el sistema de evaluación de OpenAI. La publicación reconoce límites de las pruebas y distingue las versiones de octubre de las que continúan en Codex y Work; no es una garantía de ausencia de errores o riesgos."
+          ]
+        },
+        {
+          "heading": "Por qué importa para usuarios y desarrolladores",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la evolución competitiva no se limita a aumentar la inteligencia del modelo. También importa cuánto esfuerzo necesita el usuario para convertir una respuesta en una decisión o acción. Una calculadora interactiva dentro del chat puede ahorrar pasos frente a una explicación estática; un gráfico manipulable puede facilitar entender un concepto. Para empresas, el valor dependerá de si estos formatos mejoran tareas concretas sin introducir ambigüedad, errores de presentación o accesibilidad deficiente. Para desarrolladores, el anuncio es una señal de diseño de producto, pero todavía no sustituye documentación de API ni pruebas de compatibilidad."
+          ]
+        },
+        {
+          "heading": "Qué probar en la práctica",
+          "kind": "practical",
+          "paragraphs": [
+            "La mejor prueba no es pedir una interfaz por curiosidad, sino tomar una tarea repetida: comparar opciones, calcular escenarios o explicar una relación entre variables. Conviene comprobar si los controles cambian correctamente los resultados, si los supuestos son visibles y si la misma información puede entenderse sin interacción. En un equipo, comparar tiempo hasta una respuesta útil, claridad y tasa de errores frente al flujo anterior ofrece una medida más sólida que juzgar solo la estética. Para usuarios Enterprise, también corresponde confirmar con administración qué funciones están habilitadas y qué datos pueden compartirse en la experiencia."
+          ]
+        },
+        {
+          "heading": "Preguntas abiertas y próximos hitos",
+          "kind": "competition",
+          "paragraphs": [
+            "Aún faltan mediciones independientes de velocidad, precisión y utilidad de Intelligent UI a gran escala. También queda por observar cómo funcionan sus componentes con tecnologías de asistencia, cómo se comportan en móviles pequeños y qué ocurre cuando una respuesta extensa cambia durante la generación. La expansión a Free y Go el 8 de octubre será un primer indicador de distribución, pero no prueba por sí sola adopción sostenida. En la carrera de la IA, el punto a vigilar es si las interfaces adaptativas se convierten en una ventaja medible para resolver tareas o si quedan como una capa vistosa que no mejora el resultado final."
+          ]
+        }
+      ],
+      "executiveSummary": "GPT-6 llega al Chat cotidiano con Intelligent UI, una apuesta por convertir respuestas en herramientas visuales e interactivas cuando eso ayuda a la tarea. El despliegue es gradual y está segmentado por plan. La mejora de velocidad y seguridad descrita por OpenAI debe leerse como evidencia interna, no como comparación independiente.",
+      "finalSummary": "El 7 de octubre marca una ampliación de acceso a GPT-6 y un cambio de interfaz, no un reemplazo universal de los modelos de todos los productos de OpenAI. La prueba competitiva será si esta forma de responder mejora realmente la comprensión y la productividad.",
+      "analysis": "Análisis Gazette: Intelligent UI compite en experiencia de uso tanto como en capacidad de modelo. El riesgo es confundir una demostración visual convincente con una respuesta fiable; la oportunidad es reducir el trabajo que separa una explicación de una acción útil.",
+      "watch": "Disponibilidad efectiva por plan, accesibilidad, resultados independientes de precisión y latencia, estabilidad de componentes interactivos y futuras interfaces para desarrolladores.",
+      "technicalDetails": [
+        {
+          "label": "Fecha del anuncio",
+          "value": "2026-10-07"
+        },
+        {
+          "label": "Motor de Chat en planes de pago",
+          "value": "GPT-6 Sol"
+        },
+        {
+          "label": "Motor de Chat en Free/Go",
+          "value": "GPT-6 Luna"
+        },
+        {
+          "label": "Comparación interna de inicio de respuesta web",
+          "value": "44% antes que GPT-5.6 Instant",
+          "note": "Según evaluación de OpenAI; no independiente."
+        }
+      ],
+      "availability": {
+        "status": "Despliegue gradual global",
+        "platforms": [
+          "ChatGPT · pestaña Chat, web y móvil"
+        ],
+        "regions": [
+          "Global; disponibilidad escalonada"
+        ],
+        "requirements": [
+          "Plus, Pro, Business, Enterprise desde 7 de octubre",
+          "Free y Go desde 8 de octubre",
+          "Enterprise sujeto a ajustes del administrador"
+        ],
+        "notes": [
+          "Codex y Work mantienen sus versiones anteriores en este anuncio."
+        ]
+      },
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Presentación de GPT-6 Sol y Luna."
+        },
+        {
+          "date": "2026-10-07",
+          "label": "GPT-6 con Intelligent UI comienza a desplegarse en ChatGPT."
+        },
+        {
+          "date": "2026-10-08",
+          "label": "Inicio previsto de ampliación a Free y Go."
+        }
+      ],
+      "limitations": [
+        "No se publica un precio nuevo de API para Intelligent UI.",
+        "Las evaluaciones de rendimiento y seguridad citadas proceden de OpenAI.",
+        "El despliegue global puede no ser simultáneo para todas las cuentas.",
+        "No se anuncia cambio de modelo en Codex ni Work."
+      ],
+      "practicalAdvice": [
+        "Comprobar acceso en ChatGPT según plan antes de depender de la función.",
+        "Validar los resultados numéricos y supuestos de calculadoras o gráficos interactivos.",
+        "Separar funciones de Chat de la disponibilidad en API, Work y Codex.",
+        "Evaluar utilidad y accesibilidad, no solo la apariencia de la respuesta."
+      ],
+      "usefulFacts": [
+        "El anuncio está fechado el 7 de octubre de 2026.",
+        "OpenAI afirma que ChatGPT supera los 1.200 millones de usuarios semanales.",
+        "La biblioteca de componentes y el compilador permiten presentar interfaces progresivamente."
+      ],
+      "curiosities": [
+        "La documentación ilustra la propuesta con una bicicleta de siete velocidades y una calculadora para dividir cuentas.",
+        "La interfaz puede elegir no crear componentes cuando el texto simple es más útil."
+      ],
+      "visualAssetId": "gazette-generic-ai-hero-v1"
+    },
+    {
+      "id": "google-synthid-detector-global",
+      "eventKey": "google-synthid-detector-global-2026-10-07",
+      "articleVersion": 2,
+      "date": "2026-10-07",
+      "announcedAt": "2026-10-07",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Google",
+      "product": "SynthID Detector",
+      "title": "Google abre SynthID Detector globalmente para identificar medios generados por IA",
+      "summary": "La herramienta de detección de marcas de agua de Google se abre globalmente en inglés para imágenes, vídeo y audio compatibles, incluidos contenidos de socios anunciados. No equivale a detectar cualquier material sintético.",
+      "tags": [
+        "Seguridad",
+        "Productos",
+        "Verificación"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de una lupa examinando documentos y medios",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "SynthID Detector de Google: grabado antiguo de una lupa revelando discretas marcas de agua sobre imagen, película y ondas de sonido; periódico sepia, orientación horizontal; sin fingir captura de detector ni evidencia de una pieza real.",
+      "source": {
+        "name": "Google DeepMind · SynthID Detector global",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "publishedAt": "2026-10-07"
+      },
+      "relatedSources": [
+        {
+          "name": "Google · comunicado oficial en español",
+          "url": "https://blog.google/intl/es-419/noticias-de-la-empresa/tecnologia/synth-id-ai-content/",
+          "publishedAt": "2026-10-07"
+        }
+      ],
+      "keyPoints": [
+        "SynthID Detector se abre globalmente en inglés desde el 7 de octubre.",
+        "La herramienta analiza marcas de agua en imágenes, vídeo y audio de sistemas compatibles.",
+        "Google identifica como socios a OpenAI, NVIDIA y Kakao; Apple figura como incorporación futura."
+      ],
+      "quickTakeaways": [
+        "La apertura global amplía una herramienta antes orientada a profesionales de medios.",
+        "Un resultado sin marca compatible no demuestra que el contenido sea humano o auténtico.",
+        "Las cifras de medios marcados y consultas son declaraciones de Google.",
+        "La compatibilidad depende de los sistemas que incorporan la marca de agua SynthID."
+      ],
+      "body": [
+        "Google anunció el 7 de octubre de 2026 la apertura global en inglés de SynthID Detector, una herramienta para comprobar señales de marca de agua imperceptible en contenido generado por IA. El sistema había tenido una versión inicial para profesionales de medios y ahora amplía su público. El anuncio se refiere a contenido de sistemas compatibles, no a una prueba universal de autenticidad."
+      ],
+      "sections": [
+        {
+          "heading": "Qué cambia con la apertura global",
+          "kind": "report",
+          "paragraphs": [
+            "Desde 2023, Google utiliza SynthID para insertar marcas de agua imperceptibles en ciertos contenidos generados con IA. La novedad del 7 de octubre es la disponibilidad global en inglés del detector para el público general. El anuncio amplía el acceso respecto de una etapa anterior orientada a profesionales de medios. Una persona puede comprobar archivos de imagen, vídeo o audio y recibir información sobre marcas compatibles. La apertura no significa que todos los generadores del mercado estén cubiertos ni que una ausencia de detección pruebe el origen humano de una obra."
+          ]
+        },
+        {
+          "heading": "Cómo debe interpretarse una marca de agua",
+          "kind": "technical",
+          "paragraphs": [
+            "Una marca de agua es una señal incorporada al contenido durante su generación para facilitar una comprobación posterior. El detector busca esa señal cuando se ha utilizado un sistema compatible. No es lo mismo que intentar adivinar si una imagen parece artificial por su textura o si un audio suena sintético. Esta distinción es esencial para interpretar los resultados: encontrar una marca compatible puede aportar información sobre el origen o la herramienta; no encontrarla no permite concluir que el archivo nunca fue creado o editado con IA. Además, la robustez ante modificaciones, recortes o transformaciones depende de la tecnología y de las condiciones concretas."
+          ]
+        },
+        {
+          "heading": "Qué proveedores cubre y cuáles están pendientes",
+          "kind": "report",
+          "paragraphs": [
+            "Google afirma que el detector puede analizar archivos producidos por sus sistemas y por socios entre los que nombra a OpenAI, NVIDIA y Kakao. La empresa menciona a Apple como incorporación próxima, no como integración ya disponible. Esa lista describe el alcance anunciado de la colaboración y no implica que absolutamente todos los productos o versiones de cada proveedor generen marcas compatibles. Para una redacción o equipo de moderación, conviene documentar qué generador y qué modalidad concreta están cubiertos antes de diseñar una política que dependa del detector."
+          ]
+        },
+        {
+          "heading": "Cifras publicadas por Google",
+          "kind": "report",
+          "paragraphs": [
+            "Google afirma haber marcado más de 180.000 millones de imágenes y vídeos y el equivalente a 240.000 años de audio. También señala que sus funciones de verificación integradas en Search, Gemini y Chrome gestionan habitualmente más de un millón de solicitudes diarias. Son magnitudes declaradas por la empresa que ilustran la escala de adopción que busca, pero no constituyen una medición independiente de precisión, falsos positivos o cobertura sobre todo el contenido que circula en internet. La cantidad de medios marcados tampoco indica cuántas piezas problemáticas han sido detectadas."
+          ]
+        },
+        {
+          "heading": "Por qué importa para periodistas y plataformas",
+          "kind": "context",
+          "paragraphs": [
+            "La proliferación de imágenes, vídeos y voces sintéticas complica evaluar material que llega a una redacción, una empresa o una plataforma. Un detector de procedencia puede añadir una señal verificable al proceso de revisión. Sin embargo, el trabajo periodístico sigue necesitando identificar fuente original, fecha, contexto, cadena de custodia y posibles ediciones. Un vídeo real puede estar presentado con un contexto falso, mientras un material generado con IA puede estar legítimamente rotulado como ilustración. Por eso una herramienta de marcas de agua es una pieza del procedimiento, no un veredicto total sobre la veracidad de una afirmación."
+          ]
+        },
+        {
+          "heading": "Impacto competitivo y de interoperabilidad",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la apertura es significativa porque la procedencia de medios se está convirtiendo en infraestructura compartida entre competidores. Google presenta socios que también desarrollan modelos y productos de IA, lo que sugiere que la utilidad del detector crece con la adopción del estándar de marcado. La pregunta estratégica es si los usuarios podrán comprobar contenido de diferentes ecosistemas sin depender de una única empresa. Al mismo tiempo, una adopción incompleta puede crear una falsa sensación de cobertura. La interoperabilidad anunciada debe medirse por productos y formatos efectivamente soportados."
+          ]
+        },
+        {
+          "heading": "Cómo usarlo con criterio",
+          "kind": "practical",
+          "paragraphs": [
+            "Para revisar un archivo, el primer paso es conservar el original y registrar de dónde llegó. Después se puede utilizar el detector como una señal adicional, anotando qué resultado mostró y en qué fecha. Si aparece una marca, conviene contrastar el contexto y el uso declarado del contenido. Si no aparece, no debe publicarse automáticamente como auténtico. En un flujo empresarial, una política razonable combina metadatos, verificación de fuentes, revisión humana y herramientas de procedencia. También es importante informar al público cuando una imagen de acompañamiento es ilustración sintética, incluso si fue generada con fines legítimos."
+          ]
+        },
+        {
+          "heading": "Límites y preguntas abiertas",
+          "kind": "competition",
+          "paragraphs": [
+            "El anuncio no ofrece una garantía universal frente a todos los generadores, modalidades o transformaciones posibles. Tampoco sustituye evaluaciones independientes de tasa de aciertos, falsos positivos y robustez ante ediciones intensas. Falta comprobar cómo evoluciona la disponibilidad de idiomas y qué productos concretos de los socios incorporan marcas compatibles. La incorporación futura de Apple será un hito a vigilar, junto con posibles ampliaciones del detector a otros estándares de procedencia. El valor real para el usuario dependerá de una interpretación clara de los resultados y de que las plataformas no los presenten como prueba absoluta."
+          ]
+        }
+      ],
+      "executiveSummary": "Google extiende SynthID Detector al público global en inglés. Es una herramienta para comprobar marcas de agua de contenido generado por sistemas compatibles, útil como señal de procedencia, pero no como detector universal ni certificado de autenticidad.",
+      "finalSummary": "La apertura del 7 de octubre refuerza la infraestructura de identificación de medios sintéticos. La regla esencial para lectores y profesionales es que la ausencia de marca no demuestra que un archivo sea real.",
+      "analysis": "Análisis Gazette: la interoperabilidad entre proveedores puede hacer más útil la verificación, siempre que se expliquen con precisión cobertura, límites y significado de cada resultado.",
+      "watch": "Compatibilidad por producto y modalidad, incorporación anunciada de Apple, evaluaciones independientes y ampliación de idiomas.",
+      "availability": {
+        "status": "Disponible globalmente en inglés",
+        "platforms": [
+          "SynthID Detector"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "requirements": [
+          "Archivo de imagen, vídeo o audio compatible"
+        ],
+        "notes": [
+          "Apple figura como integración futura anunciada."
+        ]
+      },
+      "limitations": [
+        "No detecta universalmente cualquier contenido generado por IA.",
+        "Un resultado negativo no prueba autenticidad.",
+        "Las cifras de escala son declaraciones de Google.",
+        "Cobertura y resistencia a modificaciones dependen del sistema de marcado."
+      ],
+      "practicalAdvice": [
+        "Conservar el archivo original y la fuente de procedencia.",
+        "Interpretar la detección como una señal, no como veredicto completo.",
+        "Verificar fecha, contexto y posibles manipulaciones por separado.",
+        "Rotular las ilustraciones sintéticas usadas editorialmente."
+      ],
+      "usefulFacts": [
+        "La primera versión de SynthID Detector estaba orientada a profesionales de medios.",
+        "Google afirma más de 180.000 millones de imágenes y vídeos marcados.",
+        "OpenAI, NVIDIA y Kakao figuran como socios anunciados."
+      ],
+      "curiosities": [
+        "Google expresa el volumen de audio marcado como 240.000 años de duración acumulada.",
+        "La apertura global se anuncia inicialmente solo en inglés."
+      ],
+      "visualAssetId": "gazette-generic-ai-hero-v1"
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "eventKey": "claude-haiku-5-5",
+      "articleVersion": 2,
+      "date": "2026-10-07",
+      "announcedAt": "2026-10-07",
+      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-07",
+      "company": "Anthropic",
+      "product": "Claude Haiku 5.5",
+      "title": "Claude Haiku 5.5 lleva la familia Claude 5.5 al trabajo rápido y de alto volumen",
+      "summary": "Anthropic completa su familia 5.5 con un modelo pequeño orientado a latencia, subagentes y cargas sensibles al costo, con disponibilidad general y precios escalonados según la longitud del prompt.",
+      "tags": [
+        "Modelos",
+        "Agentes",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo, usado como ilustración temporal para Claude Haiku 5.5",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía del lanzamiento.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración editorial estilo grabado antiguo para Claude Haiku 5.5: un pequeño mensajero mecánico extremadamente veloz coordinando varias tareas entre estaciones de trabajo y servidores, sensación de escala y eficiencia, tinta/sepia sobre papel envejecido, sin interfaces falsas ni escena presentada como fotografía real.",
+      "source": {
+        "name": "Anthropic · Claude Haiku 5.5",
+        "url": "https://www.anthropic.com/claude-haiku-5-5",
+        "publishedAt": "2026-10-07"
+      },
+      "relatedSources": [
+        {
+          "name": "Claude Platform · ficha de Haiku 5.5",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Claude Platform · guía de migración",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/migration-guide"
+        },
+        {
+          "name": "AWS · Haiku 5.5 en Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Google Cloud · Claude Haiku 5.5",
+          "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Microsoft Foundry · Claude Haiku 5.5",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-haiku-5-5-is-now-available-in-microsoft-foundry/4562408",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "name": "Reuters · contexto competitivo",
+          "url": "https://www.reuters.com/business/anthropic-launches-third-claude-55-model-expanding-ai-lineup-before-planned-ipo-2026-10-07/",
+          "publishedAt": "2026-10-07"
+        }
+      ],
+      "body": [
+        "Anthropic lanzó Claude Haiku 5.5 el 7 de octubre y lo colocó en disponibilidad general como la tercera pieza de la familia Claude 5.5, después de Opus 5.5 y Sonnet 5.5. La compañía lo posiciona para trabajo de alto volumen y sensible a latencia o costo: clasificación, resúmenes, extracción, consultas breves, atención en vivo, navegación y subtareas dentro de sistemas de agentes. El lanzamiento no es una simple reducción de tamaño de un modelo mayor. Su papel estratégico es convertirse en la capa rápida que puede ejecutar muchas operaciones acotadas mientras modelos más caros se reservan para planificación, juicio o razonamiento complejo.",
+        "La distribución es amplia desde el primer día. Anthropic documenta el modelo en Claude Platform y también confirma acceso a través de Amazon Bedrock, Google Cloud y Microsoft Foundry. Google lo marca como generalmente disponible y documenta entradas de texto, imágenes y PDF, salida de texto, llamadas a funciones, uso de computadora, búsqueda web, caché y ejecución por lotes. AWS lo ofrece mediante perfiles de inferencia geográficos y globales y lo integra con controles habituales de Bedrock, mientras Microsoft lo presenta como una opción de baja latencia para agentes empresariales. Esa disponibilidad multinube importa porque permite probar el mismo modelo sin obligar a una organización a abandonar su proveedor de infraestructura."
+      ],
+      "keyPoints": [
+        "Disponibilidad general desde el 7 de octubre en Claude Platform, AWS, Google Cloud y Microsoft Foundry.",
+        "1M de contexto y hasta 128k tokens de salida según la documentación de plataforma.",
+        "Precio desde US$0,10/M de entrada y US$0,50/M de salida para prompts de hasta 100k tokens.",
+        "Primer Haiku con control de esfuerzo y pensamiento adaptativo.",
+        "Su caso estratégico es ejecutar trabajo repetitivo y subagentes a gran escala."
+      ],
+      "quickTakeaways": [
+        "Haiku 5.5 completa la familia Claude 5.5 como el modelo rápido y económico.",
+        "No es una migración completamente transparente desde Haiku 4.5: hay cambios de pensamiento y tokenización que conviene probar.",
+        "El precio cambia al superar los 100.000 tokens de prompt.",
+        "Su mayor impacto puede aparecer en sistemas multiagente que delegan muchas subtareas.",
+        "Los benchmarks y ahorros citados por Anthropic siguen siendo claims del proveedor hasta que existan evaluaciones independientes suficientes."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Model ID",
+          "value": "claude-haiku-5-5"
+        },
+        {
+          "label": "Contexto",
+          "value": "1.000.000 tokens",
+          "note": "Según Claude Platform y Google Cloud."
+        },
+        {
+          "label": "Salida máxima",
+          "value": "128.000 tokens",
+          "note": "Uso normal documentado en Claude Platform/Google Cloud."
+        },
+        {
+          "label": "Pensamiento",
+          "value": "Adaptive thinking + effort",
+          "note": "El esfuerzo permite ajustar el balance costo/capacidad."
+        },
+        {
+          "label": "Entradas",
+          "value": "Texto, imágenes y PDF",
+          "note": "Disponibilidad documentada por Google Cloud para su oferta."
+        }
+      ],
+      "availability": {
+        "status": "Disponibilidad general",
+        "platforms": [
+          "Claude Platform",
+          "Amazon Bedrock",
+          "Claude Platform on AWS",
+          "Google Cloud",
+          "Microsoft Foundry",
+          "Claude.ai/Claude apps"
+        ],
+        "regions": [
+          "Disponibilidad dependiente del proveedor; Google Cloud documenta endpoints globales y multirregión, AWS perfiles geográficos/globales."
+        ],
+        "requirements": [
+          "Revisar cuotas, región y condiciones del proveedor elegido."
+        ],
+        "notes": [
+          "La disponibilidad de funciones concretas puede variar entre plataformas."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Entrada ≤100k prompt",
+          "value": "US$0,10 / millón de tokens"
+        },
+        {
+          "label": "Salida ≤100k prompt",
+          "value": "US$0,50 / millón de tokens"
+        },
+        {
+          "label": "Entrada >100k prompt",
+          "value": "US$0,50 / millón de tokens"
+        },
+        {
+          "label": "Salida >100k prompt",
+          "value": "US$2,50 / millón de tokens"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Claude Opus 5.5 abre la familia 5.5."
+        },
+        {
+          "date": "2026-09-28",
+          "label": "Claude Sonnet 5.5 se suma como nivel intermedio."
+        },
+        {
+          "date": "2026-10-07",
+          "label": "Claude Haiku 5.5 completa la familia con foco en volumen y latencia."
+        }
+      ],
+      "limitations": [
+        "Los claims de ahorro y rendimiento inicial provienen principalmente de Anthropic y sus socios; requieren validación independiente.",
+        "El costo por tarea puede diferir del precio nominal por token debido al nuevo tokenizador, reintentos, herramientas y caché.",
+        "La migración desde Haiku 4.5 exige revisar controles de pensamiento y comportamiento de respuestas.",
+        "Regiones, cuotas y algunas capacidades dependen del proveedor de nube."
+      ],
+      "practicalAdvice": [
+        "Antes de sustituir Haiku 4.5, ejecutar una prueba A/B con tareas reales y medir costo por resultado correcto, no solo precio por token.",
+        "Revisar cualquier integración que use `budget_tokens` y adaptar el manejo de bloques de pensamiento.",
+        "Para agentes, probar Haiku primero en subtareas acotadas y repetibles antes de delegarle decisiones difíciles o irreversibles.",
+        "Separar métricas de latencia, calidad, número de herramientas llamadas y reintentos para decidir qué capa del sistema debe usar Haiku."
+      ],
+      "usefulFacts": [
+        "El modelo usa un ID fijo sin sufijo de fecha: `claude-haiku-5-5`.",
+        "Google Cloud publica una fecha de retiro no anterior al 7 de octubre de 2027 para su oferta del modelo.",
+        "AWS documenta acceso mediante Bedrock y perfiles de inferencia regionales/globales.",
+        "Anthropic actualizó sus SDK de Python y TypeScript con clases beta para browser use y computer use en la misma jornada."
+      ],
+      "curiosities": [
+        "Es el primer modelo de la clase Haiku con un ajuste explícito de esfuerzo.",
+        "La familia 5.5 se completó en poco más de dos semanas: Opus el 22 de septiembre, Sonnet el 28 y Haiku el 7 de octubre.",
+        "La guía de migración advierte que el mismo texto puede consumir aproximadamente más tokens que en Haiku 4.5 por el cambio de tokenizador."
+      ],
+      "executiveSummary": "Claude Haiku 5.5 no intenta reemplazar a Opus o Sonnet en todos los trabajos. Su apuesta es económica: hacer suficientemente buenas y baratas las tareas repetitivas para que los sistemas de agentes puedan delegar mucho más trabajo sin usar el modelo premium en cada paso. Para un equipo, la prueba decisiva será el costo por tarea correcta bajo su propia carga.",
+      "finalSummary": "El lanzamiento completa la estrategia de tres niveles de Anthropic para Claude 5.5. Haiku aporta velocidad y precio; Sonnet equilibra capacidad y costo; Opus conserva el papel de mayor complejidad. Si el desempeño real acompaña los claims, la consecuencia importante no será únicamente una API más barata, sino la posibilidad de diseñar agentes jerárquicos con una capa de ejecución masiva.",
+      "analysis": "La lectura del Gazette es que Haiku 5.5 importa menos por perseguir el título de modelo más inteligente y más por cambiar la economía de los sistemas que hacen cientos o miles de pequeñas llamadas. La competencia de 2026 empieza a parecerse a una carrera por familias completas y orquestación eficiente: quién puede reservar el razonamiento caro para los momentos difíciles y abaratar todo lo demás. Ese patrón puede ser más relevante para productos reales que una victoria aislada en un benchmark.",
+      "watch": "Evaluaciones independientes de latencia y calidad, costo efectivo con el nuevo tokenizador, estabilidad en uso de herramientas y computer use, adopción como subagente, diferencias entre proveedores de nube y cualquier ajuste posterior de salvaguardas o precio.",
+      "sections": [
+        {
+          "heading": "Cómo funciona y qué cambia técnicamente",
+          "kind": "technical",
+          "paragraphs": [
+            "En la Claude API el identificador es `claude-haiku-5-5`. La documentación técnica describe una ventana de contexto de 1 millón de tokens y hasta 128.000 tokens de salida en el uso normal del modelo. También introduce pensamiento adaptativo con un parámetro de esfuerzo: Haiku puede dedicar más o menos razonamiento según la tarea en vez de operar con una única configuración fija. Anthropic advierte que esa migración no es totalmente transparente para aplicaciones escritas para Haiku 4.5: el control antiguo de pensamiento manual mediante `budget_tokens` ya no funciona de la misma forma y puede producir un error 400, por lo que los equipos deben revisar sus integraciones antes de sustituir el modelo en producción.",
+            "El precio es uno de los elementos centrales. Para prompts de hasta 100.000 tokens, Anthropic cobra US$0,10 por millón de tokens de entrada y US$0,50 por millón de salida. Sobre ese umbral, los precios pasan a US$0,50 de entrada y US$2,50 de salida. La tabla oficial también separa los costos de lectura y escritura de caché. Anthropic calcula que, considerando la mezcla de solicitudes de la generación anterior, el costo medio de ejecutar Haiku 5.5 es alrededor de 75% menor que Haiku 4.5. Esa cifra es un cálculo del proveedor, no una medición independiente, y el costo real de una aplicación dependerá de longitud de contexto, caché, cantidad de reintentos, uso de herramientas y número de tokens producidos.",
+            "Hay otro detalle práctico en la migración: el nuevo modelo utiliza un tokenizador más reciente. La guía de Anthropic indica que un mismo texto puede contabilizar aproximadamente más tokens que con Haiku 4.5, con variación según el contenido. Eso significa que comparar solo el precio nominal por millón de tokens puede inducir a error. Un equipo que evalúe el cambio debería medir el costo por tarea terminada, no únicamente la tarifa. También conviene registrar latencia, calidad, tasa de reintentos y número de llamadas a herramientas. Una respuesta barata que necesita varias correcciones puede terminar siendo más cara que una respuesta de un modelo superior resuelta en un solo intento."
+          ]
+        },
+        {
+          "heading": "El papel de Haiku dentro de los sistemas de agentes",
+          "kind": "context",
+          "paragraphs": [
+            "El caso de uso que mejor explica Haiku 5.5 es el de los subagentes. En una arquitectura jerárquica, un modelo como Opus o Sonnet puede decidir el plan general y delegar trabajos repetibles a Haiku: buscar una cifra en un documento, clasificar tickets, resumir un tramo de contexto, revisar archivos concretos o ejecutar una interacción simple. AWS y Microsoft destacan precisamente esta función de ejecución enfocada. Para productos interactivos, el menor tiempo de respuesta también puede ser más importante que obtener la máxima profundidad de razonamiento en cada turno. La tesis de Anthropic es que una gran parte del trabajo real de un agente no necesita utilizar continuamente el modelo más caro disponible."
+          ]
+        },
+        {
+          "heading": "Qué dicen los benchmarks y qué todavía falta comprobar",
+          "kind": "report",
+          "paragraphs": [
+            "Anthropic presenta resultados de evaluaciones y testimonios tempranos de clientes para sostener sus claims de rendimiento. Esos datos son útiles para entender dónde espera que compita el modelo, pero no equivalen a una comparación independiente. El Gazette no interpreta una gráfica del fabricante como prueba definitiva de superioridad. La señal más importante será cómo se comporta Haiku 5.5 bajo cargas reales: agentes con herramientas, documentos largos, navegación, clasificación a escala y soporte en vivo. También será importante observar el efecto de sus salvaguardas de ciberseguridad, que Anthropic describe como más restrictivas que en Haiku 4.5 pero menos restrictivas que en algunos modelos mayores recientes."
+          ]
+        },
+        {
+          "heading": "Impacto en la carrera de la IA",
+          "kind": "competition",
+          "paragraphs": [
+            "Dentro de la carrera de la IA, el lanzamiento refuerza una tendencia: los laboratorios ya no compiten únicamente por el modelo de mayor puntuación, sino por construir una familia completa capaz de asignar cada tarea al nivel correcto de costo, velocidad y capacidad. Si los modelos pequeños se vuelven suficientemente buenos para actuar como trabajadores especializados, la economía de los agentes cambia. Un sistema puede multiplicar el número de subtareas sin multiplicar de la misma forma su factura. Para desarrolladores y empresas, la decisión razonable no es migrar automáticamente por el titular de precio, sino ejecutar un benchmark propio con tareas representativas, medir costo por resultado correcto y decidir en qué puntos Haiku sustituye o complementa a Sonnet, Opus u otros proveedores."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google-embeddinggemma-2",
+      "eventKey": "google-embeddinggemma-2",
+      "articleVersion": 2,
+      "date": "2026-10-06",
+      "announcedAt": "2026-10-06",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Google",
+      "product": "EmbeddingGemma 2",
+      "title": "EmbeddingGemma 2 une texto, código, imagen, vídeo y audio en búsquedas locales",
+      "summary": "Google DeepMind presenta un modelo open-weight multimodal de 740 millones de parámetros, licencia Apache 2.0 y diseño modular para embeddings y recuperación de información en dispositivos.",
+      "tags": [
+        "Open Source",
+        "Modelos",
+        "Multimodal",
+        "Desarrollo"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de un mecanismo de búsqueda y recuperación de información",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "EmbeddingGemma 2 de Google DeepMind: grabado sepia de un pequeño núcleo de cómputo en dispositivo que conecta documentos, líneas de código, fotografías, película y ondas de audio a un mapa de vectores; formato horizontal de periódico antiguo; no inventar UI real ni usar logos falsos.",
+      "source": {
+        "name": "Google DeepMind · EmbeddingGemma 2",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+        "publishedAt": "2026-10-06"
+      },
+      "keyPoints": [
+        "Modelo open-weight de 740M parámetros con licencia Apache 2.0.",
+        "Embeddings nativos para texto, código, imágenes, vídeo y audio en un espacio compartido.",
+        "Google documenta 8K tokens de contexto, tamaños modulares y ejecución local cuantizada."
+      ],
+      "quickTakeaways": [
+        "No es un chatbot: convierte contenidos distintos en representaciones para búsqueda y recuperación.",
+        "La modularidad permite ejecutar solo componentes de texto o añadir codificadores de imagen y audio.",
+        "Las cifras de memoria y benchmarks proceden de pruebas declaradas por Google.",
+        "Los pesos se distribuyen en Hugging Face y Kaggle; varias herramientas de inferencia son compatibles."
+      ],
+      "body": [
+        "Google DeepMind anunció EmbeddingGemma 2 el 6 de octubre de 2026. Es un modelo abierto para generar embeddings, es decir, representaciones numéricas que permiten buscar contenidos por significado y relacionar formatos diferentes. Su objetivo no es producir respuestas conversacionales por sí solo, sino hacer más útil la recuperación de información que alimenta buscadores, aplicaciones de medios y sistemas RAG."
+      ],
+      "sections": [
+        {
+          "heading": "El salto de texto a recuperación multimodal",
+          "kind": "report",
+          "paragraphs": [
+            "La primera EmbeddingGemma se orientaba a representaciones de texto. La segunda generación añade código, imagen, audio y vídeo en un espacio común, de modo que una consulta escrita puede encontrar un clip relevante o un mensaje de voz puede servir para localizar una escena. Google presenta esto como un modelo nativamente multimodal, no como una colección de índices aislados que luego se intentan alinear. La diferencia práctica es que los desarrolladores pueden construir una búsqueda semántica entre formatos sin depender necesariamente de una llamada remota a un servicio de embeddings."
+          ]
+        },
+        {
+          "heading": "Arquitectura y parámetros",
+          "kind": "technical",
+          "paragraphs": [
+            "El modelo completo tiene 740 millones de parámetros y está basado en la arquitectura Gemma 4. Google explica que puede utilizarse de forma modular: alrededor de 270 millones de parámetros para tareas solo de texto, con un codificador visual opcional de 170 millones y uno de audio de 300 millones. Esta separación permite adaptar el costo de inferencia a la modalidad realmente necesaria. Un catálogo de documentos no necesita cargar el mismo conjunto de componentes que un buscador de clips audiovisuales. La licencia publicada es Apache 2.0, relevante para organizaciones que quieren estudiar, adaptar y desplegar los pesos conforme a sus condiciones."
+          ]
+        },
+        {
+          "heading": "Ventana de contexto y dimensiones",
+          "kind": "technical",
+          "paragraphs": [
+            "Google documenta una ventana de contexto de 8.000 tokens, cuatro veces la del EmbeddingGemma original según la compañía. En ejemplos del proveedor, esa capacidad puede abarcar hasta 5,5 minutos de audio, 29 imágenes o 58 fotogramas de vídeo, además de combinaciones intercaladas. Los vectores de salida pueden truncarse de 768 dimensiones a 512, 256 o 128 gracias a Matryoshka Representation Learning. Reducir dimensiones puede ahorrar almacenamiento en bases vectoriales, pero debe comprobarse el efecto sobre la calidad de recuperación en cada dominio. Google habla de hasta seis veces menos almacenamiento en ciertas configuraciones, una relación teórica dependiente de las dimensiones seleccionadas."
+          ]
+        },
+        {
+          "heading": "Qué significa ejecutar embeddings en un dispositivo",
+          "kind": "context",
+          "paragraphs": [
+            "La empresa reporta que, con cuantización y sobre un Pixel 11 Pro, el modelo necesita aproximadamente 191 MB de RAM activa en configuración solo texto y 567 MB para la versión multimodal completa. Estas cifras son mediciones declaradas para ese hardware y configuración; no garantizan idéntico consumo en cualquier teléfono o computador. La ventaja potencial de procesar localmente es reducir viajes a la nube, latencia y exposición de documentos privados. Pero privacidad local no es automática: depende también de cómo la aplicación almacene los vectores, registre consultas y sincronice datos."
+          ]
+        },
+        {
+          "heading": "Benchmarks y atribución",
+          "kind": "report",
+          "paragraphs": [
+            "Google afirma que EmbeddingGemma 2 alcanza resultados destacados entre modelos multimodales de menos de mil millones de parámetros. Para código, comunica una mejora de 68,76 a 78,68 puntos en MTEB Code, una diferencia de 9,92 puntos en su evaluación. También cita MTEB y MAEB para otros formatos. El Gazette registra esas cifras como claims del proveedor; los resultados comparables dependen de conjuntos de pruebas, normalización, dimensiones elegidas y configuración de inferencia. Antes de declarar superioridad general, sería necesario contrastar el rendimiento con evaluaciones externas y datos reales del lector."
+          ]
+        },
+        {
+          "heading": "Dónde se puede utilizar",
+          "kind": "report",
+          "paragraphs": [
+            "Los pesos se ofrecen a través de Hugging Face y Kaggle. Google menciona soporte o integraciones con MediaPipe, LiteRT, Transformers, sentence-transformers, MLX, vLLM, llama.cpp, SGLang, Ollama y LM Studio, además de opciones web con transformers.js o WebGPU. La disponibilidad en Gemini Enterprise Agent Platform Model Garden se describe como próxima, no como acceso ya habilitado. Esta amplitud de herramientas importa porque facilita que un equipo pruebe el mismo modelo en un prototipo local, un navegador o una infraestructura de servicio, aunque cada entorno tendrá restricciones de memoria, velocidad y modalidades."
+          ]
+        },
+        {
+          "heading": "Casos de uso y límites",
+          "kind": "practical",
+          "paragraphs": [
+            "Un caso natural es un buscador personal que encuentre fotografías, documentos y grabaciones por significado. Otro es la recuperación de fragmentos relevantes antes de que un modelo generativo redacte una respuesta. Google propone combinar EmbeddingGemma 2 con Gemma 4 para RAG local y menciona herramientas de búsqueda de momentos de vídeo. Sin embargo, un embedding no verifica la verdad de un documento, no elimina errores del OCR y no sustituye controles de acceso. Si un sistema mezcla archivos de distintas personas, debe aplicar permisos antes de devolver resultados, incluso cuando la similitud semántica sea alta."
+          ]
+        },
+        {
+          "heading": "Impacto competitivo y decisiones para equipos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la importancia de EmbeddingGemma 2 está en llevar capacidades de recuperación multimodal a dispositivos y entornos donde una API grande sería cara o innecesaria. La competencia en IA no se decide solo por modelos generativos de frontera: también por la infraestructura que permite encontrar información adecuada, privada y a bajo costo. Para evaluar el modelo, un equipo debería construir un pequeño conjunto de consultas con respuestas conocidas, medir precisión de recuperación, latencia, consumo de memoria y tamaño del índice en varias dimensiones. Esa prueba dará más información que adoptar sin más el benchmark anunciado."
+          ]
+        },
+        {
+          "heading": "Qué seguir",
+          "kind": "competition",
+          "paragraphs": [
+            "Queda por ver cómo se comporta la versión cuantizada en hardware más modesto, qué calidad ofrece con lenguas y dominios especializados y cuándo llega la integración prometida con Model Garden. También será importante comprobar si las mejoras multimodales se mantienen al reducir vectores a 128 dimensiones y si las bibliotecas ofrecen el mismo soporte en todas las plataformas. Google ya publicó rutas de descarga y documentación, pero el costo real de desplegar y mantener un índice depende del volumen de datos y de las actualizaciones de cada aplicación."
+          ]
+        }
+      ],
+      "executiveSummary": "EmbeddingGemma 2 amplía la búsqueda semántica local desde texto a contenidos multimodales con un modelo open-weight compacto. La propuesta es prometedora para RAG, bibliotecas personales y recuperación de información sensible, aunque los benchmarks y cifras de memoria deben validarse en cada dispositivo y conjunto de datos.",
+      "finalSummary": "El lanzamiento del 6 de octubre agrega una pieza de infraestructura a la carrera de la IA: recuperar mejor datos variados sin enviarlos necesariamente a la nube. La adopción dependerá de precisión, integración y costo operativo, no solo del número de parámetros.",
+      "analysis": "Análisis Gazette: el valor competitivo aparece cuando el modelo permite construir aplicaciones útiles con datos locales y controles de privacidad, no cuando se presenta como sustituto de un asistente conversacional.",
+      "watch": "Benchmarks independientes, calidad en dispositivos modestos, disponibilidad en Model Garden, resultados de búsqueda multilingüe y compatibilidad real de todas las modalidades.",
+      "technicalDetails": [
+        {
+          "label": "Parámetros totales",
+          "value": "740 millones"
+        },
+        {
+          "label": "Contexto",
+          "value": "8.000 tokens"
+        },
+        {
+          "label": "Dimensiones de embeddings",
+          "value": "768, 512, 256 o 128"
+        },
+        {
+          "label": "RAM texto cuantizado",
+          "value": "~191 MB",
+          "note": "Medición declarada por Google en Pixel 11 Pro."
+        },
+        {
+          "label": "RAM multimodal cuantizado",
+          "value": "~567 MB",
+          "note": "Medición declarada por Google en Pixel 11 Pro."
+        }
+      ],
+      "availability": {
+        "status": "Pesos disponibles",
+        "platforms": [
+          "Hugging Face",
+          "Kaggle",
+          "MediaPipe",
+          "LiteRT",
+          "Transformers",
+          "MLX",
+          "llama.cpp",
+          "Ollama",
+          "LM Studio"
+        ],
+        "regions": [
+          "Descarga de pesos sujeta a condiciones de las plataformas"
+        ],
+        "requirements": [
+          "Revisar licencia Apache 2.0 y requisitos de cada runtime"
+        ],
+        "notes": [
+          "Model Garden: disponibilidad futura anunciada."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Licencia de pesos",
+          "value": "Apache 2.0",
+          "note": "No implica que ejecutar hardware, nube o almacenamiento sea gratis."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-06",
+          "label": "Google DeepMind presenta EmbeddingGemma 2 y anuncia pesos disponibles."
+        }
+      ],
+      "limitations": [
+        "Los benchmarks publicados proceden del proveedor.",
+        "La RAM declarada corresponde a configuraciones y hardware concretos.",
+        "Embeddings semánticos no sustituyen permisos ni verificación factual.",
+        "La compatibilidad multimodal puede variar según runtime."
+      ],
+      "practicalAdvice": [
+        "Medir recall y precisión con consultas reales antes de elegir el modelo.",
+        "Comparar dimensiones de vectores y tamaño del índice.",
+        "Evaluar cuantización y memoria en el hardware objetivo.",
+        "Mantener controles de acceso sobre documentos y resultados."
+      ],
+      "usefulFacts": [
+        "El modelo completo admite texto, código, imagen, audio y vídeo.",
+        "El texto puede ejecutarse con una configuración modular menor.",
+        "Google menciona hasta 5,5 minutos de audio dentro del contexto de ejemplo."
+      ],
+      "curiosities": [
+        "Google afirma que EmbeddingGemma original superó 20 millones de descargas.",
+        "El mismo espacio vectorial permite buscar vídeo mediante una nota de voz."
+      ],
+      "visualAssetId": "gazette-generic-ai-hero-v1"
+    },
     {
       "id": "anthropic-cyber-verification",
       "eventKey": "anthropic-cyber-verification",
@@ -1749,220 +2496,6 @@
       ],
       "analysis": "La robótica se valida en operación repetida, no sólo en benchmarks; cada nueva ciudad añade condiciones reales al sistema completo.",
       "watch": "Ritmo de ampliación, área de servicio y métricas públicas de seguridad."
-    },
-    {
-      "id": "claude-haiku-5-5",
-      "eventKey": "claude-haiku-5-5",
-      "articleVersion": 2,
-      "date": "2026-10-07",
-      "announcedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
-      "verifiedAt": "2026-10-07",
-      "company": "Anthropic",
-      "product": "Claude Haiku 5.5",
-      "title": "Claude Haiku 5.5 lleva la familia Claude 5.5 al trabajo rápido y de alto volumen",
-      "summary": "Anthropic completa su familia 5.5 con un modelo pequeño orientado a latencia, subagentes y cargas sensibles al costo, con disponibilidad general y precios escalonados según la longitud del prompt.",
-      "tags": [
-        "Modelos",
-        "Agentes",
-        "Desarrollo"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo, usado como ilustración temporal para Claude Haiku 5.5",
-      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía del lanzamiento.",
-      "imageStatus": "needs-specific-art",
-      "imageBrief": "Ilustración editorial estilo grabado antiguo para Claude Haiku 5.5: un pequeño mensajero mecánico extremadamente veloz coordinando varias tareas entre estaciones de trabajo y servidores, sensación de escala y eficiencia, tinta/sepia sobre papel envejecido, sin interfaces falsas ni escena presentada como fotografía real.",
-      "source": {
-        "name": "Anthropic · Claude Haiku 5.5",
-        "url": "https://www.anthropic.com/claude-haiku-5-5",
-        "publishedAt": "2026-10-07"
-      },
-      "relatedSources": [
-        {
-          "name": "Claude Platform · ficha de Haiku 5.5",
-          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
-          "publishedAt": "2026-10-07"
-        },
-        {
-          "name": "Claude Platform · guía de migración",
-          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/migration-guide"
-        },
-        {
-          "name": "AWS · Haiku 5.5 en Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
-          "publishedAt": "2026-10-07"
-        },
-        {
-          "name": "Google Cloud · Claude Haiku 5.5",
-          "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5",
-          "publishedAt": "2026-10-07"
-        },
-        {
-          "name": "Microsoft Foundry · Claude Haiku 5.5",
-          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-haiku-5-5-is-now-available-in-microsoft-foundry/4562408",
-          "publishedAt": "2026-10-07"
-        },
-        {
-          "name": "Reuters · contexto competitivo",
-          "url": "https://www.reuters.com/business/anthropic-launches-third-claude-55-model-expanding-ai-lineup-before-planned-ipo-2026-10-07/",
-          "publishedAt": "2026-10-07"
-        }
-      ],
-      "body": [
-        "Anthropic lanzó Claude Haiku 5.5 el 7 de octubre y lo colocó en disponibilidad general como la tercera pieza de la familia Claude 5.5, después de Opus 5.5 y Sonnet 5.5. La compañía lo posiciona para trabajo de alto volumen y sensible a latencia o costo: clasificación, resúmenes, extracción, consultas breves, atención en vivo, navegación y subtareas dentro de sistemas de agentes. El lanzamiento no es una simple reducción de tamaño de un modelo mayor. Su papel estratégico es convertirse en la capa rápida que puede ejecutar muchas operaciones acotadas mientras modelos más caros se reservan para planificación, juicio o razonamiento complejo.",
-        "La distribución es amplia desde el primer día. Anthropic documenta el modelo en Claude Platform y también confirma acceso a través de Amazon Bedrock, Google Cloud y Microsoft Foundry. Google lo marca como generalmente disponible y documenta entradas de texto, imágenes y PDF, salida de texto, llamadas a funciones, uso de computadora, búsqueda web, caché y ejecución por lotes. AWS lo ofrece mediante perfiles de inferencia geográficos y globales y lo integra con controles habituales de Bedrock, mientras Microsoft lo presenta como una opción de baja latencia para agentes empresariales. Esa disponibilidad multinube importa porque permite probar el mismo modelo sin obligar a una organización a abandonar su proveedor de infraestructura."
-      ],
-      "keyPoints": [
-        "Disponibilidad general desde el 7 de octubre en Claude Platform, AWS, Google Cloud y Microsoft Foundry.",
-        "1M de contexto y hasta 128k tokens de salida según la documentación de plataforma.",
-        "Precio desde US$0,10/M de entrada y US$0,50/M de salida para prompts de hasta 100k tokens.",
-        "Primer Haiku con control de esfuerzo y pensamiento adaptativo.",
-        "Su caso estratégico es ejecutar trabajo repetitivo y subagentes a gran escala."
-      ],
-      "quickTakeaways": [
-        "Haiku 5.5 completa la familia Claude 5.5 como el modelo rápido y económico.",
-        "No es una migración completamente transparente desde Haiku 4.5: hay cambios de pensamiento y tokenización que conviene probar.",
-        "El precio cambia al superar los 100.000 tokens de prompt.",
-        "Su mayor impacto puede aparecer en sistemas multiagente que delegan muchas subtareas.",
-        "Los benchmarks y ahorros citados por Anthropic siguen siendo claims del proveedor hasta que existan evaluaciones independientes suficientes."
-      ],
-      "technicalDetails": [
-        {
-          "label": "Model ID",
-          "value": "claude-haiku-5-5"
-        },
-        {
-          "label": "Contexto",
-          "value": "1.000.000 tokens",
-          "note": "Según Claude Platform y Google Cloud."
-        },
-        {
-          "label": "Salida máxima",
-          "value": "128.000 tokens",
-          "note": "Uso normal documentado en Claude Platform/Google Cloud."
-        },
-        {
-          "label": "Pensamiento",
-          "value": "Adaptive thinking + effort",
-          "note": "El esfuerzo permite ajustar el balance costo/capacidad."
-        },
-        {
-          "label": "Entradas",
-          "value": "Texto, imágenes y PDF",
-          "note": "Disponibilidad documentada por Google Cloud para su oferta."
-        }
-      ],
-      "availability": {
-        "status": "Disponibilidad general",
-        "platforms": [
-          "Claude Platform",
-          "Amazon Bedrock",
-          "Claude Platform on AWS",
-          "Google Cloud",
-          "Microsoft Foundry",
-          "Claude.ai/Claude apps"
-        ],
-        "regions": [
-          "Disponibilidad dependiente del proveedor; Google Cloud documenta endpoints globales y multirregión, AWS perfiles geográficos/globales."
-        ],
-        "requirements": [
-          "Revisar cuotas, región y condiciones del proveedor elegido."
-        ],
-        "notes": [
-          "La disponibilidad de funciones concretas puede variar entre plataformas."
-        ]
-      },
-      "pricing": [
-        {
-          "label": "Entrada ≤100k prompt",
-          "value": "US$0,10 / millón de tokens"
-        },
-        {
-          "label": "Salida ≤100k prompt",
-          "value": "US$0,50 / millón de tokens"
-        },
-        {
-          "label": "Entrada >100k prompt",
-          "value": "US$0,50 / millón de tokens"
-        },
-        {
-          "label": "Salida >100k prompt",
-          "value": "US$2,50 / millón de tokens"
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Claude Opus 5.5 abre la familia 5.5."
-        },
-        {
-          "date": "2026-09-28",
-          "label": "Claude Sonnet 5.5 se suma como nivel intermedio."
-        },
-        {
-          "date": "2026-10-07",
-          "label": "Claude Haiku 5.5 completa la familia con foco en volumen y latencia."
-        }
-      ],
-      "limitations": [
-        "Los claims de ahorro y rendimiento inicial provienen principalmente de Anthropic y sus socios; requieren validación independiente.",
-        "El costo por tarea puede diferir del precio nominal por token debido al nuevo tokenizador, reintentos, herramientas y caché.",
-        "La migración desde Haiku 4.5 exige revisar controles de pensamiento y comportamiento de respuestas.",
-        "Regiones, cuotas y algunas capacidades dependen del proveedor de nube."
-      ],
-      "practicalAdvice": [
-        "Antes de sustituir Haiku 4.5, ejecutar una prueba A/B con tareas reales y medir costo por resultado correcto, no solo precio por token.",
-        "Revisar cualquier integración que use `budget_tokens` y adaptar el manejo de bloques de pensamiento.",
-        "Para agentes, probar Haiku primero en subtareas acotadas y repetibles antes de delegarle decisiones difíciles o irreversibles.",
-        "Separar métricas de latencia, calidad, número de herramientas llamadas y reintentos para decidir qué capa del sistema debe usar Haiku."
-      ],
-      "usefulFacts": [
-        "El modelo usa un ID fijo sin sufijo de fecha: `claude-haiku-5-5`.",
-        "Google Cloud publica una fecha de retiro no anterior al 7 de octubre de 2027 para su oferta del modelo.",
-        "AWS documenta acceso mediante Bedrock y perfiles de inferencia regionales/globales.",
-        "Anthropic actualizó sus SDK de Python y TypeScript con clases beta para browser use y computer use en la misma jornada."
-      ],
-      "curiosities": [
-        "Es el primer modelo de la clase Haiku con un ajuste explícito de esfuerzo.",
-        "La familia 5.5 se completó en poco más de dos semanas: Opus el 22 de septiembre, Sonnet el 28 y Haiku el 7 de octubre.",
-        "La guía de migración advierte que el mismo texto puede consumir aproximadamente más tokens que en Haiku 4.5 por el cambio de tokenizador."
-      ],
-      "executiveSummary": "Claude Haiku 5.5 no intenta reemplazar a Opus o Sonnet en todos los trabajos. Su apuesta es económica: hacer suficientemente buenas y baratas las tareas repetitivas para que los sistemas de agentes puedan delegar mucho más trabajo sin usar el modelo premium en cada paso. Para un equipo, la prueba decisiva será el costo por tarea correcta bajo su propia carga.",
-      "finalSummary": "El lanzamiento completa la estrategia de tres niveles de Anthropic para Claude 5.5. Haiku aporta velocidad y precio; Sonnet equilibra capacidad y costo; Opus conserva el papel de mayor complejidad. Si el desempeño real acompaña los claims, la consecuencia importante no será únicamente una API más barata, sino la posibilidad de diseñar agentes jerárquicos con una capa de ejecución masiva.",
-      "analysis": "La lectura del Gazette es que Haiku 5.5 importa menos por perseguir el título de modelo más inteligente y más por cambiar la economía de los sistemas que hacen cientos o miles de pequeñas llamadas. La competencia de 2026 empieza a parecerse a una carrera por familias completas y orquestación eficiente: quién puede reservar el razonamiento caro para los momentos difíciles y abaratar todo lo demás. Ese patrón puede ser más relevante para productos reales que una victoria aislada en un benchmark.",
-      "watch": "Evaluaciones independientes de latencia y calidad, costo efectivo con el nuevo tokenizador, estabilidad en uso de herramientas y computer use, adopción como subagente, diferencias entre proveedores de nube y cualquier ajuste posterior de salvaguardas o precio.",
-      "sections": [
-        {
-          "heading": "Cómo funciona y qué cambia técnicamente",
-          "kind": "technical",
-          "paragraphs": [
-            "En la Claude API el identificador es `claude-haiku-5-5`. La documentación técnica describe una ventana de contexto de 1 millón de tokens y hasta 128.000 tokens de salida en el uso normal del modelo. También introduce pensamiento adaptativo con un parámetro de esfuerzo: Haiku puede dedicar más o menos razonamiento según la tarea en vez de operar con una única configuración fija. Anthropic advierte que esa migración no es totalmente transparente para aplicaciones escritas para Haiku 4.5: el control antiguo de pensamiento manual mediante `budget_tokens` ya no funciona de la misma forma y puede producir un error 400, por lo que los equipos deben revisar sus integraciones antes de sustituir el modelo en producción.",
-            "El precio es uno de los elementos centrales. Para prompts de hasta 100.000 tokens, Anthropic cobra US$0,10 por millón de tokens de entrada y US$0,50 por millón de salida. Sobre ese umbral, los precios pasan a US$0,50 de entrada y US$2,50 de salida. La tabla oficial también separa los costos de lectura y escritura de caché. Anthropic calcula que, considerando la mezcla de solicitudes de la generación anterior, el costo medio de ejecutar Haiku 5.5 es alrededor de 75% menor que Haiku 4.5. Esa cifra es un cálculo del proveedor, no una medición independiente, y el costo real de una aplicación dependerá de longitud de contexto, caché, cantidad de reintentos, uso de herramientas y número de tokens producidos.",
-            "Hay otro detalle práctico en la migración: el nuevo modelo utiliza un tokenizador más reciente. La guía de Anthropic indica que un mismo texto puede contabilizar aproximadamente más tokens que con Haiku 4.5, con variación según el contenido. Eso significa que comparar solo el precio nominal por millón de tokens puede inducir a error. Un equipo que evalúe el cambio debería medir el costo por tarea terminada, no únicamente la tarifa. También conviene registrar latencia, calidad, tasa de reintentos y número de llamadas a herramientas. Una respuesta barata que necesita varias correcciones puede terminar siendo más cara que una respuesta de un modelo superior resuelta en un solo intento."
-          ]
-        },
-        {
-          "heading": "El papel de Haiku dentro de los sistemas de agentes",
-          "kind": "context",
-          "paragraphs": [
-            "El caso de uso que mejor explica Haiku 5.5 es el de los subagentes. En una arquitectura jerárquica, un modelo como Opus o Sonnet puede decidir el plan general y delegar trabajos repetibles a Haiku: buscar una cifra en un documento, clasificar tickets, resumir un tramo de contexto, revisar archivos concretos o ejecutar una interacción simple. AWS y Microsoft destacan precisamente esta función de ejecución enfocada. Para productos interactivos, el menor tiempo de respuesta también puede ser más importante que obtener la máxima profundidad de razonamiento en cada turno. La tesis de Anthropic es que una gran parte del trabajo real de un agente no necesita utilizar continuamente el modelo más caro disponible."
-          ]
-        },
-        {
-          "heading": "Qué dicen los benchmarks y qué todavía falta comprobar",
-          "kind": "report",
-          "paragraphs": [
-            "Anthropic presenta resultados de evaluaciones y testimonios tempranos de clientes para sostener sus claims de rendimiento. Esos datos son útiles para entender dónde espera que compita el modelo, pero no equivalen a una comparación independiente. El Gazette no interpreta una gráfica del fabricante como prueba definitiva de superioridad. La señal más importante será cómo se comporta Haiku 5.5 bajo cargas reales: agentes con herramientas, documentos largos, navegación, clasificación a escala y soporte en vivo. También será importante observar el efecto de sus salvaguardas de ciberseguridad, que Anthropic describe como más restrictivas que en Haiku 4.5 pero menos restrictivas que en algunos modelos mayores recientes."
-          ]
-        },
-        {
-          "heading": "Impacto en la carrera de la IA",
-          "kind": "competition",
-          "paragraphs": [
-            "Dentro de la carrera de la IA, el lanzamiento refuerza una tendencia: los laboratorios ya no compiten únicamente por el modelo de mayor puntuación, sino por construir una familia completa capaz de asignar cada tarea al nivel correcto de costo, velocidad y capacidad. Si los modelos pequeños se vuelven suficientemente buenos para actuar como trabajadores especializados, la economía de los agentes cambia. Un sistema puede multiplicar el número de subtareas sin multiplicar de la misma forma su factura. Para desarrolladores y empresas, la decisión razonable no es migrar automáticamente por el titular de precio, sino ejecutar un benchmark propio con tareas representativas, medir costo por resultado correcto y decidir en qué puntos Haiku sustituye o complementa a Sonnet, Opus u otros proveedores."
-          ]
-        }
-      ]
     }
   ],
   "archiveStart": "2026-09-01",
@@ -2160,12 +2693,12 @@
     {
       "date": "2026-10-06",
       "status": "partial",
-      "verifiedArticles": 4
+      "verifiedArticles": 5
     },
     {
       "date": "2026-10-07",
       "status": "partial",
-      "verifiedArticles": 1,
+      "verifiedArticles": 3,
       "reviewedAt": "2026-10-07"
     }
   ]
