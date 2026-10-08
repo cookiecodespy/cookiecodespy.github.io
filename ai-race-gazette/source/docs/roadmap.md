@@ -123,3 +123,6 @@ Backlog, no requisito de la v1.0:
 Antes de ampliar agresivamente el backfill, usar Reporter V2 para no crear más deuda editorial. **Historical Backfill** continúa con 8–14 de septiembre pero debe enriquecer los artículos heredados del bloque que audita. **Automation & Newsroom** continúa en paralelo con actualidad usando Reporter V2 desde el nacimiento.
 
 No mezclar rediseños grandes con actualizaciones automáticas de noticias.
+
+
+**Auditoría verificable de recuperación:** [`audit-recovery-2026-10-08.md`](audit-recovery-2026-10-08.md). El checklist generado desde `../ops/backlog.json` gobierna todas las fases y los nuevos hallazgos; ningún estado de cobertura se considera complete hasta cumplir Backbone v1.

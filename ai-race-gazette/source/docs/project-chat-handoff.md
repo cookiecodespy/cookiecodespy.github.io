@@ -96,3 +96,16 @@ El sistema visual es un carril separado del ciclo horario:
 Newsroom puede usar únicamente assets registrados y puede dejar `imageBrief` + `needs-specific-art`, pero no modifica assets durante el run horario.
 
 Historical Backfill añade briefs cuando corresponda; la producción de arte específico se hace fuera de esos dos carriles.
+
+## Actualización posterior a recuperación — 8 oct 2026
+
+Si se reanuda el proyecto tras un fallo del chat, **NO** repetir las publicaciones de la conversación. Primero leer `source/docs/recovery-after-interruption.md`, `source/docs/audit-recovery-2026-10-08.md`, `source/ops/backlog.json` y `source/docs/master-checklist.md`; verificar `main` y workflows.
+
+**Estado auditado:** 71 artículos (24 Reporter V2, 47 legacy) de 25 compañías; 38 jornadas registradas, 0 cerradas con Backbone v1 (20 parciales y 18 pendientes), 5 assets, 1 hero específico, cola visual 71/71. El hero genérico aparece en 46 artículos. La cifra es instantánea: consultar GitHub para el estado vivo.
+
+**Automatización:** una sola Scheduled Task Gazette por hora, original antigua deshabilitada. Separadamente, GitHub Actions valida contenidos, compila/frontend, sincroniza la cola de Visual Desk al modificarse noticias y ejecuta smoke diario del sitio público. Los workflows GitHub no son Scheduled Tasks adicionales de ChatGPT.
+
+**Tests confirmados:** compilación y pruebas https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281532; smoke Chromium web pública/móvil https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281530; validador semántico RSS https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798463907; sincronización real Visual Desk https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798603043.
+
+**Pendiente:** reauditoría profunda por fecha (P05–P08), migración 47 legacy y biblioteca visual (P09), publicación desatendida Newsroom y pruebas de colisión/rollback, SEO social/UX/accesibilidad, verificación final (P10). No declarar septiembre completo ni Gazette v1.0.
+
