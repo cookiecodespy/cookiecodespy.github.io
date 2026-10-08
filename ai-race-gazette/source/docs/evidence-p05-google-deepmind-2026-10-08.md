@@ -38,4 +38,4 @@ Dario Amodei, CEO de Anthropic, publicó una propuesta para adaptar el ritmo de 
 
 **Seguimiento de implementación:** https://www.anthropic.com/news/accenture-embedded-evaluation , fecha 18 Sep, hecho posterior e independiente. **Riesgos descritos en el ensayo:** opiniones y escenarios atribuidos al autor; sin convertir proyecciones en acontecimientos confirmados.
 
-**Estado:** noticia original material del 12 Sep, sujeto a Reporter V2, QA y sincronización de calendarios. No cerrar 12 ni 13 con la primera fuente validada: continúan pendientes de revisión transversal y segunda pasada.
+**Estado:** reportaje Reporter V2 preparado con 1.376 palabras de secciones, espejos y calendarios sincronizados. El 12 Sep pasa de `pending` a `partial` (1 artículo), **no** a `complete`: faltan fuentes adicionales, revisión transversal y segunda pasada. Evento `anthropic-amodei-we-must-pace-the-frontier-pledge-2026-09-12`.
