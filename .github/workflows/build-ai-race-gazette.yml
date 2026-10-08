@@ -11,6 +11,7 @@ on:
       - 'ai-race-gazette/source/vite.config.mjs'
       - 'ai-race-gazette/source/scripts/**'
       - 'ai-race-gazette/source/research/**'
+      - 'ai-race-gazette/source/visual/**'
       - 'ai-race-gazette/source/tests/**'
       - '.github/workflows/build-ai-race-gazette.yml'
   workflow_dispatch:
@@ -52,6 +53,7 @@ jobs:
           python3 scripts/quality-audit.py
           python3 scripts/validate_source_registry.py
           python3 scripts/validate_coverage_audit.py
+          python3 scripts/validate_visual_desk.py
 
       - name: Build
         run: npm run build
