@@ -1,7 +1,5 @@
 {
   "schemaVersion": 1,
-  "generatedFromNewsUpdatedAt": "2026-10-08T13:01:20.524Z",
-  "generatedAt": "2026-10-08",
   "purpose": "Cola editorial del Visual Desk. No bloquea Newsroom y no es fuente factual.",
   "statusDefinitions": {
     "needs-art-direction": "Brief automático preliminar; requiere revisión visual.",
@@ -10,6 +8,8 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
+  "generatedFromNewsUpdatedAt": "2026-10-08T13:01:20.524Z",
+  "generatedAt": "2026-10-08",
   "items": [
     {
       "articleId": "google-mapl-emit-methane-satellite-2026-09-01",
