@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T15:55:00.000Z",
+  "updatedAt": "2026-10-08T16:18:27.662Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -2922,6 +2922,229 @@
           "label": "BigQuery anuncia seis funciones de análisis aumentado."
         }
       ]
+    },
+    {
+      "id": "internlm-intern-s2-397b-open-weights-2026-09-13",
+      "eventKey": "shanghai-ai-lab-intern-s2-397b-full-weights-2026-09-13",
+      "articleVersion": 2,
+      "date": "2026-09-13",
+      "announcedAt": "2026-09-13",
+      "coveredAt": "2026-10-08",
+      "verifiedAt": "2026-10-08",
+      "company": "Shanghai AI Laboratory",
+      "product": "Intern-S2-397B",
+      "title": "Intern-S2-397B abre sus pesos: el gran modelo multimodal de Shanghai AI Lab para ciencia y agentes",
+      "summary": "El 13 de septiembre quedó publicado el checkpoint de Intern-S2-397B en Hugging Face bajo Apache 2.0. El modelo multimodal se enfoca en documentos científicos y agentes de trabajo prolongado; no debe confundirse con la Preview anterior ni con una API comercial nueva.",
+      "tags": [
+        "Modelos",
+        "Open Source",
+        "Investigación",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico de inteligencia mecánica; no representa los servidores de Shanghai AI Lab ni una imagen documental del modelo.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración de prensa científica de finales del siglo XIX, tinta sepia: gran laboratorio con calculadoras mecánicas, lupa sobre documentos científicos con dibujos abstractos, biblioteca de tarjetas perforadas y una mesa de herramientas automatizadas; simbolizar modelo multimodal y agentes científicos sin texto, marcas, interfaces ni instalaciones reales.",
+      "source": {
+        "name": "InternLM · Intern-S2-397B model card y pesos",
+        "url": "https://huggingface.co/internlm/Intern-S2-397B",
+        "publishedAt": "2026-09-13"
+      },
+      "relatedSources": [
+        {
+          "name": "Hugging Face · historial de commits del checkpoint",
+          "url": "https://huggingface.co/internlm/Intern-S2-397B/commits/main"
+        },
+        {
+          "name": "InternLM · serie Intern-S y catálogo de versiones Preview y final",
+          "url": "https://github.com/InternLM/Intern-S1"
+        },
+        {
+          "name": "InternLM · guía de despliegue de Intern-S2-397B",
+          "url": "https://github.com/InternLM/Intern-S1/blob/main/docs/interns2_397b_user_guide.md"
+        }
+      ],
+      "keyPoints": [
+        "Los pesos del modelo aparecen publicados en el repositorio el 13 de septiembre, fecha distinta de la introducción de la línea Preview.",
+        "La ficha indica licencia Apache 2.0 y archivos Safetensors, además de soporte de inferencia documentado.",
+        "InternLM declara entrenamiento multimodal sobre literatura científica y optimización de agentes de larga duración.",
+        "Las comparaciones de rendimiento son claims del laboratorio y no validaciones independientes."
+      ],
+      "quickTakeaways": [
+        "Se publican pesos de Intern-S2-397B, un modelo multimodal de gran escala.",
+        "El código y el despliegue se describen en recursos oficiales de InternLM.",
+        "La licencia del repositorio es Apache 2.0.",
+        "Hay una Preview anterior, por lo que esto es una noticia de disponibilidad y no de creación de la familia.",
+        "Su tamaño impone requisitos importantes de hardware y su rendimiento debe evaluarse independientemente."
+      ],
+      "body": [
+        "El repositorio oficial del modelo Intern-S2-397B muestra una publicación de pesos fechada el 13 de septiembre de 2026. Es una nueva etapa de disponibilidad para la familia Intern-S2, con orientación multimodal, científica y de agentes; el Gazette separa ese hecho verificable de las afirmaciones de rendimiento de sus autores."
+      ],
+      "executiveSummary": "Shanghai AI Laboratory, mediante InternLM, puso a disposición los pesos de Intern-S2-397B, un modelo multimodal de gran escala bajo Apache 2.0. La novedad editorial es el acceso al checkpoint final y no el nacimiento de una familia ya presentada en versión Preview. La ficha describe razonamiento científico, herramientas e integración con runtimes, pero los resultados de benchmarks requieren evaluación propia.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió el 13 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "El 13 de septiembre de 2026, el repositorio de Hugging Face de Intern-S2-397B recibió la publicación de los pesos de un gran modelo multimodal del ecosistema InternLM, vinculado a Shanghai AI Laboratory. El historial público del repositorio permite rastrear esa entrega, mientras que la página de proyecto ofrece la ficha, la licencia y ejemplos de uso. La noticia no debe confundirse con la presentación inicial de la línea Intern-S2: ya existía una variante Preview, y el hecho material aquí es la disponibilidad del checkpoint completo en un repositorio abierto.",
+            "Un lanzamiento de pesos no es lo mismo que abrir una API comercial ni que anunciar una puntuación de laboratorio. Publicar el artefacto permite que investigadores y operadores con infraestructura suficiente descarguen, inspeccionen y ejecuten el modelo sin depender exclusivamente de una interfaz remota. Sin embargo, el hecho de que los archivos estén accesibles no implica que el hardware corriente pueda servirlos, ni que todos los resultados de las evaluaciones anunciadas hayan sido reproducidos por terceros."
+          ]
+        },
+        {
+          "heading": "Un modelo multimodal orientado a ciencia",
+          "kind": "technical",
+          "paragraphs": [
+            "InternLM describe Intern-S2-397B como un modelo fundacional destinado a tareas de inteligencia científica y agentes capaces de resolver trabajos largos. A diferencia de un modelo puramente textual, combina representaciones de texto e imágenes para abordar información que aparece en figuras, tablas y páginas de literatura especializada. Los autores destacan un enfoque de preentrenamiento visual que aprende directamente de páginas científicas y busca conservar asociaciones entre símbolos, texto y estructuras espaciales.",
+            "Esta clase de entrenamiento responde a un problema conocido: convertir un artículo científico en texto plano puede eliminar información importante de gráficos, ecuaciones, diseños experimentales y relaciones visuales. Un modelo que procese simultáneamente lo escrito y su disposición podría ayudar a investigar documentos técnicos. Es una capacidad comunicada por el equipo y necesita evaluarse contra documentos reales y preguntas difíciles, no únicamente con ejemplos preparados para una demostración."
+          ]
+        },
+        {
+          "heading": "Preentrenamiento, refuerzo y entornos de agentes",
+          "kind": "technical",
+          "paragraphs": [
+            "La ficha pública separa tres áreas de desarrollo: el preentrenamiento visual, el refuerzo sobre tareas científicas diversas y la optimización de agentes con horizontes largos. InternLM afirma haber combinado tareas de más de veinte dominios científicos en una estrategia conjunta de entrenamiento. Entre los ejemplos menciona el razonamiento sobre biomoléculas y materiales. Esa amplitud no asegura competencia equivalente en todos los campos: cada dominio requiere datos, procedimientos de evaluación y especialistas que puedan verificar las respuestas.",
+            "En tareas de agentes, el equipo declara haber conectado diferentes marcos de ejecución a sandboxes para permitir aprendizaje por refuerzo con interacciones prolongadas. La meta es que el sistema no solo genere una respuesta aislada, sino que use herramientas y complete secuencias. En producción conviene distinguir el rendimiento del modelo del rendimiento del entorno, los permisos, el evaluador y la estrategia de recuperación ante fallos. El componente más visible del sistema no siempre explica el resultado completo."
+          ]
+        },
+        {
+          "heading": "Qué sabemos de la arquitectura y los archivos",
+          "kind": "technical",
+          "paragraphs": [
+            "En Hugging Face, la ficha del repositorio identifica un checkpoint publicado con licencia Apache 2.0, formatos Safetensors y una ruta de arquitectura etiquetada qwen3_5_moe. El nombre comercial contiene 397B, pero no debe inferirse de esa cifra cuántos parámetros se activan por token ni cuánta VRAM se necesita sin revisar la configuración y el formato de pesos. Es una distribución de tamaño extraordinario, orientada en la práctica a infraestructura de múltiples aceleradores.",
+            "La familia publica instrucciones para Transformers, LMDeploy, vLLM y SGLang. Esas rutas ofrecen puntos de partida para servir el modelo y conectar aplicaciones que hablan protocolos compatibles con OpenAI. Compatibilidad de API, sin embargo, no significa compatibilidad funcional completa con cualquier herramienta: parsers de llamadas a funciones, modos de pensamiento, soporte multimodal y restricciones de contexto pueden variar entre backends y versiones de software."
+          ]
+        },
+        {
+          "heading": "Pesos abiertos y licencia",
+          "kind": "context",
+          "paragraphs": [
+            "Apache 2.0 concede amplios permisos para usar, estudiar y redistribuir el software sujeto a las condiciones de la licencia. Es distinto de una publicación que solo permite uso no comercial o que oculta los parámetros tras un servicio remoto. Para un equipo de investigación, disponer de pesos y documentación facilita la reproducción de pruebas, el ajuste de modelos y el estudio de fallos. Para una empresa, puede abrir la opción de ejecutar flujos bajo su propia infraestructura.",
+            "Eso no elimina costos ni obligaciones. Descargar y alojar cientos de miles de millones de parámetros implica almacenamiento, memoria, redes rápidas, consumo eléctrico y mantenimiento. Tampoco garantiza derecho de uso sobre cualquier dataset ajeno, ni exime de proteger información que el modelo reciba durante una sesión. La licencia del modelo, la de bibliotecas auxiliares y las de los datos deben revisarse de manera independiente."
+          ]
+        },
+        {
+          "heading": "Benchmarks: una imagen no basta para un ranking",
+          "kind": "report",
+          "paragraphs": [
+            "InternLM presenta comparaciones para razonamiento general, evaluaciones científicas y capacidades de agentes. La ficha menciona marcos como OpenCompass, VLMEvalKit y AgentCompass, además de límites de generación diferentes entre pruebas textuales y multimodales. El apartado de rendimiento contiene principalmente material gráfico; sin tablas con metodología legible y resultados reproducidos, no corresponde convertir una afirmación promocional de liderazgo en una clasificación editorial independiente.",
+            "Un benchmark puede cambiar sensiblemente con el número máximo de tokens, las herramientas disponibles, el sistema de ejecución y la selección de problemas. Si un proveedor afirma superar a sus competidores, la verificación profesional requiere versiones exactas, configuración de inferencia, gastos, número de intentos, evaluador y artefactos que permitan replicarlo. Gazette considera los benchmarks del fabricante información atribuida, nunca una constatación automática de superioridad."
+          ]
+        },
+        {
+          "heading": "Para qué puede servir a investigadores y desarrolladores",
+          "kind": "practical",
+          "paragraphs": [
+            "Los primeros escenarios naturales son el análisis de documentos científicos multimodales, la construcción de asistentes especializados y el diseño de agentes que consultan bases de conocimiento y herramientas. Un prototipo pequeño podría seleccionar una muestra de artículos con figuras complejas, pedir extracción de relaciones verificables y comparar resultados con una revisión experta. Otro ensayo podría abordar planificación de tareas científicas sin habilitar acciones externas irreversibles.",
+            "Para estudiar un agente de investigación no basta con mostrar una conversación convincente. Hay que medir referencias correctas, operaciones completadas, falsos positivos, rastros de herramientas, uso de contexto, costos y capacidad de recuperarse tras un error. La ejecución local también exige dimensionar el hardware antes de descargar el checkpoint y mantener registros de qué versión exacta produjo cada conclusión."
+          ]
+        },
+        {
+          "heading": "Diferencia frente a la versión Preview",
+          "kind": "context",
+          "paragraphs": [
+            "El repositorio oficial de Intern-S1 incluye tanto Intern-S2-Preview-397B como Intern-S2-397B en su catálogo. La presencia de ambos nombres confirma que la publicación de septiembre no debe contarse como nacimiento absoluto de la familia. El cambio editorial importante es que los pesos de la variante identificada como completa quedaron disponibles en Hugging Face y se acompañan de documentación para su despliegue.",
+            "Por ahora no es prudente afirmar que la nueva distribución mejora un porcentaje concreto sobre la Preview sin un informe técnico verificable que compare ambas bajo iguales condiciones. También sería incorrecto presentar como lanzamiento nuevo una revisión posterior del README o un ejemplo de integración. La cronología debe separar el primer anuncio, la disponibilidad real de los pesos y las modificaciones documentales."
+          ]
+        },
+        {
+          "heading": "Qué falta validar antes de una adopción seria",
+          "kind": "analysis",
+          "paragraphs": [
+            "El hecho de que un laboratorio libere un checkpoint multimodal grande es relevante para la competencia entre modelos abiertos, pero su utilidad final depende de más factores: calidad en tareas prácticas, requisitos de despliegue, robustez de herramientas y facilidad para auditar respuestas. Esos elementos varían mucho entre usos científicos, académicos y comerciales. Una organización no debería adoptar automáticamente la opción con más parámetros o con mejores gráficos promocionales.",
+            "La decisión recomendada es fijar un conjunto propio de evaluaciones, contrastar con modelos más pequeños, estimar costos completos de inferencia y conservar registros reproducibles. En documentos científicos se necesita control de procedencia y revisión humana; en agentes se requieren límites sobre herramientas y secretos. Este es análisis editorial del Gazette, separado de los hechos de publicación del repositorio."
+          ]
+        },
+        {
+          "heading": "Qué seguirá observando Gazette",
+          "kind": "report",
+          "paragraphs": [
+            "Las próximas señales materiales serán nuevas evaluaciones independientes, publicaciones técnicas con suficiente detalle para reproducir entrenamiento e inferencia, mejoras significativas en los runtimes y cambios verificables de acceso. También merece seguimiento la posible aparición de cuantizaciones oficiales y documentación para despliegues menos costosos, siempre con una fecha propia confirmada. Un nuevo formato no es automáticamente un nuevo modelo.",
+            "Este episodio demuestra una de las dificultades de reconstruir septiembre: una ficha existente hoy puede incorporar commits posteriores al lanzamiento. El método correcto consiste en volver al historial original y documentar exactamente qué archivo se abrió al público y cuándo. Solo así una hemeroteca viva podrá seguir siendo confiable incluso después de numerosas correcciones y ampliaciones."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Evento",
+          "value": "Publicación de pesos en Hugging Face, 13 Sep 2026",
+          "note": "Historial del repositorio y registro contemporáneo del lanzamiento."
+        },
+        {
+          "label": "Licencia",
+          "value": "Apache 2.0",
+          "note": "Ficha del modelo en Hugging Face."
+        },
+        {
+          "label": "Formato",
+          "value": "Safetensors; arquitectura indicada como qwen3_5_moe"
+        },
+        {
+          "label": "Áreas anunciadas",
+          "value": "Ciencia multimodal, razonamiento y agentes de larga duración",
+          "note": "Atribuido a InternLM."
+        },
+        {
+          "label": "Servidores",
+          "value": "LMDeploy, vLLM y SGLang según instrucciones oficiales"
+        },
+        {
+          "label": "Evaluación",
+          "value": "OpenCompass, VLMEvalKit y AgentCompass",
+          "note": "Resultados y selección de tareas comunicados por los autores."
+        }
+      ],
+      "availability": {
+        "status": "Pesos públicos en Hugging Face con licencia Apache 2.0",
+        "platforms": [
+          "Hugging Face",
+          "GitHub de InternLM",
+          "Implementaciones de LMDeploy/vLLM/SGLang"
+        ],
+        "regions": [],
+        "requirements": [
+          "Hardware y memoria de aceleradores de gran escala",
+          "Configuración y compatibilidad con el runtime elegido",
+          "Revisar condiciones de datos, dependencias y herramientas"
+        ],
+        "notes": [
+          "La disponibilidad de pesos no implica un servicio alojado gratuito.",
+          "La Preview y el checkpoint final son productos/versiones distintos."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Checkpoint",
+          "value": "Descarga pública con licencia Apache 2.0",
+          "note": "GPU, almacenamiento, energía, red y operación se pagan separadamente."
+        }
+      ],
+      "limitations": [
+        "Los benchmarks comunicados pertenecen al equipo; su ficha no permite afirmar una superioridad independiente.",
+        "El tamaño limita el despliegue en PCs de consumo.",
+        "Una API compatible no garantiza igual funcionamiento de herramientas entre servidores.",
+        "Los datos científicos y las respuestas requieren procedencia y revisión experta."
+      ],
+      "practicalAdvice": [
+        "Confirmar las necesidades de VRAM y almacenamiento antes de descargar.",
+        "Diseñar un benchmark específico para documentos científicos y agentes.",
+        "Registrar hashes/versiones del checkpoint y de las dependencias.",
+        "Limitar permisos de herramientas durante las pruebas."
+      ],
+      "usefulFacts": [
+        "El ecosistema InternLM mantiene listado separado de Intern-S2-Preview-397B e Intern-S2-397B.",
+        "La ficha pública incluye ejemplos de uso multimodal y servidores compatibles.",
+        "El modelo se distribuye con una licencia distinta de las opciones solo para investigación no comercial."
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-13",
+          "label": "Checkpoint completo Intern-S2-397B aparece publicado en Hugging Face."
+        }
+      ],
+      "analysis": "Análisis Gazette: publicar pesos abiertos amplía la capacidad de inspección y adaptación para laboratorios con infraestructura adecuada. El impacto real dependerá de evaluaciones científicas replicadas, costos de despliegue y fiabilidad de agentes.",
+      "watch": "Benchmarks independientes, documentación reproducible, cambios materiales de disponibilidad y soporte de servidores; verificar fechas de cada versión.",
+      "finalSummary": "La noticia del 13 de septiembre es la disponibilidad abierta del gran checkpoint Intern-S2-397B, no un reanuncio de su Preview. El paso amplía la oferta de modelos multimodales científicos abiertos, aunque los resultados del laboratorio necesitan contrastarse."
     },
     {
       "id": "openai-habitat-storage-python-rust-scale-2026-09-11",
@@ -6625,8 +6848,8 @@
     },
     {
       "date": "2026-09-13",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1
     },
     {
       "date": "2026-09-14",

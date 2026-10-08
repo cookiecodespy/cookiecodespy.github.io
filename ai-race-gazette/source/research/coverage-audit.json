@@ -290,23 +290,29 @@
     },
     {
       "date": "2026-09-13",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [],
+      "reviewedSourceIds": [
+        "huggingface-blog"
+      ],
+      "reviewedCategories": [
+        "models",
+        "research",
+        "agents"
+      ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": null,
-        "published": 0,
-        "discarded": null,
-        "unresolved": null
+        "found": 1,
+        "published": 1,
+        "discarded": 0,
+        "unresolved": 0
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Intern-S2-397B pesos y ficha en Hugging Face, checkpoint 13 Sep, distinto de la Preview. Día parcial: falta barrido oficial, discovery exhaustivo y segunda pasada."
     },
     {
       "date": "2026-09-14",
