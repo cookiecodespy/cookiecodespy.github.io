@@ -19,6 +19,8 @@ Leer antes de actuar:
 - `source/docs/gazette-v1-standard.md`
 - `source/docs/article-v2-schema.md`
 - `source/docs/image-policy.md`
+- `source/docs/visual-desk.md`
+- `source/visual/asset-manifest.json`
 - `source/docs/automation-operations.md`
 - `source/AGENTS.md`
 - `source/docs/editorial-policy.md`
@@ -82,3 +84,15 @@ Leer también `source/docs/article-depth.md`. Las páginas internas deben funcio
 Reporter V2 es el estándar de publicación desde el 7 de octubre de 2026. Las noticias nuevas no deben recrear el formato breve legacy. La automatización debe respetar el núcleo obligatorio de `article-v2-schema.md`.
 
 Si una escritura automática es bloqueada por aprobación/seguridad, seguir `automation-operations.md` y devolver un paquete de publicación pendiente en vez de reintentar en bucle.
+
+
+## Visual Desk
+
+El sistema visual es un carril separado del ciclo horario:
+- manifest: `source/visual/asset-manifest.json`;
+- cola: `source/visual/image-queue.json`;
+- política/flujo: `source/docs/visual-desk.md`.
+
+Newsroom puede usar únicamente assets registrados y puede dejar `imageBrief` + `needs-specific-art`, pero no modifica assets durante el run horario.
+
+Historical Backfill añade briefs cuando corresponda; la producción de arte específico se hace fuera de esos dos carriles.
