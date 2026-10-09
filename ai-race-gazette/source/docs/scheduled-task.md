@@ -179,3 +179,18 @@ No dependas de SQLite, caches locales ni evidence bundles para el run horario ac
 Cuando Newsroom use un fallback existente, elige únicamente un asset registrado en `visual/asset-manifest.json` y usa un crédito permitido por ese manifest.
 
 La tarea no modifica `visual/image-queue.json`; Visual Desk la refresca por separado. Si el artículo merece arte específico, basta con `imageBrief` + `imageStatus: needs-specific-art`.
+
+
+## GitHub Actions obligatorio en publicaciones reales
+
+**Incidencia detectada el 9 de octubre de 2026:** los commits de Newsroom fechados `2026-10-09` incorporaban `[skip ci]` y, aunque aumentó el número de artículos, la cola de Visual Desk quedó retrasada. GitHub no ejecuta workflows de `push` cuando el mensaje pide omitir CI, por lo que no funcionan los triggers normales de sincronización visual/validación. No basta con que el JSON y RSS queden publicados.
+
+En toda **publicación real de noticias o corrección material**:
+
+- **Prohibido** incluir `[skip ci]`, `[ci skip]`, `[no ci]`, `[skip actions]` o `[actions skip]` en el mensaje del commit o sus trailers.
+- Dejar que GitHub Actions procese el `push` de `data/news.json` / espejos. Verificar posteriormente que el workflow `Sync AI Race Gazette Visual Queue` se active y que `image-queue.json` siga el número y versión de las noticias, sin que Newsroom toque assets ni la cola por sí mismo.
+- Si se verifica un retraso significativo o workflows que no arrancaron, registrar la incidencia y realizar un procedimiento de recuperación seguro; **no** afirmar que la publicación desatendida está completamente validada.
+- Mantener la **regla no-op**: cuando no hay noticia material ni corrección, cero commits. No crear commits vacíos para provocar una ejecución.
+- Los commits generados por el propio Visual Desk pueden conservar `[skip ci]` porque no modifican los JSON de noticias; eso evita reconstrucciones innecesarias.
+
+Esta regla prevalece sobre convenciones de otros proyectos y sobre cualquier sugerencia genérica de ahorrar CI en commits editoriales.
