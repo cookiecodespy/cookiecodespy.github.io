@@ -168,3 +168,19 @@ Si se reanuda el proyecto tras un fallo del chat, **NO** repetir las publicacion
 - Evidencia/source-date ledger: `source/docs/evidence-p05-google-deepmind-2026-10-08.md`. **ToolGrad** tenía paper ACL julio y paquete PyPI mayo; blog Google Sep10 es explicación retrospectiva, no prueba de un lanzamiento original en Sep10. WeatherNext 3 estaba fechado Sep3 y ya se encontraba en el archivo. Google AI Plans Sep9 queda candidato sujeto a deduplicar fechas de cada función. Sep12 ReWeight está fechado por arXiv y pendiente de evaluar materialidad.
 - Checklist operativo PR #8 `https://github.com/cookiecodespy/cookiecodespy.github.io/pull/8`, merge `46c136095a87debefd652a62569d322ec34c5ca1`, run `37811574500` success: 61 tareas, 23 done, 5 in progress, 32 queued/blocked, 1 cancelled; P05 permanece in_progress. Se reforzó `H-0814-GATE` para depender de `H-SEP12-13` y `H-GOOGLE-DEEPMIND-0814` además de fuentes.
 - **Siguiente pase:** resolver 12–13 con doble barrido de sector/emergentes; evaluar ReWeight e Iris con fechas originales, Google AI plans Sep9, finalizar Google/DeepMind 8–14 y segunda pasada inversa antes de abrir P06. No declarar la tarea horaria Newsroom end-to-end autónoma sin una ejecución desatendida de publicación real en main y pruebas de conflicto/rollback.
+
+
+## Checkpoint 9 octubre — Newsroom vuelve a publicar y cola visual reparada
+
+**Estado verificado 2026-10-09 ~12:57 America/Santiago:** `main` contiene **104 artículos y 104 RSS items**, 39 fechas 2026-09-01 hasta 2026-10-09. Registro público: 23 `partial`, 16 `pending`, **0 fechas `complete`** bajo criterio Backbone v1. El 12 Sep pasó a parcial con 1 noticia. Los dos JSON usan el mismo blob SHA `dd98020a2db453f00da64366e217d62057c74406` y hay 104 entradas de RSS.
+
+**P05:** PR #7 https://github.com/cookiecodespy/cookiecodespy.github.io/pull/7 integrada; contiene Reporter V2 AlphaGenome Atlas de Google DeepMind (8 Sep) y propuesta pública Dario Amodei/Anthropic de evaluadores externos (12 Sep). Head `ac78692e1e838bb354f7373429635da2b65fb9c1`, merge `ff2d3e0775cd8191362f54684df3fb9b052e918f`; PR CI `37811050392` **success**. AlphaGenome Atlas es recurso de predicción científica, nunca diagnóstico. El anuncio de Amodei no es una regulación aprobada ni implementación inmediata.
+
+**Newsroom autónomo:** varios commits directos a main desde tarea horaria entre Oct 8–9 (17+ noticias nuevas, 104 totales). Pero los commits recientes contenían `[skip ci]`, evitando que arrancara el workflow de Visual Desk. El registro visual llegó a quedarse en 97 entradas frente a 104; el registro histórico `source/research/coverage-audit.json` también quedó atrás (hasta Oct 8 mientras `history-coverage.json` cubre Oct 9). Esto confirma publicación real, **no** certificación end-to-end del pipeline completo.
+
+**Corrección aplicada en esta sesión:**
+- `source/docs/scheduled-task.md`: commit `ab6d2311e2ce0ed2cb50de7bb62ec23eca9d777c` prohíbe `[skip ci]` y variantes en commits editoriales, manteniendo cero commits en no-op. La Scheduled Task lee este documento en cada ejecución.
+- `.github/workflows/sync-ai-race-gazette-visual.yml`: commit `6d3f5ae5f701da960e58067b2c93b711305732f3` documenta la causa y dispara sync seguro mediante trigger de workflow.
+- **Recuperación comprobada:** commit automático `bfa6db296`, `visual: sync queue from latest Gazette stories [skip ci]`, sincronizó **104/104 entradas** y `generatedFromNewsUpdatedAt: 2026-10-09T14:18:34.000Z`.
+
+**Próximos gates:** confirmar próxima publicación normal del Newsroom con CI y auto-sync activos **sin `[skip ci]`**; revisar casos no-op, conflictos y rollback; solucionar divergencia entre ledger de investigación y calendario público o documentar explícitamente sus responsabilidades diferentes; seguir P05 con revisión por fuente/sector de Sep 12–14 y Google/DeepMind, posteriormente P06–P10. Los números cambian con el Newsroom; nunca usar este checkpoint como estado vivo sin releer GitHub.
