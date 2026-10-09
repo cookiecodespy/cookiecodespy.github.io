@@ -1,8 +1,404 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T22:23:59.555Z",
+  "updatedAt": "2026-10-09T03:24:17.265Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "claude-docs-slides-design-free-2026",
+      "eventKey": "anthropic-claude-docs-slides-design-ga-free-standalone-sunset-2026-10-08",
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "Anthropic",
+      "product": "Claude Docs / Claude Slides / Claude Design",
+      "title": "Claude Docs, Slides y Design salen de beta y llegan a Free; la web independiente de Design cerrará en diciembre",
+      "summary": "Anthropic retiró la etiqueta beta de Docs, Slides y Design y habilitó las tres herramientas en todos los planes de Claude, incluido Free. La versión independiente de Design cerrará el 14 de diciembre de 2026: sistemas de diseño pueden migrarse, pero chats, comentarios y enlaces públicos requieren atención.",
+      "tags": [
+        "Productos",
+        "Productividad",
+        "Disponibilidad",
+        "Diseño"
+      ],
+      "articleVersion": 2,
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial conceptual de un asistente de IA y documentos; no representa una interfaz real de Claude.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de una mesa de trabajo con tres hojas diferenciadas: documento, presentación y boceto de diseño; un reloj de calendario señala una transición de plataforma. Sin logotipos falsos, sin pantallas inventadas presentadas como reales, sin texto incrustado, estilo periódico antiguo.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Claude · Build live dashboards and animate explainers with Claude",
+        "url": "https://claude.com/resources/articles/dashboards-and-motion",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Claude Help Center · Migrate from standalone Claude Design to Claude",
+          "url": "https://support.claude.com/en/articles/17440474-migrate-from-standalone-claude-design-to-claude",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Claude · Pricing",
+          "url": "https://claude.com/pricing",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "Claude · Cowork and chat are now one Claude",
+          "url": "https://claude.com/resources/articles/cowork-is-now-claude",
+          "publishedAt": "2026-09-16"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026 Anthropic comunicó que Claude Docs, Claude Slides y Claude Design dejan de considerarse funciones beta y pasan a estar disponibles en todos los planes de Claude, incluido el gratuito. El cambio es de acceso y madurez comercial, no el estreno de tres productos completamente nuevos. Las herramientas se habían incorporado a las conversaciones de Claude en septiembre para producir documentos, presentaciones y diseños editables sin abandonar el contexto de trabajo. La novedad es que dejan de estar reservadas a los planes de pago.",
+        "La diferencia importa porque la producción de documentos deja de depender necesariamente de contratar Pro, Max o un plan empresarial. Un usuario gratuito puede crear artefactos y editarlos, sujeto a los límites generales de uso de su cuenta. Anthropic no anunció una cuota ilimitada de generación ni un precio individual por documento. La página oficial de precios identifica el plan Free con precio de cero dólares y enumera expresamente Design, Slides y Docs entre sus funciones; esto no significa que todas las demás herramientas de Claude hayan pasado a ser gratuitas.",
+        "Docs permite elaborar y modificar textos estructurados; Slides organiza ideas como presentaciones y Design construye piezas visuales dentro de Claude. En lugar de entregar únicamente un bloque de texto para copiar en otra aplicación, el asistente puede crear un artefacto que la persona revisa, mueve, corrige o comparte. Anthropic explica que el contenido vive en un enlace consultable también desde el móvil y que es posible continuar la edición conversando con Claude o manipulando directamente elementos del documento.",
+        "Entre las capacidades anunciadas están la edición conjunta con colegas, la exportación a PowerPoint y PDF conservando el formato visual y el envío de presentaciones a Google Slides como archivos editables. También se menciona la edición de documentos, presentaciones y diseños desde la aplicación móvil. Son funciones de producto declaradas por Anthropic; no equivalen a una garantía de que cada tipografía, animación, gráfico complejo o composición se exporte perfectamente en todos los casos. Conviene revisar los archivos resultantes antes de distribuirlos a clientes o directivos.",
+        "Anthropic señala que los artefactos empresariales admiten claves de cifrado administradas por el cliente, conocidas como CMEK, y que los administradores pueden decidir qué plantillas de artefactos utiliza su organización. El contenido puede compartirse fuera de un equipo o mediante enlaces cuando las políticas del administrador lo permitan. Para una empresa esto abre usos prácticos, pero también obliga a clasificar la información antes de convertir documentos internos en enlaces compartibles.",
+        "Existe una particularidad de despliegue: según el anuncio, Docs, Slides y Design se activan por defecto para clientes Enterprise el 15 de octubre, aunque un administrador puede habilitarlos antes. Dashboards y Motion, anunciados en la misma publicación, permanecen desactivados por defecto en Enterprise y requieren activación separada. No deben confundirse estos calendarios. Tampoco debe interpretarse la disponibilidad general de Docs como una habilitación automática de conectores, permisos de datos empresariales o acceso a todos los modelos de Claude.",
+        "El cambio operativo más delicado afecta a quienes usaban Claude Design en su sitio independiente. Anthropic confirmó que esa versión, accesible mediante claude.ai/design, cerrará el 14 de diciembre de 2026 y que la creación de diseños continuará integrada en Claude. La empresa explica que mantener dos versiones ralentizaba las correcciones y mejoras. Design ya podía utilizarse dentro de las conversaciones desde el 16 de septiembre, por lo que el cierre retira una superficie duplicada, no toda la capacidad de diseño.",
+        "El centro de ayuda establece que es posible migrar los sistemas de diseño desde la página de Artifacts usando la opción «Migrate team design systems». Una migración puede abarcar todos los sistemas de una organización, conserva propietarios y permisos de compartición y deja intactos los originales mientras el sitio antiguo siga operativo. Sin embargo, los sistemas vacíos y algunos creados a partir de plantillas iniciales no migran automáticamente. Las organizaciones deben comprobar el resultado y corregir los elementos que aparezcan como incompatibles, demasiado grandes o ilegibles.",
+        "La guía de migración distingue los sistemas de diseño de los proyectos, las conversaciones y los comentarios. Los proyectos continúan funcionando en la versión independiente hasta el cierre y, por ahora, no necesitan una acción de migración general; Anthropic promete instrucciones posteriores. En cambio, los chats con Claude y los comentarios de proyectos o sistemas de diseño no se trasladan y dejarán de estar disponibles cuando cierre la versión independiente. Los enlaces públicos a proyectos alojados allí también dejarán de funcionar.",
+        "Para preservar un proyecto, el centro de ayuda describe una exportación individual desde Share, eligiendo Project HTML y Project archive, que entrega un ZIP con los archivos del proyecto. No existe una exportación masiva equivalente en esa guía. Los responsables de equipos deberían identificar enlaces externos incrustados en sitios, portafolios o documentación, guardar conversaciones relevantes y verificar quién administra cada sistema de diseño. Las organizaciones con retención cero que no puedan activar Artifacts necesitan una estrategia de exportación antes del cierre.",
+        "Análisis Gazette: la competencia entre asistentes ya no se mide solo por respuestas textuales o resultados de benchmarks de modelos. También se disputa el lugar donde se crea, revisa y entrega el trabajo. Permitir documentos, presentaciones y diseños en el plan gratuito reduce la fricción de prueba para estudiantes, freelancers y equipos pequeños, aunque los límites de uso y la calidad de exportación seguirán determinando la utilidad real. El anuncio no aporta un estudio independiente que compare la calidad de estos artefactos con suites ofimáticas establecidas.",
+        "Anthropic afirma que desde el lanzamiento de estas herramientas se han creado más de 45 millones de documentos, presentaciones y diseños en Claude. Es una cifra comunicada por el proveedor, no una auditoría pública de usuarios únicos, trabajos terminados o satisfacción. Para desarrolladores y equipos de producto, el aspecto interesante es la convergencia entre chat, herramientas conectadas y archivos editables. Para usuarios, la prioridad es comprobar que el contenido exportado conserva su integridad y que los permisos de compartición corresponden al público previsto.",
+        "Lo que habrá que seguir es la estabilidad de la edición colaborativa, los límites de uso en Free, el cumplimiento del encendido empresarial previsto para el 15 de octubre y la publicación de instrucciones definitivas para proyectos de Design antes del 14 de diciembre. Una herramienta que crea documentos no sustituye revisión de cifras, citas, diseño ni privacidad. El cambio verificable hoy es la salida de beta, la ampliación del acceso y un calendario de retirada con consecuencias concretas para el contenido legado."
+      ],
+      "keyPoints": [
+        "Docs, Slides y Design ya no son beta y figuran en Free, Pro, Max, Team y Enterprise.",
+        "La versión independiente de Claude Design cerrará el 14 de diciembre de 2026.",
+        "Chats, comentarios y enlaces públicos del Design independiente no migran automáticamente."
+      ],
+      "quickTakeaways": [
+        "Acceso ampliado: Docs, Slides y Design llegan a todos los planes, incluido Free.",
+        "La creación y edición de documentos, presentaciones y diseños se integra en Claude.",
+        "El cierre de claude.ai/design está previsto para el 14 de diciembre de 2026.",
+        "Conviene migrar sistemas de diseño y guardar chats, comentarios y enlaces relevantes."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026 Anthropic comunicó que Claude Docs, Claude Slides y Claude Design dejan de considerarse funciones beta y pasan a estar disponibles en todos los planes de Claude, incluido el gratuito. El cambio es de acceso y madurez comercial, no el estreno de tres productos completamente nuevos. Las herramientas se habían incorporado a las conversaciones de Claude en septiembre para producir documentos, presentaciones y diseños editables sin abandonar el contexto de trabajo. La novedad es que dejan de estar reservadas a los planes de pago.",
+            "La diferencia importa porque la producción de documentos deja de depender necesariamente de contratar Pro, Max o un plan empresarial. Un usuario gratuito puede crear artefactos y editarlos, sujeto a los límites generales de uso de su cuenta. Anthropic no anunció una cuota ilimitada de generación ni un precio individual por documento. La página oficial de precios identifica el plan Free con precio de cero dólares y enumera expresamente Design, Slides y Docs entre sus funciones; esto no significa que todas las demás herramientas de Claude hayan pasado a ser gratuitas."
+          ]
+        },
+        {
+          "heading": "Cómo funcionan Docs, Slides y Design",
+          "kind": "technical",
+          "paragraphs": [
+            "Docs permite elaborar y modificar textos estructurados; Slides organiza ideas como presentaciones y Design construye piezas visuales dentro de Claude. En lugar de entregar únicamente un bloque de texto para copiar en otra aplicación, el asistente puede crear un artefacto que la persona revisa, mueve, corrige o comparte. Anthropic explica que el contenido vive en un enlace consultable también desde el móvil y que es posible continuar la edición conversando con Claude o manipulando directamente elementos del documento.",
+            "Entre las capacidades anunciadas están la edición conjunta con colegas, la exportación a PowerPoint y PDF conservando el formato visual y el envío de presentaciones a Google Slides como archivos editables. También se menciona la edición de documentos, presentaciones y diseños desde la aplicación móvil. Son funciones de producto declaradas por Anthropic; no equivalen a una garantía de que cada tipografía, animación, gráfico complejo o composición se exporte perfectamente en todos los casos. Conviene revisar los archivos resultantes antes de distribuirlos a clientes o directivos."
+          ]
+        },
+        {
+          "heading": "Seguridad y controles de organizaciones",
+          "kind": "context",
+          "paragraphs": [
+            "Anthropic señala que los artefactos empresariales admiten claves de cifrado administradas por el cliente, conocidas como CMEK, y que los administradores pueden decidir qué plantillas de artefactos utiliza su organización. El contenido puede compartirse fuera de un equipo o mediante enlaces cuando las políticas del administrador lo permitan. Para una empresa esto abre usos prácticos, pero también obliga a clasificar la información antes de convertir documentos internos en enlaces compartibles.",
+            "Existe una particularidad de despliegue: según el anuncio, Docs, Slides y Design se activan por defecto para clientes Enterprise el 15 de octubre, aunque un administrador puede habilitarlos antes. Dashboards y Motion, anunciados en la misma publicación, permanecen desactivados por defecto en Enterprise y requieren activación separada. No deben confundirse estos calendarios. Tampoco debe interpretarse la disponibilidad general de Docs como una habilitación automática de conectores, permisos de datos empresariales o acceso a todos los modelos de Claude."
+          ]
+        },
+        {
+          "heading": "El cierre de Claude Design independiente",
+          "kind": "report",
+          "paragraphs": [
+            "El cambio operativo más delicado afecta a quienes usaban Claude Design en su sitio independiente. Anthropic confirmó que esa versión, accesible mediante claude.ai/design, cerrará el 14 de diciembre de 2026 y que la creación de diseños continuará integrada en Claude. La empresa explica que mantener dos versiones ralentizaba las correcciones y mejoras. Design ya podía utilizarse dentro de las conversaciones desde el 16 de septiembre, por lo que el cierre retira una superficie duplicada, no toda la capacidad de diseño.",
+            "El centro de ayuda establece que es posible migrar los sistemas de diseño desde la página de Artifacts usando la opción «Migrate team design systems». Una migración puede abarcar todos los sistemas de una organización, conserva propietarios y permisos de compartición y deja intactos los originales mientras el sitio antiguo siga operativo. Sin embargo, los sistemas vacíos y algunos creados a partir de plantillas iniciales no migran automáticamente. Las organizaciones deben comprobar el resultado y corregir los elementos que aparezcan como incompatibles, demasiado grandes o ilegibles."
+          ]
+        },
+        {
+          "heading": "Qué puede perderse y qué hacer antes de diciembre",
+          "kind": "practical",
+          "paragraphs": [
+            "La guía de migración distingue los sistemas de diseño de los proyectos, las conversaciones y los comentarios. Los proyectos continúan funcionando en la versión independiente hasta el cierre y, por ahora, no necesitan una acción de migración general; Anthropic promete instrucciones posteriores. En cambio, los chats con Claude y los comentarios de proyectos o sistemas de diseño no se trasladan y dejarán de estar disponibles cuando cierre la versión independiente. Los enlaces públicos a proyectos alojados allí también dejarán de funcionar.",
+            "Para preservar un proyecto, el centro de ayuda describe una exportación individual desde Share, eligiendo Project HTML y Project archive, que entrega un ZIP con los archivos del proyecto. No existe una exportación masiva equivalente en esa guía. Los responsables de equipos deberían identificar enlaces externos incrustados en sitios, portafolios o documentación, guardar conversaciones relevantes y verificar quién administra cada sistema de diseño. Las organizaciones con retención cero que no puedan activar Artifacts necesitan una estrategia de exportación antes del cierre."
+          ]
+        },
+        {
+          "heading": "Competencia, impacto y preguntas abiertas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la competencia entre asistentes ya no se mide solo por respuestas textuales o resultados de benchmarks de modelos. También se disputa el lugar donde se crea, revisa y entrega el trabajo. Permitir documentos, presentaciones y diseños en el plan gratuito reduce la fricción de prueba para estudiantes, freelancers y equipos pequeños, aunque los límites de uso y la calidad de exportación seguirán determinando la utilidad real. El anuncio no aporta un estudio independiente que compare la calidad de estos artefactos con suites ofimáticas establecidas.",
+            "Anthropic afirma que desde el lanzamiento de estas herramientas se han creado más de 45 millones de documentos, presentaciones y diseños en Claude. Es una cifra comunicada por el proveedor, no una auditoría pública de usuarios únicos, trabajos terminados o satisfacción. Para desarrolladores y equipos de producto, el aspecto interesante es la convergencia entre chat, herramientas conectadas y archivos editables. Para usuarios, la prioridad es comprobar que el contenido exportado conserva su integridad y que los permisos de compartición corresponden al público previsto.",
+            "Lo que habrá que seguir es la estabilidad de la edición colaborativa, los límites de uso en Free, el cumplimiento del encendido empresarial previsto para el 15 de octubre y la publicación de instrucciones definitivas para proyectos de Design antes del 14 de diciembre. Una herramienta que crea documentos no sustituye revisión de cifras, citas, diseño ni privacidad. El cambio verificable hoy es la salida de beta, la ampliación del acceso y un calendario de retirada con consecuencias concretas para el contenido legado."
+          ]
+        }
+      ],
+      "executiveSummary": "Anthropic convirtió Docs, Slides y Design en herramientas de disponibilidad general dentro de Claude y extendió su acceso al plan Free el 8 de octubre. La transición incluye un cambio operativo importante: la versión independiente de Design cerrará el 14 de diciembre, y ciertos datos, comentarios y enlaces no se conservarán automáticamente. No se anunciaron cuotas ilimitadas ni tarifas separadas por artefacto.",
+      "finalSummary": "La novedad es doble: acceso gratuito a tres herramientas de productividad y retirada programada de un sitio heredado. Los usuarios pueden probarlas hoy, pero quienes tienen trabajo en Design independiente deben preparar la migración y las exportaciones antes del 14 de diciembre.",
+      "analysis": "Análisis Gazette: la batalla por el trabajo asistido por IA se desplaza desde el chat hacia documentos y diseños realmente editables; la migración y la fidelidad de exportación serán tan importantes como la generación inicial.",
+      "watch": "Límites de uso Free, calidad de exportación, activación Enterprise el 15 de octubre, guía final de migración de proyectos y cierre de Design independiente el 14 de diciembre.",
+      "technicalDetails": [
+        {
+          "label": "Estado",
+          "value": "Disponibilidad general; sin etiqueta beta desde el 8 de octubre de 2026"
+        },
+        {
+          "label": "Exportación",
+          "value": "PowerPoint, PDF y Google Slides editable, según Anthropic"
+        },
+        {
+          "label": "Seguridad empresarial",
+          "value": "CMEK y controles administrativos de plantillas, según Anthropic"
+        },
+        {
+          "label": "Cierre",
+          "value": "Claude Design independiente: 14 de diciembre de 2026"
+        }
+      ],
+      "availability": {
+        "status": "Disponible; salida de beta",
+        "platforms": [
+          "Claude web",
+          "Claude móvil"
+        ],
+        "regions": [],
+        "requirements": [
+          "Cuenta Claude; uso sujeto a límites del plan",
+          "Permisos de administrador para organizaciones cuando correspondan"
+        ],
+        "notes": [
+          "Free, Pro, Max, Team y Enterprise",
+          "En Enterprise la activación por defecto está prevista para el 15 de octubre; se puede habilitar antes"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Plan Free",
+          "value": "US$0",
+          "note": "Docs, Slides y Design incluidos, con límites generales de uso."
+        },
+        {
+          "label": "Tarifa por artefacto",
+          "value": "No anunciada",
+          "note": "No confundir con suscripciones ni límites de cuenta."
+        }
+      ],
+      "limitations": [
+        "No hay cuota ilimitada garantizada para Free.",
+        "La fidelidad de exportación no tiene una auditoría independiente publicada.",
+        "Chats, comentarios y enlaces públicos del Design independiente no migran automáticamente.",
+        "La guía de migración de proyectos completos sigue pendiente de ampliación."
+      ],
+      "practicalAdvice": [
+        "Probar primero con un documento sin datos sensibles y verificar la exportación.",
+        "Inventariar proyectos y enlaces del Design independiente antes del 14 de diciembre.",
+        "Migrar sistemas de diseño desde Artifacts y guardar chats y comentarios necesarios.",
+        "En empresas, comprobar permisos, configuración de Artifacts y políticas de compartición."
+      ],
+      "usefulFacts": [
+        "Anthropic declara más de 45 millones de documentos, presentaciones y diseños creados; es una cifra del proveedor.",
+        "La guía de soporte permite exportar proyectos individualmente como archivos ZIP.",
+        "Los sistemas de diseño migrados conservan propietario y permisos de compartición, según la documentación."
+      ]
+    },
+    {
+      "id": "lightonocr-3-open-document-understanding-2026",
+      "eventKey": "lighton-lightonocr-3-open-weights-grounding-ocr-2026-10-08",
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "LightOn",
+      "product": "LightOnOCR-3",
+      "title": "LightOn libera LightOnOCR-3: tres modelos abiertos que leen documentos, ubican bloques y extraen datos de gráficos",
+      "summary": "LightOn publicó LightOnOCR-3 con variantes 0.8B, 1B y 4B bajo Apache 2.0. Además de transcribir, puede devolver coordenadas de bloques, descripciones de imágenes y tablas extraídas de gráficos. Los benchmarks y cifras de velocidad provienen de las evaluaciones del propio equipo.",
+      "tags": [
+        "Open Source",
+        "Modelos",
+        "Documentos",
+        "Desarrolladores"
+      ],
+      "articleVersion": 2,
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de documentos, tablas y gráficos examinados por una máquina; no es captura del modelo.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de un autómata óptico que examina una hoja antigua y separa visualmente títulos, tablas, fórmulas y gráficos en marcos geométricos; evitar cifras inventadas, logos falsos o interfaz presentada como real; papel envejecido y tinta de prensa.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "LightOn · LightOnOCR-3: High-Performance OCR and Layout Extraction in One Model",
+        "url": "https://huggingface.co/blog/lightonai/lightonocr-3",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "LightOn · LightOnOCR-3 research",
+          "url": "https://www.lighton.ai/research/lightonocr-3",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "LightOnOCR · código y reproducción de benchmarks",
+          "url": "https://github.com/lightonai/LightOnOCR",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Hugging Face · LightOnOCR-3-4B",
+          "url": "https://huggingface.co/lightonai/LightOnOCR-3-4B",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "LightOn anunció el 8 de octubre de 2026 LightOnOCR-3, una familia de modelos de reconocimiento de documentos que no se limita a convertir píxeles en texto. El objetivo es devolver también la estructura de la página: dónde comienza cada título, tabla, fórmula, imagen o bloque de texto, y qué datos pueden extraerse de los gráficos. Los pesos se publicaron en Hugging Face bajo licencia Apache 2.0 y el equipo abrió un repositorio con cliente, visor, ejemplos y scripts de evaluación.",
+        "La novedad es material para aplicaciones que procesan contratos, facturas, artículos científicos, archivos escaneados y documentos con varias columnas. Un OCR tradicional puede devolver una secuencia de palabras correcta y aun así perder la relación entre un gráfico y su explicación o entre una celda y su encabezado. LightOn intenta reducir la cantidad de detectores, parsers y reglas que normalmente se encadenan para reconstruir esa estructura. No es una garantía de extracción perfecta en todos los formatos.",
+        "La familia incluye checkpoints llamados LightOnOCR-3-0.8B, LightOnOCR-3-1B y LightOnOCR-3-4B. Según el equipo, la variante 1B conserva la arquitectura anterior, mientras que 0.8B y 4B emplean una arquitectura de visión y lenguaje basada en Qwen3.5. Los nombres de tamaño identifican variantes de producto; la cantidad exacta de parámetros que muestran las fichas de los checkpoints puede diferir del número redondeado del nombre. Por eso no corresponde inferir memoria necesaria o coste real solo a partir del sufijo.",
+        "El modo de transcripción funciona enviando la imagen de la página sin texto adicional, preservando la interfaz básica de generaciones anteriores. Al enviar la palabra «grounding», el modelo produce bloques etiquetados con coordenadas de caja normalizadas de cero a mil, más la transcripción. Las imágenes pueden recibir descripciones cortas y los gráficos convertirse en tablas de datos. La salida conserva texto y estructura, pero un valor leído de una gráfica debe contrastarse con el original cuando se utilice para decisiones numéricas.",
+        "En las tablas publicadas por LightOn, la variante denominada 4B alcanza 86,3 puntos globales en olmOCR-Bench. Infinity Parser Pro figura con 87,6, mientras que Chandra 2 obtiene 85,8. La comparación muestra un resultado competitivo en la metodología usada por el proveedor, no un liderazgo absoluto. En ParseBench, que incluye tareas de interpretación estructural, LightOnOCR-3-4B aparece con 75,1 en la media de cinco categorías, frente a 74,3 de Infinity Parser Pro. En fr-bench-pdf2md obtiene 74,1.",
+        "Los resultados varían según la clase de documento. LightOn destaca que Infinity Parser Pro conserva ventajas en algunas categorías de escaneos antiguos y encabezados; Chandra 2 sobresale en ciertas tareas gráficas y tablas largas. Las cifras fueron producidas o reunidas por el equipo que lanza el modelo, con scripts publicados para intentar reproducirlas. Gazette no las presenta como una certificación independiente ni como una clasificación universal de todos los OCR disponibles. La normalización del formato de salida también puede alterar puntuaciones sin cambiar el significado extraído.",
+        "LightOn evaluó velocidad sobre 512 páginas del benchmark olmOCR, usando una GPU NVIDIA H100 por modelo y vLLM 0.30.0 con parámetros de servidor comparables. Para las variantes 0.8B y 4B, reducir la resolución de entrada a 1.540 píxeles en el lado largo elevó el rendimiento máximo reportado en 44 % y 66 %, respectivamente, a costa de cambiar el presupuesto visual. El equipo informa 4,78 páginas por segundo para 0.8B y 3,36 para 4B bajo ese ajuste.",
+        "En su sitio corporativo LightOn afirma que el procesamiento autohospedado podría costar menos de un centavo por mil páginas en determinadas condiciones de hardware, ocupación y carga. Es una estimación del proveedor, no una tarifa contractual ni un coste reproducible automáticamente para cualquier usuario. Una implementación real debe incluir memoria de GPU, preparación de páginas, almacenamiento, operaciones, tiempos ociosos y revisión humana de errores. El software abierto elimina una licencia por uso de esos pesos, pero no elimina el coste de infraestructura.",
+        "El repositorio oficial incluye un cliente y una herramienta de línea de comandos, un visor de resultados y código para repetir evaluaciones. La documentación muestra cómo servir un checkpoint mediante vLLM y luego procesar un PDF con el modo de grounding. Los resultados pueden guardarse como Markdown y bloques estructurados por página. Para un equipo que construye RAG o búsqueda documental, la posición de cada bloque facilita enlazar una respuesta con el lugar del documento donde se originó.",
+        "Hay requisitos operativos que no conviene ocultar. El README fija versiones concretas de vLLM y Transformers y advierte de incompatibilidades entre versiones próximas. El cliente recomienda una imagen por solicitud y permite concurrencia para procesar varias páginas. El tamaño de renderizado recomendado cambia según el checkpoint, de modo que copiar una configuración de la variante 1B a la 4B puede modificar precisión, latencia y consumo. La licencia Apache 2.0 cubre los modelos y el proyecto publicados, mientras que las dependencias y materiales externos mantienen sus licencias propias.",
+        "El equipo describe una combinación de supervisión de transcripción, datos sintéticos, detección de regiones y aprendizaje por refuerzo con recompensas verificables. Para construir anotaciones de grounding combinó señales de varios sistemas de reconocimiento y detección, filtró ejemplos dudosos y añadió verificaciones sobre tablas y posiciones. La documentación menciona páginas de entrenamiento revisadas manualmente y reglas para rechazar gráficos cuyos valores parecen repetidos o fabricados. Es información metodológica aportada por los autores, no una auditoría externa del conjunto de datos.",
+        "Persisten límites importantes: documentos dañados, escritura manuscrita difícil, ejes de gráficos complejos y tablas con celdas fusionadas pueden inducir errores. El hecho de que un modelo entregue coordenadas y una tabla no prueba que ambas sean correctas. Además, los benchmarks públicos no cubren todos los idiomas, resoluciones, normativas de privacidad ni distribuciones documentales empresariales. Un modelo autohospedado puede ayudar a mantener archivos dentro de una red privada, pero eso depende de cómo se despliegue y de las políticas del operador.",
+        "Análisis Gazette: LightOnOCR-3 ilustra un movimiento relevante de la carrera de IA fuera de los grandes chatbots. La competencia por modelos pequeños especializados puede abaratar la preparación de datos que alimentan agentes y buscadores internos. En lugar de enviar páginas a varios servicios, una organización puede evaluar un solo modelo abierto que produce texto y referencias espaciales. El valor práctico se medirá en tasa de errores por documento, capacidad de corrección, rendimiento bajo carga y mantenimiento, no solo en una tabla de benchmark.",
+        "Para probarlo de manera responsable, conviene reunir un conjunto representativo de documentos propios, comparar salidas con una referencia humana y medir por separado texto, tablas, gráficos, fórmulas y posiciones. Después debe registrarse cuánto cuesta procesar mil páginas con el hardware realmente disponible y cuántos casos requieren revisión manual. Habrá que seguir reproducciones independientes, compatibilidad con versiones nuevas de vLLM, resultados multilingües y la calidad de extracción en escenarios donde una cifra incorrecta puede tener consecuencias financieras o legales."
+      ],
+      "keyPoints": [
+        "Tres checkpoints abiertos bajo Apache 2.0: 0.8B, 1B y 4B nominales.",
+        "El modo grounding entrega cajas de regiones, texto, descripciones y datos de gráficos.",
+        "LightOn reporta 86,3 en olmOCR-Bench y 75,1 en ParseBench para la variante 4B; son evaluaciones del proveedor."
+      ],
+      "quickTakeaways": [
+        "LightOnOCR-3 combina transcripción y estructura documental en una familia de pesos abiertos.",
+        "Los tres modelos están disponibles para descarga; el modo grounding usa la palabra clave «grounding».",
+        "Las puntuaciones de rendimiento proceden de evaluaciones publicadas por LightOn, con código para reproducción.",
+        "El coste operativo depende de GPU, resolución, concurrencia y calidad exigida; no hay servicio gratuito ilimitado prometido."
+      ],
+      "sections": [
+        {
+          "heading": "Un lanzamiento abierto para documentos complejos",
+          "kind": "report",
+          "paragraphs": [
+            "LightOn anunció el 8 de octubre de 2026 LightOnOCR-3, una familia de modelos de reconocimiento de documentos que no se limita a convertir píxeles en texto. El objetivo es devolver también la estructura de la página: dónde comienza cada título, tabla, fórmula, imagen o bloque de texto, y qué datos pueden extraerse de los gráficos. Los pesos se publicaron en Hugging Face bajo licencia Apache 2.0 y el equipo abrió un repositorio con cliente, visor, ejemplos y scripts de evaluación.",
+            "La novedad es material para aplicaciones que procesan contratos, facturas, artículos científicos, archivos escaneados y documentos con varias columnas. Un OCR tradicional puede devolver una secuencia de palabras correcta y aun así perder la relación entre un gráfico y su explicación o entre una celda y su encabezado. LightOn intenta reducir la cantidad de detectores, parsers y reglas que normalmente se encadenan para reconstruir esa estructura. No es una garantía de extracción perfecta en todos los formatos."
+          ]
+        },
+        {
+          "heading": "Tres variantes y dos modos de uso",
+          "kind": "technical",
+          "paragraphs": [
+            "La familia incluye checkpoints llamados LightOnOCR-3-0.8B, LightOnOCR-3-1B y LightOnOCR-3-4B. Según el equipo, la variante 1B conserva la arquitectura anterior, mientras que 0.8B y 4B emplean una arquitectura de visión y lenguaje basada en Qwen3.5. Los nombres de tamaño identifican variantes de producto; la cantidad exacta de parámetros que muestran las fichas de los checkpoints puede diferir del número redondeado del nombre. Por eso no corresponde inferir memoria necesaria o coste real solo a partir del sufijo.",
+            "El modo de transcripción funciona enviando la imagen de la página sin texto adicional, preservando la interfaz básica de generaciones anteriores. Al enviar la palabra «grounding», el modelo produce bloques etiquetados con coordenadas de caja normalizadas de cero a mil, más la transcripción. Las imágenes pueden recibir descripciones cortas y los gráficos convertirse en tablas de datos. La salida conserva texto y estructura, pero un valor leído de una gráfica debe contrastarse con el original cuando se utilice para decisiones numéricas."
+          ]
+        },
+        {
+          "heading": "Evaluaciones: qué dicen realmente las cifras",
+          "kind": "report",
+          "paragraphs": [
+            "En las tablas publicadas por LightOn, la variante denominada 4B alcanza 86,3 puntos globales en olmOCR-Bench. Infinity Parser Pro figura con 87,6, mientras que Chandra 2 obtiene 85,8. La comparación muestra un resultado competitivo en la metodología usada por el proveedor, no un liderazgo absoluto. En ParseBench, que incluye tareas de interpretación estructural, LightOnOCR-3-4B aparece con 75,1 en la media de cinco categorías, frente a 74,3 de Infinity Parser Pro. En fr-bench-pdf2md obtiene 74,1.",
+            "Los resultados varían según la clase de documento. LightOn destaca que Infinity Parser Pro conserva ventajas en algunas categorías de escaneos antiguos y encabezados; Chandra 2 sobresale en ciertas tareas gráficas y tablas largas. Las cifras fueron producidas o reunidas por el equipo que lanza el modelo, con scripts publicados para intentar reproducirlas. Gazette no las presenta como una certificación independiente ni como una clasificación universal de todos los OCR disponibles. La normalización del formato de salida también puede alterar puntuaciones sin cambiar el significado extraído."
+          ]
+        },
+        {
+          "heading": "Rendimiento, coste y condiciones de medición",
+          "kind": "technical",
+          "paragraphs": [
+            "LightOn evaluó velocidad sobre 512 páginas del benchmark olmOCR, usando una GPU NVIDIA H100 por modelo y vLLM 0.30.0 con parámetros de servidor comparables. Para las variantes 0.8B y 4B, reducir la resolución de entrada a 1.540 píxeles en el lado largo elevó el rendimiento máximo reportado en 44 % y 66 %, respectivamente, a costa de cambiar el presupuesto visual. El equipo informa 4,78 páginas por segundo para 0.8B y 3,36 para 4B bajo ese ajuste.",
+            "En su sitio corporativo LightOn afirma que el procesamiento autohospedado podría costar menos de un centavo por mil páginas en determinadas condiciones de hardware, ocupación y carga. Es una estimación del proveedor, no una tarifa contractual ni un coste reproducible automáticamente para cualquier usuario. Una implementación real debe incluir memoria de GPU, preparación de páginas, almacenamiento, operaciones, tiempos ociosos y revisión humana de errores. El software abierto elimina una licencia por uso de esos pesos, pero no elimina el coste de infraestructura."
+          ]
+        },
+        {
+          "heading": "Código disponible y detalles para desarrolladores",
+          "kind": "practical",
+          "paragraphs": [
+            "El repositorio oficial incluye un cliente y una herramienta de línea de comandos, un visor de resultados y código para repetir evaluaciones. La documentación muestra cómo servir un checkpoint mediante vLLM y luego procesar un PDF con el modo de grounding. Los resultados pueden guardarse como Markdown y bloques estructurados por página. Para un equipo que construye RAG o búsqueda documental, la posición de cada bloque facilita enlazar una respuesta con el lugar del documento donde se originó.",
+            "Hay requisitos operativos que no conviene ocultar. El README fija versiones concretas de vLLM y Transformers y advierte de incompatibilidades entre versiones próximas. El cliente recomienda una imagen por solicitud y permite concurrencia para procesar varias páginas. El tamaño de renderizado recomendado cambia según el checkpoint, de modo que copiar una configuración de la variante 1B a la 4B puede modificar precisión, latencia y consumo. La licencia Apache 2.0 cubre los modelos y el proyecto publicados, mientras que las dependencias y materiales externos mantienen sus licencias propias."
+          ]
+        },
+        {
+          "heading": "Cómo se entrenó y dónde están los límites",
+          "kind": "context",
+          "paragraphs": [
+            "El equipo describe una combinación de supervisión de transcripción, datos sintéticos, detección de regiones y aprendizaje por refuerzo con recompensas verificables. Para construir anotaciones de grounding combinó señales de varios sistemas de reconocimiento y detección, filtró ejemplos dudosos y añadió verificaciones sobre tablas y posiciones. La documentación menciona páginas de entrenamiento revisadas manualmente y reglas para rechazar gráficos cuyos valores parecen repetidos o fabricados. Es información metodológica aportada por los autores, no una auditoría externa del conjunto de datos.",
+            "Persisten límites importantes: documentos dañados, escritura manuscrita difícil, ejes de gráficos complejos y tablas con celdas fusionadas pueden inducir errores. El hecho de que un modelo entregue coordenadas y una tabla no prueba que ambas sean correctas. Además, los benchmarks públicos no cubren todos los idiomas, resoluciones, normativas de privacidad ni distribuciones documentales empresariales. Un modelo autohospedado puede ayudar a mantener archivos dentro de una red privada, pero eso depende de cómo se despliegue y de las políticas del operador."
+          ]
+        },
+        {
+          "heading": "Impacto competitivo y lectura Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: LightOnOCR-3 ilustra un movimiento relevante de la carrera de IA fuera de los grandes chatbots. La competencia por modelos pequeños especializados puede abaratar la preparación de datos que alimentan agentes y buscadores internos. En lugar de enviar páginas a varios servicios, una organización puede evaluar un solo modelo abierto que produce texto y referencias espaciales. El valor práctico se medirá en tasa de errores por documento, capacidad de corrección, rendimiento bajo carga y mantenimiento, no solo en una tabla de benchmark.",
+            "Para probarlo de manera responsable, conviene reunir un conjunto representativo de documentos propios, comparar salidas con una referencia humana y medir por separado texto, tablas, gráficos, fórmulas y posiciones. Después debe registrarse cuánto cuesta procesar mil páginas con el hardware realmente disponible y cuántos casos requieren revisión manual. Habrá que seguir reproducciones independientes, compatibilidad con versiones nuevas de vLLM, resultados multilingües y la calidad de extracción en escenarios donde una cifra incorrecta puede tener consecuencias financieras o legales."
+          ]
+        }
+      ],
+      "executiveSummary": "LightOn publicó el 8 de octubre LightOnOCR-3, una familia de tres modelos abiertos que amplía el OCR hacia comprensión de diseño de página, localización de bloques y extracción de gráficos. Los checkpoints y el código están disponibles. Los resultados de benchmarks y velocidad son cifras reportadas por el equipo y deben comprobarse en documentos reales antes de adoptar la tecnología en producción.",
+      "finalSummary": "La aportación principal no es solo leer texto más rápido, sino entregar una representación estructurada y rastreable de páginas complejas. Su apertura facilita pruebas independientes, pero los resultados y costes reportados todavía requieren validación en cada entorno.",
+      "analysis": "Análisis Gazette: los modelos documentales especializados y abiertos pueden convertirse en una capa fundamental para agentes empresariales, siempre que sus errores se midan y sus referencias al documento original sean comprobables.",
+      "watch": "Reproducciones independientes de benchmarks, soporte de inferencia, extracción multilingüe, calidad en documentos difíciles y costes reales de operación.",
+      "technicalDetails": [
+        {
+          "label": "Checkpoints",
+          "value": "LightOnOCR-3-0.8B, 1B y 4B (nombres nominales)"
+        },
+        {
+          "label": "Licencia",
+          "value": "Apache 2.0 para pesos y proyecto publicados"
+        },
+        {
+          "label": "Salida",
+          "value": "OCR o grounding con cajas normalizadas 0–1000"
+        },
+        {
+          "label": "olmOCR-Bench",
+          "value": "86,3 para 4B; evaluación del equipo LightOn"
+        },
+        {
+          "label": "ParseBench",
+          "value": "75,1 para 4B; evaluación del equipo LightOn"
+        }
+      ],
+      "availability": {
+        "status": "Pesos y código públicos",
+        "platforms": [
+          "Hugging Face",
+          "GitHub",
+          "Despliegue local mediante vLLM"
+        ],
+        "regions": [
+          "Descarga pública; condiciones de acceso sujetas a la plataforma"
+        ],
+        "requirements": [
+          "GPU y software compatibles para inferencia local",
+          "Revisar versiones fijadas de vLLM/Transformers"
+        ],
+        "notes": [
+          "No se anunció una API comercial universal con tarifa por página.",
+          "Los modelos pueden usarse para investigación y comercio bajo Apache 2.0, sujeto a licencias de dependencias."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Licencia de modelos",
+          "value": "Apache 2.0; pesos disponibles sin tarifa de licencia publicada"
+        },
+        {
+          "label": "Coste de cómputo",
+          "value": "Variable",
+          "note": "La estimación de menos de US$0,01 por mil páginas es una afirmación condicionada de LightOn, no un precio garantizado."
+        }
+      ],
+      "limitations": [
+        "Los benchmarks son mediciones reportadas por el proveedor; no se comprobó reproducción independiente.",
+        "Los nombres 0.8B, 1B y 4B no sustituyen la verificación del tamaño real de cada checkpoint.",
+        "Las tablas y datos inferidos de gráficos pueden contener errores.",
+        "Velocidad y coste dependen de resolución, GPU, concurrencia y preprocesamiento."
+      ],
+      "practicalAdvice": [
+        "Probar con documentos propios y medir errores por tipo de elemento, no solo por página.",
+        "Comparar el modo OCR simple con grounding según las necesidades de trazabilidad.",
+        "Revisar las versiones de vLLM y Transformers fijadas en el repositorio.",
+        "Validar numéricamente las tablas extraídas de gráficos antes de tomar decisiones."
+      ],
+      "usefulFacts": [
+        "Las cajas espaciales usan coordenadas normalizadas de cero a mil.",
+        "El README incluye cliente, CLI, visor y scripts de reproducción de benchmarks.",
+        "En la evaluación de velocidad se usaron 512 páginas y una H100 por modelo."
+      ]
+    },
     {
       "id": "odyssey-3-world-model-2026",
       "eventKey": "odyssey-3-foundation-world-model-physical-agents-2026-10-08",
@@ -10601,7 +10997,7 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 15
+      "verifiedArticles": 17
     }
   ]
 }
