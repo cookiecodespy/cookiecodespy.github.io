@@ -1,8 +1,348 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T14:18:34.000Z",
+  "updatedAt": "2026-10-09T17:20:12.012Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "china-new-productive-forces-ai-plus-19-measures-2026",
+      "eventKey": "china-state-council-19-measures-new-quality-productive-forces-ai-plus-2026-10-09",
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "Consejo de Estado de China",
+      "product": "Directrices de nuevas fuerzas productivas y AI Plus",
+      "title": "China publica 19 medidas para impulsar la IA industrial y contener riesgos y burbujas",
+      "summary": "El Comité Central y el Consejo de Estado de China publicaron 19 medidas en cinco ámbitos. La iniciativa incluye AI Plus, infraestructura, bases piloto industriales y supervisión de riesgos, pero aún no fija un presupuesto único ni calendarios de despliegue.",
+      "tags": [
+        "Política industrial",
+        "China",
+        "IA industrial",
+        "Regulación"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de redes industriales globales; no representa una instalación gubernamental real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de fábrica inteligente, centro de datos y robot humanoide con una balanza que representa inversión disciplinada. Sin logotipos, texto, funcionarios reales ni instalaciones presentadas como documentales.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "source": {
+        "name": "Administración Nacional de Datos de China · texto oficial íntegro",
+        "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/1009/20261009191908259329235_pc.html",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "Comisión Nacional de Desarrollo y Reforma · explicación oficial",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "Reuters · China y supervisión de inversiones tecnológicas",
+          "url": "https://www.reuters.com/world/asia-pacific/china-issues-guidelines-new-productive-forces-including-ai-2026-10-09/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "El 9 de octubre de 2026, el Comité Central del Partido Comunista de China y el Consejo de Estado publicaron las directrices tituladas «Opiniones sobre el desarrollo de nuevas fuerzas productivas de calidad». El documento organiza 19 medidas en cinco ámbitos: innovación científica, integración de ciencia e industria, transformación del modelo de desarrollo, reformas institucionales y talento. La inteligencia artificial aparece como una tecnología transversal, no como una partida presupuestaria única ni como un nuevo producto listo para contratar. La fecha corresponde a la publicación pública del texto y de la explicación oficial; no debe confundirse con la puesta en marcha efectiva de todos sus instrumentos.",
+        "El eje más directamente relacionado con IA es la implementación integral de «AI Plus». Las autoridades proponen conectar sistemas de inteligencia artificial con manufactura, servicios, infraestructuras y productos inteligentes. El texto menciona la modernización de industrias tradicionales, la expansión de sectores emergentes y la preparación de actividades futuras. En la interpretación de la Comisión Nacional de Desarrollo y Reforma, el objetivo es aprovechar la escala industrial y la diversidad de casos de uso de China para crear un ciclo entre avances tecnológicos y adopción práctica. Esa es una orientación de política industrial; no constituye evidencia de que las fábricas hayan completado una transición automatizada.",
+        "En la dimensión técnica, las directrices reclaman avances en teoría básica y tecnologías esenciales de IA, junto con sistemas de hardware y software autónomos y coordinados. También señalan la necesidad de ordenar infraestructura de cómputo, acceso a algoritmos, desarrollo de recursos de datos y formación de especialistas. Reuters destacó que se contemplan bases piloto nacionales para aplicaciones industriales de IA. Un piloto es un mecanismo para ensayar integración y aprendizaje, no un despliegue comercial general. El documento no publica un listado exhaustivo de chips elegibles, capacidad computacional adjudicada ni una arquitectura técnica obligatoria para empresas.",
+        "El alcance es más amplio que los grandes modelos de lenguaje. Los documentos oficiales relacionan IA con vehículos conectados, robots humanoides, teléfonos, ordenadores, drones y equipos industriales. Esa enumeración muestra dónde el gobierno espera efectos productivos, pero no demuestra que todos esos sectores reciban iguales subsidios o alcancen la misma madurez. Una empresa que desarrolle robótica industrial necesita distinguir investigación, demostración, compra pública y demanda comercial; cada fase tiene riesgos diferentes. Las medidas tampoco anuncian una API gubernamental, un modelo descargable o una nueva plataforma de inferencia accesible desde el extranjero.",
+        "La política combina estímulos con supervisión. El texto exige mejorar normas, mecanismos de vigilancia tecnológica, alerta de riesgos y respuesta a incidentes para que la IA sea segura, fiable y controlable. La sección de reforma regulatoria plantea reforzar la gobernanza de la inteligencia artificial y la biotecnología. Esto no equivale a una ley de evaluación de capacidades de modelos que entre en vigor automáticamente el 9 de octubre. Habrá que comprobar qué ministerios emiten reglas vinculantes, cuáles son los destinatarios, qué sanciones se establecen y cómo se diferencia la seguridad de aplicaciones de los riesgos de modelos avanzados.",
+        "Otro componente relevante es la disciplina de inversión. Las autoridades advierten contra la búsqueda indiscriminada de sectores de moda, la repetición de proyectos entre regiones, las burbujas y el vaciamiento de la industria tradicional. El documento prevé responsabilidades para funcionarios cuyas decisiones imprudentes ocasionen pérdidas graves. Reuters interpreta estas cláusulas como un intento de moderar excesos en la carrera tecnológica. El texto oficial respalda la advertencia, pero no ofrece una cifra comprobada de inversiones canceladas ni identifica empresas sancionadas por estas nuevas directrices. No sería riguroso presentar la medida como una purga ya ejecutada.",
+        "Para desarrolladores y startups, la consecuencia inmediata es una señal de prioridades, no un beneficio automático. Proveedores de visión industrial, robótica, optimización energética o herramientas para desplegar modelos en entornos controlados pueden encontrar nuevas oportunidades si las bases piloto y los programas locales se concretan. Antes de planificar una expansión conviene verificar convocatoria, elegibilidad, titularidad de datos, certificaciones y restricciones de transferencia tecnológica. Para compradores empresariales, una prueba piloto debe medirse con indicadores como precisión, tiempo de parada, coste por operación y capacidad de intervención humana, no solo con demostraciones de laboratorio.",
+        "En la competencia internacional, las directrices refuerzan una estrategia que busca convertir investigación y recursos industriales en aplicaciones reales. China dispone de una amplia base manufacturera, mientras otros ecosistemas destacan en determinados aceleradores, servicios cloud o modelos. No se desprende del documento una comparación cuantitativa que declare ganador de la carrera de IA. La lectura editorial del Gazette es que la diferencia competitiva se jugará tanto en capacidad de producción y adopción como en benchmarks de modelos: desplegar sistemas fiables en fábricas, redes y servicios requiere integración, mantenimiento, energía y gobernanza.",
+        "El capítulo financiero propone fortalecer inversión de riesgo, fondos orientados a tecnología, instrumentos bancarios y financiación paciente para empresas innovadoras. Son mecanismos generales, no un presupuesto cerrado de 19 partidas ni una subvención de precio conocido. La implementación, regiones beneficiarias, condiciones de acceso y calendario deberán confirmarse en anuncios posteriores. También será importante seguir si las bases piloto publican resultados comparables, si los proyectos privados pueden participar y cómo se mide el retorno. Análisis Gazette: la noticia es la dirección estratégica verificable; el impacto económico y tecnológico sigue siendo una hipótesis que necesitará datos.",
+        "En resumen, China formalizó 19 medidas que sitúan a la IA dentro de una transformación industrial y científica más amplia, al tiempo que reclaman controles de riesgo y prudencia inversora. No hay una fecha de disponibilidad general, una tarifa o un monto único anunciado para las herramientas de IA. Los hitos a vigilar son regulaciones sectoriales, bases piloto, convocatorias de financiación, infraestructura de cómputo y evidencia de productividad. Hasta entonces, el documento debe leerse como política publicada y compromiso institucional, no como demostración de resultados ni como lanzamiento de producto."
+      ],
+      "keyPoints": [
+        "19 medidas en cinco ámbitos, no 19 subvenciones de IA.",
+        "AI Plus impulsa adopción industrial, infraestructura y pruebas piloto.",
+        "La política pide controlar riesgos y evitar inversiones especulativas."
+      ],
+      "quickTakeaways": [
+        "El documento oficial contiene 19 medidas en cinco áreas de desarrollo.",
+        "AI Plus busca conectar IA con manufactura, robótica y productos inteligentes.",
+        "No se anunció un presupuesto único, API ni fecha de disponibilidad comercial.",
+        "El gobierno pide sistemas de seguridad y responsabilidad por inversiones imprudentes."
+      ],
+      "sections": [
+        {
+          "heading": "El anuncio y su alcance",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026, el Comité Central del Partido Comunista de China y el Consejo de Estado publicaron las directrices tituladas «Opiniones sobre el desarrollo de nuevas fuerzas productivas de calidad». El documento organiza 19 medidas en cinco ámbitos: innovación científica, integración de ciencia e industria, transformación del modelo de desarrollo, reformas institucionales y talento. La inteligencia artificial aparece como una tecnología transversal, no como una partida presupuestaria única ni como un nuevo producto listo para contratar. La fecha corresponde a la publicación pública del texto y de la explicación oficial; no debe confundirse con la puesta en marcha efectiva de todos sus instrumentos.",
+            "El eje más directamente relacionado con IA es la implementación integral de «AI Plus». Las autoridades proponen conectar sistemas de inteligencia artificial con manufactura, servicios, infraestructuras y productos inteligentes. El texto menciona la modernización de industrias tradicionales, la expansión de sectores emergentes y la preparación de actividades futuras. En la interpretación de la Comisión Nacional de Desarrollo y Reforma, el objetivo es aprovechar la escala industrial y la diversidad de casos de uso de China para crear un ciclo entre avances tecnológicos y adopción práctica. Esa es una orientación de política industrial; no constituye evidencia de que las fábricas hayan completado una transición automatizada."
+          ]
+        },
+        {
+          "heading": "Infraestructura, aplicaciones y gobernanza",
+          "kind": "technical",
+          "paragraphs": [
+            "En la dimensión técnica, las directrices reclaman avances en teoría básica y tecnologías esenciales de IA, junto con sistemas de hardware y software autónomos y coordinados. También señalan la necesidad de ordenar infraestructura de cómputo, acceso a algoritmos, desarrollo de recursos de datos y formación de especialistas. Reuters destacó que se contemplan bases piloto nacionales para aplicaciones industriales de IA. Un piloto es un mecanismo para ensayar integración y aprendizaje, no un despliegue comercial general. El documento no publica un listado exhaustivo de chips elegibles, capacidad computacional adjudicada ni una arquitectura técnica obligatoria para empresas.",
+            "El alcance es más amplio que los grandes modelos de lenguaje. Los documentos oficiales relacionan IA con vehículos conectados, robots humanoides, teléfonos, ordenadores, drones y equipos industriales. Esa enumeración muestra dónde el gobierno espera efectos productivos, pero no demuestra que todos esos sectores reciban iguales subsidios o alcancen la misma madurez. Una empresa que desarrolle robótica industrial necesita distinguir investigación, demostración, compra pública y demanda comercial; cada fase tiene riesgos diferentes. Las medidas tampoco anuncian una API gubernamental, un modelo descargable o una nueva plataforma de inferencia accesible desde el extranjero.",
+            "La política combina estímulos con supervisión. El texto exige mejorar normas, mecanismos de vigilancia tecnológica, alerta de riesgos y respuesta a incidentes para que la IA sea segura, fiable y controlable. La sección de reforma regulatoria plantea reforzar la gobernanza de la inteligencia artificial y la biotecnología. Esto no equivale a una ley de evaluación de capacidades de modelos que entre en vigor automáticamente el 9 de octubre. Habrá que comprobar qué ministerios emiten reglas vinculantes, cuáles son los destinatarios, qué sanciones se establecen y cómo se diferencia la seguridad de aplicaciones de los riesgos de modelos avanzados."
+          ]
+        },
+        {
+          "heading": "Financiación, impacto y competencia",
+          "kind": "context",
+          "paragraphs": [
+            "Otro componente relevante es la disciplina de inversión. Las autoridades advierten contra la búsqueda indiscriminada de sectores de moda, la repetición de proyectos entre regiones, las burbujas y el vaciamiento de la industria tradicional. El documento prevé responsabilidades para funcionarios cuyas decisiones imprudentes ocasionen pérdidas graves. Reuters interpreta estas cláusulas como un intento de moderar excesos en la carrera tecnológica. El texto oficial respalda la advertencia, pero no ofrece una cifra comprobada de inversiones canceladas ni identifica empresas sancionadas por estas nuevas directrices. No sería riguroso presentar la medida como una purga ya ejecutada.",
+            "Para desarrolladores y startups, la consecuencia inmediata es una señal de prioridades, no un beneficio automático. Proveedores de visión industrial, robótica, optimización energética o herramientas para desplegar modelos en entornos controlados pueden encontrar nuevas oportunidades si las bases piloto y los programas locales se concretan. Antes de planificar una expansión conviene verificar convocatoria, elegibilidad, titularidad de datos, certificaciones y restricciones de transferencia tecnológica. Para compradores empresariales, una prueba piloto debe medirse con indicadores como precisión, tiempo de parada, coste por operación y capacidad de intervención humana, no solo con demostraciones de laboratorio.",
+            "En la competencia internacional, las directrices refuerzan una estrategia que busca convertir investigación y recursos industriales en aplicaciones reales. China dispone de una amplia base manufacturera, mientras otros ecosistemas destacan en determinados aceleradores, servicios cloud o modelos. No se desprende del documento una comparación cuantitativa que declare ganador de la carrera de IA. La lectura editorial del Gazette es que la diferencia competitiva se jugará tanto en capacidad de producción y adopción como en benchmarks de modelos: desplegar sistemas fiables en fábricas, redes y servicios requiere integración, mantenimiento, energía y gobernanza."
+          ]
+        },
+        {
+          "heading": "Lectura Gazette y próximos hitos",
+          "kind": "analysis",
+          "paragraphs": [
+            "El capítulo financiero propone fortalecer inversión de riesgo, fondos orientados a tecnología, instrumentos bancarios y financiación paciente para empresas innovadoras. Son mecanismos generales, no un presupuesto cerrado de 19 partidas ni una subvención de precio conocido. La implementación, regiones beneficiarias, condiciones de acceso y calendario deberán confirmarse en anuncios posteriores. También será importante seguir si las bases piloto publican resultados comparables, si los proyectos privados pueden participar y cómo se mide el retorno. Análisis Gazette: la noticia es la dirección estratégica verificable; el impacto económico y tecnológico sigue siendo una hipótesis que necesitará datos.",
+            "En resumen, China formalizó 19 medidas que sitúan a la IA dentro de una transformación industrial y científica más amplia, al tiempo que reclaman controles de riesgo y prudencia inversora. No hay una fecha de disponibilidad general, una tarifa o un monto único anunciado para las herramientas de IA. Los hitos a vigilar son regulaciones sectoriales, bases piloto, convocatorias de financiación, infraestructura de cómputo y evidencia de productividad. Hasta entonces, el documento debe leerse como política publicada y compromiso institucional, no como demostración de resultados ni como lanzamiento de producto."
+          ]
+        }
+      ],
+      "executiveSummary": "El 9 de octubre de 2026, el Comité Central del Partido Comunista de China y el Consejo de Estado publicaron las directrices tituladas «Opiniones sobre el desarrollo de nuevas fuerzas productivas de calidad». El documento organiza 19 medidas en cinco ámbitos: innovación científica, integración de ciencia e industria, transformación del modelo de desarrollo, reformas institucionales y talento. La inteligencia artificial aparece como una tecnología transversal, no como una partida presupuestaria única ni como un nuevo producto listo para contratar. La fecha corresponde a la publicación pública del texto y de la explicación oficial; no debe confundirse con la puesta en marcha efectiva de todos sus instrumentos. El eje más directamente relacionado con IA es la implementación integral de «AI Plus». Las autoridades proponen conectar sistemas de inteligencia artificial con manufactura, servicios, infraestructuras y productos inteligentes. El texto menciona la modernización de industrias tradicionales, la expansión de sectores emergentes y la preparación de actividades futuras. En la interpretación de la Comisión Nacional de Desarrollo y Reforma, el objetivo es aprovechar la escala industrial y la diversidad de casos de uso de China para crear un ciclo entre avances tecnológicos y adopción práctica. Esa es una orientación de política industrial; no constituye evidencia de que las fábricas hayan completado una transición automatizada.",
+      "finalSummary": "En resumen, China formalizó 19 medidas que sitúan a la IA dentro de una transformación industrial y científica más amplia, al tiempo que reclaman controles de riesgo y prudencia inversora. No hay una fecha de disponibilidad general, una tarifa o un monto único anunciado para las herramientas de IA. Los hitos a vigilar son regulaciones sectoriales, bases piloto, convocatorias de financiación, infraestructura de cómputo y evidencia de productividad. Hasta entonces, el documento debe leerse como política publicada y compromiso institucional, no como demostración de resultados ni como lanzamiento de producto.",
+      "analysis": "El capítulo financiero propone fortalecer inversión de riesgo, fondos orientados a tecnología, instrumentos bancarios y financiación paciente para empresas innovadoras. Son mecanismos generales, no un presupuesto cerrado de 19 partidas ni una subvención de precio conocido. La implementación, regiones beneficiarias, condiciones de acceso y calendario deberán confirmarse en anuncios posteriores. También será importante seguir si las bases piloto publican resultados comparables, si los proyectos privados pueden participar y cómo se mide el retorno. Análisis Gazette: la noticia es la dirección estratégica verificable; el impacto económico y tecnológico sigue siendo una hipótesis que necesitará datos.",
+      "watch": "Convocatorias de bases piloto, reglamentos sectoriales, presupuestos, pruebas de productividad y calendarios de AI Plus.",
+      "technicalDetails": [
+        {
+          "label": "Medidas",
+          "value": "19 medidas en cinco áreas",
+          "note": "Documento oficial del 9 de octubre de 2026"
+        },
+        {
+          "label": "Enfoque de IA",
+          "value": "AI Plus, integración industrial, cómputo y datos"
+        },
+        {
+          "label": "Estado",
+          "value": "Directrices publicadas; implementación pendiente"
+        }
+      ],
+      "availability": {
+        "status": "Política publicada; programas y bases piloto pendientes de implementación",
+        "platforms": [],
+        "regions": [
+          "China"
+        ],
+        "requirements": [],
+        "notes": [
+          "No es una API ni un modelo comercial."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Presupuesto y tarifas",
+          "value": "Sin cifra presupuestaria única ni precio anunciado"
+        }
+      ],
+      "limitations": [
+        "Sin cronograma sectorial detallado de implementación.",
+        "No se identificó un presupuesto único para las 19 medidas.",
+        "El texto no equivale a una nueva obligación técnica de pruebas de modelos."
+      ],
+      "practicalAdvice": [
+        "Verificar convocatorias y requisitos antes de invertir.",
+        "Medir pilotos industriales con métricas operativas y de seguridad.",
+        "No confundir política publicada con subvenciones ya disponibles."
+      ],
+      "usefulFacts": [
+        "Cinco áreas: ciencia, integración industrial, modelo de desarrollo, instituciones y talento.",
+        "El texto incluye una advertencia contra burbujas y proyectos duplicados."
+      ],
+      "curiosities": [
+        "La política conecta IA con energía, robótica y modernización de industrias tradicionales."
+      ],
+      "sources": [
+        {
+          "name": "Administración Nacional de Datos de China · texto oficial íntegro",
+          "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/1009/20261009191908259329235_pc.html",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "Comisión Nacional de Desarrollo y Reforma · explicación oficial",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "Reuters · China y supervisión de inversiones tecnológicas",
+          "url": "https://www.reuters.com/world/asia-pacific/china-issues-guidelines-new-productive-forces-including-ai-2026-10-09/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "articleVersion": 2
+    },
+    {
+      "id": "semianalysis-chinese-model-safety-disclosures-857-2026",
+      "eventKey": "semianalysis-857-china-model-releases-3point6pct-safety-disclosures-2026-10-08",
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "SemiAnalysis",
+      "product": "Beijing Will Not Pace the Frontier · análisis de divulgación de seguridad",
+      "title": "SemiAnalysis: solo el 3,6% de 857 lanzamientos chinos publicó pruebas específicas de seguridad",
+      "summary": "Un estudio de SemiAnalysis sobre nueve desarrolladores chinos encontró resultados públicos de seguridad asociados a 31 de 857 lanzamientos; solo nueve estaban disponibles al debut. El informe mide divulgación, no ausencia de pruebas internas.",
+      "tags": [
+        "Seguridad",
+        "Investigación",
+        "China",
+        "Transparencia"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de herramientas de investigación de IA; no es una fotografía de una auditoría real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia 3:2 de archivadores con fichas de modelos, una lupa de auditoría y balanza de seguridad. Sin cifras impresas, logotipos falsos ni insinuación de resultados experimentales no publicados.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "SemiAnalysis · Beijing Will Not Pace the Frontier",
+        "url": "https://newsletter.semianalysis.com/p/beijing-will-not-pace-the-frontier",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Reuters · investigación sobre divulgación de pruebas de seguridad",
+          "url": "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente.",
+        "La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes.",
+        "Para aceptar una divulgación, los investigadores exigieron resultados cuantitativos o hallazgos sustantivos vinculados al modelo identificado. Entre las categorías consideradas figuran respuestas dañinas, resistencia a jailbreaks, toxicidad, privacidad, comportamiento de rechazo y capacidades peligrosas. No bastaba afirmar que un modelo había recibido entrenamiento de seguridad o había sido evaluado. Esa decisión metodológica eleva el umbral de evidencia y explica por qué una página promocional con lenguaje tranquilizador no cuenta. También limita la conclusión: el trabajo mide lo publicado y encontrado en documentación accesible, no los protocolos internos ni las auditorías confidenciales.",
+        "El desglose temporal añade matices. Según SemiAnalysis, 16 de los 31 resultados aparecieron después del lanzamiento, con una demora mediana de 42 días y un máximo observado de 349 días. En seis casos existía un resultado, pero no pudo fijarse con seguridad su fecha o correspondencia exacta. Otros diez lanzamientos incluían afirmaciones de evaluación sin cifras, tres solo aparecían en reportes de prensa o inversores y 813 no tenían divulgación de seguridad localizada. Las categorías se refieren a evidencias de publicación y no deben mezclarse con una tasa medida de fallos de seguridad.",
+        "El estudio señala que el ritmo de lanzamientos aumentó más rápido que la publicación de resultados. Sus gráficos pasan de tres modelos en el primer trimestre de 2023 a 101 en el tercer trimestre de 2025; los lanzamientos con algún resultado de seguridad no superan siete por trimestre en la serie descrita. SemiAnalysis observa además que los modelos con pesos abiertos representan más de la mitad de las publicaciones trimestrales desde mediados de 2023. La apertura de pesos facilita auditorías independientes, pero no reemplaza una evaluación documentada antes de distribuir un sistema potencialmente potente.",
+        "Las diferencias entre empresas también requieren lectura cuidadosa. SemiAnalysis atribuye a Alibaba 238 lanzamientos y siete con resultados públicos; a Tencent, uno de 133; a ByteDance, dos de 120; y a Baidu, uno de 49. Los cinco desarrolladores especializados suman 20 divulgaciones en 317 lanzamientos, frente a 11 en 540 de las grandes plataformas. Esos cocientes reflejan el método de conteo elegido y no prueban que un proveedor sea más seguro que otro. Un modelo sin documento público puede haber sido probado; un modelo con documento puede seguir presentando fallos.",
+        "El contenido de las pruebas es tan importante como su presencia. Los investigadores encontraron 18 resultados relativos a respuestas dañinas o rechazos y siete sobre resistencia a jailbreaks. Nueve documentos tocaban seguridad de código o ciberseguridad, aunque siete se centraban en generar código seguro, que no equivale a evaluar capacidad ofensiva. Solo tres documentos abordaban riesgos cibernéticos ofensivos o biológicos, según la clasificación del informe. La conclusión del autor es que no identificó un modelo chino de texto de frontera acompañado al lanzamiento de una evaluación pública integral de capacidades peligrosas en ciberseguridad, biología y pérdida de control.",
+        "El marco regulatorio es una pieza de contexto, no una explicación causal demostrada. SemiAnalysis sostiene que la normativa vinculante china se ha concentrado más en aplicaciones y efectos sobre usuarios que en obligaciones de divulgación por capacidad de modelos frontera. Su análisis del marco chino de gobernanza de seguridad menciona riesgos como obtener permisos sin autorización, engañar a evaluadores u ocultar capacidades, pero señala que no se traducen automáticamente en pruebas públicas obligatorias para cada lanzamiento. Reuters recogió el hallazgo el 9 de octubre. El informe no ofrece una muestra internacional equivalente, por lo que no permite afirmar que China publique menos evaluaciones que cualquier otro país en términos comparables.",
+        "Para desarrolladores que integran modelos de terceros, la consecuencia práctica es crear su propia ficha de riesgo. Conviene registrar versión exacta, licencia, fecha, modelo base, pruebas disponibles, límites de uso y cambios entre snapshots. Las empresas que usan agentes con herramientas deben ensayar autorización, exfiltración, instrucciones maliciosas y recuperación de errores en su contexto concreto. La ausencia de una ficha pública no es prueba de peligro, pero sí aumenta el trabajo de diligencia debida. Y una ficha pública favorable tampoco reemplaza pruebas de integración, revisión humana y monitoreo de producción.",
+        "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología."
+      ],
+      "keyPoints": [
+        "31 de 857 lanzamientos tenían resultados públicos específicos: 3,6%.",
+        "Solo nueve, el 1,1%, contaban con esos resultados al debut.",
+        "No encontrar divulgación no significa que no existieran pruebas internas."
+      ],
+      "quickTakeaways": [
+        "SemiAnalysis examinó 857 lanzamientos de nueve desarrolladores chinos.",
+        "Encontró resultados de seguridad específicos para 31 modelos, equivalentes al 3,6%.",
+        "Solo nueve resultados estaban publicados al momento del lanzamiento.",
+        "La investigación mide transparencia documental, no seguridad intrínseca.",
+        "No existe una comparación internacional equivalente en el estudio."
+      ],
+      "sections": [
+        {
+          "heading": "La muestra y la pregunta de investigación",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente.",
+            "La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes."
+          ]
+        },
+        {
+          "heading": "Método y resultados cuantitativos",
+          "kind": "technical",
+          "paragraphs": [
+            "Para aceptar una divulgación, los investigadores exigieron resultados cuantitativos o hallazgos sustantivos vinculados al modelo identificado. Entre las categorías consideradas figuran respuestas dañinas, resistencia a jailbreaks, toxicidad, privacidad, comportamiento de rechazo y capacidades peligrosas. No bastaba afirmar que un modelo había recibido entrenamiento de seguridad o había sido evaluado. Esa decisión metodológica eleva el umbral de evidencia y explica por qué una página promocional con lenguaje tranquilizador no cuenta. También limita la conclusión: el trabajo mide lo publicado y encontrado en documentación accesible, no los protocolos internos ni las auditorías confidenciales.",
+            "El desglose temporal añade matices. Según SemiAnalysis, 16 de los 31 resultados aparecieron después del lanzamiento, con una demora mediana de 42 días y un máximo observado de 349 días. En seis casos existía un resultado, pero no pudo fijarse con seguridad su fecha o correspondencia exacta. Otros diez lanzamientos incluían afirmaciones de evaluación sin cifras, tres solo aparecían en reportes de prensa o inversores y 813 no tenían divulgación de seguridad localizada. Las categorías se refieren a evidencias de publicación y no deben mezclarse con una tasa medida de fallos de seguridad.",
+            "El estudio señala que el ritmo de lanzamientos aumentó más rápido que la publicación de resultados. Sus gráficos pasan de tres modelos en el primer trimestre de 2023 a 101 en el tercer trimestre de 2025; los lanzamientos con algún resultado de seguridad no superan siete por trimestre en la serie descrita. SemiAnalysis observa además que los modelos con pesos abiertos representan más de la mitad de las publicaciones trimestrales desde mediados de 2023. La apertura de pesos facilita auditorías independientes, pero no reemplaza una evaluación documentada antes de distribuir un sistema potencialmente potente."
+          ]
+        },
+        {
+          "heading": "Diferencias, riesgos y regulación",
+          "kind": "context",
+          "paragraphs": [
+            "Las diferencias entre empresas también requieren lectura cuidadosa. SemiAnalysis atribuye a Alibaba 238 lanzamientos y siete con resultados públicos; a Tencent, uno de 133; a ByteDance, dos de 120; y a Baidu, uno de 49. Los cinco desarrolladores especializados suman 20 divulgaciones en 317 lanzamientos, frente a 11 en 540 de las grandes plataformas. Esos cocientes reflejan el método de conteo elegido y no prueban que un proveedor sea más seguro que otro. Un modelo sin documento público puede haber sido probado; un modelo con documento puede seguir presentando fallos.",
+            "El contenido de las pruebas es tan importante como su presencia. Los investigadores encontraron 18 resultados relativos a respuestas dañinas o rechazos y siete sobre resistencia a jailbreaks. Nueve documentos tocaban seguridad de código o ciberseguridad, aunque siete se centraban en generar código seguro, que no equivale a evaluar capacidad ofensiva. Solo tres documentos abordaban riesgos cibernéticos ofensivos o biológicos, según la clasificación del informe. La conclusión del autor es que no identificó un modelo chino de texto de frontera acompañado al lanzamiento de una evaluación pública integral de capacidades peligrosas en ciberseguridad, biología y pérdida de control.",
+            "El marco regulatorio es una pieza de contexto, no una explicación causal demostrada. SemiAnalysis sostiene que la normativa vinculante china se ha concentrado más en aplicaciones y efectos sobre usuarios que en obligaciones de divulgación por capacidad de modelos frontera. Su análisis del marco chino de gobernanza de seguridad menciona riesgos como obtener permisos sin autorización, engañar a evaluadores u ocultar capacidades, pero señala que no se traducen automáticamente en pruebas públicas obligatorias para cada lanzamiento. Reuters recogió el hallazgo el 9 de octubre. El informe no ofrece una muestra internacional equivalente, por lo que no permite afirmar que China publique menos evaluaciones que cualquier otro país en términos comparables."
+          ]
+        },
+        {
+          "heading": "Consejos, límites y lectura Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para desarrolladores que integran modelos de terceros, la consecuencia práctica es crear su propia ficha de riesgo. Conviene registrar versión exacta, licencia, fecha, modelo base, pruebas disponibles, límites de uso y cambios entre snapshots. Las empresas que usan agentes con herramientas deben ensayar autorización, exfiltración, instrucciones maliciosas y recuperación de errores en su contexto concreto. La ausencia de una ficha pública no es prueba de peligro, pero sí aumenta el trabajo de diligencia debida. Y una ficha pública favorable tampoco reemplaza pruebas de integración, revisión humana y monitoreo de producción.",
+            "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología."
+          ]
+        }
+      ],
+      "executiveSummary": "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente. La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes.",
+      "finalSummary": "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología.",
+      "analysis": "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología.",
+      "watch": "Nuevas fichas de seguridad por versión, evaluaciones de capacidades peligrosas y estudios internacionales con la misma metodología.",
+      "technicalDetails": [
+        {
+          "label": "Muestra",
+          "value": "857 lanzamientos de nueve desarrolladores, 2021–15 sep 2026"
+        },
+        {
+          "label": "Con resultado público",
+          "value": "31/857 (3,6%)",
+          "note": "Cálculo de SemiAnalysis"
+        },
+        {
+          "label": "Al lanzamiento",
+          "value": "9/857 (1,1%)",
+          "note": "Cálculo de SemiAnalysis"
+        },
+        {
+          "label": "Sin divulgación localizada",
+          "value": "813/857 (94,9%)",
+          "note": "No implica ausencia de pruebas internas"
+        }
+      ],
+      "availability": {
+        "status": "Investigación publicada; parte de la oferta editorial del autor funciona por suscripción",
+        "platforms": [
+          "Web"
+        ],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "No es un modelo ni servicio de inferencia."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio del informe",
+          "value": "No verificado; no inferir una tarifa de suscripción"
+        }
+      ],
+      "limitations": [
+        "Sin muestra internacional comparable.",
+        "Diferente granularidad de variantes por proveedor.",
+        "Documentación privada y pruebas internas no observables.",
+        "Resultados de divulgación no miden directamente seguridad real."
+      ],
+      "practicalAdvice": [
+        "Registrar versión y licencia exactas antes de integrar modelos.",
+        "Exigir evaluaciones específicas, fechadas y vinculadas a la versión.",
+        "Probar permisos, jailbreaks y herramientas en el entorno propio."
+      ],
+      "usefulFacts": [
+        "741 lanzamientos de producto y 116 de investigación.",
+        "16 evaluaciones se publicaron después del lanzamiento, con mediana de 42 días."
+      ],
+      "curiosities": [
+        "El informe contabiliza tamaños y snapshots distintos por separado cuando aparecen como lanzamientos."
+      ],
+      "sources": [
+        {
+          "name": "SemiAnalysis · Beijing Will Not Pace the Frontier",
+          "url": "https://newsletter.semianalysis.com/p/beijing-will-not-pace-the-frontier",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Reuters · investigación sobre divulgación de pruebas de seguridad",
+          "url": "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "articleVersion": 2
+    },
     {
       "id": "openai-safety-researchers-disputed-firings-response-2026",
       "eventKey": "openai-three-safety-researchers-open-letter-disputed-firings-response-2026-10-09",
@@ -12283,12 +12623,12 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 22
+      "verifiedArticles": 23
     },
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 3
     }
   ]
 }
