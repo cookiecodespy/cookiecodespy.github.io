@@ -1,5 +1,8 @@
 name: Sync AI Race Gazette Visual Queue
 
+# Recovery note (2026-10-09): real Newsroom publication commits must NOT use
+# [skip ci]; that tag prevents this push-triggered sync from starting. This
+# workflow-file change also triggers one safe idempotent queue catch-up.
 on:
   push:
     branches: [main]
