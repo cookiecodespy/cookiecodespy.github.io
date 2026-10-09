@@ -1,8 +1,179 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T11:16:48.000Z",
+  "updatedAt": "2026-10-09T14:18:34.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "openai-safety-researchers-disputed-firings-response-2026",
+      "eventKey": "openai-three-safety-researchers-open-letter-disputed-firings-response-2026-10-09",
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "OpenAI",
+      "product": "Gobernanza de seguridad y evaluaciones independientes",
+      "title": "OpenAI defiende el despido de tres investigadores de seguridad, que cuestionan los motivos",
+      "summary": "OpenAI defendió el 9 de octubre tres despidos por presuntas infracciones de manejo de información. Los exinvestigadores cuestionan la explicación y advierten sobre el impacto en auditorías externas; los motivos siguen disputados.",
+      "tags": [
+        "Seguridad",
+        "Gobernanza",
+        "OpenAI",
+        "Controversia"
+      ],
+      "articleVersion": 2,
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de dos carpetas ante una balanza de auditoría; no es una fotografía real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia editorial 3:2: balanza con dos carpetas cerradas y una lupa entre un laboratorio de IA y una mesa de auditoría. Sin retratos, logotipos falsos ni documentos presentados como reales.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Reuters · OpenAI defiende tres despidos",
+        "url": "https://www.reuters.com/business/openai-says-it-has-fired-three-researchers-violating-sensitive-information-2026-10-09/",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "Carta original de los tres investigadores",
+          "url": "https://mikitabalesni.com/letter/letter.pdf",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Associated Press · disputa sobre despidos",
+          "url": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "TechCrunch · carta y respuesta",
+          "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "El 9 de octubre de 2026, OpenAI defendió públicamente el despido de tres investigadores de seguridad y alineamiento: Jasmine Wang, Tomek Korbak y Mikita Balesni. La compañía sostuvo que una investigación interna había detectado incumplimientos en el manejo de información sensible y una ruptura significativa de confianza. Los investigadores cuestionaron esa explicación y expresaron preocupación por las consecuencias para la colaboración con auditores externos. Es un conflicto de versiones documentado, no una conclusión independiente sobre la culpabilidad de ninguna de las partes.",
+        "Los despidos habían ocurrido la semana anterior. El acontecimiento nuevo es la carta abierta de los exinvestigadores difundida el 8 de octubre y la respuesta pública de OpenAI del día 9, recogida por Reuters. No corresponde presentar esta fecha como la del despido original. Tampoco se anunció un nuevo modelo, una API, un cambio de tarifa o una modificación de disponibilidad para usuarios. La relevancia del caso se encuentra en la gobernanza de seguridad de un laboratorio que desarrolla sistemas cada vez más autónomos.",
+        "La carta original está dirigida al Safety and Security Committee, al Safety Advisory Group y al Mission Advisory Council de OpenAI. Los firmantes argumentan que investigar riesgos requiere canales de debate interno y cooperación con evaluadores independientes. Afirman que los despidos y su comunicación podrían desalentar a otros empleados a informar problemas. Esta es la interpretación de los autores de la carta y no demuestra por sí sola una represalia. La publicación sí confirma que existe una controversia pública sobre procedimientos de seguridad y relaciones con terceros.",
+        "Los tres exinvestigadores ofrecen explicaciones particulares. Korbak describe su relación con evaluadores externos durante una investigación relacionada con Hugging Face; Balesni menciona trabajos de coordinación sobre monitorabilidad de modelos; Wang sostiene que un acceso delegado a un correo ejecutivo permaneció activo y que reportó la apertura accidental de un mensaje sensible. También niegan haber originado una filtración periodística sobre modelos. Estas afirmaciones provienen de los firmantes y no pueden darse por auditadas sin documentación independiente sobre permisos, accesos y comunicaciones.",
+        "OpenAI declaró que las desvinculaciones no obedecieron a que los empleados expresaran preocupaciones de seguridad o discreparan de la empresa. Según Reuters, la compañía sostuvo que su investigación encontró hechos adicionales a los narrados en la carta y defendió su decisión. TechCrunch recogió declaraciones empresariales sobre presunto manejo indebido de información de investigación. Sin embargo, los detalles completos de las políticas, las autorizaciones y los hechos concretos no se publicaron. Por ello, tampoco corresponde afirmar que la acusación empresarial haya quedado probada ante un tercero.",
+        "Una cuestión técnica central es la monitorabilidad de la cadena de pensamiento: la posibilidad de observar señales útiles para evaluar el comportamiento de modelos avanzados. Los investigadores sostienen que esa capacidad puede deteriorarse y reclaman coordinación entre laboratorios. La carta no aporta un benchmark nuevo que permita cuantificar una caída universal. También defiende la cooperación con entidades como METR para evaluar capacidades y riesgos. Estas colaboraciones requieren un equilibrio entre independencia de los evaluadores, protección de datos y reglas claras sobre qué puede compartirse.",
+        "Para investigadores y desarrolladores, la lección práctica es documentar autorizaciones, canales de divulgación responsable y reglas de contacto con terceros antes de manejar información sensible. Para empresas que contratan evaluaciones externas, importa definir quién aprueba accesos, cómo se protege la evidencia y qué mecanismos resuelven discrepancias. Para usuarios de ChatGPT, el episodio no implica por sí solo una modificación de precio, región o funcionamiento. Su impacto es institucional: afecta la confianza en los mecanismos para identificar y corregir riesgos.",
+        "Análisis Gazette: los laboratorios necesitan proteger información crítica y, al mismo tiempo, permitir que las alertas técnicas lleguen a responsables internos y auditores independientes. Una controversia laboral no demuestra por sí misma que un modelo sea inseguro, pero puede revelar la necesidad de procedimientos verificables. Habrá que seguir las aclaraciones públicas de las partes, los compromisos de auditoría externa y eventuales pronunciamientos de órganos de supervisión. Por ahora, los despidos y las declaraciones contrapuestas están confirmados; los motivos concretos siguen disputados."
+      ],
+      "keyPoints": [
+        "OpenAI atribuye los despidos a infracciones de políticas de información sensible.",
+        "La carta abierta es del 8 de octubre y la respuesta pública de OpenAI del 9.",
+        "Los motivos concretos siguen disputados y no hay cambios anunciados de productos."
+      ],
+      "quickTakeaways": [
+        "OpenAI atribuye los despidos a infracciones de políticas de información sensible.",
+        "La carta abierta es del 8 de octubre y la respuesta pública de OpenAI del 9.",
+        "Los motivos concretos siguen disputados y no hay cambios anunciados de productos.",
+        "La carta pide reglas claras para colaborar con evaluadores independientes."
+      ],
+      "sections": [
+        {
+          "heading": "Qué ocurrió y qué cambia",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026, OpenAI defendió públicamente el despido de tres investigadores de seguridad y alineamiento: Jasmine Wang, Tomek Korbak y Mikita Balesni. La compañía sostuvo que una investigación interna había detectado incumplimientos en el manejo de información sensible y una ruptura significativa de confianza. Los investigadores cuestionaron esa explicación y expresaron preocupación por las consecuencias para la colaboración con auditores externos. Es un conflicto de versiones documentado, no una conclusión independiente sobre la culpabilidad de ninguna de las partes.",
+            "Los despidos habían ocurrido la semana anterior. El acontecimiento nuevo es la carta abierta de los exinvestigadores difundida el 8 de octubre y la respuesta pública de OpenAI del día 9, recogida por Reuters. No corresponde presentar esta fecha como la del despido original. Tampoco se anunció un nuevo modelo, una API, un cambio de tarifa o una modificación de disponibilidad para usuarios. La relevancia del caso se encuentra en la gobernanza de seguridad de un laboratorio que desarrolla sistemas cada vez más autónomos."
+          ]
+        },
+        {
+          "heading": "Evidencia y antecedentes",
+          "kind": "technical",
+          "paragraphs": [
+            "La carta original está dirigida al Safety and Security Committee, al Safety Advisory Group y al Mission Advisory Council de OpenAI. Los firmantes argumentan que investigar riesgos requiere canales de debate interno y cooperación con evaluadores independientes. Afirman que los despidos y su comunicación podrían desalentar a otros empleados a informar problemas. Esta es la interpretación de los autores de la carta y no demuestra por sí sola una represalia. La publicación sí confirma que existe una controversia pública sobre procedimientos de seguridad y relaciones con terceros.",
+            "Los tres exinvestigadores ofrecen explicaciones particulares. Korbak describe su relación con evaluadores externos durante una investigación relacionada con Hugging Face; Balesni menciona trabajos de coordinación sobre monitorabilidad de modelos; Wang sostiene que un acceso delegado a un correo ejecutivo permaneció activo y que reportó la apertura accidental de un mensaje sensible. También niegan haber originado una filtración periodística sobre modelos. Estas afirmaciones provienen de los firmantes y no pueden darse por auditadas sin documentación independiente sobre permisos, accesos y comunicaciones."
+          ]
+        },
+        {
+          "heading": "Afirmaciones y límites de la información",
+          "kind": "context",
+          "paragraphs": [
+            "OpenAI declaró que las desvinculaciones no obedecieron a que los empleados expresaran preocupaciones de seguridad o discreparan de la empresa. Según Reuters, la compañía sostuvo que su investigación encontró hechos adicionales a los narrados en la carta y defendió su decisión. TechCrunch recogió declaraciones empresariales sobre presunto manejo indebido de información de investigación. Sin embargo, los detalles completos de las políticas, las autorizaciones y los hechos concretos no se publicaron. Por ello, tampoco corresponde afirmar que la acusación empresarial haya quedado probada ante un tercero.",
+            "Una cuestión técnica central es la monitorabilidad de la cadena de pensamiento: la posibilidad de observar señales útiles para evaluar el comportamiento de modelos avanzados. Los investigadores sostienen que esa capacidad puede deteriorarse y reclaman coordinación entre laboratorios. La carta no aporta un benchmark nuevo que permita cuantificar una caída universal. También defiende la cooperación con entidades como METR para evaluar capacidades y riesgos. Estas colaboraciones requieren un equilibrio entre independencia de los evaluadores, protección de datos y reglas claras sobre qué puede compartirse."
+          ]
+        },
+        {
+          "heading": "Impacto práctico y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para investigadores y desarrolladores, la lección práctica es documentar autorizaciones, canales de divulgación responsable y reglas de contacto con terceros antes de manejar información sensible. Para empresas que contratan evaluaciones externas, importa definir quién aprueba accesos, cómo se protege la evidencia y qué mecanismos resuelven discrepancias. Para usuarios de ChatGPT, el episodio no implica por sí solo una modificación de precio, región o funcionamiento. Su impacto es institucional: afecta la confianza en los mecanismos para identificar y corregir riesgos.",
+            "Análisis Gazette: los laboratorios necesitan proteger información crítica y, al mismo tiempo, permitir que las alertas técnicas lleguen a responsables internos y auditores independientes. Una controversia laboral no demuestra por sí misma que un modelo sea inseguro, pero puede revelar la necesidad de procedimientos verificables. Habrá que seguir las aclaraciones públicas de las partes, los compromisos de auditoría externa y eventuales pronunciamientos de órganos de supervisión. Por ahora, los despidos y las declaraciones contrapuestas están confirmados; los motivos concretos siguen disputados."
+          ]
+        }
+      ],
+      "executiveSummary": "El 9 de octubre de 2026, OpenAI defendió públicamente el despido de tres investigadores de seguridad y alineamiento: Jasmine Wang, Tomek Korbak y Mikita Balesni. La compañía sostuvo que una investigación interna había detectado incumplimientos en el manejo de información sensible y una ruptura significativa de confianza. Los investigadores cuestionaron esa explicación y expresaron preocupación por las consecuencias para la colaboración con auditores externos. Es un conflicto de versiones documentado, no una conclusión independiente sobre la culpabilidad de ninguna de las partes. Los despidos habían ocurrido la semana anterior. El acontecimiento nuevo es la carta abierta de los exinvestigadores difundida el 8 de octubre y la respuesta pública de OpenAI del día 9, recogida por Reuters. No corresponde presentar esta fecha como la del despido original. Tampoco se anunció un nuevo modelo, una API, un cambio de tarifa o una modificación de disponibilidad para usuarios. La relevancia del caso se encuentra en la gobernanza de seguridad de un laboratorio que desarrolla sistemas cada vez más autónomos.",
+      "finalSummary": "Análisis Gazette: los laboratorios necesitan proteger información crítica y, al mismo tiempo, permitir que las alertas técnicas lleguen a responsables internos y auditores independientes. Una controversia laboral no demuestra por sí misma que un modelo sea inseguro, pero puede revelar la necesidad de procedimientos verificables. Habrá que seguir las aclaraciones públicas de las partes, los compromisos de auditoría externa y eventuales pronunciamientos de órganos de supervisión. Por ahora, los despidos y las declaraciones contrapuestas están confirmados; los motivos concretos siguen disputados.",
+      "analysis": "Análisis Gazette: los laboratorios necesitan proteger información crítica y, al mismo tiempo, permitir que las alertas técnicas lleguen a responsables internos y auditores independientes. Una controversia laboral no demuestra por sí misma que un modelo sea inseguro, pero puede revelar la necesidad de procedimientos verificables. Habrá que seguir las aclaraciones públicas de las partes, los compromisos de auditoría externa y eventuales pronunciamientos de órganos de supervisión. Por ahora, los despidos y las declaraciones contrapuestas están confirmados; los motivos concretos siguen disputados.",
+      "watch": "Protocolos para auditores, aclaraciones públicas y supervisión independiente.",
+      "technicalDetails": [
+        {
+          "label": "Ámbito",
+          "value": "Gobernanza y seguridad de IA, no un lanzamiento de producto"
+        },
+        {
+          "label": "Monitorabilidad",
+          "value": "Observación de señales de razonamiento para evaluar riesgos",
+          "note": "Tema de la carta; no se publicó un nuevo benchmark"
+        }
+      ],
+      "availability": {
+        "status": "Sin cambios anunciados de productos",
+        "platforms": [],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "Controversia de gobernanza, no un cambio de acceso"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio",
+          "value": "No aplica; no se anunciaron cambios de precios"
+        }
+      ],
+      "limitations": [
+        "Expediente interno no público.",
+        "Versiones incompatibles sobre motivos de los despidos.",
+        "Sin métricas nuevas sobre seguridad de modelos."
+      ],
+      "practicalAdvice": [
+        "Documentar reglas de colaboración con evaluadores.",
+        "Proteger información sensible con permisos verificables.",
+        "Distinguir hechos de acusaciones disputadas."
+      ],
+      "usefulFacts": [
+        "Carta difundida el 8 de octubre de 2026.",
+        "Respuesta pública de OpenAI el 9 de octubre."
+      ],
+      "curiosities": [
+        "La carta fue dirigida a tres instancias de supervisión de seguridad."
+      ],
+      "sources": [
+        {
+          "name": "Reuters · OpenAI defiende tres despidos",
+          "url": "https://www.reuters.com/business/openai-says-it-has-fired-three-researchers-violating-sensitive-information-2026-10-09/",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "Carta original de los tres investigadores",
+          "url": "https://mikitabalesni.com/letter/letter.pdf",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Associated Press · disputa sobre despidos",
+          "url": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "TechCrunch · carta y respuesta",
+          "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+          "publishedAt": "2026-10-08"
+        }
+      ]
+    },
     {
       "id": "rubrik-code-guardian-project-hourglass-2026",
       "eventKey": "rubrik-code-guardian-claude-mythos5-project-hourglass-private-preview-2026-10-09",
@@ -173,6 +344,161 @@
         "Rubrik distingue explícitamente private preview de disponibilidad general."
       ],
       "curiosities": []
+    },
+    {
+      "id": "artex-public-distribution-closed-2026",
+      "eventKey": "artex-autumn27-closed-source-no-public-updates-korea-bank-incidents-2026-10-08",
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "ARTEX",
+      "product": "ARTEX / Autumn-27",
+      "title": "ARTEX deja de distribuirse públicamente tras vincularse a ataques contra bancos surcoreanos",
+      "summary": "Autumn-27 anunció el 8 de octubre que ARTEX dejará de recibir versiones públicas y soporte. La decisión sigue a una investigación de CrowdStrike sobre su uso en ataques a bancos surcoreanos; el alcance y la atribución siguen bajo investigación.",
+      "tags": [
+        "Agentes",
+        "Ciberseguridad",
+        "Open Source",
+        "Disponibilidad"
+      ],
+      "articleVersion": 2,
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de un repositorio de seguridad que cierra su distribución; no es una fotografía real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia editorial 3:2: biblioteca de código cuyo acceso se cierra y un banco protegido por un escudo abstracto. Sin logos falsos, texto, interfaces o escenas reales de ataques.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "Reuters · ARTEX pasa a código cerrado",
+        "url": "https://www.reuters.com/world/china/chinese-developer-makes-artex-ai-agent-closed-source-after-korean-bank-hack-2026-10-09/",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "CrowdStrike Intelligence · investigación ARTEX",
+          "url": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
+          "publishedAt": "2026-10-07"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, el desarrollador de ARTEX, conocido en GitHub como Autumn-27, anunció que dejaría de publicar nuevas versiones y prestar mantenimiento a la distribución pública del proyecto. Reuters informó el 9 de octubre sobre esa decisión y constató que la página original del repositorio había sido retirada. La medida siguió a investigaciones que vincularon el uso de ARTEX con ataques contra entidades financieras surcoreanas. No implica que desaparezcan automáticamente copias anteriores del software.",
+        "ARTEX era una herramienta de pruebas de penetración que podía conectar tareas de seguridad con modelos de lenguaje externos, no un modelo fundacional independiente. Su finalidad declarada era ayudar a organizaciones a evaluar vulnerabilidades. La automatización de estas tareas tiene un uso legítimo cuando existe autorización, pero también puede facilitar abusos. Autumn-27 sostuvo que la retirada respondía al uso indebido de la herramienta. No anunció un producto comercial, un precio, una fecha de regreso ni condiciones para acceder a una eventual versión privada.",
+        "El 7 de octubre, CrowdStrike publicó un informe técnico sobre una campaña contra organizaciones financieras de Corea del Sur que estuvo activa entre finales de septiembre y comienzos de octubre. Los analistas examinaron directorios expuestos bajo control del atacante, historiales de sesiones de Claude Code, configuraciones de ARTEX y archivos de memoria del asistente. La investigación ofrece evidencia sobre un despliegue específico del agente, pero no equivale a una auditoría de todos sus usuarios ni demuestra que el diseño del programa por sí solo causara cada intrusión.",
+        "Según CrowdStrike, la infraestructura investigada separaba una instancia de ARTEX de otros sistemas empleados por el actor. En los registros, el backend principal de ARTEX era DeepSeek v4.1-flash; también aparecían sesiones con GLM-5.3 y Grok 4.6, junto con Claude Code. La presencia de estas herramientas no demuestra que sus proveedores conocieran o aprobaran la actividad. Tampoco permite deducir que cada interacción con un modelo terminara en un acceso exitoso. El informe describe observaciones forenses y evaluaciones de los investigadores.",
+        "Las cifras requieren atribución cuidadosa. CrowdStrike señaló que el número total de organizaciones afectadas seguía sin confirmarse en su investigación y evaluó con confianza moderada que el actor probablemente hablaba chino y tenía motivación económica. Reuters informó que al menos nueve bancos habían comunicado incidentes o figuraban en reportes locales. Ambas afirmaciones son compatibles, pero no son la misma medición: una cifra periodística sobre entidades reportadas no constituye nueve intrusiones atribuidas de manera independiente por CrowdStrike. La identidad definitiva del responsable tampoco está establecida.",
+        "La disponibilidad pública cambió de manera material: el desarrollador dijo que no publicaría nuevas versiones ni daría soporte, y Reuters constató la retirada del repositorio. No hay una tarifa oficial nueva ni un canal de contratación anunciado. Eliminar una página de GitHub no revoca por sí mismo todas las licencias de versiones previas ni borra copias que terceros pudieran haber obtenido. Las condiciones legales de reutilización dependen de cada distribución concreta. El coste de ejecutar modelos externos sigue dependiendo de la infraestructura y proveedores utilizados.",
+        "Para desarrolladores y empresas, la consecuencia práctica es revisar cualquier dependencia de una herramienta sin mantenimiento y verificar su procedencia antes de seguir utilizándola. En pruebas de seguridad deben mantenerse autorización expresa, límites de ejecución, trazabilidad y supervisión humana. Los equipos defensivos pueden contrastar los indicadores de la investigación con sus registros, sin interpretar una coincidencia aislada como prueba concluyente de compromiso. Los clientes bancarios afectados deben basarse en notificaciones de sus instituciones y autoridades, no en especulaciones sobre datos expuestos.",
+        "Análisis Gazette: este episodio muestra que los agentes de seguridad plantean un problema de uso dual. Retirar nuevas versiones puede modificar el acceso oficial, pero no soluciona automáticamente fallos de infraestructura ni impide que actores reutilicen software anterior. La siguiente evidencia importante será una actualización sobre la distribución de ARTEX, hallazgos forenses adicionales y resultados de las investigaciones surcoreanas. La noticia confirmada es el cierre de la distribución pública; el alcance definitivo de los ataques y su atribución personal continúan abiertos."
+      ],
+      "keyPoints": [
+        "El desarrollador de ARTEX anunció el fin de las versiones públicas y el soporte.",
+        "CrowdStrike documentó un despliegue del agente en una campaña contra entidades financieras surcoreanas.",
+        "No existe atribución personal definitiva ni precio de una nueva versión cerrada."
+      ],
+      "quickTakeaways": [
+        "El desarrollador de ARTEX anunció el fin de las versiones públicas y el soporte.",
+        "CrowdStrike documentó un despliegue del agente en una campaña contra entidades financieras surcoreanas.",
+        "No existe atribución personal definitiva ni precio de una nueva versión cerrada.",
+        "La retirada del repositorio no borra automáticamente copias anteriores."
+      ],
+      "sections": [
+        {
+          "heading": "Qué ocurrió y qué cambia",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, el desarrollador de ARTEX, conocido en GitHub como Autumn-27, anunció que dejaría de publicar nuevas versiones y prestar mantenimiento a la distribución pública del proyecto. Reuters informó el 9 de octubre sobre esa decisión y constató que la página original del repositorio había sido retirada. La medida siguió a investigaciones que vincularon el uso de ARTEX con ataques contra entidades financieras surcoreanas. No implica que desaparezcan automáticamente copias anteriores del software.",
+            "ARTEX era una herramienta de pruebas de penetración que podía conectar tareas de seguridad con modelos de lenguaje externos, no un modelo fundacional independiente. Su finalidad declarada era ayudar a organizaciones a evaluar vulnerabilidades. La automatización de estas tareas tiene un uso legítimo cuando existe autorización, pero también puede facilitar abusos. Autumn-27 sostuvo que la retirada respondía al uso indebido de la herramienta. No anunció un producto comercial, un precio, una fecha de regreso ni condiciones para acceder a una eventual versión privada."
+          ]
+        },
+        {
+          "heading": "Evidencia y antecedentes",
+          "kind": "technical",
+          "paragraphs": [
+            "El 7 de octubre, CrowdStrike publicó un informe técnico sobre una campaña contra organizaciones financieras de Corea del Sur que estuvo activa entre finales de septiembre y comienzos de octubre. Los analistas examinaron directorios expuestos bajo control del atacante, historiales de sesiones de Claude Code, configuraciones de ARTEX y archivos de memoria del asistente. La investigación ofrece evidencia sobre un despliegue específico del agente, pero no equivale a una auditoría de todos sus usuarios ni demuestra que el diseño del programa por sí solo causara cada intrusión.",
+            "Según CrowdStrike, la infraestructura investigada separaba una instancia de ARTEX de otros sistemas empleados por el actor. En los registros, el backend principal de ARTEX era DeepSeek v4.1-flash; también aparecían sesiones con GLM-5.3 y Grok 4.6, junto con Claude Code. La presencia de estas herramientas no demuestra que sus proveedores conocieran o aprobaran la actividad. Tampoco permite deducir que cada interacción con un modelo terminara en un acceso exitoso. El informe describe observaciones forenses y evaluaciones de los investigadores."
+          ]
+        },
+        {
+          "heading": "Afirmaciones y límites de la información",
+          "kind": "context",
+          "paragraphs": [
+            "Las cifras requieren atribución cuidadosa. CrowdStrike señaló que el número total de organizaciones afectadas seguía sin confirmarse en su investigación y evaluó con confianza moderada que el actor probablemente hablaba chino y tenía motivación económica. Reuters informó que al menos nueve bancos habían comunicado incidentes o figuraban en reportes locales. Ambas afirmaciones son compatibles, pero no son la misma medición: una cifra periodística sobre entidades reportadas no constituye nueve intrusiones atribuidas de manera independiente por CrowdStrike. La identidad definitiva del responsable tampoco está establecida.",
+            "La disponibilidad pública cambió de manera material: el desarrollador dijo que no publicaría nuevas versiones ni daría soporte, y Reuters constató la retirada del repositorio. No hay una tarifa oficial nueva ni un canal de contratación anunciado. Eliminar una página de GitHub no revoca por sí mismo todas las licencias de versiones previas ni borra copias que terceros pudieran haber obtenido. Las condiciones legales de reutilización dependen de cada distribución concreta. El coste de ejecutar modelos externos sigue dependiendo de la infraestructura y proveedores utilizados."
+          ]
+        },
+        {
+          "heading": "Impacto práctico y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para desarrolladores y empresas, la consecuencia práctica es revisar cualquier dependencia de una herramienta sin mantenimiento y verificar su procedencia antes de seguir utilizándola. En pruebas de seguridad deben mantenerse autorización expresa, límites de ejecución, trazabilidad y supervisión humana. Los equipos defensivos pueden contrastar los indicadores de la investigación con sus registros, sin interpretar una coincidencia aislada como prueba concluyente de compromiso. Los clientes bancarios afectados deben basarse en notificaciones de sus instituciones y autoridades, no en especulaciones sobre datos expuestos.",
+            "Análisis Gazette: este episodio muestra que los agentes de seguridad plantean un problema de uso dual. Retirar nuevas versiones puede modificar el acceso oficial, pero no soluciona automáticamente fallos de infraestructura ni impide que actores reutilicen software anterior. La siguiente evidencia importante será una actualización sobre la distribución de ARTEX, hallazgos forenses adicionales y resultados de las investigaciones surcoreanas. La noticia confirmada es el cierre de la distribución pública; el alcance definitivo de los ataques y su atribución personal continúan abiertos."
+          ]
+        }
+      ],
+      "executiveSummary": "El 8 de octubre de 2026, el desarrollador de ARTEX, conocido en GitHub como Autumn-27, anunció que dejaría de publicar nuevas versiones y prestar mantenimiento a la distribución pública del proyecto. Reuters informó el 9 de octubre sobre esa decisión y constató que la página original del repositorio había sido retirada. La medida siguió a investigaciones que vincularon el uso de ARTEX con ataques contra entidades financieras surcoreanas. No implica que desaparezcan automáticamente copias anteriores del software. ARTEX era una herramienta de pruebas de penetración que podía conectar tareas de seguridad con modelos de lenguaje externos, no un modelo fundacional independiente. Su finalidad declarada era ayudar a organizaciones a evaluar vulnerabilidades. La automatización de estas tareas tiene un uso legítimo cuando existe autorización, pero también puede facilitar abusos. Autumn-27 sostuvo que la retirada respondía al uso indebido de la herramienta. No anunció un producto comercial, un precio, una fecha de regreso ni condiciones para acceder a una eventual versión privada.",
+      "finalSummary": "Análisis Gazette: este episodio muestra que los agentes de seguridad plantean un problema de uso dual. Retirar nuevas versiones puede modificar el acceso oficial, pero no soluciona automáticamente fallos de infraestructura ni impide que actores reutilicen software anterior. La siguiente evidencia importante será una actualización sobre la distribución de ARTEX, hallazgos forenses adicionales y resultados de las investigaciones surcoreanas. La noticia confirmada es el cierre de la distribución pública; el alcance definitivo de los ataques y su atribución personal continúan abiertos.",
+      "analysis": "Análisis Gazette: este episodio muestra que los agentes de seguridad plantean un problema de uso dual. Retirar nuevas versiones puede modificar el acceso oficial, pero no soluciona automáticamente fallos de infraestructura ni impide que actores reutilicen software anterior. La siguiente evidencia importante será una actualización sobre la distribución de ARTEX, hallazgos forenses adicionales y resultados de las investigaciones surcoreanas. La noticia confirmada es el cierre de la distribución pública; el alcance definitivo de los ataques y su atribución personal continúan abiertos.",
+      "watch": "Distribución futura de ARTEX, alcance forense y conclusiones de autoridades surcoreanas.",
+      "technicalDetails": [
+        {
+          "label": "Tipo",
+          "value": "Agente de pruebas de penetración conectado a modelos externos"
+        },
+        {
+          "label": "Backends observados",
+          "value": "DeepSeek v4.1-flash, GLM-5.3, Grok 4.6 y sesiones Claude Code",
+          "note": "Según CrowdStrike; no implica participación de proveedores"
+        }
+      ],
+      "availability": {
+        "status": "Distribución pública retirada",
+        "platforms": [
+          "GitHub (repositorio original retirado)"
+        ],
+        "regions": [
+          "No aplica"
+        ],
+        "requirements": [],
+        "notes": [
+          "No habrá nuevas versiones públicas ni mantenimiento según el desarrollador"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio",
+          "value": "Sin tarifa nueva anunciada"
+        }
+      ],
+      "limitations": [
+        "Número definitivo de entidades afectadas no confirmado por CrowdStrike.",
+        "Sin atribución personal definitiva.",
+        "No se conocen términos de una posible distribución cerrada."
+      ],
+      "practicalAdvice": [
+        "Inventariar herramientas de pruebas sin mantenimiento.",
+        "Exigir autorización y trazabilidad para agentes de seguridad.",
+        "No equiparar reportes periodísticos con atribución forense definitiva."
+      ],
+      "usefulFacts": [
+        "Retiro anunciado el 8 de octubre de 2026.",
+        "CrowdStrike publicó su investigación el 7 de octubre."
+      ],
+      "curiosities": [
+        "CrowdStrike encontró historiales de asistentes y configuraciones en directorios expuestos."
+      ],
+      "sources": [
+        {
+          "name": "Reuters · ARTEX pasa a código cerrado",
+          "url": "https://www.reuters.com/world/china/chinese-developer-makes-artex-ai-agent-closed-source-after-korean-bank-hack-2026-10-09/",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "CrowdStrike Intelligence · investigación ARTEX",
+          "url": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
+          "publishedAt": "2026-10-07"
+        }
+      ]
     },
     {
       "id": "arena-alignment-index-agent-safety-2026",
@@ -11957,12 +12283,12 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 21
+      "verifiedArticles": 22
     },
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     }
   ]
 }
