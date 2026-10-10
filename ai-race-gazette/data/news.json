@@ -1,8 +1,395 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T04:21:12.000Z",
+  "updatedAt": "2026-10-10T06:20:39.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "typesafe-ai-jev-870m-series-a-2026",
+      "eventKey": "typesafe-ai-jev-870m-series-a-7point5b-valuation-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "TypeSafe AI",
+      "product": "Jev / System One · Serie A",
+      "title": "TypeSafe AI capta US$870 millones para Jev, su IA de decisiones estructuradas, y alcanza US$7.500 millones de valoración",
+      "summary": "TypeSafe AI confirmó una Serie A de US$870 millones a una valoración de US$7.500 millones para ampliar Jev y la familia System One. El modelo devuelve decisiones tipadas, no prosa; la adopción en un tercio de Fortune 500 es una afirmación de la empresa sin auditoría pública.",
+      "tags": [
+        "Modelos",
+        "Startups",
+        "Financiación",
+        "Agentes",
+        "Desarrolladores"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico de sistemas de inteligencia artificial; no representa el producto Jev ni las oficinas de TypeSafe.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2, tinta sepia sobre papel de diario envejecido: máquina analítica de engranajes que transforma documentos en tres salidas abstractas, una bifurcación, una escala graduada y una aguja de probabilidad. Un pequeño grupo de inversores observa planos al fondo. Sin cifras ni texto incrustado, sin logotipos inventados, sin aparentar foto documental.",
+      "source": {
+        "name": "TypeSafe AI · TypeSafe A raises Series AI",
+        "url": "https://typesafe.ai/blog/series-ai",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "TypeSafe AI · documentación oficial de Jev",
+          "url": "https://docs.typesafe.ai/introduction",
+          "publishedAt": null
+        },
+        {
+          "name": "TypeSafe AI · guía de inicio y API",
+          "url": "https://docs.typesafe.ai/introduction/quickstart",
+          "publishedAt": null
+        },
+        {
+          "name": "TechCrunch · ronda, inversores y valoración",
+          "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "TypeSafe AI anunció el 9 de octubre de 2026 una Serie A de 870 millones de dólares estadounidenses con valoración de 7.500 millones. La empresa confirmó las cifras en una nota propia y señaló a Andreessen Horowitz como inversor principal, acompañado por Sequoia Capital, DCVC y participantes individuales. También indicó que Martin Casado se incorporará a su consejo. Son datos sobre capital privado y valoración de la transacción, no sobre ingresos anuales, ventas del modelo o rentabilidad operativa.",
+        "La noticia llega pocas semanas después del lanzamiento público de Jev, descrito por TypeSafe como su primer modelo System One. La empresa dice que utilizará el dinero para desarrollar más modelos de decisiones y construir infraestructura para software inteligente. No publicó un calendario de entregas, una lista contractual de clientes ni un desglose presupuestario. La financiación es un hecho anunciado; la velocidad de expansión y el impacto de los productos que vendrán siguen siendo expectativas.",
+        "La documentación primaria describe Jev como un modelo que recibe un estado y preguntas con tipo definido para devolver resultados que una aplicación puede consumir directamente. Un desarrollador puede pedir una elección entre categorías, una puntuación conforme a una rúbrica o una probabilidad para una proposición. El modelo no pretende escribir una explicación libre en cada llamada. Esta interfaz responde a una necesidad común: integrar juicios probabilísticos en flujos donde un formato de texto ambiguo obliga a añadir validaciones y manejo de errores.",
+        "Los tres tipos documentados son Choice, Score y Noul. Choice elige una opción y expone probabilidades; Score ubica el estado en una escala definida; Noul devuelve un valor entre cero y uno. La documentación indica que varias preguntas pueden compartir el mismo estado en una solicitud, pero se evalúan por separado. El resultado puede alimentar reglas de enrutamiento o priorización. Nada de ello garantiza que la decisión sea correcta, justa o segura sin una evaluación apropiada.",
+        "El inicio rápido oficial muestra una llamada HTTP POST al endpoint System One con autenticación mediante clave, un campo de estado y un conjunto de preguntas. Incluye ejemplos de clasificación de solicitudes de soporte, puntuación de frustración y detección de urgencia. La documentación también describe un SDK de Python y una consola de pruebas. Esto permite comprobar que existe una interfaz técnica pública, aunque el anuncio financiero no detalla cuotas, regiones de procesamiento ni nuevas tarifas comerciales.",
+        "Para una empresa, la ventaja potencial no está solo en ahorrar tokens de salida. Una respuesta tipada facilita comprobar que una categoría pertenece al catálogo permitido y permite construir políticas explícitas: por ejemplo, enviar a revisión humana los casos de baja confianza. Pero una probabilidad declarada por un modelo no equivale automáticamente a una probabilidad calibrada en cada aplicación. Hace falta medir errores, falsos positivos, distribución por segmentos y comportamiento con datos nuevos.",
+        "TypeSafe sostiene que aproximadamente un tercio de las compañías Fortune 500 ya utiliza Jev y que sus clientes han ahorrado millones de dólares en producción. Son afirmaciones del proveedor recogidas en su comunicado, sin lista pública de organizaciones, definiciones de uso activo ni auditoría de costes. No sabemos si la métrica incluye pruebas gratuitas, pilotos, cuentas corporativas o despliegues con contratos. Por ello no debe transformarse en un porcentaje verificado de adopción empresarial de toda la categoría.",
+        "Medios técnicos como TechCrunch contextualizan la velocidad con la que Jev atrajo atención tras su debut de septiembre y describen la ronda de inversión. Esa cobertura añade perspectiva, pero tampoco convierte las cifras internas en una medición independiente. Una comparación justa necesitaría conjuntos de evaluación representativos, definición de latencia de extremo a extremo, precios por volumen y tasa de decisiones correctas bajo los mismos datos y condiciones.",
+        "La empresa presenta Jev como un producto al que se accede mediante su consola y API; la guía pública permite conocer la forma de las peticiones y respuestas. La ronda no anunció una nueva versión del modelo, un nivel de acceso gratuito universal ni una reducción concreta de tarifas. Tampoco publicó disponibilidad regional detallada, SLA empresarial o calendario para los modelos adicionales. Cualquier cifra de un intermediario no oficial debe distinguirse de un precio del proveedor.",
+        "TypeSafe anticipa nuevas funciones para clientes corporativos y más modelos nativos para máquinas. Es una hoja de ruta comercial, no una disponibilidad general ya comprobada. Antes de integrar el servicio en procesos sensibles, una organización debería solicitar términos de retención de datos, localización del procesamiento, seguridad, garantías de continuidad, límites de uso y un procedimiento de recuperación cuando una predicción resulte equivocada.",
+        "Para desarrolladores, Jev plantea una separación útil entre generación de lenguaje y toma de decisiones acotadas. Un agente podría usar un LLM para resumir documentos y un clasificador tipado para seleccionar una ruta de trabajo, siempre que se compruebe el efecto acumulado de ambos errores. Los resultados estructurados simplifican la integración con colas, tickets y sistemas de reglas, pero no sustituyen la validación de permisos ni justifican decisiones automáticas irreversibles.",
+        "Para empresas, el criterio de compra debería ser el coste por decisión correcta y revisable, no la financiación recibida ni la latencia promocional. Un piloto serio compararía Jev con una base de reglas y con un modelo generativo usando los mismos casos, umbrales y políticas de escalamiento. También mediría errores por subgrupos y evolución temporal. Para usuarios finales, la diferencia puede verse en respuestas más consistentes, siempre que existan mecanismos de apelación.",
+        "Análisis Gazette: esta ronda es una señal de que la carrera de IA no gira exclusivamente alrededor de asistentes conversacionales cada vez más grandes. Hay demanda por componentes que devuelven juicios limitados, repetibles y fáciles de conectar a software. Una empresa puede necesitar creatividad para redactar una propuesta y, al mismo tiempo, un resultado estrictamente tipado para decidir a qué equipo enviarla. Son problemas distintos y sus métricas de calidad también deberían ser distintas.",
+        "La prueba decisiva será externa: si Jev conserva una buena calibración con datos cambiantes, si el precio real compensa las alternativas y si los clientes pueden auditar decisiones difíciles. La próxima historia relevante no será otra cifra de valoración por sí sola, sino resultados verificables, contratos identificables o la publicación técnica de la siguiente familia System One. Hasta entonces, los ahorros y la penetración corporativa deben permanecer atribuidos."
+      ],
+      "keyPoints": [
+        "La compañía confirmó US$870 millones en Serie A a una valoración de US$7.500 millones; Andreessen Horowitz lideró la ronda.",
+        "Jev devuelve Choice, Score o Noul como decisiones tipadas, con probabilidades, en lugar de generar una respuesta conversacional.",
+        "La afirmación de uso en un tercio de Fortune 500 y los ahorros millonarios proceden de TypeSafe, sin evidencia pública auditada."
+      ],
+      "quickTakeaways": [
+        "TypeSafe AI anunció el 9 de octubre una Serie A de US$870 millones con valoración de US$7.500 millones.",
+        "Jev es el primer modelo de la familia System One: convierte contexto y preguntas tipadas en decisiones consumibles por software.",
+        "La empresa promete ampliar modelos y funciones empresariales, pero no especificó calendario ni nuevos precios en el anuncio.",
+        "Las cifras de adopción y ahorro son claims de la compañía, no resultados independientes."
+      ],
+      "sections": [
+        {
+          "heading": "Una Serie A de escala extraordinaria",
+          "kind": "report",
+          "paragraphs": [
+            "TypeSafe AI anunció el 9 de octubre de 2026 una Serie A de 870 millones de dólares estadounidenses con valoración de 7.500 millones. La empresa confirmó las cifras en una nota propia y señaló a Andreessen Horowitz como inversor principal, acompañado por Sequoia Capital, DCVC y participantes individuales. También indicó que Martin Casado se incorporará a su consejo. Son datos sobre capital privado y valoración de la transacción, no sobre ingresos anuales, ventas del modelo o rentabilidad operativa.",
+            "La noticia llega pocas semanas después del lanzamiento público de Jev, descrito por TypeSafe como su primer modelo System One. La empresa dice que utilizará el dinero para desarrollar más modelos de decisiones y construir infraestructura para software inteligente. No publicó un calendario de entregas, una lista contractual de clientes ni un desglose presupuestario. La financiación es un hecho anunciado; la velocidad de expansión y el impacto de los productos que vendrán siguen siendo expectativas."
+          ]
+        },
+        {
+          "heading": "Qué es Jev y por qué no es otro chatbot",
+          "kind": "technical",
+          "paragraphs": [
+            "La documentación primaria describe Jev como un modelo que recibe un estado y preguntas con tipo definido para devolver resultados que una aplicación puede consumir directamente. Un desarrollador puede pedir una elección entre categorías, una puntuación conforme a una rúbrica o una probabilidad para una proposición. El modelo no pretende escribir una explicación libre en cada llamada. Esta interfaz responde a una necesidad común: integrar juicios probabilísticos en flujos donde un formato de texto ambiguo obliga a añadir validaciones y manejo de errores.",
+            "Los tres tipos documentados son Choice, Score y Noul. Choice elige una opción y expone probabilidades; Score ubica el estado en una escala definida; Noul devuelve un valor entre cero y uno. La documentación indica que varias preguntas pueden compartir el mismo estado en una solicitud, pero se evalúan por separado. El resultado puede alimentar reglas de enrutamiento o priorización. Nada de ello garantiza que la decisión sea correcta, justa o segura sin una evaluación apropiada."
+          ]
+        },
+        {
+          "heading": "La integración práctica: contexto, API y control",
+          "kind": "technical",
+          "paragraphs": [
+            "El inicio rápido oficial muestra una llamada HTTP POST al endpoint System One con autenticación mediante clave, un campo de estado y un conjunto de preguntas. Incluye ejemplos de clasificación de solicitudes de soporte, puntuación de frustración y detección de urgencia. La documentación también describe un SDK de Python y una consola de pruebas. Esto permite comprobar que existe una interfaz técnica pública, aunque el anuncio financiero no detalla cuotas, regiones de procesamiento ni nuevas tarifas comerciales.",
+            "Para una empresa, la ventaja potencial no está solo en ahorrar tokens de salida. Una respuesta tipada facilita comprobar que una categoría pertenece al catálogo permitido y permite construir políticas explícitas: por ejemplo, enviar a revisión humana los casos de baja confianza. Pero una probabilidad declarada por un modelo no equivale automáticamente a una probabilidad calibrada en cada aplicación. Hace falta medir errores, falsos positivos, distribución por segmentos y comportamiento con datos nuevos."
+          ]
+        },
+        {
+          "heading": "Claims de adopción que requieren atribución",
+          "kind": "context",
+          "paragraphs": [
+            "TypeSafe sostiene que aproximadamente un tercio de las compañías Fortune 500 ya utiliza Jev y que sus clientes han ahorrado millones de dólares en producción. Son afirmaciones del proveedor recogidas en su comunicado, sin lista pública de organizaciones, definiciones de uso activo ni auditoría de costes. No sabemos si la métrica incluye pruebas gratuitas, pilotos, cuentas corporativas o despliegues con contratos. Por ello no debe transformarse en un porcentaje verificado de adopción empresarial de toda la categoría.",
+            "Medios técnicos como TechCrunch contextualizan la velocidad con la que Jev atrajo atención tras su debut de septiembre y describen la ronda de inversión. Esa cobertura añade perspectiva, pero tampoco convierte las cifras internas en una medición independiente. Una comparación justa necesitaría conjuntos de evaluación representativos, definición de latencia de extremo a extremo, precios por volumen y tasa de decisiones correctas bajo los mismos datos y condiciones."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, costes y próximos productos",
+          "kind": "report",
+          "paragraphs": [
+            "La empresa presenta Jev como un producto al que se accede mediante su consola y API; la guía pública permite conocer la forma de las peticiones y respuestas. La ronda no anunció una nueva versión del modelo, un nivel de acceso gratuito universal ni una reducción concreta de tarifas. Tampoco publicó disponibilidad regional detallada, SLA empresarial o calendario para los modelos adicionales. Cualquier cifra de un intermediario no oficial debe distinguirse de un precio del proveedor.",
+            "TypeSafe anticipa nuevas funciones para clientes corporativos y más modelos nativos para máquinas. Es una hoja de ruta comercial, no una disponibilidad general ya comprobada. Antes de integrar el servicio en procesos sensibles, una organización debería solicitar términos de retención de datos, localización del procesamiento, seguridad, garantías de continuidad, límites de uso y un procedimiento de recuperación cuando una predicción resulte equivocada."
+          ]
+        },
+        {
+          "heading": "Impacto para developers y empresas",
+          "kind": "practical",
+          "paragraphs": [
+            "Para desarrolladores, Jev plantea una separación útil entre generación de lenguaje y toma de decisiones acotadas. Un agente podría usar un LLM para resumir documentos y un clasificador tipado para seleccionar una ruta de trabajo, siempre que se compruebe el efecto acumulado de ambos errores. Los resultados estructurados simplifican la integración con colas, tickets y sistemas de reglas, pero no sustituyen la validación de permisos ni justifican decisiones automáticas irreversibles.",
+            "Para empresas, el criterio de compra debería ser el coste por decisión correcta y revisable, no la financiación recibida ni la latencia promocional. Un piloto serio compararía Jev con una base de reglas y con un modelo generativo usando los mismos casos, umbrales y políticas de escalamiento. También mediría errores por subgrupos y evolución temporal. Para usuarios finales, la diferencia puede verse en respuestas más consistentes, siempre que existan mecanismos de apelación."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: una categoría complementaria",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: esta ronda es una señal de que la carrera de IA no gira exclusivamente alrededor de asistentes conversacionales cada vez más grandes. Hay demanda por componentes que devuelven juicios limitados, repetibles y fáciles de conectar a software. Una empresa puede necesitar creatividad para redactar una propuesta y, al mismo tiempo, un resultado estrictamente tipado para decidir a qué equipo enviarla. Son problemas distintos y sus métricas de calidad también deberían ser distintas.",
+            "La prueba decisiva será externa: si Jev conserva una buena calibración con datos cambiantes, si el precio real compensa las alternativas y si los clientes pueden auditar decisiones difíciles. La próxima historia relevante no será otra cifra de valoración por sí sola, sino resultados verificables, contratos identificables o la publicación técnica de la siguiente familia System One. Hasta entonces, los ahorros y la penetración corporativa deben permanecer atribuidos."
+          ]
+        }
+      ],
+      "executiveSummary": "TypeSafe AI obtuvo US$870 millones en una Serie A liderada por Andreessen Horowitz y valorada en US$7.500 millones, según su anuncio del 9 de octubre. El dinero respaldará Jev y más modelos orientados a decisiones estructuradas, una alternativa de producto a usar chatbots para cada clasificación automática. La API ya tiene documentación y consola, pero el comunicado no introduce una nueva tarifa ni una fecha de lanzamiento para las funciones prometidas. Sus métricas de adopción y ahorro deben leerse como declaraciones de la empresa.",
+      "finalSummary": "La ronda confirma interés inversor excepcional por IA que entrega decisiones directamente a sistemas empresariales. La diferencia técnica de Jev es clara en la interfaz publicada; la calibración real, los costes y la escala de adopción necesitarán pruebas externas para sostener la narrativa comercial.",
+      "analysis": "Análisis Gazette: la inversión no prueba que los modelos de decisión reemplacen a los LLM. Sí señala una categoría complementaria: automatización que necesita una salida estricta y una política explícita para decidir cuándo escalar a un humano.",
+      "watch": "Seguir publicación de nuevos System One, precios y cuotas oficiales, resultados independientes de calibración, acuerdos empresariales identificables y evidencia de ahorro real en producción.",
+      "technicalDetails": [
+        {
+          "label": "Ronda",
+          "value": "US$870 millones, Serie A",
+          "note": "Confirmado en nota oficial; liderada por Andreessen Horowitz."
+        },
+        {
+          "label": "Valoración",
+          "value": "US$7.500 millones",
+          "note": "Valoración de la ronda, no ingresos."
+        },
+        {
+          "label": "API",
+          "value": "POST /v1/systemone",
+          "note": "Endpoint oficial documentado."
+        },
+        {
+          "label": "Tipos de pregunta",
+          "value": "Choice, Score y Noul",
+          "note": "Salida estructurada con probabilidades y confianza cuando corresponde."
+        }
+      ],
+      "availability": {
+        "status": "Jev documentado con consola y API; nuevas funciones empresariales y modelos anunciados sin fecha",
+        "platforms": [
+          "Consola web de TypeSafe",
+          "API System One",
+          "SDK de Python documentado"
+        ],
+        "regions": [
+          "Cobertura geográfica comercial no especificada en la ronda"
+        ],
+        "requirements": [
+          "Cuenta y clave de API para integración",
+          "Evaluación de privacidad y calidad antes de automatizar decisiones"
+        ],
+        "notes": [
+          "No confundir financiación con disponibilidad general de productos futuros."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Tarifa Jev",
+          "value": "Sin cambio de precio anunciado en la ronda",
+          "note": "Consultar tarifas oficiales vigentes en la consola; no extrapolar precios de gateways terceros."
+        }
+      ],
+      "limitations": [
+        "La empresa no publicó auditoría de su afirmación de uso en un tercio de Fortune 500.",
+        "No se identifican clientes ni metodología pública para el ahorro agregado de millones de dólares.",
+        "La interfaz estructurada no demuestra por sí misma exactitud ni calibración en cada dominio.",
+        "No se anunció calendario concreto para los siguientes modelos ni funcionalidades empresariales."
+      ],
+      "practicalAdvice": [
+        "Probar Jev con datos reales etiquetados y comparar exactitud, calibración y coste total con reglas y LLM existentes.",
+        "Definir umbrales de confianza y revisión humana para decisiones con impacto sobre personas.",
+        "Versionar modelos y registrar decisiones para detectar deriva, sesgos y cambios de distribución."
+      ],
+      "usefulFacts": [
+        "La API oficial acepta un estado compartido y varias preguntas tipadas en una llamada.",
+        "La documentación distingue Choice, Score y Noul; la salida de Noul se expresa entre 0 y 1.",
+        "La empresa indica que Martin Casado se incorporará al consejo tras la ronda."
+      ]
+    },
+    {
+      "id": "asana-stackai-browser-agent-cost-76x-2026",
+      "eventKey": "asana-stackai-browser-agent-76x-cost-5x-speed-gpt61-sol-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Asana",
+      "product": "StackAI browser agent / GPT-6.1 Sol",
+      "title": "Asana reduce 76 veces el coste estimado de su agente de navegador en pruebas con GPT-6.1 Sol",
+      "summary": "Asana publicó un estudio de 144 ejecuciones de su agente StackAI: una combinación de caché, historial más largo y recorte menos frecuente de capturas bajó el coste medio estimado a US$0,47 y el tiempo a unos cuatro minutos. Son resultados de una prueba de la empresa, no un benchmark universal.",
+      "tags": [
+        "Agentes",
+        "Desarrolladores",
+        "Evaluaciones",
+        "Empresas",
+        "Optimización"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico de inteligencia artificial; no muestra la interfaz real de StackAI ni capturas del estudio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado horizontal 3:2 de prensa antigua en tinta sepia: un autómata de escritorio recorre páginas en un archivador mecánico, conserva tarjetas de memoria reutilizables y aparta un pequeño lote de imágenes; un reloj de arena y una balanza de costes simbolizan eficiencia. Sin texto ni cifras dentro de la imagen, sin marcas falsas ni capturas inventadas.",
+      "source": {
+        "name": "OpenAI · Asana cuts model costs 76x in browser tests",
+        "url": "https://openai.com/index/asana-browser-agent/",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "Asana · estudio técnico original de caché y agente",
+          "url": "https://asana.com/inside-asana/cut-browsers-agent-cost",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "Asana publicó el 9 de octubre de 2026 un estudio sobre la eficiencia de su agente de navegador, desarrollado en el entorno StackAI. La empresa reporta una reducción de 76 veces en coste estimado del modelo y un tiempo unas cinco veces menor frente a su configuración anterior. El flujo optimizado con GPT-6.1 Sol promedió 0,47 dólares estadounidenses por ejecución y alrededor de cuatro minutos. No se trata de un descuento de precio de StackAI ni de una mejora garantizada para cualquier navegación web.",
+        "El estudio abarcó 144 ejecuciones y cuatro modelos, tres de ellos anonimizados. La tarea consistió en recuperar seis campos para cada uno de 32 libros de un catálogo de demostración. Es una carga controlada y repetible, útil para comparar configuraciones, pero no equivale a recorrer sitios bancarios, gestionar cuentas de usuarios o ejecutar flujos largos con múltiples excepciones. La cifra 76x describe una comparación específica de ingeniería y selección de modelo.",
+        "El equipo descubrió que el agente ya almacenaba en caché sus instrucciones fijas y definiciones de herramientas, pero no el historial creciente de textos de páginas y capturas. Cada nueva solicitud reenviaba información anterior a precio completo. Además, el agente eliminaba capturas antiguas y recortaba texto con mucha frecuencia. Esas modificaciones continuas impedían conservar un prefijo estable que pudiera aprovechar caché entre llamadas sucesivas.",
+        "El resultado era doblemente costoso: se pagaba por repetir contexto y, al descartar datos demasiado pronto, el agente podía necesitar visitar páginas ya examinadas. Esto no significa que todo historial deba guardarse para siempre. La ingeniería del contexto exige equilibrar memoria útil, privacidad, latencia, límites del modelo y costes. La aportación de Asana fue medir ese equilibrio en lugar de confiar en una política de recorte arbitraria.",
+        "El responsable técnico de StackAI, Frank Hidalgo, dirigió una investigación asistida por GPT-6 Astra en Codex. Se probaron tres ideas: ampliar el caché al historial de navegación, aumentar el texto que podía conservarse y eliminar capturas por lotes en lugar de hacerlo tras casi cada paso. Asana informa que el trabajo experimental y de refactorización se realizó en aproximadamente una semana, frente a una estimación interna de uno o dos meses de investigación manual.",
+        "Los experimentos utilizaron presupuestos de 120.000 y 480.000 caracteres de historial, seis políticas de caché y capturas y cuatro modelos. La configuración ganadora permitía acumular hasta veinte capturas antes de reducirlas a la más reciente, preservando durante más tiempo una historia estable. La empresa registró trazas y resultados para revisión. Es una metodología descrita por el equipo, no una prueba independiente de que el mismo parámetro sea óptimo en cualquier producto.",
+        "Según Asana, la configuración original con el modelo B tenía un coste estimado de al menos US$36,21 por ejecución; algunos casos alcanzaban el límite de pasos antes de finalizar. Tras optimizar el flujo sobre ese mismo modelo, el coste bajó a US$1,24, aproximadamente 29 veces menos. La ejecución optimizada con GPT-6.1 Sol costó US$0,47, otras 2,6 veces menos. Por eso atribuir todo el ahorro de 76x exclusivamente al modelo sería incorrecto: intervienen diseño de historial, caché y elección de proveedor.",
+        "En el caso de GPT-6.1 Sol, el ajuste de política redujo el coste de US$1,97 a US$0,47 en la configuración de historial más amplia, según la empresa. Asana informa que el 89% de la entrada procedía de caché a un precio reducido. El tiempo pasó de al menos 22,5 minutos en la línea base con modelo B a aproximadamente cuatro minutos con el flujo optimizado. Las cifras son estimaciones de coste del modelo y no incluyen necesariamente todos los costes operativos del producto.",
+        "Una optimización que solo abarata llamadas pero reduce la exactitud no constituye una mejora empresarial. Asana indica que todas las ejecuciones del flujo ganador completaron la tarea y devolvieron la respuesta correcta. También reporta que, con GPT-6.1 Sol, ampliar el historial permitió pasar de tres de dieciocho ejecuciones con respuesta a dieciocho de dieciocho. Estas mediciones son valiosas para el caso analizado, aunque el conjunto de prueba es estrecho y no demuestra comportamiento equivalente ante sitios cambiantes o tareas de alto riesgo.",
+        "La empresa no identifica a los tres modelos comparadores y algunas ejecuciones originales fueron truncadas por límites de pasos, de modo que las relaciones deben leerse con cautela. Tampoco hay un benchmark público externo que confirme la misma mejora en otros navegadores, idiomas o dominios. Los desarrolladores deberían exigir trazas, distribución de costes y tasas de finalización, no solamente promedios. Un fallo raro pero costoso puede cambiar por completo el retorno de una automatización.",
+        "Asana afirma que incorporó los cambios de navegación a StackAI y está ampliando su capacidad de experimentar con configuraciones de agentes. Para desarrolladores, el caso propone una secuencia concreta: medir solicitudes repetidas, identificar qué partes del historial cambian, mantener prefijos cacheables, probar límites de contexto y evaluar el momento de descartar capturas. No exige copiar exactamente los veinte elementos del experimento; cada flujo necesita su propia curva de coste y calidad.",
+        "Para empresas que compran automatización, una comparación útil incluiría coste por tarea completada correctamente, tiempo de resolución, intervención humana, riesgo de errores y límites de privacidad. Para usuarios finales, una navegación más rápida puede mejorar la experiencia, pero el anuncio no garantiza una nueva tarifa ni disponibilidad universal de funciones. El ahorro interno solo se traducirá en precio final si el proveedor decide hacerlo y lo comunica explícitamente.",
+        "Análisis Gazette: este caso ilustra una dimensión de la carrera de agentes menos visible que los benchmarks de modelos: la calidad de la ingeniería que rodea a cada llamada. Una política de caché ineficiente puede ocultar la ventaja de un modelo y encarecer tareas repetitivas. El estudio también muestra que una mejora de infraestructura puede desbloquear modelos más capaces sin que cada ejecución sea necesariamente más cara.",
+        "Las próximas señales serán estudios con tareas más diversas, mediciones reproducibles fuera del entorno de Asana, resultados por percentiles y políticas de recuperación cuando el historial se vuelva demasiado grande. Es importante comprobar qué ocurre al cambiar el contenido de las páginas, cuando el agente recibe datos sensibles y cuando se exige supervisión humana. El 76x es un resultado concreto de Asana; la lección general es medir conjuntamente coste, tiempo y exactitud."
+      ],
+      "keyPoints": [
+        "Asana reporta 144 ejecuciones comparando configuraciones de historial, caché y capturas en un agente de navegador.",
+        "La configuración optimizada con GPT-6.1 Sol promedió US$0,47 de coste estimado del modelo y unos cuatro minutos por ejecución.",
+        "El factor 76x compara con una configuración original sobre otro modelo y una tarea concreta; no prueba superioridad universal."
+      ],
+      "quickTakeaways": [
+        "Asana publicó el 9 de octubre un estudio aplicado a su agente de navegador de StackAI.",
+        "Los cambios principales fueron cachear historial, retener más contexto y recortar capturas en lotes.",
+        "En su tarea de prueba, el coste estimado cayó 76x y la duración fue aproximadamente cinco veces menor.",
+        "El resultado mezcla mejoras de ingeniería y elección de modelo: no es un benchmark aislado de GPT-6.1 Sol."
+      ],
+      "sections": [
+        {
+          "heading": "El resultado anunciado y su alcance real",
+          "kind": "report",
+          "paragraphs": [
+            "Asana publicó el 9 de octubre de 2026 un estudio sobre la eficiencia de su agente de navegador, desarrollado en el entorno StackAI. La empresa reporta una reducción de 76 veces en coste estimado del modelo y un tiempo unas cinco veces menor frente a su configuración anterior. El flujo optimizado con GPT-6.1 Sol promedió 0,47 dólares estadounidenses por ejecución y alrededor de cuatro minutos. No se trata de un descuento de precio de StackAI ni de una mejora garantizada para cualquier navegación web.",
+            "El estudio abarcó 144 ejecuciones y cuatro modelos, tres de ellos anonimizados. La tarea consistió en recuperar seis campos para cada uno de 32 libros de un catálogo de demostración. Es una carga controlada y repetible, útil para comparar configuraciones, pero no equivale a recorrer sitios bancarios, gestionar cuentas de usuarios o ejecutar flujos largos con múltiples excepciones. La cifra 76x describe una comparación específica de ingeniería y selección de modelo."
+          ]
+        },
+        {
+          "heading": "El problema escondido en el historial del agente",
+          "kind": "technical",
+          "paragraphs": [
+            "El equipo descubrió que el agente ya almacenaba en caché sus instrucciones fijas y definiciones de herramientas, pero no el historial creciente de textos de páginas y capturas. Cada nueva solicitud reenviaba información anterior a precio completo. Además, el agente eliminaba capturas antiguas y recortaba texto con mucha frecuencia. Esas modificaciones continuas impedían conservar un prefijo estable que pudiera aprovechar caché entre llamadas sucesivas.",
+            "El resultado era doblemente costoso: se pagaba por repetir contexto y, al descartar datos demasiado pronto, el agente podía necesitar visitar páginas ya examinadas. Esto no significa que todo historial deba guardarse para siempre. La ingeniería del contexto exige equilibrar memoria útil, privacidad, latencia, límites del modelo y costes. La aportación de Asana fue medir ese equilibrio en lugar de confiar en una política de recorte arbitraria."
+          ]
+        },
+        {
+          "heading": "Qué cambió el equipo de StackAI",
+          "kind": "technical",
+          "paragraphs": [
+            "El responsable técnico de StackAI, Frank Hidalgo, dirigió una investigación asistida por GPT-6 Astra en Codex. Se probaron tres ideas: ampliar el caché al historial de navegación, aumentar el texto que podía conservarse y eliminar capturas por lotes en lugar de hacerlo tras casi cada paso. Asana informa que el trabajo experimental y de refactorización se realizó en aproximadamente una semana, frente a una estimación interna de uno o dos meses de investigación manual.",
+            "Los experimentos utilizaron presupuestos de 120.000 y 480.000 caracteres de historial, seis políticas de caché y capturas y cuatro modelos. La configuración ganadora permitía acumular hasta veinte capturas antes de reducirlas a la más reciente, preservando durante más tiempo una historia estable. La empresa registró trazas y resultados para revisión. Es una metodología descrita por el equipo, no una prueba independiente de que el mismo parámetro sea óptimo en cualquier producto."
+          ]
+        },
+        {
+          "heading": "Desglosar el factor 76x sin confundir causas",
+          "kind": "context",
+          "paragraphs": [
+            "Según Asana, la configuración original con el modelo B tenía un coste estimado de al menos US$36,21 por ejecución; algunos casos alcanzaban el límite de pasos antes de finalizar. Tras optimizar el flujo sobre ese mismo modelo, el coste bajó a US$1,24, aproximadamente 29 veces menos. La ejecución optimizada con GPT-6.1 Sol costó US$0,47, otras 2,6 veces menos. Por eso atribuir todo el ahorro de 76x exclusivamente al modelo sería incorrecto: intervienen diseño de historial, caché y elección de proveedor.",
+            "En el caso de GPT-6.1 Sol, el ajuste de política redujo el coste de US$1,97 a US$0,47 en la configuración de historial más amplia, según la empresa. Asana informa que el 89% de la entrada procedía de caché a un precio reducido. El tiempo pasó de al menos 22,5 minutos en la línea base con modelo B a aproximadamente cuatro minutos con el flujo optimizado. Las cifras son estimaciones de coste del modelo y no incluyen necesariamente todos los costes operativos del producto."
+          ]
+        },
+        {
+          "heading": "Calidad de respuesta y límites del experimento",
+          "kind": "report",
+          "paragraphs": [
+            "Una optimización que solo abarata llamadas pero reduce la exactitud no constituye una mejora empresarial. Asana indica que todas las ejecuciones del flujo ganador completaron la tarea y devolvieron la respuesta correcta. También reporta que, con GPT-6.1 Sol, ampliar el historial permitió pasar de tres de dieciocho ejecuciones con respuesta a dieciocho de dieciocho. Estas mediciones son valiosas para el caso analizado, aunque el conjunto de prueba es estrecho y no demuestra comportamiento equivalente ante sitios cambiantes o tareas de alto riesgo.",
+            "La empresa no identifica a los tres modelos comparadores y algunas ejecuciones originales fueron truncadas por límites de pasos, de modo que las relaciones deben leerse con cautela. Tampoco hay un benchmark público externo que confirme la misma mejora en otros navegadores, idiomas o dominios. Los desarrolladores deberían exigir trazas, distribución de costes y tasas de finalización, no solamente promedios. Un fallo raro pero costoso puede cambiar por completo el retorno de una automatización."
+          ]
+        },
+        {
+          "heading": "Qué cambia para clientes y desarrolladores",
+          "kind": "practical",
+          "paragraphs": [
+            "Asana afirma que incorporó los cambios de navegación a StackAI y está ampliando su capacidad de experimentar con configuraciones de agentes. Para desarrolladores, el caso propone una secuencia concreta: medir solicitudes repetidas, identificar qué partes del historial cambian, mantener prefijos cacheables, probar límites de contexto y evaluar el momento de descartar capturas. No exige copiar exactamente los veinte elementos del experimento; cada flujo necesita su propia curva de coste y calidad.",
+            "Para empresas que compran automatización, una comparación útil incluiría coste por tarea completada correctamente, tiempo de resolución, intervención humana, riesgo de errores y límites de privacidad. Para usuarios finales, una navegación más rápida puede mejorar la experiencia, pero el anuncio no garantiza una nueva tarifa ni disponibilidad universal de funciones. El ahorro interno solo se traducirá en precio final si el proveedor decide hacerlo y lo comunica explícitamente."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos hitos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: este caso ilustra una dimensión de la carrera de agentes menos visible que los benchmarks de modelos: la calidad de la ingeniería que rodea a cada llamada. Una política de caché ineficiente puede ocultar la ventaja de un modelo y encarecer tareas repetitivas. El estudio también muestra que una mejora de infraestructura puede desbloquear modelos más capaces sin que cada ejecución sea necesariamente más cara.",
+            "Las próximas señales serán estudios con tareas más diversas, mediciones reproducibles fuera del entorno de Asana, resultados por percentiles y políticas de recuperación cuando el historial se vuelva demasiado grande. Es importante comprobar qué ocurre al cambiar el contenido de las páginas, cuando el agente recibe datos sensibles y cuando se exige supervisión humana. El 76x es un resultado concreto de Asana; la lección general es medir conjuntamente coste, tiempo y exactitud."
+          ]
+        }
+      ],
+      "executiveSummary": "Asana documentó un experimento de 144 ejecuciones para reducir el coste de su agente de navegador. Con GPT-6 Astra asistiendo el análisis y GPT-6.1 Sol ejecutando el flujo optimizado, la compañía informa US$0,47 de coste medio estimado y alrededor de cuatro minutos por tarea, frente a una configuración anterior mucho más cara y lenta. Las cifras son internas, referidas a un catálogo de prueba y a políticas concretas de caché; no deben extrapolarse a todos los agentes o clientes.",
+      "finalSummary": "La lección del caso Asana es operativa: conservar prefijos de contexto estables, medir políticas de recorte y controlar el historial puede cambiar radicalmente la economía de un agente. El 76x pertenece a este experimento, mientras que la metodología ofrece preguntas útiles para otros equipos.",
+      "analysis": "Análisis Gazette: optimizar cómo un agente usa el contexto puede importar tanto como cambiar de modelo. El ahorro debe evaluarse junto con exactitud, tasa de finalización y coste real de herramientas e infraestructura.",
+      "watch": "Seguir publicación de resultados reproducibles, impacto en clientes de StackAI, nuevas evaluaciones y límites de coste bajo sitios web más complejos.",
+      "technicalDetails": [
+        {
+          "label": "Estudio",
+          "value": "144 ejecuciones",
+          "note": "Estudio de Asana con cuatro modelos y políticas de historial/capturas."
+        },
+        {
+          "label": "Coste optimizado",
+          "value": "US$0,47 por ejecución",
+          "note": "Coste estimado de modelo, no tarifa de producto."
+        },
+        {
+          "label": "Tiempo optimizado",
+          "value": "Aproximadamente 4 minutos",
+          "note": "Tarea específica de catálogo."
+        },
+        {
+          "label": "Historial",
+          "value": "120.000 y 480.000 caracteres",
+          "note": "Presupuestos comparados por Asana."
+        }
+      ],
+      "availability": {
+        "status": "Cambios de navegación incorporados por Asana a StackAI; estudio publicado",
+        "platforms": [
+          "Agente de navegador StackAI"
+        ],
+        "regions": [
+          "No se publicó disponibilidad regional específica de la optimización"
+        ],
+        "requirements": [
+          "Flujo de navegador con historial y política de caché configurable"
+        ],
+        "notes": [
+          "El caso no anuncia una nueva suscripción ni un descuento público del 76%."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "US$0,47",
+          "value": "Coste medio estimado del modelo por ejecución de prueba",
+          "note": "No es precio de venta de StackAI ni coste total con infraestructura."
+        }
+      ],
+      "limitations": [
+        "Experimento de Asana sobre una tarea de catálogo, no evaluación independiente general.",
+        "Los modelos competidores están anonimizados; las condiciones de precio no son universales.",
+        "Parte de la línea base alcanzó límites de pasos, lo que afecta la interpretación de ratios.",
+        "Los costes reportados no equivalen a tarifas finales para clientes."
+      ],
+      "practicalAdvice": [
+        "Medir tokens no cacheados y proporción de prefijo reutilizable antes de cambiar de modelo.",
+        "Comparar políticas de recorte por lotes contra pérdida de contexto y tasa de finalización.",
+        "Reportar coste, tiempo, exactitud y fallos con el mismo conjunto de tareas."
+      ],
+      "usefulFacts": [
+        "La tarea experimental recopiló seis campos de 32 libros de un catálogo de demostración.",
+        "Asana comparó cuatro modelos con seis políticas y dos presupuestos de historial.",
+        "El flujo ganador conservaba hasta veinte capturas antes de reducirlas a la más reciente."
+      ]
+    },
     {
       "id": "ultra-operator-62m-physical-intelligence-2026",
       "eventKey": "ultra-62m-robotics-series-a-physical-intelligence-operator-2026-10-09",
@@ -973,196 +1360,6 @@
       ]
     },
     {
-      "id": "uk-ico-foundation-models-agentic-ai-privacy-2026",
-      "eventKey": "uk-ico-ten-foundation-model-developers-data-protection-agentic-ai-call-2026-10-08",
-      "articleVersion": 2,
-      "date": "2026-10-08",
-      "announcedAt": "2026-10-08",
-      "coveredAt": "2026-10-09",
-      "verifiedAt": "2026-10-09",
-      "company": "Information Commissioner's Office",
-      "product": "Supervisión de modelos fundacionales y consulta sobre IA agéntica",
-      "title": "Reino Unido exige mejoras de privacidad a diez desarrolladores y consulta riesgos de agentes de IA",
-      "summary": "El regulador británico ICO documentó cambios realizados o comprometidos por diez desarrolladores de modelos y abrió una consulta sobre seguridad, transparencia y responsabilidad de agentes autónomos, abierta hasta el 20 de noviembre de 2026.",
-      "tags": [
-        "Regulación",
-        "Privacidad",
-        "Agentes",
-        "Seguridad",
-        "Reino Unido"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial conceptual de investigación y gobernanza de IA; no representa una inspección real.",
-      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
-      "imageStatus": "needs-specific-art",
-      "imageBrief": "Grabado editorial sepia horizontal 3:2 de una balanza de justicia, archivos de privacidad y una figura mecánica conceptual que opera herramientas bajo supervisión. Evitar logos, documentos reales inventados, insignias oficiales y apariencia de fotografía documental.",
-      "visualAssetId": "gazette-generic-ai-hero-v1",
-      "source": {
-        "name": "ICO · supervisión de modelos y riesgos de agentes",
-        "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents",
-        "publishedAt": "2026-10-08"
-      },
-      "relatedSources": [
-        {
-          "name": "ICO · informe de supervisión y transparencia",
-          "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/building-trust-and-transparency-into-generative-ai-development-our-work-to-create-regulatory-certainty/",
-          "publishedAt": "2026-10-08"
-        },
-        {
-          "name": "ICO · consulta pública sobre IA agéntica",
-          "url": "https://ico.org.uk/about-the-ico/ico-and-stakeholder-consultations/2026/10/agentic-ai-call-for-evidence/",
-          "publishedAt": "2026-10-08"
-        }
-      ],
-      "body": [
-        "El 8 de octubre de 2026, la autoridad británica de protección de datos ICO comunicó resultados de su supervisión de desarrolladores de modelos fundacionales y abrió una consulta pública sobre inteligencia artificial agéntica. Son acciones relacionadas, pero no equivalentes: una describe mejoras ya realizadas o comprometidas por empresas; la otra solicita evidencia para orientar futuras directrices sobre sistemas que actúan con autonomía. No se anunció una nueva ley ni una certificación general de seguridad de agentes.",
-        "Según el regulador, diez desarrolladores que operan en Reino Unido realizaron cambios o se comprometieron a introducirlos tras su intervención: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI. Las áreas citadas incluyen transparencia, mecanismos para ejercer derechos sobre datos personales y evaluación de salvaguardas. La fórmula 'realizaron o se comprometieron' importa: no permite afirmar que todas las mejoras estén completamente implantadas.",
-        "El ICO considera que los modelos fundacionales se entrenan con grandes volúmenes de información y pueden tratar datos personales incluso cuando el servicio final no parece diseñado para almacenar expedientes individuales. El informe de supervisión explica sus expectativas: base jurídica para tratar datos, información significativa para las personas, ejercicio efectivo de derechos y medidas que reduzcan riesgos. También aborda los casos especialmente delicados de datos de categorías especiales y modelos que puedan contener información personal.",
-        "La autoridad reconoce dificultades técnicas reales para cumplir ciertos principios de protección de datos desde el diseño. Pero su postura publicada es que esas dificultades no suspenden las obligaciones legales. El informe es una descripción de supervisión y posiciones regulatorias, no una prueba técnica de que los diez modelos sean seguros frente a filtraciones o que sus datasets hayan sido auditados exhaustivamente por un tercero.",
-        "Un chatbot tradicional puede responder una pregunta sin ejecutar acciones externas. Un agente con herramientas puede leer documentos, visitar sitios, enviar mensajes o modificar datos según permisos y configuración. Cuando procesa información personal, el riesgo no termina en el entrenamiento del modelo: también depende de las acciones que realiza, de a quién envía datos, de cómo autentica instrucciones y de si el usuario entiende qué ha autorizado.",
-        "El ICO subraya que una mayor autonomía no exime a la organización de responsabilidad. Una integración mal diseñada podría dar acceso a información innecesaria o permitir acciones fuera del propósito original. La consulta no afirma que todos los agentes fallen de ese modo; busca comprender prácticas y riesgos. Para distinguir evidencia de alarma, Gazette trata los incidentes mencionados como reportes sujetos a investigaciones, no como infracciones ya probadas.",
-        "El comunicado confirma consultas recientes del ICO con OpenAI, Anthropic, Meta y el AI Security Institute del Reino Unido sobre pruebas y despliegues de agentes. La autoridad menciona reportes de sistemas que habrían eludido protecciones, utilizado canales de comunicación no autorizados o accedido a servicios externos como Hugging Face. Esas formulaciones no equivalen a un dictamen de culpabilidad ni establecen por sí mismas el mecanismo técnico de cada episodio.",
-        "El regulador dice que ha contactado a desarrolladores y socios de pruebas para conocer evaluaciones de riesgos y salvaguardas presentes durante esos experimentos. Las averiguaciones continúan. Además, explica que su programa de supervisión original cubría once desarrolladores prioritarios y que pausó el diálogo con xAI tras abrir una investigación formal separada sobre Grok. Por ello el recuento de diez no significa que xAI haya sido absuelta o excluida de toda atención.",
-        "La convocatoria se abrió el 8 de octubre y permanecerá disponible hasta el final del 20 de noviembre de 2026. Está dirigida a desarrolladores, organizaciones que despliegan agentes y especialistas capaces de aportar evidencia. El formulario incluye seguridad de datos, transparencia, responsabilidad, decisiones automatizadas, equidad, limitación de finalidad y licitud del tratamiento. El resultado ayudará a preparar orientación futura y el código estatutario de prácticas sobre IA y decisiones automatizadas.",
-        "Participar no equivale a solicitar una licencia ni a obtener aprobación de un producto. El ICO no publicó un precio de inscripción ni un catálogo de planes comerciales porque se trata de una consulta regulatoria. Las organizaciones deben revisar las condiciones de publicación de respuestas: la autoridad puede publicar aportes completos o resúmenes, eliminando datos de contacto cuando corresponda, y advierte que no se envíe información que el participante no aceptaría ver difundida.",
-        "Una consecuencia práctica es inventariar las herramientas que un agente puede invocar y los datos que cada una necesita. Separar permisos de lectura y escritura, aplicar el mínimo privilegio, registrar operaciones sensibles y exigir confirmación humana para acciones de alto impacto son medidas de diseño razonables. Estas son recomendaciones editoriales de Gazette inspiradas en los riesgos señalados; no deben confundirse con una lista exhaustiva de requisitos nuevos emitidos el 8 de octubre.",
-        "También conviene probar instrucciones adversarias, accesos cruzados entre usuarios y errores de atribución de permisos, además de documentar cómo se revoca el acceso a una integración. Para responsables de cumplimiento, el foco no debería limitarse a la política de privacidad escrita: importa verificar el comportamiento real del agente, los proveedores involucrados, la retención de registros y la respuesta ante incidentes. La utilidad de una automatización depende de controles comprobables.",
-        "Las empresas que compran plataformas de agentes necesitarán saber quién decide los fines del tratamiento, quién ejecuta operaciones y qué evidencias existen sobre accesos y borrado. Un proveedor puede mejorar su documentación sin resolver todas las preguntas del cliente sobre datos personales. La consulta ofrece una oportunidad de describir dificultades reales, especialmente en procesos con varias herramientas y organizaciones, antes de que se consoliden orientaciones oficiales.",
-        "Para usuarios, la cuestión central es el control efectivo: comprender cuándo el asistente consulta información privada, qué servicio externo interviene y cómo detener o corregir una acción. El anuncio del ICO no introduce un nuevo botón de privacidad en productos concretos ni garantiza cambios inmediatos en ChatGPT, Claude o Gemini. Su importancia es institucional: explicita expectativas y abre un canal para discutir cómo aplicarlas a sistemas más autónomos.",
-        "Análisis Gazette: esta intervención marca un desplazamiento desde la pregunta '¿con qué datos se entrenó el modelo?' hacia otra igualmente importante: '¿qué puede hacer un agente con datos personales después de desplegarse?'. El debate afecta a fabricantes de modelos, plataformas de herramientas y empresas que los integran. No significa que Reino Unido haya prohibido agentes ni que las diez compañías hayan recibido una sanción conjunta.",
-        "Quedan por conocer la ejecución concreta de compromisos individuales, los resultados de investigaciones abiertas y el contenido final de la futura orientación. El siguiente hito verificable es el cierre de aportes el 20 de noviembre; después habrá que revisar las conclusiones oficiales. La noticia resume un cambio de foco regulatorio, no un nuevo régimen ya cerrado: transparencia, derechos y responsabilidad deberán demostrarse tanto en modelos como en flujos de trabajo autónomos."
-      ],
-      "keyPoints": [
-        "Diez desarrolladores realizaron o comprometieron cambios en protección de datos tras supervisión del ICO.",
-        "La consulta sobre riesgos de IA agéntica está abierta hasta el 20 de noviembre de 2026.",
-        "Las averiguaciones sobre incidentes de agentes siguen abiertas; no hay dictamen final anunciado."
-      ],
-      "quickTakeaways": [
-        "ICO informó compromisos o cambios de privacidad de Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI.",
-        "La supervisión de modelos y la consulta sobre agentes son procesos distintos, no nuevas sanciones conjuntas.",
-        "La consulta pública está abierta del 8 de octubre al 20 de noviembre de 2026."
-      ],
-      "sections": [
-        {
-          "heading": "Dos movimientos regulatorios en un mismo día",
-          "kind": "report",
-          "paragraphs": [
-            "El 8 de octubre de 2026, la autoridad británica de protección de datos ICO comunicó resultados de su supervisión de desarrolladores de modelos fundacionales y abrió una consulta pública sobre inteligencia artificial agéntica. Son acciones relacionadas, pero no equivalentes: una describe mejoras ya realizadas o comprometidas por empresas; la otra solicita evidencia para orientar futuras directrices sobre sistemas que actúan con autonomía. No se anunció una nueva ley ni una certificación general de seguridad de agentes.",
-            "Según el regulador, diez desarrolladores que operan en Reino Unido realizaron cambios o se comprometieron a introducirlos tras su intervención: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI. Las áreas citadas incluyen transparencia, mecanismos para ejercer derechos sobre datos personales y evaluación de salvaguardas. La fórmula 'realizaron o se comprometieron' importa: no permite afirmar que todas las mejoras estén completamente implantadas."
-          ]
-        },
-        {
-          "heading": "Qué examinó la supervisión de modelos",
-          "kind": "context",
-          "paragraphs": [
-            "El ICO considera que los modelos fundacionales se entrenan con grandes volúmenes de información y pueden tratar datos personales incluso cuando el servicio final no parece diseñado para almacenar expedientes individuales. El informe de supervisión explica sus expectativas: base jurídica para tratar datos, información significativa para las personas, ejercicio efectivo de derechos y medidas que reduzcan riesgos. También aborda los casos especialmente delicados de datos de categorías especiales y modelos que puedan contener información personal.",
-            "La autoridad reconoce dificultades técnicas reales para cumplir ciertos principios de protección de datos desde el diseño. Pero su postura publicada es que esas dificultades no suspenden las obligaciones legales. El informe es una descripción de supervisión y posiciones regulatorias, no una prueba técnica de que los diez modelos sean seguros frente a filtraciones o que sus datasets hayan sido auditados exhaustivamente por un tercero."
-          ]
-        },
-        {
-          "heading": "Por qué los agentes cambian la naturaleza del riesgo",
-          "kind": "technical",
-          "paragraphs": [
-            "Un chatbot tradicional puede responder una pregunta sin ejecutar acciones externas. Un agente con herramientas puede leer documentos, visitar sitios, enviar mensajes o modificar datos según permisos y configuración. Cuando procesa información personal, el riesgo no termina en el entrenamiento del modelo: también depende de las acciones que realiza, de a quién envía datos, de cómo autentica instrucciones y de si el usuario entiende qué ha autorizado.",
-            "El ICO subraya que una mayor autonomía no exime a la organización de responsabilidad. Una integración mal diseñada podría dar acceso a información innecesaria o permitir acciones fuera del propósito original. La consulta no afirma que todos los agentes fallen de ese modo; busca comprender prácticas y riesgos. Para distinguir evidencia de alarma, Gazette trata los incidentes mencionados como reportes sujetos a investigaciones, no como infracciones ya probadas."
-          ]
-        },
-        {
-          "heading": "Investigaciones abiertas: alcance y cautelas",
-          "kind": "report",
-          "paragraphs": [
-            "El comunicado confirma consultas recientes del ICO con OpenAI, Anthropic, Meta y el AI Security Institute del Reino Unido sobre pruebas y despliegues de agentes. La autoridad menciona reportes de sistemas que habrían eludido protecciones, utilizado canales de comunicación no autorizados o accedido a servicios externos como Hugging Face. Esas formulaciones no equivalen a un dictamen de culpabilidad ni establecen por sí mismas el mecanismo técnico de cada episodio.",
-            "El regulador dice que ha contactado a desarrolladores y socios de pruebas para conocer evaluaciones de riesgos y salvaguardas presentes durante esos experimentos. Las averiguaciones continúan. Además, explica que su programa de supervisión original cubría once desarrolladores prioritarios y que pausó el diálogo con xAI tras abrir una investigación formal separada sobre Grok. Por ello el recuento de diez no significa que xAI haya sido absuelta o excluida de toda atención."
-          ]
-        },
-        {
-          "heading": "Consulta pública: fechas, temas y participación",
-          "kind": "report",
-          "paragraphs": [
-            "La convocatoria se abrió el 8 de octubre y permanecerá disponible hasta el final del 20 de noviembre de 2026. Está dirigida a desarrolladores, organizaciones que despliegan agentes y especialistas capaces de aportar evidencia. El formulario incluye seguridad de datos, transparencia, responsabilidad, decisiones automatizadas, equidad, limitación de finalidad y licitud del tratamiento. El resultado ayudará a preparar orientación futura y el código estatutario de prácticas sobre IA y decisiones automatizadas.",
-            "Participar no equivale a solicitar una licencia ni a obtener aprobación de un producto. El ICO no publicó un precio de inscripción ni un catálogo de planes comerciales porque se trata de una consulta regulatoria. Las organizaciones deben revisar las condiciones de publicación de respuestas: la autoridad puede publicar aportes completos o resúmenes, eliminando datos de contacto cuando corresponda, y advierte que no se envíe información que el participante no aceptaría ver difundida."
-          ]
-        },
-        {
-          "heading": "Qué deberían hacer los desarrolladores de agentes",
-          "kind": "practical",
-          "paragraphs": [
-            "Una consecuencia práctica es inventariar las herramientas que un agente puede invocar y los datos que cada una necesita. Separar permisos de lectura y escritura, aplicar el mínimo privilegio, registrar operaciones sensibles y exigir confirmación humana para acciones de alto impacto son medidas de diseño razonables. Estas son recomendaciones editoriales de Gazette inspiradas en los riesgos señalados; no deben confundirse con una lista exhaustiva de requisitos nuevos emitidos el 8 de octubre.",
-            "También conviene probar instrucciones adversarias, accesos cruzados entre usuarios y errores de atribución de permisos, además de documentar cómo se revoca el acceso a una integración. Para responsables de cumplimiento, el foco no debería limitarse a la política de privacidad escrita: importa verificar el comportamiento real del agente, los proveedores involucrados, la retención de registros y la respuesta ante incidentes. La utilidad de una automatización depende de controles comprobables."
-          ]
-        },
-        {
-          "heading": "Impacto para empresas y usuarios",
-          "kind": "context",
-          "paragraphs": [
-            "Las empresas que compran plataformas de agentes necesitarán saber quién decide los fines del tratamiento, quién ejecuta operaciones y qué evidencias existen sobre accesos y borrado. Un proveedor puede mejorar su documentación sin resolver todas las preguntas del cliente sobre datos personales. La consulta ofrece una oportunidad de describir dificultades reales, especialmente en procesos con varias herramientas y organizaciones, antes de que se consoliden orientaciones oficiales.",
-            "Para usuarios, la cuestión central es el control efectivo: comprender cuándo el asistente consulta información privada, qué servicio externo interviene y cómo detener o corregir una acción. El anuncio del ICO no introduce un nuevo botón de privacidad en productos concretos ni garantiza cambios inmediatos en ChatGPT, Claude o Gemini. Su importancia es institucional: explicita expectativas y abre un canal para discutir cómo aplicarlas a sistemas más autónomos."
-          ]
-        },
-        {
-          "heading": "Análisis Gazette, límites y seguimiento",
-          "kind": "analysis",
-          "paragraphs": [
-            "Análisis Gazette: esta intervención marca un desplazamiento desde la pregunta '¿con qué datos se entrenó el modelo?' hacia otra igualmente importante: '¿qué puede hacer un agente con datos personales después de desplegarse?'. El debate afecta a fabricantes de modelos, plataformas de herramientas y empresas que los integran. No significa que Reino Unido haya prohibido agentes ni que las diez compañías hayan recibido una sanción conjunta.",
-            "Quedan por conocer la ejecución concreta de compromisos individuales, los resultados de investigaciones abiertas y el contenido final de la futura orientación. El siguiente hito verificable es el cierre de aportes el 20 de noviembre; después habrá que revisar las conclusiones oficiales. La noticia resume un cambio de foco regulatorio, no un nuevo régimen ya cerrado: transparencia, derechos y responsabilidad deberán demostrarse tanto en modelos como en flujos de trabajo autónomos."
-          ]
-        }
-      ],
-      "executiveSummary": "El ICO británico anunció resultados de supervisión sobre diez desarrolladores de modelos fundacionales y una consulta abierta sobre protección de datos en agentes autónomos. Los cambios de las empresas incluyen medidas realizadas y otras todavía comprometidas. Las investigaciones sobre incidentes recientes de agentes no han concluido.",
-      "finalSummary": "El cambio relevante es de alcance: la protección de datos ya no se evalúa solo en el entrenamiento, sino también en las acciones de agentes con herramientas. El siguiente hito es el cierre de la consulta el 20 de noviembre; aún no existe una nueva regulación final derivada de ella.",
-      "analysis": "Análisis Gazette: los agentes desplazan el foco regulatorio hacia permisos, trazabilidad y responsabilidad operativa. Las medidas anunciadas no certifican seguridad completa de ningún proveedor.",
-      "watch": "Cierre de la consulta el 20 de noviembre de 2026. Informe final y orientaciones del ICO sobre agentes. Resultado de las averiguaciones sobre pruebas y despliegues recientes.",
-      "technicalDetails": [
-        {
-          "label": "Desarrolladores supervisados",
-          "value": "10",
-          "note": "Cambios realizados o comprometidos, según el ICO."
-        },
-        {
-          "label": "Temas de consulta",
-          "value": "Seguridad, transparencia, responsabilidad, decisiones automatizadas, equidad y licitud",
-          "note": "Áreas descritas por el regulador."
-        }
-      ],
-      "availability": {
-        "status": "Consulta pública abierta",
-        "platforms": [
-          "Portal de consulta del ICO"
-        ],
-        "regions": [
-          "Reino Unido; participación de especialistas y organizaciones interesadas"
-        ],
-        "requirements": [
-          "Responder antes del cierre del 20 de noviembre de 2026"
-        ],
-        "notes": [
-          "No es una autorización de producto ni una norma nueva ya vigente."
-        ]
-      },
-      "pricing": [
-        {
-          "label": "Participación en consulta",
-          "value": "Sin tarifa anunciada",
-          "note": "No se publicó precio de inscripción."
-        }
-      ],
-      "limitations": [
-        "No se confirma la implementación completa de todos los compromisos de las diez compañías.",
-        "Las averiguaciones sobre agentes siguen abiertas.",
-        "La consulta todavía no ha producido guía final ni sanción conjunta.",
-        "Los incidentes citados por ICO se presentan como reportes investigados."
-      ],
-      "practicalAdvice": [
-        "Inventariar herramientas y datos accesibles por agentes y aplicar permisos mínimos.",
-        "Separar acciones de lectura y escritura, y probar la revocación de accesos.",
-        "Consultar el formulario oficial y evitar incluir información confidencial en aportes públicos."
-      ],
-      "usefulFacts": [
-        "Diez empresas mencionadas: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI.",
-        "La supervisión original cubrió once desarrolladores; ICO pausó la relación con xAI tras abrir una investigación formal separada."
-      ]
-    },
-    {
       "id": "china-new-productive-forces-ai-plus-19-measures-2026",
       "eventKey": "china-state-council-19-measures-new-quality-productive-forces-ai-plus-2026-10-09",
       "date": "2026-10-09",
@@ -1328,175 +1525,6 @@
         {
           "name": "Reuters · China y supervisión de inversiones tecnológicas",
           "url": "https://www.reuters.com/world/asia-pacific/china-issues-guidelines-new-productive-forces-including-ai-2026-10-09/",
-          "publishedAt": "2026-10-09"
-        }
-      ],
-      "articleVersion": 2
-    },
-    {
-      "id": "semianalysis-chinese-model-safety-disclosures-857-2026",
-      "eventKey": "semianalysis-857-china-model-releases-3point6pct-safety-disclosures-2026-10-08",
-      "date": "2026-10-08",
-      "announcedAt": "2026-10-08",
-      "coveredAt": "2026-10-09",
-      "verifiedAt": "2026-10-09",
-      "company": "SemiAnalysis",
-      "product": "Beijing Will Not Pace the Frontier · análisis de divulgación de seguridad",
-      "title": "SemiAnalysis: solo el 3,6% de 857 lanzamientos chinos publicó pruebas específicas de seguridad",
-      "summary": "Un estudio de SemiAnalysis sobre nueve desarrolladores chinos encontró resultados públicos de seguridad asociados a 31 de 857 lanzamientos; solo nueve estaban disponibles al debut. El informe mide divulgación, no ausencia de pruebas internas.",
-      "tags": [
-        "Seguridad",
-        "Investigación",
-        "China",
-        "Transparencia"
-      ],
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado conceptual de herramientas de investigación de IA; no es una fotografía de una auditoría real.",
-      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
-      "imageStatus": "needs-specific-art",
-      "imageBrief": "Grabado sepia 3:2 de archivadores con fichas de modelos, una lupa de auditoría y balanza de seguridad. Sin cifras impresas, logotipos falsos ni insinuación de resultados experimentales no publicados.",
-      "visualAssetId": "gazette-generic-ai-hero-v1",
-      "source": {
-        "name": "SemiAnalysis · Beijing Will Not Pace the Frontier",
-        "url": "https://newsletter.semianalysis.com/p/beijing-will-not-pace-the-frontier",
-        "publishedAt": "2026-10-08"
-      },
-      "relatedSources": [
-        {
-          "name": "Reuters · investigación sobre divulgación de pruebas de seguridad",
-          "url": "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/",
-          "publishedAt": "2026-10-09"
-        }
-      ],
-      "body": [
-        "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente.",
-        "La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes.",
-        "Para aceptar una divulgación, los investigadores exigieron resultados cuantitativos o hallazgos sustantivos vinculados al modelo identificado. Entre las categorías consideradas figuran respuestas dañinas, resistencia a jailbreaks, toxicidad, privacidad, comportamiento de rechazo y capacidades peligrosas. No bastaba afirmar que un modelo había recibido entrenamiento de seguridad o había sido evaluado. Esa decisión metodológica eleva el umbral de evidencia y explica por qué una página promocional con lenguaje tranquilizador no cuenta. También limita la conclusión: el trabajo mide lo publicado y encontrado en documentación accesible, no los protocolos internos ni las auditorías confidenciales.",
-        "El desglose temporal añade matices. Según SemiAnalysis, 16 de los 31 resultados aparecieron después del lanzamiento, con una demora mediana de 42 días y un máximo observado de 349 días. En seis casos existía un resultado, pero no pudo fijarse con seguridad su fecha o correspondencia exacta. Otros diez lanzamientos incluían afirmaciones de evaluación sin cifras, tres solo aparecían en reportes de prensa o inversores y 813 no tenían divulgación de seguridad localizada. Las categorías se refieren a evidencias de publicación y no deben mezclarse con una tasa medida de fallos de seguridad.",
-        "El estudio señala que el ritmo de lanzamientos aumentó más rápido que la publicación de resultados. Sus gráficos pasan de tres modelos en el primer trimestre de 2023 a 101 en el tercer trimestre de 2025; los lanzamientos con algún resultado de seguridad no superan siete por trimestre en la serie descrita. SemiAnalysis observa además que los modelos con pesos abiertos representan más de la mitad de las publicaciones trimestrales desde mediados de 2023. La apertura de pesos facilita auditorías independientes, pero no reemplaza una evaluación documentada antes de distribuir un sistema potencialmente potente.",
-        "Las diferencias entre empresas también requieren lectura cuidadosa. SemiAnalysis atribuye a Alibaba 238 lanzamientos y siete con resultados públicos; a Tencent, uno de 133; a ByteDance, dos de 120; y a Baidu, uno de 49. Los cinco desarrolladores especializados suman 20 divulgaciones en 317 lanzamientos, frente a 11 en 540 de las grandes plataformas. Esos cocientes reflejan el método de conteo elegido y no prueban que un proveedor sea más seguro que otro. Un modelo sin documento público puede haber sido probado; un modelo con documento puede seguir presentando fallos.",
-        "El contenido de las pruebas es tan importante como su presencia. Los investigadores encontraron 18 resultados relativos a respuestas dañinas o rechazos y siete sobre resistencia a jailbreaks. Nueve documentos tocaban seguridad de código o ciberseguridad, aunque siete se centraban en generar código seguro, que no equivale a evaluar capacidad ofensiva. Solo tres documentos abordaban riesgos cibernéticos ofensivos o biológicos, según la clasificación del informe. La conclusión del autor es que no identificó un modelo chino de texto de frontera acompañado al lanzamiento de una evaluación pública integral de capacidades peligrosas en ciberseguridad, biología y pérdida de control.",
-        "El marco regulatorio es una pieza de contexto, no una explicación causal demostrada. SemiAnalysis sostiene que la normativa vinculante china se ha concentrado más en aplicaciones y efectos sobre usuarios que en obligaciones de divulgación por capacidad de modelos frontera. Su análisis del marco chino de gobernanza de seguridad menciona riesgos como obtener permisos sin autorización, engañar a evaluadores u ocultar capacidades, pero señala que no se traducen automáticamente en pruebas públicas obligatorias para cada lanzamiento. Reuters recogió el hallazgo el 9 de octubre. El informe no ofrece una muestra internacional equivalente, por lo que no permite afirmar que China publique menos evaluaciones que cualquier otro país en términos comparables.",
-        "Para desarrolladores que integran modelos de terceros, la consecuencia práctica es crear su propia ficha de riesgo. Conviene registrar versión exacta, licencia, fecha, modelo base, pruebas disponibles, límites de uso y cambios entre snapshots. Las empresas que usan agentes con herramientas deben ensayar autorización, exfiltración, instrucciones maliciosas y recuperación de errores en su contexto concreto. La ausencia de una ficha pública no es prueba de peligro, pero sí aumenta el trabajo de diligencia debida. Y una ficha pública favorable tampoco reemplaza pruebas de integración, revisión humana y monitoreo de producción.",
-        "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología."
-      ],
-      "keyPoints": [
-        "31 de 857 lanzamientos tenían resultados públicos específicos: 3,6%.",
-        "Solo nueve, el 1,1%, contaban con esos resultados al debut.",
-        "No encontrar divulgación no significa que no existieran pruebas internas."
-      ],
-      "quickTakeaways": [
-        "SemiAnalysis examinó 857 lanzamientos de nueve desarrolladores chinos.",
-        "Encontró resultados de seguridad específicos para 31 modelos, equivalentes al 3,6%.",
-        "Solo nueve resultados estaban publicados al momento del lanzamiento.",
-        "La investigación mide transparencia documental, no seguridad intrínseca.",
-        "No existe una comparación internacional equivalente en el estudio."
-      ],
-      "sections": [
-        {
-          "heading": "La muestra y la pregunta de investigación",
-          "kind": "report",
-          "paragraphs": [
-            "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente.",
-            "La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes."
-          ]
-        },
-        {
-          "heading": "Método y resultados cuantitativos",
-          "kind": "technical",
-          "paragraphs": [
-            "Para aceptar una divulgación, los investigadores exigieron resultados cuantitativos o hallazgos sustantivos vinculados al modelo identificado. Entre las categorías consideradas figuran respuestas dañinas, resistencia a jailbreaks, toxicidad, privacidad, comportamiento de rechazo y capacidades peligrosas. No bastaba afirmar que un modelo había recibido entrenamiento de seguridad o había sido evaluado. Esa decisión metodológica eleva el umbral de evidencia y explica por qué una página promocional con lenguaje tranquilizador no cuenta. También limita la conclusión: el trabajo mide lo publicado y encontrado en documentación accesible, no los protocolos internos ni las auditorías confidenciales.",
-            "El desglose temporal añade matices. Según SemiAnalysis, 16 de los 31 resultados aparecieron después del lanzamiento, con una demora mediana de 42 días y un máximo observado de 349 días. En seis casos existía un resultado, pero no pudo fijarse con seguridad su fecha o correspondencia exacta. Otros diez lanzamientos incluían afirmaciones de evaluación sin cifras, tres solo aparecían en reportes de prensa o inversores y 813 no tenían divulgación de seguridad localizada. Las categorías se refieren a evidencias de publicación y no deben mezclarse con una tasa medida de fallos de seguridad.",
-            "El estudio señala que el ritmo de lanzamientos aumentó más rápido que la publicación de resultados. Sus gráficos pasan de tres modelos en el primer trimestre de 2023 a 101 en el tercer trimestre de 2025; los lanzamientos con algún resultado de seguridad no superan siete por trimestre en la serie descrita. SemiAnalysis observa además que los modelos con pesos abiertos representan más de la mitad de las publicaciones trimestrales desde mediados de 2023. La apertura de pesos facilita auditorías independientes, pero no reemplaza una evaluación documentada antes de distribuir un sistema potencialmente potente."
-          ]
-        },
-        {
-          "heading": "Diferencias, riesgos y regulación",
-          "kind": "context",
-          "paragraphs": [
-            "Las diferencias entre empresas también requieren lectura cuidadosa. SemiAnalysis atribuye a Alibaba 238 lanzamientos y siete con resultados públicos; a Tencent, uno de 133; a ByteDance, dos de 120; y a Baidu, uno de 49. Los cinco desarrolladores especializados suman 20 divulgaciones en 317 lanzamientos, frente a 11 en 540 de las grandes plataformas. Esos cocientes reflejan el método de conteo elegido y no prueban que un proveedor sea más seguro que otro. Un modelo sin documento público puede haber sido probado; un modelo con documento puede seguir presentando fallos.",
-            "El contenido de las pruebas es tan importante como su presencia. Los investigadores encontraron 18 resultados relativos a respuestas dañinas o rechazos y siete sobre resistencia a jailbreaks. Nueve documentos tocaban seguridad de código o ciberseguridad, aunque siete se centraban en generar código seguro, que no equivale a evaluar capacidad ofensiva. Solo tres documentos abordaban riesgos cibernéticos ofensivos o biológicos, según la clasificación del informe. La conclusión del autor es que no identificó un modelo chino de texto de frontera acompañado al lanzamiento de una evaluación pública integral de capacidades peligrosas en ciberseguridad, biología y pérdida de control.",
-            "El marco regulatorio es una pieza de contexto, no una explicación causal demostrada. SemiAnalysis sostiene que la normativa vinculante china se ha concentrado más en aplicaciones y efectos sobre usuarios que en obligaciones de divulgación por capacidad de modelos frontera. Su análisis del marco chino de gobernanza de seguridad menciona riesgos como obtener permisos sin autorización, engañar a evaluadores u ocultar capacidades, pero señala que no se traducen automáticamente en pruebas públicas obligatorias para cada lanzamiento. Reuters recogió el hallazgo el 9 de octubre. El informe no ofrece una muestra internacional equivalente, por lo que no permite afirmar que China publique menos evaluaciones que cualquier otro país en términos comparables."
-          ]
-        },
-        {
-          "heading": "Consejos, límites y lectura Gazette",
-          "kind": "analysis",
-          "paragraphs": [
-            "Para desarrolladores que integran modelos de terceros, la consecuencia práctica es crear su propia ficha de riesgo. Conviene registrar versión exacta, licencia, fecha, modelo base, pruebas disponibles, límites de uso y cambios entre snapshots. Las empresas que usan agentes con herramientas deben ensayar autorización, exfiltración, instrucciones maliciosas y recuperación de errores en su contexto concreto. La ausencia de una ficha pública no es prueba de peligro, pero sí aumenta el trabajo de diligencia debida. Y una ficha pública favorable tampoco reemplaza pruebas de integración, revisión humana y monitoreo de producción.",
-            "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología."
-          ]
-        }
-      ],
-      "executiveSummary": "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente. La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes.",
-      "finalSummary": "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología.",
-      "analysis": "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología.",
-      "watch": "Nuevas fichas de seguridad por versión, evaluaciones de capacidades peligrosas y estudios internacionales con la misma metodología.",
-      "technicalDetails": [
-        {
-          "label": "Muestra",
-          "value": "857 lanzamientos de nueve desarrolladores, 2021–15 sep 2026"
-        },
-        {
-          "label": "Con resultado público",
-          "value": "31/857 (3,6%)",
-          "note": "Cálculo de SemiAnalysis"
-        },
-        {
-          "label": "Al lanzamiento",
-          "value": "9/857 (1,1%)",
-          "note": "Cálculo de SemiAnalysis"
-        },
-        {
-          "label": "Sin divulgación localizada",
-          "value": "813/857 (94,9%)",
-          "note": "No implica ausencia de pruebas internas"
-        }
-      ],
-      "availability": {
-        "status": "Investigación publicada; parte de la oferta editorial del autor funciona por suscripción",
-        "platforms": [
-          "Web"
-        ],
-        "regions": [],
-        "requirements": [],
-        "notes": [
-          "No es un modelo ni servicio de inferencia."
-        ]
-      },
-      "pricing": [
-        {
-          "label": "Precio del informe",
-          "value": "No verificado; no inferir una tarifa de suscripción"
-        }
-      ],
-      "limitations": [
-        "Sin muestra internacional comparable.",
-        "Diferente granularidad de variantes por proveedor.",
-        "Documentación privada y pruebas internas no observables.",
-        "Resultados de divulgación no miden directamente seguridad real."
-      ],
-      "practicalAdvice": [
-        "Registrar versión y licencia exactas antes de integrar modelos.",
-        "Exigir evaluaciones específicas, fechadas y vinculadas a la versión.",
-        "Probar permisos, jailbreaks y herramientas en el entorno propio."
-      ],
-      "usefulFacts": [
-        "741 lanzamientos de producto y 116 de investigación.",
-        "16 evaluaciones se publicaron después del lanzamiento, con mediana de 42 días."
-      ],
-      "curiosities": [
-        "El informe contabiliza tamaños y snapshots distintos por separado cuando aparecen como lanzamientos."
-      ],
-      "sources": [
-        {
-          "name": "SemiAnalysis · Beijing Will Not Pace the Frontier",
-          "url": "https://newsletter.semianalysis.com/p/beijing-will-not-pace-the-frontier",
-          "publishedAt": "2026-10-08"
-        },
-        {
-          "name": "Reuters · investigación sobre divulgación de pruebas de seguridad",
-          "url": "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/",
           "publishedAt": "2026-10-09"
         }
       ],
@@ -1843,6 +1871,559 @@
         "Rubrik distingue explícitamente private preview de disponibilidad general."
       ],
       "curiosities": []
+    },
+    {
+      "id": "astera-labs-aries-7-pcie-optical-2026",
+      "eventKey": "astera-labs-aries-7-pcie7-copper-optical-ai-interconnect-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Astera Labs",
+      "product": "Aries 7 Smart Signal Conditioning",
+      "title": "Astera Labs anuncia Aries 7: enlaces PCIe 7 de cobre y óptica para clústeres de IA de varios racks",
+      "summary": "Astera Labs presentó Aries 7, una familia de retimers, redrivers, módulos de cable y componentes ópticos para PCIe 7. Declara enlaces de hasta 128 GT/s y más de 50 metros con óptica; prevé muestras para clientes seleccionados en el cuarto trimestre de 2026, no disponibilidad general inmediata.",
+      "tags": [
+        "Semiconductores",
+        "Infraestructura",
+        "Chips",
+        "Redes",
+        "Hardware"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de una red tecnológica; no muestra los dispositivos Aries 7 ni un centro de datos real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 en tinta sepia: tres racks de aceleradores de IA enlazados por pistas de cobre y haces de fibra óptica que atraviesan un espacio industrial. Un retimer conceptual aparece como pequeña pieza de conexión, sin mostrar un diseño de chip auténtico. Sin texto, números, logotipos falsos ni apariencia de fotografía documental.",
+      "source": {
+        "name": "Astera Labs · anuncio oficial Aries 7",
+        "url": "https://www.asteralabs.com/news/astera-labs-announces-aries-7-industrys-first-pcie-7-signal-conditioning-portfolio-across-copper-and-optical-interconnects/",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Astera Labs · explicación técnica Aries PCIe 7",
+          "url": "https://www.asteralabs.com/resources/blog/nothing-out-of-reach-the-aries-pcie-7-family-delivers-copper-and-optical-signal-conditioning-for-ais-next-chapter/",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Astera Labs · familia de productos Aries",
+          "url": "https://www.asteralabs.com/products/aries-smart-signal-conditioners/",
+          "publishedAt": null
+        }
+      ],
+      "body": [
+        "Astera Labs anunció Aries 7, una cartera de acondicionamiento de señal para conexiones PCI Express de séptima generación dentro y entre sistemas de inteligencia artificial. La familia incluye retimers, redrivers, módulos de cable, controladores ópticos y amplificadores de transimpedancia óptica, conocidos como TIA. No es una GPU, un modelo de IA ni una red instalada universalmente: son componentes que los fabricantes de servidores y centros de datos pueden incorporar a futuras plataformas de alto rendimiento.",
+        "El anuncio es relevante porque el crecimiento de los clústeres de aceleradores obliga a mover información entre procesadores, memoria, almacenamiento y redes. Un enlace que funciona mal puede dejar hardware costoso esperando datos. Astera busca que los diseñadores elijan cobre para trayectos cortos y óptica cuando necesiten extender conexiones a varios racks. La empresa lo presenta como una de las primeras carteras PCIe 7 que cubre ambos medios; esa caracterización de liderazgo es una afirmación del proveedor.",
+        "En su explicación técnica, Astera señala que PCIe 7 vuelve a duplicar la capacidad teórica respecto de PCIe 6. Mantiene modulación PAM4, pero eleva la frecuencia de Nyquist a 32 GHz, haciendo más difícil conservar integridad de señal en pistas de placa, conectores y cables. El presupuesto de pérdida de canal que cita el fabricante pasa de 32 a 36 dB, un margen relativamente pequeño frente al aumento de frecuencia. No basta con duplicar la velocidad de un transceptor sin revisar el recorrido físico completo.",
+        "Un retimer recupera y vuelve a temporizar la señal; un redriver la acondiciona sin realizar toda esa regeneración. Son compromisos distintos de energía, latencia y capacidad para cerrar canales difíciles. Astera incorpora ambos y plantea compatibilidad de pines mediante el OCP Signal Conditioner Standard Footprint, lo que podría permitir cambios de diseño más flexibles. Que dos componentes compartan huella no elimina la necesidad de verificar potencia, firmware, pérdidas y estabilidad en cada sistema.",
+        "La compañía anuncia enlaces de hasta 128 GT/s y una extensión óptica superior a 50 metros para determinadas topologías. GT/s mide transferencias de señal, no gigabytes útiles por segundo de una aplicación, y la distancia anunciada no es una prueba de rendimiento de un centro de datos completo. Para trayectos cercanos, Aries 7 incluye cables activos y acondicionamiento sobre placas. Para recorridos más largos, aparecen drivers ópticos y TIAs destinados a configuraciones LPO y NPO.",
+        "El blog técnico de Astera describe módulos activos de cobre de hasta tres metros y cables eléctricos activos de hasta seis metros, mientras que los componentes ópticos apuntan a interconexiones entre racks. Esta variedad importa porque no todos los enlaces requieren la misma solución. Una fibra puede ampliar alcance, pero añade componentes y exigencias de integración; un retimer puede mejorar márgenes, pero consume energía. El diseño óptimo depende de topología, densidad y coste operativo.",
+        "Astera integra la familia con COSMOS, su software de telemetría y diagnóstico de enlaces. Según el fabricante, esta capa permite observar salud de conexiones, ajustar parámetros y facilitar la depuración cuando una instalación crece. Para operadores de IA, la observabilidad de interconexión es importante: una caída intermitente o una degradación de señal puede parecer un problema de aceleradores o de software de entrenamiento cuando la causa real está en el cableado o la electrónica de conexión.",
+        "El comunicado no ofrece una auditoría independiente que demuestre mejoras concretas de disponibilidad, utilización de GPU o coste por token atribuibles a COSMOS con Aries 7. Tampoco detalla públicamente una matriz exhaustiva de telemetría para cada componente. Conviene distinguir las funciones anunciadas de su comportamiento en producción. La prueba útil será comprobar si los diagnósticos localizan fallos de forma consistente y si los ajustes automáticos son seguros y reversibles.",
+        "Astera cita colaboración con AMD e Intel, cuyos equipos han validado generaciones anteriores de retimers Aries desde PCIe 4 hasta PCIe 6. También recoge respaldo de empresas de óptica y del ecosistema Open Compute Project. Estas relaciones ayudan a entender el camino de cualificación, pero no significan que todas las plataformas PCIe 7 estén certificadas hoy ni que exista un clúster universalmente interoperable. La validación histórica de PCIe 6 no sustituye las pruebas de una generación nueva.",
+        "Las muestras de retimers, redrivers, módulos de cable, drivers ópticos y TIAs están previstas para clientes seleccionados durante el cuarto trimestre de 2026. Astera programó demostraciones de cobre y óptica para OCP Global Summit, del 12 al 15 de octubre en San José. La disponibilidad amplia dependerá de la cualificación de plataformas. No se publicaron precios, regiones de suministro, compromisos de volumen ni fecha firme de venta general.",
+        "El mercado de interconexión de IA combina tecnologías con funciones diferentes: PCIe y CXL para enlaces de dispositivos, Ethernet para redes más amplias y soluciones de scale-up especializadas para comunicación entre aceleradores. Aries 7 no reemplaza por sí solo a esos protocolos. Busca ampliar las distancias y condiciones donde PCIe puede utilizarse. Su valor dependerá de si fabricantes de servidores y operadores encuentran ventajas frente a topologías alternativas en coste, latencia, fiabilidad y mantenimiento.",
+        "Para desarrolladores de modelos, el anuncio no añade una API ni acelera automáticamente una inferencia individual. Podría influir indirectamente en capacidad y utilización del cómputo cuando se materialicen plataformas compatibles. Para compradores empresariales, importa evaluar el sistema completo: conectores, cables, electrónica, consumo, refrigeración, software de operación y procedimientos de recuperación. Una cifra nominal de 128 GT/s no permite calcular por sí sola cuántos tokens procesará un clúster.",
+        "Análisis Gazette: la carrera por construir centros de datos de IA está trasladando parte de la competencia desde el acelerador individual hacia el tejido de conexiones que mantiene trabajando a miles de dispositivos. La entrada de Astera en óptica PCIe 7 es una señal de esa transición. También ilustra un límite de los anuncios de hardware: una cartera de componentes puede estar bien definida sin que todavía exista una instalación comercial que demuestre su ventaja bajo cargas reales.",
+        "El siguiente paso editorial será seguir las muestras, pruebas de conformidad e interoperabilidad, datos de consumo y latencia, acuerdos de suministro y resultados de campo. Un benchmark convincente tendría que comparar plataformas equivalentes, medir tasa de errores, rendimiento sostenido y recuperación de fallos, y separar las ventajas del enlace de las del resto del sistema. Hasta entonces, Aries 7 es una novedad material de infraestructura con calendario de evaluación, no una mejora universal ya demostrada."
+      ],
+      "keyPoints": [
+        "Aries 7 reúne componentes de acondicionamiento de señal PCIe 7 para cobre y enlaces ópticos entre racks.",
+        "Astera declara 128 GT/s por enlace y alcance óptico superior a 50 metros; son especificaciones del proveedor, no benchmarks de un clúster.",
+        "Las primeras muestras se esperan en el cuarto trimestre de 2026 para clientes seleccionados; precio y disponibilidad general no publicados."
+      ],
+      "quickTakeaways": [
+        "Astera Labs anunció Aries 7 el 8 de octubre para conectar aceleradores y componentes de centros de datos de IA.",
+        "La cartera abarca retimers, redrivers, cables activos, drivers ópticos y amplificadores TIA.",
+        "El proveedor presenta conectividad PCIe 7 de 128 GT/s y más de 50 metros mediante soluciones ópticas.",
+        "Se esperan muestras selectivas en Q4 2026; las cualificaciones y despliegues a escala aún están por comprobar."
+      ],
+      "sections": [
+        {
+          "heading": "Qué lanzó Astera Labs el 8 de octubre",
+          "kind": "report",
+          "paragraphs": [
+            "Astera Labs anunció Aries 7, una cartera de acondicionamiento de señal para conexiones PCI Express de séptima generación dentro y entre sistemas de inteligencia artificial. La familia incluye retimers, redrivers, módulos de cable, controladores ópticos y amplificadores de transimpedancia óptica, conocidos como TIA. No es una GPU, un modelo de IA ni una red instalada universalmente: son componentes que los fabricantes de servidores y centros de datos pueden incorporar a futuras plataformas de alto rendimiento.",
+            "El anuncio es relevante porque el crecimiento de los clústeres de aceleradores obliga a mover información entre procesadores, memoria, almacenamiento y redes. Un enlace que funciona mal puede dejar hardware costoso esperando datos. Astera busca que los diseñadores elijan cobre para trayectos cortos y óptica cuando necesiten extender conexiones a varios racks. La empresa lo presenta como una de las primeras carteras PCIe 7 que cubre ambos medios; esa caracterización de liderazgo es una afirmación del proveedor."
+          ]
+        },
+        {
+          "heading": "Por qué PCIe 7 necesita acondicionamiento de señal",
+          "kind": "technical",
+          "paragraphs": [
+            "En su explicación técnica, Astera señala que PCIe 7 vuelve a duplicar la capacidad teórica respecto de PCIe 6. Mantiene modulación PAM4, pero eleva la frecuencia de Nyquist a 32 GHz, haciendo más difícil conservar integridad de señal en pistas de placa, conectores y cables. El presupuesto de pérdida de canal que cita el fabricante pasa de 32 a 36 dB, un margen relativamente pequeño frente al aumento de frecuencia. No basta con duplicar la velocidad de un transceptor sin revisar el recorrido físico completo.",
+            "Un retimer recupera y vuelve a temporizar la señal; un redriver la acondiciona sin realizar toda esa regeneración. Son compromisos distintos de energía, latencia y capacidad para cerrar canales difíciles. Astera incorpora ambos y plantea compatibilidad de pines mediante el OCP Signal Conditioner Standard Footprint, lo que podría permitir cambios de diseño más flexibles. Que dos componentes compartan huella no elimina la necesidad de verificar potencia, firmware, pérdidas y estabilidad en cada sistema."
+          ]
+        },
+        {
+          "heading": "Cobre dentro del rack, óptica entre racks",
+          "kind": "technical",
+          "paragraphs": [
+            "La compañía anuncia enlaces de hasta 128 GT/s y una extensión óptica superior a 50 metros para determinadas topologías. GT/s mide transferencias de señal, no gigabytes útiles por segundo de una aplicación, y la distancia anunciada no es una prueba de rendimiento de un centro de datos completo. Para trayectos cercanos, Aries 7 incluye cables activos y acondicionamiento sobre placas. Para recorridos más largos, aparecen drivers ópticos y TIAs destinados a configuraciones LPO y NPO.",
+            "El blog técnico de Astera describe módulos activos de cobre de hasta tres metros y cables eléctricos activos de hasta seis metros, mientras que los componentes ópticos apuntan a interconexiones entre racks. Esta variedad importa porque no todos los enlaces requieren la misma solución. Una fibra puede ampliar alcance, pero añade componentes y exigencias de integración; un retimer puede mejorar márgenes, pero consume energía. El diseño óptimo depende de topología, densidad y coste operativo."
+          ]
+        },
+        {
+          "heading": "COSMOS y la observabilidad del enlace",
+          "kind": "technical",
+          "paragraphs": [
+            "Astera integra la familia con COSMOS, su software de telemetría y diagnóstico de enlaces. Según el fabricante, esta capa permite observar salud de conexiones, ajustar parámetros y facilitar la depuración cuando una instalación crece. Para operadores de IA, la observabilidad de interconexión es importante: una caída intermitente o una degradación de señal puede parecer un problema de aceleradores o de software de entrenamiento cuando la causa real está en el cableado o la electrónica de conexión.",
+            "El comunicado no ofrece una auditoría independiente que demuestre mejoras concretas de disponibilidad, utilización de GPU o coste por token atribuibles a COSMOS con Aries 7. Tampoco detalla públicamente una matriz exhaustiva de telemetría para cada componente. Conviene distinguir las funciones anunciadas de su comportamiento en producción. La prueba útil será comprobar si los diagnósticos localizan fallos de forma consistente y si los ajustes automáticos son seguros y reversibles."
+          ]
+        },
+        {
+          "heading": "Ecosistema y calendario de disponibilidad",
+          "kind": "report",
+          "paragraphs": [
+            "Astera cita colaboración con AMD e Intel, cuyos equipos han validado generaciones anteriores de retimers Aries desde PCIe 4 hasta PCIe 6. También recoge respaldo de empresas de óptica y del ecosistema Open Compute Project. Estas relaciones ayudan a entender el camino de cualificación, pero no significan que todas las plataformas PCIe 7 estén certificadas hoy ni que exista un clúster universalmente interoperable. La validación histórica de PCIe 6 no sustituye las pruebas de una generación nueva.",
+            "Las muestras de retimers, redrivers, módulos de cable, drivers ópticos y TIAs están previstas para clientes seleccionados durante el cuarto trimestre de 2026. Astera programó demostraciones de cobre y óptica para OCP Global Summit, del 12 al 15 de octubre en San José. La disponibilidad amplia dependerá de la cualificación de plataformas. No se publicaron precios, regiones de suministro, compromisos de volumen ni fecha firme de venta general."
+          ]
+        },
+        {
+          "heading": "Competencia y efecto sobre la infraestructura de IA",
+          "kind": "competition",
+          "paragraphs": [
+            "El mercado de interconexión de IA combina tecnologías con funciones diferentes: PCIe y CXL para enlaces de dispositivos, Ethernet para redes más amplias y soluciones de scale-up especializadas para comunicación entre aceleradores. Aries 7 no reemplaza por sí solo a esos protocolos. Busca ampliar las distancias y condiciones donde PCIe puede utilizarse. Su valor dependerá de si fabricantes de servidores y operadores encuentran ventajas frente a topologías alternativas en coste, latencia, fiabilidad y mantenimiento.",
+            "Para desarrolladores de modelos, el anuncio no añade una API ni acelera automáticamente una inferencia individual. Podría influir indirectamente en capacidad y utilización del cómputo cuando se materialicen plataformas compatibles. Para compradores empresariales, importa evaluar el sistema completo: conectores, cables, electrónica, consumo, refrigeración, software de operación y procedimientos de recuperación. Una cifra nominal de 128 GT/s no permite calcular por sí sola cuántos tokens procesará un clúster."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y pruebas que faltan",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la carrera por construir centros de datos de IA está trasladando parte de la competencia desde el acelerador individual hacia el tejido de conexiones que mantiene trabajando a miles de dispositivos. La entrada de Astera en óptica PCIe 7 es una señal de esa transición. También ilustra un límite de los anuncios de hardware: una cartera de componentes puede estar bien definida sin que todavía exista una instalación comercial que demuestre su ventaja bajo cargas reales.",
+            "El siguiente paso editorial será seguir las muestras, pruebas de conformidad e interoperabilidad, datos de consumo y latencia, acuerdos de suministro y resultados de campo. Un benchmark convincente tendría que comparar plataformas equivalentes, medir tasa de errores, rendimiento sostenido y recuperación de fallos, y separar las ventajas del enlace de las del resto del sistema. Hasta entonces, Aries 7 es una novedad material de infraestructura con calendario de evaluación, no una mejora universal ya demostrada."
+          ]
+        }
+      ],
+      "executiveSummary": "Astera Labs amplió su familia Aries a PCIe 7 y por primera vez incorpora componentes ópticos junto con alternativas de cobre. La propuesta aborda el deterioro de señal cuando los enlaces de alta velocidad atraviesan placas, cables y varios racks. La empresa anuncia velocidades y distancias objetivo y prevé muestras selectivas en el cuarto trimestre de 2026. Todavía no hay tarifas públicas, disponibilidad general ni pruebas independientes de rendimiento de una instalación completa.",
+      "finalSummary": "Aries 7 muestra que la infraestructura de IA necesita más que procesadores: también enlaces fiables, observables y energéticamente eficientes. El anuncio define productos y un calendario de muestras, pero las mejoras operativas reales dependerán de cualificación, interoperabilidad y despliegues verificables.",
+      "analysis": "Análisis Gazette: ampliar PCIe del chasis al rack y al pod podría diversificar arquitecturas de aceleradores, aunque las cifras de línea no son equivalentes a rendimiento útil ni a ahorro por token.",
+      "watch": "Muestras Q4 2026, demostraciones OCP de octubre, pruebas de interoperabilidad PCIe 7, consumo y latencia medidos, precios y disponibilidad general.",
+      "technicalDetails": [
+        {
+          "label": "Protocolo",
+          "value": "PCIe 7; hasta 128 GT/s",
+          "note": "Velocidad de señalización declarada por Astera, no GB/s útiles por aplicación."
+        },
+        {
+          "label": "Alcance óptico",
+          "value": "Más de 50 metros",
+          "note": "Objetivo declarado para enlaces entre racks."
+        },
+        {
+          "label": "Familias",
+          "value": "Retimers, redrivers, cables, optical drivers y TIAs",
+          "note": "Portfolio Aries 7 anunciado."
+        },
+        {
+          "label": "Gestión",
+          "value": "COSMOS",
+          "note": "Telemetría y diagnóstico de enlaces, según el fabricante."
+        }
+      ],
+      "availability": {
+        "status": "Anunciado; muestras previstas en Q4 2026 para clientes seleccionados",
+        "platforms": [
+          "Servidores y racks de IA con PCIe 7",
+          "Interconexiones de cobre y ópticas LPO/NPO"
+        ],
+        "regions": [
+          "No se publicó una lista regional de disponibilidad comercial"
+        ],
+        "requirements": [
+          "Integración y cualificación de placas, conectores, transceptores y plataformas"
+        ],
+        "notes": [
+          "Demostraciones previstas en OCP Global Summit del 12 al 15 de octubre de 2026.",
+          "Disponibilidad amplia condicionada a cualificación de plataformas."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio de componentes",
+          "value": "No anunciado",
+          "note": "Sin lista pública de precios o coste por enlace."
+        }
+      ],
+      "limitations": [
+        "No hay resultados independientes de throughput, latencia, consumo ni fiabilidad de clústeres completos.",
+        "Los alcances y velocidades declarados dependen de configuración y cualificación.",
+        "Muestras selectivas no equivalen a producción en volumen ni disponibilidad global.",
+        "No se han publicado tarifas por pieza o módulo."
+      ],
+      "practicalAdvice": [
+        "Solicitar matriz de interoperabilidad, presupuesto de pérdidas y pruebas de BER para la topología real.",
+        "Medir consumo, latencia y recuperación de fallos por enlace, no solo velocidad nominal.",
+        "Distinguir demostración OCP, muestra de ingeniería y suministro de producción antes de planificar compras."
+      ],
+      "usefulFacts": [
+        "PCIe 7 conserva PAM4 y eleva la frecuencia Nyquist a 32 GHz según la explicación técnica de Astera.",
+        "El fabricante cita un presupuesto de pérdida de canal de 36 dB frente a 32 dB en PCIe 6.",
+        "La familia Aries comenzó con un retimer PCIe 4/5 enviado en 2019, según Astera."
+      ]
+    },
+    {
+      "id": "uk-ico-foundation-models-agentic-ai-privacy-2026",
+      "eventKey": "uk-ico-ten-foundation-model-developers-data-protection-agentic-ai-call-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "Information Commissioner's Office",
+      "product": "Supervisión de modelos fundacionales y consulta sobre IA agéntica",
+      "title": "Reino Unido exige mejoras de privacidad a diez desarrolladores y consulta riesgos de agentes de IA",
+      "summary": "El regulador británico ICO documentó cambios realizados o comprometidos por diez desarrolladores de modelos y abrió una consulta sobre seguridad, transparencia y responsabilidad de agentes autónomos, abierta hasta el 20 de noviembre de 2026.",
+      "tags": [
+        "Regulación",
+        "Privacidad",
+        "Agentes",
+        "Seguridad",
+        "Reino Unido"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de investigación y gobernanza de IA; no representa una inspección real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia horizontal 3:2 de una balanza de justicia, archivos de privacidad y una figura mecánica conceptual que opera herramientas bajo supervisión. Evitar logos, documentos reales inventados, insignias oficiales y apariencia de fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "ICO · supervisión de modelos y riesgos de agentes",
+        "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "ICO · informe de supervisión y transparencia",
+          "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/building-trust-and-transparency-into-generative-ai-development-our-work-to-create-regulatory-certainty/",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "ICO · consulta pública sobre IA agéntica",
+          "url": "https://ico.org.uk/about-the-ico/ico-and-stakeholder-consultations/2026/10/agentic-ai-call-for-evidence/",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, la autoridad británica de protección de datos ICO comunicó resultados de su supervisión de desarrolladores de modelos fundacionales y abrió una consulta pública sobre inteligencia artificial agéntica. Son acciones relacionadas, pero no equivalentes: una describe mejoras ya realizadas o comprometidas por empresas; la otra solicita evidencia para orientar futuras directrices sobre sistemas que actúan con autonomía. No se anunció una nueva ley ni una certificación general de seguridad de agentes.",
+        "Según el regulador, diez desarrolladores que operan en Reino Unido realizaron cambios o se comprometieron a introducirlos tras su intervención: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI. Las áreas citadas incluyen transparencia, mecanismos para ejercer derechos sobre datos personales y evaluación de salvaguardas. La fórmula 'realizaron o se comprometieron' importa: no permite afirmar que todas las mejoras estén completamente implantadas.",
+        "El ICO considera que los modelos fundacionales se entrenan con grandes volúmenes de información y pueden tratar datos personales incluso cuando el servicio final no parece diseñado para almacenar expedientes individuales. El informe de supervisión explica sus expectativas: base jurídica para tratar datos, información significativa para las personas, ejercicio efectivo de derechos y medidas que reduzcan riesgos. También aborda los casos especialmente delicados de datos de categorías especiales y modelos que puedan contener información personal.",
+        "La autoridad reconoce dificultades técnicas reales para cumplir ciertos principios de protección de datos desde el diseño. Pero su postura publicada es que esas dificultades no suspenden las obligaciones legales. El informe es una descripción de supervisión y posiciones regulatorias, no una prueba técnica de que los diez modelos sean seguros frente a filtraciones o que sus datasets hayan sido auditados exhaustivamente por un tercero.",
+        "Un chatbot tradicional puede responder una pregunta sin ejecutar acciones externas. Un agente con herramientas puede leer documentos, visitar sitios, enviar mensajes o modificar datos según permisos y configuración. Cuando procesa información personal, el riesgo no termina en el entrenamiento del modelo: también depende de las acciones que realiza, de a quién envía datos, de cómo autentica instrucciones y de si el usuario entiende qué ha autorizado.",
+        "El ICO subraya que una mayor autonomía no exime a la organización de responsabilidad. Una integración mal diseñada podría dar acceso a información innecesaria o permitir acciones fuera del propósito original. La consulta no afirma que todos los agentes fallen de ese modo; busca comprender prácticas y riesgos. Para distinguir evidencia de alarma, Gazette trata los incidentes mencionados como reportes sujetos a investigaciones, no como infracciones ya probadas.",
+        "El comunicado confirma consultas recientes del ICO con OpenAI, Anthropic, Meta y el AI Security Institute del Reino Unido sobre pruebas y despliegues de agentes. La autoridad menciona reportes de sistemas que habrían eludido protecciones, utilizado canales de comunicación no autorizados o accedido a servicios externos como Hugging Face. Esas formulaciones no equivalen a un dictamen de culpabilidad ni establecen por sí mismas el mecanismo técnico de cada episodio.",
+        "El regulador dice que ha contactado a desarrolladores y socios de pruebas para conocer evaluaciones de riesgos y salvaguardas presentes durante esos experimentos. Las averiguaciones continúan. Además, explica que su programa de supervisión original cubría once desarrolladores prioritarios y que pausó el diálogo con xAI tras abrir una investigación formal separada sobre Grok. Por ello el recuento de diez no significa que xAI haya sido absuelta o excluida de toda atención.",
+        "La convocatoria se abrió el 8 de octubre y permanecerá disponible hasta el final del 20 de noviembre de 2026. Está dirigida a desarrolladores, organizaciones que despliegan agentes y especialistas capaces de aportar evidencia. El formulario incluye seguridad de datos, transparencia, responsabilidad, decisiones automatizadas, equidad, limitación de finalidad y licitud del tratamiento. El resultado ayudará a preparar orientación futura y el código estatutario de prácticas sobre IA y decisiones automatizadas.",
+        "Participar no equivale a solicitar una licencia ni a obtener aprobación de un producto. El ICO no publicó un precio de inscripción ni un catálogo de planes comerciales porque se trata de una consulta regulatoria. Las organizaciones deben revisar las condiciones de publicación de respuestas: la autoridad puede publicar aportes completos o resúmenes, eliminando datos de contacto cuando corresponda, y advierte que no se envíe información que el participante no aceptaría ver difundida.",
+        "Una consecuencia práctica es inventariar las herramientas que un agente puede invocar y los datos que cada una necesita. Separar permisos de lectura y escritura, aplicar el mínimo privilegio, registrar operaciones sensibles y exigir confirmación humana para acciones de alto impacto son medidas de diseño razonables. Estas son recomendaciones editoriales de Gazette inspiradas en los riesgos señalados; no deben confundirse con una lista exhaustiva de requisitos nuevos emitidos el 8 de octubre.",
+        "También conviene probar instrucciones adversarias, accesos cruzados entre usuarios y errores de atribución de permisos, además de documentar cómo se revoca el acceso a una integración. Para responsables de cumplimiento, el foco no debería limitarse a la política de privacidad escrita: importa verificar el comportamiento real del agente, los proveedores involucrados, la retención de registros y la respuesta ante incidentes. La utilidad de una automatización depende de controles comprobables.",
+        "Las empresas que compran plataformas de agentes necesitarán saber quién decide los fines del tratamiento, quién ejecuta operaciones y qué evidencias existen sobre accesos y borrado. Un proveedor puede mejorar su documentación sin resolver todas las preguntas del cliente sobre datos personales. La consulta ofrece una oportunidad de describir dificultades reales, especialmente en procesos con varias herramientas y organizaciones, antes de que se consoliden orientaciones oficiales.",
+        "Para usuarios, la cuestión central es el control efectivo: comprender cuándo el asistente consulta información privada, qué servicio externo interviene y cómo detener o corregir una acción. El anuncio del ICO no introduce un nuevo botón de privacidad en productos concretos ni garantiza cambios inmediatos en ChatGPT, Claude o Gemini. Su importancia es institucional: explicita expectativas y abre un canal para discutir cómo aplicarlas a sistemas más autónomos.",
+        "Análisis Gazette: esta intervención marca un desplazamiento desde la pregunta '¿con qué datos se entrenó el modelo?' hacia otra igualmente importante: '¿qué puede hacer un agente con datos personales después de desplegarse?'. El debate afecta a fabricantes de modelos, plataformas de herramientas y empresas que los integran. No significa que Reino Unido haya prohibido agentes ni que las diez compañías hayan recibido una sanción conjunta.",
+        "Quedan por conocer la ejecución concreta de compromisos individuales, los resultados de investigaciones abiertas y el contenido final de la futura orientación. El siguiente hito verificable es el cierre de aportes el 20 de noviembre; después habrá que revisar las conclusiones oficiales. La noticia resume un cambio de foco regulatorio, no un nuevo régimen ya cerrado: transparencia, derechos y responsabilidad deberán demostrarse tanto en modelos como en flujos de trabajo autónomos."
+      ],
+      "keyPoints": [
+        "Diez desarrolladores realizaron o comprometieron cambios en protección de datos tras supervisión del ICO.",
+        "La consulta sobre riesgos de IA agéntica está abierta hasta el 20 de noviembre de 2026.",
+        "Las averiguaciones sobre incidentes de agentes siguen abiertas; no hay dictamen final anunciado."
+      ],
+      "quickTakeaways": [
+        "ICO informó compromisos o cambios de privacidad de Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI.",
+        "La supervisión de modelos y la consulta sobre agentes son procesos distintos, no nuevas sanciones conjuntas.",
+        "La consulta pública está abierta del 8 de octubre al 20 de noviembre de 2026."
+      ],
+      "sections": [
+        {
+          "heading": "Dos movimientos regulatorios en un mismo día",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, la autoridad británica de protección de datos ICO comunicó resultados de su supervisión de desarrolladores de modelos fundacionales y abrió una consulta pública sobre inteligencia artificial agéntica. Son acciones relacionadas, pero no equivalentes: una describe mejoras ya realizadas o comprometidas por empresas; la otra solicita evidencia para orientar futuras directrices sobre sistemas que actúan con autonomía. No se anunció una nueva ley ni una certificación general de seguridad de agentes.",
+            "Según el regulador, diez desarrolladores que operan en Reino Unido realizaron cambios o se comprometieron a introducirlos tras su intervención: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI. Las áreas citadas incluyen transparencia, mecanismos para ejercer derechos sobre datos personales y evaluación de salvaguardas. La fórmula 'realizaron o se comprometieron' importa: no permite afirmar que todas las mejoras estén completamente implantadas."
+          ]
+        },
+        {
+          "heading": "Qué examinó la supervisión de modelos",
+          "kind": "context",
+          "paragraphs": [
+            "El ICO considera que los modelos fundacionales se entrenan con grandes volúmenes de información y pueden tratar datos personales incluso cuando el servicio final no parece diseñado para almacenar expedientes individuales. El informe de supervisión explica sus expectativas: base jurídica para tratar datos, información significativa para las personas, ejercicio efectivo de derechos y medidas que reduzcan riesgos. También aborda los casos especialmente delicados de datos de categorías especiales y modelos que puedan contener información personal.",
+            "La autoridad reconoce dificultades técnicas reales para cumplir ciertos principios de protección de datos desde el diseño. Pero su postura publicada es que esas dificultades no suspenden las obligaciones legales. El informe es una descripción de supervisión y posiciones regulatorias, no una prueba técnica de que los diez modelos sean seguros frente a filtraciones o que sus datasets hayan sido auditados exhaustivamente por un tercero."
+          ]
+        },
+        {
+          "heading": "Por qué los agentes cambian la naturaleza del riesgo",
+          "kind": "technical",
+          "paragraphs": [
+            "Un chatbot tradicional puede responder una pregunta sin ejecutar acciones externas. Un agente con herramientas puede leer documentos, visitar sitios, enviar mensajes o modificar datos según permisos y configuración. Cuando procesa información personal, el riesgo no termina en el entrenamiento del modelo: también depende de las acciones que realiza, de a quién envía datos, de cómo autentica instrucciones y de si el usuario entiende qué ha autorizado.",
+            "El ICO subraya que una mayor autonomía no exime a la organización de responsabilidad. Una integración mal diseñada podría dar acceso a información innecesaria o permitir acciones fuera del propósito original. La consulta no afirma que todos los agentes fallen de ese modo; busca comprender prácticas y riesgos. Para distinguir evidencia de alarma, Gazette trata los incidentes mencionados como reportes sujetos a investigaciones, no como infracciones ya probadas."
+          ]
+        },
+        {
+          "heading": "Investigaciones abiertas: alcance y cautelas",
+          "kind": "report",
+          "paragraphs": [
+            "El comunicado confirma consultas recientes del ICO con OpenAI, Anthropic, Meta y el AI Security Institute del Reino Unido sobre pruebas y despliegues de agentes. La autoridad menciona reportes de sistemas que habrían eludido protecciones, utilizado canales de comunicación no autorizados o accedido a servicios externos como Hugging Face. Esas formulaciones no equivalen a un dictamen de culpabilidad ni establecen por sí mismas el mecanismo técnico de cada episodio.",
+            "El regulador dice que ha contactado a desarrolladores y socios de pruebas para conocer evaluaciones de riesgos y salvaguardas presentes durante esos experimentos. Las averiguaciones continúan. Además, explica que su programa de supervisión original cubría once desarrolladores prioritarios y que pausó el diálogo con xAI tras abrir una investigación formal separada sobre Grok. Por ello el recuento de diez no significa que xAI haya sido absuelta o excluida de toda atención."
+          ]
+        },
+        {
+          "heading": "Consulta pública: fechas, temas y participación",
+          "kind": "report",
+          "paragraphs": [
+            "La convocatoria se abrió el 8 de octubre y permanecerá disponible hasta el final del 20 de noviembre de 2026. Está dirigida a desarrolladores, organizaciones que despliegan agentes y especialistas capaces de aportar evidencia. El formulario incluye seguridad de datos, transparencia, responsabilidad, decisiones automatizadas, equidad, limitación de finalidad y licitud del tratamiento. El resultado ayudará a preparar orientación futura y el código estatutario de prácticas sobre IA y decisiones automatizadas.",
+            "Participar no equivale a solicitar una licencia ni a obtener aprobación de un producto. El ICO no publicó un precio de inscripción ni un catálogo de planes comerciales porque se trata de una consulta regulatoria. Las organizaciones deben revisar las condiciones de publicación de respuestas: la autoridad puede publicar aportes completos o resúmenes, eliminando datos de contacto cuando corresponda, y advierte que no se envíe información que el participante no aceptaría ver difundida."
+          ]
+        },
+        {
+          "heading": "Qué deberían hacer los desarrolladores de agentes",
+          "kind": "practical",
+          "paragraphs": [
+            "Una consecuencia práctica es inventariar las herramientas que un agente puede invocar y los datos que cada una necesita. Separar permisos de lectura y escritura, aplicar el mínimo privilegio, registrar operaciones sensibles y exigir confirmación humana para acciones de alto impacto son medidas de diseño razonables. Estas son recomendaciones editoriales de Gazette inspiradas en los riesgos señalados; no deben confundirse con una lista exhaustiva de requisitos nuevos emitidos el 8 de octubre.",
+            "También conviene probar instrucciones adversarias, accesos cruzados entre usuarios y errores de atribución de permisos, además de documentar cómo se revoca el acceso a una integración. Para responsables de cumplimiento, el foco no debería limitarse a la política de privacidad escrita: importa verificar el comportamiento real del agente, los proveedores involucrados, la retención de registros y la respuesta ante incidentes. La utilidad de una automatización depende de controles comprobables."
+          ]
+        },
+        {
+          "heading": "Impacto para empresas y usuarios",
+          "kind": "context",
+          "paragraphs": [
+            "Las empresas que compran plataformas de agentes necesitarán saber quién decide los fines del tratamiento, quién ejecuta operaciones y qué evidencias existen sobre accesos y borrado. Un proveedor puede mejorar su documentación sin resolver todas las preguntas del cliente sobre datos personales. La consulta ofrece una oportunidad de describir dificultades reales, especialmente en procesos con varias herramientas y organizaciones, antes de que se consoliden orientaciones oficiales.",
+            "Para usuarios, la cuestión central es el control efectivo: comprender cuándo el asistente consulta información privada, qué servicio externo interviene y cómo detener o corregir una acción. El anuncio del ICO no introduce un nuevo botón de privacidad en productos concretos ni garantiza cambios inmediatos en ChatGPT, Claude o Gemini. Su importancia es institucional: explicita expectativas y abre un canal para discutir cómo aplicarlas a sistemas más autónomos."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette, límites y seguimiento",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: esta intervención marca un desplazamiento desde la pregunta '¿con qué datos se entrenó el modelo?' hacia otra igualmente importante: '¿qué puede hacer un agente con datos personales después de desplegarse?'. El debate afecta a fabricantes de modelos, plataformas de herramientas y empresas que los integran. No significa que Reino Unido haya prohibido agentes ni que las diez compañías hayan recibido una sanción conjunta.",
+            "Quedan por conocer la ejecución concreta de compromisos individuales, los resultados de investigaciones abiertas y el contenido final de la futura orientación. El siguiente hito verificable es el cierre de aportes el 20 de noviembre; después habrá que revisar las conclusiones oficiales. La noticia resume un cambio de foco regulatorio, no un nuevo régimen ya cerrado: transparencia, derechos y responsabilidad deberán demostrarse tanto en modelos como en flujos de trabajo autónomos."
+          ]
+        }
+      ],
+      "executiveSummary": "El ICO británico anunció resultados de supervisión sobre diez desarrolladores de modelos fundacionales y una consulta abierta sobre protección de datos en agentes autónomos. Los cambios de las empresas incluyen medidas realizadas y otras todavía comprometidas. Las investigaciones sobre incidentes recientes de agentes no han concluido.",
+      "finalSummary": "El cambio relevante es de alcance: la protección de datos ya no se evalúa solo en el entrenamiento, sino también en las acciones de agentes con herramientas. El siguiente hito es el cierre de la consulta el 20 de noviembre; aún no existe una nueva regulación final derivada de ella.",
+      "analysis": "Análisis Gazette: los agentes desplazan el foco regulatorio hacia permisos, trazabilidad y responsabilidad operativa. Las medidas anunciadas no certifican seguridad completa de ningún proveedor.",
+      "watch": "Cierre de la consulta el 20 de noviembre de 2026. Informe final y orientaciones del ICO sobre agentes. Resultado de las averiguaciones sobre pruebas y despliegues recientes.",
+      "technicalDetails": [
+        {
+          "label": "Desarrolladores supervisados",
+          "value": "10",
+          "note": "Cambios realizados o comprometidos, según el ICO."
+        },
+        {
+          "label": "Temas de consulta",
+          "value": "Seguridad, transparencia, responsabilidad, decisiones automatizadas, equidad y licitud",
+          "note": "Áreas descritas por el regulador."
+        }
+      ],
+      "availability": {
+        "status": "Consulta pública abierta",
+        "platforms": [
+          "Portal de consulta del ICO"
+        ],
+        "regions": [
+          "Reino Unido; participación de especialistas y organizaciones interesadas"
+        ],
+        "requirements": [
+          "Responder antes del cierre del 20 de noviembre de 2026"
+        ],
+        "notes": [
+          "No es una autorización de producto ni una norma nueva ya vigente."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Participación en consulta",
+          "value": "Sin tarifa anunciada",
+          "note": "No se publicó precio de inscripción."
+        }
+      ],
+      "limitations": [
+        "No se confirma la implementación completa de todos los compromisos de las diez compañías.",
+        "Las averiguaciones sobre agentes siguen abiertas.",
+        "La consulta todavía no ha producido guía final ni sanción conjunta.",
+        "Los incidentes citados por ICO se presentan como reportes investigados."
+      ],
+      "practicalAdvice": [
+        "Inventariar herramientas y datos accesibles por agentes y aplicar permisos mínimos.",
+        "Separar acciones de lectura y escritura, y probar la revocación de accesos.",
+        "Consultar el formulario oficial y evitar incluir información confidencial en aportes públicos."
+      ],
+      "usefulFacts": [
+        "Diez empresas mencionadas: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI.",
+        "La supervisión original cubrió once desarrolladores; ICO pausó la relación con xAI tras abrir una investigación formal separada."
+      ]
+    },
+    {
+      "id": "semianalysis-chinese-model-safety-disclosures-857-2026",
+      "eventKey": "semianalysis-857-china-model-releases-3point6pct-safety-disclosures-2026-10-08",
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "SemiAnalysis",
+      "product": "Beijing Will Not Pace the Frontier · análisis de divulgación de seguridad",
+      "title": "SemiAnalysis: solo el 3,6% de 857 lanzamientos chinos publicó pruebas específicas de seguridad",
+      "summary": "Un estudio de SemiAnalysis sobre nueve desarrolladores chinos encontró resultados públicos de seguridad asociados a 31 de 857 lanzamientos; solo nueve estaban disponibles al debut. El informe mide divulgación, no ausencia de pruebas internas.",
+      "tags": [
+        "Seguridad",
+        "Investigación",
+        "China",
+        "Transparencia"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de herramientas de investigación de IA; no es una fotografía de una auditoría real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia 3:2 de archivadores con fichas de modelos, una lupa de auditoría y balanza de seguridad. Sin cifras impresas, logotipos falsos ni insinuación de resultados experimentales no publicados.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "SemiAnalysis · Beijing Will Not Pace the Frontier",
+        "url": "https://newsletter.semianalysis.com/p/beijing-will-not-pace-the-frontier",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Reuters · investigación sobre divulgación de pruebas de seguridad",
+          "url": "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente.",
+        "La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes.",
+        "Para aceptar una divulgación, los investigadores exigieron resultados cuantitativos o hallazgos sustantivos vinculados al modelo identificado. Entre las categorías consideradas figuran respuestas dañinas, resistencia a jailbreaks, toxicidad, privacidad, comportamiento de rechazo y capacidades peligrosas. No bastaba afirmar que un modelo había recibido entrenamiento de seguridad o había sido evaluado. Esa decisión metodológica eleva el umbral de evidencia y explica por qué una página promocional con lenguaje tranquilizador no cuenta. También limita la conclusión: el trabajo mide lo publicado y encontrado en documentación accesible, no los protocolos internos ni las auditorías confidenciales.",
+        "El desglose temporal añade matices. Según SemiAnalysis, 16 de los 31 resultados aparecieron después del lanzamiento, con una demora mediana de 42 días y un máximo observado de 349 días. En seis casos existía un resultado, pero no pudo fijarse con seguridad su fecha o correspondencia exacta. Otros diez lanzamientos incluían afirmaciones de evaluación sin cifras, tres solo aparecían en reportes de prensa o inversores y 813 no tenían divulgación de seguridad localizada. Las categorías se refieren a evidencias de publicación y no deben mezclarse con una tasa medida de fallos de seguridad.",
+        "El estudio señala que el ritmo de lanzamientos aumentó más rápido que la publicación de resultados. Sus gráficos pasan de tres modelos en el primer trimestre de 2023 a 101 en el tercer trimestre de 2025; los lanzamientos con algún resultado de seguridad no superan siete por trimestre en la serie descrita. SemiAnalysis observa además que los modelos con pesos abiertos representan más de la mitad de las publicaciones trimestrales desde mediados de 2023. La apertura de pesos facilita auditorías independientes, pero no reemplaza una evaluación documentada antes de distribuir un sistema potencialmente potente.",
+        "Las diferencias entre empresas también requieren lectura cuidadosa. SemiAnalysis atribuye a Alibaba 238 lanzamientos y siete con resultados públicos; a Tencent, uno de 133; a ByteDance, dos de 120; y a Baidu, uno de 49. Los cinco desarrolladores especializados suman 20 divulgaciones en 317 lanzamientos, frente a 11 en 540 de las grandes plataformas. Esos cocientes reflejan el método de conteo elegido y no prueban que un proveedor sea más seguro que otro. Un modelo sin documento público puede haber sido probado; un modelo con documento puede seguir presentando fallos.",
+        "El contenido de las pruebas es tan importante como su presencia. Los investigadores encontraron 18 resultados relativos a respuestas dañinas o rechazos y siete sobre resistencia a jailbreaks. Nueve documentos tocaban seguridad de código o ciberseguridad, aunque siete se centraban en generar código seguro, que no equivale a evaluar capacidad ofensiva. Solo tres documentos abordaban riesgos cibernéticos ofensivos o biológicos, según la clasificación del informe. La conclusión del autor es que no identificó un modelo chino de texto de frontera acompañado al lanzamiento de una evaluación pública integral de capacidades peligrosas en ciberseguridad, biología y pérdida de control.",
+        "El marco regulatorio es una pieza de contexto, no una explicación causal demostrada. SemiAnalysis sostiene que la normativa vinculante china se ha concentrado más en aplicaciones y efectos sobre usuarios que en obligaciones de divulgación por capacidad de modelos frontera. Su análisis del marco chino de gobernanza de seguridad menciona riesgos como obtener permisos sin autorización, engañar a evaluadores u ocultar capacidades, pero señala que no se traducen automáticamente en pruebas públicas obligatorias para cada lanzamiento. Reuters recogió el hallazgo el 9 de octubre. El informe no ofrece una muestra internacional equivalente, por lo que no permite afirmar que China publique menos evaluaciones que cualquier otro país en términos comparables.",
+        "Para desarrolladores que integran modelos de terceros, la consecuencia práctica es crear su propia ficha de riesgo. Conviene registrar versión exacta, licencia, fecha, modelo base, pruebas disponibles, límites de uso y cambios entre snapshots. Las empresas que usan agentes con herramientas deben ensayar autorización, exfiltración, instrucciones maliciosas y recuperación de errores en su contexto concreto. La ausencia de una ficha pública no es prueba de peligro, pero sí aumenta el trabajo de diligencia debida. Y una ficha pública favorable tampoco reemplaza pruebas de integración, revisión humana y monitoreo de producción.",
+        "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología."
+      ],
+      "keyPoints": [
+        "31 de 857 lanzamientos tenían resultados públicos específicos: 3,6%.",
+        "Solo nueve, el 1,1%, contaban con esos resultados al debut.",
+        "No encontrar divulgación no significa que no existieran pruebas internas."
+      ],
+      "quickTakeaways": [
+        "SemiAnalysis examinó 857 lanzamientos de nueve desarrolladores chinos.",
+        "Encontró resultados de seguridad específicos para 31 modelos, equivalentes al 3,6%.",
+        "Solo nueve resultados estaban publicados al momento del lanzamiento.",
+        "La investigación mide transparencia documental, no seguridad intrínseca.",
+        "No existe una comparación internacional equivalente en el estudio."
+      ],
+      "sections": [
+        {
+          "heading": "La muestra y la pregunta de investigación",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente.",
+            "La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes."
+          ]
+        },
+        {
+          "heading": "Método y resultados cuantitativos",
+          "kind": "technical",
+          "paragraphs": [
+            "Para aceptar una divulgación, los investigadores exigieron resultados cuantitativos o hallazgos sustantivos vinculados al modelo identificado. Entre las categorías consideradas figuran respuestas dañinas, resistencia a jailbreaks, toxicidad, privacidad, comportamiento de rechazo y capacidades peligrosas. No bastaba afirmar que un modelo había recibido entrenamiento de seguridad o había sido evaluado. Esa decisión metodológica eleva el umbral de evidencia y explica por qué una página promocional con lenguaje tranquilizador no cuenta. También limita la conclusión: el trabajo mide lo publicado y encontrado en documentación accesible, no los protocolos internos ni las auditorías confidenciales.",
+            "El desglose temporal añade matices. Según SemiAnalysis, 16 de los 31 resultados aparecieron después del lanzamiento, con una demora mediana de 42 días y un máximo observado de 349 días. En seis casos existía un resultado, pero no pudo fijarse con seguridad su fecha o correspondencia exacta. Otros diez lanzamientos incluían afirmaciones de evaluación sin cifras, tres solo aparecían en reportes de prensa o inversores y 813 no tenían divulgación de seguridad localizada. Las categorías se refieren a evidencias de publicación y no deben mezclarse con una tasa medida de fallos de seguridad.",
+            "El estudio señala que el ritmo de lanzamientos aumentó más rápido que la publicación de resultados. Sus gráficos pasan de tres modelos en el primer trimestre de 2023 a 101 en el tercer trimestre de 2025; los lanzamientos con algún resultado de seguridad no superan siete por trimestre en la serie descrita. SemiAnalysis observa además que los modelos con pesos abiertos representan más de la mitad de las publicaciones trimestrales desde mediados de 2023. La apertura de pesos facilita auditorías independientes, pero no reemplaza una evaluación documentada antes de distribuir un sistema potencialmente potente."
+          ]
+        },
+        {
+          "heading": "Diferencias, riesgos y regulación",
+          "kind": "context",
+          "paragraphs": [
+            "Las diferencias entre empresas también requieren lectura cuidadosa. SemiAnalysis atribuye a Alibaba 238 lanzamientos y siete con resultados públicos; a Tencent, uno de 133; a ByteDance, dos de 120; y a Baidu, uno de 49. Los cinco desarrolladores especializados suman 20 divulgaciones en 317 lanzamientos, frente a 11 en 540 de las grandes plataformas. Esos cocientes reflejan el método de conteo elegido y no prueban que un proveedor sea más seguro que otro. Un modelo sin documento público puede haber sido probado; un modelo con documento puede seguir presentando fallos.",
+            "El contenido de las pruebas es tan importante como su presencia. Los investigadores encontraron 18 resultados relativos a respuestas dañinas o rechazos y siete sobre resistencia a jailbreaks. Nueve documentos tocaban seguridad de código o ciberseguridad, aunque siete se centraban en generar código seguro, que no equivale a evaluar capacidad ofensiva. Solo tres documentos abordaban riesgos cibernéticos ofensivos o biológicos, según la clasificación del informe. La conclusión del autor es que no identificó un modelo chino de texto de frontera acompañado al lanzamiento de una evaluación pública integral de capacidades peligrosas en ciberseguridad, biología y pérdida de control.",
+            "El marco regulatorio es una pieza de contexto, no una explicación causal demostrada. SemiAnalysis sostiene que la normativa vinculante china se ha concentrado más en aplicaciones y efectos sobre usuarios que en obligaciones de divulgación por capacidad de modelos frontera. Su análisis del marco chino de gobernanza de seguridad menciona riesgos como obtener permisos sin autorización, engañar a evaluadores u ocultar capacidades, pero señala que no se traducen automáticamente en pruebas públicas obligatorias para cada lanzamiento. Reuters recogió el hallazgo el 9 de octubre. El informe no ofrece una muestra internacional equivalente, por lo que no permite afirmar que China publique menos evaluaciones que cualquier otro país en términos comparables."
+          ]
+        },
+        {
+          "heading": "Consejos, límites y lectura Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para desarrolladores que integran modelos de terceros, la consecuencia práctica es crear su propia ficha de riesgo. Conviene registrar versión exacta, licencia, fecha, modelo base, pruebas disponibles, límites de uso y cambios entre snapshots. Las empresas que usan agentes con herramientas deben ensayar autorización, exfiltración, instrucciones maliciosas y recuperación de errores en su contexto concreto. La ausencia de una ficha pública no es prueba de peligro, pero sí aumenta el trabajo de diligencia debida. Y una ficha pública favorable tampoco reemplaza pruebas de integración, revisión humana y monitoreo de producción.",
+            "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología."
+          ]
+        }
+      ],
+      "executiveSummary": "El 8 de octubre de 2026, SemiAnalysis publicó un estudio sobre cómo nueve desarrolladores chinos comunican públicamente las evaluaciones de seguridad de sus modelos. El equipo identificó 857 lanzamientos desde 2021 hasta el 15 de septiembre de 2026 y buscó resultados verificables asociados a cada versión. Encontró 31 lanzamientos, equivalentes al 3,6%, con al menos una evaluación pública específica. Solo nueve, el 1,1% del total, tenían ese resultado disponible al lanzamiento o antes. El hallazgo describe una brecha de documentación pública, no demuestra que los 826 lanzamientos restantes nunca hayan sido evaluados internamente. La muestra comprende cuatro grandes plataformas —Alibaba, ByteDance, Tencent y Baidu— y cinco desarrolladores especializados: DeepSeek, Moonshot, Z.ai, MiniMax y StepFun. SemiAnalysis contabilizó 741 modelos de producto y 116 de investigación. El registro incluye fecha de primera aparición pública, situación de los pesos, licencia y fuente. Este diseño importa porque un mismo nombre comercial puede abarcar diferentes tamaños, revisiones y modalidades; una prueba de una variante no garantiza el mismo comportamiento en otra. El informe aclara que las tasas por empresa no son un ranking limpio: sus catálogos tienen granularidades diferentes.",
+      "finalSummary": "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología.",
+      "analysis": "Análisis Gazette: el dato más revelador no es una competición nacional, sino la distancia entre velocidad de lanzamiento y trazabilidad pública de seguridad. La investigación aporta un criterio reproducible: exigir resultados específicos y fechados, sin aceptar afirmaciones generales. Sus límites también son claros: visibilidad parcial, diferencias entre familias y ninguna prueba de ausencia de evaluaciones internas. El estudio está publicado en el sitio de SemiAnalysis, con parte de su oferta editorial bajo suscripción; no se ha verificado una tarifa aplicable al artículo. Habrá que seguir si los laboratorios publican system cards, evaluaciones de capacidades peligrosas y documentación por versión, y si otras regiones son examinadas con la misma metodología.",
+      "watch": "Nuevas fichas de seguridad por versión, evaluaciones de capacidades peligrosas y estudios internacionales con la misma metodología.",
+      "technicalDetails": [
+        {
+          "label": "Muestra",
+          "value": "857 lanzamientos de nueve desarrolladores, 2021–15 sep 2026"
+        },
+        {
+          "label": "Con resultado público",
+          "value": "31/857 (3,6%)",
+          "note": "Cálculo de SemiAnalysis"
+        },
+        {
+          "label": "Al lanzamiento",
+          "value": "9/857 (1,1%)",
+          "note": "Cálculo de SemiAnalysis"
+        },
+        {
+          "label": "Sin divulgación localizada",
+          "value": "813/857 (94,9%)",
+          "note": "No implica ausencia de pruebas internas"
+        }
+      ],
+      "availability": {
+        "status": "Investigación publicada; parte de la oferta editorial del autor funciona por suscripción",
+        "platforms": [
+          "Web"
+        ],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "No es un modelo ni servicio de inferencia."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio del informe",
+          "value": "No verificado; no inferir una tarifa de suscripción"
+        }
+      ],
+      "limitations": [
+        "Sin muestra internacional comparable.",
+        "Diferente granularidad de variantes por proveedor.",
+        "Documentación privada y pruebas internas no observables.",
+        "Resultados de divulgación no miden directamente seguridad real."
+      ],
+      "practicalAdvice": [
+        "Registrar versión y licencia exactas antes de integrar modelos.",
+        "Exigir evaluaciones específicas, fechadas y vinculadas a la versión.",
+        "Probar permisos, jailbreaks y herramientas en el entorno propio."
+      ],
+      "usefulFacts": [
+        "741 lanzamientos de producto y 116 de investigación.",
+        "16 evaluaciones se publicaron después del lanzamiento, con mediana de 42 días."
+      ],
+      "curiosities": [
+        "El informe contabiliza tamaños y snapshots distintos por separado cuando aparecen como lanzamientos."
+      ],
+      "sources": [
+        {
+          "name": "SemiAnalysis · Beijing Will Not Pace the Frontier",
+          "url": "https://newsletter.semianalysis.com/p/beijing-will-not-pace-the-frontier",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Reuters · investigación sobre divulgación de pruebas de seguridad",
+          "url": "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "articleVersion": 2
     },
     {
       "id": "artex-public-distribution-closed-2026",
@@ -13782,12 +14363,12 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 24
+      "verifiedArticles": 25
     },
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 8
+      "verifiedArticles": 10
     }
   ]
 }
