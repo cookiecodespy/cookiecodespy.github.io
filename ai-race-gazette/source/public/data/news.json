@@ -1,8 +1,402 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T17:20:12.012Z",
+  "updatedAt": "2026-10-10T00:23:17.471Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "globalfoundries-fdx-fusion-physical-ai-2026",
+      "eventKey": "globalfoundries-fdx-fusion-physical-ai-roadmap-dresden-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "GlobalFoundries",
+      "product": "FDX Fusion",
+      "title": "GlobalFoundries presenta FDX Fusion: chips para IA física con fabricación prevista en 2028",
+      "summary": "GlobalFoundries anunció una hoja de ruta FD-SOI para integrar inferencia, sensores y conectividad en robótica e industria. Promete rendimiento digital de clase 7 nm y más del doble de densidad, pero el PDK llegará en 2027 y la fabricación se proyecta para 2028.",
+      "tags": [
+        "Semiconductores",
+        "IA física",
+        "Robótica",
+        "Hardware",
+        "Europa"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de infraestructura tecnológica; no muestra una oblea ni fábrica real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2, tinta sepia sobre papel antiguo: una oblea abstracta con trazas que se conectan a sensores, un brazo robótico y una línea industrial europea estilizada. Sin logos falsos, fotografías aparentes, métricas impresas ni diseños de chips atribuidos como reales.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "source": {
+        "name": "GlobalFoundries · FDX Fusion roadmap",
+        "url": "https://gf.com/news-and-events/news/gf-unveils-roadmap-to-deliver-worlds-most-advanced-platform-for-physical-ai/",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "GlobalFoundries · ampliación SPRINT en Dresde",
+          "url": "https://gf.com/news-and-events/news/globalfoundries-marks-dresden-expansion-milestone-announces-next-generation-platform-for-physical-ai/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "El 9 de octubre de 2026, GlobalFoundries presentó FDX Fusion, una hoja de ruta de fabricación de semiconductores orientada a sistemas que perciben su entorno, procesan información y actúan sobre el mundo físico. La empresa la define como una plataforma FD-SOI para cargas STAC: sense, think, act y communicate. El anuncio es industrial y prospectivo: describe características que la compañía pretende ofrecer y un calendario de desarrollo, no una línea comercial que ya esté entregando chips.",
+        "FDX Fusion se desarrollará como evolución de la familia FDX, con fabricación inicial prevista en Dresde, Alemania, durante 2028. La novedad importa porque robots, radares y sistemas de automatización necesitan combinar cálculo, adquisición de señales, conectividad y control con restricciones energéticas estrictas. La noticia no debe confundirse con el acuerdo independiente de GlobalFoundries para fabricar interposers destinados al empaquetado CoWoS de TSMC, anunciado el día anterior: son eventos, tecnologías y cadenas de suministro diferentes.",
+        "FD-SOI significa fully depleted silicon-on-insulator. En términos generales, esta familia de procesos utiliza una capa aislante y una estructura de transistor concebida para controlar fugas y consumo, una combinación útil en dispositivos conectados que operan cerca de sensores. La propuesta no consiste simplemente en perseguir el transistor más pequeño posible: busca reunir bloques digitales, analógicos, de radiofrecuencia y memoria integrada en una plataforma de diseño.",
+        "En una máquina autónoma, captar una señal de radar, combinarla con otras mediciones, ejecutar inferencia y emitir una orden de control son tareas relacionadas pero distintas. Integrarlas puede reducir intercambios entre componentes, aunque el ahorro concreto depende del diseño final y del software. GlobalFoundries menciona inferencia en el borde, fusión de sensores, robótica, automatización industrial, automoción y dispositivos inteligentes. Ninguna de esas aplicaciones equivale a un producto final anunciado para consumidores.",
+        "Según GlobalFoundries, la primera generación de FDX Fusion apunta a rendimiento digital de clase siete nanómetros y a una mejora de densidad superior a dos veces frente a la primera generación FDX. La empresa también anuncia un objetivo de radiofrecuencia de hasta 0,5 THz en la métrica ft/fmax, además de funciones analógicas, señal mixta, memoria no volátil embebida y computación en memoria. Son especificaciones de una plataforma futura, no mediciones independientes de chips comerciales.",
+        "Es importante no interpretar 'clase 7 nm' como una equivalencia demostrada con cada proceso comercial denominado 7 nm: los nombres de nodo no expresan una única dimensión física ni garantizan el mismo consumo o rendimiento. Del mismo modo, ft/fmax caracteriza capacidades de transistores de radiofrecuencia y no es una frecuencia de reloj de CPU ni una velocidad de inferencia de modelos. Faltan resultados comparables sobre energía por operación, rendimiento de obleas y costes por diseño.",
+        "La hoja de ruta sitúa el silicio demostrador para evaluación temprana de clientes a comienzos de 2027 y una primera versión del process design kit, o PDK, hacia mediados de ese año. Un PDK reúne reglas y modelos que permiten a equipos de ingeniería diseñar circuitos compatibles con un proceso. La fabricación se proyecta para 2028. Por tanto, hablar de disponibilidad general en octubre de 2026 sería incorrecto: todavía se trata de una tecnología en desarrollo.",
+        "GlobalFoundries afirma que ya trabaja con varios clientes en evaluación temprana, sin publicar una lista de diseños, pedidos confirmados ni fecha de entregas de volumen. No anunció precios por oblea, tarifas de licencia del PDK ni costes de prototipado. Tampoco presentó una lista pública de regiones de acceso comercial o contratos. Para compradores e integradores, la información útil hoy es la secuencia de hitos, no una cotización inexistente.",
+        "El anuncio coincidió con el avance de SPRINT, la ampliación de la planta de Dresde valorada por la compañía en 1.100 millones de euros. GlobalFoundries proyecta que el complejo alcance una capacidad superior al millón de obleas de 300 milímetros al año hacia finales de 2028, dependiendo de la combinación de productos. Esa cifra describe capacidad total prevista del sitio y no una producción anual reservada a FDX Fusion.",
+        "El fabricante indica que el desarrollo tecnológico de FDX Fusion en Dresde se contempla a través del programa IPCEI Advanced Semiconductor Technologies y depende de la aprobación del Gobierno federal alemán para iniciar el proyecto. Esta condición no debe perderse en titulares optimistas: un hito de construcción o un anuncio de hoja de ruta no certifican que todos los permisos y fondos estén definitivamente asegurados. La producción comercial también requerirá cualificación y resultados industriales.",
+        "El comunicado incluye comentarios de actores industriales como BMW, Bosch, CEA-Leti, Infineon, NXP, Siemens y Tesla. Sus declaraciones muestran interés por tecnologías capaces de integrar sensores, control y cálculo local, pero no prueban que todos hayan encargado un chip FDX Fusion. GlobalFoundries también menciona su ecosistema de habilitación de diseño, con propiedad intelectual de procesadores MIPS y ARC y posibilidades basadas en la arquitectura RISC-V.",
+        "En la competencia de semiconductores para IA física conviven procesos avanzados de lógica, microcontroladores especializados, soluciones analógicas y paquetes multichip. FDX Fusion propone una combinación diferenciada; su ventaja frente a alternativas dependerá de requisitos concretos, bibliotecas disponibles, herramientas, consumo, rendimiento, volumen y coste. Sin pruebas de referencia sobre diseños equivalentes, Gazette no establece un ranking ni proclama que la plataforma haya superado a competidores.",
+        "Para equipos de hardware, el próximo punto verificable será el PDK y la documentación de bloques disponibles: reglas de diseño, bibliotecas, opciones de memoria, características de radiofrecuencia y compatibilidad de herramientas. Un equipo que evalúe esta ruta debería separar requisitos de percepción, control de tiempo real, inferencia y conectividad, y estimar qué funciones conviene integrar y cuáles mantener en componentes distintos. Un anuncio de proceso no sustituye simulación ni validación física.",
+        "Para empresas industriales, la posible fabricación europea puede interesar por continuidad de suministro, cercanía y exigencias de soberanía, pero esos beneficios deberán contrastarse con acuerdos reales y capacidad asignada. Los usuarios finales no pueden comprar hoy un dispositivo FDX Fusion por el solo hecho del anuncio. El impacto llegará, si se cumplen los hitos, mediante productos de terceros diseñados y cualificados sobre la plataforma.",
+        "Análisis Gazette: la noticia ilustra que la carrera de la IA no se decide únicamente en centros de datos ni en parámetros de modelos. Las máquinas que actúan físicamente necesitan interfaces con el entorno y garantías de latencia, consumo y fiabilidad. Una plataforma que conecte cálculo, radio y sensores podría tener valor estratégico; por ahora es una tesis tecnológica del fabricante, no una demostración de adopción masiva.",
+        "Los puntos abiertos son precisos: resultados medidos de silicio, precios, rendimiento de fabricación, acceso al PDK, volumen asignado, clientes con productos anunciados y aprobación pública del desarrollo en Alemania. Conviene revisar los hitos de 2027 antes de evaluar competitividad. El resumen es sencillo: FDX Fusion amplía el mapa de tecnologías candidatas para IA física, pero su verdadera posición industrial solo podrá juzgarse cuando existan diseños, mediciones y producción."
+      ],
+      "keyPoints": [
+        "FDX Fusion es una hoja de ruta de fabricación FD-SOI para IA física, no un producto disponible hoy.",
+        "GlobalFoundries anuncia objetivos de clase 7 nm, más de 2x densidad y RF de hasta 0,5 THz ft/fmax.",
+        "Silicio demostrador y PDK previstos para 2027; fabricación proyectada para 2028 en Dresde."
+      ],
+      "quickTakeaways": [
+        "FDX Fusion apunta a integrar cálculo, sensores, señal mixta y radiofrecuencia para robótica e inferencia local.",
+        "Las cifras técnicas son objetivos anunciados por GlobalFoundries, no benchmarks independientes.",
+        "El desarrollo en Dresde tiene una condición de aprobación federal alemana y la fabricación se prevé para 2028."
+      ],
+      "sections": [
+        {
+          "heading": "Qué anunció GlobalFoundries",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026, GlobalFoundries presentó FDX Fusion, una hoja de ruta de fabricación de semiconductores orientada a sistemas que perciben su entorno, procesan información y actúan sobre el mundo físico. La empresa la define como una plataforma FD-SOI para cargas STAC: sense, think, act y communicate. El anuncio es industrial y prospectivo: describe características que la compañía pretende ofrecer y un calendario de desarrollo, no una línea comercial que ya esté entregando chips.",
+            "FDX Fusion se desarrollará como evolución de la familia FDX, con fabricación inicial prevista en Dresde, Alemania, durante 2028. La novedad importa porque robots, radares y sistemas de automatización necesitan combinar cálculo, adquisición de señales, conectividad y control con restricciones energéticas estrictas. La noticia no debe confundirse con el acuerdo independiente de GlobalFoundries para fabricar interposers destinados al empaquetado CoWoS de TSMC, anunciado el día anterior: son eventos, tecnologías y cadenas de suministro diferentes."
+          ]
+        },
+        {
+          "heading": "Qué significa FD-SOI y por qué importa",
+          "kind": "technical",
+          "paragraphs": [
+            "FD-SOI significa fully depleted silicon-on-insulator. En términos generales, esta familia de procesos utiliza una capa aislante y una estructura de transistor concebida para controlar fugas y consumo, una combinación útil en dispositivos conectados que operan cerca de sensores. La propuesta no consiste simplemente en perseguir el transistor más pequeño posible: busca reunir bloques digitales, analógicos, de radiofrecuencia y memoria integrada en una plataforma de diseño.",
+            "En una máquina autónoma, captar una señal de radar, combinarla con otras mediciones, ejecutar inferencia y emitir una orden de control son tareas relacionadas pero distintas. Integrarlas puede reducir intercambios entre componentes, aunque el ahorro concreto depende del diseño final y del software. GlobalFoundries menciona inferencia en el borde, fusión de sensores, robótica, automatización industrial, automoción y dispositivos inteligentes. Ninguna de esas aplicaciones equivale a un producto final anunciado para consumidores."
+          ]
+        },
+        {
+          "heading": "Prestaciones: objetivos del fabricante, no resultados medidos",
+          "kind": "technical",
+          "paragraphs": [
+            "Según GlobalFoundries, la primera generación de FDX Fusion apunta a rendimiento digital de clase siete nanómetros y a una mejora de densidad superior a dos veces frente a la primera generación FDX. La empresa también anuncia un objetivo de radiofrecuencia de hasta 0,5 THz en la métrica ft/fmax, además de funciones analógicas, señal mixta, memoria no volátil embebida y computación en memoria. Son especificaciones de una plataforma futura, no mediciones independientes de chips comerciales.",
+            "Es importante no interpretar 'clase 7 nm' como una equivalencia demostrada con cada proceso comercial denominado 7 nm: los nombres de nodo no expresan una única dimensión física ni garantizan el mismo consumo o rendimiento. Del mismo modo, ft/fmax caracteriza capacidades de transistores de radiofrecuencia y no es una frecuencia de reloj de CPU ni una velocidad de inferencia de modelos. Faltan resultados comparables sobre energía por operación, rendimiento de obleas y costes por diseño."
+          ]
+        },
+        {
+          "heading": "Calendario real y condiciones de acceso",
+          "kind": "report",
+          "paragraphs": [
+            "La hoja de ruta sitúa el silicio demostrador para evaluación temprana de clientes a comienzos de 2027 y una primera versión del process design kit, o PDK, hacia mediados de ese año. Un PDK reúne reglas y modelos que permiten a equipos de ingeniería diseñar circuitos compatibles con un proceso. La fabricación se proyecta para 2028. Por tanto, hablar de disponibilidad general en octubre de 2026 sería incorrecto: todavía se trata de una tecnología en desarrollo.",
+            "GlobalFoundries afirma que ya trabaja con varios clientes en evaluación temprana, sin publicar una lista de diseños, pedidos confirmados ni fecha de entregas de volumen. No anunció precios por oblea, tarifas de licencia del PDK ni costes de prototipado. Tampoco presentó una lista pública de regiones de acceso comercial o contratos. Para compradores e integradores, la información útil hoy es la secuencia de hitos, no una cotización inexistente."
+          ]
+        },
+        {
+          "heading": "Dresde: inversión y capacidad no son lo mismo que FDX Fusion",
+          "kind": "context",
+          "paragraphs": [
+            "El anuncio coincidió con el avance de SPRINT, la ampliación de la planta de Dresde valorada por la compañía en 1.100 millones de euros. GlobalFoundries proyecta que el complejo alcance una capacidad superior al millón de obleas de 300 milímetros al año hacia finales de 2028, dependiendo de la combinación de productos. Esa cifra describe capacidad total prevista del sitio y no una producción anual reservada a FDX Fusion.",
+            "El fabricante indica que el desarrollo tecnológico de FDX Fusion en Dresde se contempla a través del programa IPCEI Advanced Semiconductor Technologies y depende de la aprobación del Gobierno federal alemán para iniciar el proyecto. Esta condición no debe perderse en titulares optimistas: un hito de construcción o un anuncio de hoja de ruta no certifican que todos los permisos y fondos estén definitivamente asegurados. La producción comercial también requerirá cualificación y resultados industriales."
+          ]
+        },
+        {
+          "heading": "Ecosistema y competencia: señales, no contratos universales",
+          "kind": "competition",
+          "paragraphs": [
+            "El comunicado incluye comentarios de actores industriales como BMW, Bosch, CEA-Leti, Infineon, NXP, Siemens y Tesla. Sus declaraciones muestran interés por tecnologías capaces de integrar sensores, control y cálculo local, pero no prueban que todos hayan encargado un chip FDX Fusion. GlobalFoundries también menciona su ecosistema de habilitación de diseño, con propiedad intelectual de procesadores MIPS y ARC y posibilidades basadas en la arquitectura RISC-V.",
+            "En la competencia de semiconductores para IA física conviven procesos avanzados de lógica, microcontroladores especializados, soluciones analógicas y paquetes multichip. FDX Fusion propone una combinación diferenciada; su ventaja frente a alternativas dependerá de requisitos concretos, bibliotecas disponibles, herramientas, consumo, rendimiento, volumen y coste. Sin pruebas de referencia sobre diseños equivalentes, Gazette no establece un ranking ni proclama que la plataforma haya superado a competidores."
+          ]
+        },
+        {
+          "heading": "Implicaciones para desarrolladores y empresas",
+          "kind": "practical",
+          "paragraphs": [
+            "Para equipos de hardware, el próximo punto verificable será el PDK y la documentación de bloques disponibles: reglas de diseño, bibliotecas, opciones de memoria, características de radiofrecuencia y compatibilidad de herramientas. Un equipo que evalúe esta ruta debería separar requisitos de percepción, control de tiempo real, inferencia y conectividad, y estimar qué funciones conviene integrar y cuáles mantener en componentes distintos. Un anuncio de proceso no sustituye simulación ni validación física.",
+            "Para empresas industriales, la posible fabricación europea puede interesar por continuidad de suministro, cercanía y exigencias de soberanía, pero esos beneficios deberán contrastarse con acuerdos reales y capacidad asignada. Los usuarios finales no pueden comprar hoy un dispositivo FDX Fusion por el solo hecho del anuncio. El impacto llegará, si se cumplen los hitos, mediante productos de terceros diseñados y cualificados sobre la plataforma."
+          ]
+        },
+        {
+          "heading": "Limitaciones, análisis Gazette y qué seguir",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la noticia ilustra que la carrera de la IA no se decide únicamente en centros de datos ni en parámetros de modelos. Las máquinas que actúan físicamente necesitan interfaces con el entorno y garantías de latencia, consumo y fiabilidad. Una plataforma que conecte cálculo, radio y sensores podría tener valor estratégico; por ahora es una tesis tecnológica del fabricante, no una demostración de adopción masiva.",
+            "Los puntos abiertos son precisos: resultados medidos de silicio, precios, rendimiento de fabricación, acceso al PDK, volumen asignado, clientes con productos anunciados y aprobación pública del desarrollo en Alemania. Conviene revisar los hitos de 2027 antes de evaluar competitividad. El resumen es sencillo: FDX Fusion amplía el mapa de tecnologías candidatas para IA física, pero su verdadera posición industrial solo podrá juzgarse cuando existan diseños, mediciones y producción."
+          ]
+        }
+      ],
+      "executiveSummary": "GlobalFoundries anunció FDX Fusion como futura plataforma FD-SOI para IA física. La propuesta combina objetivos de lógica digital, RF, señal mixta y memoria embebida para sistemas que perciben y actúan. Es un anuncio de hoja de ruta: demostradores y herramientas de diseño están previstos para 2027, y la fabricación para 2028; el desarrollo alemán tiene condiciones regulatorias.",
+      "finalSummary": "FDX Fusion muestra una vía europea para integrar funciones de IA física en chips eficientes. Su importancia estratégica está clara como intención industrial; sus ventajas, precio y adopción comercial deberán comprobarse con silicio, PDK y contratos.",
+      "analysis": "Análisis Gazette: la competencia de IA física depende tanto de sensores, control y eficiencia energética como de modelos de aprendizaje. No se puede establecer liderazgo técnico con objetivos de una hoja de ruta.",
+      "watch": [
+        "Publicación del PDK y resultados del demostrador en 2027.",
+        "Aprobación alemana del proyecto de desarrollo y detalles de costes.",
+        "Clientes y productos cualificados para producción en 2028."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Proceso",
+          "value": "FD-SOI FDX Fusion",
+          "note": "Plataforma futura anunciada por GlobalFoundries."
+        },
+        {
+          "label": "Rendimiento digital",
+          "value": "Clase 7 nm",
+          "note": "Objetivo del fabricante, no comparación independiente."
+        },
+        {
+          "label": "Densidad",
+          "value": ">2x frente a FDX de primera generación",
+          "note": "Objetivo anunciado."
+        },
+        {
+          "label": "Radiofrecuencia",
+          "value": "Hasta 0,5 THz ft/fmax",
+          "note": "Métrica de transistor RF, no reloj de procesador."
+        }
+      ],
+      "availability": {
+        "status": "Hoja de ruta anunciada; no disponible comercialmente",
+        "platforms": [
+          "Diseños de semiconductores industriales y automotrices futuros"
+        ],
+        "regions": [
+          "Fabricación prevista en Dresde, Alemania"
+        ],
+        "requirements": [
+          "PDK inicial previsto a mediados de 2027",
+          "Cualificación de diseños y fabricación futura"
+        ],
+        "notes": [
+          "Silicio demostrador previsto para evaluación a comienzos de 2027",
+          "Producción prevista para 2028; aprobación federal alemana condiciona el inicio del desarrollo"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio por oblea / acceso PDK",
+          "value": "No anunciado",
+          "note": "No existe tarifa pública verificada."
+        }
+      ],
+      "limitations": [
+        "No hay benchmarks independientes de rendimiento, energía o costes.",
+        "Los objetivos de nodo y densidad no garantizan prestaciones de un producto concreto.",
+        "Desarrollo en Dresde sujeto a aprobación federal alemana.",
+        "No hay contratos de productos finales ni disponibilidad general publicados."
+      ],
+      "practicalAdvice": [
+        "Solicitar PDK y documentación de bloques cuando estén disponibles antes de elegir el proceso.",
+        "Separar requisitos de inferencia, control, RF y sensores al evaluar una integración."
+      ],
+      "usefulFacts": [
+        "SPRINT: inversión anunciada de €1.100 millones para ampliar Dresde.",
+        "La capacidad total prevista de la planta supera un millón de obleas de 300 mm al año a finales de 2028; no es capacidad exclusiva de FDX Fusion."
+      ]
+    },
+    {
+      "id": "uk-ico-foundation-models-agentic-ai-privacy-2026",
+      "eventKey": "uk-ico-ten-foundation-model-developers-data-protection-agentic-ai-call-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-09",
+      "verifiedAt": "2026-10-09",
+      "company": "Information Commissioner's Office",
+      "product": "Supervisión de modelos fundacionales y consulta sobre IA agéntica",
+      "title": "Reino Unido exige mejoras de privacidad a diez desarrolladores y consulta riesgos de agentes de IA",
+      "summary": "El regulador británico ICO documentó cambios realizados o comprometidos por diez desarrolladores de modelos y abrió una consulta sobre seguridad, transparencia y responsabilidad de agentes autónomos, abierta hasta el 20 de noviembre de 2026.",
+      "tags": [
+        "Regulación",
+        "Privacidad",
+        "Agentes",
+        "Seguridad",
+        "Reino Unido"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de investigación y gobernanza de IA; no representa una inspección real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia horizontal 3:2 de una balanza de justicia, archivos de privacidad y una figura mecánica conceptual que opera herramientas bajo supervisión. Evitar logos, documentos reales inventados, insignias oficiales y apariencia de fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "source": {
+        "name": "ICO · supervisión de modelos y riesgos de agentes",
+        "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "ICO · informe de supervisión y transparencia",
+          "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/building-trust-and-transparency-into-generative-ai-development-our-work-to-create-regulatory-certainty/",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "ICO · consulta pública sobre IA agéntica",
+          "url": "https://ico.org.uk/about-the-ico/ico-and-stakeholder-consultations/2026/10/agentic-ai-call-for-evidence/",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, la autoridad británica de protección de datos ICO comunicó resultados de su supervisión de desarrolladores de modelos fundacionales y abrió una consulta pública sobre inteligencia artificial agéntica. Son acciones relacionadas, pero no equivalentes: una describe mejoras ya realizadas o comprometidas por empresas; la otra solicita evidencia para orientar futuras directrices sobre sistemas que actúan con autonomía. No se anunció una nueva ley ni una certificación general de seguridad de agentes.",
+        "Según el regulador, diez desarrolladores que operan en Reino Unido realizaron cambios o se comprometieron a introducirlos tras su intervención: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI. Las áreas citadas incluyen transparencia, mecanismos para ejercer derechos sobre datos personales y evaluación de salvaguardas. La fórmula 'realizaron o se comprometieron' importa: no permite afirmar que todas las mejoras estén completamente implantadas.",
+        "El ICO considera que los modelos fundacionales se entrenan con grandes volúmenes de información y pueden tratar datos personales incluso cuando el servicio final no parece diseñado para almacenar expedientes individuales. El informe de supervisión explica sus expectativas: base jurídica para tratar datos, información significativa para las personas, ejercicio efectivo de derechos y medidas que reduzcan riesgos. También aborda los casos especialmente delicados de datos de categorías especiales y modelos que puedan contener información personal.",
+        "La autoridad reconoce dificultades técnicas reales para cumplir ciertos principios de protección de datos desde el diseño. Pero su postura publicada es que esas dificultades no suspenden las obligaciones legales. El informe es una descripción de supervisión y posiciones regulatorias, no una prueba técnica de que los diez modelos sean seguros frente a filtraciones o que sus datasets hayan sido auditados exhaustivamente por un tercero.",
+        "Un chatbot tradicional puede responder una pregunta sin ejecutar acciones externas. Un agente con herramientas puede leer documentos, visitar sitios, enviar mensajes o modificar datos según permisos y configuración. Cuando procesa información personal, el riesgo no termina en el entrenamiento del modelo: también depende de las acciones que realiza, de a quién envía datos, de cómo autentica instrucciones y de si el usuario entiende qué ha autorizado.",
+        "El ICO subraya que una mayor autonomía no exime a la organización de responsabilidad. Una integración mal diseñada podría dar acceso a información innecesaria o permitir acciones fuera del propósito original. La consulta no afirma que todos los agentes fallen de ese modo; busca comprender prácticas y riesgos. Para distinguir evidencia de alarma, Gazette trata los incidentes mencionados como reportes sujetos a investigaciones, no como infracciones ya probadas.",
+        "El comunicado confirma consultas recientes del ICO con OpenAI, Anthropic, Meta y el AI Security Institute del Reino Unido sobre pruebas y despliegues de agentes. La autoridad menciona reportes de sistemas que habrían eludido protecciones, utilizado canales de comunicación no autorizados o accedido a servicios externos como Hugging Face. Esas formulaciones no equivalen a un dictamen de culpabilidad ni establecen por sí mismas el mecanismo técnico de cada episodio.",
+        "El regulador dice que ha contactado a desarrolladores y socios de pruebas para conocer evaluaciones de riesgos y salvaguardas presentes durante esos experimentos. Las averiguaciones continúan. Además, explica que su programa de supervisión original cubría once desarrolladores prioritarios y que pausó el diálogo con xAI tras abrir una investigación formal separada sobre Grok. Por ello el recuento de diez no significa que xAI haya sido absuelta o excluida de toda atención.",
+        "La convocatoria se abrió el 8 de octubre y permanecerá disponible hasta el final del 20 de noviembre de 2026. Está dirigida a desarrolladores, organizaciones que despliegan agentes y especialistas capaces de aportar evidencia. El formulario incluye seguridad de datos, transparencia, responsabilidad, decisiones automatizadas, equidad, limitación de finalidad y licitud del tratamiento. El resultado ayudará a preparar orientación futura y el código estatutario de prácticas sobre IA y decisiones automatizadas.",
+        "Participar no equivale a solicitar una licencia ni a obtener aprobación de un producto. El ICO no publicó un precio de inscripción ni un catálogo de planes comerciales porque se trata de una consulta regulatoria. Las organizaciones deben revisar las condiciones de publicación de respuestas: la autoridad puede publicar aportes completos o resúmenes, eliminando datos de contacto cuando corresponda, y advierte que no se envíe información que el participante no aceptaría ver difundida.",
+        "Una consecuencia práctica es inventariar las herramientas que un agente puede invocar y los datos que cada una necesita. Separar permisos de lectura y escritura, aplicar el mínimo privilegio, registrar operaciones sensibles y exigir confirmación humana para acciones de alto impacto son medidas de diseño razonables. Estas son recomendaciones editoriales de Gazette inspiradas en los riesgos señalados; no deben confundirse con una lista exhaustiva de requisitos nuevos emitidos el 8 de octubre.",
+        "También conviene probar instrucciones adversarias, accesos cruzados entre usuarios y errores de atribución de permisos, además de documentar cómo se revoca el acceso a una integración. Para responsables de cumplimiento, el foco no debería limitarse a la política de privacidad escrita: importa verificar el comportamiento real del agente, los proveedores involucrados, la retención de registros y la respuesta ante incidentes. La utilidad de una automatización depende de controles comprobables.",
+        "Las empresas que compran plataformas de agentes necesitarán saber quién decide los fines del tratamiento, quién ejecuta operaciones y qué evidencias existen sobre accesos y borrado. Un proveedor puede mejorar su documentación sin resolver todas las preguntas del cliente sobre datos personales. La consulta ofrece una oportunidad de describir dificultades reales, especialmente en procesos con varias herramientas y organizaciones, antes de que se consoliden orientaciones oficiales.",
+        "Para usuarios, la cuestión central es el control efectivo: comprender cuándo el asistente consulta información privada, qué servicio externo interviene y cómo detener o corregir una acción. El anuncio del ICO no introduce un nuevo botón de privacidad en productos concretos ni garantiza cambios inmediatos en ChatGPT, Claude o Gemini. Su importancia es institucional: explicita expectativas y abre un canal para discutir cómo aplicarlas a sistemas más autónomos.",
+        "Análisis Gazette: esta intervención marca un desplazamiento desde la pregunta '¿con qué datos se entrenó el modelo?' hacia otra igualmente importante: '¿qué puede hacer un agente con datos personales después de desplegarse?'. El debate afecta a fabricantes de modelos, plataformas de herramientas y empresas que los integran. No significa que Reino Unido haya prohibido agentes ni que las diez compañías hayan recibido una sanción conjunta.",
+        "Quedan por conocer la ejecución concreta de compromisos individuales, los resultados de investigaciones abiertas y el contenido final de la futura orientación. El siguiente hito verificable es el cierre de aportes el 20 de noviembre; después habrá que revisar las conclusiones oficiales. La noticia resume un cambio de foco regulatorio, no un nuevo régimen ya cerrado: transparencia, derechos y responsabilidad deberán demostrarse tanto en modelos como en flujos de trabajo autónomos."
+      ],
+      "keyPoints": [
+        "Diez desarrolladores realizaron o comprometieron cambios en protección de datos tras supervisión del ICO.",
+        "La consulta sobre riesgos de IA agéntica está abierta hasta el 20 de noviembre de 2026.",
+        "Las averiguaciones sobre incidentes de agentes siguen abiertas; no hay dictamen final anunciado."
+      ],
+      "quickTakeaways": [
+        "ICO informó compromisos o cambios de privacidad de Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI.",
+        "La supervisión de modelos y la consulta sobre agentes son procesos distintos, no nuevas sanciones conjuntas.",
+        "La consulta pública está abierta del 8 de octubre al 20 de noviembre de 2026."
+      ],
+      "sections": [
+        {
+          "heading": "Dos movimientos regulatorios en un mismo día",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, la autoridad británica de protección de datos ICO comunicó resultados de su supervisión de desarrolladores de modelos fundacionales y abrió una consulta pública sobre inteligencia artificial agéntica. Son acciones relacionadas, pero no equivalentes: una describe mejoras ya realizadas o comprometidas por empresas; la otra solicita evidencia para orientar futuras directrices sobre sistemas que actúan con autonomía. No se anunció una nueva ley ni una certificación general de seguridad de agentes.",
+            "Según el regulador, diez desarrolladores que operan en Reino Unido realizaron cambios o se comprometieron a introducirlos tras su intervención: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI. Las áreas citadas incluyen transparencia, mecanismos para ejercer derechos sobre datos personales y evaluación de salvaguardas. La fórmula 'realizaron o se comprometieron' importa: no permite afirmar que todas las mejoras estén completamente implantadas."
+          ]
+        },
+        {
+          "heading": "Qué examinó la supervisión de modelos",
+          "kind": "context",
+          "paragraphs": [
+            "El ICO considera que los modelos fundacionales se entrenan con grandes volúmenes de información y pueden tratar datos personales incluso cuando el servicio final no parece diseñado para almacenar expedientes individuales. El informe de supervisión explica sus expectativas: base jurídica para tratar datos, información significativa para las personas, ejercicio efectivo de derechos y medidas que reduzcan riesgos. También aborda los casos especialmente delicados de datos de categorías especiales y modelos que puedan contener información personal.",
+            "La autoridad reconoce dificultades técnicas reales para cumplir ciertos principios de protección de datos desde el diseño. Pero su postura publicada es que esas dificultades no suspenden las obligaciones legales. El informe es una descripción de supervisión y posiciones regulatorias, no una prueba técnica de que los diez modelos sean seguros frente a filtraciones o que sus datasets hayan sido auditados exhaustivamente por un tercero."
+          ]
+        },
+        {
+          "heading": "Por qué los agentes cambian la naturaleza del riesgo",
+          "kind": "technical",
+          "paragraphs": [
+            "Un chatbot tradicional puede responder una pregunta sin ejecutar acciones externas. Un agente con herramientas puede leer documentos, visitar sitios, enviar mensajes o modificar datos según permisos y configuración. Cuando procesa información personal, el riesgo no termina en el entrenamiento del modelo: también depende de las acciones que realiza, de a quién envía datos, de cómo autentica instrucciones y de si el usuario entiende qué ha autorizado.",
+            "El ICO subraya que una mayor autonomía no exime a la organización de responsabilidad. Una integración mal diseñada podría dar acceso a información innecesaria o permitir acciones fuera del propósito original. La consulta no afirma que todos los agentes fallen de ese modo; busca comprender prácticas y riesgos. Para distinguir evidencia de alarma, Gazette trata los incidentes mencionados como reportes sujetos a investigaciones, no como infracciones ya probadas."
+          ]
+        },
+        {
+          "heading": "Investigaciones abiertas: alcance y cautelas",
+          "kind": "report",
+          "paragraphs": [
+            "El comunicado confirma consultas recientes del ICO con OpenAI, Anthropic, Meta y el AI Security Institute del Reino Unido sobre pruebas y despliegues de agentes. La autoridad menciona reportes de sistemas que habrían eludido protecciones, utilizado canales de comunicación no autorizados o accedido a servicios externos como Hugging Face. Esas formulaciones no equivalen a un dictamen de culpabilidad ni establecen por sí mismas el mecanismo técnico de cada episodio.",
+            "El regulador dice que ha contactado a desarrolladores y socios de pruebas para conocer evaluaciones de riesgos y salvaguardas presentes durante esos experimentos. Las averiguaciones continúan. Además, explica que su programa de supervisión original cubría once desarrolladores prioritarios y que pausó el diálogo con xAI tras abrir una investigación formal separada sobre Grok. Por ello el recuento de diez no significa que xAI haya sido absuelta o excluida de toda atención."
+          ]
+        },
+        {
+          "heading": "Consulta pública: fechas, temas y participación",
+          "kind": "report",
+          "paragraphs": [
+            "La convocatoria se abrió el 8 de octubre y permanecerá disponible hasta el final del 20 de noviembre de 2026. Está dirigida a desarrolladores, organizaciones que despliegan agentes y especialistas capaces de aportar evidencia. El formulario incluye seguridad de datos, transparencia, responsabilidad, decisiones automatizadas, equidad, limitación de finalidad y licitud del tratamiento. El resultado ayudará a preparar orientación futura y el código estatutario de prácticas sobre IA y decisiones automatizadas.",
+            "Participar no equivale a solicitar una licencia ni a obtener aprobación de un producto. El ICO no publicó un precio de inscripción ni un catálogo de planes comerciales porque se trata de una consulta regulatoria. Las organizaciones deben revisar las condiciones de publicación de respuestas: la autoridad puede publicar aportes completos o resúmenes, eliminando datos de contacto cuando corresponda, y advierte que no se envíe información que el participante no aceptaría ver difundida."
+          ]
+        },
+        {
+          "heading": "Qué deberían hacer los desarrolladores de agentes",
+          "kind": "practical",
+          "paragraphs": [
+            "Una consecuencia práctica es inventariar las herramientas que un agente puede invocar y los datos que cada una necesita. Separar permisos de lectura y escritura, aplicar el mínimo privilegio, registrar operaciones sensibles y exigir confirmación humana para acciones de alto impacto son medidas de diseño razonables. Estas son recomendaciones editoriales de Gazette inspiradas en los riesgos señalados; no deben confundirse con una lista exhaustiva de requisitos nuevos emitidos el 8 de octubre.",
+            "También conviene probar instrucciones adversarias, accesos cruzados entre usuarios y errores de atribución de permisos, además de documentar cómo se revoca el acceso a una integración. Para responsables de cumplimiento, el foco no debería limitarse a la política de privacidad escrita: importa verificar el comportamiento real del agente, los proveedores involucrados, la retención de registros y la respuesta ante incidentes. La utilidad de una automatización depende de controles comprobables."
+          ]
+        },
+        {
+          "heading": "Impacto para empresas y usuarios",
+          "kind": "context",
+          "paragraphs": [
+            "Las empresas que compran plataformas de agentes necesitarán saber quién decide los fines del tratamiento, quién ejecuta operaciones y qué evidencias existen sobre accesos y borrado. Un proveedor puede mejorar su documentación sin resolver todas las preguntas del cliente sobre datos personales. La consulta ofrece una oportunidad de describir dificultades reales, especialmente en procesos con varias herramientas y organizaciones, antes de que se consoliden orientaciones oficiales.",
+            "Para usuarios, la cuestión central es el control efectivo: comprender cuándo el asistente consulta información privada, qué servicio externo interviene y cómo detener o corregir una acción. El anuncio del ICO no introduce un nuevo botón de privacidad en productos concretos ni garantiza cambios inmediatos en ChatGPT, Claude o Gemini. Su importancia es institucional: explicita expectativas y abre un canal para discutir cómo aplicarlas a sistemas más autónomos."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette, límites y seguimiento",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: esta intervención marca un desplazamiento desde la pregunta '¿con qué datos se entrenó el modelo?' hacia otra igualmente importante: '¿qué puede hacer un agente con datos personales después de desplegarse?'. El debate afecta a fabricantes de modelos, plataformas de herramientas y empresas que los integran. No significa que Reino Unido haya prohibido agentes ni que las diez compañías hayan recibido una sanción conjunta.",
+            "Quedan por conocer la ejecución concreta de compromisos individuales, los resultados de investigaciones abiertas y el contenido final de la futura orientación. El siguiente hito verificable es el cierre de aportes el 20 de noviembre; después habrá que revisar las conclusiones oficiales. La noticia resume un cambio de foco regulatorio, no un nuevo régimen ya cerrado: transparencia, derechos y responsabilidad deberán demostrarse tanto en modelos como en flujos de trabajo autónomos."
+          ]
+        }
+      ],
+      "executiveSummary": "El ICO británico anunció resultados de supervisión sobre diez desarrolladores de modelos fundacionales y una consulta abierta sobre protección de datos en agentes autónomos. Los cambios de las empresas incluyen medidas realizadas y otras todavía comprometidas. Las investigaciones sobre incidentes recientes de agentes no han concluido.",
+      "finalSummary": "El cambio relevante es de alcance: la protección de datos ya no se evalúa solo en el entrenamiento, sino también en las acciones de agentes con herramientas. El siguiente hito es el cierre de la consulta el 20 de noviembre; aún no existe una nueva regulación final derivada de ella.",
+      "analysis": "Análisis Gazette: los agentes desplazan el foco regulatorio hacia permisos, trazabilidad y responsabilidad operativa. Las medidas anunciadas no certifican seguridad completa de ningún proveedor.",
+      "watch": [
+        "Cierre de la consulta el 20 de noviembre de 2026.",
+        "Informe final y orientaciones del ICO sobre agentes.",
+        "Resultado de las averiguaciones sobre pruebas y despliegues recientes."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Desarrolladores supervisados",
+          "value": "10",
+          "note": "Cambios realizados o comprometidos, según el ICO."
+        },
+        {
+          "label": "Temas de consulta",
+          "value": "Seguridad, transparencia, responsabilidad, decisiones automatizadas, equidad y licitud",
+          "note": "Áreas descritas por el regulador."
+        }
+      ],
+      "availability": {
+        "status": "Consulta pública abierta",
+        "platforms": [
+          "Portal de consulta del ICO"
+        ],
+        "regions": [
+          "Reino Unido; participación de especialistas y organizaciones interesadas"
+        ],
+        "requirements": [
+          "Responder antes del cierre del 20 de noviembre de 2026"
+        ],
+        "notes": [
+          "No es una autorización de producto ni una norma nueva ya vigente."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Participación en consulta",
+          "value": "Sin tarifa anunciada",
+          "note": "No se publicó precio de inscripción."
+        }
+      ],
+      "limitations": [
+        "No se confirma la implementación completa de todos los compromisos de las diez compañías.",
+        "Las averiguaciones sobre agentes siguen abiertas.",
+        "La consulta todavía no ha producido guía final ni sanción conjunta.",
+        "Los incidentes citados por ICO se presentan como reportes investigados."
+      ],
+      "practicalAdvice": [
+        "Inventariar herramientas y datos accesibles por agentes y aplicar permisos mínimos.",
+        "Separar acciones de lectura y escritura, y probar la revocación de accesos.",
+        "Consultar el formulario oficial y evitar incluir información confidencial en aportes públicos."
+      ],
+      "usefulFacts": [
+        "Diez empresas mencionadas: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI y Stability AI.",
+        "La supervisión original cubrió once desarrolladores; ICO pausó la relación con xAI tras abrir una investigación formal separada."
+      ]
+    },
     {
       "id": "china-new-productive-forces-ai-plus-19-measures-2026",
       "eventKey": "china-state-council-19-measures-new-quality-productive-forces-ai-plus-2026-10-09",
@@ -12623,12 +13017,12 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 23
+      "verifiedArticles": 24
     },
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 3
+      "verifiedArticles": 4
     }
   ]
 }
