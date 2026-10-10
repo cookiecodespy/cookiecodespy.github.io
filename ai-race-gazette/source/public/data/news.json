@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T00:23:17.471Z",
+  "updatedAt": "2026-10-10T01:30:00.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -137,11 +137,7 @@
       "executiveSummary": "GlobalFoundries anunció FDX Fusion como futura plataforma FD-SOI para IA física. La propuesta combina objetivos de lógica digital, RF, señal mixta y memoria embebida para sistemas que perciben y actúan. Es un anuncio de hoja de ruta: demostradores y herramientas de diseño están previstos para 2027, y la fabricación para 2028; el desarrollo alemán tiene condiciones regulatorias.",
       "finalSummary": "FDX Fusion muestra una vía europea para integrar funciones de IA física en chips eficientes. Su importancia estratégica está clara como intención industrial; sus ventajas, precio y adopción comercial deberán comprobarse con silicio, PDK y contratos.",
       "analysis": "Análisis Gazette: la competencia de IA física depende tanto de sensores, control y eficiencia energética como de modelos de aprendizaje. No se puede establecer liderazgo técnico con objetivos de una hoja de ruta.",
-      "watch": [
-        "Publicación del PDK y resultados del demostrador en 2027.",
-        "Aprobación alemana del proyecto de desarrollo y detalles de costes.",
-        "Clientes y productos cualificados para producción en 2028."
-      ],
+      "watch": "Publicación del PDK y resultados del demostrador en 2027. Aprobación alemana del proyecto de desarrollo y detalles de costes. Clientes y productos cualificados para producción en 2028.",
       "technicalDetails": [
         {
           "label": "Proceso",
@@ -342,11 +338,7 @@
       "executiveSummary": "El ICO británico anunció resultados de supervisión sobre diez desarrolladores de modelos fundacionales y una consulta abierta sobre protección de datos en agentes autónomos. Los cambios de las empresas incluyen medidas realizadas y otras todavía comprometidas. Las investigaciones sobre incidentes recientes de agentes no han concluido.",
       "finalSummary": "El cambio relevante es de alcance: la protección de datos ya no se evalúa solo en el entrenamiento, sino también en las acciones de agentes con herramientas. El siguiente hito es el cierre de la consulta el 20 de noviembre; aún no existe una nueva regulación final derivada de ella.",
       "analysis": "Análisis Gazette: los agentes desplazan el foco regulatorio hacia permisos, trazabilidad y responsabilidad operativa. Las medidas anunciadas no certifican seguridad completa de ningún proveedor.",
-      "watch": [
-        "Cierre de la consulta el 20 de noviembre de 2026.",
-        "Informe final y orientaciones del ICO sobre agentes.",
-        "Resultado de las averiguaciones sobre pruebas y despliegues recientes."
-      ],
+      "watch": "Cierre de la consulta el 20 de noviembre de 2026. Informe final y orientaciones del ICO sobre agentes. Resultado de las averiguaciones sobre pruebas y despliegues recientes.",
       "technicalDetails": [
         {
           "label": "Desarrolladores supervisados",
