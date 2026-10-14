@@ -1,0 +1,46 @@
+name: Pulso Santiago · Public mobile preview
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pulso-preview-source/**'
+      - '.github/workflows/pulso-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: pulso-preview-deploy
+  cancel-in-progress: false
+jobs:
+  publish-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: pulso-preview-source/package-lock.json
+      - name: Install
+        working-directory: pulso-preview-source
+        run: npm ci
+      - name: Build preview without credentials or backend
+        working-directory: pulso-preview-source
+        run: npm run build -- --base=/pulso-santiago/
+        env:
+          VITE_SUPABASE_URL: ''
+          VITE_SUPABASE_PUBLISHABLE_KEY: ''
+          VITE_TURNSTILE_SITE_KEY: ''
+      - name: Save only generated site in isolated public directory
+        run: |
+          rm -rf pulso-santiago
+          mkdir -p pulso-santiago
+          cp -R pulso-preview-source/dist/. pulso-santiago/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pulso-santiago
+          if ! git diff --cached --quiet; then
+            git commit -m "deploy: update Pulso Santiago frontend-only mobile preview"
+            git push
+          fi
